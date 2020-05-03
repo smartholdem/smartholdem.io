@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9e79a98c6d9cfb489bea19749ab34a42.js"
+  "/smartholdem.io/precache-manifest.72e858d4638fd32d715a52f582959737.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "smartholdem"});
