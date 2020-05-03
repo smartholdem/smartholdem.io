@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "157dde9ac8c811ed595f",
+    "revision": "16182cfda68dae35658f",
     "url": "/smartholdem.io/css/app.694fe841.css"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartholdem.io/css/chunk-2348ef1f.aa3a36d6.css"
   },
   {
-    "revision": "33e077e144f6c5be07a6",
+    "revision": "fdce17fd8de23bca41a8",
     "url": "/smartholdem.io/css/chunk-29da2f08.723a9f8a.css"
   },
   {
-    "revision": "eff8176a513da4c7af5d",
+    "revision": "66c4dd29bf3408013c31",
     "url": "/smartholdem.io/css/chunk-3ca3528e.411c7a37.css"
   },
   {
-    "revision": "8059572507f5937de186",
-    "url": "/smartholdem.io/css/chunk-764cb3cd.9d1d0b7d.css"
+    "revision": "f8089d27e613b99a973a",
+    "url": "/smartholdem.io/css/chunk-5e8361aa.59199ea5.css"
   },
   {
     "revision": "972a5c7a10426813ced0",
@@ -368,12 +368,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartholdem.io/images/xbts_logo-horizontal.png"
   },
   {
+    "revision": "31ed9613b6f01543b09fcc09a4fb7157",
+    "url": "/smartholdem.io/img/280x280.31ed9613.png"
+  },
+  {
     "revision": "112fe1b3a7526662128ba193f41f64c1",
     "url": "/smartholdem.io/img/ab-face.112fe1b3.png"
   },
   {
     "revision": "dfcba8a4307ef4915fd33bb679e59815",
     "url": "/smartholdem.io/img/ab64.dfcba8a4.png"
+  },
+  {
+    "revision": "d9273e657965c4bfd2247046ba879f5b",
+    "url": "/smartholdem.io/img/ab_monitors.d9273e65.png"
   },
   {
     "revision": "d5d7e326b5e3c7cbf8fa9766c2820d8f",
@@ -528,6 +536,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartholdem.io/img/gdex.085b5db6.png"
   },
   {
+    "revision": "368459dc356cb183e9316d5bc4f564a2",
+    "url": "/smartholdem.io/img/hasher.368459dc.png"
+  },
+  {
     "revision": "d78c99e3436ace1bba343d94b860f0c4",
     "url": "/smartholdem.io/img/icon-vue.png"
   },
@@ -542,6 +554,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1bd5c57c74bdb74985cd4fc8cf50a8b5",
     "url": "/smartholdem.io/img/nix.1bd5c57c.png"
+  },
+  {
+    "revision": "79e24b3211feeb6c55b7e29876311949",
+    "url": "/smartholdem.io/img/paperwallet.79e24b32.png"
   },
   {
     "revision": "96cc4aff4cc980a08bd63c1ea9ed9da9",
@@ -584,6 +600,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartholdem.io/img/sc.bcd1a910.png"
   },
   {
+    "revision": "499e057abe60a087ab154953ec515e66",
+    "url": "/smartholdem.io/img/smartholder.499e057a.png"
+  },
+  {
     "revision": "e391529fc1018b6f5703160401358d7a",
     "url": "/smartholdem.io/img/sth-icons.e391529f.svg"
   },
@@ -608,32 +628,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartholdem.io/img/tw4.b2a68ea8.png"
   },
   {
+    "revision": "cbb4b107cf827b8d3a4494cf1b5051a7",
+    "url": "/smartholdem.io/img/voting.cbb4b107.png"
+  },
+  {
+    "revision": "631f7dbfeace1582a2fce9f831809a04",
+    "url": "/smartholdem.io/img/wallet.631f7dbf.png"
+  },
+  {
+    "revision": "56f8ad046d9170ddb4a26557990da1cc",
+    "url": "/smartholdem.io/img/xbts-wallet.56f8ad04.png"
+  },
+  {
     "revision": "983958263f38d6c7b8b2817b07d1726d",
     "url": "/smartholdem.io/img/xbts.98395826.png"
   },
   {
-    "revision": "bb84aed3a3ea8e2de68af41a521178c0",
+    "revision": "86c9b1e5724b10b7dd277df98d252509",
     "url": "/smartholdem.io/index.html"
   },
   {
-    "revision": "157dde9ac8c811ed595f",
-    "url": "/smartholdem.io/js/app.8d2082ba.js"
+    "revision": "16182cfda68dae35658f",
+    "url": "/smartholdem.io/js/app.33fea344.js"
   },
   {
     "revision": "abb31511ea333ff5bbaf",
     "url": "/smartholdem.io/js/chunk-2348ef1f.ec7c8272.js"
   },
   {
-    "revision": "33e077e144f6c5be07a6",
-    "url": "/smartholdem.io/js/chunk-29da2f08.71ff53a2.js"
+    "revision": "fdce17fd8de23bca41a8",
+    "url": "/smartholdem.io/js/chunk-29da2f08.0f60ff76.js"
   },
   {
-    "revision": "eff8176a513da4c7af5d",
-    "url": "/smartholdem.io/js/chunk-3ca3528e.88b21267.js"
+    "revision": "66c4dd29bf3408013c31",
+    "url": "/smartholdem.io/js/chunk-3ca3528e.f15a4ea0.js"
   },
   {
-    "revision": "8059572507f5937de186",
-    "url": "/smartholdem.io/js/chunk-764cb3cd.4dcc203a.js"
+    "revision": "f8089d27e613b99a973a",
+    "url": "/smartholdem.io/js/chunk-5e8361aa.dc4c5c22.js"
   },
   {
     "revision": "972a5c7a10426813ced0",
