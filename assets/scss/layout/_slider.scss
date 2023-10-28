@@ -3834,7 +3834,7 @@
         &-content{
             padding: 20px 40px 16px;
             padding-right: 109px;
-            background-color: var(--tp-theme-7);
+            background-color: #27aac7; //var(--tp-common-blue-5);
             min-width: 380px;
 
             @include rtl{
