@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <LawyerBanner/>
-    <LawyerAwards/>
-    <LawyerCases/>
+    <architecture-banner/>
+    <Partners/>
+    <Cases/>
     <LawyerAbout/>
     <LawyerFunFact/>
     <LawyerHistory/>
@@ -18,9 +18,11 @@
 
 <script setup>
 import Layout from '~/layouts/LayoutTwo.vue';
-import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
-import LawyerAwards from '~/components/awards/LawyerAwards.vue';
-import LawyerCases from '~/components/portfolios/LawyerCases.vue';
+//import Layout from "~/layouts/LayoutNine.vue";
+import ArchitectureBanner from "~/components/hero-banner/ArchitectureBanner.vue";
+//import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
+import Partners from '~/components/awards/LawyerAwards.vue';
+import Cases from '~/components/portfolios/LawyerCases.vue';
 import LawyerAbout from '~/components/abouts/LawyerAbout.vue';
 import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import LawyerHistory from '~/components/history/LawyerHistory.vue';

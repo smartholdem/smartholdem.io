@@ -3430,7 +3430,7 @@
             animation-duration: 1s;
 
             & .tp-style-border{
-                border: 2px solid var(--tp-theme-8);
+                //border: 2px solid var(--tp-theme-5);
                 padding: 11px 41px 13px;
                 &:hover{
                     color: var(--tp-common-white);
@@ -3885,7 +3885,7 @@
                 margin-top: .5px;
 
                 &:hover{
-                    background-color: var(--tp-theme-8);
+                    background-color: var(--tp-theme-7);
                     color: var(--tp-common-white);
                 }
 
@@ -3894,7 +3894,7 @@
                     height: 59.5px;
                     margin-top: 0;
                     &:hover{
-                        border-color: var(--tp-theme-8);
+                        border-color: var(--tp-theme-7);
                     }
                 }
             }

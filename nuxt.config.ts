@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   rootDir: __dirname,
   css: [
     "bootstrap/scss/bootstrap.scss",
