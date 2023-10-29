@@ -154,7 +154,7 @@ export default {
             </span>
            `,
           subtitle:
-            "Открытия продвигают цивилизацию вперед",
+            "Открытия продвигают цивилизацию вперёд",
         },
         {
           bg: slider_bg_2,
@@ -168,26 +168,26 @@ export default {
             </span>
            `,
           subtitle:
-            "Приватные неросетевые ассистенты и инструменты",
+            "Приватные нейросетевые ассистенты и инструменты. Люди мыслят, машины работают.",
         },
         {
           bg: slider_bg_3,
-          title: `Хранение данных
-            <span class="slider-highlight">и облачные технологии
+          title: `Хранение данных и
+            <span class="slider-highlight">облачные
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
                     stroke-width="8" stroke-linecap="round" />
               </svg>
             </span>
-           `,
+           технологии`,
           subtitle:
-            "Открытия продвигают цивилизацию вперед",
+            "Открытия продвигают цивилизацию вперёд",
         },
         {
           bg: slider_bg_4,
           title: `Метавселенная
-            <span class="slider-highlight">в бизнесе и развлечениях
+            <span class="slider-highlight">SmartHoldem
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
@@ -196,7 +196,7 @@ export default {
             </span>
            `,
           subtitle:
-            "Открытия продвигают цивилизацию вперед",
+            "Совместная работа и развлечения в единой вселенной",
         },
       ],
       slider_nav_items: [
@@ -217,7 +217,7 @@ export default {
         },
         {
           id: 4,
-          title: `Блокчейн Технологии<br /> Нового Времени`,
+          title: `Консолидация знаний<br /> и навыков`,
           img: slider_nav_4,
         },
       ],
@@ -252,3 +252,9 @@ export default {
   },
 };
 </script>
+
+<style>
+  .slider__title-8 {
+   font-family: 'BankGothic', sans-serif;
+  }
+</style>

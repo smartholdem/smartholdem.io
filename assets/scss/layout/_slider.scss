@@ -3834,7 +3834,7 @@
         &-content{
             padding: 20px 40px 16px;
             padding-right: 109px;
-            background-color: #27aac7; //var(--tp-common-blue-5);
+            background-color: var(--tp-theme-8);
             min-width: 380px;
 
             @include rtl{
@@ -3885,7 +3885,7 @@
                 margin-top: .5px;
 
                 &:hover{
-                    background-color: var(--tp-theme-7);
+                    background-color: var(--tp-theme-8);
                     color: var(--tp-common-white);
                 }
 
@@ -3894,7 +3894,7 @@
                     height: 59.5px;
                     margin-top: 0;
                     &:hover{
-                        border-color: var(--tp-theme-7);
+                        border-color: var(--tp-theme-8);
                     }
                 }
             }

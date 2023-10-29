@@ -9,6 +9,14 @@ export default {
 </script>
 
 <style>
+
+
+@font-face {
+  font-family: BankGothic;
+  src: url("/bankgothicmdbt_medium.otf") format("opentype");
+}
+
+
 -moz-scrollbar, ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
