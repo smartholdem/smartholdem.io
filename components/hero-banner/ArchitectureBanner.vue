@@ -133,9 +133,9 @@ import slider_bg_2 from "~/assets/img/slider/8/slider-2.jpg";
 import slider_bg_3 from "~/assets/img/slider/8/slider-3.jpg";
 import slider_bg_4 from "~/assets/img/slider/8/slider-4.jpg";
 import slider_nav_1 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
-import slider_nav_2 from "~/assets/img/slider/8/nav/slider-nav-2.jpg";
-import slider_nav_3 from "~/assets/img/slider/8/nav/slider-nav-3.jpg";
-import slider_nav_4 from "~/assets/img/slider/8/nav/slider-nav-4.jpg";
+import slider_nav_2 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
+import slider_nav_3 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
+import slider_nav_4 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
 
 export default {
   components:{Swiper,SwiperSlide},
@@ -158,43 +158,43 @@ export default {
         },
         {
           bg: slider_bg_2,
-          title: `Commercial
-            <span class="slider-highlight">building
+          title: `Нейронные
+            <span class="slider-highlight">сети
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
                     stroke-width="8" stroke-linecap="round" />
               </svg>
             </span>
-          Concept in village`,
+           `,
+          subtitle:
+            "Приватные неросетевые ассистенты и инструменты",
+        },
+        {
+          bg: slider_bg_3,
+          title: `Хранение данных
+            <span class="slider-highlight">и облачные технологии
+              <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
+                    stroke-width="8" stroke-linecap="round" />
+              </svg>
+            </span>
+           `,
           subtitle:
             "Открытия продвигают цивилизацию вперед",
         },
         {
-          bg: slider_bg_3,
-          title: `Premium
-            <span class="slider-highlight">Real State
-              <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
-                    stroke-width="8" stroke-linecap="round" />
-              </svg>
-            </span>
-          Developers`,
-          subtitle:
-            "Открытия продвигают цивилизацию вперед.",
-        },
-        {
           bg: slider_bg_4,
-          title: `Preparing for
-            <span class="slider-highlight">Sustainable
+          title: `Метавселенная
+            <span class="slider-highlight">в бизнесе и развлечениях
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
                     stroke-width="8" stroke-linecap="round" />
               </svg>
             </span>
-          Future Architecture`,
+           `,
           subtitle:
             "Открытия продвигают цивилизацию вперед",
         },
