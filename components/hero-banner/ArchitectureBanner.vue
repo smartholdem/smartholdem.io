@@ -50,6 +50,7 @@
                   <h3 class="slider__title-8" v-html="item.title"></h3>
                   <p>{{ item.subtitle }}</p>
 
+                  <!--
                   <div class="slider__btn-8">
                     <nuxt-link
                       href="/portfolio-details-list"
@@ -59,6 +60,7 @@
                       <i class="fa-regular fa-chevron-right"></i>
                     </nuxt-link>
                   </div>
+                  -->
                 </div>
               </div>
             </div>
@@ -182,7 +184,7 @@ export default {
             </span>
            технологии`,
           subtitle:
-            "Открытия продвигают цивилизацию вперёд",
+            "Хранения данных в децентрализованном облаке",
         },
         {
           bg: slider_bg_4,
