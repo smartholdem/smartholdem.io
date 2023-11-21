@@ -1,9 +1,9 @@
 <template>
   <ul>
     <li
-      v-for="(menu, i) in menuData"
+      v-for="(menu, i) in menuData[$i18n.locale]"
       :key="i"
-      :class="`has-dropdown ${menu.megaMenu ? 'has-mega-menu' : ''}`"
+      :class="`${menu.hasDropdown ? 'has-dropdown' : ''}`"
     >
       <NuxtLink :to="menu.link">
         {{ menu.title }}
@@ -35,7 +35,6 @@
 
 <script>
 import menuData from "~~/mixins/menuData";
-
 export default {
   mixins: [menuData],
 };

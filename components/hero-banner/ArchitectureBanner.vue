@@ -12,7 +12,7 @@
           <a target="_blank" href="https://github.com/smartholdem"><i class="fa-brands fa-github"></i></a>
         </li>
       </ul>
-      <span>Follow Us</span>
+      <span>{{$t('follow')}}</span>
     </div>
     <!--main slider -->
     <!-- <ClientOnly> -->
