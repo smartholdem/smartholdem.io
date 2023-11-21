@@ -28,7 +28,7 @@ export default {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(-45deg, #4eabf7 1%, #4eabf7 48%, #8de7fb);
+  background: linear-gradient(-45deg, #4ef78b 1%, #45c199 48%, #8dfbd8);
   border: 1px solid #434a52;
 }
 </style>

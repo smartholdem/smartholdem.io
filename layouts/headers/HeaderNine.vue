@@ -35,6 +35,14 @@
                           </a>
                         </span>
                       </li>
+                      <li>
+                        <form class="ml-20">
+                          <select id="locale-select" v-model="$i18n.locale">
+                            <option value="en">en</option>
+                            <option value="ru">ru</option>
+                          </select>
+                        </form>
+                      </li>
                     </ul>
                   </div>
                   <div class="header__action-8 d-none d-xl-block">
