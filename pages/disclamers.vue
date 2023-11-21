@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
+import HeaderOne from "~~/layouts/headers/HeaderNineColor.vue";
 import SectionTitle from '~~/components/policy-terms/SectionTitle.vue';
-import PolicyArea from '~~/components/policy-terms/PolicyArea.vue';
+import PolicyArea from '~~/components/policy-terms/DisclaimersArea.vue';
 import FooterSix from '~~/layouts/footers/FooterSix.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
