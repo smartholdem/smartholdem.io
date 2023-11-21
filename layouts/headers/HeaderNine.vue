@@ -31,7 +31,7 @@
                         <span>
                           <a target="_blank" href="https://wallet.smartholdem.io">
                             <i class="fa icon_wallet"></i>
-                            Кошелёк
+                            {{$t('wallet')}}
                           </a>
                         </span>
                       </li>
