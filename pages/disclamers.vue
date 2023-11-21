@@ -25,7 +25,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "Policy - Creative Agency & Portfolio Vue Nuxt 3 Template",
+      title: "SmartHoldem Disclamers",
     });
   },
 };
