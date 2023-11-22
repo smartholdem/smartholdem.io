@@ -194,8 +194,7 @@ export default {
               </svg>
             </span>
            `,
-          subtitle:
-            "Совместная работа и развлечения в единой вселенной",
+          subtitle: this.$t('slider.s4sub')
         },
       ],
       slider_nav_items: [
