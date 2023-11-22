@@ -155,8 +155,7 @@ export default {
               </svg>
             </span>
            `,
-          subtitle:
-            "Открытия продвигают цивилизацию вперёд",
+          subtitle: this.$t('slider.s1sub'),
         },
         {
           bg: slider_bg_2,
@@ -169,8 +168,7 @@ export default {
               </svg>
             </span>
            `,
-          subtitle:
-            "Приватные нейросетевые ассистенты и инструменты. Люди мыслят, машины работают.",
+          subtitle:this.$t('slider.s2sub'),
         },
         {
           bg: slider_bg_3,
