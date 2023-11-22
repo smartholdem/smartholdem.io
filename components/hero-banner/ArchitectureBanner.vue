@@ -181,8 +181,7 @@ export default {
               </svg>
             </span>
            технологии`,
-          subtitle:
-            "Хранения данных в децентрализованном облаке",
+          subtitle: this.$t('slider.s3sub'),
         },
         {
           bg: slider_bg_4,
