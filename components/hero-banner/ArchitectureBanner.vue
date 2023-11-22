@@ -53,7 +53,7 @@
                   <!--
                   <div class="slider__btn-8">
                     <nuxt-link
-                      href="/portfolio-details-list"
+                      href="/details-list"
                       class="tp-btn-4 tp-style-border"
                     >
                       See Project

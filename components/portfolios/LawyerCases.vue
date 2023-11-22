@@ -4,9 +4,9 @@
       <div class="row align-items-end">
         <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-7">
           <div class="section__title-wrapper-4 pr-5 mb-60">
-            <span class="section__title-pre-4">Сообщество</span>
+            <span class="section__title-pre-4">{{$t('community')}}</span>
             <h3 class="section__title-4">
-              Новости. Инновации. Рекорды. Игры. Hi-Tech. Блокчейн.
+              {{$t('news_title')}}
             </h3>
           </div>
         </div>
