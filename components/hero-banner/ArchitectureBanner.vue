@@ -210,12 +210,12 @@ export default {
         },
         {
           id: 3,
-          title: `Блокчейн Технологии<br /> Нового Времени`,
+          title: this.$t('slider.s3nav'),
           img: slider_nav_3,
         },
         {
           id: 4,
-          title: `Консолидация знаний<br /> и навыков`,
+          title: this.$t('slider.s4nav'),
           img: slider_nav_4,
         },
       ],
