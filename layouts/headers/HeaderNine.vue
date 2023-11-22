@@ -63,7 +63,7 @@
                       -->
 
                       <li>
-                        <button @click="handleOffCanvas" type="button" class="hamburger-btn-8 offcanvas-open-btn">Menu</button>
+                        <button @click="handleOffCanvas" type="button" class="hamburger-btn-8 offcanvas-open-btn">{{$t('menu')}}</button>
                       </li>
                     </ul>
                   </div>
