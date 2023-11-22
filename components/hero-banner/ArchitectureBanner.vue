@@ -200,12 +200,12 @@ export default {
       slider_nav_items: [
         {
           id: 1,
-          title: `Блокчейн Технологии<br /> Нового Времени`,
+          title: this.$t('slider.s1nav'),
           img: slider_nav_1,
         },
         {
           id: 2,
-          title: `Блокчейн Технологии<br /> Нового Времени`,
+          title: this.$t('slider.s2nav'),
           img: slider_nav_2,
         },
         {
