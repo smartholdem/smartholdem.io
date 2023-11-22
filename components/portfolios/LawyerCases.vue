@@ -13,7 +13,7 @@
         <div class="col-xxl-5 col-xl-4 col-lg-4 col-md-5">
           <div class="case__more text-md-end mb-70">
             <a target="_blank" href="https://community.smartholdem.io" class="tp-btn-border-brown">
-              Форум сообщества
+              {{$t('forum')}}
             </a>
           </div>
         </div>
