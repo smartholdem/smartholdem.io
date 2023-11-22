@@ -38,8 +38,8 @@
                       <li>
                         <form class="ml-20">
                           <select id="locale-select" v-model="$i18n.locale">
-                            <option value="en">en</option>
-                            <option value="ru">ru</option>
+                            <option value="en">eng</option>
+                            <option value="ru">rus</option>
                           </select>
                         </form>
                       </li>
