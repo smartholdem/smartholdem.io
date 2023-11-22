@@ -40,7 +40,7 @@
 
               <div class="case__btn">
                 <a target="_blank" :href="item.url" class="tp-btn-border-brown-sm">
-                  Подробнее
+                  {{$t('details')}}
                   <i class="fa-regular fa-arrow-right-long"></i>
                 </a>
               </div>
