@@ -146,8 +146,8 @@ export default {
       slider_items: [
         {
           bg: slider_bg_1,
-          title: `Блокчейн Технологии
-            <span class="slider-highlight">Нового Времени
+          title: this.$t("slider.s1") + `
+            <span class="slider-highlight">`+this.$t("slider.s1_1")+`
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
@@ -159,8 +159,8 @@ export default {
         },
         {
           bg: slider_bg_2,
-          title: `Нейронные
-            <span class="slider-highlight">сети
+          title: this.$t("slider.s2") + `
+            <span class="slider-highlight">`+this.$t("slider.s2_1")+`
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
@@ -172,21 +172,21 @@ export default {
         },
         {
           bg: slider_bg_3,
-          title: `Хранение данных и
-            <span class="slider-highlight">облачные
+          title:  this.$t("slider.s3") +`
+            <span class="slider-highlight">`+this.$t("slider.s3_1")+`
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
                     stroke-width="8" stroke-linecap="round" />
               </svg>
             </span>
-           технологии`,
+           `,
           subtitle: this.$t('slider.s3sub'),
         },
         {
           bg: slider_bg_4,
-          title: `Метавселенная
-            <span class="slider-highlight">SmartHoldem
+          title: this.$t("slider.s4") +`
+            <span class="slider-highlight">`+this.$t("slider.s4_1")+`
               <svg width="309" height="28" viewBox="0 0 309 28" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 24C88.949 1.81947 186.908 -6.80627 304 24" stroke="#FF5A1B"
