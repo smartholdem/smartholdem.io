@@ -42,21 +42,6 @@
                   </div>
                   <div class="header__action-8 d-none d-xl-block">
                     <ul>
-                      <!--
-                      <li>
-                        <a href="#" class="search-open-btn">
-                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M8.6 16.2C12.7974 16.2 16.2 12.7974 16.2 8.6C16.2 4.40264 12.7974 1 8.6 1C4.40264 1 1 4.40264 1 8.6C1 12.7974 4.40264 16.2 8.6 16.2Z"
-                              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M17.0004 17L15.4004 15.4" stroke="currentColor" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </a>
-                      </li>
-                      -->
-
                       <li>
                         <button @click="handleOffCanvas" type="button" class="hamburger-btn-8 offcanvas-open-btn">{{$t('menu')}}
                         </button>

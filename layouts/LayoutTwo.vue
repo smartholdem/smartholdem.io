@@ -10,7 +10,7 @@
 </template>
 
 <script>
-//import HeaderTwo from "./headers/HeaderTwo.vue";
+//import Header from "./headers/HeaderTwo.vue";
 import Header from "./headers/HeaderNine.vue";
 import FooterTwo from "./footers/FooterTwo.vue";
 import BackToTop from "./footers/component/BackToTop.vue";
