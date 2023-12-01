@@ -43,7 +43,7 @@
             </div>
             <p>{{$t('manifest_text')}}</p>
             <div class="about__btn-4 mt-45 d-sm-flex align-items-center">
-              <nuxt-link href="/manifest" class="tp-btn-brown mr-30 text-uppercase">{{$t('manifest_open')}}</nuxt-link>
+              <nuxt-link :to="localePath('/manifest')" class="tp-btn-brown mr-30 text-uppercase">{{$t('manifest_open')}}</nuxt-link>
             </div>
           </div>
         </div>

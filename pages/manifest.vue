@@ -294,7 +294,7 @@
 </template>
 
 <script setup>
-import Layout from "~/layouts/LayoutSix.vue";
+import Layout from "~/layouts/LayoutTwo.vue";
 
 useHead({
   title: "SmartHoldem Manifest",

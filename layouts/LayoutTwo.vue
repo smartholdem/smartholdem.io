@@ -13,6 +13,7 @@
 //import Header from "./headers/HeaderTwo.vue";
 import Header from "./headers/HeaderNine.vue";
 import FooterTwo from "./footers/FooterTwo.vue";
+//import FooterTwo from "./footers/FooterNine.vue";
 import BackToTop from "./footers/component/BackToTop.vue";
 
 export default {

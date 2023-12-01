@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: true,
+    ssr: false,
     rootDir: __dirname,
     css: [
         "bootstrap/scss/bootstrap.scss",
@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         "~/assets/scss/main.scss",
     ],
     build: {
-       // transpile: ['vue-i18n']
+        // transpile: ['vue-i18n']
     },
     modules: [
         //'@nuxtjs/sitemap',
