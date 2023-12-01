@@ -10,10 +10,10 @@
               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-5 col-8">
                 <div class="logo">
                   <nuxt-link :to="localePath('/')">
-                    <img style="width:172px !important" src="~/assets/img/logo/logo.svg" alt="SmartHoldem Logo">
+                    <img style="width:142px !important" src="~/assets/img/logo/logo.svg" alt="SmartHoldem Logo">
                   </nuxt-link>
                   <span class="text-white pl-10"><nuxt-link :to="switchLocalePath('en')">ENG</nuxt-link></span>
-                  <span class="text-white pl-10"><nuxt-link :to="switchLocalePath('ru')">RUS</nuxt-link></span>
+                  <span class="text-white pl-5"><nuxt-link :to="switchLocalePath('ru')">RUS</nuxt-link></span>
                 </div>
               </div>
               <div class="col-xxl-6 col-xl-8 col-lg-8 d-none d-lg-block">
