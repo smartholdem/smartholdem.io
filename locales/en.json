@@ -35,6 +35,8 @@
     "manifest_title": "Empowering humanity through fundamental decentralized technologies",
     "manifest_text": "At SmartHoldem, we are creating a world where the transformative potential of blockchain technology goes beyond digital innovation and shapes a more equitable and sustainable future for humanity.",
     "manifest_open": "Open manifest",
-    "wallet_open": "Open wallet"
+    "wallet_open": "Open wallet",
+    "explorer": "Blockexplorer",
+    "tx_history": "View transaction history"
 
 }
