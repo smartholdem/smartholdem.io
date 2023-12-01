@@ -25,7 +25,7 @@ import Layout from '~/layouts/LayoutTwo.vue';
 //import Layout from "~/layouts/LayoutNine.vue";
 import ArchitectureBanner from "~/components/hero-banner/ArchitectureBanner.vue";
 //import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
-import Partners from '~/components/awards/LawyerAwards.vue';
+import Partners from '~/components/awards/SectionPartners.vue';
 import SectionCommunity from '~/components/portfolios/SectionCommunity.vue';
 import Manifest from '~/components/abouts/LawyerAbout.vue';
 

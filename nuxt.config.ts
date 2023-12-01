@@ -18,17 +18,14 @@ export default defineNuxtConfig({
             {
                 //baseUrl: 'http://localhost:3001',
                 defaultLocale: 'en',
-                /*
                 detectBrowserLanguage: {
                     fallbackLocale: 'en',
-                    useCookie: false,
-                    //cookieKey: 'i18n_redirected_sth',
+                    useCookie: true,
+                    cookieKey: 'i18n_redirected_sth',
                     alwaysRedirect: false,
                     cookieCrossOrigin: true,
-                    //redirectOn: 'root',
+                    redirectOn: 'root',
                 },
-
-                 */
                 lazy: false,
                 langDir: 'locales/',
                 locales: [
@@ -55,37 +52,6 @@ export default defineNuxtConfig({
             },
         ],
     ],
-
-    /*
-        i18n: {
-            legacy: false,
-            //baseUrl: 'http://localhost:3001',
-            detectBrowserLanguage: {
-                fallbackLocale: 'en',
-                useCookie: false,
-                //cookieKey: 'i18n_redirected_sth',
-                alwaysRedirect: false,
-                cookieCrossOrigin: true,
-                //redirectOn: 'root',
-            },
-            defaultLocale: 'en',
-            lazy: false,
-            langDir: 'locales/',
-            locales: [
-                {
-                    code: 'ru',
-                    file: 'ru.json',
-                    name: 'Русский'
-                },
-                {
-                    code: 'en',
-                    file: 'en.json',
-                    name: 'English'
-                },
-            ],
-        },
-    */
-
     app: {
         head: {
             title: "SmartHoldem Platform",
