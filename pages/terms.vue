@@ -28,7 +28,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "Terms - Creative Agency & Portfolio Vue Nuxt 3 Template",
+      title: "Terms",
     });
   },
 };
