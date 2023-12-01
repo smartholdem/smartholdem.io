@@ -1,16 +1,17 @@
 {
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host 127.0.0.1 --port 3001",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxtjs/i18n": "8.0.0-rc.5",
-    "nuxt": "3.0.0",
-    "vue-i18n": "^9.7.0"
+    "@types/node": "^18",
+    "nuxt": "^3.8.2"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
