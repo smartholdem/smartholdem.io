@@ -15,10 +15,16 @@ export default {
     return {
       social_links: [
         {
+          link: "https://t.me/smartholdem",
+          target: "_blank",
+          icon: "fa-brands fa-telegram",
+          name: "Telegram",
+        },
+        {
           link: "https://github.com/smarttholdem",
           target: "_blank",
           icon: "fa-brands fa-github",
-          name: "Twitter",
+          name: "GitHub",
         },
           /*
         {

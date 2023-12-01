@@ -7,7 +7,9 @@
     <!--
     <LawyerFunFact/>
     <LawyerHistory/>
+
     <lawyerVideo/>
+
     <LawyerServices/>
     <LawyerBlogs/>
     <LawyerTestimonial/>
@@ -26,10 +28,12 @@ import ArchitectureBanner from "~/components/hero-banner/ArchitectureBanner.vue"
 import Partners from '~/components/awards/LawyerAwards.vue';
 import Cases from '~/components/portfolios/LawyerCases.vue';
 import Manifest from '~/components/abouts/LawyerAbout.vue';
+
+//import lawyerVideo from '~/components/video-area/LawyerVideo.vue';
 /*
 import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import LawyerHistory from '~/components/history/LawyerHistory.vue';
-import lawyerVideo from '~/components/video-area/LawyerVideo.vue';
+
 import LawyerServices from '~/components/services/LawyerServices.vue';
 import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
 import LawyerTestimonial from '~/components/testimonials/LawyerTestimonial.vue';
