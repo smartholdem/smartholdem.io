@@ -38,14 +38,12 @@
         <div class="col-xxl-6 col-xl-6 col-lg-6">
           <div class="about__wrapper-4 pr-70">
             <div class="section__title-wrapper-4 pr-5 mb-15">
-              <span class="section__title-pre-4">MANIFESTO SMARTHOLDEM</span>
-              <h3 class="section__title-7-highlight">Empowering humanity through fundamental decentralized
-                technologies</h3>
+              <span class="section__title-pre-4">{{$t('manifest')}}</span>
+              <h3 class="section__title-7-highlight">{{$t('manifest_title')}}</h3>
             </div>
-            <p>At SmartHoldem, we are creating a world where the transformative potential of blockchain technology goes
-              beyond digital innovation and shapes a more equitable and sustainable future for humanity.</p>
+            <p>{{$t('manifest_text')}}</p>
             <div class="about__btn-4 mt-45 d-sm-flex align-items-center">
-              <nuxt-link href="/manifest" class="tp-btn-brown mr-30">Open manifest</nuxt-link>
+              <nuxt-link href="/manifest" class="tp-btn-brown mr-30 text-uppercase">{{$t('manifest_open')}}</nuxt-link>
             </div>
           </div>
         </div>
