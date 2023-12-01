@@ -9,9 +9,11 @@
             <div class="row align-items-center">
               <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-5 col-8">
                 <div class="logo">
-                  <nuxt-link href="/">
+                  <nuxt-link :to="localePath('/')">
                     <img src="~/assets/img/logo/logo.svg" alt="SmartHoldem Logo">
                   </nuxt-link>
+                  <span class="text-white pl-10"><nuxt-link :to="switchLocalePath('en')">ENG</nuxt-link></span>
+                  <span class="text-white pl-10"><nuxt-link :to="switchLocalePath('ru')">RUS</nuxt-link></span>
                 </div>
               </div>
               <div class="col-xxl-6 col-xl-8 col-lg-8 d-none d-lg-block">
@@ -31,17 +33,9 @@
                         <span>
                           <a target="_blank" href="https://wallet.smartholdem.io">
                             <i class="fa icon_wallet"></i>
-                            Кошелёк
+                            {{$t('wallet')}}
                           </a>
                         </span>
-                      </li>
-                      <li>
-                        <form class="ml-20">
-                          <select id="locale-select" v-model="$i18n.locale">
-                            <option value="en">en</option>
-                            <option value="ru">ru</option>
-                          </select>
-                        </form>
                       </li>
                     </ul>
                   </div>
@@ -63,7 +57,7 @@
                       -->
 
                       <li>
-                        <button @click="handleOffCanvas" type="button" class="hamburger-btn-8 offcanvas-open-btn">Menu</button>
+                        <button @click="handleOffCanvas" type="button" class="hamburger-btn-8 offcanvas-open-btn">{{$t('menu')}}</button>
                       </li>
                     </ul>
                   </div>
