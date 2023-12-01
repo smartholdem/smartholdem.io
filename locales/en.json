@@ -1,8 +1,40 @@
 {
     "wallet": "Wallet",
+    "menu": "Menu",
     "exchange": "Exchange",
     "terms": "Terms of Use",
     "disclaimers": "Disclaimers",
     "partners": "Our Partners",
-    "follow": "Follow Us"
+    "follow": "Follow Us",
+    "open_wallet": "Open wallet",
+    "open_wallet_sub": "Management of all assets",
+    "slider": {
+        "s1": "Blockchain Technologies",
+        "s1_1": "of the New Time",
+        "s1sub": "Discoveries propel civilization forward",
+        "s1nav": "Blockchain Technologies of the New Time",
+        "s2": "Neural",
+        "s2_1": "networks",
+        "s2sub": "Private neural network assistants and tools. People think, machines work.",
+        "s2nav": "Accelerating the progress of civilization with neural networks",
+        "s3": "Data storage and",
+        "s3_1": "cloud technologies",
+        "s3sub": "Data storage in a decentralized cloud",
+        "s3nav": "Decentralized data storage",
+        "s4": "Metaverse",
+        "s4_1": "SmartHoldem",
+        "s4sub": "Work and play together in a single universe",
+        "s4nav": "Consolidation of knowledge and skills"
+    },
+    "community": "COMMUNITY",
+    "news_title": "News. Innovation. Records. Games. Hi-Tech. Blockchain.",
+    "forum": "Community Forum",
+    "details": "More details",
+    "manifest": "MANIFESTO SMARTHOLDEM",
+    "years_dev": "Years of research<br/>and development.",
+    "manifest_title": "Empowering humanity through fundamental decentralized technologies",
+    "manifest_text": "At SmartHoldem, we are creating a world where the transformative potential of blockchain technology goes beyond digital innovation and shapes a more equitable and sustainable future for humanity.",
+    "manifest_open": "Open manifest",
+    "wallet_open": "Open wallet"
+
 }
