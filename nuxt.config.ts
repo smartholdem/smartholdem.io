@@ -9,11 +9,42 @@ export default defineNuxtConfig({
         "~/assets/scss/main.scss",
     ],
     build: {
-        transpile: ['vue-i18n']
+       // transpile: ['vue-i18n']
     },
     modules: [
-        //'@nuxtjs/i18n',
         //'@nuxtjs/sitemap',
+        [
+            '@nuxtjs/i18n',
+            {
+                //baseUrl: 'http://localhost:3001',
+                defaultLocale: 'en',
+                /*
+                detectBrowserLanguage: {
+                    fallbackLocale: 'en',
+                    useCookie: false,
+                    //cookieKey: 'i18n_redirected_sth',
+                    alwaysRedirect: false,
+                    cookieCrossOrigin: true,
+                    //redirectOn: 'root',
+                },
+
+                 */
+                lazy: false,
+                langDir: 'locales/',
+                locales: [
+                    {
+                        code: 'en',
+                        file: 'en.json',
+                        name: 'English'
+                    },
+                    {
+                        code: 'ru',
+                        file: 'ru.json',
+                        name: 'Русский'
+                    },
+                ],
+            },
+        ],
         [
             '@pinia/nuxt',
             {
@@ -24,28 +55,37 @@ export default defineNuxtConfig({
             },
         ],
     ],
+
     /*
-    i18n: {
-        detectBrowserLanguage: false,
-        defaultLocale: 'ru',
-
-        lazy: true,
-        langDir: 'locales/',
-        locales: [
-            {
-                code: 'ru',
-                file: 'ru.json',
-                name: 'Русский'
+        i18n: {
+            legacy: false,
+            //baseUrl: 'http://localhost:3001',
+            detectBrowserLanguage: {
+                fallbackLocale: 'en',
+                useCookie: false,
+                //cookieKey: 'i18n_redirected_sth',
+                alwaysRedirect: false,
+                cookieCrossOrigin: true,
+                //redirectOn: 'root',
             },
-            {
-                code: 'en',
-                file: 'en.json',
-                name: 'English'
-            },
-        ],
-
-    },
+            defaultLocale: 'en',
+            lazy: false,
+            langDir: 'locales/',
+            locales: [
+                {
+                    code: 'ru',
+                    file: 'ru.json',
+                    name: 'Русский'
+                },
+                {
+                    code: 'en',
+                    file: 'en.json',
+                    name: 'English'
+                },
+            ],
+        },
     */
+
     app: {
         head: {
             title: "SmartHoldem Platform",
