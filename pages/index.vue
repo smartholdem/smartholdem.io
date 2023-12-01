@@ -2,7 +2,7 @@
   <Layout>
     <architecture-banner/>
     <Partners/>
-    <Cases/>
+    <SectionCommunity/>
     <Manifest/>
     <!--
     <LawyerFunFact/>
@@ -26,7 +26,7 @@ import Layout from '~/layouts/LayoutTwo.vue';
 import ArchitectureBanner from "~/components/hero-banner/ArchitectureBanner.vue";
 //import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
 import Partners from '~/components/awards/LawyerAwards.vue';
-import Cases from '~/components/portfolios/LawyerCases.vue';
+import SectionCommunity from '~/components/portfolios/SectionCommunity.vue';
 import Manifest from '~/components/abouts/LawyerAbout.vue';
 
 //import lawyerVideo from '~/components/video-area/LawyerVideo.vue';
