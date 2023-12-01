@@ -5,8 +5,8 @@
         <div class="col-xxl-6 col-xl-6 col-lg-6">
           <div class="about__thumb-wrapper-4 p-relative">
             <div class="about__thumb-4">
-              <img class="about-thumb-main" src="~/assets/img/logo/coin_sth.png" alt="">
-              <img class="about__thumb-shape-1" src="~/assets/img/about/4/about-shape-1.png" alt="">
+              <img class="about-thumb-main" src="~/assets/img/logo/coin_sth.png" alt="STH Coin">
+              <img class="about__thumb-shape-1" src="~/assets/img/about/4/about-shape-1.png" alt="STH">
             </div>
             <div class="about__experience-4 d-none d-sm-flex align-items-start">
               <div class="about__experience-icon-4 mr-15">
