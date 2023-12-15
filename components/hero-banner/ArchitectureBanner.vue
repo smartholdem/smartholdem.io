@@ -47,7 +47,7 @@
             <div class="row justify-content-center">
               <div class="col-xxl-10 col-xl-8 col-lg-9">
                 <div class="slider__content-8">
-                  <h3 class="slider__title-8" v-html="item.title"></h3>
+                  <client-only><h3 class="slider__title-8" v-html="item.title"></h3></client-only>
                   <p>{{ item.subtitle }}</p>
 
                   <!--
