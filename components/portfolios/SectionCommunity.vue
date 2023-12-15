@@ -30,7 +30,7 @@
             <div class="case__content transition-3">
 
               <h3 class="case__title">
-                <nuxt-link href="/portfolio-details">
+                <nuxt-link :href="item.url">
                   {{item.title}}
                 </nuxt-link>
               </h3>
