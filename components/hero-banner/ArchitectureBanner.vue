@@ -48,7 +48,7 @@
               <div class="col-xxl-10 col-xl-8 col-lg-9">
                 <div class="slider__content-8">
                   <client-only><h3 class="slider__title-8" v-html="item.title"></h3></client-only>
-                  <p>{{ item.subtitle }}</p>
+                  <p><client-only>{{ item.subtitle }}</client-only></p>
 
                   <!--
                   <div class="slider__btn-8">
@@ -95,7 +95,7 @@
         >
           <div class="slider__nav-content">
             <span>{{ item.id <= 9 ? "0" : "" }}{{ item.id }}.</span>
-            <h3 class="slider-nav-title" v-html="item.title"></h3>
+            <client-only><h3 class="slider-nav-title" v-html="item.title"></h3></client-only>
           </div>
           <div class="slider__nav-thumb">
             <img :src="item.img" alt="image" />
