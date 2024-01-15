@@ -40,6 +40,9 @@
     "wallet_open": "Open wallet",
     "explorer": "Blockexplorer",
     "tx_history": "View transaction history",
+    "innovations": "Innovations",
+    "author": "Author",
+    "published": "Published",
     "meta": {
         "rng": "Real Blockchain True Random Number Generator RNG on SmartHoldem Platform"
     }

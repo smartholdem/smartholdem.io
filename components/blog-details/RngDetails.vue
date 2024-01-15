@@ -6,7 +6,7 @@
           <div class="row justify-content-center">
             <div class="col-xl-10">
               <div class="postbox__category">
-                <a href="#">Innovations</a>
+                <a href="#">{{ $t('innovations') }}</a>
               </div>
               <h3 class="postbox__title">Random Number Generator</h3>
 
@@ -21,7 +21,7 @@
                       </a>
                     </div>
                     <div class="postbox__meta-content">
-                      <span class="postbox__meta-type">Author</span>
+                      <span class="postbox__meta-type">{{$t('author')}}</span>
                       <p class="postbox__meta-name"><a target="_blank" href="https://github.com/technologiespro">TechnoL0g</a>
                       </p>
                     </div>
@@ -146,7 +146,7 @@
                     <li>Каждые 8 секунд создаются уникальные случайные числа</li>
                     <li>Очень длинную поледовательность чисел</li>
                     <li>Защиту от путешественников во времени</li>
-                    <li>Пользователи и заверители блоков добавляют дополнительный фактор случайности</li>
+                    <li>Пользователи и заверители блоков создают дополнительный фактор случайности</li>
                     <li>Легко управляемые правила работы с числами</li>
                     <li>Вы можете использовать tRNG API для своих идей без ограничений</li>
                     <li>Широкий набор вариантов использования (подписчики, лотереи, призы итд)</li>
@@ -192,9 +192,9 @@
                     <div class="col-xl-5 col-lg-5">
                       <div class="postbox__share postbox__share-2 text-lg-end">
                         <span>Share On:</span>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://vk.com/share.php?url=https://smartholdem.io/ru/rng/"><i class="fab fa-vk"></i></a>
+                        <a target="_blank" :href="'https://twitter.com/share?url=https://smartholdem.io/ru/rng/&via=smartholdem&text='+$t('meta.rng')"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/ru/rng/"><i class="fa-brands fa-linkedin-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -235,13 +235,13 @@
 <script>
 import thumb_bg from '~/assets/img/blog/rng.jpg';
 import blogData from '~~/mixins/blogData';
-import SingleBlogGridItem from '../blogs/single-blog/SingleBlogGridItem.vue';
-import BlogCommentForm from '../forms/BlogCommentForm.vue';
-import CommentArea from './CommentArea.vue';
-import PostboxNavigation from './PostboxNavigation.vue';
+//import SingleBlogGridItem from '../blogs/single-blog/SingleBlogGridItem.vue';
+//import BlogCommentForm from '../forms/BlogCommentForm.vue';
+//import CommentArea from './CommentArea.vue';
+//import PostboxNavigation from './PostboxNavigation.vue';
 
 export default {
-  components: {SingleBlogGridItem, PostboxNavigation, BlogCommentForm, CommentArea},
+  components: {},
   mixins: [blogData],
   data() {
     return {thumb_bg}

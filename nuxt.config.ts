@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: false,
+    //ssr: true,
     rootDir: __dirname,
     css: [
         "bootstrap/scss/bootstrap.scss",
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
                 detectBrowserLanguage: {
                     fallbackLocale: 'en',
                     useCookie: true,
-                    cookieKey: 'i18n_redirected_sth',
+                    cookieKey: 'i18n_redirected_sth1',
                     alwaysRedirect: false,
                     cookieCrossOrigin: true,
                     redirectOn: 'root',
@@ -55,6 +55,15 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: "SmartHoldem Platform",
+            meta: [
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Decentralized Blockchain SmartHoldem Platform'
+                }
+            ],
             link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
             script: [
                 {
