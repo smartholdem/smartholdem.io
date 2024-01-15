@@ -43,6 +43,21 @@ import LawyerContact from '~~/components/contact/LawyerContact.vue';
 
 useHead({
   title: "SmartHoldem Platform",
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'Decentralized gaming platform SmartHoldem on Blockchain'
+    },
+    {
+      hid: 'og:image',
+      name: 'og:image',
+      content: 'https://smartholdem.io/_nuxt/slider-1.e74227fc.jpg'
+    }
+
+  ],
 });
 
 </script>

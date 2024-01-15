@@ -13,6 +13,8 @@ import RngDetails from "~~/components/blog-details/RngDetails.vue";
 import Footer from "~~/layouts/footers/FooterTwo.vue";
 import BackToTop from "~~/layouts/footers/component/BackToTop.vue";
 
+//import ogImage from '@/assets/img/blog/rng2.png';
+
 export default {
   components: { HeaderOne, Footer, BackToTop, RngDetails },
   setup() {
@@ -25,7 +27,13 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Real Blockchain True Random Number Generator RNG on SmartHoldem Platform'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/_nuxt/rng2.c5d3b9b4.jpg'
         }
+
       ],
     });
   },
