@@ -4,12 +4,11 @@
       @click="handleToggle"
       class="header__lang-selected-lang tp-lang-toggle"
       id="tp-header-lang-toggle"
-      >English
-    </span
-    >
+      >{{$t($i18n.locale)}}
+    </span>
     <ul :class="`header__lang-list tp-lang-list ${open?'tp-lang-list-open':''}`">
-      <li><nuxt-link :to="switchLocalePath('ru')">Russian</nuxt-link></li>
-      <li><nuxt-link :to="switchLocalePath('en')">English</nuxt-link></li>
+      <li><nuxt-link :to="switchLocalePath('ru')">{{$t('ru')}}</nuxt-link></li>
+      <li><nuxt-link :to="switchLocalePath('en')">{{$t('en')}}</nuxt-link></li>
     </ul>
   </span>
 </template>
