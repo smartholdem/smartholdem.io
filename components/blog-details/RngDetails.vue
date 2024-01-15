@@ -29,7 +29,7 @@
                 </div>
                 <div class="postbox__meta-item mb-30">
                   <div class="postbox__meta-content">
-                    <span class="postbox__meta-type">Published</span>
+                    <span class="postbox__meta-type">{{$t('published')}}</span>
                     <p class="postbox__meta-name">January 15, 2024</p>
                   </div>
                 </div>
