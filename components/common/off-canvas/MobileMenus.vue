@@ -1,7 +1,7 @@
 <template>
   <nav class="mean-nav">
     <ul>
-      <template v-for="(menu, i) in menuData" :key="i">
+      <template v-for="(menu, i) in menuData[$i18n.locale]" :key="i">
         <li
           v-if="menu.hasDropdown && !menu.megaMenu && !menu.pages"
           class="has-dropdown"

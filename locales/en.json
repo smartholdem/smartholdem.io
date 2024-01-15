@@ -39,6 +39,9 @@
     "manifest_open": "Open manifest",
     "wallet_open": "Open wallet",
     "explorer": "Blockexplorer",
-    "tx_history": "View transaction history"
+    "tx_history": "View transaction history",
+    "meta": {
+        "rng": "Real Blockchain True Random Number Generator RNG on SmartHoldem Platform"
+    }
 
 }

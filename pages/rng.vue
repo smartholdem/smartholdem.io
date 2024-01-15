@@ -17,7 +17,16 @@ export default {
   components: { HeaderOne, Footer, BackToTop, RngDetails },
   setup() {
     useHead({
-      title: "Blog Details",
+      title: "True Random Number Generator",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Real Blockchain True Random Number Generator RNG on SmartHoldem Platform'
+        }
+      ],
     });
   },
 };
