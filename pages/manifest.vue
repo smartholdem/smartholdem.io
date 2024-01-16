@@ -4,6 +4,13 @@
     <section>
       <div v-show="$i18n.locale === 'ru'" class="container mt-70">
         <h1 class="text-center">Манифест SmartHoldem v1.0</h1>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="postbox__img-2 m-img mt-45 mb-70">
+              <img src="~/assets/img/blog/manifest.jpg" alt="" class="rounded-3">
+            </div>
+          </div>
+        </div>
         <h5>
           Расширение прав и возможностей человечества посредством фундаментальных технологий блокчейна.
         </h5>
@@ -154,14 +161,17 @@
           <strong>Вместе мы меняем реальность.</strong>
         </p>
         <hr/>
-        <p>
-          27.10.2023<br>
-          TechnoL0g & Europa
-        </p>
       </div>
 
       <div v-show="$i18n.locale === 'en'" class="container mt-70">
         <h1 class="text-center">SmartHoldem Manifesto v1.0</h1>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="postbox__img-2 m-img mt-45 mb-70">
+              <img src="~/assets/img/blog/manifest.jpg" alt="" class="rounded-3">
+            </div>
+          </div>
+        </div>
         <h5>
           Empowering humanity through fundamental blockchain technologies.
         </h5>
@@ -284,11 +294,34 @@
           <strong>Together we are changing reality</strong>
         </p>
         <hr/>
-        <p>
-          10/27/2023<br>
-          TechnoL0g & Europa
-        </p>
       </div>
+
+
+      <div class="container">
+
+      <div class="postbox__share-wrapper mt-45 mb-25">
+        <div class="row align-items-center">
+          <div class="col-xl-7 col-lg-7">
+            <div class="tagcloud tagcloud-style-2">
+
+              <a href="#">10/27/2023</a>
+              <a href="#">TechnoL0g</a>&
+              <a href="#">Europa</a>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5">
+            <div class="postbox__share postbox__share-2 text-lg-end">
+              <span>{{$t('share')}}</span>
+              <a target="_blank" :href="'https://vk.com/share.php?url=https://smartholdem.io/'+$i18n.locale+'/manifest/'"><i class="fab fa-vk"></i></a>
+              <a target="_blank" :href="'https://twitter.com/share?url=https://smartholdem.io/'+$i18n.locale+'/manifest/&via=smartholdem&text=Manifest'"><i class="fab fa-twitter"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/manifest/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
     </section>
   </Layout>
 </template>

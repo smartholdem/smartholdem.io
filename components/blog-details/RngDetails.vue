@@ -186,17 +186,15 @@
                       <div class="tagcloud tagcloud-style-2">
                         <span>Tags:</span>
                         <a href="#">Blog</a>
-                        <a href="#">Innovations</a>
+                        <a href="#">{{ $t('innovations') }}</a>
                       </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
                       <div class="postbox__share postbox__share-2 text-lg-end">
-                        <span>Share On:</span>
+                        <span>{{$t('share')}}</span>
                         <a target="_blank" href="https://vk.com/share.php?url=https://smartholdem.io/ru/rng/"><i class="fab fa-vk"></i></a>
                         <a target="_blank" :href="'https://twitter.com/share?url=https://smartholdem.io/rng/&via=smartholdem&text='+$t('meta.rng')"><i class="fab fa-twitter"></i></a>
                         <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/rng/"><i class="fa-brands fa-linkedin-in"></i></a>
-
-
                       </div>
                     </div>
                   </div>
