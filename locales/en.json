@@ -36,7 +36,7 @@
     "years_dev": "Years of research and development.",
     "manifest_title": "Empowering humanity through fundamental decentralized technologies",
     "manifest_text": "At SmartHoldem, we are creating a world where the transformative potential of blockchain technology goes beyond digital innovation and shapes a more equitable and sustainable future for humanity.",
-    "manifest_open": "Open manifest",
+    "manifest_open": "Open manifesto",
     "wallet_open": "Open wallet",
     "explorer": "Blockexplorer",
     "tx_history": "View transaction history",
@@ -45,6 +45,7 @@
     "published": "Published",
     "share": "Share On",
     "links": "Quick Links",
+    "posts": "Trending Post",
     "meta": {
         "rng": "Real Blockchain True Random Number Generator RNG on SmartHoldem Platform"
     }
