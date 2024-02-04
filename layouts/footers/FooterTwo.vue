@@ -17,10 +17,10 @@
 
                 <div class="footer__widget-content">
                   <div class="footer__info">
-                    <p>Decentralized platform</p>
+                    <p>Decentralized world</p>
 
                     <div class="footer__social-4">
-                      <h5>Follow :</h5>
+                      <h5>{{$t('follow')}}</h5>
                       <social/>
                     </div>
                   </div>
@@ -99,7 +99,7 @@
 
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget footer__widget-4 mb-50 footer-col-4-4">
-                <h3 class="footer__widget-title">Trending Post</h3>
+                <h3 class="footer__widget-title">{{$t('posts')}}</h3>
 
                 <div class="footer__widget-content">
                   <div class="footer__blog">
