@@ -126,6 +126,8 @@
     &__year{
         flex: 0 0 auto;
         &-title{
+            min-width: 120px;
+            text-align: right;
             font-size: 14px;
             font-family: var(--tp-ff-inter);
             font-weight: 500;
