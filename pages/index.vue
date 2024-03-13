@@ -2,8 +2,9 @@
   <Layout>
     <architecture-banner/>
 
+    <!--
     <SectionCommunity/>
-
+-->
 
     <Transform/>
 

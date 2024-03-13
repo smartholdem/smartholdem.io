@@ -55,6 +55,8 @@
   "lesson": "Изучить",
   "transform_consensus": "Инновационный консенсус DPoS + PoSt",
   "fast_dpos": "Быстрый DPoS",
-  "power_chain": "Мощный блокчейн для разработчиков игр"
+  "power_chain": "Мощный блокчейн для разработчиков игр",
+  "post_farm": "PoSt для фермеров",
+  "double_farm": "жестких дисках"
 
 }
