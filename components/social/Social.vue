@@ -21,7 +21,7 @@ export default {
           name: "Telegram",
         },
         {
-          link: "https://github.com/smarttholdem",
+          link: "https://github.com/smartholdem",
           target: "_blank",
           icon: "fa-brands fa-github",
           name: "GitHub",
