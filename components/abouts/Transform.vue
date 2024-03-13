@@ -25,7 +25,7 @@
                 </span>
               </div>
               <div class="about__experience-content-4">
-                <h4><span>15</span>+</h4>
+                <h4><span>{{ (new Date().getFullYear()) - 2008 }}</span>+</h4>
                 <p v-html="$t('years_dev')"></p>
               </div>
             </div>
@@ -35,13 +35,23 @@
         <div class="col-xxl-6 col-xl-6 col-lg-6">
           <div class="about__wrapper-4 pr-70">
             <div class="section__title-wrapper-4 pr-5 mb-15">
-              <span class="section__title-pre-4">{{$t('manifest')}}</span>
-              <h3 class="section__title-7-highlight">{{$t('manifest_title')}}</h3>
+              <span class="section__title-pre-4">Web3 Gaming Ecosystem</span>
+              <h3 class="section__title-7-highlight">{{$t('transform')}}</h3>
             </div>
-            <p>{{$t('manifest_text')}}</p>
-            <div class="about__btn-4 mt-45 d-sm-flex align-items-center">
-              <nuxt-link :to="localePath('/manifesto')" class="tp-btn-brown mr-30 text-uppercase">{{$t('manifest_open')}}</nuxt-link>
+            <p v-html="$t('transform_text_1')"></p>
+            <p v-html="$t('transform_text_2')"></p>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="about__btn-4 mt-20 d-sm-flex align-items-center">
+                  <nuxt-link :to="localePath('/manifesto')" class="tp-btn-brown mr-30 text-uppercase">{{$t('lesson')}}</nuxt-link>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="mt-35 text-black"><img src="~/assets/img/sth/32x32.png" alt="sth logo 32"> Инновационный консенсус DPoS + PoSt</div>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
