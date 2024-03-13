@@ -149,8 +149,8 @@
               <div class="col-sm-5">
                 <div class="footer__copyright-4">
                   <p>
-                    <nuxt-link href="/">© {{ new Date().getFullYear() }} SmartHoldem</nuxt-link>
-                    All Rights Reserved.
+                    <nuxt-link href="/">© 2017 - {{ new Date().getFullYear() }} SmartHoldem Platform</nuxt-link>
+
                   </p>
                 </div>
               </div>
