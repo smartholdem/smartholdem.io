@@ -3,7 +3,7 @@
     <architecture-banner/>
 
     <!--
-    <SectionCommunity/>
+
 -->
 
     <Transform/>
@@ -14,7 +14,9 @@
     <lawyerVideo/>
 
     <LawyerServices/>
-    <LawyerBlogs/>
+    <SectionCommunity/>
+
+    <!--<LawyerBlogs/>-->
 
     <Manifest/>
 
