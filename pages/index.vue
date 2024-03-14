@@ -49,7 +49,7 @@ import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
 import LawyerTestimonial from '~/components/testimonials/LawyerTestimonial.vue';
 import LawyerTeams from '~/components/teams/LawyerTeams.vue';
 import LawyerCounter from '~~/components/counters/LawyerCounter.vue';
-import LawyerContact from '~~/components/contact/LawyerContact.vue';
+//import LawyerContact from '~~/components/contact/LawyerContact.vue';
 
 
 useHead({
