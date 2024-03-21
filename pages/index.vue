@@ -9,6 +9,9 @@
     <Transform/>
 
     <LawyerFunFact/>
+
+    <LawyerFunFact/>
+
     <LawyerHistory/>
 
     <lawyerVideo/>

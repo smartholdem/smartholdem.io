@@ -1,5 +1,5 @@
 <template>
-  <section class="fact__area fact__translate">
+  <section class="fact__area fact__translate mb-8">
     <div class="container">
       <div class="row gx-2 gy-2 gy-lg-0">
         <div class="col-xxl-4 col-lg-4 col-md-6">

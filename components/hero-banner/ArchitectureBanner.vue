@@ -236,7 +236,13 @@ export default {
 </script>
 
 <style>
+/**
+
+BankGothic
+
   .slider__title-8 {
-   font-family: 'BankGothic', sans-serif;
+   font-family: 'Oswald', sans-serif;
   }
+
+ */
 </style>
