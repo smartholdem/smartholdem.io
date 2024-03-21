@@ -14,7 +14,7 @@
 
     <LawyerHistory/>
 
-    <lawyerVideo/>
+    <Video/>
 
     <LawyerServices/>
     <SectionCommunity/>
@@ -23,8 +23,8 @@
 
     <Manifest/>
 
-    <LawyerTeams/>
-    <LawyerCounter/>
+    <Projects/>
+    <Counter/>
     <LawyerTestimonial/>
     <Partners/>
     <!--
@@ -44,14 +44,14 @@ import SectionCommunity from '~/components/portfolios/SectionCommunity.vue';
 import Manifest from '~/components/abouts/Manifesto.vue';
 import Transform from '~/components/abouts/Transform.vue';
 
-import lawyerVideo from '~/components/video-area/LawyerVideo.vue';
+import Video from '~/components/video-area/LawyerVideo.vue';
 import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import LawyerHistory from '~/components/history/LawyerHistory.vue';
 import LawyerServices from '~/components/services/LawyerServices.vue';
 import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
 import LawyerTestimonial from '~/components/testimonials/LawyerTestimonial.vue';
-import LawyerTeams from '~/components/teams/LawyerTeams.vue';
-import LawyerCounter from '~~/components/counters/LawyerCounter.vue';
+import Projects from '~/components/teams/LawyerTeams.vue';
+import Counter from '~~/components/counters/Counter.vue';
 //import LawyerContact from '~~/components/contact/LawyerContact.vue';
 
 
