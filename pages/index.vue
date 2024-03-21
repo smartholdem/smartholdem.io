@@ -1,10 +1,6 @@
 <template>
   <Layout>
-    <architecture-banner/>
-
-    <!--
-
--->
+    <SliderHome/>
 
     <Transform/>
 
@@ -37,7 +33,7 @@
 <script setup>
 import Layout from '~/layouts/LayoutTwo.vue';
 //import Layout from "~/layouts/LayoutNine.vue";
-import ArchitectureBanner from "~/components/hero-banner/ArchitectureBanner.vue";
+import SliderHome from "~/components/hero-banner/SliderHome.vue";
 //import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
 import Partners from '~/components/awards/SectionPartners.vue';
 import SectionCommunity from '~/components/portfolios/SectionCommunity.vue';
