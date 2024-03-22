@@ -5,8 +5,9 @@
     <Transform/>
 
     <LawyerFunFact/>
+    <FunFactB/>
 
-    <LawyerFunFact/>
+
 
     <LawyerHistory/>
 
@@ -42,6 +43,8 @@ import Transform from '~/components/abouts/Transform.vue';
 
 import Video from '~/components/video-area/LawyerVideo.vue';
 import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
+import FunFactB from '~/components/fun-facts/FunFactB.vue';
+
 import LawyerHistory from '~/components/history/LawyerHistory.vue';
 import LawyerServices from '~/components/services/LawyerServices.vue';
 import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
