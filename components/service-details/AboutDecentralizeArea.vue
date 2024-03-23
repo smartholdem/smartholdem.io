@@ -106,6 +106,10 @@
               <p>
                 {{$t('scale_text')}}
               </p>
+              <h3 class="services__details-text-title">{{$t('speed')}}</h3>
+              <p>
+                {{$t('speed_text')}}
+              </p>
             </div>
 
             <div class="services__details-thumb m-img">
