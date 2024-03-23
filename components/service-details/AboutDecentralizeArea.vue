@@ -117,9 +117,9 @@
             </div>
 
             <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title">{{$t('awh2')}}</h3>
+              <h3 class="services__details-text-title">{{$t('safety')}}</h3>
               <p>
-                {{$t('awt3')}}
+                {{$t('safety_text')}}
               </p>
             </div>
 
