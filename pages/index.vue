@@ -12,7 +12,7 @@
     <Manifest/>
     <Projects/>
     <Counter/>
-    <LawyerTestimonial/>
+    <Testimonial/>
     <Partners/>
     <!--
     <LawyerContact/>
@@ -34,8 +34,8 @@ import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import FunFactB from '~/components/fun-facts/FunFactB.vue';
 import LawyerHistory from '~/components/history/LawyerHistory.vue';
 import About from '~/components/services/LawyerServices.vue';
-import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
-import LawyerTestimonial from '~/components/testimonials/LawyerTestimonial.vue';
+//import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
+import Testimonial from '~/components/testimonials/LawyerTestimonial.vue';
 import Projects from '~/components/teams/LawyerTeams.vue';
 import Counter from '~~/components/counters/Counter.vue';
 //import LawyerContact from '~~/components/contact/LawyerContact.vue';

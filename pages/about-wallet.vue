@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :top_bar="false" :commonOffcanvas="true" />
+    <Header :top_bar="true" :commonOffcanvas="true" />
     <wallet-breadcrumb/>
     <about-wallet-area/>
     <Footer :style_2="true"/>
