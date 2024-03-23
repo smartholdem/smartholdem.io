@@ -121,13 +121,17 @@
               <p>
                 {{$t('safety_text')}}
               </p>
+              <p>
+                {{$t('safety_text2')}}
+              </p>
             </div>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-wallet/3.png" alt="wallet 3">
+              <img src="~/assets/img/sth/about-decentralize/3.png" alt="decentralize 3">
             </div>
 
             <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">{{$t('decentralize')}}</h3>
               <p>{{$t('awt4')}}</p>
               <p>{{$t('awt5')}}</p>
               <p class="text-danger">{{$t('awt6')}}</p>
