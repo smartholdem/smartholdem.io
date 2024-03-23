@@ -1,25 +1,15 @@
 <template>
   <Layout>
     <SliderHome/>
-
     <Transform/>
-
     <LawyerFunFact/>
     <FunFactB/>
-
-
-
     <LawyerHistory/>
-
     <Video/>
-
     <About/>
     <SectionCommunity/>
-
     <!--<LawyerBlogs/>-->
-
     <Manifest/>
-
     <Projects/>
     <Counter/>
     <LawyerTestimonial/>
@@ -27,7 +17,6 @@
     <!--
     <LawyerContact/>
 -->
-
   </Layout>
 </template>
 
@@ -40,11 +29,9 @@ import Partners from '~/components/awards/SectionPartners.vue';
 import SectionCommunity from '~/components/portfolios/SectionCommunity.vue';
 import Manifest from '~/components/abouts/Manifesto.vue';
 import Transform from '~/components/abouts/Transform.vue';
-
 import Video from '~/components/video-area/LawyerVideo.vue';
 import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import FunFactB from '~/components/fun-facts/FunFactB.vue';
-
 import LawyerHistory from '~/components/history/LawyerHistory.vue';
 import About from '~/components/services/LawyerServices.vue';
 import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
