@@ -2,12 +2,14 @@
   <section class="award__area pt-30 pb-30">
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-xl-2 col-lg-10 col-md-3">
+        <!--
+        <div class="col-xl-12 col-xl-12 col-lg-12 col-md-12">
           <div class="award__wrapper-4">
-            <h3 class="award__title-4">{{$t('partners')}}</h3>
+            <h3 class="award__title-4 text-center">{{$t('partners')}}</h3>
           </div>
         </div>
-        <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-9">
+        -->
+        <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
           <div class="award__slider">
             <div class="award__slider-active swiper-container">
               <award-slider-items/>

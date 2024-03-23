@@ -6,10 +6,10 @@
     :loop="true"
     :breakpoints="{
       576: {
-        slidesPerView: 4,
+        slidesPerView: 5,
       },
       0: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
     }"
   >
