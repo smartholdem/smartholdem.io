@@ -113,7 +113,7 @@
             </div>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-wallet/2.png" alt="wallet 2">
+              <img src="~/assets/img/sth/about-decentralize/2.png" alt="decentralize 2">
             </div>
 
             <div class="services__details-text mb-25">
