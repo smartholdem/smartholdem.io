@@ -25,7 +25,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "About Wallet & Assets",
+      title: "Decentralized",
     });
   },
 };
