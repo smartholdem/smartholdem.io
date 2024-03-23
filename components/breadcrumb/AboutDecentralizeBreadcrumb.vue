@@ -10,14 +10,18 @@
       <div class="row justify-content-center">
         <div class="col-xxl-8 col-xl-8 col-lg-10">
           <div class="breadcrumb__content text-center p-relative z-index-1">
-            <h3 class="breadcrumb__title">{{$t('manage_sth')}}</h3>
+            <h3 class="breadcrumb__title">{{$t('new_horizont')}}</h3>
             <div class="breadcrumb__list">
               <span>
                 <nuxt-link :to="localePath('/')">{{$t('home')}}</nuxt-link>
               </span>
               <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
               <span>
-                <a target="_blank" href="https://wallet.smartholdem.io/">{{$t('wallet')}}</a>
+                <a target="_blank" href="https://explorer.smartholdem.io/">DPoS Network</a>
+              </span>
+              <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
+              <span class="">
+                PoST Network
               </span>
             </div>
           </div>

@@ -2,7 +2,7 @@
   <div>
     <Header :top_bar="true" :commonOffcanvas="true" />
     <decentralize-breadcrumb/>
-    <about-wallet-area/>
+    <about-decentralize-area/>
     <Footer :style_2="true"/>
     <back-to-top/>
   </div>
@@ -11,7 +11,7 @@
 <script>
 import Header from "~~/layouts/headers/HeaderOne.vue";
 import DecentralizeBreadcrumb from '~~/components/breadcrumb/AboutDecentralizeBreadcrumb.vue';
-import AboutWalletArea from '~~/components/service-details/AboutWalletArea.vue';
+import AboutDecentralizeArea from '~~/components/service-details/AboutDecentralizeArea.vue';
 import Footer from '~~/layouts/footers/FooterTwo.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
@@ -19,7 +19,7 @@ export default {
   components: {
     Header,
     DecentralizeBreadcrumb,
-    AboutWalletArea,
+    AboutDecentralizeArea,
     Footer,
     BackToTop,
   },
