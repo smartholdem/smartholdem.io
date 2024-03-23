@@ -132,11 +132,17 @@
 
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">{{$t('decentralize')}}</h3>
-              <p>{{$t('awt4')}}</p>
-              <p>{{$t('awt5')}}</p>
-              <p class="text-danger">{{$t('awt6')}}</p>
-              <p>{{$t('awt7')}}</p>
-              <p>{{$t('awt8')}}</p>
+              <p>{{$t('decentralize_text1')}}</p>
+              <p>{{$t('decentralize_text2')}}</p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">{{$t('chains')}}</h3>
+              <p>{{$t('chain_text1')}}</p>
+              <p>{{$t('chain_text2')}}</p>
+              <p>{{$t('chain_text3')}}</p>
+              <p>{{$t('chain_text4')}}</p>
+              <p>{{$t('chain_text5')}}</p>
             </div>
 
             <!-- faq start -->
