@@ -94,17 +94,17 @@
           <div class="services__details-wrapper">
             <h3 class="services__details-title">{{$t('good_chain')}}</h3>
             <p>
-              {{$t('awt1')}}
+              {{$t('about_smartholdem')}}
             </p>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-wallet/1.png" alt="wallet 1">
+              <img src="~/assets/img/sth/about-decentralize/1.png" alt="decentralize 1"/>
             </div>
 
             <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title"><a class="text-primary" target="_blank" href="https://wallet.smartholdem.io/"><i class="fa fa-link"></i> {{$t('create_wallet')}}</a></h3>
+              <h3 class="services__details-text-title">{{$t('scale')}}</h3>
               <p>
-                {{$t('awt2')}}
+                {{$t('scale_text')}}
               </p>
             </div>
 
