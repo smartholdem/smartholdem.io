@@ -88,7 +88,7 @@ export default {
           icon: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAABK0lEQVRoge2aPUoDURRGT+IPmjKIhYU7MAuwsM0C0mUFsXADli7ABdgKNpZ2thFX4DqUCCbYGHkwgdf67oV8yHeqO8X75h54b4a5DP+NXtRnPR08AsdAH7gD7hujroEx8AM89R6Wty0hu403rzkHTrrr50DOGXDR1QugSagfaGDDV1V/B3JWVb1uDckQksJC6lhIHQupYyF1LKSOhdSxkDoWUkdJqPkrtSZjprChNHQKjICDP64tM4SjjCYyhcoE6RKYNa5P2S0ZQntVvfUtnCH0DuwHz0BZOwCG0WYyhK664WCET+AGmESbyRB6TcgofGSEKD22dzJC/GJVx0LqWEgdC6ljIXUspI6F1LGQOhZSx0LqKAkdVnXzf3yZo+Aob8BLN+ObC/W1RYBf5BEe3Tps8+gAAAAASUVORK5CYII=`,
           title: this.$t('arch_t4'),
           subtitle: this.$t('arch_text4'),
-          page: "/about-wallet"
+          page: "/about-community"
         },
         {
           id: 5,
