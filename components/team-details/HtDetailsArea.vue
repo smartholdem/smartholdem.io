@@ -34,7 +34,7 @@
               <p>{{$t('ht_title')}}</p>
               <div class="team__details-social">
                 <a href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
-                <!--<a href="https://t.me/playpokerpro"><i class="fa-brands fa-telegram"></i></a>-->
+                <a href="https://t.me/dexgames"><i class="fa-brands fa-telegram"></i></a>
               </div>
             </div>
           </div>
