@@ -27,7 +27,7 @@
             </div>
             <div class="services__content-4 transition-3">
               <h4 class="services__title-4">
-                <nuxt-link href="/service-details">{{ item.title }}</nuxt-link>
+                <nuxt-link :to="localePath(item.page)">{{ item.title }}</nuxt-link>
               </h4>
               <p>{{ item.subtitle }}</p>
             </div>

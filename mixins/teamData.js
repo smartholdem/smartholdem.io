@@ -14,6 +14,7 @@ export default {
             teamData: [
                 {
                     id: 1,
+                    page: "poker-details",
                     img: img_law_1,
                     name: 'Blockchain Poker',
                     title: 'Gaming platform',
@@ -34,6 +35,7 @@ export default {
                 },
                 {
                     id: 2,
+                    page: "poker-details",
                     img: img_law_2,
                     name: 'Heads or Tails',
                     title: 'PvP game',
@@ -59,6 +61,7 @@ export default {
                 },
                 {
                     id: 3,
+                    page: "poker-details",
                     img: img_law_3,
                     name: 'Paper Wallet',
                     title: 'Generator',
@@ -85,6 +88,7 @@ export default {
                 },
                 {
                     id: 4,
+                    page: "poker-details",
                     img: img_law_4,
                     name: 'Smart2FA  TOTP',
                     title: 'Authenticator',
@@ -110,6 +114,7 @@ export default {
                 },
                 {
                     id: 5,
+                    page: "poker-details",
                     img: img_hasher,
                     name: 'Hasher.link',
                     title: 'Math Converter',
@@ -127,6 +132,7 @@ export default {
                 },
                 {
                     id: 6,
+                    page: "poker-details",
                     img: img_lotto,
                     name: 'Lottery',
                     title: 'Crypto',
@@ -144,6 +150,7 @@ export default {
                 },
                 {
                     id: 7,
+                    page: "poker-details",
                     img: img_chess,
                     name: 'Decentralized Chess',
                     title: 'Crypto',
@@ -160,6 +167,7 @@ export default {
                 },
                 {
                     id: 8,
+                    page: "poker-details",
                     img: img_racing,
                     name: 'Horse Racing',
                     title: 'Crypto',
