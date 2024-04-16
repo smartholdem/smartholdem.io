@@ -35,7 +35,7 @@ export default {
                 },
                 {
                     id: 2,
-                    page: "poker-details",
+                    page: "ht-details",
                     img: img_law_2,
                     name: 'Heads or Tails',
                     title: 'PvP game',

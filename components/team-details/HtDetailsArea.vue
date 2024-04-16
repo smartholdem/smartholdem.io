@@ -11,13 +11,13 @@
         <div class="row">
           <div class="col-xl-5 col-md-6">
             <div class="team__details-thumb" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
-              <img src="~/assets/img/sth/poker.png" alt="">
+              <img src="~/assets/img/sth/Heads.png" alt="">
             </div>
           </div>
           <div class="col-xl-7 col-md-6">
             <div class="team__details-content pt-40 pl-15 pr-50" data-sal="slide-up" data-sal-delay="150" data-sal-duration="1000">
               <span class="team__details-subtitle">Blockchain</span>
-              <h3 class="team__details-title">Poker</h3>
+              <h3 class="team__details-title">Heads Tails</h3>
               <div class="team__details-contact mb-10">
                 <div class="team__details-contact-item d-flex align-items-center">
                   <!-- for wp if client want to add icon enable it -->
@@ -27,17 +27,14 @@
                     </span>
                   </div>
                   <div class="team__details-contact-content">
-                    <p><a target="_blank" href="https://playpoker.pro">Decentralized Poker Room</a></p>
+                    <p><a target="_blank" href="#">Decentralized Game</a></p>
                   </div>
                 </div>
               </div>
-              <p>{{$t('sm_desc1')}}</p>
+              <p>{{$t('ht_title')}}</p>
               <div class="team__details-social">
-                <a href="https://x.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://t.me/playpokerpro"><i class="fa-brands fa-telegram"></i></a>
-                <!--
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                -->
+                <a href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
+                <!--<a href="https://t.me/playpokerpro"><i class="fa-brands fa-telegram"></i></a>-->
               </div>
             </div>
           </div>
