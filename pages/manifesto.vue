@@ -163,7 +163,7 @@
         <hr/>
       </div>
 
-      <div v-show="$i18n.locale === 'en'" class="container mt-70">
+      <div v-show="$i18n.locale !== 'ru'" class="container mt-70">
         <h1 class="text-center">SmartHoldem Manifesto v1.0</h1>
         <div class="row">
           <div class="col-xl-12">
