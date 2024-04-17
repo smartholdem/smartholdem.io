@@ -61,7 +61,7 @@ export default {
                 },
                 {
                     id: 3,
-                    page: "poker-details",
+                    page: "paperwallet-details",
                     img: img_law_3,
                     name: 'Paper Wallet',
                     title: 'Generator',
