@@ -88,7 +88,7 @@ export default {
                 },
                 {
                     id: 4,
-                    page: "poker-details",
+                    page: "2fa-details",
                     img: img_law_4,
                     name: 'Smart2FA  TOTP',
                     title: 'Authenticator',
