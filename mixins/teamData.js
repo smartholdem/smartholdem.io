@@ -102,9 +102,9 @@ export default {
                             name: 'GitHub'
                         },
                         {
-                            link: 'https://twitter.com/smartholdem',
+                            link: 'https://github.com/technologiespro/smart2fa/releases',
                             target: '_blank',
-                            icon: 'fa-brands fa-twitter',
+                            icon: 'fa-brands fa-github',
                             name: 'Twitter'
                         },
                     ],
