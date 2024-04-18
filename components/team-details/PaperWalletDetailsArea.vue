@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="col-xl-7 col-md-6">
-            <div class="team__details-content pt-40 pl-15 pr-50" data-sal="slide-up" data-sal-delay="150" data-sal-duration="1000">
+            <div class="team__details-content pt-40 pl-15 pr-50">
               <span class="team__details-subtitle">Blockchain</span>
               <h3 class="team__details-title">Paper Wallet Generator</h3>
               <div class="team__details-contact mb-10">
