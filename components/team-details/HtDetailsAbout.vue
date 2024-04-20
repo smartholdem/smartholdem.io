@@ -6,7 +6,6 @@
           <div v-show="$i18n.locale === 'ru'" class="col-lg-8">
             <div
                 class="team__details-about-content"
-                data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000"
             >
               <img src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
               <h3 class="team__details-about-title text-center">Добро пожаловать в PvP-игру на блокчейне «Орёл или
