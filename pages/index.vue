@@ -2,21 +2,18 @@
   <Layout>
     <SliderHome/>
     <Transform/>
-    <LawyerFunFact/>
+    <FunFact/>
     <FunFactB/>
-    <LawyerHistory/>
+    <History/>
     <Video/>
     <About/>
     <SectionCommunity/>
-    <!--<LawyerBlogs/>-->
+    <!--<Blogs/>-->
     <Manifest/>
     <Projects/>
     <Counter/>
     <Testimonial/>
     <Partners/>
-    <!--
-    <LawyerContact/>
--->
   </Layout>
 </template>
 
@@ -24,21 +21,20 @@
 import Layout from '~/layouts/LayoutTwo.vue';
 //import Layout from "~/layouts/LayoutNine.vue";
 import SliderHome from "~/components/hero-banner/SliderHome.vue";
-//import LawyerBanner from '~/components/hero-banner/LawyerBanner.vue';
+//import Banner from '~/components/hero-banner/LawyerBanner.vue';
 import Partners from '~/components/awards/SectionPartners.vue';
 import SectionCommunity from '~/components/portfolios/SectionCommunity.vue';
 import Manifest from '~/components/abouts/Manifesto.vue';
 import Transform from '~/components/abouts/Transform.vue';
 import Video from '~/components/video-area/LawyerVideo.vue';
-import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
+import FunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import FunFactB from '~/components/fun-facts/FunFactB.vue';
-import LawyerHistory from '~/components/history/LawyerHistory.vue';
+import History from '~/components/history/LawyerHistory.vue';
 import About from '~/components/services/About.vue';
-//import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
+//import Blogs from '~/components/blogs/LawyerBlogs.vue';
 import Testimonial from '~/components/testimonials/LawyerTestimonial.vue';
 import Projects from '~/components/teams/LawyerTeams.vue';
 import Counter from '~~/components/counters/Counter.vue';
-//import LawyerContact from '~~/components/contact/LawyerContact.vue';
 
 
 useHead({
