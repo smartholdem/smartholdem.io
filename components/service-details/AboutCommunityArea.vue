@@ -141,10 +141,10 @@
                 отменять делегатов.
               </p>
               <p>
-                В SmartHoldem DPOS подписывают блоки ТОП 21 активный делегат
-                https://blockexplorer.smartholdem.io/#/delegate-monitor, другие зарегистрированные делегаты и узлы
+                В SmartHoldem DPOS подписывают блоки ТОП 21 активных делегатов
+                <a target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io/#/delegate-monitor">https://blockexplorer.smartholdem.io/#/delegate-monitor</a>, другие зарегистрированные делегаты и узлы
                 находятся в
-                режиме relay node.
+                режиме <strong>relay node</strong>.
               </p>
               <p>
                 Система делегирования чрезвычайно конкурентоспособна, поскольку делегат может в любое время перейти в
@@ -161,23 +161,6 @@
 
 
             <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title">Как голосовать:</h3>
-              <ul>
-                <li>
-                  Войдите в свой кошелёк SmartHoldem <a  class="text-primary" href="https://wallet.smartholdem.io">wallet.smartholdem.io</a>
-                  или в <a  class="text-primary" href="https://t.me/sthwlt_bot">Telegram APP</a>
-                </li>
-                <li>Нажмите Vote</li>
-                <li>Укажите имя делегата</li>
-                <li>Нажмите "Проголосовать за Делегата"</li>
-              </ul>
-            </div>
-
-            <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-community/3.png" alt="delegates vote 3">
-            </div>
-
-            <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Вознаграждение Делегатов</h3>
               <p>Делегат, подписавший блок, получает ВСЕ КОМИССИИ за транзакции, включенные в блок. Различные транзакции
                 имеют свою комиссию в блокчейне SmartHoldem. Например, если блок включает 500 стандартных транзакций,
@@ -187,7 +170,8 @@
               <p>В блокчейне SmartHoldem Level 1 (DPOS) отсутствует <strong>эмиссия</strong>. Узнать подробнее.
                 Дополнительных вознаграждений кроме комиссий за транзакции, не предусмотрено.</p>
               <p>
-                Стоимость операций в блокчейне SmartHoldem <a  class="text-primary" href="https://wallet.smartholdem.io/blockchain/">wallet.smartholdem.io/blockchain</a>
+                Стоимость операций в блокчейне SmartHoldem <a class="text-primary"
+                                                              href="https://wallet.smartholdem.io/blockchain/">wallet.smartholdem.io/blockchain</a>
               </p>
               <p>
                 DPoS блокчейн SmartHoldem включает в себя новые типы транзакций, такие как множественные платежи,
@@ -209,6 +193,30 @@
                 всех, независимо от их технического образования.</p>
             </div>
 
+            <p>
+              <strong>
+                Установить собственный узел full node, следуйте инструкциям на нашем <a
+                  class="text-primary" href="https://github.com/smartholdem/sth-core"><i class="fa-brands fa-github"></i> GitHub</a>
+              </strong>
+            </p>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Как проголосовать за делегата</h3>
+              <ul>
+                <li>
+                  Войдите в свой кошелёк SmartHoldem <a class="text-primary" href="https://wallet.smartholdem.io">wallet.smartholdem.io</a>
+                  или в <a class="text-primary" href="https://t.me/sthwlt_bot">Telegram APP</a>
+                </li>
+                <li>Нажмите Vote</li>
+                <li>Укажите имя делегата</li>
+                <li>Нажмите "Проголосовать за Делегата"</li>
+              </ul>
+            </div>
+
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/about-community/3.png" alt="delegates vote 3">
+            </div>
+
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Связь с сообществом</h3>
               <p>Для делегата активное участие и связь с сообществом имеют жизненно важное значение для получения
@@ -220,7 +228,7 @@
               <p>Для получения необходимых голосов для выхода в ТОП 21 в качестве делегата, вы можете предложить
                 избирателям процент от вознаграждений. Вознаграждение измеряется в зависимости от доли участия
                 избирателя, количества голосов и процента выплат, установленных делегатом.</p>
-              <p>Как стать делегатом и установить собственный узел, следуйте инструкциям на нашем <a class="text-primary" href="https://github.com/smartholdem/sth-core">GitHub</a></p>
+
             </div>
 
             <!-- faq start -->

@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-xl-5 col-md-6">
             <div class="team__details-thumb" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
-              <img src="~/assets/img/sth/poker.png" alt="">
+              <img src="~/assets/img/sth/poker.png" alt="poker">
             </div>
           </div>
           <div class="col-xl-7 col-md-6">
@@ -33,8 +33,10 @@
               </div>
               <p>{{$t('sm_desc1')}}</p>
               <div class="team__details-social">
+                <nuxt-link class="" :to="localePath('/projects')"><span>All</span></nuxt-link>
                 <a href="https://x.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://t.me/playpokerpro"><i class="fa-brands fa-telegram"></i></a>
+
                 <!--
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 -->
