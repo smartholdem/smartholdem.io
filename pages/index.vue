@@ -33,7 +33,7 @@ import Video from '~/components/video-area/LawyerVideo.vue';
 import LawyerFunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import FunFactB from '~/components/fun-facts/FunFactB.vue';
 import LawyerHistory from '~/components/history/LawyerHistory.vue';
-import About from '~/components/services/LawyerServices.vue';
+import About from '~/components/services/About.vue';
 //import LawyerBlogs from '~/components/blogs/LawyerBlogs.vue';
 import Testimonial from '~/components/testimonials/LawyerTestimonial.vue';
 import Projects from '~/components/teams/LawyerTeams.vue';

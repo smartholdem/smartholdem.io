@@ -79,7 +79,7 @@ export default {
           icon: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAACb0lEQVRoge3aTYhOURzH8c8YL9Ng5GVlIzsvzUKxU4ryWkqIRsrLBovJhkSKlKWGJIqNNJE9WShS1qPsLAyJhULJeJ0ZnTpTt2kW5p7zPM8d3V/deu6p8z/ne87/nP/53/P439SWwjPa07kXhzE947iMYk9b/9DHMpVTO7IU6zAj0U5RAWg+SgFNS2z8B0YSbUykP2Ur5nSV7ziN4UkO1G8sx37MS+1EbqC+knXXY2cOoFSXy6W21A1qTFUByqaqAI3GJ1mpQFncBJ2YmcNQ6qYwEnepMDCDJW2swUnMLZSVnq1UoCc4Fn//nGTdMLtbcAMLCzP0GB/KdigVaCA+k1VnPDL1xdkdjvX7cSQG7JYAldESHI/PmL7gOi5iKMV4s4FW4yy2FsoGI8idGJyT1EygjbHj3bHdsPBfohdPc23bzQDqwCFcwIJC+XP04G3OxpoBdBkhb+oqlD3AtkY01oyTQtjBfo0rG4hbdXY1A6g3rp03hbKQZlzCiqkIFJK1qzg6LmbtwxWszdlYsw6n4Xj0EDvwKB6Z2rEB97BrqqYPIeZsxm28j2WLcRNnMCe1gValDwdxC+/ie8hUT8XTwqIUw63Mh87hBF7F99nYjvspRlsJFNbRXeyOp3YxhViFZWWNpgbWTXFBh+9yr3G+hI0XcQvvjrGpa4K49c9KBQrJ2YFo51NJoKCvJfKpCZXqct8KuUyK2nO5f/3Vp+qqgaquGqjqqoGqrhqo6qqBqq4aqOqqgaquGqhBynYLnvP2oSN+7i3z15iV8ZoyWTmBQoeuZbRXSqkuN6tBblt6oFNnKFyRPGvAHwA/Z7Q3hYW/xZpkOqgXaRYAAAAASUVORK5CYII=`,
           title: this.$t('arch_t3'),
           subtitle: this.$t('arch_text3'),
-          page: "/about-wallet"
+          page: "/about-forging"
         },
         {
           id: 4,
