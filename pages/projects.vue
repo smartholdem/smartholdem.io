@@ -7,7 +7,7 @@
     />
     <team-area />
 
-    <job-area/>
+    <CreateSth/>
 
     <footer-two :style_2="true" />
     <back-to-top />
@@ -18,7 +18,7 @@
 import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import TeamBreadcrumb from "~~/components/breadcrumb/CommonBreadcrumb.vue";
 import TeamArea from "~~/components/teams/TeamArea.vue";
-import JobArea from '~~/components/job-position/JobArea.vue';
+import CreateSth from '~/components/job-position/CreateSth.vue';
 import FooterTwo from "~~/layouts/footers/FooterTwo.vue";
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
@@ -28,7 +28,7 @@ export default {
     TeamBreadcrumb,
     TeamArea,
     FooterTwo,
-    JobArea,
+    CreateSth,
     BackToTop,
   },
   setup() {
