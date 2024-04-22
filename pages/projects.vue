@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-one :top_bar="false" :commonOffcanvas="true" />
+    <Header :top_bar="false" :commonOffcanvas="true" />
     <team-breadcrumb
       :title="$t('all_projects')"
       subtitle="SmartHoldem"
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
+import Header from "~~/layouts/headers/HeaderNineColor.vue"; //HeaderOne.vue
 import TeamBreadcrumb from "~~/components/breadcrumb/CommonBreadcrumb.vue";
 import TeamArea from "~~/components/teams/TeamArea.vue";
 import CreateSth from '~/components/job-position/CreateSth.vue';
@@ -24,7 +24,7 @@ import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
 export default {
   components: {
-    HeaderOne,
+    Header,
     TeamBreadcrumb,
     TeamArea,
     FooterTwo,
