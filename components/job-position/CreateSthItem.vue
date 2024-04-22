@@ -26,7 +26,7 @@
       </div>
       <div class="col-xl-3 col-lg-2 col-md-6 col-sm-6">
         <div class="job__btn text-xl-end">
-          <nuxt-link :href="detail" class="tp-btn-border">Detail</nuxt-link>
+          <nuxt-link target="_blank" :href="detail" class="tp-btn-border text-uppercase">{{$t('details')}}</nuxt-link>
         </div>
       </div>
     </div>

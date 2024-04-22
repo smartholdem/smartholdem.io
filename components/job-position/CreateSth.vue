@@ -20,70 +20,70 @@
                 text="Блокчейн платформа для массового внедрения"
                 value="5 529 600 000"
                 info="операций в день"
-                detail="https://community.smartholdem.io"
+                detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
                 delay="150"
-                title="Javascript Developer"
-                text="Блокчейн платформа для массового внедрения"
-                value="5 529 600 000"
-                info="операций в день"
-                detail="https://community.smartholdem.io"
+                title="Конструктор комиссий"
+                text="Низкие комиссии на все игровые операции"
+                value="от $0,000014 до $0,0036"
+                info="за транзакцию"
+                detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
                 delay="170"
-                title="Sales lead, Human Spaceflight"
-                text="Блокчейн платформа для массового внедрения"
-                value="5 529 600 000"
-                info="операций в день"
-                detail="https://community.smartholdem.io"
+                title="Конструктор транзакций"
+                text="Различные типы транзакций"
+                value="Настраиваемая логика транзакций"
+                info=""
+                detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
                 delay="190"
-                title="WordPress Developer"
-                text="Блокчейн платформа для массового внедрения"
-                value="5 529 600 000"
-                info="операций в день"
-                detail="https://community.smartholdem.io"
+                title="Игровой API и SDK"
+                text="Мощный API с расширенной документацией и примерами"
+                value="Node.js и UE5"
+                info="(TypeScript)"
+                detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
               delay="130"
-              title="UX & UI Designer"
-              text="Блокчейн платформа для массового внедрения"
-              value="5 529 600 000"
-              info="операций в день"
-              detail="https://community.smartholdem.io"
+              title="TRNG"
+              text="Генератор истинных случайных чисел"
+              value="Перетасовка розыгрыши, колоды в покере, лотерея, рулетка, бинго и т.д."
+              info=""
+              detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
               delay="150"
-              title="Javascript Developer"
-              text="Блокчейн платформа для массового внедрения"
-              value="5 529 600 000"
-              info="операций в день"
-              detail="https://community.smartholdem.io"
+              title="Нейронные сети"
+              text="Быстрая интеграция нейронных сетей в ваши сервисы"
+              value="Генерация голоса, музыки, текста, изображений"
+              info=""
+              detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
               delay="170"
-              title="Sales lead, Human Spaceflight"
-              text="Блокчейн платформа для массового внедрения"
-              value="5 529 600 000"
-              info="операций в день"
-              detail="https://community.smartholdem.io"
+              title="Партнёрские программы"
+              text="Гарантированная партнёрка на блокчейне"
+              value="Адрес в блокчейн игре"
+              info="- это партнёрский код"
+              detail="https://wiki.smartholdem.io"
             />
 
             <sth-item
               delay="190"
-              title="WordPress Developer"
-              text="Блокчейн платформа для массового внедрения"
-              value="5 529 600 000"
-              info="операций в день"
-              detail="https://community.smartholdem.io"
+              title="Криптофункции с нулевым разглашением"
+              text="Токенизация, идентификация и конфиденциальные транзакции"
+              value="Набор инструментов"
+              info="ZKP & SmartNote"
+              detail="https://wiki.smartholdem.io"
             />
           </div>
         </div>
