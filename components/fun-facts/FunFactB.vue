@@ -30,8 +30,10 @@
           <div class="fact__banner fact__banner-overlay p-relative z-index-1" data-sal="slide-down" data-sal-delay="170" data-sal-duration="1000">
             <div class="fact__banner-bg include-bg" :style="{ backgroundImage: `url(${fact_bg})` }"></div>
             <div class="fact__banner-content">
+              <nuxt-link :to="localePath('/tokenomics')">
               <h5>{{$t('ffb')}}</h5>
               <p>{{$t('ffb_text')}}</p>
+              </nuxt-link>
             </div>
           </div>
         </div>
