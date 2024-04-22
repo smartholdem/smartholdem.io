@@ -8,8 +8,10 @@
                 <img src="~/assets/img/sth/icon3.png" alt="fast dpos">
             </div>
             <div class="fact__content ml-20">
+              <nuxt-link :to="localePath('/about-forging')">
               <h4>{{$t('ff3')}}</h4>
               <p>{{$t('ff3_text')}}</p>
+              </nuxt-link>
             </div>
           </div>
         </div>

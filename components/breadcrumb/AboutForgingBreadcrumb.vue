@@ -10,7 +10,7 @@
       <div class="row justify-content-center">
         <div class="col-xxl-8 col-xl-8 col-lg-10">
           <div class="breadcrumb__content text-center p-relative z-index-1">
-            <h3 class="breadcrumb__title">{{$t('about_community')}}</h3>
+            <h3 class="breadcrumb__title">{{$t('about_forging')}}</h3>
             <div class="breadcrumb__list">
               <span>
                 <nuxt-link :to="localePath('/')">{{$t('home')}}</nuxt-link>
