@@ -93,7 +93,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8 order-first order-lg-last">
+        <div v-show="$i18n.locale === 'ru'" class="col-lg-8 order-first order-lg-last">
           <div class="services__details-wrapper">
             <h3 class="services__details-title">Предложение сокращается, ценность растёт</h3>
             <p>
@@ -216,7 +216,139 @@
                 беспрепятственно обмениваются информацией и активами.
               </p>
               <p>
-                Эта концепция, часто называемая «Интернетом блокчейнов», обладает потенциалом для повышения масштабируемости, безопасности и совместимости.
+                Эта концепция, часто называемая «Интернетом блокчейнов», обладает потенциалом для повышения
+                масштабируемости, безопасности и совместимости.
+              </p>
+            </div>
+
+            <!-- faq start -->
+            <!--
+            <service-details-faq/>
+            -->
+            <!-- faq end -->
+          </div>
+        </div>
+
+        <div v-show="$i18n.locale !== 'ru'" class="col-lg-8 order-first order-lg-last">
+          <div class="services__details-wrapper">
+            <h3 class="services__details-title">STH is the native utility token of SmartHoldem blockchain.</h3>
+            <p>
+              SmartHoldem STH is a hard-capped, scarce asset that is used for:
+            </p>
+            <ul>
+              <li>Fuel for Games and Apps</li>
+              <li>Payment of transaction fees</li>
+              <li>Voting for delegates</li>
+              <li>Registration of names</li>
+              <li>Issue of tokens</li>
+              <li>Burn transaction</li>
+              <li>Transfer of assets</li>
+              <li>IPFS transactions</li>
+              <li>Multipayments</li>
+              <li>Smart Contracts</li>
+              <li>Generation of SmartNotes based on Zero-Knowledge Proof</li>
+              <li>Various types of game transactions</li>
+              <li>Staking SmartHolder</li>
+              <li>DeFi asset in over 30+ DeFi pools</li>
+            </ul>
+
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/tokemomic/1.png" alt="tokemomic 1">
+            </div>
+            <p>
+              In the initial distribution of SmartHoldem STH coins, priority was given to SmartHoldem ICO participants,
+              with 83% of the total STH supply distributed to them, 8% to advisors and angels, 3% to Bounty campaign
+              participants, and 6% reserved in the Dev fund. The distribution took place under the control of the
+              well-known Escrows of the BitcoinTalk forum, which were chosen by members of the SmartHoldem community.
+            </p>
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/tokemomic/2.png" alt="tokemomic smartholdem pic 2">
+            </div>
+            <p>
+              A fixed amount of 240M SmartHoldem STH was minted at Genesis. TA limited emission model was implemented in
+              the SmartHoldem blockchain to incentivize delegate validators. According to this model, it was planned to
+              forge 256,425,000 SmartHoldem STH coins by 2041.
+              (https://github.com/smartholdem/smartholdem-node-a/blob/master/helpers/constants.js)
+            </p>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Deflationary model with limited emission</h3>
+              <p>
+                After the launch of the global update 2.0 of the platform infrastructure, SmartHoldem has moved from an
+                Inflationary model with limited emission to a Deflationary model with limited emission. Emission in DPoS
+                SmartHoldem L1 has been completely stopped.
+              </p>
+              <p>
+                The deflationary model will reduce the total supply of the SmartHoldem STH cryptocurrency and determine
+                the circulating supply: Min 100,000,000 STH - Max 150,000,000 STH.
+              </p>
+              <p>
+                When writing this article, the total supply of SmartHoldem STH was 249,677,907 STH, with 92,093 STH
+                burned. The deflationary model had already begun reducing the total supply.
+              </p>
+            </div>
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/tokemomic/3.png" alt="tokemomic smartholdem pic-3">
+            </div>
+            <p>
+              The SmartHoldem DPoS network has a deflationary mechanism that burns 50% of commissions. As the network
+              grows, this mechanism will reduce the total and circulating supply of SmartHoldem STH to 100,000,000 STH.
+            </p>
+            <p>
+              When the total supply is reduced to 100,000,000 STH, the DPoS network will stop burning 50% of the fees.
+              Once the total supply reaches 150,000,000 STH on the DPoS blockchain, the 50% fee burn protocol will be
+              activated.
+            </p>
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/tokemomic/4.png" alt="tokemomic smartholdem pic-4">
+            </div>
+
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">PoSt blockchain</h3>
+              <p>
+                The SmartHoldem PoSt blockchain starts with 0 coins. The block reward is halved every two years.
+                Including an algorithm for burning commissions in the PoSt network is possible.
+              </p>
+            </div>
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Interoperability</h3>
+              <p>
+                The interaction between DPoS and PoSt blockchains will be implemented through an innovative SID
+                protocol.
+              </p>
+              <p>
+                The Smart Inter-Chain Data Communication Protocol (SID) will be incorporated into the DpoS and PoSt
+                SmartHoldem nodes, enabling blockchains to communicate directly for certain transactions.
+              </p>
+              <p>
+                The SID module ensures that the SmartHoldem STH coin is not duplicated in another blockchain, enhancing
+                the system's integrity.
+                How it works: The user sent 100 STH from the DPoS network to the PoSt network. 100 STH were burned in
+                the DPoS blockchain, and 100 STH were issued in PoSt.
+              </p>
+              <p>
+                The SID protocol establishes a new standard for exchanging data between blockchains, eliminating the
+                need for a third-party intermediary.
+              </p>
+            </div>
+
+
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/tokemomic/5.png" alt="tokemomic 5">
+            </div>
+
+            <div class="services__details-text mb-25">
+              <p>The SID protocol establishes a new standard for exchanging data between blockchains, eliminating the
+                need for a third-party intermediary.</p>
+              <p>
+                Using the SID module, other blockchain projects can effectively implement standardized inter-blockchain
+                communication. This enables the establishment of a decentralized network of independent chains that
+                seamlessly exchange information and assets.
+              </p>
+              <p>
+                This concept, often called the "Internet of Blockchains," holds the potential for enhanced scalability
+                and interoperability.
               </p>
             </div>
 
