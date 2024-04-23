@@ -231,7 +231,7 @@
 
         <div v-show="$i18n.locale !== 'ru'" class="col-lg-8 order-first order-lg-last">
           <div class="services__details-wrapper">
-            <h3 class="services__details-title">STH is the native utility token of SmartHoldem blockchain.</h3>
+            <h3 class="services__details-title">STH is the native utility token of SmartHoldem blockchain</h3>
             <p>
               SmartHoldem STH is a hard-capped, scarce asset that is used for:
             </p>
