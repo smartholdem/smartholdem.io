@@ -134,10 +134,10 @@ import slider_bg_1 from "~/assets/img/slider/8/slider-1.png";
 import slider_bg_2 from "~/assets/img/slider/8/slider-2.jpg";
 import slider_bg_3 from "~/assets/img/slider/8/slider-3.jpg";
 import slider_bg_4 from "~/assets/img/slider/8/slider-4.jpg";
-import slider_nav_1 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
-import slider_nav_2 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
-import slider_nav_3 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
-import slider_nav_4 from "~/assets/img/slider/8/nav/slider-nav-1.jpg";
+import slider_nav_1 from "~/assets/img/slider/8/nav/slider-nav-1.png";
+import slider_nav_2 from "~/assets/img/slider/8/nav/slider-nav-1.png";
+import slider_nav_3 from "~/assets/img/slider/8/nav/slider-nav-1.png";
+import slider_nav_4 from "~/assets/img/slider/8/nav/slider-nav-1.png";
 
 export default {
   components:{Swiper,SwiperSlide},
