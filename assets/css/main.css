@@ -53147,4 +53147,16 @@ blockquote cite::before {
   }
 }
 
+
+
+
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
 /*# sourceMappingURL=main.css.map */
