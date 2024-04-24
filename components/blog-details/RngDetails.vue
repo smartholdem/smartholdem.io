@@ -21,7 +21,7 @@
                       </a>
                     </div>
                     <div class="postbox__meta-content">
-                      <span class="postbox__meta-type">{{$t('author')}}</span>
+                      <span class="postbox__meta-type">{{ $t('author') }}</span>
                       <p class="postbox__meta-name"><a target="_blank" href="https://github.com/technologiespro">TechnoL0g</a>
                       </p>
                     </div>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="postbox__meta-item mb-30">
                   <div class="postbox__meta-content">
-                    <span class="postbox__meta-type">{{$t('published')}}</span>
+                    <span class="postbox__meta-type">{{ $t('published') }}</span>
                     <p class="postbox__meta-name">January 15, 2024</p>
                   </div>
                 </div>
@@ -64,7 +64,7 @@
             <div class="col-xl-8 col-lg-9 col-md-11">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Основа</h3>
-                <p>Генератор случайных чисел основан на теории игр и блокчейн-технологии SmartHoldem.</p>
+                <p>Генератор случайных чисел основан на блокчейн-энтропии SmartHoldem.</p>
 
                 <div class="postbox__details-content">
                   <div class="row">
@@ -78,8 +78,41 @@
                   </div>
                 </div>
                 <h3>Доказательство получения независимого случайного числа</h3>
-                <p>С помощью RNG возможно получить настоящие случайные числа, независимые от времени и знаний
-                  результата в будущем.</p>
+                <p>С помощью блокчейн-энтропии возможно получить настоящие случайные числа, независимые от времени и
+                  знаний
+                  результата в будущем. В качестве настоящей энтропии используется блокчейн SmartHoldem.</p>
+                <p>
+                  Каждые 8 секунд в BlockChain SmartHoldem происходит генерация случайно ранжированными делегатами
+                  уникального Hash ID блока содержащего числовой ряд шестнадцатеричных значений, пример:
+                  d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0.
+                  Все блоки легко проверить в
+                  <a class="text-primary" target="_blank"
+                     href="https://explorer.smartholdem.io/#/block/d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0">обозревателе
+                    блоков</a>
+                </p>
+                <p>Уникальный шестнадцатиричный Hash блока преобразуется в числовую десятичную последовательность.</p>
+
+                <p>Из числового ряда выбираются необходимою число знаков, наример 2 (от 00 до 99) для расчёта текущего
+                  случайного номера.</p>
+                <p class="text-warning-emphasis">
+                  Пример выборки случайного значения от 0 до 99:
+                </p>
+                <ul>
+                  <li>Block Hash: d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0</li>
+                  <li>10 байт HEX:
+                    <span class=" product__badge-item">33</span>
+                    &nbsp;<span class="product__badge-item">F3</span>
+                    &nbsp;<span class=" product__badge-item">37</span>
+                    &nbsp;<span class=" product__badge-item">C8</span>
+                    &nbsp;<span class=" product__badge-item">0C</span>
+                    &nbsp;<span class=" product__badge-item">8A</span>
+                    &nbsp;<span class=" product__badge-item">f9</span>
+                    &nbsp;<span class=" product__badge-item">32</span>
+                    &nbsp;<span class=" product__badge-item">DF</span>
+                    &nbsp;<span class=" product__badge-item">A0</span></li>
+                  <li>Пеобразованный числовой ряд в DEC: 51243552001213824950223160</li>
+                  <li>Двузначный случайный номер основанный на блокчейн-энтропии: <span class="badge product__badge-item text-info">60</span></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -93,35 +126,83 @@
                 </div>
               </div>
 
+              <div class="postbox__details-content-2 pb-40">
+                <h3>Из чего состоит блокчейн-энтропия SmartHoldem</h3>
+                <ul>
+                  <li>Hash нового блока строится по дереву merkle и зависит от всех предыдущих блоков и операций в сети
+                    SmartHoldem выполняемых участниками
+                  </li>
+                  <li>Любая сллучайная операция выполненная участником сети, происходящая сегодня в BlockChain
+                    SmartHoldem влияет на хэши всех будущих блоков
+                  </li>
+                  <li>Случайное ранжирование делегатов в каждом раунде</li>
+                  <li>Операции проводимые в BlockChain SmartHoldem непредсказуемы и могут происходить в любое время
+                    (регистрация делегата, отправка транзакций, сумма транзакций, время транзакций, голосование итд)
+                  </li>
+                </ul>
+              </div>
+
+              <div class="postbox__details-content-2 pb-40">
+                <h3>Структура блока SmartHoldem</h3>
+                <p>
+                  <span class="product__badge-item">id</span> - хэш текущего блока (вычисляется из всех включённых в блок данных)
+                </p>
+                <ul>
+                  <li>version - версия блока</li>
+                  <li>height - высота блока</li>
+                  <li>previous - предыдущий хэш блока</li>
+                  <li>forged - нформация о форжинге (reward, fee, amount, total)</li>
+                  <li>payload - полезная нагрузка, список хэшей транзакций</li>
+                  <li>generator - делегат подписавший блок (username, address, publicKey)</li>
+                  <li>signature - подпись делегата подписавшего блок</li>
+                  <li>transactions - число транзакций в блоке</li>
+                  <li>timestamp - время блока</li>
+                </ul>
+                <p class="mt-20">
+                  <a class="text-primary" target="_blank" href="https://node0.smartholdem.io/api/blocks/d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0">
+                    <i class="fa fa-link"></i>  Смотреть блок в обозревателе
+                  </a>
+                </p>
+
+              </div>
 
               <div class="postbox__details-content-2 pb-120">
                 <h3>Как это работает на примере лотереи</h3>
-                <p>Придумаем простые правила лотереи: номера билетов от 0 до 99, номер билета можно приобрести 1 раз,
-                  розыгрыш происходит каждые 2880 блоков</p>
-                <p>До начала розыгрыша лотереи, Дарья приобрела билет с номером <span class="badge text-info">14</span>,
-                  Василий приобрел билет с номером <span class="badge text-info">21</span></p>
-                <p>Каждый участник лотереи совершил платежную транзакцию в блокчейне SmartHoldem с номером билета в
+                <p>Придумаем простые правила лотереи: номера билетов от 0 до 99, розыгрыш происходит каждые 2880 блоков, победителем является игрок угадавший случайный номер билета.</p>
+                <p>До начала розыгрыша лотереи, Дарья приобрела билет за <strong>STH</strong> с номером <span class="product__badge-item bg-primary">14</span>,
+                  Василий приобрёл билет с номером <span class="product__badge-item bg-primary">21</span></p>
+                <p>Каждый участник лотереи совершил транзакцию в блокчейне SmartHoldem с номером билета в
                   примечании, подписанную уникальной крипто-подписью.</p>
                 <p>Транзакции добавлены в блок, блок получил уникальный хэш состоящий из транзакций, хэша предыдущего
                   блока и других данных.</p>
-                <p>Каждый 8 секунд создается новый уникальный блок. Пример хэша блока: <a class="text-primary"
+                <p>Каждый 8 секунд делегатами создаётся новый блок. Пример хэша блока: <a class="text-primary"
                                                                                           href="https://explorer.smartholdem.io/#/block/bd082c731d2736db20bf4c1851cf2000a5d43363ba0b177b92db695d960fbda8">bd082c73...960fbda8</a>
                 </p>
                 <p>Розыгрыш назначен через 2880 блоков.</p>
-                <p>К примеру блок на котором должен состояться розыгрыш лотереи <a class="text-primary" target="_blank"
+                <p>К примеру достигнут блок на котором должен состояться розыгрыш лотереи <a class="text-primary" target="_blank"
                                                                                    href="https://explorer.smartholdem.io/#/block/d2c6f1abc68cbd56aa809a5dc8565237cf0d21aa9537a475526d1867cae17f0e">d2c6f1ab...cae17f0e</a>
                 </p>
-                <p>Нам необходимо вычислить выигрышный номер на основе 16-ричного хэша блока</p>
-                <p>Т.к. для нас достаточно значений от 0 до 99, возьмем из хэша блока крайние значения:
-                  <br/>0xF,0x0,0xE и преобразуем каждое в в десятичную систему исчисления 0xf="15" + 0x0 = "0", 0xe =
-                  "14" = 150<span class="text-danger">14</span>
-                  и получим выигрышное число = 14</p>
+                <p>Нам необходимо вычислить выигрышный номер в десятичной системе исчисления (DEC) на основе 16-ричного (HEX) хэша блока</p>
+                <p>Т.к. для нас достаточны от 00 до 99, возьмём из хэша блока крайние значения:</p>
+                <ul>
+                  <li>Block Hash: d2c6f1abc68cbd56aa809a5dc8565237cf0d21aa9537<span class="text-success font-bold">a475526d1867cae17f0e</span></li>
+                  <li>HEX 10 байт справа: &nbsp;<span class="product__badge-item">a4</span>
+                    &nbsp;<span class="product__badge-item">75</span>
+                    &nbsp;<span class="product__badge-item">52</span>
+                    &nbsp;<span class="product__badge-item">6d</span>
+                    &nbsp;<span class="product__badge-item">18</span>
+                    &nbsp;<span class="product__badge-item">67</span>
+                    &nbsp;<span class="product__badge-item">ca</span>
+                    &nbsp;<span class="product__badge-item">e1</span>
+                    &nbsp;<span class="product__badge-item">7f</span>
+                    &nbsp;<span class="product__badge-item">0e</span></li>
+                  <li>Преобразуем в байты Uint8Array: 164,117,82,109,24,103,202,225,127,14</li>
+                  <li>Числовой ряд: 164117821092410320222512714</li>
+                  <li>Номер выигрышного билета: <span class="badge product__badge-item text-info">14</span></li>
+                </ul>
+
                 <p>В этом случает победитель лотереи Дарья.</p>
-                <p>Предположим у Василия машина времени и он знает выигрышное число 14, возвращается в прошлое и первым
-                  покупает билет.</p>
-                <p>Дарья покупает другой билет, т.к. по нашим правилам номер уникален и имеет 1 владельца.</p>
-
-
+                <p>Предположим у Василия машина времени и он знает выигрышное число 14, возвращается в прошлое и приобретает билет с номером 14.</p>
                 <div class="postbox__quote postbox__quote-style-2">
                   <blockquote>
                     <div class="postbox__quote-icon">
@@ -142,21 +223,24 @@
                 <div class="postbox__features postbox__features-2">
                   <ul>
                     <li>Полную прозрачность в реальном времени</li>
+                    <li>Непредсказуемую энтропию для seed</li>
                     <li>Настоящее случайное число</li>
-                    <li>Каждые 8 секунд создаются уникальные случайные числа</li>
-                    <li>Очень длинную поледовательность чисел</li>
+                    <li>Каждые 8 секунд создаются случайные числа</li>
+                    <li>Длинную поледовательность чисел</li>
                     <li>Защиту от путешественников во времени</li>
-                    <li>Пользователи и заверители блоков создают дополнительный фактор случайности</li>
+                    <li>Пользователи и заверители блоков создают энтропию</li>
                     <li>Легко управляемые правила работы с числами</li>
                     <li>Вы можете использовать RNG API для своих идей без ограничений</li>
-                    <li>Широкий набор вариантов использования (подписчики, лотереи, призы итд)</li>
+                    <li>Широкий набор вариантов использования (розыгрыши, лотереи, призы, события)</li>
                   </ul>
                 </div>
 
                 <div class="row">
                   <div class="col-xl-12">
                     <div class="postbox__img-2 m-img mt-45 mb-70">
-                      <a target="_blank" :href="'https://www.pinterest.com/pin/create/button/?url=https://smartholdem.io/rng'"><img src="~/assets/img/blog/loto.jpg" alt="" class="rounded-3"></a>
+                      <a target="_blank"
+                         :href="'https://www.pinterest.com/pin/create/button/?url=https://smartholdem.io/rng'"><img
+                          src="~/assets/img/blog/loto.jpg" alt="" class="rounded-3"></a>
                     </div>
                   </div>
                 </div>
@@ -164,17 +248,13 @@
                 <p>В процессе ожидания разыгрываемого блока другие пользователи совершают свои случайные транзакции не
                   связанные с лотереей, но влияя на конечный хэш дерева Меркла.</p>
                 <p>Возможно усложнить алгоритм к примеру конкатенацией имени делегата подписавшего блок (каждый раунд
-                  делегаты назначаются pRNG) + хэш блока, получая из них новый хэш. Вы сами создаёте правила генерации
-                  чисел.</p>
-                <p>Если нам необходимо получить диапазон чисел к примеру от 0 до 51, тогда мы возьмем последние 2 знака
-                  из преобразованного хэша, мы знаем, последние 2 знака в конечном виде могут принимать значения от 0 до
-                  99</p>
-                <p>а в результате получаем число > 51, например 92, мы просто используем разность с условием, т.е.
-                  результат 92 - 51 = 41 </p>
-
-                <p><i>На данный момент значения по умолчанию: 0..9, 0..99, 0..999 итд</i></p>
+                  делегаты назначаются crypto random) + хэш блока, получая из них новый хэш. Вы сами создаёте правила генерации чисел, взял за энтропию блокчейн SmartHoldem</p>
+                <p>Добавить crypto.randomInt, crypto.randomUUID, HMAC, Lamport signatures, функции хэширования, ECDH, Scrypt - нет ограничений для ваших идей.</p>
+                <p><i>На данный момент десятичные значения по умолчанию: 0..9, 0..99, 0..999 итд</i></p>
+                <p>Блокчейн-энтропию возможно использовать в качестве стартового сида для генерации числового ряда</p>
                 <p>
-                  <a target="_blank" href="https://wiki.smartholdem.io/ru/api/rng" class="btn btn-outline-dark text-uppercase"><i
+                  <a target="_blank" href="https://wiki.smartholdem.io/ru/api/rng"
+                     class="btn btn-outline-dark text-uppercase"><i
                       class="fa fa-dice-six"></i> Перейти к RNG API</a>
                 </p>
 
@@ -191,10 +271,14 @@
                     </div>
                     <div class="col-xl-5 col-lg-5">
                       <div class="postbox__share postbox__share-2 text-lg-end">
-                        <span>{{$t('share')}}</span>
-                        <a target="_blank" href="https://vk.com/share.php?url=https://smartholdem.io/ru/rng/"><i class="fab fa-vk"></i></a>
-                        <a target="_blank" :href="'https://twitter.com/share?url=https://smartholdem.io/rng/&via=smartholdem&text='+$t('meta.rng')"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/rng/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <span>{{ $t('share') }}</span>
+                        <a target="_blank" href="https://vk.com/share.php?url=https://smartholdem.io/ru/rng/"><i
+                            class="fab fa-vk"></i></a>
+                        <a target="_blank"
+                           :href="'https://twitter.com/share?url=https://smartholdem.io/rng/&via=smartholdem&text='+$t('meta.rng')"><i
+                            class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/rng/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
                       </div>
                     </div>
                   </div>
