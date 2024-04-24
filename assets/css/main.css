@@ -53149,7 +53149,10 @@ blockquote cite::before {
 
 
 
-
+.link-hover:hover {
+    color: #0b5ed7 !important;
+    text-decoration-color: #0b5ed7 !important;
+}
 
 .font-bold {
     font-weight: bold;
