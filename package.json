@@ -16,6 +16,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
     "@yeger/vue-masonry-wall": "^3.4.3",
+    "axios": "^1.6.8",
     "bootstrap": "^5.3.2",
     "parallax-js": "^3.1.0",
     "pinia": "^2.0.30",
