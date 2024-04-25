@@ -94,7 +94,8 @@
           </div>
         </div>
         <div class="col-lg-8 order-first order-lg-last">
-          <div class="services__details-wrapper">
+
+          <div v-show="$i18n.locale === 'ru'" class="services__details-wrapper">
             <h3 class="services__details-title">Мы очень рады видеть вас в нашем растущем сообществе!</h3>
             <p>
               Мы стремимся трансформировать игровую индустрию, предоставляя геймерам по всему миру инструменты и ресурсы
@@ -212,6 +213,124 @@
 
 
           </div>
+
+          <div v-show="$i18n.locale !== 'ru'" class="services__details-wrapper">
+            <h3 class="services__details-title">We are thrilled to have you join our growing community!</h3>
+            <p>
+              We aim to transform the gaming industry by providing gamers worldwide with the tools and resources to
+              build the most extensive independent gaming ecosystem.
+            </p>
+
+            <p>After eight years of researching, developing, testing, and analyzing over 40 blockchains, we have
+              designed a next-gen blockchain ecosystem that brings gamers and developers together to reshape the gaming
+              industry's future.</p>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">The power of community</h3>
+              <p>
+                SmartHoldem is not controlled by any single entity but is managed by a community of digital asset
+                owners. If you have more than 1 STH, you have voting rights on the network! Read more (link About
+                delegates)
+              </p>
+              <p>
+                You can use STH, SmartHoldem's native coin, to play Web3 games, fund DeFi decentralized applications, stake for rewards, and more.
+              </p>
+            </div>
+
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Airdrop</h3>
+              <p>A welcome bonus from the SmartHoldem dev team for new community members will help you quickly get
+                acquainted with the platform ecosystem.</p>
+              <p>How to get SmartHoldem STH completely free:</p>
+              <ul>
+                <li>Join the official SmartHoldem group https://t.me/smartholdem</li>
+                <li>Create a SmartHoldem wallet on the platform website: https://wallet.smartholdem.io/</li>
+                <li>Write in chat: givememoney+public address of your wallet (starts with S)</li>
+              </ul>
+              <p>
+                STH has been sent to your SmartHoldem wallet! Check your balance! Track transactions in the <a
+                  target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io">Block Explorer</a>
+                (https://blockexplorer.smartholdem.io)
+              </p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Explore the opportunities</h3>
+              <p>Join SmartHoldem and get access to decentralized applications, provably fair Web3 games, and other
+                revolutionary and exciting decentralized solutions.</p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Build your Web3 career</h3>
+              <p>
+                As a representative, you will gain valuable hands-on experience, expand your network within the Web3
+                community, and demonstrate your passion and expertise.
+              </p>
+            </div>
+
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Join a thriving ecosystem</h3>
+              <p>Access an exclusive network of blockchain innovators, developers, and enthusiasts. Connect with
+                like-minded people.</p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Contribute</h3>
+              <p>Play a key role in promoting SmartHoldem by helping to showcase its features, use cases, and benefits
+                to a global audience.</p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Become a SmartHoldem Ambassador</h3>
+              <p>As an ambassador, you will be rewarded for your dedication and hard work. You will receive exclusive
+                benefits and recognition in the community. You will also access exclusive earning opportunities and
+                rewards from games and projects in the SmartHoldem ecosystem.</p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Exclusive access</h3>
+              <p>Get access to events, announcements, game betas, and more.</p>
+            </div>
+
+            <p>
+              <strong>JOIN US HERE</strong>
+            </p>
+
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-auto text-center text-warning-emphasis">
+                <a target="_blank" href="https://bitcointalk.org/index.php?topic=2169457.0">
+                  <img src="~/assets/img/sth/about-community/btt.png" alt="bitcoin talk smartholdem"/>
+                  <br/>BitcoinTalk
+                </a>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-auto text-center text-warning-emphasis">
+                <a target="_blank" href="https://community.smartholdem.io">
+                  <img src="~/assets/img/sth/about-community/sth.png" alt="sth community"/>
+                  <br/>Community forum
+                </a>
+              </div>
+
+              <div class="col-auto  col-md-3 col-sm-6text-center text-warning-emphasis">
+                <a target="_blank" href="https://t.me/smartholdem">
+                  <img src="~/assets/img/sth/about-community/tg.png" alt="telegram smartholdem"/>
+                  <br/>Telegram
+                </a>
+              </div>
+
+              <div class="col-auto col-md-3 col-sm-6 text-center text-warning-emphasis">
+                <a target="_blank" href="https://twitter.com/smartholdem">
+                  <img src="~/assets/img/sth/about-community/tw.png" alt="twitter x smartholdem"/>
+                  <br/>X (Twitter)
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
         </div>
       </div>
     </div>
