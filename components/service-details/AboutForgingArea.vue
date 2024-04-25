@@ -110,7 +110,7 @@
             </p>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-community/1.png" alt="community 1"/>
+              <img src="~/assets/img/sth/about-forging/1.png" alt="community 1"/>
             </div>
 
             <p>
@@ -118,7 +118,7 @@
               право участвовать в процессах принятия решений, которые определяют, как будет развиваться сеть.
             </p>
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-community/2.png" alt="community 2">
+              <img src="~/assets/img/sth/about-forging/2.png" alt="community 2">
             </div>
 
 
@@ -214,7 +214,7 @@
             </div>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-community/3.png" alt="delegates vote 3">
+              <img src="~/assets/img/sth/about-forging/3.png" alt="delegates vote 3">
             </div>
 
             <div class="services__details-text mb-25">

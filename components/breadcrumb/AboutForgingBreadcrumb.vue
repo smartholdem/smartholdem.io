@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import bg from '~/assets/img/sth/about-community/header.png';
+import bg from '~/assets/img/sth/about-forging/header.png';
 
 export default {
   data () {
