@@ -138,6 +138,13 @@
             </div>
 
             <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Мы можем многое сделать вместе. </h3>
+              <p>Чем бы вы ни увлекались — управление сообществом, создание контента, социальные сети, мероприятия,
+                техническая поддержка или что-то еще — экосистема нуждается в вас.</p>
+            </div>
+
+
+            <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Исследуйте возможности </h3>
               <p>Присоединяйтесь с SmartHoldem и получите доступ к децентрализованным приложениям, доказуемо - честным
                 Web3 играм, и к другим революционным и захватывающим децентрализованным решениям, которые SmartHoldem
@@ -233,7 +240,8 @@
                 delegates)
               </p>
               <p>
-                You can use STH, SmartHoldem's native coin, to play Web3 games, fund DeFi decentralized applications, stake for rewards, and more.
+                You can use STH, SmartHoldem's native coin, to play Web3 games, fund DeFi decentralized applications,
+                stake for rewards, and more.
               </p>
             </div>
 
@@ -253,6 +261,12 @@
                   target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io">Block Explorer</a>
                 (https://blockexplorer.smartholdem.io)
               </p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">We can do so much together.</h3>
+              <p>Whatever your passion is — community management, content creation, social media, events, tech support,
+                or anything else — the ecosystem needs you.</p>
             </div>
 
             <div class="services__details-text mb-25">
@@ -314,7 +328,11 @@
               </div>
 
               <div class="col-auto  col-md-3 col-sm-6text-center text-warning-emphasis">
-                <a target="_blank" href="https://t.me/smartholdem">
+                <a v-show="$i18n.locale === 'ru'" target="_blank" href="https://t.me/smartholdem">
+                  <img src="~/assets/img/sth/about-community/tg.png" alt="telegram smartholdem"/>
+                  <br/>Telegram
+                </a>
+                <a v-show="$i18n.locale !== 'ru'" target="_blank" href="https://t.me/smartholdem_english">
                   <img src="~/assets/img/sth/about-community/tg.png" alt="telegram smartholdem"/>
                   <br/>Telegram
                 </a>

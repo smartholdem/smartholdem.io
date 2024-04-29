@@ -160,7 +160,7 @@
                 <h3>Структура блока SmartHoldem</h3>
                 <p>
                   <span class="product__badge-item">id</span> - хэш текущего блока (вычисляется из всех включённых в
-                  блок данных)
+                  блоки данных)
                 </p>
                 <ul>
                   <li>version - версия блока</li>
@@ -196,6 +196,17 @@
                 <p>До начала розыгрыша лотереи, Дарья приобрела билет за <strong>STH</strong> с номером <span
                     class="product__badge-item bg-primary">14</span>,
                   Василий приобрёл билет с номером <span class="product__badge-item bg-primary">21</span></p>
+
+
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="postbox__img-2 m-img mt-45 mb-20">
+                      <img
+                          src="~/assets/img/sth/lotto/0.png" alt="true crypto rng smartholdem" class="rounded-3">
+                    </div>
+                  </div>
+                </div>
+
                 <p>Каждый участник лотереи совершил транзакцию в блокчейне SmartHoldem с номером билета в
                   примечании, подписанную уникальной крипто-подписью.</p>
                 <p>Транзакции добавлены в блок, блок получил уникальный хэш состоящий из транзакций, хэша предыдущего
@@ -225,7 +236,7 @@
                     &nbsp;<span class="product__badge-item">7f</span>
                     &nbsp;<span class="product__badge-item">0e</span></li>
                   <li>Преобразуем в байты Uint8Array: 164,117,82,109,24,103,202,225,127,14</li>
-                  <li>Числовой ряд: 164117821092410320222512714</li>
+                  <li>Объединим числовой ряд: 164117821092410320222512714</li>
                   <li>Номер выигрышного билета: <span class="badge product__badge-item text-info">14</span></li>
                 </ul>
 
