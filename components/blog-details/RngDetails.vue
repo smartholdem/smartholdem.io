@@ -179,9 +179,7 @@
                     <i class="fa fa-link"></i> Смотреть блок в обозревателе
                   </a>
                 </p>
-
               </div>
-
               <div class="postbox__details-content-2 pb-60">
                 <h3 class="mb-0">Как это работает на примере лотереи</h3>
                 <div class="row">
@@ -196,8 +194,6 @@
                 <p>До начала розыгрыша лотереи, Дарья приобрела билет за <strong>STH</strong> с номером <span
                     class="product__badge-item bg-primary">14</span>,
                   Василий приобрёл билет с номером <span class="product__badge-item bg-primary">21</span></p>
-
-
                 <div class="row">
                   <div class="col-xl-12">
                     <div class="postbox__img-2 m-img mt-45 mb-20">
@@ -206,7 +202,6 @@
                     </div>
                   </div>
                 </div>
-
                 <p>Каждый участник лотереи совершил транзакцию в блокчейне SmartHoldem с номером билета в
                   примечании, подписанную уникальной крипто-подписью.</p>
                 <p>Транзакции добавлены в блок, блок получил уникальный хэш состоящий из транзакций, хэша предыдущего
@@ -279,7 +274,7 @@
                   <div class="col-xl-12">
                     <div class="postbox__img-2 m-img mt-45 mb-20">
                       <img
-                          src="~/assets/img/sth/lotto/1.png" alt="" class="rounded-3">
+                          src="~/assets/img/sth/lotto/1.png" alt="SmartHoldem blockchain lottery" class="rounded-3">
                     </div>
                   </div>
                 </div>

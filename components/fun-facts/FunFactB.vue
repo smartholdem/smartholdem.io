@@ -26,16 +26,25 @@
             </div>
           </div>
         </div>
+
         <div class="col-xxl-4 col-lg-4 col-md-6">
-          <div class="fact__banner fact__banner-overlay p-relative z-index-1" data-sal="slide-down" data-sal-delay="170" data-sal-duration="1000">
-            <div class="fact__banner-bg include-bg" :style="{ backgroundImage: `url(${fact_bg})` }"></div>
-            <div class="fact__banner-content">
+
+          <div class="fact__item white-bg d-flex align-items-center" data-sal="slide-down" data-sal-delay="150" data-sal-duration="1000">
+            <div class="fact__icon">
               <nuxt-link :to="localePath('/tokenomics')">
-              <h5>{{$t('ffb')}}</h5>
+              <img src="~/assets/img/sth/tokenomics.png" alt="smartholdem platform tokenomics">
+              </nuxt-link>
+            </div>
+            <div class="fact__content ml-15">
+              <nuxt-link :to="localePath('/tokenomics')">
+              <h4>{{$t('ffb')}}</h4>
               <p>{{$t('ffb_text')}}</p>
               </nuxt-link>
             </div>
           </div>
+
+
+
         </div>
       </div>
     </div>
