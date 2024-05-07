@@ -46,7 +46,7 @@
                     </a>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/about-wallet')" class="">
+                    <a href="#tkn-post" class="">
                       <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.4"
@@ -62,15 +62,15 @@
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      Pin Code
+                      {{$t('tkn_post')}}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
                       </svg>
-                    </nuxt-link>
+                    </a>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/about-wallet')" class="">
+                    <a href="#tkn3" class="">
                       <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.4"
@@ -81,12 +81,12 @@
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      Total Security
+                      {{$t('tkn_title3')}}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
                       </svg>
-                    </nuxt-link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -170,14 +170,14 @@
               только общий объем поставок достигнет 150 миллионов STH, в блокчейне DPoS активируется протокол сжигания
               50% комиссий.
             </p>
-            <div class="services__details-thumb m-img">
+            <div id="tkn-post" class="services__details-thumb m-img">
               <img src="~/assets/img/sth/tokemomic/4.png" alt="tokemomic smartholdem pic-4">
             </div>
 
 
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">PoST блокчейн</h3>
-              <p>
+              <p id="tkn3">
                 Блокчейн SmartHoldem PoSt стартует с 0 монет. Награда за блок уменьшается вдвое каждые 2 года.
                 Предусмотрено включение алгоритма сжигания комиссий в PoSt сети.
               </p>
