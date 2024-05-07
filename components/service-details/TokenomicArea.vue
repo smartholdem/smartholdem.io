@@ -8,7 +8,7 @@
               <div class="services__widget-tab-2 tp-tab">
                 <ul>
                   <li>
-                    <nuxt-link :to="localePath('/about-wallet')" class="">
+                    <a href="#tokenomics-supply" class="">
                       <span>
                         <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -22,15 +22,15 @@
                                 stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      Easy Access
+                      {{$t('tkn_title1')}}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
                       </svg>
-                    </nuxt-link>
+                    </a>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/about-wallet')" class="">
+                    <a href="#tkn-deflation" class="">
                       <span>
                         <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M13.2222 1L1 15.6667H12L10.7778 25.4444L23 10.7778H12L13.2222 1Z"
@@ -38,12 +38,12 @@
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      Smart by Design
+                      {{$t('tkn_title2')}}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
                       </svg>
-                    </nuxt-link>
+                    </a>
                   </li>
                   <li>
                     <nuxt-link :to="localePath('/about-wallet')" class="">
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div v-show="$i18n.locale === 'ru'" class="col-lg-8 order-first order-lg-last">
-          <div class="services__details-wrapper">
+          <div id="tokenomics-supply" class="services__details-wrapper">
             <h3 class="services__details-title">Предложение сокращается, ценность растёт</h3>
             <p>
               STH - это собственная служебная монета блокчейна SmartHoldem.
@@ -132,7 +132,7 @@
             <div class="services__details-thumb m-img">
               <img src="~/assets/img/sth/tokemomic/2.png" alt="tokemomic smartholdem pic 2">
             </div>
-            <p>
+            <p id="tkn-deflation" >
               На момент генезис блока было выпущено фиксированное количество монет - 240 миллионов SmartHoldem STH.
               Чтобы стимулировать делегатов-валидаторов, в блокчейне SmartHoldem была реализована модель c ограниченной
               эмиссией. Согласно этой модели к 2041 году планировалось нафоржить 256 425 000 монет SmartHoldem STH.
