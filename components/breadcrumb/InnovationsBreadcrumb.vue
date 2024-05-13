@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import bg from '~/assets/img/sth/web3/cover-web3-games.png';
+import bg from '~/assets/img/sth/innovation/cover-innovation.png';
 
 export default {
   data () {
