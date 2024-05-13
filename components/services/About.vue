@@ -106,7 +106,7 @@ export default {
           icon: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAACcUlEQVRoge2aT0jUURDHP7bWhgmhkl3yYkTQIYTo0CmROngQukS0RAQdtFNUIFGHrhpepCICOxTlQZCiLh2DrtFV8BJkGCJigYhuf4yBEX6GLuub2d8+431O/h6+mff9vdl582aX/40Gi561UlMJuALsdnwvS8C1hvHlryGTG43ODwOngT1GO1l+AK1AkKBdRuerslFGG5vxK3SidYeyLABDKnI7L6oMHNPQbbYuwlvQSODcHuCChyBryGWxJBi3dXgKioIkqAIFYJ/7CreJp6AO4CFwMGDuH+CnZryy5SjwzHJSLVwGDgF3gY+60GqYAm4ARRU0E7oIT0HojksKfgYMAm+rnPcNmPBagDdisxOYBAZqYD83QfMqAq3tJAQfa/XQ7uinIp6CvgOXgNvAcmZcPhuPgOOOvrbEu1KQD/QwcBGY03HZrT7gKXDK0d+meAsq6N9vgJPAtD4XtQB9pWI9708bqGWlIKn3KPBen5v0jHqpYdlWC6d5lD4Sbg+AFX2WnbynlfkRb2d5CFrSM6kfmNUxCc2SJosTns7yKk5ld54DZzKiJFmcBV4D570O+byr7Sk9dD9lxqRUegLcAfZaHdTj+rCqGfBFpghtAW4CY9aKvV73ISlarwLXtcsj7Ad6gXcWw/W84JU1+50DvuhYq1YUXaFGY7ixyjk1qqGIhmE51FgsV/DZzDllIhZBjda29DqpSRI7SVDsJEGxkwTFThIUO0lQ7CRBsZMExU4SVAHpBfw2zHXB8yvJA8B9/Z6oUMX/ryO9hG5t5pvxFCR9tVuO9oKwhlzRq7nxD8Ev2rpDn4EPNfgB4KKjvR0M8Bc/yFw4dFbIdwAAAABJRU5ErkJggg==`,
           title: this.$t('arch_t6'),
           subtitle: this.$t('arch_text6'),
-          page: "/about-wallet"
+          page: "/web3-games"
         }
       ]
     }

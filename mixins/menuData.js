@@ -34,14 +34,23 @@ export default {
             link: "https://explorer.smartholdem.io/",
 
           },
+            /*
           {
             id: 4,
             hasDropdown: false,
             title: "RNG",
             link: "/ru/rng",
           },
+
+             */
           {
-            id: 4,
+            id: 5,
+            hasDropdown: false,
+            title: "Токеномика",
+            link: "/ru/tokenomics",
+          },
+          {
+            id: 6,
             hasDropdown: false,
             title: "Документация",
             link: "https://wiki.smartholdem.io/ru/home",
@@ -75,11 +84,17 @@ export default {
           {
             id: 3,
             hasDropdown: false,
-            title: "Block explorer",
+            title: "Explorer",
             link: "https://explorer.smartholdem.io/",
           },
           {
             id: 4,
+            hasDropdown: false,
+            title: "Tokenomics",
+            link: "/tokenomics",
+          },
+          {
+            id: 5,
             hasDropdown: false,
             title: "Documentation",
             link: "https://wiki.smartholdem.io",
