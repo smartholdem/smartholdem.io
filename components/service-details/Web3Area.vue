@@ -22,7 +22,7 @@
                                 stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      {{ $t('game_platform') }}
+                      {{ $t('web3_1') }}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -30,7 +30,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#tkn-deflation" class="">
+                    <a href="#web3-control" class="">
                       <span>
                         <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M13.2222 1L1 15.6667H12L10.7778 25.4444L23 10.7778H12L13.2222 1Z"
