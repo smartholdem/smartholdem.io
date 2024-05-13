@@ -8,7 +8,7 @@
               <div class="services__widget-tab-2 tp-tab">
                 <ul>
                   <li>
-                    <a href="#tokenomics-supply" class="">
+                    <a href="#web3-control" class="">
                       <span>
                         <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -30,15 +30,21 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#web3-control" class="">
+                    <a href="#web3-fair" class="">
                       <span>
-                        <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M13.2222 1L1 15.6667H12L10.7778 25.4444L23 10.7778H12L13.2222 1Z"
-                                stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M21 7V19C21 23.8 19.75 25 14.75 25H7.25C2.25 25 1 23.8 1 19V7C1 2.2 2.25 1 7.25 1H14.75C19.75 1 21 2.2 21 7Z"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path opacity="0.4" d="M13.5117 5.20044H8.51172" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"/>
+                          <path opacity="0.4"
+                                d="M10.9961 21.5196C12.0661 21.5196 12.9336 20.6868 12.9336 19.6596C12.9336 18.6323 12.0661 17.7996 10.9961 17.7996C9.92604 17.7996 9.05859 18.6323 9.05859 19.6596C9.05859 20.6868 9.92604 21.5196 10.9961 21.5196Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      {{ $t('tkn_title2') }}
+                      {{ $t('web3_fair') }}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -46,7 +52,23 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#tkn-post" class="">
+                    <a href="#web3-2" class="">
+                      <span>
+                        <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.2222 1L1 15.6667H12L10.7778 25.4444L23 10.7778H12L13.2222 1Z"
+                                stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      SmartHoldem TRNG
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#web3-3" class="">
                       <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.4"
@@ -62,7 +84,7 @@
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      {{ $t('tkn_post') }}
+                      {{ $t('web3_3') }}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -70,7 +92,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#tkn3" class="">
+                    <a href="#web3-partner" class="">
                       <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.4"
@@ -81,7 +103,26 @@
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      {{ $t('tkn_title3') }}
+                      {{ $t('web3_4') }}
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#web3-5" class="">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.4"
+                                d="M19.5202 11.652C22.4709 11.652 23.6966 10.5171 22.6071 6.79468C21.8694 4.28656 19.7131 2.13026 17.205 1.39258C13.4826 0.303087 12.3477 1.52877 12.3477 4.47949V7.74799C12.3477 10.5171 13.4825 11.652 15.7523 11.652H19.5202Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path
+                              d="M21.4297 14.7162C20.3742 19.9708 15.3353 23.784 9.60407 22.8534C5.30283 22.1611 1.8414 18.6997 1.13777 14.3985C0.218507 8.68995 4.00905 3.65103 9.24091 2.58423"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      {{ $t('web3_5') }}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -94,8 +135,8 @@
           </div>
         </div>
         <div v-show="$i18n.locale === 'ru'" class="col-lg-8 order-first order-lg-last">
-          <div id="web3-control" class="services__details-wrapper">
-            <h3 class="services__details-title">Получите полный контроль над своей игрой</h3>
+          <div class="services__details-wrapper">
+            <h3 class="services__details-text-title">Получите полный контроль над своей игрой</h3>
             <h4>
               Вперёд в будущее!
             </h4>
@@ -109,12 +150,12 @@
               играми будущего. Такой принцип игр бросает вызов устаревшим игровым механикам и разрушает географические
               барьеры между игроками.
             </p>
-            <p>
+            <p id="web3-fair">
               Внедрение принципа доказуемо честных игр SmartHoldem запускает процесс перехода цифровой игровой и
               азартной индустрии к более честным принципам взаимодействия с огромной аудиторией игроков по всему миру.
             </p>
 
-            <h3 class="services__details-title">Доказуемо честные Web3 игры</h3>
+            <h3 class="services__details-text-title">Доказуемо честные Web3 игры</h3>
             <h4>
               Блокчейн игры платформы SmartHoldem гарантируют:
             </h4>
@@ -132,12 +173,12 @@
               <li>Полное владение игроками своей цифровой собственностью</li>
             </ul>
 
-            <p class="mt-10">
+            <p id="web3-2" class="mt-10">
               Доказуемо-честные блокейн игры SmartHoldem предоставляют более захватывающий и приятный игровой опыт и
               дают игрокам больше власти, чем когда-либо прежде.
             </p>
 
-            <h3 class="services__details-title">SmartHoldem TRNG</h3>
+            <h3 class="services__details-text-title">SmartHoldem TRNG</h3>
             <p>
               Блокчейн повышает эффективность генераторов случайных чисел, обеспечивая 100% случайные, заслуживающие
               доверия и справедливые результаты в Web3 играх, которые можно проверить с помощью криптографических
@@ -149,14 +190,14 @@
             </p>
 
 
-            <div class="services__details-thumb m-img">
+            <div  class="services__details-thumb m-img">
               <img src="~/assets/img/sth/web3/TRNG_games.png" alt="True RNG SmartHoldem Games"
                    title="True RNG SmartHoldem Game">
             </div>
 
           </div>
 
-          <div id="web3-2" class="services__details-text mb-25">
+          <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Подход, ориентированный на игрока</h3>
             <p>
               Игровой процесс индивидуален, и у каждого игрока есть свои способы получения удовольствия от игры.
@@ -166,16 +207,16 @@
               защищены от несанкционированного доступа, в них отсутствует контролирующий сервер с заранее известными
               результатами, и никто не может подтасовать или повлиять на выигрышный шанс.
             </p>
-            <p>
+            <p id="web3-3">
               Алгоритм доказательства честных игр SmartHoldem гарантирует равные условия игры для всех, и самое главное
               - результат был и будет абсолютно случайным и свободным от вмешательства человека, центрального органа
               власти или третьей стороны.
             </p>
           </div>
 
-          <div id="web3-3" class="services__details-text mb-25">
+          <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Web3 экосистема</h3>
-            <p id="web3-3">
+            <p>
               SmartHoldem представляет глобальную Web3 экосистему, основанную на собственной криптовалюте.
               <nuxt-link :to="localePath('/tokenomics')" class="text-primary">Узнайте больше о SmartHoldem</nuxt-link>
             </p>
@@ -206,7 +247,7 @@
               Вы можете использовать свой крипто-адрес как единый игровой адрес для входа в любую игру на платформе
               SmartHoldem.
             </h4>
-            <ul>
+            <ul id="web3-partner">
               <li>
                 Блокчейн SmartHoldem записывает все игровые транзакции, позволяя игрокам проверять результаты раздач,
                 лотерей, розыгрышей и много другого.
@@ -221,7 +262,7 @@
             </ul>
           </div>
 
-          <div id="web3-partner" class="services__details-thumb m-img">
+          <div class="services__details-thumb m-img">
             <img src="~/assets/img/sth/web3/Affiliate_ru.png" alt="web3 blockchain affiliate partner program"
                  title="in-chain partner program">
           </div>
@@ -247,13 +288,13 @@
               с другими игроками. Все платежи и регистрации фиксируются в блокчейне, обеспечивая 100% учёт всех
               рефералов и платежей.
             </p>
-            <p>
+            <p id="web3-5">
               Присоединяйтесь к нашей партнерской программе, чтобы получать неограниченные мгновенные выплаты, отчеты в
               реальном времени, децентрализованный блокчейн-кошелек и надежный сервис.
             </p>
           </div>
 
-          <div id="web3-5" class="services__details-text mb-25">
+          <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Откройте новые горизонты с играми Web3</h3>
             <p>
               Геймеры Web3 — это растущее сообщество людей, заинтересованных в доказуемо-честных блокчейн играх, которые
