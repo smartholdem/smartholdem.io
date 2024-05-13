@@ -9,24 +9,32 @@
                 <a href="#">{{ $t('innovations') }}</a>
               </div>
               <h3 class="postbox__title">Random Number Generator</h3>
-              <h4 class="badge product__badge-item text-primary">Real time generator [0 - 255]</h4>
-              <div style="min-height: 70px; overflow: hidden;">
+              <h4 class="badge product__badge-item text-primary">Real time generator [0 - 255] 36 Random numbers per block</h4>
+              <div style="min-height: 120px; overflow: hidden;">
                 <h4 v-if="block">
                   <a target="_blank"
                      class="text-white link-hover"
                      :href="'https://explorer.smartholdem.io/#/block/' + block.id">
-                    {{ block.id }}
+                    {{ block.id }}..
                   </a>
                 </h4>
                 <span v-for="(item, i) in hexBytesArray" :key="i+item"
-                      class="product__badge-item mr-5 border border-primary">
+                      :class="i < 1 ? 'product__badge-item mr-5 border border-warning' : 'product__badge-item mr-5 border border-primary'">
                {{ item }}
               </span>
+                <p>
+                  <span class="badge" title="1 to 36 values">2x36 ({{hexBytesArray[0]}} % 35 + 1)</span>
+                  <span v-for="(item, i) in lotto" :key="'lotto'+item"
+                        class="product__badge-item mr-5 border border-success">
+                        {{ item+1 }}
+                  </span>
+                </p>
               </div>
 
 
               <div class="postbox__thumb postbox__thumb-overlay m-img mb-55"
                    :style="{ backgroundImage: `url(${thumb_bg})` }"></div>
+              <!--
               <div class="postbox__meta-wrapper d-flex align-items-center justify-content-center flex-wrap">
                 <div class="postbox__meta-item mb-30">
                   <div class="postbox__meta-author d-flex align-items-center">
@@ -48,22 +56,10 @@
                     <p class="postbox__meta-name">January 15, 2024</p>
                   </div>
                 </div>
-                <!--
-                <div class="postbox__meta-item mb-30">
-                  <div class="postbox__meta-content">
-                    <span class="postbox__meta-type">2 Comments</span>
-                    <p class="postbox__meta-name"><a href="#tp-blog-details-comment">Join the Conversation</a></p>
-                  </div>
-                </div>
-                <div class="postbox__meta-item mb-30">
-                  <div class="postbox__meta-content">
-                    <span class="postbox__meta-type">View</span>
-                    <p class="postbox__meta-name">12,145 views</p>
-                  </div>
-                </div>
-                -->
+
               </div>
-            </div>
+            -->
+          </div>
           </div>
         </div>
       </div>
@@ -79,7 +75,7 @@
             <div class="col-xl-8 col-lg-9 col-md-11">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Основа</h3>
-                <p>Генератор случайных чисел основан на блокчейн-энтропии SmartHoldem.</p>
+                <p>Генератор случайных чисел основан на истинно случайной блокчейн-энтропии SmartHoldem.</p>
 
                 <div class="postbox__details-content">
                   <div class="row">
@@ -93,7 +89,8 @@
                   </div>
                 </div>
                 <h3>Доказательство получения независимого случайного числа</h3>
-                <p>С помощью блокчейн-энтропии возможно получить настоящие - истинные случайные числа, независимые от времени и
+                <p>С помощью блокчейн-энтропии возможно получить настоящие - истинные случайные числа, независимые от
+                  времени и
                   знаний результата в будущем. В качестве настоящей энтропии используется блокчейн SmartHoldem.</p>
                 <p>
                   Каждые 8 секунд в BlockChain SmartHoldem происходит генерация случайно ранжированными делегатами
@@ -102,11 +99,14 @@
                   Все блоки легко проверить в
                   <a class="text-primary" target="_blank"
                      href="https://explorer.smartholdem.io/#/block/d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0">обозревателе
-                    блоков</a> и <a target="_blank" class="text-primary" href="https://hasher.smartholdem.io/#/hex-to-bytes">в Hex to Decimal Bytes Array Converter</a>.
+                    блоков</a> и <a target="_blank" class="text-primary"
+                                    href="https://hasher.smartholdem.io/#/hex-to-bytes">в Hex to Decimal Bytes Array
+                  Converter</a>.
                   <small>Просто скопируйте хэш блока в Hex to Decimal Bytes Array Converter</small>
                 </p>
                 <p>Полученный шестнадцатиричный Hash блока преобразуется в числовую десятичную последовательность.</p>
-                <p>Для расчёта текущего случайного номера из числового ряда выбираются значения с необходимым количеством знаков, наример 2 (от 00 до 99).</p>
+                <p>Для расчёта текущего случайного номера из числового ряда выбираются значения с необходимым
+                  количеством знаков, наример 2 (от 00 до 99).</p>
                 <p class="text-warning-emphasis">
                   Пример выборки случайного значения от 0 до 99:
                 </p>
@@ -132,13 +132,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-10">
-              <div class="row">
-                <div class="col-xl-12">
-                  <div class="postbox__img-2 m-img mt-45 mb-70">
-                    <img src="~/assets/img/sth/lotto/1.png" alt="" class="rounded-3">
-                  </div>
-                </div>
-              </div>
+
 
               <div class="postbox__details-content-2 pb-40">
                 <h3>Из чего состоит блокчейн-энтропия SmartHoldem</h3>
@@ -154,6 +148,14 @@
                     (регистрация делегата, отправка транзакций, сумма транзакций, время транзакций, голосование итд)
                   </li>
                 </ul>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="postbox__img-2 m-img mt-45 mb-20">
+                      <img
+                          src="~/assets/img/sth/lotto/0.png" alt="true crypto rng smartholdem" class="rounded-3">
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="postbox__details-content-2 pb-40">
@@ -179,6 +181,33 @@
                     <i class="fa fa-link"></i> Смотреть блок в обозревателе
                   </a>
                 </p>
+
+
+                <h3>Генератор истинных случайных чисел на блокчейне</h3>
+                <p>
+                  Доказуемо случайный, защищенный от несанкционированного доступа и недорогой ГСЧ (TRNG)
+                </p>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="postbox__img-2 m-img mt-45 mb-20">
+                      <img
+                          src="~/assets/img/sth/rng/true-rng.png" alt="true crypto rng smartholdem" class="rounded-3">
+                    </div>
+                  </div>
+                </div>
+                <h4>Доказуемо честный ГСЧ</h4>
+                <p>
+                  Данные блока используются в качестве входных данных для генерации каждого случайного числа, доказывая,
+                  что результат был сгенерирован честно и независимо от запрашивающей стороны.
+                </p>
+                <h4>Проверяемая случайность</h4>
+                <p>
+                  Каждый случайный результат можно проверитьс помощью криптографических доказательств.
+                </p>
+                <h4>Защита от несанкционированного доступа</h4>
+                <p>
+                  Вы и ваши пользователи получаете беспристрастную случайность, и защищены от любых скомпрометированных третьих лиц.
+                </p>
               </div>
               <div class="postbox__details-content-2 pb-60">
                 <h3 class="mb-0">Как это работает на примере лотереи</h3>
@@ -194,14 +223,15 @@
                 <p>До начала розыгрыша лотереи, Дарья приобрела билет за <strong>STH</strong> с номером <span
                     class="product__badge-item bg-primary">14</span>,
                   Василий приобрёл билет с номером <span class="product__badge-item bg-primary">21</span></p>
+
                 <div class="row">
                   <div class="col-xl-12">
-                    <div class="postbox__img-2 m-img mt-45 mb-20">
-                      <img
-                          src="~/assets/img/sth/lotto/0.png" alt="true crypto rng smartholdem" class="rounded-3">
+                    <div class="postbox__img-2 m-img mt-10 mb-20">
+                      <img src="~/assets/img/sth/lotto/1.png" alt="" class="rounded-3">
                     </div>
                   </div>
                 </div>
+
                 <p>Каждый участник лотереи совершил транзакцию в блокчейне SmartHoldem с номером билета в
                   примечании, подписанную уникальной крипто-подписью.</p>
                 <p>Транзакции добавлены в блок, блок получил уникальный хэш состоящий из транзакций, хэша предыдущего
@@ -270,26 +300,30 @@
                   </ul>
                 </div>
 
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="postbox__img-2 m-img mt-45 mb-20">
-                      <img
-                          src="~/assets/img/sth/lotto/1.png" alt="SmartHoldem blockchain lottery" class="rounded-3">
-                    </div>
-                  </div>
-                </div>
 
                 <p>В процессе ожидания разыгрываемого блока другие пользователи совершают свои случайные транзакции не
                   связанные с лотереей, но влияя на конечный хэш дерева Меркла.</p>
-                <p>Возможно усложнить алгоритм к примеру конкатенацией имени делегата подписавшего блок (каждый раунд
-                  делегаты назначаются crypto random) + хэш блока, получая из них новый хэш. Вы сами создаёте правила
-                  генерации чисел, взяв за энтропию блокчейн SmartHoldem</p>
-                <p>Добавить crypto.randomInt, crypto.randomUUID, HMAC, Lamport signatures, функции хэширования, ECDH,
-                  Scrypt - нет ограничений для ваших идей.</p>
-                <p><i>На данный момент десятичные значения по умолчанию: 0..9, 0..99, 0..999 итд до 1.15*10^77</i>
-                  или  <small class="small">115 792 089 237 316 200 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000</small>
+
+                <h3>Способы использования энтропии блокчейна SmartHoldem</h3>
+                <p>Используйте блокчейн-энтропию SmartHoldem в качестве истинно-случайного стартового сида для генерации
+                  числового ряда.</p>
+                <p>
+                  Доступны десятичные значения по умолчанию: 0..9, 0..99, 0..999 и т.д. до 1.15*10^77 или <br/>
+                  <small>115 792 089 237 316 200 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+                    000 000</small>.
                 </p>
-                <p>Блокчейн-энтропию возможно использовать в качестве стартового сида для генерации числового ряда</p>
+                <p>
+                  - Получите новый хеш. Если вы решите использовать конкатенацию имени делегата подписавшего блок
+                  (каждый раунд делегаты назначаются crypto random) + хэш блока, из них вы получите новый хэш.
+                </p>
+                <p>
+                  - Добавьте крипто функции: crypto.randomInt, crypto.randomUUID, HMAC, Lamport signatures, функции
+                  хэширования, ECDH, Scrypt.
+                </p>
+                <p>
+                  - Создайте свои правила генерации чисел, используя истинно-случайную энтропию блокчейна SmartHoldem.
+                </p>
+
                 <p>
                   <a target="_blank" href="https://wiki.smartholdem.io/ru/api/rng"
                      class="btn btn-outline-dark text-uppercase"><i
@@ -376,6 +410,7 @@ export default {
       hexBytesArray: [],
       timer: null,
       seconds: 8,
+      lotto: []
     }
   },
   methods: {
@@ -392,10 +427,17 @@ export default {
     async rngUpdate() {
       const globalBuffer = Buffer;
       this.hexBytesArray = []
+      if (this.lotto.length > 1) {
+        this.lotto = []
+      }
+
       const blockId = await this.blockId()
       let hexBytes = (await Uint8Array.from(globalBuffer.from(blockId.id.substr(-34), 'hex'))); //10 bytes
       for (let i = 0; i < hexBytes.length; i++) {
         this.hexBytesArray.push(hexBytes[i])
+        if (i < 1) {
+          this.lotto.push(hexBytes[i] % 35)
+        }
       }
     }
   },

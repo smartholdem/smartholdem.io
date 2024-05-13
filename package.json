@@ -19,6 +19,7 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.2",
     "buffer": "^6.0.3",
+    "fabric": "^5.3.0",
     "parallax-js": "^3.1.0",
     "pinia": "^2.0.30",
     "sal.js": "^0.8.5",
