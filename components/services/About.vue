@@ -97,7 +97,7 @@ export default {
           icon: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAACV0lEQVRoge3aT4iNURjH8c+dsRhKLLDxJ4uRzVgqyUaslI2N/NtIKaWYFLIxVkpNka0mZChSbCYpG2Uhf9ZKMYn8jRDSmNFb59brdjf3Pee99x2937p1z6n3Oef3Puc855znPf43GjF6ZnbOW4ob+I3pBO+mD/04hEeN8R8dG5gT2YG5WBdpox0r8Th7Z50+2BfZcAqvtONX0QdjPZQn68QZfIq0k3n9aRHvSCxoAGN4kdBmx8QOucpRC6o6taAWWhfm21iVpGcFiRX0HffRXNKHcA9beuX92EbfYReu4VuoWxbC9zDmJ+hjR6R4i69wBCdzopbgBE6H/10j1bD4jFFsx0d8xUIcwDhWzzZBTSawAc9z82pT2JFvTdxWW8qYuM+wDXfwM9QNBQ8eLqG9fygrEk1iL87m5tVgEHSuzAhYZmj9guM4GHbgU1geytfDmSc53VgrLmJHOLA1yYbkFWxO3YduLX53Q8S7latbj/PYn7Khbq7mT4Ko0VxdFs6P4VSqRrq9PXmDoyEJMhnm1Yow17LdxaLYBnqx35oK0W84HLWnw8l5D65ibYzxXh4fbgZPTYRylr7aGILFmqJGe30eeoB9uBA81R+OH4NFc4axgrKN52VcCr/FBWy8DcPvda6ucAI0NuuzALtz5RF8KGBnJiYXlyfWQ39aykUTj43YtHSTOqdQdWpBVacWVHVqQVWnFlR1akFVpxZUdWpBVacWVBKFbo20I/XVmCy39r7AswPhSkw0qa/GjCS0V4jYIVfWkC1sN9ZD2Re6hyVcAHyZcl7NXvAX03pgud8c5wcAAAAASUVORK5CYII=`,
           title: this.$t('arch_t5'),
           subtitle: this.$t('arch_text5'),
-          page: "/about-wallet"
+          page: "/innovations"
         },
         {
           id: 6,
