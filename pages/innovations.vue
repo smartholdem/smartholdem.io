@@ -10,8 +10,8 @@
 
 <script>
 import Header from "~~/layouts/headers/HeaderOne.vue";
-import Breadcrumb from '~~/components/breadcrumb/Web3Breadcrumb.vue';
-import Area from '~~/components/service-details/Web3Area.vue';
+import Breadcrumb from '~~/components/breadcrumb/InnovationsBreadcrumb.vue';
+import Area from '~~/components/service-details/InnovationsArea.vue';
 import Footer from '~~/layouts/footers/FooterTwo.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
@@ -25,7 +25,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "Web3 Games",
+      title: "Innovations",
     });
   },
 };
