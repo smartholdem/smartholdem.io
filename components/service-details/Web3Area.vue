@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div v-show="$i18n.locale === 'ru'" class="col-lg-8 order-first order-lg-last">
+        <div v-if="$i18n.locale === 'ru'" class="col-lg-8 order-first order-lg-last">
           <div class="services__details-wrapper">
             <h3 class="services__details-text-title">Получите полный контроль над своей игрой</h3>
             <h4>
@@ -190,7 +190,7 @@
             </p>
 
 
-            <div  class="services__details-thumb m-img">
+            <div class="services__details-thumb m-img">
               <img src="~/assets/img/sth/web3/TRNG_games.png" alt="True RNG SmartHoldem Games"
                    title="True RNG SmartHoldem Game">
             </div>
@@ -302,7 +302,182 @@
               как: безопасность, прозрачность, децентрализация, независимость и 100% владение игровыми предметами.
             </p>
             <p>
-              Исследуйте блокчейн инновации SmartHoldem и специализированные решения для интеграции Web3 в игровую и iGaming индустрию.
+              Исследуйте блокчейн инновации SmartHoldem и специализированные решения для интеграции Web3 в игровую и
+              iGaming индустрию.
+            </p>
+          </div>
+
+
+        </div>
+
+        <!-- SmartHoldem WEB3 English -->
+        <div v-else class="col-lg-8 order-first order-lg-last">
+          <div class="services__details-wrapper">
+            <h3 class="services__details-text-title">Take full control of your game and in-game assets</h3>
+            <h4>
+              Forward to the future!
+            </h4>
+            <p>
+              SmartHoldem is revolutionizing the gaming industry with its next-gen platform that uses blockchain
+              technology to create fair, decentralized, transparent, and immutable Web3 games.
+            </p>
+            <p>
+              At SmartHoldem, players always come first. Our top priority is to provide them with a secure and enjoyable
+              gaming experience that they can trust. Unlike traditional gaming platforms that prioritize profits over
+              players, we are committed to delivering exceptional service and maintaining the highest standards of
+              safety and fairness.
+            </p>
+            <p id="web3-fair">
+              Provably fair Web3 games offer more features than traditional games, making them the games of the future.
+              This gaming concept challenges outdated game mechanics and breaks down geographic barriers between
+              players.
+            </p>
+
+            <h3 class="services__details-text-title">Provably fair Web3 games</h3>
+            <h4>
+              Web3 blockchain games of the SmartHoldem platform guarantee:
+            </h4>
+            <ul>
+              <li>Transparency and fairness of gameplay</li>
+              <li>Decentralized game mechanics</li>
+              <li>Protection from bots</li>
+              <li>Storing game transactions and operations in a blockchain</li>
+              <li>Using a true
+                <nuxt-link :to="localePath('/rng')" class="text-primary">random number generator</nuxt-link>
+                for provable fair randomness
+              </li>
+              <li>Open source</li>
+              <li>Self-custody blockchain wallet where no one can restrict deposits or withdrawals</li>
+              <li>Authentic digital ownership</li>
+            </ul>
+
+            <p id="web3-2" class="mt-10">
+              SmartHoldem's provably fair blockchain games provide a more exciting gaming experience and give players
+              more power than ever before.
+            </p>
+
+            <h3 class="services__details-text-title">SmartHoldem TRNG</h3>
+            <p>
+              Blockchain improves the efficiency of random number generators by providing 100% random, trustworthy, and
+              fair results in Web3 games that can be verified using cryptographic proofs.
+            </p>
+            <p>
+              Even a time traveler will not know the final result of the hand.
+              <nuxt-link :to="localePath('/rng')" class="text-primary">Explore SmartHoldem TRNG</nuxt-link>
+            </p>
+
+
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/web3/TRNG_games.png" alt="True RNG SmartHoldem Games"
+                   title="True RNG SmartHoldem Game">
+            </div>
+
+          </div>
+
+          <div class="services__details-text mb-25">
+            <h3 class="services__details-text-title">Player-centric approach</h3>
+            <p>
+              The game offers a unique gameplay experience, with each player enjoying it in their own way.
+            </p>
+            <p>
+              Players always have the opportunity to check and prove that the games' results are fair. The games are
+              tamper-proof; there is no controlling server with predetermined results, and no one can rig or influence
+              the winning chance.
+            </p>
+            <p id="web3-3">
+              SmartHoldem's fair play-proof algorithm guarantees a level playing field for everyone. Most importantly,
+              the result was and will be completely random and free from human intervention, central authority, or third
+              parties.
+            </p>
+          </div>
+
+          <div class="services__details-text mb-25">
+            <h3 class="services__details-text-title">Web3 ecosystem</h3>
+            <p>
+              SmartHoldem represents a global Web3 ecosystem based on its native cryptocurrency.
+              <nuxt-link :to="localePath('/tokenomics')" class="text-primary">Explore SmartHoldem</nuxt-link>
+            </p>
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/web3/Gamers_ecosystem.png" alt="web3 gamer ecosystem">
+            </div>
+            <ul>
+              <li>
+                Players have complete control over their digital assets and private keys. SmartHoldem STH cryptocurrency
+                provides quick access to winnings, making deposits and withdrawals easier.
+              </li>
+              <li>
+                Decentralization eliminates barriers to global access.
+              </li>
+              <li>
+                SmartHoldem protects user privacy. To participate in any game on the platform, you will need to create a
+                wallet on the blockchain. This process does not require KYC or AML. When registering, the blockchain
+                will issue you a private passphrase, which you should keep in a safe place. Your passphrase is only
+                known to you and is not stored by anyone else.
+              </li>
+            </ul>
+            <h4 class="mt-10">
+              <a href="https://wallet.smartholdem.io" class="text-primary">Create a SmartHoldem wallet</a>
+            </h4>
+            <h4>
+              You can use your cryptocurrency address as a universal gaming address to access any game on the
+              SmartHoldem platform.
+            </h4>
+            <ul id="web3-partner">
+              <li>
+                The SmartHoldem blockchain records all game results, allowing players to easily verify the outcomes of
+                hands, lotteries, bets, and more.
+              </li>
+              <li>
+                Players can enjoy unique promotions and airdrops that offer additional incentives, making the gaming
+                experience more enjoyable and exciting.
+              </li>
+              <li>
+                Tracking game statistics enables players to monitor their progress, including the number of games
+                played, win rate, and levels attained.
+              </li>
+            </ul>
+          </div>
+
+          <div class="services__details-thumb m-img">
+            <img src="~/assets/img/sth/web3/Affiliate_en.png" alt="web3 blockchain affiliate partner program"
+                 title="in-chain partner program">
+          </div>
+
+          <div id="web3-4" class="services__details-text mb-25">
+            <h3 class="services__details-text-title">Affiliate Program</h3>
+            <p>
+              The world's first blockchain-based Affiliate Program has been implemented by SmartHoldem.
+            </p>
+            <p>
+              By leveraging the power of blockchain technology, we have created a program that is secure, efficient, and
+              transparent. With our Affiliate Program, you can earn rewards for promoting SmartHoldem to your network.
+              Join us now and be part of the future of affiliate marketing!
+            </p>
+            <p>
+              Your SmartHoldem address serves as your exclusive affiliate code. Whenever your friends use your referral
+              link in a game and win, you will receive 1% of their winnings, and they will get an extra 1% of their
+              earnings. This way, everyone benefits, and it's a Win-Win situation for all parties involved!
+            </p>
+            <p>
+              The SmartHoldem Affiliate Program allows you to earn rewards by sharing your referral link with other
+              players. All payments and registrations are recorded on the blockchain, ensuring 100% accounting of all
+              referrals and payments.
+            </p>
+            <p id="web3-5">
+              Join our Affiliate Program to receive unlimited instant payouts, real-time reports, a decentralized blockchain wallet, and reliable service.
+            </p>
+          </div>
+
+          <div class="services__details-text mb-25">
+            <h3 class="services__details-text-title">Discover new horizons with Web3 games</h3>
+            <p>
+              Web3 Gamers is a growing community of individuals interested in Web3 blockchain gaming that is exciting, fair, and provides superior entertainment.
+            </p>
+            <p>
+              Web3 games offer advantages over traditional games including security, transparency, decentralization, independence, and 100% digital ownership of in-game items.
+            </p>
+            <p>
+              Explore SmartHoldem blockchain innovations and specialized solutions for integrating Web3 into the gaming and iGaming industry
             </p>
           </div>
 
