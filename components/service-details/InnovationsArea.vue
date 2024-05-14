@@ -52,7 +52,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#web3-2" class="">
+                    <a href="#innovation3" class="">
                       <span>
                         <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M13.2222 1L1 15.6667H12L10.7778 25.4444L23 10.7778H12L13.2222 1Z"
@@ -60,7 +60,7 @@
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      SmartHoldem TRNG
+                      {{ $t('inn3') }}
                       <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                               stroke-linejoin="round"/>
@@ -154,9 +154,9 @@
             </p>
           </div>
 
+          <!-- innovation2 -->
           <div class="services__details-wrapper">
             <h3 class="services__details-text-title">Рост только начинается</h3>
-
             <p>
               <a target="_blank" class="text-primary"
                  href="https://www.grandviewresearch.com/industry-analysis/blockchain-gaming-market-report">По
@@ -169,26 +169,27 @@
               сложно оценить.
             </p>
 
-            <div class="services__details-thumb m-img">
+            <div id="innovation3" class="services__details-thumb m-img">
               <img src="~/assets/img/sth/innovation/us-blockchain-in-gaming-market.png"
                    alt="US Blockchain in Gaming Market 2020-2030"
                    title="Blockchain in Gaming Market 2020-2030">
             </div>
           </div>
 
+          <!-- innovation3 -->
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Будущее Инноваций</h3>
             <p>
               Децентрализованная платформа SmartHoldem — это комплексное универсальное Web3 блокчейн решение для
               разработчиков Web3 игр, игровых провайдеров и операторов онлайн-казино, ставок, покер-румов.
             </p>
-            <p>
+            <p id="innovation4">
               Блокчейн SmartHoldem предлагает широкий функционал для создания высококачественных и
               высокопроизводительных игровых приложений нового поколения, способствующих улучшению качества игрового
               процесса, повышению вовлеченности и росту бизнеса.
             </p>
           </div>
-
+          <!-- innovation4 -->
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Игрокам</h3>
             <p>
@@ -200,8 +201,7 @@
               </nuxt-link>
             </p>
           </div>
-
-
+          <!-- innovation5 -->
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Разработчикам</h3>
             <p>
