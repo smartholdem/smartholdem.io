@@ -192,7 +192,7 @@
           <!-- innovation4 -->
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Игрокам</h3>
-            <p>
+            <p id="innovation5">
               Игроки получают возможность играть в доказуемо-честные Web3 игры, совершать быстрые и безопасные
               транзакции, владеть своими цифровыми активами, торговать на биржах и испытать полную игровую свободу в
               один клик мыши.
@@ -233,7 +233,7 @@
             <a class="text-primary" target="_blank" href="https://github.com/smartholdem">Пример разработки простой Web3
               игры с TRNG SmartHoldem.</a>
           </div>
-
+          <!-- innovation6 -->
 
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Операторам</h3>
