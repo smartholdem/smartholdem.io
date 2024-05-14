@@ -13,7 +13,7 @@
             <div class="postbox__category">
               <a href="#">{{ $t('game_platform') }}</a>
             </div>
-            <h3 class="breadcrumb__title">{{$t('web3')}}</h3>
+            <h3 class="breadcrumb__title">{{$t('web3innovation')}}</h3>
             <div class="breadcrumb__list">
               <span>
                 <nuxt-link :to="localePath('/rng')">TRNG</nuxt-link>

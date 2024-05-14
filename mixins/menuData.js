@@ -3,6 +3,7 @@ export default {
     return {
       menuData: {
         ru:  [
+            /*
           {
             id: 1,
             hasDropdown: true,
@@ -14,6 +15,7 @@ export default {
               { title: "Coinmarketcap", link: "https://coinmarketcap.com/currencies/smartholdem/" },
             ],
           },
+             */
           {
             id: 2,
             hasDropdown: true,
@@ -34,15 +36,12 @@ export default {
             link: "https://explorer.smartholdem.io/",
 
           },
-            /*
           {
             id: 4,
             hasDropdown: false,
-            title: "RNG",
+            title: "TRNG",
             link: "/ru/rng",
           },
-
-             */
           {
             id: 5,
             hasDropdown: false,
@@ -57,6 +56,7 @@ export default {
           },
         ],
         en: [
+            /*
           {
             id: 1,
             hasDropdown: true,
@@ -68,6 +68,7 @@ export default {
               { title: "Coinmarketcap", link: "https://coinmarketcap.com/currencies/smartholdem/" },
             ],
           },
+             */
           {
             id: 2,
             hasDropdown: true,
@@ -90,11 +91,17 @@ export default {
           {
             id: 4,
             hasDropdown: false,
+            title: "TRNG",
+            link: "/rng",
+          },
+          {
+            id: 5,
+            hasDropdown: false,
             title: "Tokenomics",
             link: "/tokenomics",
           },
           {
-            id: 5,
+            id: 6,
             hasDropdown: false,
             title: "Documentation",
             link: "https://wiki.smartholdem.io",

@@ -45,7 +45,7 @@ useHead({
     {
       hid: 'description',
       name: 'description',
-      content: 'Decentralized gaming platform SmartHoldem on Blockchain'
+      content: 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG'
     },
     {
       hid: 'og:image',
