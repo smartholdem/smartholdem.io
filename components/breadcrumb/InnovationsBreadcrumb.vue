@@ -6,7 +6,7 @@
       class="breadcrumb__bg-2 breadcrumb__overlay include-bg"
       :style="{ backgroundImage: `url(${bg})` }"
     ></div>
-    <div id="web3-control" class="container">
+    <div id="innovation1" class="container">
       <div class="row justify-content-center">
         <div class="col-xxl-8 col-xl-8 col-lg-10">
           <div class="breadcrumb__content text-center p-relative z-index-1">
