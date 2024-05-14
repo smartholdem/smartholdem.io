@@ -230,11 +230,10 @@
               <li>Тестирование игровых функций в тестовой сети</li>
             </ul>
             <h4>Создайте свою первую Web3 игру на SmartHoldem. </h4>
-            <a class="text-primary" target="_blank" href="https://github.com/smartholdem">Пример разработки простой Web3
+            <a id="innovation6" class="text-primary" target="_blank" href="https://github.com/smartholdem">Пример разработки простой Web3
               игры с TRNG SmartHoldem.</a>
           </div>
           <!-- innovation6 -->
-
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Операторам</h3>
             <p>
@@ -252,12 +251,12 @@
                    alt="Статистика web3 игр"
                    title="in-chain web3 stats gambling casino">
             </div>
-            <p>
+            <p id="innovation7">
               Интеграция блокчейн-решений платформы SmartHoldem позволит операторам онлайн-казино удовлетворить
               потребности и требования игроков к захватывающим, честным и превосходным развлечениям.
             </p>
           </div>
-
+          <!-- innovation7 -->
           <div class="services__details-text mb-25">
             <h3 class="services__details-text-title">Блокчейн-решения для iGaming</h3>
             <ul>
