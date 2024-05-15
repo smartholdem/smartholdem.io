@@ -48,7 +48,7 @@
                 </div>
               </div>
               <div class="col-md-9">
-                <div class="mt-30 text-black"><img src="~/assets/img/sth/32x32.png" alt="sth logo 32"> Инновационный консенсус DPoS + PoSt</div>
+                <div class="mt-30 text-black"><img src="~/assets/img/sth/32x32.png" alt="sth logo 32"> {{$t('innovative')}}</div>
               </div>
             </div>
 

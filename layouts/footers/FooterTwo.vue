@@ -63,39 +63,27 @@
                 </div>
               </div>
             </div>
-            <!--
+
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget footer__widget-4 mb-50 footer-col-4-3">
-                <h3 class="footer__widget-title">Service Areas</h3>
+                <h3 class="footer__widget-title">Marketcaps</h3>
 
                 <div class="footer__widget-content">
                   <ul>
                     <li>
-                      <nuxt-link href="/">Text</nuxt-link>
+                      <a target="_blank" href="https://coinpaprika.com/coin/new-layout/sth-smartholdem/">Coinpaprika</a>
                     </li>
                     <li>
-                      <nuxt-link href="/">Text</nuxt-link>
+                      <a target="_blank" href="https://blockspot.io/coin/smartholdem">Blockspot</a>
                     </li>
                     <li>
-                      <nuxt-link href="/">Text</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="/">Text</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="/">Text</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="/">Text</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="/">Text</nuxt-link>
+                      <a target="_blank" href="https://coinmarketcap.com/currencies/smartholdem/">Coinmarketcap</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            -->
+
 
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget footer__widget-4 mb-50 footer-col-4-4">
