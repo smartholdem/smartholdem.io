@@ -1652,9 +1652,16 @@
     &__details{
         &-wrapper{
             & p{
-                font-size: 16px;
+                font-size: 13pt;
                 line-height: 1.75;
                 margin-bottom: 25px;
+
+            }
+
+            & ul li{
+                font-size: 12pt;
+                line-height: 1.75;
+                margin-bottom: 5px;
 
             }
         }
@@ -1687,6 +1694,14 @@
                     margin-bottom: 14px;
                 }
             }
+
+            & p{
+                font-size: 13pt;
+                line-height: 1.75;
+                margin-bottom: 25px;
+
+            }
+
         }
         &-list{
             &-title{
