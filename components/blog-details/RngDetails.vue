@@ -388,7 +388,7 @@
                            class="btn btn-outline-dark text-uppercase">RNG API</a>
 
                         <a target="_blank" href="https://github.com/smartholdem/dice-game-example/"
-                           class="btn btn-outline-dark text-uppercase"><i
+                           class="btn btn-outline-dark text-uppercase ml-5"><i
                             class="fa fa-dice-six"></i> Dice Game Example</a>
                       </div>
                     </div>
@@ -710,11 +710,6 @@
                   - Create your own number generation rules using the true random entropy of the SmartHoldem blockchain.
                 </p>
 
-                <p>
-
-                </p>
-
-
                 <div class="postbox__share-wrapper mt-45 mb-25">
                   <div class="row align-items-center">
 
@@ -724,15 +719,13 @@
                            class="btn btn-outline-dark text-uppercase">RNG API</a>
 
                         <a target="_blank" href="https://github.com/smartholdem/dice-game-example/"
-                           class="btn btn-outline-dark text-uppercase"><i
+                           class="btn btn-outline-dark text-uppercase ml-5"><i
                             class="fa fa-dice-six"></i> Dice Game Example</a>
                       </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
                       <div class="postbox__share postbox__share-2 text-lg-end">
                         <span>{{ $t('share') }}</span>
-                        <a target="_blank" href="https://vk.com/share.php?url=https://smartholdem.io/ru/rng/"><i
-                            class="fab fa-vk"></i></a>
                         <a target="_blank"
                            :href="'https://twitter.com/share?url=https://smartholdem.io/rng/&via=smartholdem&text='+$t('meta.rng')"><i
                             class="fab fa-twitter"></i></a>
