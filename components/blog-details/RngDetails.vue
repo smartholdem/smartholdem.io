@@ -66,7 +66,7 @@
           </div>
         </div>
       </div>
-      <div class="postbox__main-wrapper pt-75">
+      <div v-if="$i18n.locale === 'ru'" class="postbox__main-wrapper pt-75">
         <div class="container overflow-x-hidden">
           <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-1">
@@ -175,7 +175,7 @@
                   <li>version - версия блока</li>
                   <li>height - высота блока</li>
                   <li>previous - предыдущий хэш блока</li>
-                  <li>forged - нформация о форжинге (reward, fee, amount, total)</li>
+                  <li>forged - информация о форжинге (reward, fee, amount, total)</li>
                   <li>payload - полезная нагрузка, список хэшей транзакций</li>
                   <li>generator - делегат подписавший блок (username, address, publicKey)</li>
                   <li>signature - подпись делегата подписавшего блок</li>
@@ -282,7 +282,8 @@
                   </div>
                 </div>
 
-                <p>Каждый участник лотереи покупая билет, совершает транзакцию в блокчейне SmartHoldem. Транзакция подписывается уникальной крипто подписью, а в примечании указывается номер билета.</p>
+                <p>Каждый участник лотереи покупая билет, совершает транзакцию в блокчейне SmartHoldem. Транзакция
+                  подписывается уникальной крипто подписью, а в примечании указывается номер билета.</p>
                 <p>Транзакции добавлены в блок, блок получил уникальный хэш состоящий из транзакций, хэша предыдущего
                   блока и других данных.</p>
                 <p>Каждый 8 секунд делегатами создаётся новый блок. Пример хэша блока: <a class="text-primary"
@@ -411,6 +412,343 @@
           </div>
         </div>
       </div>
+
+
+      <div v-else class="postbox__main-wrapper pt-75">
+        <div class="container overflow-x-hidden">
+          <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-1">
+              <div class="postbox__details-social d-flex flex-sm-column pt-5">
+                <a target="_blank" href="https://github.com/technologiespro"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://twitter.com/TechnoL0g"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-9 col-md-11">
+              <div class="postbox__details-content-wrapper">
+                <h3 class="postbox__details-title-2">Specification</h3>
+                <p>The random number generator is based on SmartHoldem's truly random entropy. The SmartHoldem
+                  blockchain is used as a source of entropy.</p>
+
+                <div class="postbox__details-content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <h5 class="postbox__details-title-3"><i>Strong protection against time travelers!</i></h5>
+                    </div>
+                    <div class="col-md-8">
+                      <p><i>If you discover the winning number at the end of the game, travel back in time, select that
+                        number, and the game's result will change to a different winning number.</i></p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="postbox__details-content-2 pb-40">
+                  <h3>What is SmartHoldem blockchain entropy based on?</h3>
+                  <ul>
+                    <li>The new block's hash is generated using the Merkle tree and depends on all previous blocks and
+                      operations within the SmartHoldem network carried out by participants.
+                    </li>
+                    <li>Any random operation a network participant performs in Blockchain SmartHoldem today affects the
+                      hashes of all future blocks.
+                    </li>
+                    <li>Random ranking of delegates in each round.</li>
+                    <li>Operations in Blockchain SmartHoldem are unpredictable and can occur at any time, such as
+                      sending transactions, delegate registration, voting, gaming transactions, etc.
+                    </li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <div class="postbox__img-2 m-img mt-45 mb-20">
+                        <img
+                            src="~/assets/img/sth/lotto/0.png" alt="true crypto rng smartholdem" class="rounded-3">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3>Proof of obtaining an independent random number</h3>
+
+                <p>
+                  Every 8 seconds in BlockChain SmartHoldem, randomly ranked delegates generate a unique Hash ID block
+                  containing a numerical series of hexadecimal values, for example:
+                  <strong>d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0</strong>.
+                </p>
+                <p>The resulting hexadecimal Hash of the block is converted into a decimal numeric sequence.</p>
+                <p>To calculate the current random number, values with the required number of characters are selected
+                  from the number series, for example, 2 (from 00 to 99). </p>
+                <p>
+                  The block explorer and Hex to Decimal Bytes Array Converter make it easy to verify all blocks. To do
+                  so, copy the block hash into the <a target="_blank" class="text-primary"
+                                                      href="https://hasher.smartholdem.io/#/hex-to-bytes">Hex to Decimal
+                  Bytes Array Converter</a>.
+                </p>
+                <p class="text-warning-emphasis">
+                  Example of sampling a random value from 0 to 99:
+                </p>
+                <ul>
+                  <li>Block Hash: d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0</li>
+                  <li>10 bytes HEX:
+                    <span class=" product__badge-item">33</span>
+                    &nbsp;<span class="product__badge-item">F3</span>
+                    &nbsp;<span class=" product__badge-item">37</span>
+                    &nbsp;<span class=" product__badge-item">C8</span>
+                    &nbsp;<span class=" product__badge-item">0C</span>
+                    &nbsp;<span class=" product__badge-item">8A</span>
+                    &nbsp;<span class=" product__badge-item">f9</span>
+                    &nbsp;<span class=" product__badge-item">32</span>
+                    &nbsp;<span class=" product__badge-item">DF</span>
+                    &nbsp;<span class=" product__badge-item">A0</span></li>
+                  <li>Converted number series to DEC: 51243552001213824950223160</li>
+                  <li>Two-digit random number based on blockchain entropy: <span
+                      class="badge product__badge-item text-info">60</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+
+
+              <div class="postbox__details-content-2 pb-10 mt-30">
+                <h3>SmartHoldem block structure</h3>
+                <p>
+                  <span class="product__badge-item">id</span> - Hash of the current block (calculated from all data
+                  included in the blocks)
+                </p>
+                <ul>
+                  <li>version - block version</li>
+                  <li>height - block height</li>
+                  <li>previous - previous block hash</li>
+                  <li>forged - information about forging (reward, fee, amount, total)</li>
+                  <li>payload - payload, list of transaction hashes</li>
+                  <li>generator - delegate who signed the block (username, address, publicKey)</li>
+                  <li>signature - signature of the delegate who signed the block</li>
+                  <li>transactions - number of transactions in the block</li>
+                  <li>timestamp - block time</li>
+                </ul>
+                <p class="mt-20">
+                  <a class="text-primary" target="_blank"
+                     href="https://node0.smartholdem.io/api/blocks/d291a92dce4d774285d9d0c4e6e1cc1f765c6e30ca2733f337c80c8af932dfa0">
+                    <i class="fa fa-link"></i> View in block explorer
+                  </a>
+                </p>
+
+
+                <h3>Blockchain TRNG SmartHoldem</h3>
+                <p>
+                  Provably random, tamper-proof, and low-cost True Random Number Generator (TRNG)
+                </p>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="postbox__img-2 m-img mt-45 mb-20">
+                      <img
+                          src="~/assets/img/sth/rng/true-rng.png" alt="true crypto rng smartholdem" class="rounded-3">
+                    </div>
+                  </div>
+                </div>
+                <h4>Provably fair RNG</h4>
+                <p>
+                  The block data is used as input to generate each random number, confirming that the result is
+                  generated fairly and independently of the requester.
+                </p>
+                <h4>Verifiable randomness</h4>
+                <p>
+                  Every random result can be verified using cryptographic proofs.
+                </p>
+                <h4>Protection against unauthorized access</h4>
+                <p>
+                  You and your users receive unbiased randomization and are safeguarded from compromised third parties.
+                </p>
+              </div>
+
+              <div class="postbox__details-content-2 pb-40">
+                <h3>Simple visual analysis</h3>
+                <p>
+                  One way to explore a random number generator is to visualize the numbers it produces. Visualization is
+                  one way to get a rough idea of the generator's performance. The images below are parts of larger
+                  images created to test the quality of the two random number generators. The picture on the left is
+                  made using Blockchain TRNG SmartHoldem, which is a True Random Number Generator (TRNG), and the image
+                  on the right is created using the <a class="text-primary" target="_blank"
+                                                       href="http://www.php.net/rand">rand()</a> function from PHP in
+                  Microsoft Windows, which is a Pseudo
+                  Random Number Generator (PRNG).
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="postbox__img-2 m-img">
+                      <img
+                          style="height: 256px;width: 256px;"
+                          src="~/assets/img/sth/rng/SmartHoldem_TRNG_entropy.gif" alt="true crypto rng smartholdem"
+                          class="rounded-3">
+                    </div>
+                    <div class="text-dark mt-10 mb-10">Blockchain TRNG SmartHoldem</div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="postbox__img-2 m-img">
+                      <img
+                          style="height: 256px;width: 256px;"
+                          src="~/assets/img/sth/rng/randbitmap-wamp.png" alt="PRNG" class="rounded-3">
+                    </div>
+                    <div class="text-dark mt-10 mb-10">PHP rand() in Microsoft Windows</div>
+                  </div>
+                </div>
+                <p>
+                  This visual comparison clearly shows how important random numbers are, especially if your app is a
+                  game or gambling site. As you can see, the image generated by the PHP/Windows pseudo-random number
+                  generator shows clear patterns compared to the image generated by the Blockchain TRNG SmartHoldem true
+                  random number generator. True Random Number Generation - Always Random!
+                </p>
+              </div>
+
+
+              <div class="postbox__details-content-2 pb-60">
+                <h3 class="mb-0">How it works: An example of a lottery</h3>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="postbox__img-2 m-img mt-10 mb-20">
+                      <img src="~/assets/img/sth/lotto/2.png" alt="" class="rounded-3">
+                    </div>
+                  </div>
+                </div>
+                <p>Let's devise simple lottery rules: ticket numbers range from 0 to 99, the draw occurs every 2880
+                  blocks, and the winner is the player who guessed the random ticket number.</p>
+                <p>Before the lottery began, Alice bought a ticket with the number <span
+                    class="product__badge-item bg-primary">14</span>,
+                  while Bob purchased a ticket with the number <span class="product__badge-item bg-primary">21</span>
+                </p>
+
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="postbox__img-2 m-img mt-10 mb-20">
+                      <img src="~/assets/img/sth/lotto/1.png" alt="" class="rounded-3">
+                    </div>
+                  </div>
+                </div>
+
+                <p>When purchasing a ticket, each lottery participant makes a transaction on the SmartHoldem blockchain.
+                  The transaction is signed with a unique crypto signature; the ticket number is indicated in the
+                  note.</p>
+                <p>When transactions are added to the block, it receives a unique hash consisting of transactions, the hash of the previous block, and other data.</p>
+                <p>Every 8 seconds, delegates create a new block. Example block hash: <a class="text-primary"
+                                                                                          href="https://explorer.smartholdem.io/#/block/bd082c731d2736db20bf4c1851cf2000a5d43363ba0b177b92db695d960fbda8">bd082c73...960fbda8</a>
+                </p>
+                <p>The draw is scheduled in 2880 blocks.</p>
+                <p>For example, a block has been reached on which the lottery draw should take place <a class="text-primary"
+                                                                                             target="_blank"
+                                                                                             href="https://explorer.smartholdem.io/#/block/d2c6f1abc68cbd56aa809a5dc8565237cf0d21aa9537a475526d1867cae17f0e">d2c6f1ab...cae17f0e</a>
+                </p>
+                <p>We need to calculate the winning number in decimal notation (DEC) based on the block's hexadecimal (HEX) hash.</p>
+                <p>Т.к. для нас достаточны от 00 до 99, возьмём из хэша блока крайние значения:</p>
+                <ul>
+                  <li>Block Hash: d2c6f1abc68cbd56aa809a5dc8565237cf0d21aa9537<span class="text-success font-bold">a475526d1867cae17f0e</span>
+                  </li>
+                  <li>HEX 10 bytes: &nbsp;<span class="product__badge-item">a4</span>
+                    &nbsp;<span class="product__badge-item">75</span>
+                    &nbsp;<span class="product__badge-item">52</span>
+                    &nbsp;<span class="product__badge-item">6d</span>
+                    &nbsp;<span class="product__badge-item">18</span>
+                    &nbsp;<span class="product__badge-item">67</span>
+                    &nbsp;<span class="product__badge-item">ca</span>
+                    &nbsp;<span class="product__badge-item">e1</span>
+                    &nbsp;<span class="product__badge-item">7f</span>
+                    &nbsp;<span class="product__badge-item">0e</span></li>
+                  <li>Convert to bytes Uint8Array: 164,117,82,109,24,103,202,225,127,14</li>
+                  <li>Let's combine the number series: 164117821092410320222512714</li>
+                  <li>Winning ticket number: <span class="badge product__badge-item text-info">14</span></li>
+                </ul>
+
+                <p>In this case, the lottery winner is Alice.</p>
+                <p>Suppose Bob has a time machine. He knows the winning number 14, so he goes back in time and buys a ticket with that number.</p>
+                <div class="postbox__quote postbox__quote-style-2">
+                  <blockquote>
+                    <div class="postbox__quote-icon">
+                      <span>
+                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M25.6645 0C27.2731 0 28.5892 0.329033 29.6129 0.987098C30.6366 1.64516 31.4774 2.48602 32.1355 3.50968C32.9398 4.67957 33.4516 5.95915 33.671 7.34839C33.8903 8.73764 34 9.87097 34 10.7484C34 14.3312 33.086 17.585 31.2581 20.5097C29.4301 23.4344 26.5785 25.8108 22.7032 27.6387L21.7161 25.6645C23.9828 24.714 25.9204 23.2151 27.529 21.1677C29.2108 19.1204 30.0516 17.0366 30.0516 14.9161C30.0516 14.0387 29.9419 13.271 29.7226 12.6129C28.5527 13.5634 27.2 14.0387 25.6645 14.0387C23.7634 14.0387 22.1183 13.4172 20.729 12.1742C19.3398 10.9312 18.6452 9.21291 18.6452 7.01936C18.6452 4.97205 19.3398 3.29033 20.729 1.9742C22.1183 0.658065 23.7634 0 25.6645 0ZM7.01936 0C8.62796 0 9.94409 0.329033 10.9677 0.987098C11.9914 1.64516 12.8323 2.48602 13.4903 3.50968C14.2946 4.67957 14.8065 5.95915 15.0258 7.34839C15.2452 8.73764 15.3548 9.87097 15.3548 10.7484C15.3548 14.3312 14.4409 17.585 12.6129 20.5097C10.7849 23.4344 7.93333 25.8108 4.05806 27.6387L3.07097 25.6645C5.33763 24.714 7.27527 23.2151 8.88387 21.1677C10.5656 19.1204 11.4065 17.0366 11.4065 14.9161C11.4065 14.0387 11.2968 13.271 11.0774 12.6129C9.90753 13.5634 8.55484 14.0387 7.01936 14.0387C5.11828 14.0387 3.47312 13.4172 2.08387 12.1742C0.694624 10.9312 0 9.21291 0 7.01936C0 4.97205 0.694624 3.29033 2.08387 1.9742C3.47312 0.658065 5.11828 0 7.01936 0Z"
+                              fill="currentColor"/>
+                        </svg>
+                      </span>
+                    </div>
+                    <p>“The result will be a completely different hash of the block being played because all hashes of transactions and blocks will change, and the number series will have new values.”</p>
+                  </blockquote>
+                </div>
+                <h3>Conclusion</h3>
+                <p>Thus, we get:</p>
+                <div class="postbox__features postbox__features-2">
+                  <ul>
+                    <li>Full transparency in real time</li>
+                    <li>Full entropy for seed</li>
+                    <li>Real random number</li>
+                    <li>Random numbers are generated every 8 seconds</li>
+                    <li>Long sequence of numbers</li>
+                    <li>Protection from time travelers</li>
+                    <li>Users and block producers create entropy</li>
+                    <li>Easy-to-follow rules for working with numbers</li>
+                    <li>You can use the RNG API for your ideas without restrictions</li>
+                    <li>Wide range of use cases (Raffles, Lotteries, Games, Contests, etc.)</li>
+                  </ul>
+                </div>
+
+
+                <p>While waiting for the block to be created, other users make random transactions unrelated to the lottery, influencing the Merkle tree's final hash.</p>
+
+                <h3>Ways to use the entropy of the SmartHoldem blockchain</h3>
+                <p>Use SmartHoldem blockchain entropy to generate a number series as a true random seed.</p>
+                <p>
+                  Default decimal values are available: 0..9, 0..99, 0..255, 0..999 и т.д. до 1.15*10^77 or <br/>
+                  <small>115 792 089 237 316 200 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+                    000 000</small>.
+                </p>
+                <p>
+                  - Get a new hash. If you decide to use the concatenation of the block signer's delegate name (each round delegates are assigned by crypto random) + the block hash, you will get a new hash from them.
+                </p>
+                <p>
+                  - Add crypto functions: crypto.randomInt, crypto.randomUUID, HMAC, Lamport signatures, hashing functions, ECDH, Scrypt.
+                </p>
+                <p>
+                  - Create your own number generation rules using the true random entropy of the SmartHoldem blockchain.
+                </p>
+
+                <p>
+
+                </p>
+
+
+                <div class="postbox__share-wrapper mt-45 mb-25">
+                  <div class="row align-items-center">
+
+                    <div class="col-xl-7 col-lg-7">
+                      <div class="tagcloud tagcloud-style-2">
+                        <a target="_blank" href="https://wiki.smartholdem.io/api/rng"
+                           class="btn btn-outline-dark text-uppercase">RNG API</a>
+
+                        <a target="_blank" href="https://github.com/smartholdem/dice-game-example/"
+                           class="btn btn-outline-dark text-uppercase"><i
+                            class="fa fa-dice-six"></i> Dice Game Example</a>
+                      </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5">
+                      <div class="postbox__share postbox__share-2 text-lg-end">
+                        <span>{{ $t('share') }}</span>
+                        <a target="_blank" href="https://vk.com/share.php?url=https://smartholdem.io/ru/rng/"><i
+                            class="fab fa-vk"></i></a>
+                        <a target="_blank"
+                           :href="'https://twitter.com/share?url=https://smartholdem.io/rng/&via=smartholdem&text='+$t('meta.rng')"><i
+                            class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/rng/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--
       <div class="postbox__related grey-bg-7 pb-90 pt-95">
         <div class="container">
