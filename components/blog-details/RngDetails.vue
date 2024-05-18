@@ -638,7 +638,7 @@
                                                                                              href="https://explorer.smartholdem.io/#/block/d2c6f1abc68cbd56aa809a5dc8565237cf0d21aa9537a475526d1867cae17f0e">d2c6f1ab...cae17f0e</a>
                 </p>
                 <p>We need to calculate the winning number in decimal notation (DEC) based on the block's hexadecimal (HEX) hash.</p>
-                <p>Т.к. для нас достаточны от 00 до 99, возьмём из хэша блока крайние значения:</p>
+                <p>00 to 99 is sufficient for us:</p>
                 <ul>
                   <li>Block Hash: d2c6f1abc68cbd56aa809a5dc8565237cf0d21aa9537<span class="text-success font-bold">a475526d1867cae17f0e</span>
                   </li>
