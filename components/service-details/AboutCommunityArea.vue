@@ -120,19 +120,20 @@
             </div>
 
 
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="postbox__img-2 m-img mt-45 mb-20">
-                  <img
-                      src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png" alt="smartholdem community airdrop" class="rounded-3">
-                </div>
-              </div>
-            </div>
+
 
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Airdrop</h3>
               <p>Для новых участников сообщества предусмотрен приветсвенный бонус от команды разработчиков SmartHoldem,
                 который поможет вам легко познакомиться с экосистемой платформы. </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mt-45 mb-20">
+                    <img
+                        src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png" alt="smartholdem community airdrop" class="rounded-3">
+                  </div>
+                </div>
+              </div>
               <p>Как получить SmartHoldem STH совершенно бесплатно:</p>
               <ul>
                 <li>Вступите в официальную группу SmartHoldem https://t.me/smartholdem</li>
@@ -147,7 +148,7 @@
             </div>
 
             <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title">Мы можем многое сделать вместе. </h3>
+              <h3 class="services__details-text-title">Мы можем многое сделать вместе</h3>
               <p>Чем бы вы ни увлекались — управление сообществом, создание контента, социальные сети, мероприятия,
                 техническая поддержка или что-то еще — экосистема нуждается в вас.</p>
             </div>
@@ -254,18 +255,19 @@
               </p>
             </div>
 
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="postbox__img-2 m-img mt-45 mb-20">
-                  <img
-                      src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png" alt="smartholdem community airdrop" class="rounded-3">
-                </div>
-              </div>
-            </div>
+
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Airdrop</h3>
               <p>A welcome bonus from the SmartHoldem dev team for new community members will help you quickly get
                 acquainted with the platform ecosystem.</p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mt-45 mb-20">
+                    <img
+                        src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png" alt="smartholdem community airdrop" class="rounded-3">
+                  </div>
+                </div>
+              </div>
               <p>How to get SmartHoldem STH completely free:</p>
               <ul>
                 <li>Join the official SmartHoldem group https://t.me/smartholdem</li>
@@ -280,7 +282,7 @@
             </div>
 
             <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title">We can do so much together.</h3>
+              <h3 class="services__details-text-title">We can do so much together</h3>
               <p>Whatever your passion is — community management, content creation, social media, events, tech support,
                 or anything else — the ecosystem needs you.</p>
             </div>

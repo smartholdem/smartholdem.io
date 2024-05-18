@@ -717,7 +717,6 @@
                       <div class="tagcloud tagcloud-style-2">
                         <a target="_blank" href="https://wiki.smartholdem.io/api/rng"
                            class="btn btn-outline-dark text-uppercase">RNG API</a>
-
                         <a target="_blank" href="https://github.com/smartholdem/dice-game-example/"
                            class="btn btn-outline-dark text-uppercase ml-5"><i
                             class="fa fa-dice-six"></i> Dice Game Example</a>
