@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-one :top_bar="false" :header_solid="true" :commonOffcanvas="true" />
+    <Header :top_bar="false" :header_solid="true" :commonOffcanvas="true" />
     <section class="error__area error__bg pb-110">
       <div class="container">
         <div class="row justify-content-center">
@@ -79,13 +79,13 @@
         </div>
       </div>
     </section>
-    <footer-six :style_2="true"/>
+    <Footer :style_2="true"/>
   </div>
 </template>
 
 <script setup>
-import FooterSix from './layouts/footers/FooterSix.vue';
-import HeaderOne from './layouts/headers/HeaderOne.vue';
+import Footer from './layouts/footers/FooterTwo.vue';
+import Header from './layouts/headers/HeaderOne.vue';
 
 defineProps(['error'])
 
