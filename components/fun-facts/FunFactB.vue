@@ -18,11 +18,15 @@
         <div class="col-xxl-4 col-lg-4 col-md-6">
           <div class="fact__item white-bg d-flex align-items-center" data-sal="slide-down" data-sal-delay="150" data-sal-duration="1000">
             <div class="fact__icon">
+              <nuxt-link :to="localePath('/buy-sth')">
               <img src="~/assets/img/sth/icon4.png" alt="farm post">
+              </nuxt-link>
             </div>
             <div class="fact__content ml-15">
+              <nuxt-link :to="localePath('/buy-sth')">
               <h4>{{$t('ff4')}}</h4>
               <p>{{$t('ff4_text')}}</p>
+              </nuxt-link>
             </div>
           </div>
         </div>

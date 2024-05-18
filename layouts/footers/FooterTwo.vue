@@ -104,6 +104,9 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li>
+                      <nuxt-link :to="localePath('/buy-sth')">How to buy</nuxt-link>
+                    </li>
+                    <li>
                       <nuxt-link href="https://ex.xbts.io/market/XBTSX.STH_XBTSX.USDT">DEX</nuxt-link>
                     </li>
                     <li>
