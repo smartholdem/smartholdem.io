@@ -23,6 +23,7 @@
                       :class="i < 1 ? 'product__badge-item mr-5 border border-warning' : 'product__badge-item mr-5 border border-primary'">
                {{ item }}
               </span>
+                <!--
                 <p>
                   <span class="badge" title="1 to 36 values">2x36 ({{ hexBytesArray[0] }} % 35 + 1)</span>
                   <span v-for="(item, i) in lotto" :key="'lotto'+item"
@@ -30,6 +31,7 @@
                         {{ item + 1 }}
                   </span>
                 </p>
+                -->
               </div>
 
 
@@ -372,19 +374,21 @@
                 </p>
 
                 <p>
-                  <a target="_blank" href="https://wiki.smartholdem.io/ru/api/rng"
-                     class="btn btn-outline-dark text-uppercase"><i
-                      class="fa fa-dice-six"></i> Перейти к RNG API</a>
+
                 </p>
 
 
                 <div class="postbox__share-wrapper mt-45 mb-25">
                   <div class="row align-items-center">
+
                     <div class="col-xl-7 col-lg-7">
                       <div class="tagcloud tagcloud-style-2">
-                        <span>Tags:</span>
-                        <a href="#">Blog</a>
-                        <a href="#">{{ $t('innovations') }}</a>
+                        <a target="_blank" href="https://wiki.smartholdem.io/api/rng"
+                           class="btn btn-outline-dark text-uppercase">RNG API</a>
+
+                        <a target="_blank" href="https://github.com/smartholdem/dice-game-example/"
+                           class="btn btn-outline-dark text-uppercase"><i
+                            class="fa fa-dice-six"></i> Dice Game Example</a>
                       </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
@@ -479,7 +483,7 @@ export default {
       }
 
       const blockId = await this.blockId()
-      let hexBytes = (await Uint8Array.from(globalBuffer.from(blockId.id.substr(-34), 'hex'))); //10 bytes
+      let hexBytes = (await Uint8Array.from(globalBuffer.from(blockId.id, 'hex'))); //10 bytes
       for (let i = 0; i < hexBytes.length; i++) {
         this.hexBytesArray.push(hexBytes[i])
         if (i < 1) {

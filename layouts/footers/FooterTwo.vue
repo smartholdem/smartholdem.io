@@ -54,9 +54,6 @@
                     <li>
                       <nuxt-link href="https://community.smartholdem.io/">Forum</nuxt-link>
                     </li>
-                    <li>
-                      <nuxt-link href="https://paperwallet.top/">Paper Wallet</nuxt-link>
-                    </li>
                   </ul>
                 </div>
               </div>

@@ -120,6 +120,15 @@
             </div>
 
 
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="postbox__img-2 m-img mt-45 mb-20">
+                  <img
+                      src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png" alt="smartholdem community airdrop" class="rounded-3">
+                </div>
+              </div>
+            </div>
+
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Airdrop</h3>
               <p>Для новых участников сообщества предусмотрен приветсвенный бонус от команды разработчиков SmartHoldem,
@@ -245,7 +254,14 @@
               </p>
             </div>
 
-
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="postbox__img-2 m-img mt-45 mb-20">
+                  <img
+                      src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png" alt="smartholdem community airdrop" class="rounded-3">
+                </div>
+              </div>
+            </div>
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Airdrop</h3>
               <p>A welcome bonus from the SmartHoldem dev team for new community members will help you quickly get
