@@ -241,7 +241,7 @@
             </div>
           </div>
           <!-- innovation3 -->
-          <div class="services__details-text mb-25">
+          <div class="services__details-wrapper mb-25">
             <h3 class="services__details-text-title">Будущее Инноваций</h3>
             <p>
               Децентрализованная платформа SmartHoldem — это комплексное универсальное Web3 блокчейн решение для
@@ -254,7 +254,7 @@
             </p>
           </div>
           <!-- innovation4 -->
-          <div class="services__details-text mb-25">
+          <div class="services__details-wrapper mb-25">
             <h3 class="services__details-text-title">Игрокам</h3>
             <p id="innovation5">
               Игроки получают возможность играть в доказуемо-честные Web3 игры, совершать быстрые и безопасные
@@ -266,7 +266,7 @@
             </p>
           </div>
           <!-- innovation5 -->
-          <div class="services__details-text mb-25">
+          <div class="services__details-wrapper mb-25">
             <h3 class="services__details-text-title">Разработчикам</h3>
             <p>
               Разработчики получают эффективные блокчейн инструменты для различных сценариев использования, в том числе
@@ -293,13 +293,13 @@
               </li>
               <li>Тестирование игровых функций в тестовой сети</li>
             </ul>
-            <h4>Создайте свою первую Web3 игру на SmartHoldem. </h4>
-            <a id="innovation6" class="text-primary" target="_blank" href="https://github.com/smartholdem">Пример
-              разработки простой Web3
+            <h3 class="mt-20">Создайте свою первую Web3 игру на SmartHoldem</h3>
+            <a id="innovation6" class="text-primary" target="_blank" href="https://github.com/smartholdem/dice-game-example">
+              <i class="fa-brands fa-github"></i> Пример разработки простой Web3
               игры с TRNG SmartHoldem.</a>
           </div>
           <!-- innovation6 -->
-          <div class="services__details-text mb-25">
+          <div class="services__details-wrapper mb-25">
             <h3 class="services__details-text-title">Операторам</h3>
             <p>
               Интерес к Web3 играм растет в геометрической прогрессии, что создает новые направления для бизнеса.
@@ -322,7 +322,7 @@
             </p>
           </div>
           <!-- innovation7 -->
-          <div class="services__details-text mb-25">
+          <div class="services__details-wrapper mb-25">
             <h3 class="services__details-text-title">Блокчейн-решения для iGaming</h3>
             <ul>
               <li>Подключение платёжного крипто шлюза</li>
