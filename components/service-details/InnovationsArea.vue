@@ -506,7 +506,7 @@
               feel safe. Security and transparency are two essential ingredients for a successful operator.
             </p>
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/innovation/statista-total-global-gambling-market-gross-smartholdem-ru.png"
+              <img src="~/assets/img/sth/innovation/statista-total-global-gambling-market-gross-smartholdem.png"
                    alt="Статистика web3 игр"
                    title="in-chain web3 stats gambling casino">
             </div>

@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="col-lg-8 order-first order-lg-last">
-          <div class="services__details-wrapper">
+          <div v-if="$i18n.locale === 'ru'" class="services__details-wrapper">
             <h3 class="services__details-title">Децентрализованная сеть для инноваций и роста</h3>
             <p>
               Публичная сеть SmartHoldem Level 1 (DPOS) — это блокчейн с открытым исходным кодом, работающий на основе
@@ -110,7 +110,8 @@
             </p>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-forging/1.png" alt="community 1"/>
+              <img src="~/assets/img/sth/about-forging/smartHoldem-blockchain-delegated-proof-of-stake-ru.png"
+                   alt="community 1"/>
             </div>
 
             <p>
@@ -142,7 +143,8 @@
               </p>
               <p>
                 В SmartHoldem DPOS подписывают блоки ТОП 21 активных делегатов
-                <a target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io/#/delegate-monitor">https://blockexplorer.smartholdem.io/#/delegate-monitor</a>, другие зарегистрированные делегаты и узлы
+                <a target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io/#/delegate-monitor">https://blockexplorer.smartholdem.io/#/delegate-monitor</a>,
+                другие зарегистрированные делегаты и узлы
                 находятся в
                 режиме <strong>relay node</strong>.
               </p>
@@ -196,7 +198,8 @@
             <p>
               <strong>
                 Установить собственный узел full node, следуйте инструкциям на нашем <a
-                  class="text-primary" href="https://github.com/smartholdem/sth-core"><i class="fa-brands fa-github"></i> GitHub</a>
+                  class="text-primary" href="https://github.com/smartholdem/sth-core"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
               </strong>
             </p>
 
@@ -228,14 +231,151 @@
               <p>Для получения необходимых голосов для выхода в ТОП 21 в качестве делегата, вы можете предложить
                 избирателям процент от вознаграждений. Вознаграждение измеряется в зависимости от доли участия
                 избирателя, количества голосов и процента выплат, установленных делегатом.</p>
-
             </div>
 
-            <!-- faq start -->
-            <!--
-            <service-details-faq/>
-            -->
-            <!-- faq end -->
+          </div>
+
+          <div v-else class="services__details-wrapper">
+            <h3 class="services__details-title">Decentralized network for innovation and growth</h3>
+            <p>
+              The SmartHoldem Level 1 Public Network (DPOS) is an open-source blockchain based on the Delegated Proof of
+              Stake (DPoS) consensus mechanism. It allows users to create and access various decentralized tools,
+              applications, and ecosystems.
+            </p>
+
+            <p>SmartHoldem is decentralized and governed by a community of digital asset owners. Ownership of more than
+              1 STH grants voting rights on the network!</p>
+            <p>
+              DPoS is an environmentally friendly, energy-efficient, and scalable consensus that offers faster and more
+              affordable transactions compared to PoS and PoW networks.
+            </p>
+
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/about-forging/smartHoldem-blockchain-delegated-proof-of-stake.png"
+                   alt="delegate proof of stake consensus protocol"/>
+            </div>
+
+            <p>
+              Delegated Proof of Stake (DPoS) consensus is founded on democratic principles. It grants the community the
+              right to participate in the decision-making processes that determine the network's development.
+            </p>
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/about-forging/2.png" alt="delegate proof of stake">
+            </div>
+
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Delegates</h3>
+              <p>
+                Delegates are responsible for securing the blockchain network. They verify transactions, create new
+                blocks, and protect the SmartHoldem network. In return for each signed block, delegates receive rewards.
+                Delegates cannot alter information about blockchain transactions or influence them.
+              </p>
+              <p>
+                Delegates are elected by users who vote with their digital assets. Elected delegates represent
+                SmartHoldem coin holders by proposing ideas or changes to the network and contributing to the
+                ecosystem's improvement.
+              </p>
+              <p>
+                Users vote for a delegate with the power of their vote. This approach eliminates the need for users to
+                freeze coins and send coins to any address. The coins remain on the user’s balance and under his
+                complete control. Each STH holder can vote, elect, or cancel delegates.
+              </p>
+              <p>
+                In SmartHoldem DPOS, only 21 active delegates can be in the TOP
+                <a target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io/#/delegate-monitor">https://blockexplorer.smartholdem.io/#/delegate-monitor</a>,
+                other registered delegates are in <strong>relay node mode</strong>.
+              </p>
+              <p>
+                The delegation system is highly competitive, as a delegate can move into or out of the top TOP 21
+                position at any time.
+                If the community feels that a delegate is not doing a good job or someone else could do a better job,
+                the delegate can be replaced.
+
+              </p>
+              <p>
+                This sustainable scheme provides an opportunity for new delegates to prove themselves, attract the
+                community's attention, and enter the TOP 21 at any time if the community votes for a new delegate to
+                take an active position.
+              </p>
+            </div>
+
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Delegate Rewards</h3>
+              <p>The delegate who signs the block receives ALL FEES for the transactions included in the block. Various
+                transactions have their own fee in the SmartHoldem blockchain. For example, if a block includes 500
+                standard transactions, the delegate will earn up to 500 STH. If there were no transactions in a block,
+                the delegate will not earn anything for that block. If the block includes a delegate registration
+                transaction, the delegate will earn 10,000 STH.
+              </p>
+              <p>- There is no emission in the SmartHoldem Level 1 (DPOS) blockchain. Find out more. There are no
+                additional rewards other than transaction fees.</p>
+              <p>
+                List of fees in the SmartHoldem blockchain https://wallet.smartholdem.io/blockchain <a
+                  class="text-primary"
+                  href="https://wallet.smartholdem.io/blockchain/">wallet.smartholdem.io/blockchain</a>
+              </p>
+              <p>
+                SmartHoldem's DPoS blockchain includes new transaction types such as multi-payments, gaming
+                transactions, multi-signatures, crypto-signatures, second passphrase, burn transactions, registration
+                transactions, IPFS hash transactions, hashed time-locked contract (HTLC), advanced cryptofunction
+                protocol with ZKP (Zero-Knowledge Proof), resignation of the delegate and registration of copyright.
+
+              </p>
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Become a SmartHoldem delegate</h3>
+              <p>Anyone can become a SmartHoldem delegate.</p>
+              <p>All you need is a reliable server and active participation in the SmartHoldem community. However, only
+                delegates among the top 21 can create new blocks and receive rewards in SmartHoldem STH.</p>
+              <p>Getting started with SmartHoldem is simple, with step-by-step guides and community support for everyone
+                from all technical backgrounds.</p>
+            </div>
+
+            <p>
+              <strong>
+                Install full node <a
+                  class="text-primary" href="https://github.com/smartholdem/sth-core"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+              </strong>
+            </p>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">How to vote</h3>
+              <ul>
+                <li>
+                  Login to your SmartHoldem wallet <a class="text-primary" href="https://wallet.smartholdem.io">wallet.smartholdem.io</a>
+                  or <a class="text-primary" href="https://t.me/sthwlt_bot">Telegram APP</a>
+                </li>
+                <li>Click Vote</li>
+                <li>Enter delegate name</li>
+                <li>Click Vote for Delegate</li>
+              </ul>
+            </div>
+
+            <div class="services__details-thumb m-img">
+              <img src="~/assets/img/sth/about-forging/3.png" alt="delegates vote 3">
+            </div>
+
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Community Connection</h3>
+              <p>As a delegate, active participation and connection to the community is vital to getting votes.</p>
+              <p>Generating delegate slots is competitive and requires more than node management. Building new
+                applications based on SmartHoldem and offering additional services such as code reviews, vulnerability
+                reporting, or community outreach can make the difference between an up or down vote.
+              </p>
+              <p>As a delegate, you can offer voters a percentage of the rewards to get the necessary votes to reach the
+                TOP 21. Reward is measured based on the voter's participation share and the delegate's payout
+                percentage.</p>
+              <p>
+                How to become a delegate, follow the instructions on our <a
+                  class="text-primary" href="https://github.com/smartholdem/sth-core"><i
+                  class="fa-brands fa-github"></i> GitHub</a>
+              </p>
+            </div>
+
           </div>
         </div>
       </div>

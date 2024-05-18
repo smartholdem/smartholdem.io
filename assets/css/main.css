@@ -53159,7 +53159,8 @@ blockquote cite::before {
 }
 
 .font-bolder {
-    font-weight: bolder;
+    font-weight: bolder !important;
+
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -25,49 +25,68 @@
                     </div>
                   </div>
                 </div>
+
+
               </div>
             </div>
 
 
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="footer__widget footer__widget-4 mb-50 footer-col-4-2">
+              <div class="footer__widget footer__widget-4 mb-25 footer-col-4-2">
                 <h3 class="footer__widget-title">{{ $t('links') }}</h3>
-
                 <div class="footer__widget-content">
                   <ul>
-                    <li>
-                      <nuxt-link href="/">Home</nuxt-link>
-                    </li>
                     <li>
                       <nuxt-link href="https://wallet.smartholdem.io/">Wallet</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link href="https://paperwallet.top/">Paper Wallet</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="https://ex.xbts.io/market/XBTSX.STH_XBTSX.USDT">DEX</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="https://xeggex.com/market/STH_USDT">CEX</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="https://app.xbts.io/#/pools">DeFi</nuxt-link>
-                    </li>
-                    <li>
-                      <nuxt-link href="https://app.xbts.io/#/smartholder">SmartHolder</nuxt-link>
-                    </li>
-                    <li>
                       <nuxt-link href="https://github.com/smartholdem/sth-core">Full Node</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://explorer.smartholdem.io/">Explorer</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://wiki.smartholdem.io/">API</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://wiki.smartholdem.io/">DOCS</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://community.smartholdem.io/">Forum</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://paperwallet.top/">Paper Wallet</nuxt-link>
                     </li>
                   </ul>
                 </div>
               </div>
+
+              <div class="footer__widget footer__widget-4 mb-25 footer-col-4-2">
+                <h3 class="footer__widget-title">Tools</h3>
+                <div class="footer__widget-content">
+                  <ul>
+                    <li>
+                      <a target="_blank" href="https://paperwallet.top/">Paper Wallet</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://hasher.smartholdem.io">Hasher Tool</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://github.com/technologiespro/smart2fa">Smart 2FA</a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://t.me/STHxBot">AI Bot</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
             </div>
 
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="footer__widget footer__widget-4 mb-50 footer-col-4-3">
+              <div class="footer__widget footer__widget-4 mb-25 footer-col-4-3">
                 <h3 class="footer__widget-title">Marketcaps</h3>
-
                 <div class="footer__widget-content">
                   <ul>
                     <li>
@@ -82,11 +101,31 @@
                   </ul>
                 </div>
               </div>
+
+              <div class="footer__widget footer__widget-4 mb-25 footer-col-4-3">
+                <h3 class="footer__widget-title">Trade</h3>
+                <div class="footer__widget-content">
+                  <ul>
+                    <li>
+                      <nuxt-link href="https://ex.xbts.io/market/XBTSX.STH_XBTSX.USDT">DEX</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://xeggex.com/market/STH_USDT">CEX</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://app.xbts.io/#/pools">DeFi</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://app.xbts.io/#/smartholder">SmartHolder</nuxt-link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
 
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="footer__widget footer__widget-4 mb-50 footer-col-4-4">
+              <div class="footer__widget footer__widget-4 mb-25 footer-col-4-4">
                 <h3 class="footer__widget-title">{{$t('posts')}}</h3>
 
                 <div class="footer__widget-content">
@@ -144,38 +183,10 @@
               </div>
               <div class="col-sm-5">
                 <div class="footer__link-4 text-sm-end">
-
                   <nuxt-link :to="localePath('/disclamers')">{{$t('disclaimers')}}</nuxt-link>
                   <nuxt-link :to="localePath('/terms')">{{$t('terms')}}</nuxt-link>
-
                 </div>
               </div>
-              <!--
-              <div class="col-sm-2">
-                <div
-                    class="footer__lang d-flex align-items-center justify-content-md-end"
-                >
-                  <div class="footer__lang-img mr-15">
-                    <img
-                        src="~/assets/img/footer/footer-lang-flag-1.png"
-                        alt="footer__lang-img"
-                    />
-                  </div>
-                  <div class="footer__lang-wrapper">
-                    <span
-                        @click="handleToggle"
-                        class="footer__lang-selected-lang tp-lang-toggle-2"
-                        id="tp-footer-lang-toggle"
-                    >English</span
-                    >
-                    <ul :class="`footer__lang-list tp-lang-list-2 ${open?'tp-lang-list-open-2':''}`">
-                      <li>Russian</li>
-                      <li>English</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              -->
             </div>
           </div>
         </div>

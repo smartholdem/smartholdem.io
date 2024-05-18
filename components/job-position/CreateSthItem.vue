@@ -4,7 +4,7 @@
       <div class="col-xl-6 col-lg-7 col-md-9">
         <div class="job__content">
           <h3 class="job__title">
-            <nuxt-link href="/">{{title}}</nuxt-link>
+            <nuxt-link target="_blank" :href="detail">{{title}}</nuxt-link>
           </h3>
 
           <div class="job__meta-wrapper d-sm-flex flex-wrap align-items-center">
