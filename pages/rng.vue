@@ -14,7 +14,7 @@ import Footer from "~~/layouts/footers/FooterTwo.vue";
 import BackToTop from "~~/layouts/footers/component/BackToTop.vue";
 
 //import ogImage from '@/assets/img/blog/rng2.png';
-
+// https://gist.github.com/joepie91/7105003c3b26e65efcea63f3db82dfba
 export default {
   components: { HeaderOne, Footer, BackToTop, RngDetails },
   setup() {
