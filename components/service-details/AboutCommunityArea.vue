@@ -95,7 +95,7 @@
         </div>
         <div class="col-lg-8 order-first order-lg-last">
 
-          <div v-show="$i18n.locale === 'ru'" class="services__details-wrapper">
+          <div v-if="$i18n.locale === 'ru'" class="services__details-wrapper">
             <h3 class="services__details-title">Мы очень рады видеть вас в нашем растущем сообществе!</h3>
             <p>
               Мы стремимся трансформировать игровую индустрию, предоставляя геймерам по всему миру инструменты и ресурсы
@@ -230,7 +230,7 @@
 
           </div>
 
-          <div v-show="$i18n.locale !== 'ru'" class="services__details-wrapper">
+          <div v-else class="services__details-wrapper">
             <h3 class="services__details-title">We are thrilled to have you join our growing community!</h3>
             <p>
               We aim to transform the gaming industry by providing gamers worldwide with the tools and resources to
