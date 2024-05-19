@@ -1,5 +1,5 @@
 <template>
-  <section class="services__area pt-120 pb-125">
+  <section class="services__area pt-40 pb-125">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">

@@ -114,9 +114,9 @@ export default {
                 },
                 {
                     id: 5,
-                    page: "poker-details",
+                    page: "projects",
                     img: img_hasher,
-                    name: 'Hasher.link',
+                    name: 'Hasher',
                     title: 'Math Converter',
                     type: "service",
                     social_links: [
@@ -126,13 +126,13 @@ export default {
                             icon: 'fa-brands fa-twitter',
                             name: 'Twitter'
                         },
-                        {link: 'https://paperwallet.top', target: '_blank', icon: 'fa fa-link', name: 'paperwallet'},
+                        {link: 'https://hasher.smartholdem.io', target: '_blank', icon: 'fa fa-link', name: 'paperwallet'},
                     ],
                     team_p: true,
                 },
                 {
                     id: 6,
-                    page: "poker-details",
+                    page: "projects",
                     img: img_lotto,
                     name: 'Lottery',
                     title: 'Crypto',
@@ -150,7 +150,7 @@ export default {
                 },
                 {
                     id: 7,
-                    page: "poker-details",
+                    page: "projects",
                     img: img_chess,
                     name: 'Decentralized Chess',
                     title: 'Crypto',
@@ -167,7 +167,7 @@ export default {
                 },
                 {
                     id: 8,
-                    page: "poker-details",
+                    page: "projects",
                     img: img_racing,
                     name: 'Horse Racing',
                     title: 'Crypto',

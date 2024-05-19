@@ -1,5 +1,5 @@
 <template>
-  <section class="services__area pt-120 pb-125">
+  <section class="services__area pt-40 pb-125">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -491,7 +491,7 @@
               <li>Testing game functions on the test network</li>
             </ul>
             <h4>Create your first Web3 game using SmartHoldem.</h4>
-            <a id="innovation6" class="text-primary" target="_blank" href="https://github.com/smartholdem">An example of
+            <a id="innovation6" class="text-primary" target="_blank" href="https://github.com/smartholdem/dice-game-example/">An example of
               developing a basic Web3 game with TRNG SmartHoldem.</a>
           </div>
           <!-- innovation6 -->

@@ -33,7 +33,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "Projects",
+      title: "SmartHoldem Platform Projects",
     });
   },
 };

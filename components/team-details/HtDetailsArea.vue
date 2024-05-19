@@ -27,7 +27,7 @@
                     </span>
                   </div>
                   <div class="team__details-contact-content">
-                    <p><a target="_blank" href="#">Decentralized Game</a></p>
+                    <p><a target="_blank" href="#">Decentralized WEB3 Game</a></p>
                   </div>
                 </div>
               </div>

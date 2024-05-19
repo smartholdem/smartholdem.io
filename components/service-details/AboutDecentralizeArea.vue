@@ -1,5 +1,5 @@
 <template>
-  <section class="services__area pt-120 pb-125">
+  <section class="services__area pt-40 pb-125">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -98,7 +98,8 @@
             </p>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-decentralize/1.png" alt="decentralize 1"/>
+              <img v-if="$i18n.locale === 'ru'" src="~/assets/img/sth/about-decentralize/smartHoldem-innovation-consensus-dpos-post-ru.png" alt="decentralize 1"/>
+              <img v-else src="~/assets/img/sth/about-decentralize/smartHoldem-innovation-consensus-dpos-post.png" alt="decentralize 1"/>
             </div>
 
             <div class="services__details-text mb-25">
@@ -113,7 +114,7 @@
             </div>
 
             <div class="services__details-thumb m-img">
-              <img src="~/assets/img/sth/about-decentralize/2.png" alt="decentralize 2">
+              <img src="~/assets/img/sth/about-decentralize/smartholdem-blockchain-performance-scalability-diagram.png" alt="decentralize 2">
             </div>
 
             <div class="services__details-text mb-25">

@@ -17,7 +17,7 @@
 
                 <div class="footer__widget-content">
                   <div class="footer__info">
-                    <p>Decentralized world</p>
+                    <p>WEB3 Gaming Ecosystem</p>
 
                     <div class="footer__social-4">
                       <h5>{{$t('follow')}}</h5>

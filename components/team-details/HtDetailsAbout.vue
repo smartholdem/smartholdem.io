@@ -131,12 +131,7 @@
                 </ol>
               </div>
               <p>In all cases, one of the two players wins this game.</p>
-              <p>
-                The interface includes statistics on the number of games played and the percentage of luck. You can
-                reset your game statistics, including win/loss rate and luck percentage, by selecting the "Reset Data"
-                option in the game menu.
 
-              </p>
               <img src="~/assets/img/sth/ht/ht3.png" alt="ht3"/>
               <h3 class="team__details-about-title text-center">How it works</h3>
               <div class="team__details-about-list pt-10 mb-35">

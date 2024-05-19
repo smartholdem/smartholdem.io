@@ -37,7 +37,7 @@
 
               <div class="postbox__thumb postbox__thumb-overlay m-img mb-55"
                    :style="{ backgroundImage: `url(${thumb_bg})` }"></div>
-              <!--
+
               <div class="postbox__meta-wrapper d-flex align-items-center justify-content-center flex-wrap">
                 <div class="postbox__meta-item mb-30">
                   <div class="postbox__meta-author d-flex align-items-center">
@@ -53,15 +53,17 @@
                     </div>
                   </div>
                 </div>
+                <!--
                 <div class="postbox__meta-item mb-30">
                   <div class="postbox__meta-content">
                     <span class="postbox__meta-type">{{ $t('published') }}</span>
                     <p class="postbox__meta-name">January 15, 2024</p>
                   </div>
                 </div>
+                -->
 
               </div>
-            -->
+
             </div>
           </div>
         </div>
