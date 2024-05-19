@@ -4,9 +4,6 @@
 
 <template>
 <div>
-  <p>
-    <strong>JOIN US HERE</strong>
-  </p>
 
   <div class="row">
     <div class="col-md-3 col-sm-6 col-auto text-center text-warning-emphasis">
@@ -23,7 +20,7 @@
       </a>
     </div>
 
-    <div class="col-auto  col-md-3 col-sm-6text-center text-warning-emphasis">
+    <div class="col-auto col-md-3 col-sm-6 text-warning-emphasis text-center">
       <a v-show="$i18n.locale === 'ru'" target="_blank" href="https://t.me/smartholdem">
         <img src="~/assets/img/sth/about-community/tg.png" alt="telegram smartholdem"/>
         <br/>Telegram
