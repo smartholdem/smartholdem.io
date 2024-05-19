@@ -4,8 +4,168 @@
       <div class="team__details-about-border pt-90 pb-65">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <div
-                class="team__details-about-content"
+            <div v-if="$i18n.locale === 'ru'"
+                 class="team__details-about-content"
+            >
+              <!--
+              data-sal="slide-up"
+              data-sal-delay="130" data-sal-duration="1000"
+              -->
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20">
+                    <img
+                        src="~/assets/img/sth/poker/blockchain-poker-club-menu.png" alt="blockchain poker"
+                        class="rounded-3">
+                  </div>
+                </div>
+              </div>
+              <h3 class="team__details-about-title">Первый в мире Децентрализованный Покер Рум</h3>
+              <p>
+                Добро пожаловать в будущее покера, где блокчейн технологии объединяются с вековым азартом любимой игры.
+              </p>
+              <p>
+                Blockchain Poker Club — это децентрализованная платформа для игры в Texas Hold'em, созданная на
+                технологиях SmartHoldem.
+              </p>
+              <p>
+                SmartHoldem — это революционная блокчейн-инфраструктура Web3 для игровой индустрии, предназначенная для
+                создания честных, децентрализованных, прозрачных и неизменяемых игр.
+              </p>
+              <p>
+                Blockchain Poker Club — это новое имя в мире онлайн-покера. Платформа предлагает игрокам множество
+                преимуществ, позволяющих наслаждаться более безопасным, прозрачным и честным игровым процессом. Откройте
+                для себя мир Web3 покера!
+              </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20 mt-40">
+                    <img
+                        src="~/assets/img/sth/poker/Screenshot-blockhain-poker-club.png"
+                        alt="smartholdem poker gameplay" class="rounded-3">
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="team__details-about-title">Знакомство с Blockchain Poker Club</h3>
+              <p>
+                Blockchain Poker Club — это новая покерная Web3 платформа, которая гарантирует прозрачность и
+                безопасность игры для игроков.
+              </p>
+              <p>
+                Blockchain Poker Club автоматизирует процессы с помощью блокчейна, TRNG SmartHoldem и криптографических
+                функций. В отличие от традиционных покерных сайтов, Blockchain Poker Club не требует доверия к
+                какому-либо серверу и центральному органу для управления транзакциями и результатами игр.
+              </p>
+              <p>
+                Каждая игра в Техасский Холдем записывается в блокчейн SmartHoldem, создавая честную игровую среду и
+                укрепляя доверие между игроками. Игроки всегда могут проверить достоверность результатов и убедиться в
+                отсутствии мошенничества или манипуляции.
+              </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20 mt-40">
+                    <img
+                        src="~/assets/img/sth/poker/Screenshot-blockhain-poker-club-hand.png"
+                        alt="smartholdem poker gameplay What is Blockchain Poker Club" class="rounded-3">
+                  </div>
+                </div>
+              </div>
+              <h3 class="team__details-about-title">Преимущества Web3 покера на блокчейне</h3>
+              <p>
+                Web3 Blockchain Poker предлагает множество преимуществ по сравнению с традиционными покерными сайтами, в
+                том числе:
+              </p>
+              <h3 class="team__details-about-title">Нет Рейка</h3>
+              <p>
+                В децентрализованном Blockchain Poker Club нет рейка из-за отсутствия затрат на поддержку персонала,
+                платы за серверы или других накладных расходов. Эта полностью автоматизированная блокчейн-платформа
+                разработана игроками для игроков. Вместо рейка, взимается комиссия блокчейна в размере 1 STH (1STH = 1
+                фишка) из банка за каждую покерную раздачу.
+                В Blockchain Poker Club, Покер принадлежит Игрокам, в отличие от традиционных покерных сайтов, которые
+                часто взимают высокий рейк, обычно составляющий от 2,5% до 10% от банка за каждую покерную раздачу.
+              </p>
+              <h3 class="team__details-about-title">Настоящее владение криптовалютой</h3>
+              <p>
+                В децентрализованном Blockchain Poker Club игроки всегда на первом месте. Ваш игровой аккаунт — это ваш
+                адрес в блокчейне SmartHoldem с функциями криптокошелька, где никто не может ограничить ввод или вывод
+                средств. Только Вы имеете доступ к вашим средствам и контролируете ваши приватные ключи. Депозит – без
+                комиссий, Вывод – 10 STH. Игроки могут мгновенно наслаждаться своим выигрышем, не платя чрезмерных
+                комиссий и не ожидая одобрения вывода средств.
+              </p>
+              <h3 class="team__details-about-title">SmartHoldem TRNG</h3>
+              <p>
+                Блокчейн повышает эффективность генераторов случайных чисел, обеспечивая 100% случайную, надёжную и
+                справедливую перетасовку карт, которую можно проверить с помощью криптографических доказательств.
+              </p>
+              <p>
+                Даже путешественник во времени не узнает окончательный результат раздачи.
+              </p>
+              <p>
+                Откройте для себя
+                <nuxt-link class="text-primary" :to="localePath('/rng')"><i class="fa fa-dice-d20"></i> SmartHoldem TRNG
+                </nuxt-link>
+              </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20 mt-40">
+                    <img
+                        src="~/assets/img/sth/poker/blockchain-poker-card-deck.png"
+                        alt="Blockchain Poker card deck" class="rounded-3">
+                  </div>
+                </div>
+              </div>
+              <h3 class="team__details-about-title">Безопасность</h3>
+              <p>
+                В Blockchain Poker Club транзакции защищены технологией блокчейн, что обеспечивает большую безопасность
+                ввода и вывода средств. Кроме того, технология блокчейна гарантирует, что результаты раздач являются
+                справедливыми и ими невозможно манипулировать.
+              </p>
+              <h3 class="team__details-about-title">Прозрачность</h3>
+              <p>
+                Благодаря технологии блокчейн каждая покерная игра прозрачно и надежно записывается в неизменяемый
+                реестр. Игроки имеют доступ к результатам предыдущих игр, чтобы убедиться в отсутствии мошенничества.
+                Такая полная прозрачность способствует доверию между игроками и гарантирует честность игры.
+              </p>
+              <h3 class="team__details-about-title">Глобальный доступ</h3>
+              <p>
+                Криптовалюта и блокчейн устраняют барьеры для входа, обеспечивая глобальный доступ к играм.
+                Децентрализация позволяет игрокам управлять своими игровыми кошельками независимо от кого-либо.
+                В Blockchain Poker Club нет географических ограничений. Игроки со всего мира могут участвовать в онлайн
+                играх. Blockchain Poker Club создает мощное глобальное сообщество игроков и энтузиастов покера.
+              </p>
+              <h3 class="team__details-about-title">Дорожная карта</h3>
+              <p>
+                Разработа действительно децентрализованного покера заняла несколько лет. Нами было проведено неского
+                бета-тестов, мы постарались учесть все пожелания участников. На данный момент, мы завершаем несколько
+                важных этапов по развертыванию платформы на блокчейне, а именно подключаем модули создания турниров,
+                интегрируем обновленный API SmartHoldem и добавляем функцию обмена криптовалюты в игровой кошелёк.
+              </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20 mt-40">
+                    <img
+                        src="~/assets/img/sth/poker/blockhain-poker-club-hand-players.png"
+                        alt="Blockchain Poker players" class="rounded-3">
+                  </div>
+                </div>
+              </div>
+              <p>
+                Присоединяйтесь к миру Web3 с Blockchain Poker Club, который обеспечивает повышенную безопасность,
+                полную прозрачность, низкие комиссии, глобальную доступность и постоянные инновации.
+              </p>
+              <p>
+                Приготовьтесь к захватывающему старту!<br/>
+                Присоединяйтесь к нашим социальным сетям и будьте в курсе последних новостей!
+              </p>
+
+              <SthSocial/>
+
+
+            </div>
+
+            <div v-else
+                 class="team__details-about-content"
             >
               <!--
               data-sal="slide-up"
@@ -150,7 +310,8 @@
                 </div>
               </div>
               <p>
-                Join the world of Web3 with Blockchain Poker Club! Experience enhanced security, full transparency, low fees, global accessibility, and constant innovation.
+                Join the world of Web3 with Blockchain Poker Club! Experience enhanced security, full transparency, low
+                fees, global accessibility, and constant innovation.
               </p>
               <p>
                 Get ready for an exciting launch!<br/>
