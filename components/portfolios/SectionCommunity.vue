@@ -1,5 +1,5 @@
 <template>
-  <section class="case__area pt-110" id="cases">
+  <section class="case__area pt-10" id="cases">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-7">

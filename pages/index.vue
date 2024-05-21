@@ -7,11 +7,13 @@
     <History/>
     <Video/>
     <About/>
+    <Projects/>
+    <Counter/>
     <SectionCommunity/>
     <!--<Blogs/>-->
     <Manifest/>
-    <Projects/>
-    <Counter/>
+
+
     <Testimonial/>
     <Partners/>
   </Layout>

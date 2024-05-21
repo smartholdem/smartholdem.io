@@ -17,11 +17,18 @@ export default {
           },
              */
           {
+            id: 1,
+            hasDropdown: false,
+            title: "Кошелёк",
+            link: "https://wallet.smartholdem.io",
+          },
+          {
             id: 2,
             hasDropdown: true,
             title: "Обмен",
-            link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC",
+            link: "/ru/buy-sth",
             submenus: [
+              { title: "Как купить STH", link: "/ru/buy-sth" },
               { title: "XBTS DEX", link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC" },
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
               { title: "Xeggex", link: "https://xeggex.com/market/STH_USDT" },
@@ -48,12 +55,16 @@ export default {
             title: "Токеномика",
             link: "/ru/tokenomics",
           },
+
+            /*
           {
             id: 6,
             hasDropdown: false,
             title: "Документация",
             link: "https://wiki.smartholdem.io/ru/home",
           },
+
+             */
         ],
         en: [
             /*
@@ -70,11 +81,18 @@ export default {
           },
              */
           {
+            id: 1,
+            hasDropdown: false,
+            title: "Wallet",
+            link: "https://wallet.smartholdem.io",
+          },
+          {
             id: 2,
             hasDropdown: true,
             title: "Exchange",
-            link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC",
+            link: "/buy-sth",
             submenus: [
+              { title: "How To buy STH", link: "/buy-sth" },
               { title: "XBTS DEX", link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC" },
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
               { title: "Xeggex", link: "https://xeggex.com/market/STH_USDT" },
@@ -100,12 +118,14 @@ export default {
             title: "Tokenomics",
             link: "/tokenomics",
           },
+            /*
           {
             id: 6,
             hasDropdown: false,
             title: "Documentation",
             link: "https://wiki.smartholdem.io",
           },
+             */
         ]
       },
     };

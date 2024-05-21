@@ -29,9 +29,11 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // internal
 import award_img_1 from "~/assets/img/partners/paperwallet.png";
 import award_img_2 from "~/assets/img/partners/hive.png";
-import award_img_3 from "~/assets/img/partners/leveldb.png";
+//import leveldb from "~/assets/img/partners/leveldb.png";
+import paprika from "~/assets/img/partners/dexgames.png";
 import award_img_4 from "~/assets/img/partners/bitshares.png";
-import award_img_5 from "~/assets/img/partners/dexgames.png";
+import award_img_5 from "~/assets/img/partners/paprika.png";
+
 
 export default {
   data() {
@@ -39,7 +41,8 @@ export default {
       award_data: [
         award_img_1,
         award_img_2,
-        award_img_3,
+        paprika,
+        //leveldb,
         award_img_4,
         award_img_5,
       ],

@@ -32,9 +32,8 @@
                     <ul>
                       <li>
                         <span>
-                          <a target="_blank" href="https://wallet.smartholdem.io">
-                            <i class="fa icon_wallet"></i>
-                            {{$t('wallet')}}
+                          <a target="_blank" href="https://wiki.smartholdem.io">
+                            <i class="fa icon_documents"></i> API Docs
                           </a>
                         </span>
                       </li>

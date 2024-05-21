@@ -22,12 +22,21 @@
                     <div class="footer__social-4">
                       <h5>{{$t('follow')}}</h5>
                       <social/>
+
+                      <p class="text-white mt-20">
+                        contact@smartholdem.io
+                      </p>
+
                     </div>
+
                   </div>
+
                 </div>
 
 
               </div>
+
+
             </div>
 
 
