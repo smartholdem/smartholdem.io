@@ -35,8 +35,10 @@
                data-sal-duration="1000">
             <div class="fact__banner-bg include-bg" :style="{ backgroundImage: `url(${fact_bg})` }"></div>
             <div class="fact__banner-content">
+              <nuxt-link :to="localePath('/about-community')">
               <h5>{{ $t('manage_community') }}</h5>
               <p>{{ $t('connect_earn') }}</p>
+              </nuxt-link>
             </div>
           </div>
         </div>
