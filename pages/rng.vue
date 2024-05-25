@@ -26,12 +26,12 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Real Blockchain True Random Number Generator RNG on SmartHoldem Platform'
+          content: 'Blockchain True Random Number Generator RNG on SmartHoldem Platform'
         },
         {
           hid: 'og:image',
           name: 'og:image',
-          content: 'https://smartholdem.io/_nuxt/rng2.c5d3b9b4.jpg'
+          content: 'https://smartholdem.io/preview/rng.png'
         }
 
       ],
