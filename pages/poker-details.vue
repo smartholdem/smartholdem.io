@@ -1,11 +1,11 @@
 <template>
   <div>
-    <header-one :top_bar="false" :header_solid="true" :commonOffcanvas="true" />
+    <header-one :top_bar="false" :header_solid="true" :commonOffcanvas="true"/>
     <DetailsArea/>
     <DetailsAbout/>
     <!--<lawyer-blogs :style_2="true" />-->
-    <Footer :style_2="true" />
-    <back-to-top />
+    <Footer :style_2="true"/>
+    <back-to-top/>
   </div>
 </template>
 
@@ -30,12 +30,14 @@ export default {
     useHead({
       title: "Blockchain Poker Club",
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {charset: 'utf-8'},
+        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {
           hid: 'description',
           name: 'description',
-          content: 'Decentralized Web3 Poker platform. Create tournaments and play No-Limit Texas Holdem cash games with friends on Blockchain Poker Club. No KYC. No Rake!'
+          content: this.$i18n.locale !== 'ru' ?
+              'Decentralized Web3 Poker platform. Create tournaments and play No-Limit Texas Holdem cash games with friends on Blockchain Poker Club. No KYC. No Rake!' :
+              'Децентрализованная Web3 платформа для игры в покер. Создавайте турниры и играйте в кэш-игры в безлимитный Texas Hold\'em с друзьями в Blockchain Poker Club. Нет KYC. Нет Рейка!'
         },
         {
           hid: 'og:image',
