@@ -28,7 +28,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "Blockchain Poker Club",
+      title: this.$i18n.locale !== 'ru' ? "Blockchain Poker Club" : "Децентрализованный покер рум",
       meta: [
         {charset: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
