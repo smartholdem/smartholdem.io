@@ -28,7 +28,21 @@ export default {
   },
   setup() {
     useHead({
-      title: "Project Poker",
+      title: "Blockchain Poker Club",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Decentralized Web3 Poker platform. Create tournaments and play No-Limit Texas Holdem cash games with friends on Blockchain Poker Club. No KYC. No Rake!'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/poker.png'
+        }
+      ],
     });
   },
 };
