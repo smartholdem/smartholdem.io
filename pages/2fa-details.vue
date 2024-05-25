@@ -28,14 +28,16 @@ export default {
   },
   setup() {
     useHead({
-      title: "Project SMART 2FA",
+      title: "SMART 2FA",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
-          content: 'Smart2FA is a free, secure, open-source, cross-platform app that enables you to protect your accounts by adding 2-factor authentication (2FA).'
+          content: this.$i18n.locale !== 'ru' ?
+              'Smart2FA is a free, secure, open-source, cross-platform app that enables you to protect your accounts by adding 2-factor authentication (2FA).' :
+              'Smart2FA — это бесплатное безопасное кроссплатформенное приложение с открытым исходным кодом, которое поможет защитить ваши учетные записи путем добавления двухфакторной аутентификации (2FA).'
         },
         {
           hid: 'og:image',

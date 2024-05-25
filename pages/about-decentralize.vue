@@ -25,14 +25,16 @@ export default {
   },
   setup() {
     useHead({
-      title: "A Better Blockchain",
+      title: this.$i18n.locale !== 'ru' ? "A Better Blockchain" : "Более совершенный блокчейн для создания игр и бизнеса",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
-          content: 'SmartHoldem is an open-source hybrid blockchain platform utilizing a unique combination of Delegated Proof of Stake (DPoS) and Proof of SpaceTime (PoSt).'
+          content: this.$i18n.locale !== 'ru' ?
+              'SmartHoldem is an open-source hybrid blockchain platform utilizing a unique combination of Delegated Proof of Stake (DPoS) and Proof of SpaceTime (PoSt).' :
+              'SmartHoldem - это гибридная блокчейн платформа нового поколения, с открытым исходным кодом, на основе первого в мире механизма консенсуса с уникальным сочетанием алгоритмов Delegated Proof of Stake (DPoS) и Proof of SpaceTime (PoSt).'
         },
         {
           hid: 'og:image',

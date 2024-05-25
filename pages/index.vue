@@ -47,7 +47,8 @@ useHead({
     {
       hid: 'description',
       name: 'description',
-      content: 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG'
+      content: this.$i18n.locale !== 'ru' ? 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG' :
+          'Децентрализованная игровая платформа SmartHoldem на блокчейне с Настоящим генератором случайных чисел RNG'
     },
     {
       hid: 'og:image',

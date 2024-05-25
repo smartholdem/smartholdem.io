@@ -275,20 +275,26 @@
         </p>
         <h5>SmartHoldem Community</h5>
         <p>
-          SmartHoldem Community is an open club of new age visionaries, developers, entrepreneurs, traders, innovators, artists, holders, players who share the ideas of decentralization and are interested in development.
+          SmartHoldem Community is an open club of new age visionaries, developers, entrepreneurs, traders, innovators,
+          artists, holders, players who share the ideas of decentralization and are interested in development.
         </p>
         <p>
-          We believe that learning new technologies, hands-on work, learning useful skills, self-expression, striving to build something bigger than yourself, striving to work with others to build something bigger as a group, is a necessity for successful development in the new age digital era.
+          We believe that learning new technologies, hands-on work, learning useful skills, self-expression, striving to
+          build something bigger than yourself, striving to work with others to build something bigger as a group, is a
+          necessity for successful development in the new age digital era.
         </p>
         <p>
-          We believe in the consciousness and uniqueness of people joining SmartHoldem platform. We believe that the development of human civilization is one of the most useful things we can all do together.
+          We believe in the consciousness and uniqueness of people joining SmartHoldem platform. We believe that the
+          development of human civilization is one of the most useful things we can all do together.
         </p>
         <h5>Conclusion</h5>
         <p>
-          The SmartHoldem Manifesto is a testament to our unwavering commitment to fundamental blockchain technology and our vision of a brighter and more equitable future for humanity.
+          The SmartHoldem Manifesto is a testament to our unwavering commitment to fundamental blockchain technology and
+          our vision of a brighter and more equitable future for humanity.
         </p>
         <p>
-          We invite everyone who shares our values to join us on this journey as together we pave the way to a decentralized, sustainable world full of limitless possibilities.
+          We invite everyone who shares our values to join us on this journey as together we pave the way to a
+          decentralized, sustainable world full of limitless possibilities.
         </p>
         <p>
           <strong>Together we are changing reality</strong>
@@ -299,26 +305,31 @@
 
       <div class="container">
 
-      <div class="postbox__share-wrapper mt-45 mb-25">
-        <div class="row align-items-center">
-          <div class="col-xl-7 col-lg-7">
-            <div class="tagcloud tagcloud-style-2">
+        <div class="postbox__share-wrapper mt-45 mb-25">
+          <div class="row align-items-center">
+            <div class="col-xl-7 col-lg-7">
+              <div class="tagcloud tagcloud-style-2">
 
-              <a href="#">10/27/2023</a>
-              <a href="#">TechnoL0g</a>&
-              <a href="#">Europa</a>
+                <a href="#">10/27/2023</a>
+                <a href="#">TechnoL0g</a>&
+                <a href="#">Europa</a>
+              </div>
             </div>
-          </div>
-          <div class="col-xl-5 col-lg-5">
-            <div class="postbox__share postbox__share-2 text-lg-end">
-              <span>{{$t('share')}}</span>
-              <a target="_blank" :href="'https://vk.com/share.php?url=https://smartholdem.io/'+$i18n.locale+'/manifest/'"><i class="fab fa-vk"></i></a>
-              <a target="_blank" :href="'https://twitter.com/share?url=https://smartholdem.io/'+$i18n.locale+'/manifest/&via=smartholdem&text=Manifest'"><i class="fab fa-twitter"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/manifest/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <div class="col-xl-5 col-lg-5">
+              <div class="postbox__share postbox__share-2 text-lg-end">
+                <span>{{ $t('share') }}</span>
+                <a target="_blank"
+                   :href="'https://vk.com/share.php?url=https://smartholdem.io/'+$i18n.locale+'/manifest/'"><i
+                    class="fab fa-vk"></i></a>
+                <a target="_blank"
+                   :href="'https://twitter.com/share?url=https://smartholdem.io/'+$i18n.locale+'/manifest/&via=smartholdem&text=Manifest'"><i
+                    class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://smartholdem.io/manifest/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
       </div>
 
@@ -330,14 +341,15 @@
 import Layout from "~/layouts/LayoutTwo.vue";
 
 useHead({
-  title: "SmartHoldem Manifesto",
+  title: this.$i18n.locale !== 'ru' ? "SmartHoldem Manifesto" : 'Манифест SmartHoldem',
   meta: [
-    { charset: 'utf-8' },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    {charset: 'utf-8'},
+    {name: 'viewport', content: 'width=device-width, initial-scale=1'},
     {
       hid: 'description',
       name: 'description',
-      content: 'The SmartHoldem Manifesto represents our commitment to build a better world through technology'
+      content: this.$i18n.locale !== 'ru' ? 'The SmartHoldem Manifesto represents our commitment to build a better world through technology' :
+          'Расширение прав и возможностей человечества посредством фундаментальных технологий блокчейна'
     },
     {
       hid: 'og:image',
