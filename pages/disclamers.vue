@@ -3,7 +3,7 @@
     <header-one :top_bar="false" :header_solid="true" :commonOffcanvas="true" />
     <section-title title="Disclaimers and Limitation of Liability" subtitle=""/>
       <policy-area/>
-    <footer-six :style_2="true"/>
+    <Footer :style_2="true"/>
     <back-to-top/>
   </div>
 </template>
@@ -12,7 +12,7 @@
 import HeaderOne from "~~/layouts/headers/HeaderNineColor.vue";
 import SectionTitle from '~~/components/policy-terms/SectionTitle.vue';
 import PolicyArea from '~~/components/policy-terms/DisclaimersArea.vue';
-import FooterSix from '~~/layouts/footers/FooterSix.vue';
+import Footer from '~~/layouts/footers/FooterTwo.vue';
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
 export default {
@@ -20,7 +20,7 @@ export default {
     HeaderOne,
     SectionTitle,
     PolicyArea,
-    FooterSix,
+    Footer,
     BackToTop,
   },
   setup() {
