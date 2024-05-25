@@ -25,7 +25,21 @@ export default {
   },
   setup() {
     useHead({
-      title: "Decentralized",
+      title: "A Better Blockchain",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'SmartHoldem is an open-source hybrid blockchain platform utilizing a unique combination of Delegated Proof of Stake (DPoS) and Proof of SpaceTime (PoSt).'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/decentralize.png'
+        }
+      ],
     });
   },
 };
