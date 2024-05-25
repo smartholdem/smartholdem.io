@@ -25,7 +25,21 @@ export default {
   },
   setup() {
     useHead({
-      title: "Decentralized",
+      title: "Community SmartHoldem",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Welcome to the SmartHoldem community'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/community.png'
+        }
+      ],
     });
   },
 };
