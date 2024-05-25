@@ -25,18 +25,26 @@ export default {
   },
   setup() {
     useHead({
+      title: "Tokenomics SmartHoldem Platform",
+      /*
       title: this.$i18n.locale !== 'ru' ?
           "Tokenomics SmartHoldem Platform" :
           "Токеномика платформы SmartHoldem",
+
+       */
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
+          content: 'STH is the native utility token of SmartHoldem blockchain. Deflationary model with limited emission',
+          /*
           content: this.$i18n.locale !== 'ru' ?
               'STH is the native utility token of SmartHoldem blockchain. Deflationary model with limited emission' :
               'Предложение сокращается, ценность растёт. Дефляционная модель с Ограниченной эмиссией'
+
+           */
         },
         {
           hid: 'og:image',

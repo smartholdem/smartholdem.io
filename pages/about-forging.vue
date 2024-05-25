@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :top_bar="true" :commonOffcanvas="true" />
+    <Header :top_bar="true" :commonOffcanvas="true"/>
     <Breadcrumb/>
     <Area/>
     <Footer :style_2="true"/>
@@ -25,16 +25,23 @@ export default {
   },
   setup() {
     useHead({
+      title: "Cryptocurrency Mining and Forging on SmartHoldem Blockchain",
+      /*
       title: this.$i18n.locale !== 'ru' ? "Cryptocurrency Mining and Forging on SmartHoldem Blockchain" : "Майнинг и форжинг криптовалюты на блокчейне SmartHoldem",
+
+       */
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {charset: 'utf-8'},
+        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {
           hid: 'description',
           name: 'description',
+          content: 'SmartHoldem is an open-source hybrid blockchain platform utilizing a unique combination of Delegated Proof of Stake (DPoS) and Proof of SpaceTime (PoSt).',
+          /*
           content: this.$i18n.locale !== 'ru' ?
               'SmartHoldem is an open-source hybrid blockchain platform utilizing a unique combination of Delegated Proof of Stake (DPoS) and Proof of SpaceTime (PoSt).' :
               'Публичная сеть SmartHoldem Level 1 (DPoS) — это блокчейн с открытым исходным кодом, работающий на основе Delegated Proof of Stake (DPoS). SmartHoldem даёт возможность создавать и получать доступ к широкому спектру децентрализованных инструментов, приложений и экосистем.'
+         */
         },
         {
           hid: 'og:image',

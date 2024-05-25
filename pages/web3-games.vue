@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :top_bar="true" :commonOffcanvas="true" />
+    <Header :top_bar="true" :commonOffcanvas="true"/>
     <Breadcrumb/>
     <Area/>
     <Footer :style_2="true"/>
@@ -25,19 +25,24 @@ export default {
   },
   setup() {
     useHead({
-      title: this.$i18n.locale !== 'ru' ?
-          "Web3 Blockchain Games" :
-          "Блокчейн - Игры WEB3",
+      //title: this.i18n.locale !== 'ru' ? "Web3 Blockchain Games" : "Блокчейн - Игры WEB3",
+      title: "Web3 Blockchain Games",
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {charset: 'utf-8'},
+        {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {
           hid: 'description',
           name: 'description',
-          content: this.$i18n.locale !== 'ru' ?
+          content: 'Decentralized Web3 games on SmartHoldem Platform',
+          /*
+          content: this.i18n.locale !== 'ru' ?
               'Decentralized Web3 games on SmartHoldem Platform' :
               'Децентрализованные Web3 игры на платформе SmartHoldem'
+
+           */
         },
+
+
         {
           hid: 'og:image',
           name: 'og:image',

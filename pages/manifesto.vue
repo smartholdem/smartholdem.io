@@ -341,15 +341,23 @@
 import Layout from "~/layouts/LayoutTwo.vue";
 
 useHead({
+  title: "SmartHoldem Manifesto",
+  /*
   title: this.$i18n.locale !== 'ru' ? "SmartHoldem Manifesto" : 'Манифест SmartHoldem',
+
+   */
   meta: [
     {charset: 'utf-8'},
     {name: 'viewport', content: 'width=device-width, initial-scale=1'},
     {
       hid: 'description',
       name: 'description',
+      content: 'The SmartHoldem Manifesto represents our commitment to build a better world through technology',
+      /*
       content: this.$i18n.locale !== 'ru' ? 'The SmartHoldem Manifesto represents our commitment to build a better world through technology' :
           'Расширение прав и возможностей человечества посредством фундаментальных технологий блокчейна'
+
+       */
     },
     {
       hid: 'og:image',

@@ -25,14 +25,14 @@ export default {
   },
   setup() {
     useHead({
-      title: this.$i18n.locale !== 'ru' ? "Community SmartHoldem" : "Сообщество SmartHoldem",
+      title: "Community SmartHoldem",
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
-          content: this.$i18n.locale !== 'ru' ? 'Welcome to the SmartHoldem community' : 'Добро пожаловать в сообщество SmartHoldem'
+          content: 'Welcome to the SmartHoldem community'
         },
         {
           hid: 'og:image',

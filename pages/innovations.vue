@@ -25,15 +25,23 @@ export default {
   },
   setup() {
     useHead({
+      title: "SmartHoldem Crypto Innovations",
+      /*
       title: this.$i18n.locale !== 'ru' ? "Innovations" : "Инновации платформы SmartHoldem",
+
+       */
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
           name: 'description',
+          content: 'Blockchain SmartHoldem Platform Innovations',
+          /*
           content: this.$i18n.locale !== 'ru' ? 'Blockchain SmartHoldem Platform Innovations':
               'Инновации блокчейн - платформы SmartHoldem'
+
+           */
         },
         {
           hid: 'og:image',

@@ -25,7 +25,7 @@ export default {
   },
   setup() {
     useHead({
-      title: "SmartHoldem Disclamers",
+      title: "SmartHoldem Disclaimers",
     });
   },
 };

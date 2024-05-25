@@ -33,9 +33,13 @@ export default {
   },
   setup() {
     useHead({
+      title: "Projects Build on SmartHoldem",
+      /*
       title: this.$i18n.locale !== 'ru' ?
           "Projects Build on SmartHoldem" :
           "Проекты построенные на SmartHoldem",
+
+       */
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

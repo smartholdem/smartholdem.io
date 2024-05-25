@@ -38,16 +38,21 @@ import Testimonial from '~/components/testimonials/LawyerTestimonial.vue';
 import Projects from '~/components/teams/LawyerTeams.vue';
 import Counter from '~~/components/counters/Counter.vue';
 
+import { useRouter } from 'vue-router';
+const router = useRouter()
+console.log(router.currentRoute.value.path)
 
 useHead({
-  title: "SmartHoldem Platform",
+  title: router.currentRoute.value.path !== '/ru' ? "SmartHoldem Platform with True RNG" : "Децентрализованная игровая платформа SmartHoldem с истинным генератором случайных чисел",
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
       hid: 'description',
       name: 'description',
-      content: this.$i18n.locale !== 'ru' ? 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG' :
+      //content: 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG',
+
+      content: router.currentRoute.value.path !== '/ru' ? 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG' :
           'Децентрализованная игровая платформа SmartHoldem на блокчейне с Настоящим генератором случайных чисел RNG'
     },
     {

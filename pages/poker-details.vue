@@ -28,16 +28,23 @@ export default {
   },
   setup() {
     useHead({
+      title: "Blockchain Poker Club: Decentralized Poker Room",
+      /*
       title: this.$i18n.locale !== 'ru' ? "Blockchain Poker Club" : "Децентрализованный покер рум",
+       */
       meta: [
         {charset: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {
           hid: 'description',
           name: 'description',
-          content: this.$i18n.locale !== 'ru' ?
+          content: 'Decentralized Web3 Poker platform. Create tournaments and play No-Limit Texas Holdem cash games with friends on Blockchain Poker Club. No KYC. No Rake!',
+         /*
+    content: this.$i18n.locale !== 'ru' ?
               'Decentralized Web3 Poker platform. Create tournaments and play No-Limit Texas Holdem cash games with friends on Blockchain Poker Club. No KYC. No Rake!' :
               'Децентрализованная Web3 платформа для игры в покер. Создавайте турниры и играйте в кэш-игры в безлимитный Texas Hold\'em с друзьями в Blockchain Poker Club. Нет KYC. Нет Рейка!'
+
+          */
         },
         {
           hid: 'og:image',

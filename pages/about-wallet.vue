@@ -25,15 +25,24 @@ export default {
   },
   setup() {
     useHead({
+      title: "About Wallet & Assets: Your keys, Your coins",
+      /*
       title: this.$i18n.locale !== 'ru' ?  "About Wallet & Assets: Your keys, Your coins" : "О кошельке и активах: ваши ключи, ваши монеты",
+
+       */
       meta: [
         {charset: 'utf-8'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1'},
         {
           hid: 'description',
           name: 'description',
-          content: this.$i18n.locale !== 'ru' ? 'SmartHoldem Wallet is designed to quickly and easily manage SmartHoldem STH, giving you complete control over your coins.' :
+          content: 'SmartHoldem Wallet is designed to quickly and easily manage SmartHoldem STH, giving you complete control over your coins.',
+          /*
+          content: this.$i18n.locale !== 'ru' ?
+              'SmartHoldem Wallet is designed to quickly and easily manage SmartHoldem STH, giving you complete control over your coins.' :
               'SmartHoldem Wallet предназначен для быстрого и простого управления SmartHoldem STH, предоставляя Вам полный контроль над Вашими монетами.'
+
+           */
         },
         {
           hid: 'og:image',
