@@ -330,6 +330,20 @@
 import Layout from "~/layouts/LayoutTwo.vue";
 
 useHead({
-  title: "SmartHoldem Manifest",
+  title: "SmartHoldem Manifesto",
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'The SmartHoldem Manifesto represents our commitment to build a better world through technology'
+    },
+    {
+      hid: 'og:image',
+      name: 'og:image',
+      content: 'https://smartholdem.io/preview/manifesto.png'
+    }
+  ],
 });
 </script>
