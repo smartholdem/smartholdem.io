@@ -26,6 +26,21 @@ export default {
   setup() {
     useHead({
       title: "Web3 Games",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Decentralized Web3 games on SmartHoldem Platform'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/web3.png'
+        }
+
+      ],
     });
   },
 };
