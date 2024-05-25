@@ -28,7 +28,21 @@ export default {
   },
   setup() {
     useHead({
-      title: "Project Poker",
+      title: "WEB3 Game on SmartHoldem Blockchain",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Welcome to the «Heads or Tails» blockchain PvP game!'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/ht.png'
+        }
+      ],
     });
   },
 };
