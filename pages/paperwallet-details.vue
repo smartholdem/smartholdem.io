@@ -28,7 +28,21 @@ export default {
   },
   setup() {
     useHead({
-      title: "Project Poker",
+      title: "Paper Wallet Generator",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Universal Offline Open Source Client-Side Cryptocurrency Wallet Generator. Large selection of cryptocurrencies, functions, and paper wallet designs. Completely free and without ads!'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/paper.png'
+        }
+      ],
     });
   },
 };
