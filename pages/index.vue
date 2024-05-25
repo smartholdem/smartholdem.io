@@ -39,8 +39,7 @@ import Projects from '~/components/teams/LawyerTeams.vue';
 import Counter from '~~/components/counters/Counter.vue';
 
 import { useRouter } from 'vue-router';
-const router = useRouter()
-console.log(router.currentRoute.value.path)
+const router = useRouter();
 
 useHead({
   title: router.currentRoute.value.path !== '/ru' ? "SmartHoldem Platform with True RNG" : "Децентрализованная игровая платформа SmartHoldem с истинным генератором случайных чисел",
