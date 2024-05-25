@@ -33,7 +33,21 @@ export default {
   },
   setup() {
     useHead({
-      title: "SmartHoldem Platform Projects",
+      title: "Projects Build on SmartHoldem",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Blockchain Poker, Heads or Tails, Paper Wallet, Smart2FA TOTP, Hasher, Lottery, Decentralized Chess, Horse Racing'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://smartholdem.io/preview/projects.png'
+        }
+      ],
     });
   },
 };
