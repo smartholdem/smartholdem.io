@@ -42,7 +42,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 useHead({
-  title: router.currentRoute.value.path !== '/ru' ? "SmartHoldem Platform with True RNG" : "Децентрализованная игровая платформа SmartHoldem с истинным генератором случайных чисел",
+  title: router.currentRoute.value.path !== '/ru' ? "Decentralized Web3 infrastructure for Everyone" : "Децентрализованная игровая платформа SmartHoldem с истинным генератором случайных чисел",
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
