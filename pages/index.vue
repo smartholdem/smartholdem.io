@@ -52,9 +52,8 @@ useHead({
     {
       hid: 'og:image',
       name: 'og:image',
-      content: 'https://smartholdem.io/_nuxt/slider-1.e74227fc.jpg'
+      content: 'https://smartholdem.io/preview/index.png'
     }
-
   ],
 });
 
