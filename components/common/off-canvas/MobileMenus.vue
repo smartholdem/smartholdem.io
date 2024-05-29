@@ -1,10 +1,10 @@
 <template>
   <nav class="mean-nav">
     <ul>
-      <template v-for="(menu, i) in menuData[$i18n.locale]" :key="i">
+      <template v-for="(menu, i) in menuData[$i18n.locale]" :key="i + 'mm'">
         <li
-          v-if="menu.hasDropdown && !menu.megaMenu && !menu.pages"
-          class="has-dropdown"
+            v-if="menu.hasDropdown && !menu.megaMenu && !menu.pages"
+            class="has-dropdown"
         >
           <nuxt-link :href="menu.link">{{ menu.title }}</nuxt-link>
           <ul
@@ -70,7 +70,7 @@
           </a>
         </li>
 
-        <li v-if="menu.pages" class="has-dropdown has-mega-menu">
+        <li v-if="menu.pages || menu.mobile" class="has-dropdown has-mega-menu">
           <nuxt-link :href="menu.link">{{ menu.title }}</nuxt-link>
           <ul
             class="mega-menu"
@@ -80,6 +80,7 @@
               <nuxt-link :href="mega_m.link" class="mega-menu-title">
                 {{ mega_m.title }}
               </nuxt-link>
+
               <ul
                 :style="{
                   display: subMenu === mega_m.title ? 'block' : 'none',
@@ -89,6 +90,7 @@
                   <nuxt-link :href="sub_m.link">{{ sub_m.title }}</nuxt-link>
                 </li>
               </ul>
+
               <a
                 :class="`mean-expand ${
                   subMenu === mega_m.title ? 'mean-clicked' : ''
@@ -98,8 +100,10 @@
               >
                 <i class="fal fa-plus"></i>
               </a>
+
             </li>
           </ul>
+          <!--
           <a
             :class="`mean-expand ${
               navTitle === menu.title ? 'mean-clicked' : ''
@@ -109,6 +113,7 @@
           >
             <i class="fal fa-plus"></i>
           </a>
+          -->
         </li>
       </template>
     </ul>

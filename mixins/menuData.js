@@ -3,29 +3,10 @@ export default {
     return {
       menuData: {
         ru:  [
-            /*
           {
             id: 1,
             hasDropdown: true,
-            title: "Marketcap",
-            link: "https://coinpaprika.com/coin/sth-smartholdem/",
-            submenus: [
-              { title: "Coinpaprika", link: "https://coinpaprika.com/coin/sth-smartholdem/" },
-              { title: "Blockspot", link: "https://blockspot.io/coin/smartholdem/" },
-              { title: "Coinmarketcap", link: "https://coinmarketcap.com/currencies/smartholdem/" },
-            ],
-          },
-             */
-          {
-            id: 1,
-            hasDropdown: false,
-            title: "Кошелёк",
-            link: "https://wallet.smartholdem.io",
-          },
-          {
-            id: 2,
-            hasDropdown: true,
-            title: "Обмен",
+            title: "Обмен STH",
             link: "/ru/buy-sth",
             submenus: [
               { title: "Как купить STH", link: "/ru/buy-sth" },
@@ -33,63 +14,92 @@ export default {
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
               { title: "Xeggex", link: "https://xeggex.com/market/STH_USDT" },
               { title: "Xeggex Pool", link: "https://xeggex.com/pool/STH_USDT" },
-              { title: "Smart Holder", link: "https://app.xbts.io/#/smartholder" },
+              { title: "SmartHolder DEX Staking", link: "https://app.xbts.io/#/smartholder" },
             ],
+          },
+          {
+            id: 2,
+            hasDropdown: false,
+            pages: false,
+            title: "Кошелёк",
+            link: "https://wallet.smartholdem.io",
           },
           {
             id: 3,
             hasDropdown: false,
-            title: "Обозреватель",
-            link: "https://explorer.smartholdem.io/",
-
-          },
-          {
-            id: 4,
-            hasDropdown: false,
+            pages: true,
             title: "TRNG",
             link: "/ru/rng",
           },
           {
-            id: 5,
+            id: 4,
             hasDropdown: false,
+            pages: true,
             title: "Токеномика",
             link: "/ru/tokenomics",
           },
-
-            /*
+          {
+            id: 5,
+            hasDropdown: false,
+            mobile: true,
+            title: "Инновации",
+            link: "/ru/innovations",
+          },
+          {
+            id: 5,
+            hasDropdown: false,
+            mobile: true,
+            title: "Создано в SmartHoldem",
+            link: "/ru/projects",
+          },
           {
             id: 6,
             hasDropdown: false,
+            mobile: true,
+            title: "WEB3 Игры",
+            link: "/ru/web3-games",
+          },
+          {
+            id: 7,
+            hasDropdown: false,
+            mobile: true,
+            title: "О Кошельке",
+            link: "/ru/about-wallet",
+          },
+          {
+            id: 8,
+            hasDropdown: false,
+            mobile: true,
+            title: "Как стать делегатом",
+            link: "/ru/about-forging",
+          },
+          {
+            id: 9,
+            hasDropdown: false,
+            mobile: true,
             title: "Документация",
             link: "https://wiki.smartholdem.io/ru/home",
           },
-
-             */
+          {
+            id: 10,
+            hasDropdown: false,
+            mobile: true,
+            title: "Форум Сообщества",
+            link: "https://community.smartholdem.io",
+          },
+          {
+            id: 11,
+            hasDropdown: false,
+            pages: true,
+            title: "Обозреватель блоков",
+            link: "https://explorer.smartholdem.io/",
+          },
         ],
         en: [
-            /*
-          {
-            id: 1,
-            hasDropdown: true,
-            title: "Marketcap",
-            link: "https://coinpaprika.com/coin/sth-smartholdem/",
-            submenus: [
-              { title: "Coinpaprika", link: "https://coinpaprika.com/coin/sth-smartholdem/" },
-              { title: "Blockspot", link: "https://blockspot.io/coin/smartholdem/" },
-              { title: "Coinmarketcap", link: "https://coinmarketcap.com/currencies/smartholdem/" },
-            ],
-          },
-             */
-          {
-            id: 1,
-            hasDropdown: false,
-            title: "Wallet",
-            link: "https://wallet.smartholdem.io",
-          },
           {
             id: 2,
             hasDropdown: true,
-            title: "Exchange",
+            title: "Exchange STH",
             link: "/buy-sth",
             submenus: [
               { title: "How To buy STH", link: "/buy-sth" },
@@ -97,35 +107,86 @@ export default {
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
               { title: "Xeggex", link: "https://xeggex.com/market/STH_USDT" },
               { title: "Xeggex Pool", link: "https://xeggex.com/pool/STH_USDT" },
-              { title: "Smart Holder", link: "https://app.xbts.io/#/smartholder" },
+              { title: "SmartHolder DEX Staking", link: "https://app.xbts.io/#/smartholder" },
             ],
           },
           {
-            id: 3,
+            id: 1,
             hasDropdown: false,
-            title: "Explorer",
-            link: "https://explorer.smartholdem.io/",
+            pages: false,
+            title: "Wallet",
+            link: "https://wallet.smartholdem.io",
           },
           {
             id: 4,
             hasDropdown: false,
+            pages: true,
             title: "TRNG",
             link: "/rng",
           },
           {
             id: 5,
             hasDropdown: false,
+            pages: true,
             title: "Tokenomics",
             link: "/tokenomics",
           },
-            /*
+          {
+            id: 5,
+            hasDropdown: false,
+            mobile: true,
+            title: "Innovations",
+            link: "/innovations",
+          },
+          {
+            id: 8,
+            hasDropdown: false,
+            mobile: true,
+            title: "Projects",
+            link: "/projects",
+          },
           {
             id: 6,
             hasDropdown: false,
+            mobile: true,
+            title: "WEB3 Games",
+            link: "/web3-games",
+          },
+          {
+            id: 7,
+            hasDropdown: false,
+            mobile: true,
+            title: "About Wallet",
+            link: "/about-wallet",
+          },
+          {
+            id: 8,
+            hasDropdown: false,
+            mobile: true,
+            title: "Become a Delegate",
+            link: "/about-forging",
+          },
+          {
+            id: 8,
+            hasDropdown: false,
+            mobile: true,
             title: "Documentation",
             link: "https://wiki.smartholdem.io",
           },
-             */
+          {
+            id: 9,
+            hasDropdown: false,
+            mobile: true,
+            title: "Community Forum",
+            link: "https://community.smartholdem.io",
+          },
+          {
+            id: 10,
+            hasDropdown: false,
+            pages: true,
+            title: "Block Explorer",
+            link: "https://explorer.smartholdem.io/",
+          },
         ]
       },
     };

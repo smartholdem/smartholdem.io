@@ -1,5 +1,5 @@
 <template>
-  <section class="services__area pt-120 pb-125">
+  <section class="services__area pt-40 pb-125">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -95,7 +95,7 @@
         </div>
         <div v-show="$i18n.locale === 'ru'" class="col-lg-8 order-first order-lg-last">
           <div id="tokenomics-supply" class="services__details-wrapper">
-            <h3 class="services__details-title">Предложение сокращается, ценность растёт</h3>
+            <h3 class="services__details-title">Ценность SmartHoldem растёт, предложение сокращается</h3>
             <p>
               STH - это собственная служебная монета блокчейна SmartHoldem.
             </p>
@@ -231,8 +231,10 @@
 
         <div v-show="$i18n.locale !== 'ru'" class="col-lg-8 order-first order-lg-last">
           <div class="services__details-wrapper">
-            <h3 class="services__details-title">STH is the native utility token of SmartHoldem blockchain</h3>
+            <h3 class="services__details-title">Value increases, supply decreases</h3>
             <p>
+              <strong>STH is the native cryptocurrency of SmartHoldem blockchain.</strong>
+              <br/>
               SmartHoldem STH is a hard-capped, scarce asset that is used for:
             </p>
             <ul>

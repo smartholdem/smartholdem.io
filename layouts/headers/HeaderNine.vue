@@ -12,8 +12,8 @@
                   <nuxt-link :to="localePath('/')">
                     <img style="width:142px !important" src="~/assets/img/logo/logo.svg" alt="SmartHoldem Logo">
                   </nuxt-link>
-                  <span class="text-white pl-10"><nuxt-link :to="switchLocalePath('en')">ENG</nuxt-link></span>
-                  <span class="text-white pl-5"><nuxt-link :to="switchLocalePath('ru')">RUS</nuxt-link></span>
+                  <span class="text-white ml-10 text-bg-primary pl-5 pr-5 pt-1 pb-1 border border-light" title="English language"><nuxt-link :to="switchLocalePath('en')">ENG</nuxt-link></span>
+                  <span class="text-white ml-10 text-bg-primary pl-5 pr-5 pt-1 pb-1 border" title="Русский язык"><nuxt-link :to="switchLocalePath('ru')">RUS</nuxt-link></span>
                 </div>
               </div>
               <div class="col-xxl-6 col-xl-8 col-lg-8 d-none d-lg-block">

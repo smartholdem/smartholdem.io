@@ -2,6 +2,7 @@
   <ul>
     <li
       v-for="(menu, i) in menuData[$i18n.locale]"
+      v-show="!menu.mobile"
       :key="i"
       :class="`${menu.hasDropdown ? 'has-dropdown' : ''}`"
     >
