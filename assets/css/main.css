@@ -6753,7 +6753,7 @@ input[type=color] {
 }
 .offcanvas__link-btn {
   padding-bottom: 40px;
-  border-bottom: 1px solid var(--tp-border-5);
+  /*border-bottom: 1px solid var(--tp-border-5);*/
 }
 .offcanvas__link-btn .tp-link-btn-circle {
   font-family: var(--tp-ff-oswald);
@@ -53154,9 +53154,6 @@ blockquote cite::before {
     text-decoration-color: #0b5ed7 !important;
 }
 
-.font-bold {
-    font-weight: bold;
-}
 
 .font-bolder {
     font-weight: bolder !important;
