@@ -185,8 +185,7 @@
               <div class="col-sm-5">
                 <div class="footer__copyright-4">
                   <p>
-                    <nuxt-link href="/">© 2017 - {{ new Date().getFullYear() }} SmartHoldem Platform</nuxt-link>
-
+                    <nuxt-link href="/">© 2017 - {{ new Date().getFullYear() }} SmartHoldem Platform</nuxt-link> v2.0
                   </p>
                 </div>
               </div>
