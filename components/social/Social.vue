@@ -36,7 +36,7 @@ export default {
 
            */
         {
-          link: "https://twitter.com/smarttholdem",
+          link: "https://twitter.com/smartholdem",
           target: "_blank",
           icon: "fa-brands fa-twitter",
           name: "Twitter",
