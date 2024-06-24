@@ -11,13 +11,13 @@
         <div class="row">
           <div class="col-xl-5 col-md-6">
             <div class="team__details-thumb" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
-              <img src="~/assets/img/sth/Heads.png" alt="">
+              <img src="~/assets/img/sth/Heads.png" alt="heads">
             </div>
           </div>
           <div class="col-xl-7 col-md-6">
             <div class="team__details-content pt-40 pl-15 pr-50" data-sal="slide-up" data-sal-delay="150" data-sal-duration="1000">
               <span class="team__details-subtitle">Blockchain SmartHoldem</span>
-              <h3 class="team__details-title">Heads Tails</h3>
+              <h3 class="team__details-title">Heads or Tails</h3>
               <div class="team__details-contact mb-10">
                 <div class="team__details-contact-item d-flex align-items-center">
                   <!-- for wp if client want to add icon enable it -->

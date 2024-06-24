@@ -7,7 +7,7 @@
             <div
                 class="team__details-about-content"
             >
-              <img src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
               <h3 class="team__details-about-title text-center">Добро пожаловать в PvP-игру на блокчейне «Орёл или
                 Решка»</h3>
               <p>
@@ -20,7 +20,7 @@
               <p>
                 Все игры происходят только между игроками!
               </p>
-              <img src="~/assets/img/sth/ht/ht2.png" alt="ht2"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht2.png" alt="ht2"/>
 
               <p>
                 У монеты две стороны - «Орёл» и «Решка». Создавая свою игру вы шифруете информацию о стороне монеты в
@@ -47,7 +47,7 @@
                   </li>
                 </ol>
               </div>
-              <img src="~/assets/img/sth/ht/ht3.png" alt="ht3"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht3.png" alt="ht3"/>
               <h3 class="team__details-about-title text-center">Как работает блокчейн игра<br/>«Орёл или Решка»</h3>
               <div class="team__details-about-list pt-10 mb-35">
                 <ol>
@@ -80,7 +80,7 @@
                   выигрыша, а они получают дополнительно 1% к их выигрышу. Это беспроигрышная ситуация для всех
                   участников!
                 </p>
-                <img src="~/assets/img/sth/ht/ht4.png" alt="heads tail decentralized blockchain game"/>
+                <img class="w-100" src="~/assets/img/sth/ht/ht4.png" alt="heads tail decentralized blockchain game"/>
               </div>
             </div>
           </div>
@@ -88,11 +88,13 @@
           <div v-show="$i18n.locale !== 'ru'" class="col-lg-8">
             <div
                 class="team__details-about-content"
-                data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000"
+
             >
-              <img src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
-              <h3 class="team__details-about-title text-center">Welcome to the "Heads or Tails" blockchain PvP
-                game!</h3>
+              <!--
+              data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000"
+              -->
+              <img class="w-100" src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
+              <h3 class="team__details-about-title text-center">«Heads or Tails» — is a Web3 PvP multiplayer game with instant payments, a built-in wallet, an exchange platform, statistics, and an affiliate program.</h3>
               <p>
                 "Heads or Tails" is a simple game involving two players and a coin. The coin has two sides – "Heads" and
                 "Tails".
@@ -106,7 +108,7 @@
               <p class="text-success">
                 All games take place only between players!
               </p>
-              <img src="~/assets/img/sth/ht/ht2.png" alt="ht2"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht2.png" alt="ht2"/>
 
 
               <h3 class="team__details-about-title text-center">There are two methods to play the game:</h3>
@@ -132,7 +134,7 @@
               </div>
               <p>In all cases, one of the two players wins this game.</p>
 
-              <img src="~/assets/img/sth/ht/ht3.png" alt="ht3"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht3.png" alt="ht3"/>
               <h3 class="team__details-about-title text-center">How it works</h3>
               <div class="team__details-about-list pt-10 mb-35">
                 <ol>
@@ -163,7 +165,7 @@
                   Whenever your friends use your referral link and win, you get 1% of their winnings, and they get an
                   additional 1% on top of their winnings. It's a win-win situation for everyone involved!
                 </p>
-                <img src="~/assets/img/sth/ht/ht4.png" alt="heads tail decentralized blockchain game"/>
+                <img class="w-100" src="~/assets/img/sth/ht/ht4.png" alt="heads tail decentralized blockchain game"/>
               </div>
             </div>
           </div>
@@ -179,4 +181,7 @@ import SalScrollAnimationMixin from "~/mixins/SalScrollAnimationMixin";
 export default {
   mixins: [SalScrollAnimationMixin],
 };
+</script>
+
+<script setup lang="ts">
 </script>
