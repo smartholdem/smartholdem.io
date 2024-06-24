@@ -14,7 +14,7 @@ import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import DetailsArea from '~~/components/team-details/2faDetailsArea.vue';
 import DetailsAbout from '~~/components/team-details/2faDetailsAbout.vue';
 //import LawyerBlogs from '~~/components/blogs/LawyerBlogs.vue';
-import FooterSix from "~~/layouts/footers/FooterSix.vue";
+import FooterSix from "~~/layouts/footers/FooterTwo.vue";
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
 export default {

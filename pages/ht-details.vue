@@ -14,7 +14,7 @@ import HeaderOne from "~~/layouts/headers/HeaderOne.vue";
 import DetailsArea from '~~/components/team-details/HtDetailsArea.vue';
 import DetailsAbout from '~~/components/team-details/HtDetailsAbout.vue';
 //import LawyerBlogs from '~~/components/blogs/LawyerBlogs.vue';
-import FooterSix from "~~/layouts/footers/FooterSix.vue";
+import FooterSix from "~~/layouts/footers/FooterTwo.vue";
 import BackToTop from '~~/layouts/footers/component/BackToTop.vue';
 
 export default {
@@ -43,7 +43,7 @@ export default {
           /*
           content: this.$i18n.locale !== 'ru' ? 'Welcome to the «Heads or Tails» blockchain PvP game!' :
               '«Орел или Решка» — многопользовательская PvP-игра с мгновенными выплатами, встроенным кошельком, платформой обмена, игровой статистикой, чатом и партнерской программой.'
-              
+
            */
         },
         {

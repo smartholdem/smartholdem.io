@@ -44,6 +44,11 @@ export default {
           hid: 'og:image',
           name: 'og:image',
           content: 'https://smartholdem.io/preview/rng.png'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://smartholdem.io/preview/rng.png'
         }
 
       ],
