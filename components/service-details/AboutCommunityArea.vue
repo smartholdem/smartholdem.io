@@ -8,7 +8,7 @@
               <div class="services__widget-tab-2 tp-tab">
                 <ul>
                   <li>
-                    <nuxt-link :to="localePath('/about-decentralize')" class="">
+                    <nuxt-link :to="localePath('/about-blockchain')" class="">
                       <span>
                         <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -30,7 +30,7 @@
                     </nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/about-decentralize')" class="">
+                    <nuxt-link :to="localePath('/about-blockchain')" class="">
                       <span>
                         <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M13.2222 1L1 15.6667H12L10.7778 25.4444L23 10.7778H12L13.2222 1Z"
@@ -46,7 +46,7 @@
                     </nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/about-decentralize')" class="">
+                    <nuxt-link :to="localePath('/about-blockchain')" class="">
                       <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.4"
@@ -70,7 +70,7 @@
                     </nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/about-decentralize')" class="">
+                    <nuxt-link :to="localePath('/about-blockchain')" class="">
                       <span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path opacity="0.4"
@@ -133,16 +133,18 @@
                   </div>
                 </div>
               </div>
-              <p>Как получить SmartHoldem STH совершенно бесплатно:</p>
+              <h3>Как получить SmartHoldem STH совершенно бесплатно:</h3>
               <ul>
-                <li>Вступите в официальную группу SmartHoldem https://t.me/smartholdem</li>
-                <li>Создайте кошелек SmartHoldem на сайте платформы: https://smartholdem.io/wallet</li>
-                <li>Напишите в чате: givememoney+публичный адрес вашего кошелька (начинается на S)</li>
+                <li>Вступите в официальную группу SmartHoldem <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
+                <li>
+                  Создайте кошелек SmartHoldem на сайте платформы:
+                  <a class="text-primary" target="_blank" href="https://smartholdem.io/wallet">https://smartholdem.io/wallet</a>
+                </li>
+                <li>Напишите в чате: <strong>givememoney+публичный адрес вашего кошелька (начинается на S)</strong></li>
               </ul>
               <p>
                 Готово! На ваш кошелёк SmartHoldem отправлены STH! Проверьте баланс! Отслеживайте транзакции в <a
-                  target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io">Block Explorer</a>
-                (https://blockexplorer.smartholdem.io)
+                  target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
               </p>
             </div>
 
@@ -268,16 +270,17 @@
                   </div>
                 </div>
               </div>
-              <p>How to get SmartHoldem STH completely free:</p>
+              <h3>
+                How to get SmartHoldem STH completely free:
+              </h3>
               <ul>
-                <li>Join the official SmartHoldem group https://t.me/smartholdem</li>
-                <li>Create a SmartHoldem wallet on the platform website: https://wallet.smartholdem.io/</li>
-                <li>Write in chat: givememoney+public address of your wallet (starts with S)</li>
+                <li>Join the official SmartHoldem group <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
+                <li>Create a SmartHoldem wallet on the platform website: <a class="text-primary" target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a></li>
+                <li>Write in chat: <strong>givememoney+public address of your wallet (starts with S)</strong></li>
               </ul>
               <p>
                 STH has been sent to your SmartHoldem wallet! Check your balance! Track transactions in the <a
-                  target="_blank" class="text-primary" href="https://blockexplorer.smartholdem.io">Block Explorer</a>
-                (https://blockexplorer.smartholdem.io)
+                  target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
               </p>
             </div>
 
