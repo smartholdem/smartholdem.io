@@ -34,7 +34,7 @@
               <p>{{$t('ht_title')}}</p>
               <p>
                 <span class="about__btn-4 mt-20 d-sm-flex align-items-center">
-                  <a target="_blank" href="https://t.me/smartholdem_bot/game_ht" class="tp-btn-brown mr-30 text-uppercase">Play Now</a>
+                  <a target="_blank" href="https://t.me/smartholdem_bot/game_ht" class="tp-btn-brown mr-30 text-uppercase">{{$t('play_now')}}</a>
                 </span>
               </p>
 
