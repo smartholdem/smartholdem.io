@@ -96,7 +96,37 @@
         <div class="col-lg-8 order-first order-lg-last">
 
           <div v-if="$i18n.locale === 'ru'" class="services__details-wrapper">
-            <h3 class="services__details-title">Мы очень рады видеть вас в нашем растущем сообществе!</h3>
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Airdrop</h3>
+              <p>Для новых участников сообщества предусмотрен приветсвенный бонус от команды разработчиков SmartHoldem,
+                который поможет вам легко познакомиться с экосистемой платформы. </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20">
+                    <a target="_blank" href="https://t.me/smartholdem">
+                      <img
+                          src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png"
+                          alt="smartholdem community airdrop" class="rounded-3">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <h3>Как получить SmartHoldem STH совершенно бесплатно:</h3>
+              <ul>
+                <li>Вступите в официальную группу SmartHoldem <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
+                <li>
+                  Создайте кошелек SmartHoldem на сайте платформы:
+                  <a class="text-primary" target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a>
+                </li>
+                <li>Напишите в чате: <strong>givememoney+публичный адрес вашего кошелька (начинается на S)</strong></li>
+              </ul>
+              <p>
+                Готово! На ваш кошелёк SmartHoldem отправлены STH! Проверьте баланс! Отслеживайте транзакции в <a
+                  target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
+              </p>
+            </div>
+
+            <h3 class="services__details-title">Мы рады видеть вас в нашем растущем сообществе!</h3>
             <p>
               Мы стремимся трансформировать игровую индустрию, предоставляя геймерам по всему миру инструменты и ресурсы
               для создания крупнейшей независимой игровой экосистемы.
@@ -119,35 +149,7 @@
             </div>
 
 
-            <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title">Airdrop</h3>
-              <p>Для новых участников сообщества предусмотрен приветсвенный бонус от команды разработчиков SmartHoldem,
-                который поможет вам легко познакомиться с экосистемой платформы. </p>
-              <div class="row">
-                <div class="col-xl-12">
-                  <div class="postbox__img-2 m-img mt-45 mb-20">
-                    <a target="_blank" href="https://t.me/smartholdem">
-                    <img
-                        src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png"
-                        alt="smartholdem community airdrop" class="rounded-3">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <h3>Как получить SmartHoldem STH совершенно бесплатно:</h3>
-              <ul>
-                <li>Вступите в официальную группу SmartHoldem <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
-                <li>
-                  Создайте кошелек SmartHoldem на сайте платформы:
-                  <a class="text-primary" target="_blank" href="https://smartholdem.io/wallet">https://smartholdem.io/wallet</a>
-                </li>
-                <li>Напишите в чате: <strong>givememoney+публичный адрес вашего кошелька (начинается на S)</strong></li>
-              </ul>
-              <p>
-                Готово! На ваш кошелёк SmartHoldem отправлены STH! Проверьте баланс! Отслеживайте транзакции в <a
-                  target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
-              </p>
-            </div>
+
 
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">Мы можем многое сделать вместе</h3>
@@ -234,6 +236,33 @@
           </div>
 
           <div v-else class="services__details-wrapper">
+            <div class="services__details-text mb-25">
+              <h3 class="services__details-text-title">Airdrop</h3>
+              <p>A welcome bonus from the SmartHoldem dev team for new community members will help you quickly get
+                acquainted with the platform ecosystem.</p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="postbox__img-2 m-img mb-20">
+                    <img
+                        src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png"
+                        alt="smartholdem community airdrop" class="rounded-3">
+                  </div>
+                </div>
+              </div>
+              <h3>
+                Step-by-step guide to claiming SmartHoldem STH free crypto
+              </h3>
+              <ul>
+                <li>Join the official SmartHoldem group <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
+                <li>Create a SmartHoldem wallet on the platform website: <a class="text-primary" target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a></li>
+                <li>Write in chat: <strong>givememoney+public address of your wallet (starts with S)</strong></li>
+              </ul>
+              <p>
+                STH has been sent to your SmartHoldem wallet! Check your balance! Track transactions in the <a
+                  target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
+              </p>
+            </div>
+
             <h3 class="services__details-title">We are thrilled to have you join our growing community!</h3>
             <p>
               We aim to transform the gaming industry by providing gamers worldwide with the tools and resources to
@@ -258,32 +287,7 @@
             </div>
 
 
-            <div class="services__details-text mb-25">
-              <h3 class="services__details-text-title">Airdrop</h3>
-              <p>A welcome bonus from the SmartHoldem dev team for new community members will help you quickly get
-                acquainted with the platform ecosystem.</p>
-              <div class="row">
-                <div class="col-xl-12">
-                  <div class="postbox__img-2 m-img mt-45 mb-20">
-                    <img
-                        src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png"
-                        alt="smartholdem community airdrop" class="rounded-3">
-                  </div>
-                </div>
-              </div>
-              <h3>
-                Step-by-step guide to claiming SmartHoldem STH free crypto
-              </h3>
-              <ul>
-                <li>Join the official SmartHoldem group <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
-                <li>Create a SmartHoldem wallet on the platform website: <a class="text-primary" target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a></li>
-                <li>Write in chat: <strong>givememoney+public address of your wallet (starts with S)</strong></li>
-              </ul>
-              <p>
-                STH has been sent to your SmartHoldem wallet! Check your balance! Track transactions in the <a
-                  target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
-              </p>
-            </div>
+
 
             <div class="services__details-text mb-25">
               <h3 class="services__details-text-title">We can do so much together</h3>
