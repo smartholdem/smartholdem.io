@@ -27,14 +27,20 @@
                     </span>
                   </div>
                   <div class="team__details-contact-content">
-                    <p><a target="_blank" href="#">Decentralized WEB3 Game</a></p>
+                    <p><a target="_blank" href="https://t.me/smartholdem_bot/game_ht">Decentralized WEB3 Game</a></p>
                   </div>
                 </div>
               </div>
               <p>{{$t('ht_title')}}</p>
+              <p>
+                <span class="about__btn-4 mt-20 d-sm-flex align-items-center">
+                  <a target="_blank" href="https://t.me/smartholdem_bot/game_ht" class="tp-btn-brown mr-30 text-uppercase">Play Now</a>
+                </span>
+              </p>
+
               <div class="team__details-social">
                 <a href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://t.me/dexgames"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://t.me/smartholdem_bot/game_ht"><i class="fa-brands fa-telegram"></i></a>
               </div>
             </div>
           </div>

@@ -94,7 +94,7 @@
               data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000"
               -->
               <img class="w-100" src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
-              <h3 class="team__details-about-title text-center">«Heads or Tails» — is a Web3 PvP multiplayer game with instant payments, a built-in wallet, an exchange platform, statistics, and an affiliate program.</h3>
+              <h3 class="team__details-about-title text-center">Welcome to the "Heads or Tails" blockchain PvP game!</h3>
               <p>
                 "Heads or Tails" is a simple game involving two players and a coin. The coin has two sides – "Heads" and
                 "Tails".
