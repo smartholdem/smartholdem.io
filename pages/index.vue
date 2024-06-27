@@ -50,8 +50,7 @@ useHead({
       hid: 'description',
       name: 'description',
       //content: 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG',
-
-      content: router.currentRoute.value.path !== '/ru' ? 'Decentralized gaming platform SmartHoldem on Blockchain with True RNG' :
+      content: router.currentRoute.value.path !== '/ru' ? 'Game On with SmartHoldem: Your Decentralized Web3 Platform' :
           'Децентрализованная игровая платформа SmartHoldem на блокчейне с Настоящим генератором случайных чисел RNG'
     },
     {
