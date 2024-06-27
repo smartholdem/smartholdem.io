@@ -248,7 +248,8 @@
               <h3 class="services__details-text-title">The power of community</h3>
               <p>
                 SmartHoldem is not controlled by any single entity but is managed by a community of digital asset
-                owners. If you have more than 1 STH, you have voting rights on the network! <router-link class="text-primary" to="/ru/about-forging">Read more</router-link>
+                owners. If you have more than 1 STH, you have voting rights on the network!
+                <router-link class="text-primary" to="/about-forging">Read more</router-link>
               </p>
               <p>
                 You can use STH, SmartHoldem's native coin, to play Web3 games, fund DeFi decentralized applications,
