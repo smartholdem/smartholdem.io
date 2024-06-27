@@ -110,8 +110,7 @@
               <h3 class="services__details-text-title">Сила сообщества</h3>
               <p>
                 SmartHoldem не контролируется какой-либо отдельной организацией, а управляется сообществом владельцев
-                цифровых активов. Если у вас есть больше 1 STH, у Вас есть право голоса в сети! Узнайте больше (ссылка
-                Про делегатов)
+                цифровых активов. Если у вас есть больше 1 STH, у Вас есть право голоса в сети! <router-link class="text-primary" to="/ru/about-forging"> Узнайте больше</router-link>
               </p>
               <p>
                 Используйте STH, собственную монету SmartHoldem, чтобы играть в игры Web3, создавать NFT, финансировать
@@ -127,9 +126,11 @@
               <div class="row">
                 <div class="col-xl-12">
                   <div class="postbox__img-2 m-img mt-45 mb-20">
+                    <a target="_blank" href="https://t.me/smartholdem">
                     <img
                         src="~/assets/img/sth/about-community/smartholdem-airdrop-free-crypto-giveaway.png"
                         alt="smartholdem community airdrop" class="rounded-3">
+                    </a>
                   </div>
                 </div>
               </div>
@@ -247,8 +248,7 @@
               <h3 class="services__details-text-title">The power of community</h3>
               <p>
                 SmartHoldem is not controlled by any single entity but is managed by a community of digital asset
-                owners. If you have more than 1 STH, you have voting rights on the network! Read more (link About
-                delegates)
+                owners. If you have more than 1 STH, you have voting rights on the network! <router-link class="text-primary" to="/ru/about-forging">Read more</router-link>
               </p>
               <p>
                 You can use STH, SmartHoldem's native coin, to play Web3 games, fund DeFi decentralized applications,
@@ -271,7 +271,7 @@
                 </div>
               </div>
               <h3>
-                How to get SmartHoldem STH completely free:
+                Step-by-step guide to claiming SmartHoldem STH free crypto
               </h3>
               <ul>
                 <li>Join the official SmartHoldem group <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
