@@ -44,7 +44,7 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="about__btn-4 mt-20 d-sm-flex align-items-center">
-                  <nuxt-link :to="localePath('/about-decentralize')" class="tp-btn-brown mr-30 text-uppercase">{{$t('lesson')}}</nuxt-link>
+                  <nuxt-link :to="localePath('/about-blockchain')" class="tp-btn-brown mr-30 text-uppercase">{{$t('lesson')}}</nuxt-link>
                 </div>
               </div>
               <div class="col-md-9">
