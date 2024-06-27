@@ -6,7 +6,7 @@ export default {
           {
             id: 1,
             hasDropdown: true,
-            title: "Обмен STH",
+            title: "Купить STH",
             link: "/ru/buy-sth",
             submenus: [
               { title: "Как купить STH", link: "/ru/buy-sth" },

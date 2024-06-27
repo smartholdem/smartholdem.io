@@ -70,7 +70,7 @@ export default {
           icon: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAACWklEQVRoge2aPWhUQRRGz3MFJYUiFilU1ICQTiJ2KWwEC0knImkMliGgacSgjWA0oqBioWAVxSAWFlYWNiFdKokmlY1iLIIhbOL/X2TgE56Lwu7c+zaDzIGQ3SHz5p69b+bOvA3/G4XFZ7W/4yBwFVhy+lxqwBfgeDHx8W3MBdYbA9gN7DVeo5GfQEds53XGwX8Y+/+Nz5KKwpqhMi+BO7plWmUnMOwRhKfQO+A2sBzRt8tLyHrLeeEWRypCbqQiFL0INOIpZKlpW7yC8Fy2v4VaG3GNHuBB6X3N8uFYV7mnwIBkllRDmiUEfhS4AmxTnw/AJLCyVkLzwHhEv83ASWAQ6FRbHbgHXAIWYgPyrEPNEgQuKDub1CfUrhHgrrIUTTuFwrzYB9wAejXfViRwTLeamXYu2/3KQK/eh/k2AxzwkqGNGToLnNAWB8k8As4AbzwHqlpoI3ATOATsUNuyVrbrwHvvAasSCvOlW4EfVluoWS+Ai8DDisatRCjMyz7gHLC/1D4FjKp2VUYVQkPAKZ1mfzOhzMxWKYOzUKGieLrUtiqRa8Ci41j/xEsonDjHgCMS+w68Bi7rFBuzx4vCKlSorozqd01HgWnJPPYKtFmsQj3af22XDJI4Dzxrj8KfeAjt0uuQmVsqonXPIFvBuvUpz425tZbBeS9X9zxKx+IpZDppepGf+qROFkqdLJQ6WSh1slDqZKHUyUKpk4VSJwuljueT0636yqSV71kbKfRzP/Zhi6fQHj3ytfIJeBIrZL3lak38TatssMRlzdAr4LnzPwB+VZYyAL8Axxxmb1DxudIAAAAASUVORK5CYII=`,
           title: this.$t('arch_t2'),
           subtitle: this.$t('arch_text2'),
-          page: "/about-decentralize"
+          page: "/about-blockchain"
         },
         {
           id: 3,
