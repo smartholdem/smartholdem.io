@@ -121,7 +121,7 @@
                 <li>Напишите в чате: <strong>givememoney+публичный адрес вашего кошелька (начинается на S)</strong></li>
               </ul>
               <p>
-                Готово! На ваш кошелёк SmartHoldem отправлены STH! Проверьте баланс! Отслеживайте транзакции в <a
+                <strong><i class="fa fa-check-square text-success"></i>Готово!</strong> На ваш кошелёк SmartHoldem отправлены STH! Проверьте баланс! Отслеживайте транзакции в <a
                   target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
               </p>
             </div>
@@ -254,11 +254,13 @@
               </h3>
               <ul>
                 <li>Join the official SmartHoldem group <a class="text-primary" target="_blank" href="https://t.me/smartholdem">https://t.me/smartholdem</a></li>
-                <li>Create a SmartHoldem wallet on the platform website: <a class="text-primary" target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a></li>
-                <li>Write in chat: <strong>givememoney+public address of your wallet (starts with S)</strong></li>
+                <li>Create a SmartHoldem wallet on the platform website:
+                  <a class="text-primary" target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a>
+                </li>
+                <li>Write in chat: <strong>givememoney:public address of your wallet (starts with S)</strong></li>
               </ul>
               <p>
-                STH has been sent to your SmartHoldem wallet! Check your balance! Track transactions in the <a
+                <strong><i class="fa fa-check-square text-success"></i></strong> STH has been sent to your SmartHoldem wallet! Check your balance! Track transactions in the <a
                   target="_blank" class="text-primary" href="https://explorer.smartholdem.io">Block Explorer</a>
               </p>
             </div>
