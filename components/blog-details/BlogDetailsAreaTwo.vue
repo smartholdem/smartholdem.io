@@ -66,7 +66,7 @@
             <div class="col-xl-2 col-lg-2 col-md-1">
               <div class="postbox__details-social d-flex flex-sm-column pt-5">
                 <a target="_blank" :href="'https://t.me/share/?url=https://smartholdem.io/news-details?id='+fullContent.id+'&text='+fullContent.title"><i class="fab fa-telegram-plane"></i></a>
-                <a target="_blank" :href="'http://twitter.com/share?text='+fullContent.title+'&url=https://smartholdem.io/news-details?id='+fullContent.id"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" :href="'https://twitter.com/share?text='+fullContent.title+'&url=https://smartholdem.io/news-details?id='+fullContent.id"><i class="fab fa-twitter"></i></a>
               </div>
             </div>
             <div class="col-xl-8 col-lg-9 col-md-11">
