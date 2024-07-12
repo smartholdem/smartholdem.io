@@ -4,6 +4,10 @@
 
 <script>
 export default {
+mounted() {
+  this.$root.isMobile = window.innerWidth < 720 || window.width < 700
+}
+
 
 };
 </script>
