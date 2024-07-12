@@ -7,7 +7,7 @@
             <div
                 class="team__details-about-content"
             >
-              <img class="w-100" src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht-web-smartholdem-game.jpg" alt="игры в блокчейне"/>
               <h3 class="team__details-about-title text-center">Добро пожаловать в PvP-игру на блокчейне «Орёл или
                 Решка»</h3>
               <p>
@@ -93,7 +93,7 @@
               <!--
               data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000"
               -->
-              <img class="w-100" src="~/assets/img/sth/ht/ht1.png" alt="ht1"/>
+              <img class="w-100" src="~/assets/img/sth/ht/ht-web-smartholdem-game.jpg" alt="ht1"/>
               <h3 class="team__details-about-title text-center">Welcome to the "Heads or Tails" blockchain PvP game!</h3>
               <p>
                 "Heads or Tails" is a simple game involving two players and a coin. The coin has two sides – "Heads" and
