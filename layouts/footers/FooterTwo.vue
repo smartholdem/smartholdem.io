@@ -137,39 +137,45 @@
               <div class="footer__widget footer__widget-4 mb-25 footer-col-4-4">
                 <h3 class="footer__widget-title">{{$t('posts')}}</h3>
 
-                <div class="footer__widget-content">
+                <div v-if="newsData[0]" class="footer__widget-content">
                   <div class="footer__blog">
                     <div class="footer__blog-item-2">
                       <div class="footer__blog-content-2">
                         <div class="footer__blog-tag">
-                          <a href="https://community.smartholdem.io/topic/993/ai-chatbot-mr-sth-robot-smartholdem-neural-network">SmartHoldem AI</a>
+                          <a @click="openNews(0)" :href="'/news-details?id=' + newsData[0].id">{{newsData[0].title}}</a>
                         </div>
                         <h3 class="footer__blog-title-4">
-                          <nuxt-link href="https://community.smartholdem.io/topic/993/ai-chatbot-mr-sth-robot-smartholdem-neural-network">
-                            Ai ChatBot Mr.STH Robot. SmartHoldem Neural Network
+                          <img class="rounded-pill p-1" width="32px" :src="newsData[0].img" :alt="newsData[0].title"/>
+                          <nuxt-link class="pl-2" @click="openNews(0)" :href="'/news-details?id='+ newsData[0].id">
+                            {{newsData[0].sm_desc}}
                           </nuxt-link>
                         </h3>
                         <div class="footer__blog-meta-4">
-                          <span>July 14, 2023</span>
+                          <span>{{newsData[0].date}}</span>
                         </div>
                       </div>
                     </div>
                     <div class="footer__blog-item-2">
                       <div class="footer__blog-content-2">
                         <div class="footer__blog-tag">
-                          <a href="#">Wallet 2.0</a>
+                          <a @click="openNews(1)" :href="'/news-details?id='+ newsData[1].id">{{newsData[1].title}}</a>
                         </div>
                         <h3 class="footer__blog-title-4">
-                          <nuxt-link href="https://community.smartholdem.io/topic/1017/smartholdem-2-0-wallet">
-                            SmartHoldem Wallet 2.0
+                          <img class="rounded-pill p-1" width="32px" :src="newsData[1].img" :alt="newsData[1].title"/>
+                          <nuxt-link @click="openNews(1)" :href="'/news-details?id='+ newsData[1].id">
+                            {{newsData[1].sm_desc}}
                           </nuxt-link>
                         </h3>
                         <div class="footer__blog-meta-4">
-                          <span>October 10, 2023</span>
+                          <span>{{newsData[1].date}}</span>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div v-else class="footer__widget-content">
+                  Loading...
                 </div>
               </div>
             </div>
@@ -206,6 +212,7 @@
 <script>
 import Social from '~~/components/social/Social.vue'
 import bg_shape from '~/assets/img/footer/footer-shape-3.png';
+import axios from 'axios';
 
 export default {
   components: {Social},
@@ -214,15 +221,42 @@ export default {
       bg_shape,
       open: false,
       formVal: '',
+      newsData: [],
     }
   },
   methods: {
+    async openNews(i) {
+      this.$root['blog'] = this.newsData[i];
+      await this.$router.push({ path: '/news-details', query: {id: this.newsData[i].id}})
+    },
     handleToggle() {
       this.open = !this.open
     },
     handleSubmit() {
       console.log(this.formVal)
       this.formVal = ''
+    }
+  },
+  async created() {
+    try {
+      const newsRaw = (await axios.get('https://news.smartholdem.io/api/sthnews?populate=img&&pagination[pageSize]=2&sort=date:desc')).data.data;
+      //console.log(newsRaw)
+      for (let i=0; i < newsRaw.length; i++) {
+        this.newsData.push(
+            {
+              id: newsRaw[i].id,
+              tag: newsRaw[i].attributes.tag,
+              img: 'https://news.smartholdem.io' + newsRaw[i].attributes.img.data.attributes.url,
+              date: newsRaw[i].attributes.date,
+              title: newsRaw[i].attributes.title,
+              sm_desc: newsRaw[i].attributes.text,
+              article: newsRaw[i].attributes.article,
+              blog_masonry:true,
+            }
+        )
+      }
+    } catch (e) {
+      console.log('err get news');
     }
   }
 }
