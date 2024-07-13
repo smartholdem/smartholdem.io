@@ -94,6 +94,13 @@ export default {
             title: "Обозреватель",
             link: "https://explorer.smartholdem.io/",
           },
+          {
+            id: 12,
+            hasDropdown: false,
+            pages: true,
+            title: "Новости",
+            link: "/news",
+          },
         ],
         en: [
           {
