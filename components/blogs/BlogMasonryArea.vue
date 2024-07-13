@@ -53,7 +53,7 @@ export default {
   //mixins: [blogData],
   async mounted() {
     try {
-      const newsRaw = (await axios.get('https://news.smartholdem.io/api/sthnews?populate=img&&pagination[pageSize]=25&sort=id:desc')).data.data;
+      const newsRaw = (await axios.get('https://news.smartholdem.io/api/sthnews?populate=img&&pagination[pageSize]=25&sort=date:desc')).data.data;
       //console.log(newsRaw)
       for (let i=0; i < newsRaw.length; i++) {
         this.newsData.push(
