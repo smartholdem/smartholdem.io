@@ -34,7 +34,7 @@
               <p>{{$t('2fa_title')}}</p>
               <div class="team__details-social">
                 <a href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://github.com/technologiespro/smart2fa/releasess"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/technologiespro/smart2fa/releases"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
           </div>
