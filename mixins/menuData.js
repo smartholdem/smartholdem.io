@@ -91,7 +91,7 @@ export default {
             id: 11,
             hasDropdown: false,
             pages: true,
-            title: "Обозреватель",
+            title: "Explorer",
             link: "https://explorer.smartholdem.io/",
           },
           {
