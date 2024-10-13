@@ -6,6 +6,20 @@
           <div v-if="$i18n.locale === 'ru'" class="services__details-wrapper">
             <h3 class="services__details-title text-center">Как купить и продать STH</h3>
             <div class="row">
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://www.toobit.com/ru-RU/spot/STH_USDT">
+                    <img
+                        src="~/assets/img/sth/buy/toobit-cex.png" alt="smartholdem trade on toobit" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://www.toobit.com/ru-RU/spot/STH_USDT">
+                  <h3>TooBit</h3>
+                  <p>STH/USDT</p>
+                </a>
+              </div>
+
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
                   <a target="_blank" href="https://ex.xbts.io/market/XBTSX.USDT_XBTSX.STH">
@@ -93,6 +107,8 @@
                 <p>Скоро</p>
               </div>
 
+
+              <!--
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
                   <img src="~/assets/img/sth/buy/listing2.png" alt="smartholdem new listing 2" class="w-100">
@@ -100,6 +116,8 @@
                 <h3>Новый Листинг</h3>
                 <p>Скоро</p>
               </div>
+              -->
+
             </div>
 
           </div>
@@ -107,6 +125,20 @@
           <div v-else class="services__details-wrapper">
             <h3 class="services__details-title text-center">How to buy</h3>
             <div class="row">
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://www.toobit.com/en-US/spot/STH_USDT">
+                    <img
+                        src="~/assets/img/sth/buy/toobit-cex.png" alt="smartholdem trade on toobit" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://www.toobit.com/ru-RU/spot/STH_USDT">
+                  <h3>TooBit</h3>
+                  <p>STH/USDT</p>
+                </a>
+              </div>
+
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
                   <a target="_blank" href="https://ex.xbts.io/market/XBTSX.USDT_XBTSX.STH">
@@ -129,6 +161,32 @@
                 <a target="_blank" href="https://app.xbts.io/#/pools">
                   <h3>XBTS DeFi</h3>
                   <p>35+ STH liquidity pools</p>
+                </a>
+              </div>
+
+
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://xeggex.com/market/STH_USDT">
+                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex cex" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://xeggex.com/market/STH_USDT">
+                  <h3>XeggeX</h3>
+                  <p>STH/USDT/DOGE pairs</p>
+                </a>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
+                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex defi pools" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
+                  <h3>XeggeX</h3>
+                  <p>STH DeFi pools</p>
                 </a>
               </div>
 
@@ -164,36 +222,13 @@
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex cex" class="w-100">
-                  </a>
-                </div>
-                <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH/USDT/DOGE pairs</p>
-                </a>
-              </div>
-
-              <div class="col-md-3 text-center">
-                <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex defi pools" class="w-100">
-                  </a>
-                </div>
-                <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH DeFi pools</p>
-                </a>
-              </div>
-
-              <div class="col-md-3 text-center">
-                <div class="postbox__img-2 m-img w-100">
                   <img src="~/assets/img/sth/buy/listing1.png" alt="smartholdem new listing 1" class="w-100">
                 </div>
                 <h3>New Listing</h3>
                 <p>Coming soon</p>
               </div>
 
+              <!--
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
                   <img src="~/assets/img/sth/buy/listing2.png" alt="smartholdem new listing 2" class="w-100">
@@ -201,6 +236,7 @@
                 <h3>New Listing</h3>
                 <p>Coming soon</p>
               </div>
+              -->
             </div>
 
 
