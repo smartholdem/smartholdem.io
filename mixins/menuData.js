@@ -26,10 +26,15 @@ export default {
           },
           {
             id: 3,
-            hasDropdown: false,
-            pages: true,
+            hasDropdown: true,
             title: "TRNG",
             link: "/ru/rng",
+            submenus: [
+              { title: "TRNG Описание", link: "/ru/rng" },
+              { title: "TRNG API", link: "https://api.smartholdem.io/trng" },
+              { title: "Пример игры DICE", link: "https://github.com/smartholdem/dice-game-example" },
+
+            ],
           },
           {
             id: 4,
@@ -125,11 +130,16 @@ export default {
             link: "https://wallet.smartholdem.io",
           },
           {
-            id: 4,
-            hasDropdown: false,
-            pages: true,
+            id: 3,
+            hasDropdown: true,
             title: "TRNG",
             link: "/rng",
+            submenus: [
+              { title: "TRNG Specification", link: "/rng" },
+              { title: "TRNG API", link: "https://api.smartholdem.io/trng" },
+              { title: "DICE Game Example", link: "https://github.com/smartholdem/dice-game-example" },
+
+            ],
           },
           {
             id: 5,

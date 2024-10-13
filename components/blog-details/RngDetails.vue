@@ -9,7 +9,7 @@
                 <a href="#">{{ $t('innovations') }}</a>
               </div>
               <h3 class="postbox__title">True Random Number Generator</h3>
-              <h4 class="badge product__badge-item text-primary">Real time generator [0 - 255] 36 Random numbers per
+              <h4 class="badge product__badge-item text-primary">Real time generator [0 - 255] 32 Random numbers per
                 block</h4>
               <div style="min-height: 120px; overflow: hidden;">
                 <h4 v-if="block">
