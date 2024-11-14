@@ -27,7 +27,7 @@ npm run dev
 
 ## Production
 
-Build the application for production:
+Build the application for production: generate
 
 ```bash
 npm run build

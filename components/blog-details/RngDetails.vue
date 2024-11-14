@@ -714,11 +714,10 @@
 
                 <div class="postbox__share-wrapper mt-45 mb-25">
                   <div class="row align-items-center">
-
                     <div class="col-xl-7 col-lg-7">
                       <div class="tagcloud tagcloud-style-2">
                         <a target="_blank" href="https://wiki.smartholdem.io/api/rng"
-                           class="btn btn-outline-dark text-uppercase">RNG API</a>
+                           class="btn btn-outline-dark text-uppercase">TRNG API</a>
                         <a target="_blank" href="https://github.com/smartholdem/dice-game-example/"
                            class="btn btn-outline-dark text-uppercase ml-5"><i
                             class="fa fa-dice-six"></i> Dice Game Example</a>
