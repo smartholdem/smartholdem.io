@@ -22,6 +22,19 @@
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://dex-trade.com/spot/trading/STHUSDT?interface=classic">
+                    <img
+                        src="~/assets/img/sth/buy/dextrade-cex.png" alt="smartholdem trade on dextrade" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://dex-trade.com/spot/trading/STHUSDT?interface=classic">
+                  <h3>Dex-Trade</h3>
+                  <p>STH/USDT</p>
+                </a>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
                   <a target="_blank" href="https://ex.xbts.io/market/XBTSX.USDT_XBTSX.STH">
                     <img
                         src="~/assets/img/sth/buy/xbts-dex.png" alt="smartholdem xbts dex" class="w-100">
@@ -42,6 +55,30 @@
                 <a target="_blank" href="https://app.xbts.io/#/pools">
                   <h3>XBTS DeFi</h3>
                   <p>35+ STH DeFi пулов</p>
+                </a>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://xeggex.com/market/STH_USDT">
+                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex cex" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://xeggex.com/market/STH_USDT">
+                  <h3>XeggeX</h3>
+                  <p>STH/USDT/DOGE</p>
+                </a>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="postbox__img-2 m-img w-100">
+                  <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
+                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex defi pools" class="w-100">
+                  </a>
+                </div>
+                <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
+                  <h3>XeggeX</h3>
+                  <p>STH DeFi пулы</p>
                 </a>
               </div>
 
@@ -77,30 +114,6 @@
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex cex" class="w-100">
-                  </a>
-                </div>
-                <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH/USDT/DOGE</p>
-                </a>
-              </div>
-
-              <div class="col-md-3 text-center">
-                <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex defi pools" class="w-100">
-                  </a>
-                </div>
-                <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH DeFi пулы</p>
-                </a>
-              </div>
-
-              <div class="col-md-3 text-center">
-                <div class="postbox__img-2 m-img w-100">
                   <img src="~/assets/img/sth/buy/listing1.png" alt="smartholdem new listing 1" class="w-100">
                 </div>
                 <h3>Новый Листинг</h3>
@@ -108,7 +121,6 @@
               </div>
 
 
-              <!--
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
                   <img src="~/assets/img/sth/buy/listing2.png" alt="smartholdem new listing 2" class="w-100">
@@ -116,7 +128,6 @@
                 <h3>Новый Листинг</h3>
                 <p>Скоро</p>
               </div>
-              -->
 
             </div>
 
