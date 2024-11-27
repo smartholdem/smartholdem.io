@@ -10,7 +10,7 @@ export default {
             link: "/ru/buy-sth",
             submenus: [
               { title: "Как купить STH", link: "/ru/buy-sth" },
-              { title: "Toobit", link: "https://www.toobit.com/ru-RU/spot/STH_USDT" },
+              { title: "Toobit", link: "https://www.toobit.com/ru-RU/spot/STH_USDT?invite_code=d2YhTz" },
               { title: "Dex-Trade", link: "https://dex-trade.com/spot/trading/STHUSDT?interface=classic" },
               { title: "XBTS DEX", link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC" },
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
@@ -117,7 +117,7 @@ export default {
             link: "/buy-sth",
             submenus: [
               { title: "How To buy STH", link: "/buy-sth" },
-              { title: "Toobit", link: "https://www.toobit.com/ru-RU/spot/STH_USDT" },
+              { title: "Toobit", link: "https://www.toobit.com/ru-RU/spot/STH_USDT?invite_code=d2YhTz" },
               { title: "Dex-Trade", link: "https://dex-trade.com/spot/trading/STHUSDT?interface=classic" },
               { title: "XBTS DEX", link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC" },
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },

@@ -139,12 +139,12 @@
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://www.toobit.com/en-US/spot/STH_USDT">
+                  <a target="_blank" href="https://www.toobit.com/en-US/spot/STH_USDT?invite_code=d2YhTz">
                     <img
                         src="~/assets/img/sth/buy/toobit-cex.png" alt="smartholdem trade on toobit" class="w-100">
                   </a>
                 </div>
-                <a target="_blank" href="https://www.toobit.com/ru-RU/spot/STH_USDT">
+                <a target="_blank" href="https://www.toobit.com/ru-RU/spot/STH_USDT?invite_code=d2YhTz">
                   <h3>TooBit</h3>
                   <p>STH/USDT</p>
                 </a>
