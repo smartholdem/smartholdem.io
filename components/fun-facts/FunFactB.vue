@@ -5,10 +5,12 @@
         <div class="col-xxl-4 col-lg-4 col-md-6">
           <div class="fact__item white-bg d-flex align-items-center" data-sal="slide-down" data-sal-delay="130" data-sal-duration="1000">
             <div class="fact__icon">
+              <nuxt-link :to="localePath('/delegates')">
                 <img src="~/assets/img/sth/icon3.png" alt="fast dpos">
+              </nuxt-link>
             </div>
             <div class="fact__content ml-20">
-              <nuxt-link :to="localePath('/about-forging')">
+              <nuxt-link :to="localePath('/delegates')">
               <h4>{{$t('ff3')}}</h4>
               <p>{{$t('ff3_text')}}</p>
               </nuxt-link>
