@@ -5,7 +5,7 @@
         <div class="col-xl-12">
           <div class="tp-section-wrapper-4 mb-50">
             <h3 class="tp-section-title-4">
-              <img src="~/assets/img/icon/section-title-bag.png" alt="" />
+              <img src="~/assets/img/icon/section-title-bag.png" alt="build on sth" />
               Стройте на SmartHoldem
             </h3>
           </div>

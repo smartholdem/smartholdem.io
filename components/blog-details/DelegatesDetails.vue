@@ -8,8 +8,8 @@
               <div class="postbox__category">
                 <a href="#">Blockchain</a>
               </div>
-              <h3 class="postbox__title">Стань делегатом</h3>
-              <h3 class="text-white">Участвуй в росте сети</h3>
+              <h3 class="postbox__title">{{$t('delegate')}}</h3>
+              <h3 class="text-white">{{$t('delegate_sub')}}</h3>
               <div class="postbox__thumb postbox__thumb-overlay m-img mb-55"
                    :style="{ backgroundImage: `url(${thumb_bg})` }">
               </div>
@@ -127,7 +127,8 @@
           <div class="row mt-30">
             <div class="col-md-12">
               <div class="postbox__details-content-wrapper">
-                <h3 class="postbox__details-title-2 text-center">Пошаговая инструкция: <br/>Регистрация Делегата и
+
+                <h3 class="postbox__details-title-2 text-center"><img style="width: 36px !important;" src="~/assets/img/icon/section-title-bag.png" alt=""/> Пошаговая инструкция: <br/>Регистрация Делегата и
                   Установка ноды</h3>
                 <p>
                   <strong>1. Регистрация делегата в SmartHoldem Wallet</strong> <a target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a>
@@ -272,7 +273,7 @@
           <div class="row mt-30">
             <div class="col-md-12">
               <div class="postbox__details-content-wrapper">
-                <h3 class="postbox__details-title-2 text-center">Step-by-step guide on how to register as a delegate</h3>
+                <h3 class="postbox__details-title-2 text-center"><img style="width: 36px !important;" src="~/assets/img/icon/section-title-bag.png" alt=""/> Step-by-step guide on how to register as a delegate</h3>
                 <p>
                   <strong>1. Register your delegate in SmartHoldem Wallet</strong> <a target="_blank" href="https://wallet.smartholdem.io">https://wallet.smartholdem.io</a>
                   <br/>Delegate registration transaction cost - 10,000 STH
