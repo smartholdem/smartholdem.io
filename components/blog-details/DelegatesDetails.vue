@@ -24,7 +24,7 @@
 
           <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate01.png" alt="delegate 1"/>
+              <img width="100%" src="~/assets/img/delegate/delegate01.png" alt="delegate 1"/>
             </div>
             <div class="col-xl-8 col-lg-9 col-md-11">
               <div class="postbox__details-content-wrapper">
@@ -42,9 +42,9 @@
             </div>
           </div>
 
-          <div class="row mt-30">
+          <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate02.png" alt="delegate 2"/>
+              <img width="100%" src="~/assets/img/delegate/delegate02.png" alt="delegate 2"/>
             </div>
             <div class="col-xl-8 col-lg-9 col-md-11">
               <div class="postbox__details-content-wrapper">
@@ -64,9 +64,9 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate03.png" alt="delegate 3"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate03.png" alt="delegate 3"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Делегаты Top 21</h3>
                 <p>
@@ -86,7 +86,7 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate04.png" alt="delegate 4"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate04.png" alt="delegate 4"/>
             </div>
             <div class="col-xl-8 col-lg-9 col-md-11">
               <div class="postbox__details-content-wrapper">
@@ -106,9 +106,9 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate05.png" alt="delegate 5"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate05.png" alt="delegate 5"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Связь с сообществом</h3>
                 <p>
@@ -174,9 +174,9 @@
 
           <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate01.png" alt="delegate 1"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate01.png" alt="delegate 1"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Become a Delegate</h3>
                 <p>Anyone can become a SmartHoldem delegate. To run a SmartHoldem node you will need a dedicated server
@@ -194,9 +194,9 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate02.png" alt="delegate 2"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate02.png" alt="delegate 2"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Delegate Rewards</h3>
                 <p>
@@ -215,9 +215,9 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate03.png" alt="delegate 3"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate03.png" alt="delegate 3"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">What are Delegates?</h3>
                 <p>
@@ -238,9 +238,9 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate04.png" alt="delegate 4"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate04.png" alt="delegate 4"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Delegate Stats</h3>
                 <p>
@@ -257,9 +257,9 @@
 
           <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
-              <img src="~/assets/img/delegate/delegate05.png" alt="delegate 5"/>
+              <img width="100%"  src="~/assets/img/delegate/delegate05.png" alt="delegate 5"/>
             </div>
-            <div class="col-xl-8 col-lg-9 col-md-11">
+            <div class="col-xl-8 col-lg-9 col-md-10">
               <div class="postbox__details-content-wrapper">
                 <h3 class="postbox__details-title-2">Community Connection</h3>
                 <p>
