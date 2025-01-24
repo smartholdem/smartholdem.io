@@ -42,7 +42,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row mt-30">
             <div class="col-xl-2 col-lg-2 col-md-1">
               <img width="100%" src="~/assets/img/delegate/delegate02.png" alt="delegate 2"/>
             </div>

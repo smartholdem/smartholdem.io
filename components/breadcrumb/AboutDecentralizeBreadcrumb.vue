@@ -24,6 +24,25 @@
                 PoST Network
               </span>
             </div>
+
+
+
+            <span class="product__badge-item mr-5 border border-primary">
+               Blocks {{ stats.height }}
+              </span>
+
+            <span class="product__badge-item mr-5 border border-primary">
+               Wallets {{ stats.wallets }}
+              </span>
+
+            <span class="product__badge-item mr-5 border border-primary">
+               Tx {{ stats.transactions }}
+              </span>
+
+            <span class="product__badge-item mr-5 border border-primary">
+               Delegates {{ stats.delegates }}
+              </span>
+
           </div>
         </div>
       </div>
@@ -33,10 +52,21 @@
 
 <script>
 import bg from '~/assets/img/sth/about-decentralize/header.png';
+import axios from 'axios';
 
 export default {
   data () {
-    return {bg}
+    return {
+      bg,
+      stats: {},
+    }
+  },
+  async created () {
+    try {
+      this.stats = (await axios.get('https://api.smartholdem.io/stats')).data;
+    } catch (e) {
+      //console.error(e);
+    }
   }
 };
 </script>
