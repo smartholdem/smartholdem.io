@@ -1,19 +1,19 @@
 <template>
   <section
-    class="breadcrumb__area breadcrumb__style-6 p-relative include-bg pt-200 pb-120"
+      class="breadcrumb__area breadcrumb__style-6 p-relative include-bg pt-200 pb-120"
   >
     <div
-      class="breadcrumb__bg-2 breadcrumb__overlay include-bg"
-      :style="{ backgroundImage: `url(${bg})` }"
+        class="breadcrumb__bg-2 breadcrumb__overlay include-bg"
+        :style="{ backgroundImage: `url(${bg})` }"
     ></div>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xxl-8 col-xl-8 col-lg-10">
           <div class="breadcrumb__content text-center p-relative z-index-1">
-            <h3 class="breadcrumb__title">{{$t('new_horizont')}}</h3>
+            <h3 class="breadcrumb__title">{{ $t('new_horizont') }}</h3>
             <div class="breadcrumb__list">
               <span>
-                <nuxt-link :to="localePath('/')">{{$t('home')}}</nuxt-link>
+                <nuxt-link :to="localePath('/')">{{ $t('home') }}</nuxt-link>
               </span>
               <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
               <span>
@@ -26,20 +26,19 @@
             </div>
 
 
-
-            <span class="product__badge-item mr-5 border border-primary">
+            <span v-if="stats.height" class="product__badge-item mr-5 border border-primary">
                Blocks {{ stats.height }}
               </span>
 
-            <span class="product__badge-item mr-5 border border-primary">
+            <span v-if="stats.wallets" class="product__badge-item mr-5 border border-primary">
                Wallets {{ stats.wallets }}
               </span>
 
-            <span class="product__badge-item mr-5 border border-primary">
+            <span v-if="stats.transactions" class="product__badge-item mr-5 border border-primary">
                Tx {{ stats.transactions }}
               </span>
 
-            <span class="product__badge-item mr-5 border border-primary">
+            <span v-if="stats.delegates" class="product__badge-item mr-5 border border-primary">
                Delegates {{ stats.delegates }}
               </span>
 
@@ -55,13 +54,13 @@ import bg from '~/assets/img/sth/about-decentralize/header.png';
 import axios from 'axios';
 
 export default {
-  data () {
+  data() {
     return {
       bg,
       stats: {},
     }
   },
-  async created () {
+  async created() {
     try {
       this.stats = (await axios.get('https://api.smartholdem.io/stats')).data;
     } catch (e) {
