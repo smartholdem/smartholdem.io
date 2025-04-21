@@ -71,6 +71,9 @@ export default defineNuxtConfig({
                     integrity: "sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2",
                     crossorigin: "anonymous",
                 },
+                {
+                    src: "https://cdn.conveythis.com/javascript/conveythis.js?api_key=pub_982ef11843bb0c98791cb4fc05572d91",
+                }
             ],
         },
     },

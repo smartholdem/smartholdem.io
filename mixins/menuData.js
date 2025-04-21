@@ -30,7 +30,7 @@ export default {
             id: 3,
             hasDropdown: true,
             title: "TRNG",
-            link: "/ru/rng",
+            link: "/ru/trng",
             submenus: [
               { title: "TRNG Описание", link: "/ru/rng" },
               { title: "TRNG API", link: "https://api.smartholdem.io/trng" },
@@ -137,7 +137,7 @@ export default {
             id: 3,
             hasDropdown: true,
             title: "TRNG",
-            link: "/rng",
+            link: "/trng",
             submenus: [
               { title: "TRNG Specification", link: "/rng" },
               { title: "TRNG API", link: "https://api.smartholdem.io/trng" },
