@@ -32,7 +32,7 @@ export default {
             title: "TRNG",
             link: "/ru/trng",
             submenus: [
-              { title: "TRNG Описание", link: "/ru/rng" },
+              { title: "TRNG Описание", link: "/ru/trng" },
               { title: "TRNG API", link: "https://api.smartholdem.io/trng" },
               { title: "Пример игры DICE", link: "https://github.com/smartholdem/dice-game-example" },
 
@@ -139,7 +139,7 @@ export default {
             title: "TRNG",
             link: "/trng",
             submenus: [
-              { title: "TRNG Specification", link: "/rng" },
+              { title: "TRNG Specification", link: "/trng" },
               { title: "TRNG API", link: "https://api.smartholdem.io/trng" },
               { title: "DICE Game Example", link: "https://github.com/smartholdem/dice-game-example" },
 
