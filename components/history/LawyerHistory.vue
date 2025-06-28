@@ -91,7 +91,7 @@ export default {
           delay: ".9",
           name: "Cross-chain",
           title: "SmartHoldem contracts",
-          text: "BSC:<strong><a class='text-primary' target='_blank' href='https://bscscan.com/token/0x625d64c3384aa6d6841a1608ae0ce48776981d38'>0x625d64c3384aa6d6841a1608ae0ce48776981d38</a></strong><br/>ETH:<strong><a class='text-primary' target='_blank' href='https://etherscan.io/token/0x625d64c3384aa6d6841a1608ae0ce48776981d38'>0x625d64C3384AA6d6841a1608aE0Ce48776981D38</a></strong>",
+          text: "BSC:<strong><a class='text-primary' target='_blank' href='https://bscscan.com/token/0x625d64c3384aa6d6841a1608ae0ce48776981d38'>0x625d64c3384aa6d6841a1608ae0ce48776981d38</a></strong><br/>ETH:<strong><a class='text-primary' target='_blank' href='https://etherscan.io/token/0x625d64c3384aa6d6841a1608ae0ce48776981d38'>0x625d64C3384AA6d6841a1608aE0Ce48776981D38</a></strong><br/>TON:<strong><a class='text-primary' target='_blank' href='https://tonscan.org/jetton/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP'>EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP</a></strong>",
           meta: "Official Contracts",
         },
       ]
