@@ -96,7 +96,7 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li>
-                      <a target="_blank" href="https://coinpaprika.com/coin/new-layout/sth-smartholdem/">Coinpaprika</a>
+                      <a target="_blank" href="https://coinpaprika.com/coin/sth-smartholdem/">Coinpaprika</a>
                     </li>
                     <li>
                       <a target="_blank" href="https://blockspot.io/coin/smartholdem">Blockspot</a>
