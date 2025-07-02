@@ -23,9 +23,9 @@
             </div>
           </div>
         </div>
+        <!-- contracts -->
         <div class="col-xxl-6 col-xl-6 col-lg-6">
           <div class="history__list pl-65 pr-90">
-
             <div v-for="(item, idx) in history_lists" :key="idx" class="history__list-item d-flex align-items-start">
               <div class="history__year" data-sal="slide-right" data-sal-delay="130" data-sal-duration="1000">
                 <h5 class="history__year-title">{{item.name}}</h5>
