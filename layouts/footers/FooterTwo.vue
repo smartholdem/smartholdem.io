@@ -116,16 +116,25 @@
                       <nuxt-link :to="localePath('/buy-sth')">How to buy</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link href="https://ex.xbts.io/market/XBTSX.STH_XBTSX.USDT">DEX</nuxt-link>
+                      <nuxt-link href="https://www.toobit.com/en-US/spot/STH_USDT?invite_code=d2YhTz">Toobit CEX</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link href="https://xeggex.com/market/STH_USDT">CEX</nuxt-link>
+                      <nuxt-link href="https://ex.xbts.io/market/XBTSX.STH_XBTSX.USDT">BitShares DEX</nuxt-link>
                     </li>
                     <li>
                       <nuxt-link href="https://app.xbts.io/#/pools">DeFi</nuxt-link>
                     </li>
                     <li>
                       <nuxt-link href="https://app.xbts.io/#/smartholder">SmartHolder</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=100000000">DeDust TON</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x625d64C3384AA6d6841a1608aE0Ce48776981D38">Pancakeswap STH</nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link href="https://app.uniswap.org/swap?inputCurrency=0x625d64c3384aa6d6841a1608ae0ce48776981d38">Uniswap STH</nuxt-link>
                     </li>
                   </ul>
                 </div>

@@ -14,9 +14,8 @@ export default {
               { title: "Dex-Trade", link: "https://dex-trade.com/spot/trading/STHUSDT?interface=classic" },
               { title: "XBTS DEX", link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC" },
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
-              { title: "Xeggex", link: "https://xeggex.com/market/STH_USDT" },
-              { title: "Xeggex Pool", link: "https://xeggex.com/pool/STH_USDT" },
-              { title: "SmartHolder DEX Staking", link: "https://app.xbts.io/#/smartholder" },
+              { title: "TON DEX", link: "https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=100000000" },
+              { title: "SmartHolder", link: "https://app.xbts.io/#/smartholder" },
             ],
           },
           {
@@ -117,13 +116,12 @@ export default {
             link: "/buy-sth",
             submenus: [
               { title: "How To buy STH", link: "/buy-sth" },
-              { title: "Toobit", link: "https://www.toobit.com/ru-RU/spot/STH_USDT?invite_code=d2YhTz" },
+              { title: "Toobit", link: "https://www.toobit.com/en-US/spot/STH_USDT?invite_code=d2YhTz" },
               { title: "Dex-Trade", link: "https://dex-trade.com/spot/trading/STHUSDT?interface=classic" },
               { title: "XBTS DEX", link: "https://ex.xbts.io/market/XBTSX.STH_XBTSX.BTC" },
               { title: "XBTS DeFi", link: "https://app.xbts.io/#/pools" },
-              { title: "Xeggex", link: "https://xeggex.com/market/STH_USDT" },
-              { title: "Xeggex Pool", link: "https://xeggex.com/pool/STH_USDT" },
-              { title: "SmartHolder DEX Staking", link: "https://app.xbts.io/#/smartholder" },
+              { title: "TON DEX", link: "https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=100000000" },
+              { title: "SmartHolder", link: "https://app.xbts.io/#/smartholder" },
             ],
           },
           {
