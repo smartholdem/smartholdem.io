@@ -87,11 +87,11 @@
                 </ul>
               </div>
               <p>
-                <a class="text-primary" href="https://github.com/technologiespro/smart2fa/releases">Download Smart2FA
-                  desktop app for macOS, Windows, and Linux devices: </a>
+                <a target="_blank" class="text-primary" href="https://github.com/technologiespro/smart2fa/releases">Download Smart2FA
+                  desktop app for macOS, Windows, and Linux devices</a>
               </p>
               <p>
-                Snapcraft <a class="text-primary" href="https://snapcraft.io/smart2fa">https://snapcraft.io/smart2fa</a>
+                Snapcraft <a target="_blank" class="text-primary" href="https://snapcraft.io/smart2fa">https://snapcraft.io/smart2fa</a>
               </p>
               <img src="~/assets/img/sth/2fa/2.png" alt="smart 2fa 2"/>
               <h3 class="team__details-about-title text-center">Easy, Effective, and Secure</h3>

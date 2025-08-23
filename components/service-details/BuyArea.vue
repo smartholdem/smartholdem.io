@@ -60,25 +60,25 @@
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex cex" class="w-100">
+                  <a target="_blank" href="https://dedust.io/swap/TON/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=1000000000">
+                    <img src="~/assets/img/sth/buy/ton.png" alt="smartholdem ton" class="w-100">
                   </a>
                 </div>
-                <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH/USDT/DOGE</p>
+                <a target="_blank" href="https://dedust.io/swap/TON/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=1000000000">
+                  <h3>DeDust</h3>
+                  <p>STH/TON pool</p>
                 </a>
               </div>
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex defi pools" class="w-100">
+                  <a target="_blank" href="https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=10000000">
+                    <img src="~/assets/img/sth/buy/ton.png" alt="smartholdem ton defi pools" class="w-100">
                   </a>
                 </div>
-                <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH DeFi пулы</p>
+                <a target="_blank" href="https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=10000000">
+                  <h3>DeDust</h3>
+                  <p>STH/USDT pool</p>
                 </a>
               </div>
 
@@ -192,25 +192,25 @@
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex cex" class="w-100">
+                  <a target="_blank" href="https://dedust.io/swap/TON/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=1000000000">
+                    <img src="~/assets/img/sth/buy/ton.png" alt="smartholdem ton" class="w-100">
                   </a>
                 </div>
-                <a target="_blank" href="https://xeggex.com/market/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH/USDT/DOGE pairs</p>
+                <a target="_blank" href="https://dedust.io/swap/TON/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=1000000000">
+                  <h3>DeDust</h3>
+                  <p>STH/TON pool</p>
                 </a>
               </div>
 
               <div class="col-md-3 text-center">
                 <div class="postbox__img-2 m-img w-100">
-                  <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                    <img src="~/assets/img/sth/buy/xeggex.png" alt="smartholdem xeggex defi pools" class="w-100">
+                  <a target="_blank" href="https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=10000000">
+                    <img src="~/assets/img/sth/buy/ton.png" alt="smartholdem ton defi pools" class="w-100">
                   </a>
                 </div>
-                <a target="_blank" href="https://xeggex.com/pool/STH_USDT">
-                  <h3>XeggeX</h3>
-                  <p>STH DeFi pools</p>
+                <a target="_blank" href="https://dedust.io/swap/USDT/EQAtsA8GtJTCQNGTg3VwJtjcLfxteTx4-aDvBBuB1wPNDuhP?amount=10000000">
+                  <h3>DeDust</h3>
+                  <p>STH/USDT pool</p>
                 </a>
               </div>
 

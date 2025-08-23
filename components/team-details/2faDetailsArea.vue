@@ -27,14 +27,14 @@
                     </span>
                   </div>
                   <div class="team__details-contact-content">
-                    <p><a target="_blank" href="#">APP</a></p>
+                    <p><a target="_blank" href="https://github.com/technologiespro/smart2fa/releases">APP</a></p>
                   </div>
                 </div>
               </div>
               <p>{{$t('2fa_title')}}</p>
               <div class="team__details-social">
-                <a href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://github.com/technologiespro/smart2fa/releases"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://github.com/technologiespro/smart2fa/releases"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
           </div>
