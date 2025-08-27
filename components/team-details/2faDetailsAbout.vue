@@ -32,13 +32,14 @@
                   </li>
                 </ul>
               </div>
-              <p>
-                <a class="text-primary" href="https://github.com/technologiespro/smart2fa/releases">Скачать приложение
-                  Smart2FA</a> для устройств macOS, Windows и Linux
-              </p>
-              <p>
-                Snapcraft <a class="text-primary" href="https://snapcraft.io/smart2fa">https://snapcraft.io/smart2fa</a>
-              </p>
+              <h3 class="text-center">Установить Smart2FA</h3>
+              <div class="team__details-about-list pt-10 mb-35">
+                <ul class="text-primary">
+                  <li><a target="_blank" class="text-primary" href="https://t.me/sthhubbot/fa2"><i class="fa-brands fa-telegram-plane"></i>&nbsp;Smart2FA Telegram BOT APP</a></li>
+                  <li><a target="_blank" class="text-primary" href="https://snapcraft.io/smart2fa"><i class="fa-brands fa-linux"></i>&nbsp;Linux Snapcraft</a></li>
+                  <li><a target="_blank" class="text-primary" href="https://github.com/technologiespro/smart2fa/releases"><i class="fa-brands fa-git"></i>&nbsp;Скачать из github для MacOS, Windows, и Linux</a></li>
+                </ul>
+              </div>
               <img src="~/assets/img/sth/2fa/2.png" alt="smart 2fa 2"/>
               <h3 class="team__details-about-title text-center">Легко, эффективно и безопасно</h3>
               <p>Удвойте безопасность своих приложений, включив двухфакторную аутентификацию (2FA) с помощью Smart2FA
@@ -54,7 +55,7 @@
                 пароль на веб-сайт или в приложение для получения доступа. Срок действия паролей, созданных
                 аутентификатором Smart2FA, истекает через 30 секунд, и в следующий раз будет сгенерирован новый пароль.
               </p>
-              <img src="~/assets/img/sth/2fa/3.png" alt="smart 2fa 3"/>
+              <img src="~/assets/img/sth/2fa/2fa_3.png" alt="smart 2fa 3"/>
             </div>
           </div>
 
@@ -86,13 +87,14 @@
                   </li>
                 </ul>
               </div>
-              <p>
-                <a target="_blank" class="text-primary" href="https://github.com/technologiespro/smart2fa/releases">Download Smart2FA
-                  desktop app for macOS, Windows, and Linux devices</a>
-              </p>
-              <p>
-                Snapcraft <a target="_blank" class="text-primary" href="https://snapcraft.io/smart2fa">https://snapcraft.io/smart2fa</a>
-              </p>
+              <h3 class="text-center">Download Smart2FA</h3>
+              <div class="team__details-about-list pt-10 mb-35">
+              <ul class="text-primary">
+                <li><a target="_blank" class="text-primary" href="https://t.me/sthhubbot/fa2"><i class="fa-brands fa-telegram-plane"></i>&nbsp;Smart2FA Telegram BOT APP</a></li>
+                <li><a target="_blank" class="text-primary" href="https://snapcraft.io/smart2fa"><i class="fa-brands fa-linux"></i>&nbsp;Linux Snapcraft</a></li>
+                <li><a target="_blank" class="text-primary" href="https://github.com/technologiespro/smart2fa/releases"><i class="fa-brands fa-git"></i>&nbsp;Download apps from github for macOS, Windows, and Linux devices</a></li>
+              </ul>
+              </div>
               <img src="~/assets/img/sth/2fa/2.png" alt="smart 2fa 2"/>
               <h3 class="team__details-about-title text-center">Easy, Effective, and Secure</h3>
               <p>Double your application security by enabling two-factor authentication (2FA) with Smart2FA for your
@@ -108,7 +110,7 @@
                 application to gain access. The passcodes created by Smart2FA authenticator expire after 30 seconds, and
                 a new passcode will be generated the next time.
               </p>
-              <img src="~/assets/img/sth/2fa/3.png" alt="smart 2fa 3"/>
+              <img src="~/assets/img/sth/2fa/2fa_3.png" alt="smart 2fa 3"/>
             </div>
           </div>
 
