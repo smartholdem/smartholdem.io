@@ -4,7 +4,7 @@
     <Transform/>
     <FunFact/>
     <FunFactB/>
-    <History/>
+    <RoadMap/>
     <Video/>
     <About/>
     <Projects/>
@@ -12,9 +12,7 @@
     <SectionCommunity/>
     <!--<Blogs/>-->
     <Manifest/>
-
-
-    <Testimonial/>
+    <SmartHoldemNotes/>
     <Partners/>
   </Layout>
 </template>
@@ -31,10 +29,10 @@ import Transform from '~/components/abouts/Transform.vue';
 import Video from '~/components/video-area/LawyerVideo.vue';
 import FunFact from '~/components/fun-facts/LawyerFunFact.vue';
 import FunFactB from '~/components/fun-facts/FunFactB.vue';
-import History from '~/components/history/LawyerHistory.vue';
+import RoadMap from '~/components/history/RoadMap.vue';
 import About from '~/components/services/About.vue';
 //import Blogs from '~/components/blogs/LawyerBlogs.vue';
-import Testimonial from '~/components/testimonials/LawyerTestimonial.vue';
+import SmartHoldemNotes from '~/components/testimonials/SmartHoldemNotes.vue';
 import Projects from '~/components/teams/LawyerTeams.vue';
 import Counter from '~~/components/counters/Counter.vue';
 
