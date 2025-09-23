@@ -14,7 +14,9 @@
                   </nuxt-link>
                   <span class="text-white ml-10 pl-5 pr-5 pt-1 pb-1 " title="English language"><nuxt-link :to="switchLocalePath('en')">ENG</nuxt-link></span>
                   <span class="text-white ml-10 pl-5 pt-1 pb-1 " title="Русский язык"><nuxt-link :to="switchLocalePath('ru')">RUS</nuxt-link></span>
-                  <span v-show="isMobile" class="text-white ml-10 pl-5 pr-5 pt-1 pb-1"><a target="_blank" class="text-warning text-uppercase" href="https://wallet.smartholdem.io/"><i class="fa icon_wallet"></i> <span >{{$t('wallet')}}</span></a></span>
+                  <span v-show="isMobile" class="text-white ml-10 pl-5 pr-5 pt-1 pb-1">
+                    <a target="_blank" class="text-warning text-uppercase" href="https://wallet.smartholdem.io/"><i class="fa icon_wallet"></i> <span >{{$t('wallet')}}</span></a>
+                  </span>
                 </div>
               </div>
               <div class="col-xxl-6 col-xl-8 col-lg-8 d-none d-lg-block">
