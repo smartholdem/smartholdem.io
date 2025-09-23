@@ -72,7 +72,7 @@
                 <div class="footer__widget-content">
                   <ul>
                     <li>
-                      <a target="_blank" href="https://paperwallet.top/">Paper Wallet</a>
+                      <a target="_blank" href="https://paperw.top">Paper Wallet</a>
                     </li>
                     <li>
                       <a target="_blank" href="https://hasher.smartholdem.io">Hasher Tool</a>

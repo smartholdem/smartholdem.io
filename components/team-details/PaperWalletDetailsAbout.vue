@@ -86,8 +86,8 @@
                 <img src="~/assets/img/sth/paper/paper4.png" alt="crypto paper wallet 4"/>
                 <h3 class="team__details-about-title text-center">Как создать Крипто Бумажные Кошельки:</h3>
                 <ol>
-                  <li>Посетите веб-сайт генератора бумажных кошельков по адресу https://paperwallet.top.</li>
-                  <li>Изучите подробный раздел часто задаваемых вопросов на странице https://paperwallet.top/faq</li>
+                  <li>Посетите веб-сайт генератора бумажных кошельков по адресу https://paperw.top.</li>
+                  <li>Изучите подробный раздел часто задаваемых вопросов на странице https://paperw.top/faq</li>
                   <li>Скачайте и установите приложение Paper Wallet Generator, отключите Интернет, и начните создавать
                     уникальные бумажные кошельки для выбранных вами криптовалют.
                   </li>
@@ -202,8 +202,8 @@
                 <img src="~/assets/img/sth/paper/paper4.png" alt="crypto paper wallet 4"/>
                 <h3 class="team__details-about-title text-center">How to Create Crypto Paper Wallets:</h3>
                 <ol>
-                  <li>Visit the Paper Wallet Generator website at https://paperwallet.top</li>
-                  <li>Explore the comprehensive FAQ section at https://paperwallet.top/faq/</li>
+                  <li>Visit the Paper Wallet Generator website at https://paperw.top</li>
+                  <li>Explore the comprehensive FAQ section at https://paperw.top/faq/</li>
                   <li>Download and install the Paper Wallet Generator app, and create unique Paper Wallets for your
                     chosen cryptocurrencies.
                   </li>
