@@ -101,13 +101,6 @@ export default {
                         link: "https://community.smartholdem.io",
                     },
                     {
-                        id: 11,
-                        hasDropdown: false,
-                        pages: true,
-                        title: "Explorer",
-                        link: "https://explorer.smartholdem.io/",
-                    },
-                    {
                         id: 12,
                         hasDropdown: false,
                         pages: true,
@@ -121,6 +114,14 @@ export default {
                         title: "Проекты",
                         link: "/ru/projects",
                     },
+                    {
+                        id: 11,
+                        hasDropdown: false,
+                        pages: true,
+                        title: "Explorer",
+                        link: "https://explorer.smartholdem.io/",
+                    },
+
                 ],
                 en: [
                     {
@@ -221,13 +222,6 @@ export default {
                         link: "https://community.smartholdem.io",
                     },
                     {
-                        id: 10,
-                        hasDropdown: false,
-                        pages: true,
-                        title: "Explorer",
-                        link: "https://explorer.smartholdem.io/",
-                    },
-                    {
                         id: 11,
                         hasDropdown: false,
                         pages: true,
@@ -240,6 +234,13 @@ export default {
                         pages: true,
                         title: "Projects",
                         link: "/projects",
+                    },
+                    {
+                        id: 10,
+                        hasDropdown: false,
+                        pages: true,
+                        title: "Explorer",
+                        link: "https://explorer.smartholdem.io/",
                     },
                 ]
             },
