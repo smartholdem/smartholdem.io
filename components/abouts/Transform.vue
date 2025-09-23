@@ -25,7 +25,7 @@
                 </span>
               </div>
               <div class="about__experience-content-4">
-                <h4><span>{{ (new Date().getFullYear()) - 2008 }}</span>+</h4>
+                <h4><span>{{ (new Date().getFullYear()) - 2016 }}</span>+</h4>
                 <p v-html="$t('years_dev')"></p>
               </div>
             </div>
