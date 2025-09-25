@@ -27,15 +27,15 @@
                     </span>
                   </div>
                   <div class="team__details-contact-content">
-                    <p><a target="_blank" href="#">Decentralized APP</a></p>
+                    <p><a target="_blank" href="https://paperw.top">Decentralized APP</a></p>
                   </div>
                 </div>
               </div>
               <p>{{$t('pw_title')}}</p>
               <div class="team__details-social">
-                <a href="https://twitter.com/smartholdem"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://github.com/technologiespro/paper-wallet-generator/releases"><i class="fa-brands fa-github"></i></a>
-                <a href="https://paperw.top"><i class="fa fa-link"></i></a>
+                <a target="_blank" href="https://x.com/paper_wallet"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://github.com/technologiespro/paper-wallet-generator/releases"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://paperw.top"><i class="fa fa-link"></i></a>
               </div>
             </div>
           </div>
