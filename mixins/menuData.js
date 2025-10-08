@@ -22,7 +22,7 @@ export default {
                             {title: "SmartHolder", link: "https://app.xbts.io/#/smartholder"},
                         ],
                     },
-                    /*
+
                   {
                     id: 2,
                     hasDropdown: false,
@@ -31,7 +31,7 @@ export default {
                     link: "https://wallet.smartholdem.io",
                   },
 
-                     */
+
                     {
                         id: 3,
                         hasDropdown: true,
@@ -143,7 +143,7 @@ export default {
                             {title: "SmartHolder", link: "https://app.xbts.io/#/smartholder"},
                         ],
                     },
-                    /*
+
                   {
                     id: 1,
                     hasDropdown: false,
@@ -152,7 +152,7 @@ export default {
                     link: "https://wallet.smartholdem.io",
                   },
 
-                     */
+
                     {
                         id: 3,
                         hasDropdown: true,
