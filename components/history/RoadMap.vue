@@ -1,5 +1,5 @@
 <template>
-  <section class="history__area pt-30 pb-140">
+  <section class="history__area pt-30 pb-65">
     <div class="container">
       <div class="row">
         <div class="col-xxl-6 col-xl-6 col-lg-6">
@@ -49,7 +49,7 @@
 
       <div class="row mt-50">
         <hr/>
-        <h4 class="section__title-6 text-center text-uppercase">Roadmap 2023 - 2025</h4>
+        <h4 class="section__title-6 text-center text-uppercase">Roadmap</h4>
         <img src="/assets/img/sth/Road_Map_web.png" alt="SmartHoldem Road Map"/>
       </div>
     </div>

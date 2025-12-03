@@ -5,7 +5,7 @@
     <FunFact/>
     <FunFactB/>
     <RoadMap/>
-    <Video/>
+    <!--<Video/>-->
     <About/>
     <Projects/>
     <Counter/>

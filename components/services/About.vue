@@ -1,5 +1,5 @@
 <template>
-  <section class="servivces__area pt-110">
+  <section class="servivces__area pt-60">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
