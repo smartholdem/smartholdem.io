@@ -1,0 +1,44 @@
+{
+  "name": "smartholdem-web4",
+  "version": "1.0.0",
+  "description": "SmartHoldem Netfory - Web 4.0 Platform Website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host 0.0.0.0 --port 3000",
+    "build": "nuxt build",
+    "news:images": "node scripts/fetch-news-images.mjs",
+    "news:og": "node scripts/generate-news-og.mjs",
+    "generate": "node scripts/fetch-news-images.mjs && node scripts/generate-news-og.mjs && nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
+    "docs:build": "vitepress build docs",
+    "docs:build:smartnet": "cross-env DOCS_TARGET=smartnet vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 4173",
+    "build:all": "yarn generate && yarn docs:build && node scripts/merge-dist.mjs",
+    "build:smartnet-dapp": "yarn docs:build:smartnet && echo '\\n✓ SmartNet DevHub dApp ready at ./docs-dist-smartnet/ — publish this folder to sth://Sc4vFU8srmG3HjMqAvXRxUZ1AqW2H5dP14'",
+    "preview:all": "yarn build:all && npx serve .output/public -l 8080"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^9.5.6",
+    "@vueuse/core": "^13.9.0",
+    "@vueuse/nuxt": "^13.9.0",
+    "fuse.js": "^7.0.0",
+    "highlight.js": "^11.10.0",
+    "katex": "^0.16.11",
+    "lucide-vue-next": "^0.545.0",
+    "marked": "^18.0.0",
+    "mermaid": "^11.4.0",
+    "nuxt": "^3.19.0",
+    "sharp": "^0.35.3",
+    "vue": "^3.5.0",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "cross-env": "^10.1.0",
+    "sass": "^1.77.0",
+    "vitepress": "^1.5.0"
+  }
+}

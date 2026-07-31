@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #F8FAFC;
+    --surface: #FFFFFF;
+    --text: #0F172A;
+    --text-secondary: #475569;
+    --border: rgba(15, 23, 42, 0.10);
+  }
+  .dark {
+    --bg: #0A0E27;
+    --surface: #151B3B;
+    --text: #FFFFFF;
+    --text-secondary: #94A3B8;
+    --border: rgba(255, 255, 255, 0.08);
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .surface {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .text-secondary { color: var(--text-secondary); }
+  .hair-border { border-color: var(--border); }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-brand-400 hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 px-6 py-3 font-semibold transition-all duration-300;
+    border-color: #FF5A0A;
+    color: var(--text);
+  }
+  .btn-outline:hover { background: rgba(255,90,10,0.10); }
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white px-6 py-3 font-semibold text-white transition-all duration-300;
+  }
+  .btn-outline-white:hover { background: rgba(255,255,255,0.10); }
+  .btn-outline-cyan {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 px-6 py-3 font-semibold text-white transition-all duration-300;
+    border-color: #00D4FF;
+  }
+  .btn-outline-cyan:hover { background: rgba(0,212,255,0.10); }
+  .btn-tertiary {
+    @apply inline-flex items-center justify-center gap-1.5 font-semibold text-neon-cyan transition-colors;
+  }
+  .btn-tertiary:hover { text-decoration: underline; }
+  .glass {
+    background: rgba(21, 27, 59, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .eyebrow {
+    @apply mono text-xs font-semibold uppercase tracking-[0.25em] text-neon-cyan;
+  }
+  .section-line {
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+}
+
+/* Light-mode glass adaptation */
+html:not(.dark) .glass {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* Reveal-on-scroll utility (driven by composable) */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* Rich HTML (news articles) */
+.prose-sth :where(p) { margin-bottom: 1rem; line-height: 1.75; }
+.prose-sth :where(a) { color: #00D4FF; text-decoration: underline; word-break: break-word; }
+.prose-sth :where(strong) { color: var(--text); font-weight: 700; }
+.prose-sth :where(img) { border-radius: 0.75rem; margin: 1rem 0; max-width: 100%; height: auto; }
+.prose-sth :where(ul) { list-style: disc; padding-left: 1.4rem; margin-bottom: 1rem; }
+.prose-sth :where(h1,h2,h3) { font-weight: 700; margin: 1.5rem 0 0.75rem; }
+
+/* ============================ WHITEPAPER DOCUMENT ============================ */
+.prose-wp{ color: var(--text); max-width: 75ch; }
+.prose-wp p{ line-height: 1.8; margin: 0 0 1.1rem; color: var(--text); }
+.prose-wp .wp-h{ scroll-margin-top: 140px; font-weight: 700; line-height: 1.25; }
+.prose-wp .wp-h1{ font-size: 2.1rem; margin: 2.6rem 0 1rem; padding-bottom:.5rem; border-bottom:1px solid var(--border); }
+.prose-wp .wp-h2{ font-size: 1.6rem; margin: 2.2rem 0 .9rem; }
+.prose-wp .wp-h3{ font-size: 1.25rem; margin: 1.6rem 0 .7rem; color: var(--text); }
+.prose-wp .wp-h4{ font-size: 1.08rem; margin: 1.3rem 0 .6rem; }
+.prose-wp .wp-anchor{ opacity:0; margin-left:-1.1em; padding-right:.35em; color:#00D4FF; text-decoration:none; font-weight:400; }
+.prose-wp .wp-h:hover .wp-anchor{ opacity:.7; }
+.prose-wp ul{ list-style:none; padding-left:1.25rem; margin:0 0 1.1rem; }
+.prose-wp ul li{ position:relative; padding-left:1.1rem; margin:.4rem 0; line-height:1.7; }
+.prose-wp ul li::before{ content:''; position:absolute; left:0; top:.7em; width:6px; height:6px; border-radius:9999px; background:#00D4FF; box-shadow:0 0 8px rgba(0,212,255,.6); }
+.prose-wp ol{ padding-left:1.5rem; margin:0 0 1.1rem; }
+.prose-wp ol li{ margin:.4rem 0; line-height:1.7; }
+.prose-wp blockquote{ border-left:3px solid #00D4FF; background:rgba(0,212,255,.06); padding:.75rem 1.1rem; margin:1.2rem 0; border-radius:0 .5rem .5rem 0; color:var(--text-secondary); }
+.prose-wp strong{ color:var(--text); font-weight:700; }
+.prose-wp code:not(.hljs){ font-family:'JetBrains Mono',monospace; font-size:.85em; background:rgba(124,58,237,.14); color:#c4b5fd; padding:.12em .4em; border-radius:.35rem; }
+html:not(.dark) .prose-wp code:not(.hljs){ color:#6d28d9; background:rgba(124,58,237,.1); }
+.prose-wp .wp-link{ color:#00D4FF; text-decoration:none; border-bottom:1px solid rgba(0,212,255,.35); }
+.prose-wp .wp-link:hover{ border-bottom-color:#00D4FF; }
+.prose-wp .wp-ext{ font-size:.7em; vertical-align:super; margin-left:2px; opacity:.7; }
+
+/* Code blocks */
+.prose-wp .wp-code{ position:relative; margin:1.3rem 0; border:1px solid var(--border); border-radius:.75rem; overflow:hidden; background:#0b1020; }
+html:not(.dark) .prose-wp .wp-code{ background:#0d1117; }
+.prose-wp .wp-code pre{ margin:0; padding:1.1rem 1.2rem; overflow-x:auto; }
+.prose-wp .wp-code code.hljs{ font-family:'JetBrains Mono',monospace; font-size:.85rem; line-height:1.6; background:transparent; padding:0; }
+.prose-wp .wp-code-lang{ position:absolute; top:.55rem; left:.9rem; font-family:'JetBrains Mono',monospace; font-size:.65rem; text-transform:uppercase; letter-spacing:.1em; color:#64748B; }
+.prose-wp .wp-code pre{ padding-top:2rem; }
+.prose-wp .wp-copy{ position:absolute; top:.45rem; right:.5rem; font-size:.7rem; font-family:'JetBrains Mono',monospace; padding:.25rem .6rem; border-radius:.4rem; border:1px solid rgba(255,255,255,.14); color:#94A3B8; background:rgba(255,255,255,.04); cursor:pointer; transition:all .2s; z-index:2; }
+.prose-wp .wp-copy:hover{ color:#00D4FF; border-color:rgba(0,212,255,.5); }
+
+/* Tables */
+.prose-wp .wp-table-wrap{ overflow-x:auto; margin:1.3rem 0; border:1px solid var(--border); border-radius:.75rem; }
+.prose-wp table{ width:100%; border-collapse:collapse; font-size:.9rem; }
+.prose-wp th{ text-align:left; padding:.7rem .9rem; background:rgba(0,212,255,.08); color:var(--text); font-weight:600; white-space:nowrap; }
+.prose-wp td{ padding:.65rem .9rem; border-top:1px solid var(--border); color:var(--text-secondary); }
+.prose-wp tbody tr:nth-child(even){ background:rgba(255,255,255,.02); }
+html:not(.dark) .prose-wp tbody tr:nth-child(even){ background:rgba(0,0,0,.02); }
+
+/* KaTeX blocks */
+.prose-wp .katex-display{ overflow-x:auto; overflow-y:hidden; padding:.5rem 0; margin:1.2rem 0; }
+
+/* Global KaTeX responsiveness — prevents horizontal overflow on mobile
+   when block-level formulas are wider than the viewport. */
+.katex-display{ overflow-x:auto; overflow-y:hidden; max-width:100%; padding-bottom:2px; }
+.katex-display > .katex{ max-width:100%; white-space:normal; }
+/* Also shrink formulas on very narrow screens for readability. */
+@media (max-width: 480px){
+  .katex-display{ font-size:.9em; }
+}
+
+/* Global overflow guard — some formulas / wide tables can push body wider
+   than the viewport on mobile. Clip horizontally at the root. */
+html, body{ overflow-x:hidden; }
+
+/* CSS grid children default to `min-width: auto`, which means a wide child
+   (long formula, long code block, wide image) can push the whole grid past
+   the viewport. Force min-width: 0 so grid columns can shrink and inner
+   `overflow-x: auto` boxes can actually scroll. */
+.grid > *{ min-width: 0; }
+
+/* Mermaid */
+.prose-wp .mermaid{ margin:1.5rem 0; text-align:center; background:transparent; }
+
+/* Font-size scale (A-/A+) */
+.wp-fs-0 .prose-wp{ font-size:.94rem; }
+.wp-fs-1 .prose-wp{ font-size:1.02rem; }
+.wp-fs-2 .prose-wp{ font-size:1.12rem; }
+
+/* TOC */
+.wp-toc a{ display:block; padding:.28rem .6rem; font-size:.82rem; line-height:1.35; color:var(--text-secondary); border-left:2px solid transparent; border-radius:0 .35rem .35rem 0; transition:all .18s; }
+.wp-toc a:hover{ color:var(--text); background:rgba(0,212,255,.05); }
+.wp-toc a.active{ color:#00D4FF; border-left-color:#00D4FF; background:rgba(0,212,255,.08); font-weight:600; }
+.wp-toc .lvl-1{ padding-left:.6rem; font-weight:600; }
+.wp-toc .lvl-2{ padding-left:1.35rem; }
+.wp-toc .lvl-3{ padding-left:2.1rem; font-size:.78rem; }
