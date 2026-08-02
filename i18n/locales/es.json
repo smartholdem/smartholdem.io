@@ -1,0 +1,903 @@
+{
+  "nav": {
+    "buy": "Comprar",
+    "wallet": "Monedero",
+    "explorer": "Explorador",
+    "api": "API",
+    "blockchain": "Blockchain",
+    "dapps": "DApps",
+    "devhub": "DevHub",
+    "news": "Noticias",
+    "tokenomics": "Tokenomics",
+    "whitepaper": "Libro Blanco",
+    "glossary": "Glosario",
+    "language": "Idioma",
+    "xbtsDex": "XBTS DEX",
+    "dexTrade": "DEX Trade",
+    "buyHint": "Obtén, intercambia o canjea STH:",
+    "getSth": "Obtener STH",
+    "mission": "La Misión"
+  },
+  "glossary": {
+    "eyebrow": "Libro Blanco · Apéndice A",
+    "title": "Glosario de Términos",
+    "subtitle": "Un índice interactivo y alfabético de cada término técnico, protocolo y componente arquitectónico utilizado en todo el Libro Blanco de Netfory.",
+    "crumbHome": "Inicio",
+    "crumbWp": "Libro Blanco",
+    "statTerms": "términos",
+    "statLetters": "letras",
+    "statInteractive": "navegación rápida",
+    "ctaWp": "Leer Libro Blanco Completo",
+    "ctaExec": "Resumen Ejecutivo",
+    "searchPh": "Buscar términos o definiciones…",
+    "clear": "Limpiar búsqueda",
+    "noResults": "No hay entradas que coincidan con \"{q}\". Prueba con una consulta diferente.",
+    "terms": "entradas",
+    "copyLink": "Copiar enlace directo",
+    "linkCopied": "Enlace copiado al portapapeles",
+    "top": "Volver arriba",
+    "seoTitle": "Glosario de Términos - Libro Blanco de Netfory (Web 4.0) {'|'} SmartHoldem",
+    "seoDescription": "Glosario interactivo alfabético de todos los términos técnicos utilizados en el Libro Blanco de Netfory: BLAKE3, Iroh, Proof-of-Utility, DHT, DPoS, STH, Byte-Hours, SmartNet y más."
+  },
+  "hero": {
+    "eyebrow": "SmartHoldem · WEB 4.0",
+    "title": "Netfory: La Web Que Trabaja Para Ti",
+    "subtitle": "La primera implementación de Web 4.0. No es un concepto. No es una hoja de ruta. Es una pila funcional y probada.",
+    "tagline": "No visites la web. Sé la web.",
+    "subtitle2": "La primera pila Web 4.0 lista para producción. Infraestructura Cero. Autonomía Absoluta.",
+    "ctaPrimary": "Leer Resumen Ejecutivo",
+    "ctaSecondary": "Unirse a Telegram",
+    "ctaTertiary": "Descargar Cliente Netfory",
+    "micro": "La red no es gestionada por agentes. LA RED SON los agentes.",
+    "ctaMission": "The Mission",
+    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+  },
+  "problem": {
+    "eyebrow": "El Problema",
+    "title": "La Paradoja del Frontend de Web 3.0",
+    "text": "Las aplicaciones descentralizadas modernas sufren una contradicción arquitectónica fatal. Los contratos inteligentes y tokens residen en blockchains descentralizadas, pero las interfaces de usuario a través de las cuales los humanos interactúan con ellos están alojadas en infraestructura centralizada: AWS, Cloudflare, Vercel, Google Cloud. Una sola orden judicial, una sola violación de los términos de servicio de un proveedor, o un solo cortafuegos gubernamental puede borrar cualquier aplicación 'descentralizada' de la red global. El frontend es el punto único de fallo.",
+    "b1": "Alojamiento centralizado = punto único de fallo",
+    "b2": "Incautación regulatoria = desplazamiento instantáneo",
+    "b3": "Sin incentivos económicos para disponibilidad a largo plazo"
+  },
+  "solution": {
+    "eyebrow": "La Solución",
+    "title": "Netfory: Infraestructura Autónoma Web 4.0",
+    "text": "Netfory reemplaza la pila de alojamiento centralizada con una red de distribución descentralizada y con contenido direccionado, impulsada por la capa de transporte Iroh (QUIC) y la verificación criptográfica BLAKE3. A través de un modelo económico nativo de Proof-of-Utility, los participantes de la red (seederes) son compensados directamente en STH por proporcionar almacenamiento y ancho de banda.",
+    "callout": "Una corrección crítica a la narrativa predominante debe enunciarse explícitamente: la red no es gestionada por agentes. LA RED SON los agentes. El cliente de cada usuario es en sí mismo un nodo autónomo que descubre pares, verifica contenido, negocia rutas y mantiene la economía. El dispositivo del usuario es el agente."
+  },
+  "architecture": {
+    "eyebrow": "Arquitectura",
+    "title": "Arquitectura del Sistema",
+    "caption": "Tracker (coordinación) → Seeder (almacenamiento) → Desktop Client (ejecución) → SmartHoldem DPoS Blockchain (ancla de confianza)."
+  },
+  "formulas": {
+    "eyebrow": "Principios",
+    "title": "Las Cuatro Fórmulas de Web 4.0",
+    "c1t": "El Protocolo Reemplaza a la API",
+    "c1x": "El acceso es cuestión de conectarse a un protocolo (sn://, u://, sth://, dev://, api://), no de tener permiso en un servidor. Ningún servidor puede denegar acceso. Ninguna clave de API puede ser revocada. El protocolo es la ley.",
+    "c2t": "Distribución Primero de Estado",
+    "c2x": "El estado existe distribuido en la red. El usuario no 'descarga' una página; sincroniza el estado vía P2P. No hay una única fuente de verdad: la verdad está distribuida.",
+    "c3t": "Infraestructura Cero",
+    "c3x": "Sin AWS, sin Google Cloud, sin Vercel. Toda la lógica del backend — bases de datos, API, balanceadores de carga — migra a la capa de protocolo P2P. Ninguna corporación puede desplazar una aplicación.",
+    "c4t": "Direccionabilidad de Contenido en Todas Partes",
+    "c4x": "Todo está vinculado a un Identificador de Contenido (CID), calculado vía BLAKE3. El contenido se demuestra a sí mismo. Ningún dominio puede ser incautado. Ningún certificado puede ser revocado. El contenido es inmortal."
+  },
+  "economics": {
+    "eyebrow": "Economía",
+    "title": "Dinero como Anti-Spam y Motivación",
+    "text": "La moneda nativa STH (SmartHoldem) está integrada directamente en el protocolo como combustible y escudo anti-spam. Cada acción que consume recursos de red cuesta una pequeña cantidad de STH. Esto hace que el spam sea económicamente devastador para los atacantes mientras crea simultáneamente un flujo de ingresos perpetuo para los participantes honestos.",
+    "f1label": "Costo Anti-Spam",
+    "f1ex": "Para N = 1,000,000 mensajes a 0.01 STH cada uno, el atacante quema 10,000 STH — un gasto demostrablemente irracional.",
+    "f2label": "Ingreso del Seeder",
+    "f2ex": "Un seeder con Base=5, seededGb=100, density=0.5, activeApps=10, PerApp=0.2, K_up=1.0 gana 57 STH/día = 20,805 STH/año."
+  },
+  "deflationary": {
+    "eyebrow": "Tokenomics",
+    "title": "Deflacionario por Diseño",
+    "text": "La moneda nativa STH no es un activo especulativo; es el combustible deflacionario de la infraestructura Web 4.0. Con la emisión de bloques completamente detenida desde la Actualización 2.0, STH obtiene su valor de la utilidad real: tarifas anti-spam, registros de nombres y recompensas directas para operadores de seeders.",
+    "s1v": "240M STH",
+    "s1l": "Suministro genesis (2017, 83% a ICO a través de depósitos en BitcoinTalk, 0% pre-mina del equipo).",
+    "s2v": "249.6M STH",
+    "s2l": "Suministro total actual.",
+    "s3v": "92K STH",
+    "s3l": "Quemado permanentemente.",
+    "callout": "A medida que el uso de la red crece, la liquidez se bloquea o quema, creando presión deflacionaria sostenida."
+  },
+  "stack": {
+    "eyebrow": "La Prueba",
+    "title": "Esto No Es Un Concepto",
+    "subtitle": "Netfory es una pila funcional, probada y lista para producción.",
+    "i1t": "Desktop Client Tauri v2",
+    "i1x": "Rust + Vue 3 — monedero de criptomonedas, puerta de tienda descentralizada, entorno de ejecución de dApps, seeder híbrido.",
+    "i2t": "Seeder Headless de Rust",
+    "i2x": "Nodo autónomo para VPS/hardware dedicado, redistribución de blobs 24/7.",
+    "i3t": "Tracker ligero basado en sled",
+    "i3x": "Coordinador HTTP, contabilidad de tiempo de actividad, aceleración de bootstrap.",
+    "i4t": "SmartNet App SDK",
+    "i4x": "Puente nativo window.smartholdem con hooks useSmartNetWallet(), usePayments() y useStorage().",
+    "i5t": "SmartHoldem DPoS Blockchain",
+    "i5x": "Ancla de confianza para identidad, naming y economía.",
+    "i6t": "Verificación de Proof-of-Storage",
+    "i6x": "Verificación de Merkle spot-checking + PoRep, verificada en menos de 1 microsegundo.",
+    "i7t": "Descubrimiento sin Tracker (Mainline DHT)",
+    "i7x": "Integración BEP5 con beacon de identidad firmado para resolución de pares sin tracker.",
+    "i8t": "Carga de Swarm (Multi-Armed Bandit)",
+    "i8x": "Algoritmo ε-greedy con EWMA para selección inteligente de seeders.",
+    "i9t": "Capa de Traducción Neural",
+    "i9x": "Modelo local cuantizado INT8/INT4 para renderización de contenido multilingüe sin conexión y preservando la privacidad.",
+    "i10t": "Mensajería E2EE",
+    "i10x": "Cifrado X25519 + AES-256-GCM, anti-spam de bandeja de entrada pagada, chats grupales autorreparables.",
+    "i11t": "Visualización 3D del Mapa de Red",
+    "i11x": "Globo en tiempo real mostrando todos los seeders, métricas personales de velocidad y clasificación de Byte-Hours.",
+    "i12t": "n1-relay (DERP Mesh)",
+    "i12x": "Red de retransmisión descentralizada para NAT traversal, reenviando paquetes QUIC cifrados sin ver texto plano."
+  },
+  "why": {
+    "eyebrow": "Ventaja Competitiva",
+    "title": "¿Por Qué Netfory?",
+    "feature": "Característica",
+    "netfory": "Netfory (Web 4.0)"
+  },
+  "bench": {
+    "eyebrow": "Benchmarks",
+    "title": "Benchmarks Técnicos"
+  },
+  "depin": {
+    "eyebrow": "DePIN",
+    "title": "La Red Se Convierte en La Nube",
+    "text": "En la Fase 3 de nuestra hoja de ruta, Netfory evoluciona hacia un centro de datos descentralizado global. Los usuarios cotidianos monetizan su almacenamiento y ancho de banda ociosos al alquilarlos directamente a corporaciones y empresas. Sin AWS. Sin Cloudflare. Sin intermediarios. Solo usuarios, nodos y liquidaciones en $STH.",
+    "badge": "LA RED ES LA NUBE",
+    "s1v": "Infraestructura Cero",
+    "s1l": "Sin AWS, sin Google Cloud, sin Vercel.",
+    "s2v": "Propiedad del Usuario",
+    "s2l": "Cada nodo es un participante, no un producto.",
+    "s3v": "Liquidaciones en $STH",
+    "s3l": "Todas las transacciones B2B en moneda nativa."
+  },
+  "web4": {
+    "eyebrow": "Cambio de Paradigma",
+    "title": "Web 4.0: El Paradigma Simbiótico",
+    "text": "Web 4.0 no es una evolución de Web 3.0. Es un cambio de paradigma. Web 3.0 descentraliza el libro mayor. Web 4.0 descentraliza toda la pila."
+  },
+  "cta": {
+    "title": "La Era de Alquilar Acceso a Internet Está Terminando",
+    "text": "Netfory proporciona la infraestructura para una internet que es propiedad, operada y mantenida por sus usuarios. Hemos construido la capa de transporte de la web simbiótica. La red está en vivo.",
+    "primary": "Descargar Cliente Netfory",
+    "secondary": "Leer Libro Blanco Completo",
+    "tertiary": "Ver en GitHub"
+  },
+  "netforyModal": {
+    "title": "Muy Pronto: Lanzamiento de Web 4.0 Netfory",
+    "text1": "El lanzamiento de Web 4.0 Netfory está próximamente. Estamos dando los toques finales al cliente de escritorio para garantizar la mejor experiencia de usuario.",
+    "text2": "Únete al grupo oficial de SmartHoldem en Telegram para mantenerte actualizado con las últimas noticias y actualizaciones.",
+    "telegram": "Unirse a Grupo de Telegram",
+    "close": "Cerrar"
+  },
+  "terms": {
+    "eyebrow": "Legal · Términos de Uso",
+    "nav": "Términos",
+    "seo": {
+      "title": "Términos y condiciones {'|'} Aviso legal de SmartHoldem",
+      "description": "Términos de uso oficiales, aviso legal y limitación de responsabilidad del ecosistema SmartHoldem Web 4.0 y la moneda STH."
+    }
+  },
+  "blockchain": {
+    "hero": {
+      "eyebrow": "SmartHoldem · DPoS Blockchain",
+      "titleA": "Blockchain SmartHoldem:",
+      "titleB": "Web 3.0 y Web 4.0",
+      "titleC": "Listo",
+      "subtitle": "Infraestructura Blockchain DPoS de Alto Rendimiento",
+      "text": "La blockchain de SmartHoldem sirve como la capa de confianza tanto para las aplicaciones descentralizadas de Web 3.0 como para las redes de agentes autónomos de Web 4.0. Nuestra infraestructura probada en batalla impulsa la transferencia de valor fluida y la gestión de estado en toda la web simbiótica.",
+      "cta1": "Convertirse en Delegado",
+      "cta2": "Ver Explorador de Bloques",
+      "imageCaption": "Pasa el ratón para explorar la arquitectura de doble capa"
+    },
+    "speed": {
+      "eyebrow": "Velocidad y Escala",
+      "title": "Construido para Velocidad y Escala",
+      "text": "SmartHoldem soporta tasas de hash dinámicas dependiendo de la carga de transacciones. Escalable fácilmente por x100 o x10000 para satisfacer la creciente demanda.",
+      "c1t": "Bloques de 8 Segundos",
+      "c1x": "Finalidad ultrarrápida impulsada por Tolerancia a Fallos Bizantinos (BFT). Los bloques siempre se completan y nunca pueden ser revertidos.",
+      "c2t": "Escalabilidad Dinámica",
+      "c2x": "La red escala sin esfuerzo para manejar aplicaciones de alto rendimiento, incluyendo ecosistemas exigentes de Web3 y Web4.",
+      "c3t": "Consenso Ecológico",
+      "c3x": "DPoS es altamente eficiente en energía y escalable, ofreciendo transacciones más rápidas y asequibles en comparación con redes heredadas de PoW y PoS."
+    },
+    "bench": {
+      "eyebrow": "Benchmarks",
+      "title": "Benchmarks de Rendimiento",
+      "subtitle": "Pruebas de carga del mundo real confirman escalabilidad de nivel empresarial",
+      "text": "El rendimiento no es teórico — es medido. Los siguientes benchmarks provienen de pruebas de estrés públicas de la red, demostrando rendimiento concreto en diferentes configuraciones de transacciones:",
+      "m1": "MultiPayments por TX",
+      "m2": "Ops / Día (pico)",
+      "colConfig": "Configuración",
+      "colSec": "Ops / Segundo",
+      "colHour": "Ops / Hora",
+      "colDay": "Ops / Día"
+    },
+    "stack": {
+      "eyebrow": "Bajo el Capó",
+      "title": "Pila Técnica",
+      "c1t": "Blockchain Central",
+      "c2t": "API y SDK",
+      "c3t": "Integración Web 4.0"
+    },
+    "decentral": {
+      "eyebrow": "Descentralización Real",
+      "title": "Gobernado por la Comunidad, No por Corporaciones",
+      "text": "La descentralización es fundamental. La blockchain DPoS de SmartHoldem es inmutable y todas las operaciones son irreversibles. Cualquier transacción está disponible de forma transparente para visualizar en el Explorador de Bloques o vía API en cualquier momento.",
+      "p1t": "Votación Democrática",
+      "p1x": "Los validadores son elegidos según reputación, no control centralizado.",
+      "p2t": "Sin Monedas Congeladas",
+      "p2x": "Los usuarios votan con el poder de su saldo. Las monedas permanecen bajo control total del usuario.",
+      "p3t": "Responsabilidad",
+      "p3x": "Cualquier titular de STH puede votar, elegir o cancelar delegados. Los delegados ineficientes son reemplazados rápidamente por la comunidad.",
+      "p4t": "Propiedad",
+      "p4x": "Poseer solo >1 STH otorga derechos de voto completos en la red."
+    },
+    "top21": {
+      "eyebrow": "El Sistema de Delegados",
+      "title": "El TOP 21: Asegurando la Red",
+      "text": "Los delegados (también conocidos como testigos o productores de bloques) son responsables de verificar transacciones, crear nuevos bloques y proteger la red SmartHoldem. No pueden alterar o influir en la información de las transacciones.",
+      "s1": "Delegados Activos en TOP",
+      "s2": "Tiempo Promedio de Bloque",
+      "s3": "Votados por la Comunidad",
+      "s4": "Control Centralizado",
+      "note": "El sistema de delegación es altamente competitivo. Un delegado puede entrar o salir del TOP 21 en cualquier momento. Este esquema sostenible brinda la oportunidad a nuevos delegados de demostrarse y atraer la atención de la comunidad."
+    },
+    "rewards": {
+      "eyebrow": "Economía",
+      "title": "Recompensas Sostenibles. Cero Emisión Inflacionaria.",
+      "text": "No hay {noEm} en la blockchain SmartHoldem (DPoS). Los delegados reciben recompensas exclusivamente de las tarifas de transacción, asegurando un modelo económico deflacionario y sostenible.",
+      "noEmLabel": "sin emisión",
+      "text2": "El delegado que firma el bloque recibe {allFees} de las transacciones incluidas en ese bloque.",
+      "allFeesLabel": "TODAS LAS TARIFAS DE RED",
+      "howTitle": "Cómo Ganan los Delegados",
+      "r1big": "500 STH",
+      "r1small": "por bloque (máx)",
+      "r1text": "500 transacciones estándar en un bloque → hasta 500 STH ganados.",
+      "r2big": "10,000 STH",
+      "r2small": "tarifa de registro",
+      "r2text": "Transacción de registro de delegado → 10,000 STH ganados.",
+      "r3big": "0 STH",
+      "r3small": "sin recompensa base",
+      "r3text": "Sin transacciones en un bloque → 0 STH ganados (sin recompensa base).",
+      "advTitle": "Tipos de Transacciones Avanzadas",
+      "advText": "SmartHoldem soporta un ecosistema rico de tipos de transacciones, generando ingresos por tarifas diversos:",
+      "feesLink": "Lista de tarifas en la blockchain SmartHoldem"
+    },
+    "become": {
+      "eyebrow": "Participar",
+      "title": "Convertirse en Delegado de SmartHoldem",
+      "text": "Cualquiera puede convertirse en delegado. Solo necesitas un servidor confiable y participación activa en la comunidad SmartHoldem.",
+      "specsLabel": "Especificaciones Recomendadas del Servidor",
+      "specsText": "16 GB RAM, 4 Cores CPU, 64 GB HDD o 32 GB SSD. (Se recomiendan redes de calidad sobre VPS baratos).",
+      "s1t": "Registrar",
+      "s1x": "Registra tu delegado en SmartHoldem Wallet. Costo de transacción: 10,000 STH.",
+      "s2t": "Configurar Nodo",
+      "s2x": "Instala y configura tu nodo completo en github.com/smartholdem/sth-core.",
+      "s3t": "Declarar",
+      "s3x": "Envía una propuesta en el Foro Comunitario detallando tu configuración de red, porcentaje de pago propuesto y servicios adicionales.",
+      "s4t": "Participar",
+      "s4x": "Presenta tu delegado a la comunidad a través de Telegram y contacto activo.",
+      "s5t": "Crecer",
+      "s5x": "Atrae votos ofreciendo un porcentaje de tus recompensas a los votantes, construyendo nuevas dApps o proporcionando servicios comunitarios (revisiones de código, reporte de vulnerabilidades)."
+    },
+    "community": {
+      "eyebrow": "Comunidad",
+      "title": "Conexión Comunitaria",
+      "text": "Como delegado, la participación activa y la conexión con la comunidad son vitales para obtener votos. Generar posiciones de delegado es competitivo y requiere más que la gestión de nodos.",
+      "c1": "Construir nuevas aplicaciones basadas en SmartHoldem",
+      "c2": "Ofrecer revisiones de código y reporte de vulnerabilidades",
+      "c3": "Alcance y educación comunitaria",
+      "c4": "Ofrecer un porcentaje de recompensas a los votantes (para alcanzar el TOP 21)",
+      "footer": "La recompensa se mide según la participación del votante y el porcentaje de pago del delegado."
+    },
+    "quantum": {
+      "eyebrow": "Escudo Cuántico",
+      "title": "Escudo Cuántico de SmartHoldem",
+      "subtitle": "Cómo Protegemos la Blockchain de Computadoras Futuras",
+      "text": "Mientras el mercado discute gráficos y volatilidad, una amenaza capaz de anular la criptografía clásica está madurando en los laboratorios de los gigantes tecnológicos. El algoritmo de Shor en una computadora cuántica suficientemente poderosa podría romper ECDSA (curvas elípticas) — la base matemática sobre la cual se construyen los monederos y transacciones de la mayoría de las blockchains, incluyendo SmartHoldem, hoy en día.",
+      "callout": "{waiting} La integración de la Criptografía Post-Cuántica (PQC) en el ecosistema SmartHoldem ya ha comenzado.",
+      "waitingLabel": "No estamos esperando un hipotético «Día X»."
+    },
+    "phases": {
+      "eyebrow": "Hoja de Ruta",
+      "title": "Plan de Implementación: Modelo Híbrido",
+      "text": "Descartamos hard forks abruptos y migraciones forzadas. La transición será gradual y fluida:",
+      "phaseWord": "Fase",
+      "p1t": "Firmas Híbridas",
+      "p1b1": "Transacciones firmadas simultáneamente con ECDSA clásico y nuevo algoritmo PQC (ej., Dilithium)",
+      "p1b2": "Incluso si un método es comprometido, el otro mantiene la protección",
+      "p2t": "Actualización de STH-Core",
+      "p2b1": "El nodo SmartHoldem está escrito en TypeScript/Node.js",
+      "p2b2": "Integrar bibliotecas PQC optimizadas en Rust o C++ vía node-addon-api",
+      "p2b3": "Mantener alto rendimiento de la red DPoS sin sacrificar fuerza criptográfica",
+      "p3t": "Direcciones Cuánticas",
+      "p3b1": "Introducción de nuevo tipo de dirección con claves públicas extendidas resistentes a análisis cuántico",
+      "p3b2": "Los usuarios pueden transferir gradualmente fondos a monederos «Seguros contra Cuánticos»"
+    },
+    "sig": {
+      "eyebrow": "Arquitectura",
+      "title": "Escudo Cuántico Híbrido vía Segunda Firma",
+      "text": "SmartHoldem aprovecha una característica arquitectónica única — el mecanismo de segunda firma, a diferencia de muchas otras redes donde los usuarios tendrían que crear nuevos monederos y transferir activos en masa.",
+      "s1t": "Formación de Dirección",
+      "s1x": "Una dirección en SmartHoldem se forma como un hash de la primera clave pública.",
+      "s2t": "Activación de Segunda Clave",
+      "s2x": "Cuando se activa la segunda firma, una segunda clave pública se registra en la blockchain.",
+      "s3t": "Reemplazo PQC",
+      "s3x": "Reemplazamos la generación de esta segunda clave de ECDSA con un algoritmo post-cuántico.",
+      "resultLabel": "Resultado",
+      "r1": "No necesitas cambiar tu monedero",
+      "r2": "Tu dirección permanece igual",
+      "r3": "Tus monedas permanecen exactamente donde han estado durante años",
+      "r4": "Ahora protegido por una segunda capa criptográfica",
+      "r5": "Incluso si una computadora cuántica calcula tu primera clave privada, no puede enviar una transacción sin una segunda firma válida (resistente a cuánticos)",
+      "footer": "{forUsers} Necesitarás activar una segunda firma (lo que habilita instantáneamente la protección cuántica) o transferir fondos a los nuevos tipos de dirección una vez que se publiquen.",
+      "forUsersLabel": "Para usuarios con una sola firma:"
+    },
+    "nuance": {
+      "eyebrow": "Deep Tech",
+      "title": "Matices Técnicos y Protección de Red",
+      "n1t": "Delegados Bajo Protección",
+      "n1b1": "En una red DPoS, los delegados firman bloques",
+      "n1b2": "Falsificar sus firmas amenaza la integridad de toda la blockchain",
+      "n1b3": "Implementar PQC a nivel de protocolo convierte a SmartHoldem en una «fortaleza digital» resistente a la falsificación de consenso",
+      "n2t": "Tamaño de Transacción",
+      "n2b1": "Esquemas basados en hash (Lamport/SPHINCS+) generan firmas de tamaño en kilobytes",
+      "n2b2": "La lógica del nodo se adaptará para procesar correctamente transacciones «pesadas» sin perder velocidad de sincronización",
+      "n3t": "Optimización OTS",
+      "n3b1": "Para evitar el agrandamiento de la blockchain, las claves de uso único se agregarán en árboles Merkle",
+      "n3b2": "Para el usuario, esto se ve como un monedero familiar",
+      "n3b3": "A nivel matemático, cada clave se usa estrictamente una vez y se invalida después de la firma"
+    },
+    "code": {
+      "eyebrow": "Desarrollo",
+      "title": "Código en Progreso",
+      "text": "Ya estamos preparando la infraestructura para la nueva capa de verificación. Aquí hay un vistazo de cómo se verá la integración en el núcleo:",
+      "footer": "La supremacía cuántica no es el fin de la criptografía, sino su próxima etapa evolutiva. SmartHoldem no se adapta retroactivamente. Estamos sentando las bases del futuro hoy. Estamos eligiendo matemáticas que no pueden ser «resueltas» por fuerza bruta e integrándolas directamente en el núcleo de nuestra red DPoS. {futureHere}",
+      "futureHereLabel": "El futuro ya está aquí. Y está asegurado."
+    },
+    "cta": {
+      "eyebrow": "Unirse a la Red",
+      "title": "Asegurar el Futuro de la Descentralización",
+      "text": "Únete a los 21 guardianes de la red SmartHoldem. Conviértete en delegado, gana recompensas y ayuda a construir la infraestructura Web 4.0.",
+      "btn1": "Convertirse en Delegado",
+      "btn2": "Ver Explorador de Bloques",
+      "btn3": "Unirse a la Comunidad"
+    },
+    "seo": {
+      "title": "Blockchain SmartHoldem {'|'} DPoS de Alto Rendimiento y Escudo Cuántico",
+      "description": "Blockchain DPoS de SmartHoldem: 64,000 ops/seg, 21 delegados activos, protección de criptografía post-cuántica. Conviértete en delegado y asegura la infraestructura Web 4.0.",
+      "ogTitle": "Blockchain SmartHoldem {'|'} DPoS de Alto Rendimiento y Escudo Cuántico",
+      "ogDescription": "64,000 ops/seg, 21 delegados activos, protección de criptografía post-cuántica. Conviértete en delegado hoy."
+    }
+  },
+  "tokenomics": {
+    "hero": {
+      "eyebrow": "Tokenomics · STH · Web 4.0",
+      "title": "Tokenomics de STH",
+      "subtitle": "De Moneda de Consenso a Combustible de Infraestructura Web 4.0",
+      "tagline": "Infraestructura Real. Utilidad Real. Escasez Real.",
+      "m1": "Suministro Total",
+      "m2": "Quemado Permanentemente",
+      "m3": "Emisión (Actualización 2.0)",
+      "m3v": "Detenida"
+    },
+    "evolution": {
+      "eyebrow": "Web 3.0 → Web 4.0",
+      "title": "La Evolución: De Moneda Digital a Combustible de Infraestructura",
+      "text": "Los tokens de Web 3.0 pagan por computación. {web4} SmartHoldem STH está evolucionando de una moneda de consenso DPoS al combustible fundamental para un internet físico descentralizado.",
+      "web4Label": "Las monedas de Web 4.0 pagan por infraestructura.",
+      "callout": "Cuando la red escala, la demanda del combustible escala."
+    },
+    "dist": {
+      "eyebrow": "Lanzamiento Justo · 2017",
+      "title": "Distribución Inicial (2017)",
+      "text": "Suministro genesis limitado a {supply}. Distribución ejecutada bajo depósitos de BitcoinTalk votados por la comunidad.",
+      "supplyLabel": "240,000,000 STH",
+      "d1": "Participantes de ICO",
+      "d2": "Asesores y Ángeles",
+      "d3": "Fondo de Desarrollo",
+      "d4": "Campaña de Bounty",
+      "badge": "Lanzamiento Justo · Sin Pre-mina · Supervisión Comunitaria"
+    },
+    "emission": {
+      "eyebrow": "Actualización 2.0",
+      "title": "Evolución del Modelo de Emisión",
+      "beforeTag": "Antes de la Actualización 2.0",
+      "beforeTitle": "Modelo Inflacionario",
+      "beforeText": "Emisión continua de bloques limitada a {cap} para 2041. Esquema de recompensa DPoS tradicional.",
+      "beforeCap": "256,425,000 STH",
+      "afterTag": "Después de la Actualización 2.0",
+      "afterTitle": "Modelo Deflacionario",
+      "afterText": "Emisión {halted}. Suministro estrictamente limitado y deflacionario.",
+      "afterHalted": "completamente detenida",
+      "callout": "La emisión de bloques en el consenso DPoS ha sido completamente detenida."
+    },
+    "deflation": {
+      "eyebrow": "Oferta ↓ Demanda ↑",
+      "title": "Mecánicas Deflacionarias",
+      "c1t": "Emisión Detenida",
+      "c1x": "No se crean nuevas monedas. La oferta está limitada.",
+      "c2t": "Mecanismos de Quemado",
+      "c2x": "Las tarifas se bloquean o queman en pools en cadena.",
+      "c3t": "Demanda Impulsada por Utilidad",
+      "c3x": "El uso del mundo real crea una demanda orgánica y sostenida."
+    },
+    "backing": {
+      "eyebrow": "Respaldo Físico",
+      "title": "Respaldado por Infraestructura Real",
+      "p1": "Tus monedas representan valor real: gigabytes de almacenamiento, horas de tiempo de actividad y megabits de ancho de banda.",
+      "p2": "El crecimiento de la red aumenta directamente la demanda de STH — más datos almacenados = más monedas bloqueadas.",
+      "p3": "Sin proveedores de nube, sin intermediarios — infraestructura propiedad de la comunidad."
+    },
+    "utility": {
+      "eyebrow": "Capa de Utilidad",
+      "title": "Utilidad de STH en Web 4.0",
+      "subtitle": "Impulsando el Internet Físico Descentralizado",
+      "text": "STH es el pago directo por almacenamiento y distribución de datos del mundo real. {every}",
+      "everyLabel": "Cada byte almacenado está respaldado por utilidad física.",
+      "u1t": "Registro de Nombre",
+      "u1x": "Reserva u://username en el registro de nombres de SmartHoldem.",
+      "u2t": "Publicación de dApp",
+      "u2x": "Registra una aplicación descentralizada; la tarifa escala con el tamaño del paquete.",
+      "u3t": "Mensajería Pagada",
+      "u3x": "Precios anti-spam — el costo del atacante escala linealmente con el volumen.",
+      "u4t": "Suscripciones",
+      "u4x": "Monetización de creadores vía suscripciones recurrentes en cadena.",
+      "u5t": "Grupos Pagados",
+      "u5x": "Monetización comunitaria — grupos y foros con acceso por moneda.",
+      "u6t": "Boost-Pools",
+      "u6x": "Mercado de disponibilidad — los desarrolladores apuestan STH para garantizar el seeding de dApps.",
+      "spectrumTitle": "Espectro Completo de Utilidad",
+      "s1": "Pago de tarifas de transacción",
+      "s2": "Votación para delegados (consenso DPoS)",
+      "s3": "Emisión de tokens",
+      "s4": "Transacciones de quemado (deflacionarias)",
+      "s5": "Transferencias de activos",
+      "s6": "Transacciones P2P de SmartNet",
+      "s7": "Multipagos",
+      "s8": "Generación de SmartNotes (ZKP)",
+      "s9": "Transacciones de juegos",
+      "footer": "Cada utilidad crea una demanda orgánica de STH mientras mantiene la red limpia y libre de spam."
+    },
+    "loop": {
+      "eyebrow": "Economía Autónoma",
+      "title": "El Bucle Económico Perpetuo",
+      "subtitle": "La Moneda de Redes Autónomas",
+      "s1": "Los usuarios gastan STH",
+      "s2": "Las tarifas fluyen al Global Seeding Pool",
+      "s3": "Los seeders ganan STH",
+      "s4": "Los seeders gastan STH",
+      "s5": "Los desarrolladores ganan STH",
+      "footer": "{noTax} STH se mueve P2P entre creadores de valor.",
+      "noTaxLabel": "Sin impuesto de plataforma. Sin intermediario."
+    },
+    "seeder": {
+      "eyebrow": "Proof-of-Utility",
+      "title": "Economía del Seeder",
+      "formulaLabel": "Fórmula de Recompensa",
+      "paramsTitle": "Parámetros",
+      "colParam": "Parámetro",
+      "colValue": "Valor",
+      "p1v": "~5 STH / día (recompensa base de disponibilidad)",
+      "p2v": "~0.5 STH / GB / día (pago ponderado por almacenamiento)",
+      "p3v": "Bonificación por cada app distinta sembrada",
+      "p4v": "0.0 – 1.0 multiplicador de tiempo de actividad (ver abajo)",
+      "kupTitle": "Multiplicador de Tiempo de Actividad",
+      "kupElite": "Élite",
+      "kupEliteRange": "98 – 100% tiempo de actividad",
+      "kupFlaky": "Inestable",
+      "kupFlakyRange": "90 – 97.9% tiempo de actividad",
+      "kupDead": "Nodo Muerto",
+      "kupDeadRange": "< 90% tiempo de actividad"
+    },
+    "spam": {
+      "eyebrow": "Cortafuegos Económico",
+      "title": "Prueba Económica Anti-Spam",
+      "legacyTag": "P2P Heredado",
+      "legacyText": "La red es inundable. Los atacantes no pagan nada.",
+      "netforyTag": "Netfory",
+      "netforyText": "Ejemplo: 1,000,000 mensajes × 0.01 STH = {burn}",
+      "burnLabel": "10,000 STH quemados.",
+      "callout": "{devastating} antes de que se entregue un solo mensaje.",
+      "devastatingLabel": "El spam se vuelve económicamente devastador"
+    },
+    "cross": {
+      "eyebrow": "Cross-Chain",
+      "title": "STH en Principales Blockchains",
+      "subtitle": "Liquidez Sin Fronteras",
+      "text": "STH está disponible como tokens envueltos en redes principales a través de {xbts} — nuestro puente oficial de liquidez cross-chain. Opera, haz staking y usa STH en Ethereum, BSC, TON y Solana — no solo en la blockchain SmartHoldem. Cuando envías STH nativo al gateway, se acuña una cantidad equivalente de STH envuelto en la cadena objetivo. Enviarlo de vuelta quema los tokens envueltos y libera STH nativo.",
+      "w1": "Acceso a 35+ pools de DeFi en múltiples cadenas.",
+      "w2": "Opera en DEX principales sin salir de tu ecosistema preferido.",
+      "w3": "Conversión fluida con mínimo deslizamiento vía XBTS DEX.",
+      "contractsTitle": "Direcciones de Contrato Oficiales",
+      "copyAria": "Copiar dirección de {chain}",
+      "badge": "Gateways Auditados · Quemado/Acuñación Transparente · Liquidez Multi-Chain"
+    },
+    "cta": {
+      "eyebrow": "Manifiesto",
+      "title": "STH: La Escasez Encuentra la Utilidad",
+      "text": "STH ya no es solo una recompensa de consenso. Es un activo escaso e impulsado por utilidad que respalda infraestructura descentralizada del mundo real.",
+      "manifestoTitle": "Tu Participación en el Futuro Descentralizado",
+      "manifesto1": "STH no es solo un número en tu monedero. Es tu {share} en una red global de servidores, almacenamiento y ancho de banda — infraestructura que pertenece a la comunidad, no a corporaciones.",
+      "shareLabel": "participación de propiedad",
+      "manifesto2": "Cada moneda representa {realUtility}: el poder de almacenar datos, enviar mensajes, publicar apps y ganar apoyando la red.",
+      "realUtilityLabel": "utilidad real",
+      "manifestoTag": "Esta es la revolución de Web 4.0 que puedes sostener en tu mano.",
+      "icServers": "Servidores",
+      "icStorage": "Almacenamiento",
+      "icNetwork": "Red",
+      "icEarnings": "Ganancias",
+      "btnWp": "Leer Libro Blanco Completo",
+      "btnExplorer": "Ver en Explorador",
+      "join": "¡Únete a la revolución de Web 4.0!",
+      "tagline": "249.6M monedas. 0% inflación. Utilidad infinita. El futuro es descentralizado — y ya está aquí."
+    },
+    "seo": {
+      "title": "Tokenomics de SmartHoldem {'|'} Distribución, Economía y Disponibilidad Cross-Chain de STH",
+      "description": "Explora la tokenomics de STH: lanzamiento justo 2017, emisión detenida, mecánicas deflacionarias, utilidad Web 4.0 y tokens envueltos en BSC, ETH, TON, Solana. Suministro total 249.6M STH.",
+      "ogTitle": "Tokenomics SmartHoldem STH",
+      "ogDescription": "Explora la tokenomics de STH: emisión detenida, mecánicas deflacionarias, utilidad Web 4.0. Suministro total 249.6M STH."
+    }
+  },
+  "getSth": {
+    "hero": {
+      "eyebrow": "Comprar · Canjear · Operar · Ganar",
+      "title": "Obtener SmartHoldem STH",
+      "subtitle": "Infraestructura Real. Utilidad Real. Rendimiento Real.",
+      "tagline": "¡Opera, Gana y Crece!",
+      "ctaWallet": "Abrir SmartHoldem Wallet",
+      "ctaStaking": "Explorar Staking en XBTS"
+    },
+    "wallet": {
+      "eyebrow": "Forma Más Rápida",
+      "title": "Intercambios Instantáneos de STH en Vivo",
+      "text": "Comprar y canjear STH nunca fue tan fácil. Ejecuta operaciones directamente en tu {wallet} en segundos, sin puentes complejos ni salir de la aplicación.",
+      "walletLabel": "SmartHoldem Wallet",
+      "f1t": "Ejecución Instantánea",
+      "f1x": "Compra o vende STH directamente en segundos con mínimo deslizamiento.",
+      "f2t": "Soporte Multi-Chain",
+      "f2x": "Ejecución nativa de intercambios en redes BSC y TON.",
+      "f3t": "Principales Pares",
+      "f3x": "Acceso directo al par de trading más popular: STH/USDT.",
+      "f4t": "No Custodial",
+      "f4x": "Tú controlas tus claves privadas. Tus fondos, tu control.",
+      "cta": "Abrir SmartHoldem Wallet"
+    },
+    "xbts": {
+      "eyebrow": "Hub Oficial",
+      "title": "El Hub Oficial: Ecosistema XBTS",
+      "text": "{xbts} es nuestro puente oficial de liquidez cross-chain y el mercado más completo para STH. Ningún otro exchange ofrece esta profundidad de liquidez para SmartHoldem.",
+      "xbtsLabel": "XBTS DEX",
+      "dexTitle": "XBTS DEX",
+      "dexPairs": "45+ Pares de Trading de STH",
+      "dexText": "Opera STH por casi todas las criptomonedas populares con tarifas bajas y {noKyc}.",
+      "noKycLabel": "Sin KYC",
+      "dexCta": "Comenzar a Operar",
+      "defiTitle": "XBTS DeFi",
+      "defiPools": "35+ Pools de Liquidez de STH",
+      "defiText": "Canjea con un clic con {deep} en redes principales.",
+      "deepLabel": "liquidez profunda",
+      "defiCta": "Pools DeFi de STH",
+      "holderBadge": "SmartHolder Staking",
+      "holderTitle": "¿Qué es SmartHolder?",
+      "holderText": "Un programa de staking único de {xbts} que te paga criptomonedas reales solo por mantener tu SmartHoldem (STH). No solo estás «hodlando» — estás obteniendo una participación directa del {share}. ¡Cada operación en XBTS te genera ingresos pasivos!",
+      "holderShareLabel": "comisiones de trading de todo el exchange",
+      "holderBadgeChip": "Rendimiento Real · Compartir Comisiones de Exchange · No Custodial",
+      "holderCta": "Comenzar Staking"
+    },
+    "defi": {
+      "eyebrow": "DeFi Multi-Chain",
+      "title": "Pools de Finanzas Descentralizadas (DeFi)",
+      "text": "Proporciona liquidez o canjea STH en los exchanges descentralizados más grandes en múltiples ecosistemas.",
+      "pairsLabel": "Pares Disponibles",
+      "ctaPancake": "Canjear en PancakeSwap",
+      "ctaDedust": "Canjear en Dedust",
+      "ctaUniswap": "Canjear en Uniswap",
+      "pairSthUsdt": "STH / USDT",
+      "pairSthBnb": "STH / BNB",
+      "pairSthTon": "STH / GRAM",
+      "pairSthUniLp": "Pool de Liquidez STH / USDT"
+    },
+    "cex": {
+      "eyebrow": "Exchange Centralizado",
+      "title": "Acceso a Exchange Centralizado",
+      "text": "{name} — CEX que ofrece pares de trading directos {pair}.",
+      "important": "Importante:",
+      "importantText": "Los depósitos y retiros de STH en DEX-Trade están disponibles en la {network}.",
+      "networkLabel": "Blockchain Nativa SmartHoldem",
+      "cta": "Operar en DEX-Trade"
+    },
+    "compare": {
+      "eyebrow": "Comparar",
+      "title": "Encuentra Tu Plataforma Perfecta de STH",
+      "text": "Compara todas las opciones principales de trading y staking de STH de un vistazo. Elige la plataforma que se adapte a tus necesidades.",
+      "colPlatform": "Plataforma",
+      "colType": "Tipo",
+      "colNetworks": "Redes",
+      "colBestFor": "Mejor Para",
+      "colFeatures": "Características Clave",
+      "rows": {
+        "walletBestFor": "Principiantes",
+        "walletFeatures": "⚡ Intercambios instantáneos · 🔐 No custodial · 🌐 Multi-chain",
+        "dexBestFor": "Máxima liquidez",
+        "dexFeatures": "45+ pares de trading · Sin KYC · Tarifas bajas",
+        "defiBestFor": "Proveedores de liquidez",
+        "defiFeatures": "35+ pools · Intercambios con 1 clic",
+        "pcsBestFor": "Usuarios de BSC",
+        "pcsFeatures": "STH/USDT · Pools STH/BNB",
+        "uniBestFor": "Usuarios de ETH",
+        "uniFeatures": "Liquidez STH/USDT",
+        "ddBestFor": "Usuarios de TON",
+        "ddFeatures": "STH/GRAM · STH/USDT",
+        "dtBestFor": "Traders tradicionales",
+        "dtFeatures": "Entrada de fiat · Solo STH nativo",
+        "holderBestFor": "Ingresos pasivos",
+        "holderFeatures": "Rendimiento real de comisiones de exchange"
+      }
+    },
+    "steps": {
+      "eyebrow": "Inicio Rápido",
+      "title": "Comienza Tu Viaje Web 4.0 en 3 Pasos",
+      "s1t": "Elige Tu Plataforma",
+      "s1x": "Selecciona SmartHoldem Wallet para intercambios nativos instantáneos, o elige un DEX/CEX que se adapte a tu red blockchain preferida.",
+      "s2t": "Compra o Canjea",
+      "s2x": "Opera STH por todas las criptomonedas populares en más de 45 pares de trading con tarifas transparentes y bajas.",
+      "s3t": "Asegura y Gana",
+      "s3x": "Deposita STH en tu monedero no custodial SmartHoldem (¡tú controlas tus claves privadas!) o activa SmartHolder staking en XBTS para ganar rendimiento pasivo de las comisiones de exchange."
+    },
+    "cta": {
+      "eyebrow": "Actúa",
+      "title": "¿Listo para poseer una parte del futuro descentralizado?",
+      "text": "Toma el control total de tus activos. Opera sin intermediarios, gana sin límites y potencia la infraestructura Web 4.0.",
+      "btnWallet": "Obtener SmartHoldem Wallet",
+      "btnStaking": "Comenzar Staking en XBTS",
+      "btnTokenomics": "Ver Tokenomics de STH",
+      "join": "¡Únete a la revolución de Web 4.0!",
+      "tagline": "249.6M monedas. 0% inflación. Utilidad infinita."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "¿Tienes Preguntas? Tenemos Respuestas",
+      "q1": "¿Cuál es la diferencia entre XBTS DEX y XBTS DeFi?",
+      "a1": "{dex} es para trading directo (45+ pares de STH), mientras que {defi} es para provisión de liquidez (35+ pools de STH). Ambos están disponibles en la interfaz todo-en-uno de XBTS con el mismo inicio de sesión.",
+      "q2": "¿Qué red debo usar para STH?",
+      "a2": "Usa {native} para la mejor experiencia. Para DeFi, elige XBTS (pools DeFi), BSC (PancakeSwap), ETH (Uniswap) o TON (Dedust) según tu ecosistema preferido.",
+      "q3": "¿Es seguro SmartHoldem Wallet?",
+      "a3": "Absolutamente. Es {noncustodial} — tú controlas tus claves privadas. Todos los intercambios ocurren directamente en cadena con cero acceso de terceros.",
+      "q4": "¿Puedo usar STH en múltiples cadenas simultáneamente?",
+      "a4": "¡Sí! Con STH envuelto vía XBTS DEX, puedes operar entre Nativa, BSC, TON y ETH sin salir de tu ecosistema preferido.",
+      "q5": "¿Cómo funciona SmartHolder staking?",
+      "a5": "Todos los que hacen staking de su STH tienen derecho a un porcentaje de las ganancias de trading del {xbtsdex}. El staking bloqueará tus monedas por el tiempo que especifiques. Durante el período de staking, automáticamente participas en las distribuciones de pagos.",
+      "q6": "¿Cómo gano con SmartHolder staking?",
+      "a6": "Las recompensas se envían {auto}: el 1° y 15° de cada mes. Pagos en {assets} y más de 20 activos que se negociaron activamente durante el período de staking."
+    },
+    "seo": {
+      "title": "Obtener STH {'|'} Comprar, Canjear, Operar y Hacer Staking de SmartHoldem",
+      "description": "Obtén SmartHoldem (STH) al instante. Canjea en el monedero nativo, opera más de 45 pares en XBTS DEX, proporciona liquidez DeFi o gana rendimiento real con SmartHolder staking.",
+      "ogTitle": "Obtener SmartHoldem (STH) {'|'} Operar y Ganar",
+      "ogDescription": "Compra, canjea y haz staking de STH en múltiples cadenas. Gana rendimiento real con SmartHolder staking en XBTS."
+    }
+  },
+  "dapps": {
+    "eyebrow": "Web 4.0 · Ecosistema",
+    "title": "dApps y Juegos",
+    "subtitle": "Descubre el creciente ecosistema de aplicaciones descentralizadas impulsadas por la blockchain SmartHoldem",
+    "tagline": "Juega. Gana. Airdrop. Y mucho más.",
+    "ctaBlockchain": "Blockchain",
+    "ctaBuild": "Construye tu propia dApp",
+    "live": {
+      "eyebrow": "En Vivo en Mainnet",
+      "title": "En Vivo en SmartHoldem",
+      "subtitle": "Aplicaciones reales. Utilidad real. Propiedad real.",
+      "badge": "EN VIVO"
+    },
+    "apps": {
+      "p2e": {
+        "subtitle": "Jugar para Ganar · Telegram",
+        "f1": "Juego de puzzles play-to-earn",
+        "f2": "Integración nativa con Telegram Bot",
+        "f3": "Pagos mensuales automáticos en STH",
+        "primary": "Jugar en Telegram",
+        "secondary": "Saber Más"
+      },
+      "ht": {
+        "subtitle": "Justo Comprobable · En Cadena",
+        "f1": "Criptográficamente verificable (SHA-384 + RIPEMD-160)",
+        "f2": "Pagos instantáneos en cadena",
+        "f3": "Programa de afiliados del 1%",
+        "primary": "Jugar Ahora",
+        "secondary": "Jugabilidad"
+      },
+      "pw": {
+        "subtitle": "Almacenamiento en Frío · 30+ cadenas",
+        "f1": "Almacenamiento en frío 100% sin conexión",
+        "f2": "Código abierto y cifrado BIP38",
+        "f3": "Soporta más de 30 criptomonedas",
+        "primary": "Generar Monedero",
+        "secondary": "Ver en GitHub"
+      },
+      "s2fa": {
+        "subtitle": "2FA Descentralizado",
+        "f1": "Autenticación de dos factores descentralizada",
+        "f2": "Sin servidores centrales para hackear",
+        "f3": "Tus claves, tus reglas",
+        "primary": "Descargar v2.0.0",
+        "secondary": "Ver en GitHub"
+      }
+    },
+    "trng": {
+      "eyebrow": "Destacado de Desarrollador",
+      "title": "Justo Comprobable: El Poder de SmartHoldem TRNG",
+      "text": "En los juegos tradicionales, confías en el servidor. En SmartHoldem, confías en las matemáticas. Nuestro {trng} nativo garantiza resultados 100% impredecibles y criptográficamente verificables. Incluso un viajero del tiempo no podría predecir la siguiente carta o tirada de dados.",
+      "trngLabel": "Generador Verdadero de Números Aleatorios (TRNG)",
+      "p1t": "Criptográficamente Comprobable",
+      "p1x": "Cada sorteo aleatorio se firma en cadena y es verificable independientemente.",
+      "p2t": "Nativo de la Cadena",
+      "p2x": "Sin oráculo externo. TRNG está integrado en el consenso SmartHoldem.",
+      "p3t": "Latencia Sub-segundo",
+      "p3x": "Suficientemente rápido para juegos en tiempo real — cartas, dados y tragamonedas.",
+      "p4t": "Infraestructura Cero",
+      "p4x": "Llama a un endpoint. Nunca necesitas mantener servidores RNG.",
+      "apiBtn": "API TRNG",
+      "exampleBtn": "Ejemplo de Juego de Dados",
+      "caption": "Integra justicia comprobable en tu dApp en minutos."
+    },
+    "poker": {
+      "badge": "En Desarrollo · Nativo de Web 4.0",
+      "title": "Blockchain Poker Club: El Futuro del Poker Descentralizado",
+      "text": "Una plataforma descentralizada Web4 de Texas Hold'em Sin Límite. Crea torneos y juega con amigos. Ejecutándose nativamente en la pila Netfory para resistencia absoluta a la censura y alojamiento sin infraestructura.",
+      "p1t": "Sin KYC",
+      "p1x": "Propiedad criptográfica real. Tu monedero, tus claves.",
+      "p2t": "¡Sin Comisión!",
+      "p2x": "Sin tarifas predatorias. Solo una tarifa blockchain fija de 1 STH por mano.",
+      "p3t": "TRNG 100% Verificable",
+      "p3x": "Barajado comprobable criptográficamente.",
+      "cta": "Unirse a la Lista de Espera"
+    },
+    "dev": {
+      "title": "Construye lo Próximo Grande en SmartHoldem",
+      "text": "Alojamiento sin infraestructura, monetización integrada y una base de usuarios nativa. Usa el SmartNet App SDK para implementar tu dApp en minutos con hooks listos para usar para monedero, pagos y almacenamiento.",
+      "primary": "Leer Documentación de Desarrollador",
+      "secondary": "Unirse a la Comunidad STH"
+    },
+    "seo": {
+      "title": "dApps y Juegos {'|'} Ecosistema Web 4.0 de SmartHoldem",
+      "description": "Explora aplicaciones descentralizadas reales, juegos play-to-earn y herramientas para desarrolladores construidas en la blockchain SmartHoldem y la pila Netfory.",
+      "ogTitle": "dApps y Juegos {'|'} SmartHoldem Web 4.0",
+      "ogDescription": "Aplicaciones reales. Utilidad real. Propiedad real."
+    }
+  },
+  "footer": {
+    "tagline": "Impulsando el Internet Físico Descentralizado.",
+    "ecosystem": "Ecosistema",
+    "resources": "Recursos",
+    "marketcaps": "Capitalizaciones",
+    "developers": "Desarrolladores",
+    "community": "Comunidad",
+    "rights": "El Código es la Ley.",
+    "copyright": "Equipo Central de SmartHoldem"
+  },
+  "news": {
+    "title": "Noticias de la Red",
+    "subtitle": "Últimas actualizaciones del ecosistema SmartHoldem.",
+    "loading": "Cargando noticias…",
+    "error": "No se pueden cargar las noticias en este momento. Por favor, intenta de nuevo más tarde.",
+    "loadMore": "Cargar Más",
+    "readMore": "Leer más",
+    "back": "Volver a Noticias",
+    "empty": "Aún no hay noticias."
+  },
+  "whitepaper": {
+    "eyebrow": "Documento Técnico",
+    "title": "Libro Blanco de Netfory",
+    "subtitle": "Una Red de Distribución Electrónica Peer-to-Peer de Aplicaciones y Datos — Protocolo Web 4.0.",
+    "toc": "Contenido",
+    "soon": "El documento markdown completo se publicará aquí.",
+    "seo": {
+      "title": "Whitepaper de Netfory — Documentación del protocolo Web 4.0 {'|'} SmartHoldem",
+      "description": "Whitepaper técnico completo de Netfory: hosting descentralizado, transporte Iroh QUIC, direccionamiento de contenido BLAKE3, economía Proof-of-Utility e integración SmartHoldem DPoS. 16 capítulos, stack Web 4.0 listo para producción."
+    }
+  },
+  "home": {
+    "whitepaperTeaserEyebrow": "Documentación",
+    "whitepaperTeaserTitle": "Lee el Libro Blanco Técnico Completo",
+    "whitepaperTeaserText": "Profundiza en el diseño del protocolo, las garantías criptográficas y el modelo económico detrás de Web 4.0.",
+    "whitepaperTeaserCta": "Abrir Libro Blanco",
+    "seo": {
+      "title": "Netfory {'|'} Infraestructura Web 4.0 - La web que trabaja para ti",
+      "description": "Infraestructura Web 4.0 totalmente autónoma y nativa para agentes. Hosting descentralizado, economía Proof-of-Utility, autonomía LAN-first. La red ya está activa.",
+      "ogTitle": "Netfory - La web que trabaja para ti",
+      "ogDescription": "El primer stack Web 4.0 listo para producción. Cero infraestructura. Autonomía absoluta."
+    }
+  },
+  "missionTeaser": {
+    "eyebrow": "The Mission",
+    "titleA": "An Internet for Humanity. Secured by ",
+    "titleHi": "Mathematics",
+    "titleB": ".",
+    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
+    "p1Title": "Censorship-Resistant Comms",
+    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
+    "p2Title": "Durable Archives",
+    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
+    "p3Title": "Math Over Policy",
+    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
+    "cta": "Push Humanity Forward"
+  },
+  "mission": {
+    "hero": {
+      "eyebrow": "Manifesto",
+      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
+      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
+      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
+      "ctaPrimary": "Download Netfory Client",
+      "ctaSecondary": "Read White Paper",
+      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    },
+    "deplatform": {
+      "eyebrow": "Chapter I",
+      "titleA": "The End of ",
+      "titleHi": "Deplatforming",
+      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
+      "p2Bold": "Web 4.0 changes the default.",
+      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
+      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
+      "statLabel": "Censorship cost",
+      "statValue": "from $0 → ∞"
+    },
+    "archives": {
+      "eyebrow": "Chapter II",
+      "titleA": "Durable ",
+      "titleHi": "Archives",
+      "subtitle": "Solving the Long-Term Memory Crisis",
+      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
+      "p2Bold": "Netfory solves the problem of long-term storage.",
+      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
+      "statLabel": "Survival threshold",
+      "statValue": "1 peer"
+    },
+    "impact": {
+      "eyebrow": "Chapter III",
+      "titleA": "Measuring the ",
+      "titleHi": "Impact",
+      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
+      "m1Title": "Durable Archives",
+      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
+      "m2Title": "Cross-Platform Portability",
+      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
+      "m3Title": "Web 4.0 Protocol Adoption",
+      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
+      "m4Title": "Adversarial Environment",
+      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+    },
+    "finalCta": {
+      "eyebrow": "Join us",
+      "titleA": "Join the Network Where ",
+      "titleHi": "YOU",
+      "titleB": " Are the Network",
+      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
+      "quote": "The era of renting your digital existence is over.",
+      "tagline": "Don't visit the web. Be the web.",
+      "ctaPrimary": "Push Humanity Forward",
+      "ctaSecondary": "Read the Whitepaper",
+      "ctaTertiary": "Join the Community"
+    },
+    "seo": {
+      "title": "Misión {'|'} SmartHoldem Web 4.0 — Un Internet para la humanidad",
+      "description": "La misión de SmartHoldem: construir infraestructura Web 4.0 para proteger los derechos digitales, garantizar comunicaciones resistentes a la censura y preservar la memoria humana mediante las matemáticas y la gobernanza descentralizada.",
+      "ogTitle": "Misión {'|'} SmartHoldem Web 4.0",
+      "ogDescription": "Un Internet para la humanidad. Protegido por las matemáticas."
+    }
+  },
+  "execSummary": {
+    "seo": {
+      "title": "Resumen ejecutivo de Netfory {'|'} SmartHoldem WEB 4.0",
+      "description": "La primera implementación de Web 4.0: un stack funcional, probado y listo para producción."
+    }
+  }
+}

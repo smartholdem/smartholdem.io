@@ -1,0 +1,208 @@
+/* =============================================================================
+   SmartHoldem DevHub — custom component styling.
+   ========================================================================== */
+
+/* --- Fonts ---------------------------------------------------------------- */
+body, .VPDoc, .VPContent { font-family: var(--vp-font-family-base); }
+code, kbd, pre, .mono, .VPBadge, .badge { font-family: var(--vp-font-family-mono); }
+
+/* --- Sticky nav gets a subtle cyan glow ---------------------------------- */
+.dark .VPNav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 14, 39, 0.75);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.12);
+}
+
+/* --- Sidebar: brand-orange active link ----------------------------------- */
+.dark .VPSidebarItem.is-active > .item .link .text,
+.dark .VPSidebarItem.is-active > .item .link .link-text,
+.VPSidebarItem.is-active > .item .link .text {
+  color: #FF5A0A !important;
+  font-weight: 600;
+}
+.dark .VPSidebarItem.is-active > .item {
+  position: relative;
+}
+.dark .VPSidebarItem.is-active > .item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  width: 2px;
+  border-radius: 2px;
+  background: #FF5A0A;
+  box-shadow: 0 0 8px rgba(255, 90, 10, 0.6);
+}
+
+/* --- Code blocks: cyan-glow border --------------------------------------- */
+.dark .vp-code-group,
+.dark div[class*='language-'] {
+  border: 1px solid rgba(0, 212, 255, 0.20);
+  border-radius: 0.75rem;
+  background: #0B1020 !important;
+  box-shadow: 0 4px 20px -10px rgba(0, 212, 255, 0.20);
+}
+.dark div[class*='language-'] pre { background: transparent !important; }
+.dark div[class*='language-'] code { color: #E2E8F0 !important; }
+
+/* Inline code */
+.dark :not(pre) > code {
+  background: rgba(0, 212, 255, 0.10);
+  color: #00D4FF;
+  padding: 0.14em 0.42em;
+  border-radius: 0.32em;
+  font-size: 0.86em;
+}
+
+/* Line numbers (from markdown.lineNumbers: true) */
+.dark .line-numbers-wrapper { color: #4B5563; }
+
+/* --- Custom API method badges -------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 0.36rem;
+  font-family: var(--vp-font-family-mono);
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+.badge-get {
+  background: rgba(0, 212, 255, 0.14);
+  color: #00D4FF;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+}
+.badge-post {
+  background: rgba(255, 90, 10, 0.14);
+  color: #FF5A0A;
+  border: 1px solid rgba(255, 90, 10, 0.35);
+}
+.badge-put {
+  background: rgba(245, 158, 11, 0.14);
+  color: #F59E0B;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+.badge-delete {
+  background: rgba(239, 68, 68, 0.14);
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+/* --- Landing page ---------------------------------------------------------- */
+.dark .VPHero .name .clip { background: linear-gradient(120deg, #FF5A0A 20%, #00D4FF 80%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.dark .VPHero .tagline { color: #94A3B8; }
+.dark .VPFeature { background: #151B3B !important; border: 1px solid rgba(0, 212, 255, 0.15) !important; transition: all 0.25s; }
+.dark .VPFeature:hover { border-color: rgba(255, 90, 10, 0.55) !important; transform: translateY(-2px); box-shadow: 0 10px 40px -20px rgba(255, 90, 10, 0.5); }
+.dark .VPFeature .icon { background: rgba(255, 90, 10, 0.10) !important; }
+
+/* --- Tables (responsive & branded) --------------------------------------- */
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+}
+.vp-doc table th {
+  background: rgba(0, 212, 255, 0.08);
+  color: var(--vp-c-text-1);
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  font-weight: 600;
+}
+.vp-doc table td {
+  padding: 0.6rem 0.9rem;
+  border-top: 1px solid var(--vp-c-border);
+}
+.vp-doc .table-wrap, .vp-doc table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 640px) {
+  .vp-doc table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+/* --- Custom containers (::: details / tip / warning) --------------------- */
+.dark .custom-block.details {
+  background: #0F1430;
+  border-color: rgba(0, 212, 255, 0.20);
+  border-radius: 0.6rem;
+}
+.dark .custom-block.tip {
+  border-color: #00D4FF;
+  background: rgba(0, 212, 255, 0.06);
+}
+.dark .custom-block.warning {
+  border-color: #F59E0B;
+  background: rgba(245, 158, 11, 0.06);
+}
+
+/* --- Quick-links grid (index.md) ----------------------------------------- */
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+.quick-card {
+  display: block;
+  padding: 1.4rem;
+  border-radius: 0.9rem;
+  background: #151B3B;
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  text-decoration: none !important;
+  transition: all 0.25s;
+  color: inherit;
+}
+html:not(.dark) .quick-card { background: #ffffff; border-color: rgba(15,23,42,0.08); box-shadow: 0 4px 16px -8px rgba(15,23,42,0.08); }
+.quick-card:hover {
+  border-color: #FF5A0A;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px -20px rgba(255, 90, 10, 0.55);
+}
+.quick-card h3 { margin: 0 0 0.4rem !important; font-size: 1.05rem; color: #FF5A0A; padding: 0 !important; border: 0 !important; }
+.quick-card p { margin: 0 !important; color: var(--vp-c-text-3); font-size: 0.9rem; line-height: 1.5; }
+.quick-card .badge-soon {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.12rem 0.45rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  background: rgba(255, 90, 10, 0.14);
+  color: #FF5A0A;
+  border: 1px solid rgba(255, 90, 10, 0.35);
+  font-family: var(--vp-font-family-mono);
+}
+
+/* --- Nodes list on API index -------------------------------------------- */
+.nodes-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 1rem 0 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.5rem;
+}
+.nodes-list li {
+  padding: 0.7rem 0.9rem !important;
+  background: #151B3B;
+  border: 1px solid rgba(0, 212, 255, 0.18);
+  border-radius: 0.5rem;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.86rem;
+  color: #00D4FF;
+  transition: all 0.2s;
+}
+html:not(.dark) .nodes-list li { background: #F1F5F9; color: #0369A1; border-color: rgba(15,23,42,0.08); }
+.nodes-list li:hover { border-color: #FF5A0A; }

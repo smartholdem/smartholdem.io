@@ -1,0 +1,903 @@
+{
+  "nav": {
+    "buy": "購入",
+    "wallet": "ウォレット",
+    "explorer": "エクスプローラー",
+    "api": "API",
+    "blockchain": "ブロックチェーン",
+    "dapps": "DApps",
+    "devhub": "DevHub",
+    "news": "ニュース",
+    "tokenomics": "トークノミクス",
+    "whitepaper": "ホワイトペーパー",
+    "glossary": "用語集",
+    "language": "言語",
+    "xbtsDex": "XBTS DEX",
+    "dexTrade": "DEX取引",
+    "buyHint": "STHを取得、取引、またはスワップ:",
+    "getSth": "STHを取得",
+    "mission": "ミッション"
+  },
+  "glossary": {
+    "eyebrow": "ホワイトペーパー · 付録A",
+    "title": "用語集",
+    "subtitle": "Netforyホワイトペーパー全体で使用されるすべての技術用語、プロトコル、アーキテクチャコンポーネントの対話式アルファベット索引。",
+    "crumbHome": "ホーム",
+    "crumbWp": "ホワイトペーパー",
+    "statTerms": "用語",
+    "statLetters": "文字",
+    "statInteractive": "ジャンプナビゲーション",
+    "ctaWp": "ホワイトペーパーを読む",
+    "ctaExec": "エグゼクティブサマリー",
+    "searchPh": "用語または定義を検索…",
+    "clear": "検索をクリア",
+    "noResults": "「{q}」に一致するエントリはありません。別のクエリをお試しください。",
+    "terms": "エントリ",
+    "copyLink": "直接リンクをコピー",
+    "linkCopied": "リンクをクリップボードにコピーしました",
+    "top": "トップに戻る",
+    "seoTitle": "用語集 - Netforyホワイトペーパー（Web 4.0）{'|'} SmartHoldem",
+    "seoDescription": "Netforyホワイトペーパーで使用されるすべての技術用語の対話式アルファベット用語集: BLAKE3, Iroh, Proof-of-Utility, DHT, DPoS, STH, Byte-Hours, SmartNetなど。"
+  },
+  "hero": {
+    "eyebrow": "SmartHoldem · WEB 4.0",
+    "title": "Netfory: あなたのために働くWeb",
+    "subtitle": "Web 4.0の最初の実装。コンセプトではない。ロードマップではない。動作し、テストされたスタック。",
+    "tagline": "Webを訪れるな。Webになれ。",
+    "subtitle2": "最初の本番対応Web 4.0スタック。ゼロインフラ。絶対的な自律性。",
+    "ctaPrimary": "エグゼクティブサマリーを読む",
+    "ctaSecondary": "Telegramに参加",
+    "ctaTertiary": "Netforyクライアントをダウンロード",
+    "micro": "ネットワークはエージェントによって管理されない。ネットワーク自体がエージェントである。",
+    "ctaMission": "The Mission",
+    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+  },
+  "problem": {
+    "eyebrow": "問題",
+    "title": "Web 3.0のフロントエンドパラドックス",
+    "text": "最新の分散型アプリケーションは致命的なアーキテクチャ矛盾を抱えています。スマートコントラクトとトークンは分散型ブロックチェーン上に存在しますが、人々がそれらとやり取りするユーザーインターフェースは中央集権的なインフラストラクチャ - AWS、Cloudflare、Vercel、Google Cloud - にホストされています。単一の裁判所命令、単一のプロバイダーの利用規約違反、または単一の政府ファイアウォールが、あらゆる「分散型」アプリケーションをグローバルインターネットから消すことができます。フロントエンドは単一障害点です。",
+    "b1": "中央集権ホスティング = 単一障害点",
+    "b2": "規制押収 = 即時プラットフォーム削除",
+    "b3": "長期的な利用可能性に対する経済的インセンティブがない"
+  },
+  "solution": {
+    "eyebrow": "解決策",
+    "title": "Netfory: 自律型Web 4.0インフラ",
+    "text": "Netforyは、Iroh（QUIC）トランスポート層とBLAKE3暗号検証によって駆動される分散型、コンテンツアドレス指定分布ネットワークにより、中央集権ホスティングスタックを置き換えます。ネイティブのProof-of-Utility経済モデルを通じて、ネットワーク参加者（シーダー）はストレージと帯域幅の提供に対してSTHで直接報酬を受け取ります。",
+    "callout": "優勢なナラティブに対する重要な修正を明確に述べる必要があります：ネットワークはエージェントによって管理されない。ネットワーク自体がエージェントである。すべてのユーザーのクライアント自体が自律ノードであり、ピアを発見し、コンテンツを検証し、ルートを交渉し、経済を維持します。ユーザーのデバイスがエージェントです。"
+  },
+  "architecture": {
+    "eyebrow": "アーキテクチャ",
+    "title": "システムアーキテクチャ",
+    "caption": "トラッカー（調整）→ シーダー（ストレージ）→ Desktop Client（実行）→ SmartHoldem DPoSブロックチェーン（信頼アンカー）。"
+  },
+  "formulas": {
+    "eyebrow": "原則",
+    "title": "Web 4.0の4つの数式",
+    "c1t": "プロトコルスタックがAPIを置き換え",
+    "c1x": "アクセスはプロトコル（sn://, u://, sth://, dev://, api://）に接続する問題であり、サーバー上の許可ではありません。どのサーバーもアクセスを拒否できません。どのAPIキーも取り消されません。プロトコルが法です。",
+    "c2t": "状態優先配信",
+    "c2x": "状態はネットワークに分散して存在します。ユーザーはページを「ダウンロード」するのではなく、P2Pを通じて状態を同期します。単一の信頼できるソースはありません - 真実は分散されています。",
+    "c3t": "ゼロインフラ",
+    "c3x": "AWSも、Google Cloudも、Vercelもありません。すべてのバックエンドロジック - データベース、API、ロードバランサー - はP2プロトコル層に移行します。どの企業もアプリケーションをプラットフォームから削除できません。",
+    "c4t": "どこでもコンテンツアドレス指定",
+    "c4x": "すべてがBLAKE3で計算されたコンテンツ識別子（CID）に绑定されています。コンテンツ自体が証明します。どのドメインも押収できません。どの証明書も取り消されません。コンテンツは不滅です。"
+  },
+  "economics": {
+    "eyebrow": "経済学",
+    "title": "スパム対策と動機としての貨幣",
+    "text": "ネイティブコインSTH（SmartHoldem）は、燃料として、およびスパム対策シールドとしてプロトコルに直接統合されています。ネットワークリソースを消費するすべてのアクションには少量のSTHが費用がかかります。これにより、攻撃者にとってスパムは経は経済的に壊滅的なものとなり、同時に誠実な参加者には永続的な収益源を創出します。",
+    "f1label": "スパム対策コスト",
+    "f1ex": "N = 1,000,000件のメッセージ、各0.01 STHの場合、攻撃者は10,000 STHを燃焼します - 証明可能な非合理的支出。",
+    "f2label": "シーダー収入",
+    "f2ex": "Base=5, seededGb=100, density=0.5, activeApps=10, PerApp=0.2, K_up=1.0のシーダーは57 STH/日 = 20,805 STH/年を獲得します。"
+  },
+  "deflationary": {
+    "eyebrow": "トークノミクス",
+    "title": "設計によるデフレ",
+    "text": "ネイティブSTHコインは投機的資産ではありません。それはWeb 4.0インフラのデフレ燃料です。Update 2.0以来ブロック発行が完全に停止されているため、STHは現実世界の実用性から価値を derivingします：スパム対策料金、名前登録、およびシーダーオペレーターへの直接報酬。",
+    "s1v": "240M STH",
+    "s1l": "創世供給（2017年、BitcoinTalkエスクロー経由でICOに83%、チームプレマイン0%）。",
+    "s2v": "249.6M STH",
+    "s2l": "現在の総供給量。",
+    "s3v": "92K STH",
+    "s3l": "永久に燃焼済み。",
+    "callout": "ネットワークの使用が増えるにつれ、流動性はロックまたは燃焼され、持続的なデフレ圧力を生み出します。"
+  },
+  "stack": {
+    "eyebrow": "証拠",
+    "title": "これはコンセプトではありません",
+    "subtitle": "Netforyは動作し、テストされた本番対応スタックです。",
+    "i1t": "Tauri v2 Desktop Client",
+    "i1x": "Rust + Vue 3 - 暗号通貨ウォレット、分散型ストアゲートウェイ、dApp実行環境、ハイブリッドシーダー。",
+    "i2t": "ヘッドレスRustシーダー",
+    "i2x": "VPS/専用ハードウェア用の自律ノード、24時間365日ブロブ再配信。",
+    "i3t": "軽量sledベーストラッカー",
+    "i3x": "HTTPコーディネーター、稼働時間計算、ブートストラップ加速。",
+    "i4t": "SmartNet App SDK",
+    "i4x": "ネイティブwindow.smartholdemブリッジとuseSmartNetWallet()、usePayments()、useStorage()フック。",
+    "i5t": "SmartHoldem DPoSブロックチェーン",
+    "i5x": "アイデンティティ、ネーミング、経済のための信頼アンカー。",
+    "i6t": "ストレージ検証のProof",
+    "i6x": "Merkleスポットチェック + PoRep、1マイクロ秒未満で検証。",
+    "i7t": "トラッカーなしディスカバリー（Mainline DHT）",
+    "i7x": "トラッカーなしピア解決のための署名されたアイデンティティビーコンを備えたBEP5統合。",
+    "i8t": "スワームローディング（多腕バンディット）",
+    "i8x": "ε-greedyアルゴリズムとEWMAによるインテリジェントなシーダー選択。",
+    "i9t": "ニューラル翻訳レイヤー",
+    "i9x": "オフライン、プライバシー保護の跨言語コンテンツレンダリングのためのローカルINT8/INT4量子化モデル。",
+    "i10t": "E2EEメッセージング",
+    "i10x": "X25519 + AES-256-GCM暗号化、有料インボックススパム対策、自己修復グループチャット。",
+    "i11t": "ネットワークマップ3D可視化",
+    "i11x": "すべてのシーダー、個人の速度メトリック、Byte-Hoursリーダーボードを表示するリアルタイムグローブ。",
+    "i12t": "n1-relay（DERPメッシュ）",
+    "i12x": "平文を見ることなく暗号化されたQUICパケットを転送するNATトラバーサルのための分散型リレネットワーク。"
+  },
+  "why": {
+    "eyebrow": "比較優位",
+    "title": "なぜNetforyなのか？",
+    "feature": "機能",
+    "netfory": "Netfory（Web 4.0）"
+  },
+  "bench": {
+    "eyebrow": "ベンチマーク",
+    "title": "技術ベンチマーク"
+  },
+  "depin": {
+    "eyebrow": "DePIN",
+    "title": "ネットワークがクラウドになる",
+    "text": "ロードマップのフェーズ3で、Netforyはグローバル分散型データセンターに進化します。一般ユーザーはアイドルストレージと帯域幅を企業に直接レンタルすることで収益化します。AWSもCloudflareもありません。仲介者もいません。ユーザー、ノード、$STH決済のみです。",
+    "badge": "ネットワークがクラウドである",
+    "s1v": "ゼロインフラ",
+    "s1l": "AWSも、Google Cloudも、Vercelもありません。",
+    "s2v": "ユーザー所有",
+    "s2l": "すべてのノードは参加者であり、製品ではありません。",
+    "s3v": "$STH決済",
+    "s3l": "すべてのB2B取引はネイティブコインで行います。"
+  },
+  "web4": {
+    "eyebrow": "パラダイムシフト",
+    "title": "Web 4.0: 共生パラダイム",
+    "text": "Web 4.0はWeb 3.0の進化ではありません。パラダイムシフトです。Web 3.0は台帳を分散させます。Web 4.0はスタック全体を分散させます。"
+  },
+  "cta": {
+    "title": "インターネットへのアクセスをレンタルする時代は終わろうとしている",
+    "text": "Netforyは、ユーザーによって所有、運営、維持されるインターネットのインフラを提供します。共生Webのトランスポート層を構築しました。ネットワークは稼働中です。",
+    "primary": "Netforyクライアントをダウンロード",
+    "secondary": "ホワイトペーパーを読む",
+    "tertiary": "GitHubで表示"
+  },
+  "netforyModal": {
+    "title": "まもなく：Web 4.0 Netforyローンチ",
+    "text1": "Web 4.0 Netforyのローンチはもうすぐです。デスクトップクライアントに最終仕上げを施し、最高のユーザー体験を確保しています。",
+    "text2": "公式SmartHoldem Telegramグループに参加して、最新ニュースと更新情報を入手してください。",
+    "telegram": "Telegramグループに参加",
+    "close": "閉じる"
+  },
+  "terms": {
+    "eyebrow": "法的 · 利用規約",
+    "nav": "規約",
+    "seo": {
+      "title": "利用規約 {'|'} SmartHoldem 法的免責事項",
+      "description": "SmartHoldem Web 4.0 エコシステムおよび STH コインに関する公式利用規約、法的免責事項、責任制限。"
+    }
+  },
+  "blockchain": {
+    "hero": {
+      "eyebrow": "SmartHoldem · DPoSブロックチェーン",
+      "titleA": "SmartHoldemブロックチェーン:",
+      "titleB": "Web 3.0 & Web 4.0",
+      "titleC": "準備完了",
+      "subtitle": "高性能DPoSブロックチェーンインフラ",
+      "text": "SmartHoldemブロックチェーンは、Web 3.0分散型アプリケーションとWeb 4.0自律エージェントネットワークの両方の信頼層として機能します。我們の実績のあるインフラが、共生Web全体でのシームレスな価値転送と状態管理を実現します。",
+      "cta1": "ディレゲートになる",
+      "cta2": "ブロックエクスプローラーを表示",
+      "imageCaption": "ホバーしてデュアルレイヤーアーキテクチャを探索"
+    },
+    "speed": {
+      "eyebrow": "速度と規模",
+      "title": "速度と規模のために構築",
+      "text": "SmartHoldemはトランザクション負荷に応じて動的ハッシュレートをサポートします。成長する需要に対応して、x100またはx10000まで簡単にスケール可能。",
+      "c1t": "8秒ブロック時間",
+      "c1x": "ビザンチン障害耐性（BFT）によって駆動される雷速のファイナリティ。ブロックは常に完了し、二度と revert されることはありません。",
+      "c2t": "動的スケーラビリティ",
+      "c2x": "ネットワークは、 demanding Web3 & Web4エコシステムを含む高スループットアプリケーションを容易に処理します。",
+      "c3t": "環境に優しいコンセンサス",
+      "c3x": "DPoSは非常にエネルギー効率が高くスケーラブルで、レガシーPoWおよびPoSネットワークと比較してより高速でより手頃なトランザクションを提供します。"
+    },
+    "bench": {
+      "eyebrow": "ベンチマーク",
+      "title": "パフォーマンスベンチマーク",
+      "subtitle": "実際の負荷テストはエンタープライズグレードのスケーラビリティを確認",
+      "text": "パフォーマンスは理論的ではありません - 測定されたものです。以下のベンチマークは公開ネットワークストレステストからのもので、異なるトランザクション構成での具体的なスループットを示しています：",
+      "m1": "TXあたりのMultiPayments",
+      "m2": "Ops / 日（ピーク）",
+      "colConfig": "構成",
+      "colSec": "Ops / 秒",
+      "colHour": "Ops / 時間",
+      "colDay": "Ops / 日"
+    },
+    "stack": {
+      "eyebrow": "内部構造",
+      "title": "技術スタック",
+      "c1t": "コアブロックチェーン",
+      "c2t": "API & SDK",
+      "c3t": "Web 4.0統合"
+    },
+    "decentral": {
+      "eyebrow": "真の分散化",
+      "title": "企業ではなくコミュニティによって運営",
+      "text": "分散化は基本です。SmartHoldem DPoSブロックチェーンは不変であり、すべての操作は不可逆です。すべてのトランザクションは、ブロックエクスプローラーまたはAPIを通じていつでも透明に閲覧できます。",
+      "p1t": "民主的投票",
+      "p1x": "バリデーターは中央集権的な制御ではなく、評判に基づいて選択されます。",
+      "p2t": "コイン凍結なし",
+      "p2x": "ユーザーは残高の力で投票します。コインは完全にユーザーの管理下にあります。",
+      "p3t": "説明責任",
+      "p3x": "すべてのSTH保有者は投票、選出、またはディレゲートの取り消しを行えます。効果のないディレゲートはコミュニティによって迅速に交代されます。",
+      "p4t": "所有権",
+      "p4x": ">1 STHを保有するだけで、ネットワーク上の完全な投票権が得られます。"
+    },
+    "top21": {
+      "eyebrow": "ディレゲートシステム",
+      "title": "TOP 21: ネットワークの保護",
+      "text": "ディレゲート（証人またはブロックプロデューサーとも呼ばれる）は、トランザクションの検証、新しいブロックの作成、SmartHoldemネットワークの保護を担当します。彼らはトランザクション情報を変更または影響を与えることはできません。",
+      "s1": "TOPのアクティブディレゲート",
+      "s2": "平均ブロック時間",
+      "s3": "コミュニティ投票",
+      "s4": "中央集権制御",
+      "note": "ディレゲートシステムは非常に競争的です。ディレゲートはいつでもTOP 21に入ったり出たりできます。この持続可能なスキームにより、新しいディレゲートが自己を証明し、コミュニティの注目を集める機会が提供されます。"
+    },
+    "rewards": {
+      "eyebrow": "経済学",
+      "title": "持続可能な報酬。ゼロインフレーション排出。",
+      "text": "SmartHoldem（DPoS）ブロックチェーンには{noEm}があります。ディレゲートはトランザクション手数料のみから報酬を受け取り、デフレで持続可能な経済モデルを確保します。",
+      "noEmLabel": "排出なし",
+      "text2": "ブロックに署名するディレゲートは、そのブロックに含まれるトランザクションの{allFees}を受け取ります。",
+      "allFeesLabel": "すべてのネットワーク手数料",
+      "howTitle": "ディレゲートの収入方法",
+      "r1big": "500 STH",
+      "r1small": "ブロックあたり（最大）",
+      "r1text": "ブロック内の500個の標準トランザクション → 最大500 STH獲得。",
+      "r2big": "10,000 STH",
+      "r2small": "登録料",
+      "r2text": "ディレゲート登録トランザクション → 10,000 STH獲得。",
+      "r3big": "0 STH",
+      "r3small": "ベース報酬なし",
+      "r3text": "ブロック内のトランザクションなし → 0 STH獲得（ベース報酬なし）。",
+      "advTitle": "高度なトランザクションタイプ",
+      "advText": "SmartHoldemは、多様な手数料収入を生み出す豊富なトランザクションタイプのエコシステムをサポートしています：",
+      "feesLink": "SmartHoldemブロックチェーンの手数料一覧"
+    },
+    "become": {
+      "eyebrow": "参加",
+      "title": "SmartHoldemディレゲートになる",
+      "text": "誰もがディレゲートになることができます。必要なのは信頼性の高いサーバーとSmartHoldemコミュニティへの積極的な参加のみです。",
+      "specsLabel": "推奨サーバー仕様",
+      "specsText": "16 GB RAM、4 CPU Cores、64 GB HDDまたは32 GB SSD。（安価なVPSよりも高品質ネットワークを推奨）。",
+      "s1t": "登録",
+      "s1x": "SmartHoldemウォレットでディレゲートを登録します。トランザクションコスト：10,000 STH。",
+      "s2t": "ノード設定",
+      "s2x": "github.com/smartholdem/sth-coreでフルノードをインストールおよび設定します。",
+      "s3t": "宣言",
+      "s3x": "コミュニティフォーラムでネットワーク構成、提案された支払い割合、追加サービスを詳細に記載した提案を提出します。",
+      "s4t": "参加",
+      "s4x": "Telegramと積極的なアウトリーチを通じてディレゲートをコミュニティに紹介します。",
+      "s5t": "成長",
+      "s5x": "投票者に報酬の割合を提供、新しいdAppsを構築、またはコミュニティサービス（コードレビュー、脆弱性報告）を提供することで票を集めます。"
+    },
+    "community": {
+      "eyebrow": "コミュニティ",
+      "title": "コミュニティ接続",
+      "text": "ディレゲートとして、コミュニティへの積極的な参加と接続は票を得るために不可欠です。ディレゲートスロットの生成は競争的で、ノード管理以上のものが必要です。",
+      "c1": "SmartHoldemに基づく新しいアプリケーションの構築",
+      "c2": "コードレビューと脆弱性報告の提供",
+      "c3": "コミュニティアウトリーチと教育",
+      "c4": "投票者に報酬の割合を提供（TOP 21に到達するため）",
+      "footer": "報酬は投票者の参加シェアとディレゲートの支払い割合に基づいて測定されます。"
+    },
+    "quantum": {
+      "eyebrow": "量子シールド",
+      "title": "SmartHoldem量子シールド",
+      "subtitle": "未来のコンピューターからブロックチェーンを保護する方法",
+      "text": "市場がチャートとボラティリティについて議論している間、古典暗号を無効にする可能性のある脅威がテック巨頭の研究室で成熟しています。十分に強力な量子コンピューター上のShorのアルゴリズムは、ECDSA（楕円曲線）を破壊する可能性があります - これはSmartHoldemを含むほとんどのブロックチェーンのウォレットとトランザクションの数学的基盤です。",
+      "callout": "{waiting} SmartHoldemエコシステムへのPost-Quantum Cryptography（PQC）の統合はすでに始まっています。",
+      "waitingLabel": "仮説上の「Day X」を待っていません。"
+    },
+    "phases": {
+      "eyebrow": "ロードマップ",
+      "title": "実装計画：ハイブリッドモデル",
+      "text": "急なハードフォークと強制移行を排除しています。移行は段階的でシームレスに行われます：",
+      "phaseWord": "フェーズ",
+      "p1t": "ハイブリッド署名",
+      "p1b1": "クラシックECDSAと新しいPQCアルゴリズム（例：Dilithium）で同時に署名されたトランザクション",
+      "p1b2": "1つの方法が侵害されても、もう1つの方法が保護を維持",
+      "p2t": "STH-Coreの更新",
+      "p2b1": "SmartHoldemノードはTypeScript/Node.jsで記述されています",
+      "p2b2": "node-addon-apiを通じてRustまたはC++の最適化されたPQCライブラリを統合",
+      "p2b3": "暗号強度を犠牲にすることなくDPoSネットワークの高スループットを維持",
+      "p3t": "量子アドレス",
+      "p3b1": "量子分析に耐性のある拡張公開鍵を備えた新しいアドレスタイプの導入",
+      "p3b2": "ユーザーは段階的に資金を「量子安全」ウォレットに移転できます"
+    },
+    "sig": {
+      "eyebrow": "アーキテクチャ",
+      "title": "2番目の署名を通じたハイブリッド量子シールド",
+      "text": "SmartHoldemは独自のアーキテクチャ機能 - 2番目の署名メカニズムを活用します。これは、ユーザーが新しいウォレットを作成し、資産を大量に移転する必要がある他の多くのネットワークとは異なります。",
+      "s1t": "アドレス形成",
+      "s1x": "SmartHoldemのアドレスは最初の公開鍵のハッシュとして形成されます。",
+      "s2t": "2番目の鍵の有効化",
+      "s2x": "2番目の署名が有効になると、2番目の公開鍵がブロックチェーンに記録されます。",
+      "s3t": "PQC置換",
+      "s3x": "この2番目の鍵の生成をECDSAからポスト量子アルゴリズムに置き換えます。",
+      "resultLabel": "結果",
+      "r1": "ウォレットを変更する必要はありません",
+      "r2": "アドレスは同じままです",
+      "r3": "コインは数年来と同じ場所にあります",
+      "r4": "2番目の暗号層で保護されています",
+      "r5": "量子コンピューターが最初の秘密鍵を計算しても、有効な2番目（量子耐性）署名なしではトランザクションを送信できません",
+      "footer": "{forUsers} 2番目の署名を有効化するか（量子保護を即座に有効にします）、新しいアドレスタイプがリリースされたら資金を移転する必要があります。",
+      "forUsersLabel": "単一署名のユーザー向け："
+    },
+    "nuance": {
+      "eyebrow": "深層技術",
+      "title": "技術的ニュアンスとネットワーク保護",
+      "n1t": "保護下のディレゲート",
+      "n1b1": "DPoSネットワークでは、ディレゲートがブロックに署名します",
+      "n1b2": "彼らの署名を偽造することはブロックチェーン全体の完全性を脅かします",
+      "n1b3": "プロトコルレベルでPQCを実装することで、SmartHoldemをコンセンサス偽造に耐性のある「デジタル要塞」にします",
+      "n2t": "トランザクションサイズ",
+      "n2b1": "ハッシュベースのスキーム（Lamport/SPHINCS+）はキロバイト単位の署名を生成します",
+      "n2b2": "ノードロジックは同期速度を失うことなく「重い」トランザクションを正しく処理するように適応されます",
+      "n3t": "OTS最適化",
+      "n3b1": "ブロックチェーンの膨張を避けるため、ワンタイム鍵はMerkleツリーに集約されます",
+      "n3b2": "ユーザーにとって、これは familiar なウォレットに見えます",
+      "n3b3": "数学的レベルでは、各鍵は厳密に1回使用され、署名後に無効化されます"
+    },
+    "code": {
+      "eyebrow": "開発",
+      "title": "進行中のコード",
+      "text": "新しい検証層のためのインフラをすでに準備しています。コアでの統合がどのように見えるかの一部をご紹介します：",
+      "footer": "量子優位性は暗号の終末ではなく、その次の進化段階です。SmartHoldemは遡及的に適応しているのではありません。今日、未来の基盤を築いています。暴力的に「解く」ことのできない数学を選択し、DPoSネットワークのコアに直接統合しています。{futureHere}",
+      "futureHereLabel": "未来はすでにここにあります。そして、保護されています。"
+    },
+    "cta": {
+      "eyebrow": "ネットワークに参加",
+      "title": "分散化の未来を確保",
+      "text": "SmartHoldemネットワークの21人の守護者に加わりましょう。ディレゲートになって、報酬を獲得し、Web 4.0インフラの構築を助けましょう。",
+      "btn1": "ディレゲートになる",
+      "btn2": "ブロックエクスプローラーを表示",
+      "btn3": "コミュニティに参加"
+    },
+    "seo": {
+      "title": "SmartHoldemブロックチェーン {'|'} 高性能DPoSと量子シールド",
+      "description": "SmartHoldem DPoSブロックチェーン：64,000 ops/sec、21のアクティブディレゲート、ポスト量子暗号保護。ディレゲートになってWeb 4.0インフラを確保しましょう。",
+      "ogTitle": "SmartHoldemブロックチェーン {'|'} 高性能DPoSと量子シールド",
+      "ogDescription": "64,000 ops/sec、21のアクティブディレゲート、ポスト量子暗号保護。今すぐディレゲートになりましょう。"
+    }
+  },
+  "tokenomics": {
+    "hero": {
+      "eyebrow": "トークノミクス · STH · Web 4.0",
+      "title": "STHトークノミクス",
+      "subtitle": "コンセンサスコインからWeb 4.0インフラ燃料へ",
+      "tagline": "本物のインフラ。本物の実用性。本物の希少性。",
+      "m1": "総供給量",
+      "m2": "永久に燃焼済み",
+      "m3": "排出（Update 2.0）",
+      "m3v": "停止済み"
+    },
+    "evolution": {
+      "eyebrow": "Web 3.0 → Web 4.0",
+      "title": "進化：デジタル通貨からインフラ燃料へ",
+      "text": "Web 3.0トークンは計算の支払いに使われます。{web4} SmartHoldem STHは、DPoSコンセンサスコインから分散型物理インターネットの基盤燃料へと進化しています。",
+      "web4Label": "Web 4.0コインはインフラの支払いに使われます。",
+      "callout": "ネットワークがスケールすると、燃料への需要もスケールします。"
+    },
+    "dist": {
+      "eyebrow": "フェアローンチ · 2017",
+      "title": "初期配分（2017）",
+      "text": "創世供給は{supply}に制限されています。配分はコミュニティ投票されたBitcoinTalkエスクローの下で実行されました。",
+      "supplyLabel": "240,000,000 STH",
+      "d1": "ICO参加者",
+      "d2": "アドバイザー&エンジェル",
+      "d3": "開発ファンド",
+      "d4": "バウンティキャンペーン",
+      "badge": "フェアローンチ · プレマインなし · コミュニティ監視"
+    },
+    "emission": {
+      "eyebrow": "Update 2.0",
+      "title": "排出モデルの進化",
+      "beforeTag": "Update 2.0以前",
+      "beforeTitle": "インフレモデル",
+      "beforeText": "2041年までに{cap}に制限された連続ブロック排出。従来のDPoS報酬スキーム。",
+      "beforeCap": "256,425,000 STH",
+      "afterTag": "Update 2.0以降",
+      "afterTitle": "デフレモデル",
+      "afterText": "排出{halted}。厳密に制限されたデフレ供給。",
+      "afterHalted": "完全に停止",
+      "callout": "DPoSコンセンサスでのブロック排出は完全に停止されました。"
+    },
+    "deflation": {
+      "eyebrow": "供給 ↓ 需要 ↑",
+      "title": "デフレ力学",
+      "c1t": "排出停止",
+      "c1x": "新しいコインは作成されません。供給は制限されています。",
+      "c2t": "燃焼メカニズム",
+      "c2x": "手数料はオンチェーンプールでロックまたは燃焼されます。",
+      "c3t": "実用性駆動の需要",
+      "c3x": "現実世界の使用が有機的で持続的な需要を生み出します。"
+    },
+    "backing": {
+      "eyebrow": "物理的裏付け",
+      "title": "本物のインフラによって支えられている",
+      "p1": "あなたのコインは本物の価値を表しています：ギガバイトのストレージ、時間の稼働時間、メガビットの帯域幅。",
+      "p2": "ネットワークの成長は直接STHの需要を増加させます - 保存されるデータが多い = ロックされるコインが多い。",
+      "p3": "クラウドプロバイダーも仲介者もいません - インフラはコミュニティによって所有されています。"
+    },
+    "utility": {
+      "eyebrow": "実用性レイヤー",
+      "title": "Web 4.0でのSTH実用性",
+      "subtitle": "分散型物理インターネットを駆動",
+      "text": "STHは、現実世界のストレージとデータ配信の直接支払いです。{every}",
+      "everyLabel": "保存されるすべてのバイトは物理的実用性によって支えられています。",
+      "u1t": "名前登録",
+      "u1x": "SmartHoldem名前レジストリでu://usernameを予約。",
+      "u2t": "dApp公開",
+      "u2x": "分散型アプリを登録。手数料はバンドルサイズに比例します。",
+      "u3t": "有料メッセージング",
+      "u3x": "スパム対策価格 - 攻撃者コストは量に比例して線形に増加。",
+      "u4t": "サブスクリプション",
+      "u4x": "定期的なオンチェーンサブスクリプションによるクリエイター収益化。",
+      "u5t": "有料グループ",
+      "u5x": "コミュニティ収益化 - コイン制限グループとフォーラム。",
+      "u6t": "ブーストプール",
+      "u6x": "利用可能性マーケット - 開発者はdAppシード保証のためにSTHをステーク。",
+      "spectrumTitle": "完全な実用性スペクトル",
+      "s1": "トランザクション手数料の支払い",
+      "s2": "ディレゲート投票（DPoSコンセンサス）",
+      "s3": "トークン発行",
+      "s4": "バーントランザクション（デフレ）",
+      "s5": "資産転送",
+      "s6": "SmartNet P2Pトランザクション",
+      "s7": "マルチペイメント",
+      "s8": "SmartNotes生成（ZKP）",
+      "s9": "ゲームトランザクション",
+      "footer": "すべての実用性がネットワークをクリーンかつスパムフリーに保ちながら、STHへの有機的な需要を生み出します。"
+    },
+    "loop": {
+      "eyebrow": "自律経済",
+      "title": "永続的経済ループ",
+      "subtitle": "自律ネットワークの通貨",
+      "s1": "ユーザーがSTHを消費",
+      "s2": "手数料がGlobal Seeding Poolに流れる",
+      "s3": "シーダーがSTHを獲得",
+      "s4": "シーダーがSTHを消費",
+      "s5": "開発者がSTHを獲得",
+      "footer": "{noTax} STHは価値創造者間でP2Pで移動します。",
+      "noTaxLabel": "プラットフォーム税なし。仲介者なし。"
+    },
+    "seeder": {
+      "eyebrow": "Proof-of-Utility",
+      "title": "シーダー経済",
+      "formulaLabel": "報酬数式",
+      "paramsTitle": "パラメータ",
+      "colParam": "パラメータ",
+      "colValue": "値",
+      "p1v": "~5 STH / 日（ベースライン利用可能性報酬）",
+      "p2v": "~0.5 STH / GB / 日（ストレージ重み付け支払い）",
+      "p3v": "個別アプリのシードに対するボーナス",
+      "p4v": "0.0 – 1.0 稼働時間乗数（以下参照）",
+      "kupTitle": "稼働時間乗数",
+      "kupElite": "エリート",
+      "kupEliteRange": "98 – 100% 稼働時間",
+      "kupFlaky": "不安定",
+      "kupFlakyRange": "90 – 97.9% 稼働時間",
+      "kupDead": "デッドノード",
+      "kupDeadRange": "< 90% 稼働時間"
+    },
+    "spam": {
+      "eyebrow": "経済ファイアウォール",
+      "title": "スパム対策経済的証明",
+      "legacyTag": "レガシーP2P",
+      "legacyText": "ネットワークはフラッド可能。攻撃者は何も支払いません。",
+      "netforyTag": "Netfory",
+      "netforyText": "例：1,000,000メッセージ × 0.01 STH = {burn}",
+      "burnLabel": "10,000 STH燃焼済み。",
+      "callout": "{devastating} 1つのメッセージが配信される前に。",
+      "devastatingLabel": "スパムは経済的に壊滅的"
+    },
+    "cross": {
+      "eyebrow": "クロスチェーン",
+      "title": "主要ブロックチェーン間のSTH",
+      "subtitle": "国境を越えた流動性",
+      "text": "STHは{xbts}を通じて主要ネットワークでラップされたトークンとして利用可能です - 公式クロスチェーン流動性ブリッジ。SmartHoldemブロックチェーンだけでなく、Ethereum、BSC、TON、Solanaで取引、ステーク、STHを使用。ネイティブSTHをゲートウェイに送信すると、ターゲットチェーンで同等量のラップされたSTHがミントされます。送り返すとラップされたトークンが燃焼され、ネイティブSTHが解放されます。",
+      "w1": "複数チェーンで35以上のDeFiプールにアクセス。",
+      "w2": "お好みのエコシステムを離れずに主要DEXで取引。",
+      "w3": "XBTS DEX経由で最小スリッページでシームレスな変換。",
+      "contractsTitle": "公式コントラクトアドレス",
+      "copyAria": "{chain}アドレスをコピー",
+      "badge": "監査済みゲートウェイ · 透明なミント/バーン · マルチチェーン流動性"
+    },
+    "cta": {
+      "eyebrow": "マニフェスト",
+      "title": "STH：希少性と実用性の融合",
+      "text": "STHはもはや単なるコンセンサス報酬ではありません。それは、現実世界の分散型インフラを支える希少で実用性駆動の資産です。",
+      "manifestoTitle": "分散型未来でのあなたのステーク",
+      "manifesto1": "STHは単なるウォレットの中の数字ではありません。それは、サーバー、ストレージ、帯域幅のグローバルネットワークにおけるあなたの{share}です - これは企業ではなく、コミュニティに属するインフラです。",
+      "shareLabel": "所有権シェア",
+      "manifesto2": "すべてのコインは{realUtility}を表しています：データを保存し、メッセージを送信し、アプリを公開し、ネットワークをサポートして収益を得る力。",
+      "realUtilityLabel": "本物の実用性",
+      "manifestoTag": "これは手に held ことができるWeb 4.0革命です。",
+      "icServers": "サーバー",
+      "icStorage": "ストレージ",
+      "icNetwork": "ネットワーク",
+      "icEarnings": "収益",
+      "btnWp": "ホワイトペーパーを読む",
+      "btnExplorer": "エクスプローラーで表示",
+      "join": "Web 4.0革命に参加しましょう！",
+      "tagline": "249.6Mコイン。0%インフレ。無限の実用性。未来は分散されています - そして、それはすでにここにあります。"
+    },
+    "seo": {
+      "title": "SmartHoldemトークノミクス {'|'} STHコイン配分、経済学、クロスチェーン利用可能性",
+      "description": "STHトークノミクスを探索：2017年のフェアローンチ、排出停止、デフレ力学、Web 4.0実用性、BSC、ETH、TON、Solanaのラップされたトークン。総供給量249.6M STH。",
+      "ogTitle": "SmartHoldem STHトークノミクス",
+      "ogDescription": "STHトークノミクスを探索：排出停止、デフレ力学、Web 4.0実用性。総供給量249.6M STH。"
+    }
+  },
+  "getSth": {
+    "hero": {
+      "eyebrow": "購入 · スワップ · 取引 · 獲得",
+      "title": "SmartHoldem STHを取得",
+      "subtitle": "本物のインフラ。本物の実用性。本物の収益。",
+      "tagline": "取引、獲得、成長！",
+      "ctaWallet": "SmartHoldem Walletを開く",
+      "ctaStaking": "XBTSステーキングを探索"
+    },
+    "wallet": {
+      "eyebrow": "最も速い方法",
+      "title": "即時STHスワップがライブ",
+      "text": "STHの購入とスワップはこれほど簡単ではありません。{wallet}内で複雑なブリッジやアプリを離れることなく、数秒で直接取引を実行します。",
+      "walletLabel": "SmartHoldem Wallet",
+      "f1t": "即時実行",
+      "f1x": "最小スリッページで数秒で直接STHを売買。",
+      "f2t": "マルチチェーンサポート",
+      "f2x": "BSCおよびTONネットワークでのネイティブスワップ実行。",
+      "f3t": "トップペア",
+      "f3x": "最も人気のある取引ペア：STH/USDTへの直接アクセス。",
+      "f4t": "ノンカストディアル",
+      "f4x": "秘密鍵をあなたがコントロール。あなたの資金、あなたのコントロール。",
+      "cta": "SmartHoldem Walletを起動"
+    },
+    "xbts": {
+      "eyebrow": "公式ハブ",
+      "title": "公式ハブ：XBTSエコシステム",
+      "text": "{xbts}は公式クロスチェーン流動性ブリッジであり、STHの最も包括的なマーケットプレイスです。他のいかなる取引所もSmartHoldemのこの深みの流動性を提供していません。",
+      "xbtsLabel": "XBTS DEX",
+      "dexTitle": "XBTS DEX",
+      "dexPairs": "45以上のSTH取引ペア",
+      "dexText": "低手数料と{noKyc}でほぼすべての人気暗号通貨とSTHを取引。",
+      "noKycLabel": "KYCなし",
+      "dexCta": "取引を開始",
+      "defiTitle": "XBTS DeFi",
+      "defiPools": "35以上のSTH流動性プール",
+      "defiText": "{deep}で主要ネットワーク間でワンクリックスワップ。",
+      "deepLabel": "深い流動性",
+      "defiCta": "STH DeFiプール",
+      "holderBadge": "SmartHolderステーキング",
+      "holderTitle": "SmartHolderとは？",
+      "holderText": "{xbts}からの独自のステーキングプログラムで、SmartHoldem（STH）を保有するだけで本物の暗号通貨を支払います。単なる「hodling」ではなく、{share}の直接的なシェアを得ています。XBTSでのすべての取引が受動的な収入をもたらします！",
+      "holderShareLabel": "取引所全体からの取引手数料",
+      "holderBadgeChip": "本物の収益 · 取引手数料共有 · ノンカストディアル",
+      "holderCta": "ステーキングを開始"
+    },
+    "defi": {
+      "eyebrow": "マルチチェーンDeFi",
+      "title": "分散型金融（DeFi）プール",
+      "text": "複数のエコシステムにわたる最大の分散型取引所で流動性を提供またはSTHをスワップ。",
+      "pairsLabel": "利用可能なペア",
+      "ctaPancake": "PancakeSwapでスワップ",
+      "ctaDedust": "Dedustでスワップ",
+      "ctaUniswap": "Uniswapでスワップ",
+      "pairSthUsdt": "STH / USDT",
+      "pairSthBnb": "STH / BNB",
+      "pairSthTon": "STH / GRAM",
+      "pairSthUniLp": "STH / USDT流動性プール"
+    },
+    "cex": {
+      "eyebrow": "中央集権取引所",
+      "title": "中央集権取引所アクセス",
+      "text": "{name} - 直接{pair}取引ペアを提供するCEX。",
+      "important": "重要：",
+      "importantText": "DEX-Trade上のSTHの入出金は{network}で利用可能です。",
+      "networkLabel": "ネイティブSmartHoldemブロックチェーン",
+      "cta": "DEX-Tradeで取引"
+    },
+    "compare": {
+      "eyebrow": "比較",
+      "title": "あなたに最適なSTHプラットフォームを見つける",
+      "text": "すべての主要なSTH取引およびステーキングオプションを一目で比較。あなたのニーズに合ったプラットフォームを選択。",
+      "colPlatform": "プラットフォーム",
+      "colType": "タイプ",
+      "colNetworks": "ネットワーク",
+      "colBestFor": "最適",
+      "colFeatures": "主な機能",
+      "rows": {
+        "walletBestFor": "初心者",
+        "walletFeatures": "⚡ 即時スワップ · 🔐 ノンカストディアル · 🌐 マルチチェーン",
+        "dexBestFor": "最大流動性",
+        "dexFeatures": "45以上の取引ペア · KYCなし · 低手数料",
+        "defiBestFor": "流動性プロバイダー",
+        "defiFeatures": "35以上のプール · ワンクリックスワップ",
+        "pcsBestFor": "BSCユーザー",
+        "pcsFeatures": "STH/USDT · STH/BNBプール",
+        "uniBestFor": "ETHユーザー",
+        "uniFeatures": "STH/USDT流動性",
+        "ddBestFor": "TONユーザー",
+        "ddFeatures": "STH/GRAM · STH/USDT",
+        "dtBestFor": "従来のトレーダー",
+        "dtFeatures": "フィアットオンランプ · ネイティブSTHのみ",
+        "holderBestFor": "受動的収入",
+        "holderFeatures": "取引手数料からの本物の収益"
+      }
+    },
+    "steps": {
+      "eyebrow": "クイックスタート",
+      "title": "3ステップでWeb 4.0の旅を始めましょう",
+      "s1t": "プラットフォームを選択",
+      "s1x": "即時ネイティブスワップ用にSmartHoldem Walletを選択するか、お好みのブロックチェーンネットワークに合ったDEX/CEXを選択。",
+      "s2t": "購入またはスワップ",
+      "s2x": "45以上の取引ペアで透明で低手数料で人気のあるすべての暗号通貨とSTHを取引。",
+      "s3t": "安全に獲得",
+      "s3x": "ノンカストディアルSmartHoldemウォレットにSTHを預け入れる（秘密鍵をあなたがコントロール！）またはXBTSでSmartHolderステーキングを有効にして、取引手数料からの受動的収益を得る。"
+    },
+    "cta": {
+      "eyebrow": "行動を起こす",
+      "title": "分散型未来の一部を所有する準備はできましたか？",
+      "text": "資産を完全にコントロール。仲介者なしで取引、制限なしで獲得、Web 4.0インフラを駆動。",
+      "btnWallet": "SmartHoldem Walletを取得",
+      "btnStaking": "XBTSでステーキングを開始",
+      "btnTokenomics": "STHトークノミクスを表示",
+      "join": "Web 4.0革命に参加しましょう！",
+      "tagline": "249.6Mコイン。0%インフレ。無限の実用性。"
+    },
+    "faq": {
+      "eyebrow": "よくある質問",
+      "title": "ご質問がありますか？回答があります",
+      "q1": "XBTS DEXとXBTS DeFiの違いは何ですか？",
+      "a1": "{dex}は直接取引用（45以上のSTHペア）、{defi}は流動性提供用（35以上のSTHプール）です。両方とも、同じログインでオールインワンのXBTSインターフェースで利用可能です。",
+      "q2": "STHにはどのネットワークを使うべきですか？",
+      "a2": "最高の体験には{native}を使用。DeFiには、お好みのエコシステムに応じてXBTS（DeFiプール）、BSC（PancakeSwap）、ETH（Uniswap）、TON（Dedust）を選択。",
+      "q3": "SmartHoldem Walletは安全ですか？",
+      "a3": "間違いなく。{noncustodial} - あなたが秘密鍵をコントロール。すべてのスワップはサードパーティアクセスゼロで直接オンチェーンで行われます。",
+      "q4": "複数チェーンで同時にSTHを使用できますか？",
+      "a4": "はい！XBTS DEX経由のラップされたSTHを使用すると、ネイティブ、BSC、TON、ETH間でお好みのエコシステムを離れずに取引できます。",
+      "q5": "SmartHolderステーキングはどのように機能しますか？",
+      "a5": "STHをステークするすべての人は、{xbtsdex}からの取引利益の割合を受け取る権利があります。ステーキングは指定した期間コインをロックします。ステーキング期間中、自動的に支払い分配に参加します。",
+      "q6": "SmartHolderステーキングからどのように収益を得ますか？",
+      "a6": "報酬は{auto}に送信されます：毎月1日と15日。{assets}で支払い、およびステーキング期間中に活発に取引された20以上の資産で支払い。"
+    },
+    "seo": {
+      "title": "STHを取得 {'|'} SmartHoldemコインを購入、スワップ、取引、ステーキング",
+      "description": "SmartHoldem（STH）を即座に取得。ネイティブウォレットでスワップ、XBTS DEXで45以上のペアを取引、DeFi流動性を提供、またはSmartHolderステーキングで本物の収益を得る。",
+      "ogTitle": "SmartHoldem（STH）を取得 {'|'} 取引＆獲得",
+      "ogDescription": "複数チェーンでSTHを購入、スワップ、ステーキング。XBTSのSmartHolderステーキングで本物の収益を得ましょう。"
+    }
+  },
+  "dapps": {
+    "eyebrow": "Web 4.0 · エコシステム",
+    "title": "dApps & ゲーム",
+    "subtitle": "SmartHoldemブロックチェーンによって駆動される成長する分散型アプリエコシステムを発見",
+    "tagline": "遊ぶ。獲得。エアドロップ。そしてもっと。",
+    "ctaBlockchain": "ブロックチェーン",
+    "ctaBuild": "独自のdAppを構築",
+    "live": {
+      "eyebrow": "メインネットでライブ",
+      "title": "SmartHoldemでライブ",
+      "subtitle": "本物のアプリケーション。本物の実用性。本物の所有権。",
+      "badge": "ライブ"
+    },
+    "apps": {
+      "p2e": {
+        "subtitle": "プレイアンドアーン · Telegram",
+        "f1": "プレイアンドアーンパズルゲーム",
+        "f2": "ネイティブTelegram Bot統合",
+        "f3": "自動月次STH支払い",
+        "primary": "Telegramでプレイ",
+        "secondary": "詳しく見る"
+      },
+      "ht": {
+        "subtitle": "証明可能な公正 · オンチェーン",
+        "f1": "暗号的に検証可能（SHA-384 + RIPEMD-160）",
+        "f2": "即時オンチェーン支払い",
+        "f3": "1%アフィリエイトプログラム",
+        "primary": "今すぐプレイ",
+        "secondary": "ゲームプレイ"
+      },
+      "pw": {
+        "subtitle": "コールドストレージ · 30以上のチェーン",
+        "f1": "100%オフラインコールドストレージ",
+        "f2": "オープンソース＆BIP38暗号化",
+        "f3": "30以上の暗号通貨をサポート",
+        "primary": "ウォレットを生成",
+        "secondary": "GitHubで表示"
+      },
+      "s2fa": {
+        "subtitle": "分散型2FA",
+        "f1": "分散型2要素認証",
+        "f2": "ハッキングする中央サーバーなし",
+        "f3": "あなたの鍵、あなたのルール",
+        "primary": "v2.0.0をダウンロード",
+        "secondary": "GitHubで表示"
+      }
+    },
+    "trng": {
+      "eyebrow": "開発者スポットライト",
+      "title": "証明可能な公正：SmartHoldem TRNGの力",
+      "text": "従来のゲームでは、サーバーを信頼します。SmartHoldemでは、数学を信頼します。ネイティブ{trng}は100%予測不可能で暗号的に検証可能な結果を保証します。タイムトラベラーでさえ次のカードやダイスロールを予測することはできません。",
+      "trngLabel": "真の乱数生成器（TRNG）",
+      "p1t": "暗号的に証明可能",
+      "p1x": "すべてのランダムドローはオンチェーンで署名され、独立して検証可能です。",
+      "p2t": "チェーンにネイティブ",
+      "p2x": "外部オラクルなし。TRNGはSmartHoldemコンセンサスに組み込まれています。",
+      "p3t": "サブセカンドレイテンシ",
+      "p3x": "リアルタイムゲームに十分高速 - カード、ダイス、スロット。",
+      "p4t": "ゼロインフラ",
+      "p4x": "1つのエンドポイントを呼び出す。RNGサーバーの保守は不要。",
+      "apiBtn": "TRNG API",
+      "exampleBtn": "ダイスゲームの例",
+      "caption": "数分でdAppに証明可能な公正を統合。"
+    },
+    "poker": {
+      "badge": "開発中 · Web 4.0ネイティブ",
+      "title": "ブロックチェーンポーカークラブ：分散型ポーカーの未来",
+      "text": "分散型Web4ノーリミットテキサスホールデムプラットフォーム。トーナメントを作成し、友人とゲームをプレイ。絶対的な検閲耐性とゼロインフラホスティングのために、Netforyスタック上でネイティブに実行。",
+      "p1t": "KYCなし",
+      "p1x": "真のクリプト所有権。あなたのウォレット、あなたの鍵。",
+      "p2t": "レイクなし！",
+      "p2x": "搾取的手数料なし。ハンドごとに1 STHの固定ブロックチェーン手数料のみ。",
+      "p3t": "100%検証可能なTRNG",
+      "p3x": "暗号的に証明された公正なシャッフル。",
+      "cta": "ウェイットリストに参加"
+    },
+    "dev": {
+      "title": "SmartHoldemで次のビッグ thing を構築",
+      "text": "ゼロインフラホスティング、組み込み収益化、ネイティブユーザー基盤。SmartNet App SDKを使用して、ウォレット、支払い、ストレージのためのすぐに使えるフックで数分でdAppをデプロイ。",
+      "primary": "開発者ドキュメントを読む",
+      "secondary": "STHコミュニティに参加"
+    },
+    "seo": {
+      "title": "dApps & ゲーム {'|'} SmartHoldem Web 4.0エコシステム",
+      "description": "SmartHoldemブロックチェーンとNetforyスタック上に構築された、実際の分散型アプリケーション、プレイアンドアーンゲーム、開発者ツールを探索。",
+      "ogTitle": "dApps & ゲーム {'|'} SmartHoldem Web 4.0",
+      "ogDescription": "本物のアプリケーション。本物の実用性。本物の所有権。"
+    }
+  },
+  "footer": {
+    "tagline": "分散型物理インターネットを駆動。",
+    "ecosystem": "エコシステム",
+    "resources": "リソース",
+    "marketcaps": "時価総額",
+    "developers": "開発者",
+    "community": "コミュニティ",
+    "rights": "コードが法。",
+    "copyright": "SmartHoldemコアチーム"
+  },
+  "news": {
+    "title": "ネットワークニュース",
+    "subtitle": "SmartHoldemエコシステムからの最新アップデート。",
+    "loading": "ニュースを読み込み中…",
+    "error": "ニュースを読み込めません。後でもう一度お試しください。",
+    "loadMore": "さらに読み込む",
+    "readMore": "続きを読む",
+    "back": "ニュースに戻る",
+    "empty": "まだニュースはありません。"
+  },
+  "whitepaper": {
+    "eyebrow": "技術文書",
+    "title": "Netforyホワイトペーパー",
+    "subtitle": "ピアツーピア電子アプリケーションおよびデータ配布ネットワーク - Web 4.0プロトコル。",
+    "toc": "目次",
+    "soon": "完全なマークダウンドキュメントはここに公開されます。",
+    "seo": {
+      "title": "Netfory ホワイトペーパー — Web 4.0 プロトコルドキュメント {'|'} SmartHoldem",
+      "description": "Netfory の完全な技術ホワイトペーパー：分散型ホスティング、Iroh QUIC トランスポート、BLAKE3 コンテンツアドレッシング、Proof-of-Utility 経済、SmartHoldem DPoS 統合。全16章、本番運用可能な Web 4.0 スタック。"
+    }
+  },
+  "home": {
+    "whitepaperTeaserEyebrow": "ドキュメント",
+    "whitepaperTeaserTitle": "完全な技術ホワイトペーパーを読む",
+    "whitepaperTeaserText": "Web 4.0の背後にあるプロトコル設計、暗号保証、経済モデルに深く Dive。",
+    "whitepaperTeaserCta": "ホワイトペーパーを開く",
+    "seo": {
+      "title": "Netfory {'|'} Web 4.0 インフラ — あなたのために働くウェブ",
+      "description": "完全自律型・エージェントネイティブな Web 4.0 インフラ。分散型ホスティング、Proof-of-Utility 経済、LAN ファーストの自律性。ネットワークは稼働中。",
+      "ogTitle": "Netfory — あなたのために働くウェブ",
+      "ogDescription": "初の本番運用可能な Web 4.0 スタック。ゼロインフラ。絶対的な自律性。"
+    }
+  },
+  "missionTeaser": {
+    "eyebrow": "The Mission",
+    "titleA": "An Internet for Humanity. Secured by ",
+    "titleHi": "Mathematics",
+    "titleB": ".",
+    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
+    "p1Title": "Censorship-Resistant Comms",
+    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
+    "p2Title": "Durable Archives",
+    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
+    "p3Title": "Math Over Policy",
+    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
+    "cta": "Push Humanity Forward"
+  },
+  "mission": {
+    "hero": {
+      "eyebrow": "Manifesto",
+      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
+      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
+      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
+      "ctaPrimary": "Download Netfory Client",
+      "ctaSecondary": "Read White Paper",
+      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    },
+    "deplatform": {
+      "eyebrow": "Chapter I",
+      "titleA": "The End of ",
+      "titleHi": "Deplatforming",
+      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
+      "p2Bold": "Web 4.0 changes the default.",
+      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
+      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
+      "statLabel": "Censorship cost",
+      "statValue": "from $0 → ∞"
+    },
+    "archives": {
+      "eyebrow": "Chapter II",
+      "titleA": "Durable ",
+      "titleHi": "Archives",
+      "subtitle": "Solving the Long-Term Memory Crisis",
+      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
+      "p2Bold": "Netfory solves the problem of long-term storage.",
+      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
+      "statLabel": "Survival threshold",
+      "statValue": "1 peer"
+    },
+    "impact": {
+      "eyebrow": "Chapter III",
+      "titleA": "Measuring the ",
+      "titleHi": "Impact",
+      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
+      "m1Title": "Durable Archives",
+      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
+      "m2Title": "Cross-Platform Portability",
+      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
+      "m3Title": "Web 4.0 Protocol Adoption",
+      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
+      "m4Title": "Adversarial Environment",
+      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+    },
+    "finalCta": {
+      "eyebrow": "Join us",
+      "titleA": "Join the Network Where ",
+      "titleHi": "YOU",
+      "titleB": " Are the Network",
+      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
+      "quote": "The era of renting your digital existence is over.",
+      "tagline": "Don't visit the web. Be the web.",
+      "ctaPrimary": "Push Humanity Forward",
+      "ctaSecondary": "Read the Whitepaper",
+      "ctaTertiary": "Join the Community"
+    },
+    "seo": {
+      "title": "ミッション {'|'} SmartHoldem Web 4.0 — 人類のためのインターネット",
+      "description": "SmartHoldem のミッション：デジタル権利の保護、検閲耐性のある通信の確保、数学と分散型ガバナンスによる人類の記憶の保存を実現する Web 4.0 インフラの構築。",
+      "ogTitle": "ミッション {'|'} SmartHoldem Web 4.0",
+      "ogDescription": "人類のためのインターネット。数学に守られて。"
+    }
+  },
+  "execSummary": {
+    "seo": {
+      "title": "Netfory エグゼクティブサマリー {'|'} SmartHoldem WEB 4.0",
+      "description": "Web 4.0 初の実装 — 動作し、テスト済みで、本番運用可能なスタック。"
+    }
+  }
+}

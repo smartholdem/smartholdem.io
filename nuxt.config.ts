@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   // Server-Side Rendering enabled -> `nuxt generate` pre-renders every route to static HTML
-  ssr: false,
+  ssr: true,
 
   // The client build fails to resolve the virtual `#app-manifest` import in this
   // environment, which silently breaks hydration. Disabling it fixes hydration

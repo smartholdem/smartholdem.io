@@ -1,0 +1,67 @@
+/* =============================================================================
+   SmartHoldem DevHub — VitePress CSS variable overrides.
+   Applies SmartHoldem brand palette on top of the default VitePress theme so we
+   keep search, sidebar, TOC & dark-mode toggle behavior intact.
+   ========================================================================== */
+
+:root {
+  /* Brand accent (orange) */
+  --vp-c-brand-1: #FF5A0A;
+  --vp-c-brand-2: #FF7A2A;
+  --vp-c-brand-3: #FF5A0A;
+  --vp-c-brand-soft: rgba(255, 90, 10, 0.14);
+
+  /* Fonts */
+  --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+}
+
+/* Force dark palette for the SmartHoldem industrial look */
+.dark {
+  --vp-c-bg: #0A0E27;
+  --vp-c-bg-alt: #0F1430;
+  --vp-c-bg-soft: #151B3B;
+  --vp-c-bg-elv: #151B3B;
+
+  --vp-c-text-1: #FFFFFF;
+  --vp-c-text-2: #CBD5E1;
+  --vp-c-text-3: #94A3B8;
+
+  --vp-c-divider: rgba(255, 255, 255, 0.08);
+  --vp-c-border: rgba(0, 212, 255, 0.18);
+  --vp-c-gutter: rgba(0, 212, 255, 0.08);
+
+  --vp-c-brand-1: #FF5A0A;
+  --vp-c-brand-2: #FF7A2A;
+  --vp-c-brand-3: #FF5A0A;
+
+  --vp-code-block-bg: #0B1020;
+  --vp-code-bg: rgba(0, 212, 255, 0.10);
+  --vp-code-color: #00D4FF;
+
+  --vp-c-tip-1: #00D4FF;
+  --vp-c-tip-2: #00D4FF;
+  --vp-c-tip-soft: rgba(0, 212, 255, 0.12);
+
+  --vp-c-warning-1: #F59E0B;
+  --vp-c-warning-soft: rgba(245, 158, 11, 0.12);
+
+  --vp-c-danger-1: #EF4444;
+  --vp-c-danger-soft: rgba(239, 68, 68, 0.12);
+
+  --vp-nav-bg-color: rgba(10, 14, 39, 0.72);
+  --vp-sidebar-bg-color: #0A0E27;
+}
+
+/* Light-mode fallback (still branded) */
+html:not(.dark) {
+  --vp-c-bg: #F8FAFC;
+  --vp-c-bg-alt: #FFFFFF;
+  --vp-c-bg-soft: #FFFFFF;
+  --vp-c-text-1: #0F172A;
+  --vp-c-text-2: #334155;
+  --vp-c-text-3: #64748B;
+  --vp-c-border: rgba(15, 23, 42, 0.08);
+  --vp-c-divider: rgba(15, 23, 42, 0.08);
+  --vp-code-block-bg: #0d1117;
+}
