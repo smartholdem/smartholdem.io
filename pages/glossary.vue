@@ -290,6 +290,25 @@ useHead({
         description: it.plain.slice(0, 240)
       }))
     })
+  }, {
+    // FAQPage: each glossary term becomes a Question/Answer pair so
+    // definitions are eligible for Google answer blocks / AI answers.
+    type: 'application/ld+json',
+    innerHTML: () => JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${pageUrl.value}#faq`,
+      url: pageUrl.value,
+      mainEntity: terms.map((it) => ({
+        '@type': 'Question',
+        name: `What is ${it.term}?`,
+        url: `${pageUrl.value}#${it.slug}`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: it.plain.length > 600 ? `${it.plain.slice(0, 597)}...` : it.plain
+        }
+      }))
+    })
   }]
 })
 </script>
