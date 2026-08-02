@@ -16,7 +16,10 @@
     "dexTrade": "DEX Trade",
     "buyHint": "Купите, обменяйте или торгуйте STH:",
     "getSth": "Получить STH",
-    "mission": "Миссия"
+    "mission": "Миссия",
+    "home": "Главная",
+    "terms": "Условия использования",
+    "execSummary": "Executive Summary"
   },
   "glossary": {
     "eyebrow": "Whitepaper · Приложение A",

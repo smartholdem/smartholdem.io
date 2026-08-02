@@ -23,8 +23,10 @@ import execRaw from '~/assets/docs/executive-summary.md?raw'
 // Synchronous parse (SSG-friendly, no useState payload — avoids hydration bloat).
 const html = computed(() => (execRaw ? parseMarkdownDoc(execRaw).html : '<p>Coming soon.</p>'))
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const config = useRuntimeConfig()
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/executive-summary')
+useBreadcrumbLd([{ key: 'nav.execSummary', path: '/executive-summary' }])
 useSeoMeta({
   title: () => t('execSummary.seo.title'),
   description: () => t('execSummary.seo.description'),
@@ -36,6 +38,21 @@ useSeoMeta({
   ogLocaleAlternate: () => ogLocaleAlternate.value
 })
 useHead({
-  link: [{ rel: 'canonical', href: () => pageUrl.value }]
+  link: [{ rel: 'canonical', href: () => pageUrl.value }],
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: () => JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'TechArticle',
+      headline: t('execSummary.seo.title'),
+      description: t('execSummary.seo.description'),
+      url: pageUrl.value,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
+      inLanguage: locale.value,
+      author: { '@type': 'Organization', name: 'SmartHoldem Core Team' },
+      publisher: { '@id': `${config.public.siteUrl}/#organization` },
+      about: 'Web 4.0 decentralized infrastructure protocol'
+    })
+  }]
 })
 </script>

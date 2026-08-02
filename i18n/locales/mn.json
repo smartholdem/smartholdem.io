@@ -16,7 +16,10 @@
     "dexTrade": "DEX Арилжаа",
     "buyHint": "STH худалдан авах, арилжаа хийх эсвэл солих:",
     "getSth": "STH авах",
-    "mission": "Эрхэм зорилго"
+    "mission": "Эрхэм зорилго",
+    "home": "Нүүр",
+    "terms": "Үйлчилгээний нөхцөл",
+    "execSummary": "Executive Summary"
   },
   "glossary": {
     "eyebrow": "Цагаан цаас · Хавсралт A",

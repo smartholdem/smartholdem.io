@@ -16,7 +16,10 @@
     "dexTrade": "DEX Trade",
     "buyHint": "Get, trade or swap STH:",
     "getSth": "Get STH",
-    "mission": "The Mission"
+    "mission": "The Mission",
+    "home": "Home",
+    "terms": "Terms & Conditions",
+    "execSummary": "Executive Summary"
   },
   "glossary": {
     "eyebrow": "Whitepaper · Appendix A",

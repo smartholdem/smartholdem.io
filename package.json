@@ -1,6 +1,6 @@
 {
-  "name": "smartholdem-web4",
-  "version": "1.0.0",
+  "name": "smartholdem.io",
+  "version": "1.0.1",
   "description": "SmartHoldem Netfory - Web 4.0 Platform Website",
   "private": true,
   "type": "module",

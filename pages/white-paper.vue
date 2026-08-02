@@ -125,7 +125,7 @@ import { ChevronRight, Users, Calendar, Tag, Scale, BookOpen, BookMarked, Downlo
 
 const localePath = useLocalePath()
 const config = useRuntimeConfig()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const colorMode = useColorMode()
 
 // @ts-ignore raw markdown baked at build time (SSG-friendly)
@@ -248,6 +248,7 @@ onBeforeUnmount(() => {
 
 // SEO — localized (all 18 locales) with og:locale + locale-aware URLs
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/white-paper')
+useBreadcrumbLd([{ key: 'nav.whitepaper', path: '/white-paper' }])
 useSeoMeta({
   title: () => t('whitepaper.seo.title'),
   description: () => t('whitepaper.seo.description'),
@@ -265,14 +266,20 @@ useHead({
   link: [{ rel: 'canonical', href: () => pageUrl.value }],
   script: [{
     type: 'application/ld+json',
-    innerHTML: JSON.stringify({
+    innerHTML: () => JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'TechArticle',
       headline: 'Netfory: A Peer-to-Peer Electronic Application and Data Distribution Network',
+      alternativeHeadline: t('whitepaper.seo.title'),
+      description: t('whitepaper.seo.description'),
+      url: pageUrl.value,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
+      image: `${config.public.siteUrl}/images/home/web_4_smarholdem_netfory.jpg`,
+      inLanguage: locale.value,
       author: [{ '@type': 'Person', name: 'TechnoL0g' }, { '@type': 'Person', name: 'Europa' }],
       datePublished: '2026-07-01',
       version: '1.0.0',
-      publisher: { '@type': 'Organization', name: 'SmartHoldem Core Team' },
+      publisher: { '@id': `${config.public.siteUrl}/#organization` },
       about: 'Web 4.0 decentralized infrastructure protocol'
     })
   }]

@@ -260,6 +260,7 @@ onBeforeUnmount(() => {
 
 // ---- SEO -------------------------------------------------------------------
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/glossary')
+useBreadcrumbLd([{ key: 'nav.glossary', path: '/glossary' }])
 useSeoMeta({
   title: () => t('glossary.seoTitle'),
   description: () => t('glossary.seoDescription'),

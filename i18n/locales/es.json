@@ -16,7 +16,10 @@
     "dexTrade": "DEX Trade",
     "buyHint": "Obtén, intercambia o canjea STH:",
     "getSth": "Obtener STH",
-    "mission": "La Misión"
+    "mission": "La Misión",
+    "home": "Inicio",
+    "terms": "Términos y condiciones",
+    "execSummary": "Resumen ejecutivo"
   },
   "glossary": {
     "eyebrow": "Libro Blanco · Apéndice A",

@@ -485,6 +485,7 @@ const siteUrl = config.public.siteUrl || 'https://smartholdem.io'
 const ogImage = `${siteUrl}/images/get-sth/get-sth-og.jpg`
 
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/get-sth')
+useBreadcrumbLd([{ key: 'nav.getSth', path: '/get-sth' }])
 useSeoMeta({
   title: () => t('getSth.seo.title'),
   description: () => t('getSth.seo.description'),

@@ -141,6 +141,7 @@ const config = useRuntimeConfig()
 
 // SEO — indexable legal document, localized (18 locales)
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/terms')
+useBreadcrumbLd([{ key: 'nav.terms', path: '/terms' }])
 useSeoMeta({
   title: () => t('terms.seo.title'),
   description: () => t('terms.seo.description'),

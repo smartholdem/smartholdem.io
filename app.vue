@@ -22,6 +22,7 @@ useHead(() => ({
 }))
 
 // Organization + WebSite JSON-LD (site-wide, great for AI / search indexing)
+const ORG_ID = `${config.public.siteUrl}/#organization`
 useHead({
   script: [
     {
@@ -31,18 +32,30 @@ useHead({
         '@graph': [
           {
             '@type': 'Organization',
+            '@id': ORG_ID,
             name: 'SmartHoldem',
             url: config.public.siteUrl,
-            logo: `${config.public.siteUrl}/favicon.png`,
+            logo: {
+              '@type': 'ImageObject',
+              url: `${config.public.siteUrl}/favicon.png`
+            },
+            description: 'SmartHoldem \u2014 Web 4.0 ecosystem powered by the Netfory network: decentralized hosting, DPoS blockchain and the STH coin.',
             sameAs: [
+              'https://x.com/smartholdem',
+              'https://t.me/smartholdem',
+              'https://www.youtube.com/@smartholdem',
               'https://github.com/smartholdem',
-              'https://github.com/NETFORY'
+              'https://github.com/NETFORY',
+              'https://coinmarketcap.com/currencies/smartholdem',
+              'https://coinpaprika.com/coin/sth-smartholdem'
             ]
           },
           {
             '@type': 'WebSite',
+            '@id': `${config.public.siteUrl}/#website`,
             name: 'SmartHoldem WEB 4.0',
-            url: config.public.siteUrl
+            url: config.public.siteUrl,
+            publisher: { '@id': ORG_ID }
           }
         ]
       })

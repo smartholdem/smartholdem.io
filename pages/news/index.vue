@@ -95,6 +95,7 @@ const onImgError = (e, a) => {
 }
 
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/news')
+useBreadcrumbLd([{ key: 'nav.news', path: '/news' }])
 const title = `${t('news.title')} | SmartHoldem WEB 4.0`
 useSeoMeta({
   title,

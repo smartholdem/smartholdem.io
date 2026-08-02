@@ -16,7 +16,10 @@
     "dexTrade": "DEX Trade",
     "buyHint": "รับ แลกเปลี่ยน หรือเทรด STH:",
     "getSth": "รับ STH",
-    "mission": "ภารกิจ"
+    "mission": "ภารกิจ",
+    "home": "หน้าแรก",
+    "terms": "ข้อกำหนดและเงื่อนไข",
+    "execSummary": "บทสรุปผู้บริหาร"
   },
   "glossary": {
     "eyebrow": "Whitepaper · ภาคผนวก A",

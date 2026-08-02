@@ -557,6 +557,7 @@ const siteUrl = config.public.siteUrl || 'https://smartholdem.io'
 const ogImage = `${siteUrl}/images/blockchain/blockchain-og.jpg`
 
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/blockchain')
+useBreadcrumbLd([{ key: 'nav.blockchain', path: '/blockchain' }])
 useSeoMeta({
   title: () => t('blockchain.seo.title'),
   description: () => t('blockchain.seo.description'),

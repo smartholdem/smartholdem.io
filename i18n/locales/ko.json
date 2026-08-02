@@ -16,7 +16,10 @@
     "dexTrade": "DEX 거래",
     "buyHint": "STH를 구매, 거래 또는 스왑하세요:",
     "getSth": "STH 받기",
-    "mission": "미션"
+    "mission": "미션",
+    "home": "홈",
+    "terms": "이용약관",
+    "execSummary": "요약 보고서"
   },
   "glossary": {
     "eyebrow": "화이트페이퍼 · 부록 A",

@@ -599,6 +599,7 @@ const config = useRuntimeConfig()
 const siteUrl = config.public.siteUrl || 'https://smartholdem.io'
 const ogImage = `${siteUrl}/images/tokenomics/sth-tokenomics-og.jpg`
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/tokenomics')
+useBreadcrumbLd([{ key: 'nav.tokenomics', path: '/tokenomics' }])
 useSeoMeta({
   title: () => t('tokenomics.seo.title'),
   description: () => t('tokenomics.seo.description'),

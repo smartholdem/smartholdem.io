@@ -190,6 +190,7 @@ const showModal = ref(false)
 
 const config = useRuntimeConfig()
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/mission')
+useBreadcrumbLd([{ key: 'nav.mission', path: '/mission' }])
 useSeoMeta({
   title: () => t('mission.seo.title'),
   description: () => t('mission.seo.description'),

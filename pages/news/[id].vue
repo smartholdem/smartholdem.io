@@ -37,6 +37,7 @@ const article = ref(getNewsSnapshotById(id))
 
 // Localized OG meta: locale-aware URL + og:locale for all 18 languages.
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg(`/news/${id}`)
+useBreadcrumbLd([{ key: 'nav.news', path: '/news' }, { name: () => article.value?.title || '', path: `/news/${id}` }])
 
 // Fall back to the remote Strapi image if the local mirror is missing.
 const onImgError = (e) => {
@@ -75,9 +76,14 @@ watchEffect(() => {
           '@context': 'https://schema.org',
           '@type': 'NewsArticle',
           headline: article.value.title,
-          image: article.value.image ? [article.value.image] : [],
+          description: (article.value.text || '').slice(0, 160),
+          url: pageUrl.value,
+          mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
+          inLanguage: locale.value,
+          image: [ogBanner, ...(article.value.image ? [article.value.image] : [])],
           datePublished: article.value.date,
-          author: { '@type': 'Organization', name: 'SmartHoldem' },
+          dateModified: article.value.updatedAt || article.value.date,
+          author: { '@type': 'Organization', name: 'SmartHoldem', url: config.public.siteUrl },
           publisher: { '@type': 'Organization', name: 'SmartHoldem', logo: { '@type': 'ImageObject', url: `${config.public.siteUrl}/favicon.png` } }
         })
       }]

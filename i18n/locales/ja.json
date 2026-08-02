@@ -16,7 +16,10 @@
     "dexTrade": "DEX取引",
     "buyHint": "STHを取得、取引、またはスワップ:",
     "getSth": "STHを取得",
-    "mission": "ミッション"
+    "mission": "ミッション",
+    "home": "ホーム",
+    "terms": "利用規約",
+    "execSummary": "エグゼクティブサマリー"
   },
   "glossary": {
     "eyebrow": "ホワイトペーパー · 付録A",

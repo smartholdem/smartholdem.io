@@ -281,6 +281,7 @@ const pokerPillars = computed(() => [
 // SEO
 // ---------------------------------------------------------------------------
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/dapps')
+useBreadcrumbLd([{ key: 'nav.dapps', path: '/dapps' }])
 useSeoMeta({
   title: () => t('dapps.seo.title'),
   description: () => t('dapps.seo.description'),

@@ -16,7 +16,10 @@
     "dexTrade": "DEX Trade",
     "buyHint": "Obtenir, échanger ou faire un swap de STH :",
     "getSth": "Obtenir STH",
-    "mission": "La Mission"
+    "mission": "La Mission",
+    "home": "Accueil",
+    "terms": "Conditions générales",
+    "execSummary": "Résumé exécutif"
   },
   "glossary": {
     "eyebrow": "Livre blanc · Annexe A",

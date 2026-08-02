@@ -16,7 +16,10 @@
     "dexTrade": "DEX Handel",
     "buyHint": "STH kaufen, handeln oder tauschen:",
     "getSth": "STH erhalten",
-    "mission": "Die Mission"
+    "mission": "Die Mission",
+    "home": "Startseite",
+    "terms": "Nutzungsbedingungen",
+    "execSummary": "Executive Summary"
   },
   "glossary": {
     "eyebrow": "Whitepaper · Anhang A",

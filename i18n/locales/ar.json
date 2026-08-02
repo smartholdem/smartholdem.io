@@ -16,7 +16,10 @@
     "dexTrade": "تداول DEX",
     "buyHint": "احصل على، تداول أو بادل STH:",
     "getSth": "احصل على STH",
-    "mission": "المهمة"
+    "mission": "المهمة",
+    "home": "الرئيسية",
+    "terms": "الشروط والأحكام",
+    "execSummary": "الملخص التنفيذي"
   },
   "glossary": {
     "eyebrow": "الورقة البيضاء · الملحق A",
