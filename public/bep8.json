@@ -1,0 +1,104 @@
+{
+  "name": "SmartHoldem",
+  "description": "Decentralized Platform for Gamers & Business",
+  "external_url": "https://smartholdem.io",
+  "image": "https://smartholdem.io/favicon.png",
+  "attributes": [
+	{
+      "name": "Online Wallet",
+      "value": "https://smartholdem.io/wallet"
+    },
+    {
+      "name": "Wallets",
+      "value": "https://smartholdem.io/wallets"
+    },
+	{
+      "name": "DeFi & AMM DPoS",
+      "value": "https://app.xbts.io/#/pools?a=sth"
+    },
+	{
+      "name": "Staking SmartHolder Constant APY 50%",
+      "value": "https://app.xbts.io/#/smartholder"
+    },
+	{
+      "name": "Smartholdem DEX XBTS",
+      "value": "https://ex.xbts.io/market/XBTSX.STH_BTS"
+    },
+	{
+      "name": "Binance DEX",
+      "value": "https://www.binance.org/en/trade/mini/STH-07AM_BUSD-BD1"
+    },
+	{
+      "name": "Uniswap (ETH Network)",
+      "value": "https://info.uniswap.org/#/pools/0x933f798d9e4bcbe529f63c6622395cc1ed147b8d"
+    },
+	{
+      "name": "Pancake Swap (BSC Network)",
+      "value": "https://pancakeswap.finance/swap"
+    },
+	{
+      "name": "MDEX Swap(HECO Network)",
+      "value": "https://ht.mdex.me/#/add/0x625d64C3384AA6d6841a1608aE0Ce48776981D38/0xa71EdC38d189767582C38A3145b5873052c3e47a1111"
+    },
+	{
+      "name": "Cross-Chain Token BSC",
+      "value": "https://bscscan.com/token/0x625d64c3384aa6d6841a1608ae0ce48776981d38"
+    },
+	{
+      "name": "Cross-Chain Token ETH",
+      "value": "https://etherscan.io/token/0x625d64C3384AA6d6841a1608aE0Ce48776981D38"
+    },
+	{
+      "name": "Cross-Chain Token HECO",
+      "value": "https://hecoinfo.com/token/0x625d64C3384AA6d6841a1608aE0Ce48776981D38"
+    },
+    {
+      "name": "AntiBounty SMM Service",
+      "value": "https://smartholdem.io/antibounty"
+    },
+    {
+      "name": "Rewarder",
+      "value": "https://smartholdem.io/rewarder"
+    },
+    {
+      "name": "Vote Listing DEX Service on STH",
+      "value": "https://vote.xbts.io/"
+    },
+    {
+      "name": "Game: Decentralized Poker",
+      "value": "https://playpoker.pro"
+    },
+    {
+      "name": "Game: Heads or Tails",
+      "value": "https://github.com/SmartHoldemDAPPs/heads-tails/releases"
+    },
+	{
+      "name": "Platform History Log",
+      "value": "https://smartholdem.io/coin"
+    },
+    {
+      "name": "Total PaperWallet",
+      "value": "https://github.com/technologiespro/paper-wallet-generator/releases"
+    },
+	{
+      "name": "YouTube",
+      "value": "https://www.youtube.com/c/smartholdem"
+    },
+	{
+      "name": "Twitter",
+      "value": "https://twitter.com/smartholdem"
+    },
+	{
+      "name": "Community",
+      "value": "https://community.smartholdem.io"
+    },
+	{
+      "name": "Marketcap",
+      "value": "https://coinpaprika.com/coin/sth-smartholdem/"
+    },
+	{
+      "name": "BlockExplorer",
+      "value": "https://blockexplorer.smartholdem.io/"
+    }
+  ]
+}
