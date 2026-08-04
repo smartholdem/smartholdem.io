@@ -902,5 +902,16 @@
       "title": "Netfory 요약 보고서 {'|'} SmartHoldem WEB 4.0",
       "description": "Web 4.0의 첫 구현 — 작동하고 검증된 프로덕션 준비 완료 스택."
     }
+  },
+  "search": {
+    "button": "검색",
+    "placeholder": "페이지, 용어집, 뉴스 검색…",
+    "noResults": "결과가 없습니다",
+    "pages": "페이지",
+    "glossary": "용어집",
+    "news": "뉴스",
+    "navigate": "이동",
+    "select": "열기",
+    "close": "닫기"
   }
 }

@@ -902,5 +902,16 @@
       "title": "Muhtasari wa Utendaji wa Netfory {'|'} SmartHoldem WEB 4.0",
       "description": "Utekelezaji wa kwanza wa Web 4.0 — mfumo unaofanya kazi, uliojaribiwa, tayari kwa uzalishaji."
     }
+  },
+  "search": {
+    "button": "Tafuta",
+    "placeholder": "Tafuta kurasa, kamusi, habari…",
+    "noResults": "Hakuna matokeo",
+    "pages": "Kurasa",
+    "glossary": "Kamusi",
+    "news": "Habari",
+    "navigate": "vinjari",
+    "select": "fungua",
+    "close": "funga"
   }
 }

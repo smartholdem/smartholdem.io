@@ -902,5 +902,16 @@
       "title": "Tóm tắt điều hành Netfory {'|'} SmartHoldem WEB 4.0",
       "description": "Triển khai Web 4.0 đầu tiên — stack hoạt động, đã kiểm chứng, sẵn sàng sản xuất."
     }
+  },
+  "search": {
+    "button": "Tìm kiếm",
+    "placeholder": "Tìm trang, thuật ngữ, tin tức…",
+    "noResults": "Không tìm thấy kết quả",
+    "pages": "Trang",
+    "glossary": "Thuật ngữ",
+    "news": "Tin tức",
+    "navigate": "điều hướng",
+    "select": "mở",
+    "close": "đóng"
   }
 }

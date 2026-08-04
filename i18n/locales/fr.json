@@ -902,5 +902,16 @@
       "title": "Résumé exécutif Netfory {'|'} SmartHoldem WEB 4.0",
       "description": "La première implémentation du Web 4.0 — un stack fonctionnel, testé et prêt pour la production."
     }
+  },
+  "search": {
+    "button": "Recherche",
+    "placeholder": "Rechercher pages, glossaire, actualités…",
+    "noResults": "Aucun résultat trouvé",
+    "pages": "Pages",
+    "glossary": "Glossaire",
+    "news": "Actualités",
+    "navigate": "naviguer",
+    "select": "ouvrir",
+    "close": "fermer"
   }
 }

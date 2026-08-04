@@ -902,5 +902,16 @@
       "title": "Netfory Executive Summary {'|'} SmartHoldem WEB 4.0",
       "description": "Web 4.0-ийн анхны хэрэгжилт — ажилладаг, туршигдсан, үйлдвэрлэлд бэлэн стек."
     }
+  },
+  "search": {
+    "button": "Хайлт",
+    "placeholder": "Хуудас, тайлбар толь, мэдээ хайх…",
+    "noResults": "Илэрц олдсонгүй",
+    "pages": "Хуудсууд",
+    "glossary": "Тайлбар толь",
+    "news": "Мэдээ",
+    "navigate": "шилжих",
+    "select": "нээх",
+    "close": "хаах"
   }
 }

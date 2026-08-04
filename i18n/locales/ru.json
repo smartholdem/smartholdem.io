@@ -902,5 +902,16 @@
       "title": "Netfory Executive Summary {'|'} SmartHoldem WEB 4.0",
       "description": "Первая реализация Web 4.0 — работающий, протестированный, production-ready стек."
     }
+  },
+  "search": {
+    "button": "Поиск",
+    "placeholder": "Поиск по страницам, глоссарию, новостям…",
+    "noResults": "Ничего не найдено",
+    "pages": "Страницы",
+    "glossary": "Глоссарий",
+    "news": "Новости",
+    "navigate": "навигация",
+    "select": "открыть",
+    "close": "закрыть"
   }
 }

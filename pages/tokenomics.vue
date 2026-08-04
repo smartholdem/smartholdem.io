@@ -620,4 +620,69 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: () => pageUrl.value }]
 })
+
+// JSON-LD: Product schema for the STH token — helps exchanges, aggregators
+// and search engines recognise the token, its contracts and trading venues.
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: () => JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: 'SmartHoldem (STH)',
+      alternateName: ['STH', 'SmartHoldem Token', 'SmartHoldem Coin'],
+      description: t('tokenomics.seo.description'),
+      image: ogImage,
+      url: pageUrl.value,
+      category: 'Cryptocurrency',
+      brand: {
+        '@type': 'Organization',
+        name: 'SmartHoldem',
+        url: siteUrl,
+        logo: `${siteUrl}/images/home/sth-logo.png`
+      },
+      additionalProperty: [
+        { '@type': 'PropertyValue', name: 'Ticker Symbol', value: 'STH' },
+        { '@type': 'PropertyValue', name: 'Blockchain', value: 'SmartHoldem (DPoS)' },
+        { '@type': 'PropertyValue', name: 'Consensus', value: 'Delegated Proof-of-Stake (DPoS)' },
+        { '@type': 'PropertyValue', name: 'Total Supply', value: '249,677,907 STH' },
+        { '@type': 'PropertyValue', name: 'Emission', value: 'Halted — deflationary model' },
+        { '@type': 'PropertyValue', name: 'Token Type', value: 'Native coin + wrapped tokens (BEP-20, ERC-20, TON Jetton, Solana SPL)' },
+        ...contracts.map(c => ({
+          '@type': 'PropertyValue',
+          name: `${c.chain} Contract Address`,
+          value: c.address
+        }))
+      ],
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'USDT',
+        availability: 'https://schema.org/InStock',
+        offerCount: 2,
+        offers: [
+          {
+            '@type': 'Offer',
+            url: 'https://trade.xbts.io/trading/XBTSX.STH_XBTSX.USDT',
+            priceCurrency: 'USDT',
+            availability: 'https://schema.org/InStock',
+            seller: { '@type': 'Organization', name: 'XBTS DEX', url: 'https://xbts.io' }
+          },
+          {
+            '@type': 'Offer',
+            url: 'https://dex-trade.com/spot/trading/STHUSDT',
+            priceCurrency: 'USDT',
+            availability: 'https://schema.org/InStock',
+            seller: { '@type': 'Organization', name: 'Dex-Trade', url: 'https://dex-trade.com' }
+          }
+        ]
+      },
+      sameAs: [
+        'https://explorer.smartholdem.io',
+        'https://github.com/smartholdem',
+        'https://x.com/smartholdem',
+        'https://t.me/smartholdem'
+      ]
+    })
+  }]
+})
 </script>

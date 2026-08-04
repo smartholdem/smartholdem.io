@@ -23,6 +23,13 @@
 
       <div class="flex items-center gap-2">
         <span v-if="isSmartNet" class="mono hidden items-center gap-1 rounded-md border border-neon-green/40 bg-neon-green/10 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-neon-green sm:inline-flex" title="Running inside the SmartNet decentralized network">SmartNet</span>
+        <button
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border hair-border transition-colors hover:border-neon-cyan/60 hover:text-neon-cyan"
+          :aria-label="t('search.button')" :title="t('search.button')"
+          @click="searchOpen = true"
+        >
+          <Search class="h-4 w-4" />
+        </button>
         <LangSwitch class="hidden lg:block" />
         <ThemeToggle />
         <button class="inline-flex h-10 w-10 items-center justify-center rounded-lg border hair-border lg:hidden" aria-label="Menu" @click="mobileOpen = !mobileOpen">
@@ -56,17 +63,23 @@
         </div>
       </nav>
     </transition>
+
+    <!-- Global search palette (Cmd+K / Ctrl+K) -->
+    <SearchPalette v-model="searchOpen" />
   </header>
 </template>
 
 <script setup>
-import { ChevronDown, Menu, X } from 'lucide-vue-next'
+import { ChevronDown, Menu, X, Search } from 'lucide-vue-next'
 const { t } = useI18n()
 const localePath = useLocalePath()
 const { links, isSmartNet, openWallet } = useSmartNet()
 const mobileOpen = ref(false)
 const route = useRoute()
 watch(() => route.fullPath, () => { mobileOpen.value = false })
+
+// Global search palette (Cmd+K / Ctrl+K)
+const searchOpen = ref(false)
 
 // In the SmartNet client the "Wallet" item opens the built-in wallet panel
 // instead of navigating to the web wallet URL.

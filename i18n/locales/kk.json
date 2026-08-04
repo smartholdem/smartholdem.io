@@ -902,5 +902,16 @@
       "title": "Netfory Executive Summary {'|'} SmartHoldem WEB 4.0",
       "description": "Web 4.0-дің алғашқы іске асырылуы — жұмыс істейтін, сыналған, өндіріске дайын стек."
     }
+  },
+  "search": {
+    "button": "Іздеу",
+    "placeholder": "Беттер, глоссарий, жаңалықтар бойынша іздеу…",
+    "noResults": "Ештеңе табылмады",
+    "pages": "Беттер",
+    "glossary": "Глоссарий",
+    "news": "Жаңалықтар",
+    "navigate": "навигация",
+    "select": "ашу",
+    "close": "жабу"
   }
 }

@@ -902,5 +902,16 @@
       "title": "Netfory エグゼクティブサマリー {'|'} SmartHoldem WEB 4.0",
       "description": "Web 4.0 初の実装 — 動作し、テスト済みで、本番運用可能なスタック。"
     }
+  },
+  "search": {
+    "button": "検索",
+    "placeholder": "ページ・用語集・ニュースを検索…",
+    "noResults": "結果が見つかりません",
+    "pages": "ページ",
+    "glossary": "用語集",
+    "news": "ニュース",
+    "navigate": "移動",
+    "select": "開く",
+    "close": "閉じる"
   }
 }

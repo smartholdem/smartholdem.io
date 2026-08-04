@@ -902,5 +902,16 @@
       "title": "الملخص التنفيذي لـ Netfory {'|'} SmartHoldem WEB 4.0",
       "description": "أول تطبيق لـ Web 4.0 — حزمة عاملة ومختبرة وجاهزة للإنتاج."
     }
+  },
+  "search": {
+    "button": "بحث",
+    "placeholder": "ابحث في الصفحات والمسرد والأخبار…",
+    "noResults": "لا توجد نتائج",
+    "pages": "الصفحات",
+    "glossary": "المسرد",
+    "news": "الأخبار",
+    "navigate": "تنقّل",
+    "select": "فتح",
+    "close": "إغلاق"
   }
 }

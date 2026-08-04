@@ -901,5 +901,16 @@
       "title": "Netfory 执行摘要 {'|'} SmartHoldem WEB 4.0",
       "description": "Web 4.0 的首个实现 — 可运行、经过测试的生产级技术栈。"
     }
+  },
+  "search": {
+    "button": "搜索",
+    "placeholder": "搜索页面、词汇表、新闻…",
+    "noResults": "未找到结果",
+    "pages": "页面",
+    "glossary": "词汇表",
+    "news": "新闻",
+    "navigate": "导航",
+    "select": "打开",
+    "close": "关闭"
   }
 }

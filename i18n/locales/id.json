@@ -901,5 +901,16 @@
       "title": "Ringkasan Eksekutif Netfory {'|'} SmartHoldem WEB 4.0",
       "description": "Implementasi pertama Web 4.0 — stack yang berfungsi, teruji, dan siap produksi."
     }
+  },
+  "search": {
+    "button": "Cari",
+    "placeholder": "Cari halaman, glosarium, berita…",
+    "noResults": "Tidak ada hasil",
+    "pages": "Halaman",
+    "glossary": "Glosarium",
+    "news": "Berita",
+    "navigate": "navigasi",
+    "select": "buka",
+    "close": "tutup"
   }
 }
