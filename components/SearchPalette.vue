@@ -1,6 +1,7 @@
 <template>
-  <Teleport to="body">
-    <Transition name="sp">
+  <ClientOnly>
+    <Teleport to="body">
+      <Transition name="sp">
       <div v-if="modelValue" class="fixed inset-0 z-[100]" role="dialog" aria-modal="true" :aria-label="t('search.button')">
         <div class="fixed inset-0 bg-black/60 backdrop-blur-sm" @click="close"></div>
 
@@ -60,6 +61,7 @@
       </div>
     </Transition>
   </Teleport>
+  </ClientOnly>
 </template>
 
 <script setup>

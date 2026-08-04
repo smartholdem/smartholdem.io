@@ -331,6 +331,7 @@
     </section>
 
     <!-- ============ NETFORY LAUNCH MODAL ============ -->
+    <ClientOnly>
     <Teleport to="body">
       <transition
         enter-active-class="transition-opacity duration-300 ease-out"
@@ -389,6 +390,7 @@
         </div>
       </transition>
     </Teleport>
+    </ClientOnly>
   </div>
 </template>
 

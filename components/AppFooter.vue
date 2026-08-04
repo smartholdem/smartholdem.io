@@ -98,7 +98,6 @@ import { Github, Send, Youtube, Mail, Rss } from 'lucide-vue-next'
 const { t } = useI18n()
 const localePath = useLocalePath()
 const { links, isSmartNet, openWallet } = useSmartNet()
-const year = new Date().getFullYear()
 
 const onWallet = (e) => {
   if (isSmartNet.value) { e.preventDefault(); openWallet() }

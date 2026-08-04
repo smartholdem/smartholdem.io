@@ -23,14 +23,23 @@
 
       <div class="flex items-center gap-2">
         <span v-if="isSmartNet" class="mono hidden items-center gap-1 rounded-md border border-neon-green/40 bg-neon-green/10 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-neon-green sm:inline-flex" title="Running inside the SmartNet decentralized network">SmartNet</span>
-        <button
-          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border hair-border transition-colors hover:border-neon-cyan/60 hover:text-neon-cyan"
-          :aria-label="t('search.button')" :title="t('search.button')"
-          @click="searchOpen = true"
-        >
-          <Search class="h-4 w-4" />
-        </button>
-        <LangSwitch class="hidden lg:block" />
+        <div class="sth-tip-wrap relative">
+          <button
+            class="inline-flex h-10 w-10 items-center justify-center rounded-lg border hair-border transition-colors hover:border-neon-cyan/60 hover:text-neon-cyan"
+            :aria-label="t('search.button')"
+            @click="searchOpen = true"
+          >
+            <Search class="h-4 w-4" />
+          </button>
+          <!-- Subtle Cmd+K / Ctrl+K hint (shows on hover / focus only) -->
+          <ClientOnly>
+            <span class="sth-tip" role="tooltip">
+              <span>{{ t('search.button') }}</span>
+              <kbd class="mono sth-tip-kbd">{{ kbdLabel }}</kbd>
+            </span>
+          </ClientOnly>
+        </div>
+        <LangSwitch />
         <ThemeToggle />
         <button class="inline-flex h-10 w-10 items-center justify-center rounded-lg border hair-border lg:hidden" aria-label="Menu" @click="mobileOpen = !mobileOpen">
           <X v-if="mobileOpen" class="h-5 w-5" />
@@ -80,6 +89,14 @@ watch(() => route.fullPath, () => { mobileOpen.value = false })
 
 // Global search palette (Cmd+K / Ctrl+K)
 const searchOpen = ref(false)
+// Platform-adaptive keyboard hint (shown only on hover). Starts as 'Ctrl K' to
+// match SSR; flips to '⌘K' on macOS after mount — safe inside <ClientOnly>.
+const kbdLabel = ref('Ctrl K')
+onMounted(() => {
+  if (typeof navigator !== 'undefined' && /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent || '')) {
+    kbdLabel.value = '⌘K'
+  }
+})
 
 // In the SmartNet client the "Wallet" item opens the built-in wallet panel
 // instead of navigating to the web wallet URL.
@@ -131,4 +148,48 @@ html:not(.dark) .dropdown-panel{
 .fade-enter-from,.fade-leave-to{opacity:0}
 .slide-enter-active,.slide-leave-active{transition:all .2s ease}
 .slide-enter-from,.slide-leave-to{opacity:0;transform:translateY(-8px)}
+
+/* Subtle keyboard-shortcut tooltip for the search button.
+   Absolutely positioned so it never affects header layout.
+   Appears on hover of the wrapper or when the button is focused via keyboard. */
+.sth-tip{
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .55rem .35rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  background: rgba(13,17,40,.96);
+  color: var(--text);
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 10px 24px -12px rgba(0,0,0,.6);
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity .14s ease, transform .14s ease;
+}
+html:not(.dark) .sth-tip{ background: rgba(255,255,255,.98); }
+.sth-tip-wrap:hover .sth-tip,
+.sth-tip-wrap:focus-within .sth-tip{
+  opacity: 1;
+  transform: translateY(0);
+}
+.sth-tip-kbd{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.05);
+  font-size: 10px;
+  font-weight: 600;
+  opacity: .9;
+}
 </style>

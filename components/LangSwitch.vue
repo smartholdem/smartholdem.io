@@ -21,7 +21,7 @@
   </div>
 
   <!-- DESKTOP / DROPDOWN variant — click to toggle (no hover). -->
-  <div v-else v-click-outside="close" class="relative">
+  <div v-else v-click-outside="close" class="relative hidden lg:block">
     <button
       class="inline-flex h-10 items-center gap-1.5 rounded-lg border hair-border px-3 text-sm font-medium transition-colors hover:text-neon-cyan hover:border-neon-cyan"
       aria-haspopup="true"
