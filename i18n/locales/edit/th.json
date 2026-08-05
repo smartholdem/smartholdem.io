@@ -47,13 +47,13 @@
     "title": "Netfory: เว็บที่ทำงานเพื่อคุณ",
     "subtitle": "การใช้งาน Web 4.0 ครั้งแรก ไม่ใช่แนวคิด ไม่ใช่แผนที่ เป็นสแต็กที่ทำงานได้และผ่านการทดสอบแล้ว",
     "tagline": "อย่าเข้าชมเว็บ จงเป็นเว็บ",
-    "subtitle2": "สแต็ก Web 4.0 ที่พร้อมใช้งานจริงเป็นครั้งแรก ไม่มีโครงสร้างพื้นฐาน เอกราชสมบูรณ์",
+    "subtitle2": "Web 4.0 คืออินเทอร์เน็ตทางกายภาพแบบกระจายศูนย์และแบบ Peer-to-Peer และเรากำลังสร้างมันขึ้นมา",
     "ctaPrimary": "อ่านสรุปผู้บริหาร",
     "ctaSecondary": "เข้าร่วม Telegram",
     "ctaTertiary": "ดาวน์โหลด Netfory Client",
     "micro": "เครือข่ายไม่ได้รับการจัดการโดยเอเจนต์ เครือข่ายคือเอเจนต์",
-    "ctaMission": "The Mission",
-    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    "ctaMission": "พันธกิจ",
+    "microTag": "สแต็ก Web 4.0 ที่พร้อมใช้งานจริงเป็นครั้งแรก ไม่มีโครงสร้างพื้นฐาน เอกราชสมบูรณ์"
   },
   "problem": {
     "eyebrow": "ปัญหา",
@@ -66,8 +66,8 @@
   "solution": {
     "eyebrow": "วิธีแก้ปัญหา",
     "title": "Netfory: โครงสร้างพื้นฐาน Web 4.0 ที่เป็นอิสระ",
-    "text": "Netfory แทนที่สแต็กโฮสติ้งรวมศูนย์ด้วยเครือข่ายการกระจายที่อยู่เนื้อหาแบบกระจายอำนาจ ขับเคลื่อนโดยชั้นการขนส่ง Iroh (QUIC) และการตรวจสอบ BLAKE3 ทาง cryptographic ผ่านโมเดลเศรษฐกิจ Proof-of-Utility ดั้งเดิม ผู้เข้าร่วมเครือข่าย (seeder) จะได้รับค่าตอบแทนโดยตรงเป็น STH สำหรับการให้พื้นที่จัดเก็บและแบนด์วิดท์",
-    "callout": "ต้องระบุการแก้ไขที่สำคัญต่อการเล่าเรื่องที่มีอยู่อย่างชัดเจน: เครือข่ายไม่ได้รับการจัดการโดยเอเจนต์ เครือข่ายคือเอเจนต์ ไคลเอนต์ของผู้ใช้แต่ละคนเป็นโหนดอิสระที่ค้นพบ peers ตรวจสอบเนื้อหา เจรจาเส้นทาง และรักษาระบบเศรษฐกิจ อุปกรณ์ของผู้ใช้คือเอเจนต์"
+    "text": "Netfory แทนที่ระบบโฮสติ้งแบบรวมศูนย์ด้วยเครือข่ายกระจายข้อมูลแบบกระจายศูนย์ที่ระบุเนื้อหาได้ โดยใช้เลเยอร์การขนส่ง Iroh (QUIC) และการตรวจสอบการเข้ารหัส BLAKE3 ผ่านโมเดลเศรษฐกิจแบบ Proof-of-Utility ดั้งเดิม ผู้เข้าร่วมเครือข่าย (seeder) จะได้รับค่าตอบแทนโดยตรงเป็น STH สำหรับการให้บริการพื้นที่จัดเก็บและแบนด์วิดท์",
+    "callout": "เครือข่ายไม่ได้รับการจัดการโดยเอเจนต์ เครือข่ายคือเอเจนต์แบบกระจาย Netfory คือระบบปฏิบัติการของอินเทอร์เน็ตทางกายภาพแบบกระจาย ไคลเอนต์เดสก์ท็อปทุกตัวคือโหนดอิสระที่ค้นหาพีร์ ตรวจสอบเนื้อหา และรักษาเศรษฐกิจ อุปกรณ์ของคุณไม่ได้แค่เข้าถึงเว็บ อุปกรณ์ของคุณคือเว็บ"
   },
   "architecture": {
     "eyebrow": "สถาปัตยกรรม",
@@ -149,13 +149,13 @@
   "depin": {
     "eyebrow": "DePIN",
     "title": "เครือข่ายกลายเป็น Cloud",
-    "text": "ในขั้นตอนที่ 3 ของแผนที่ของเรา Netfory วิวัฒนาการเป็นศูนย์ข้อมูลแบบกระจายอำนาจระดับโลก ผู้ใช้ทั่วไปสร้างรายได้จากพื้นที่จัดเก็บและแบนด์วิดท์ที่ว่างโดยการให้เช่าแก่บริษัทและองค์กรโดยตรง ไม่มี AWS ไม่มี Cloudflare ไม่มีตัวกลาง มีเพียงผู้ใช้ โหนด และการชำระเงิน $STH",
+    "text": "ในแผนงานระยะที่ 3 ของเรา Netfory จะพัฒนาไปสู่ศูนย์ข้อมูลแบบกระจายศูนย์ระดับโลก ผู้ใช้สามารถสร้างรายได้จากพื้นที่จัดเก็บข้อมูลและแบนด์วิดท์ที่ไม่ได้ใช้งานโดยการให้เช่าโดยตรงแก่บริษัทและองค์กรต่างๆ",
     "badge": "เครือข่ายคือ Cloud",
     "s1v": "ไม่มีโครงสร้างพื้นฐาน",
     "s1l": "ไม่มี AWS ไม่มี Google Cloud ไม่มี Vercel",
     "s2v": "เป็นเจ้าของโดยผู้ใช้",
     "s2l": "ทุกโหนดเป็นผู้เข้าร่วม ไม่ใช่ผลิตภัณฑ์",
-    "s3v": "$STH Settlements",
+    "s3v": "การคำนวณใน STH",
     "s3l": "ธุรกรรม B2B ทั้งหมดเป็นเหรียญดั้งเดิม"
   },
   "web4": {
@@ -818,76 +818,76 @@
     }
   },
   "missionTeaser": {
-    "eyebrow": "The Mission",
-    "titleA": "An Internet for Humanity. Secured by ",
-    "titleHi": "Mathematics",
+    "eyebrow": "พันธกิจ",
+    "titleA": "อินเทอร์เน็ตเพื่อมนุษยชาติ ปกป้องโดย ",
+    "titleHi": "คณิตศาสตร์",
     "titleB": ".",
-    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
-    "p1Title": "Censorship-Resistant Comms",
-    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
-    "p2Title": "Durable Archives",
-    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
-    "p3Title": "Math Over Policy",
-    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
-    "cta": "Push Humanity Forward"
+    "text": "Web 4.0 คือความก้าวหน้าเพื่อความเป็นอิสระของมนุษย์ ระบบปฏิบัติการ Netfory กำลังสร้างโครงสร้างพื้นฐานที่จำเป็นเพื่อปกป้องสิทธิดิจิทัล รับประกันว่าเสรีภาพในการพูดจะได้รับการคุ้มครองด้วยคณิตศาสตร์และการกำกับดูแลแบบกระจาย",
+    "p1Title": "การสื่อสารที่ทนทานต่อการเซ็นเซอร์",
+    "p1Text": "โปรโตคอลที่ไม่สามารถบล็อกได้สำหรับการแสดงออกและการเผยแพร่ เครือข่ายดิจิทัลแบบกระจายที่รับประกันการเข้าถึงสากลและการเชื่อมต่อที่สม่ำเสมอสำหรับทุกคน ทุกที่",
+    "p2Title": "คลังข้อมูลที่ยั่งยืน",
+    "p2Text": "ความทรงจำด้านวารสารศาสตร์ วิทยาศาสตร์ และพลเมืองที่คงอยู่ตราบเท่าที่เพียร์ตัวเดียวถือครองข้อมูล",
+    "p3Title": "อินเทอร์เน็ตถัดไป",
+    "p3Text": "โครงสร้างพื้นฐานที่เปิดกว้าง ตรวจสอบได้ และทนทานต่อการเซ็นเซอร์เพื่อเสรีภาพของมนุษย์ในยุคดิจิทัล",
+    "cta": "ผลักดันมนุษยชาติไปข้างหน้า"
   },
   "mission": {
     "hero": {
-      "eyebrow": "Manifesto",
-      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
-      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
-      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
-      "ctaPrimary": "Download Netfory Client",
-      "ctaSecondary": "Read White Paper",
-      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+      "eyebrow": "คำประกาศ",
+      "title": "โปรโตคอล Web 4.0: ความก้าวหน้าเพื่อมนุษยชาติ",
+      "subtitle": "พันธกิจของเราคือการปรับปรุงอินเทอร์เน็ตผ่านการพัฒนาระบบปฏิบัติการ Netfory โครงสร้างพื้นฐาน Web4 และเทคโนโลยีพื้นฐานที่ส่งเสริมความเป็นอิสระของมนุษย์",
+      "quote": "Netfory คือระบบปฏิบัติการของอินเทอร์เน็ตทางกายภาพแบบกระจาย ไม่มีเซิร์ฟเวอร์กลาง ไม่มีการควบคุมขององค์กร มีเพียงรหัส การเข้ารหัส และคุณ",
+      "ctaPrimary": "ดาวน์โหลด Netfory Client",
+      "ctaSecondary": "อ่าน White Paper",
+      "caption": "Web 4.0 คืออินเทอร์เน็ตทางกายภาพแบบกระจาย Peer-to-Peer"
     },
     "deplatform": {
-      "eyebrow": "Chapter I",
-      "titleA": "The End of ",
-      "titleHi": "Deplatforming",
-      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
-      "p2Bold": "Web 4.0 changes the default.",
-      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
-      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
-      "statLabel": "Censorship cost",
-      "statValue": "from $0 → ∞"
+      "eyebrow": "บทที่ I",
+      "titleA": "จุดจบของ ",
+      "titleHi": "การลบออกจากแพลตฟอร์ม",
+      "p1": "ในสภาพแวดล้อมที่เป็นศัตรู เสรีภาพในการพูดและการกระจายข้อมูลเป็นสิทธิ์แรกที่ถูกจำกัด แพลตฟอร์มแบบรวมศูนย์สามารถลบเสียงได้ด้วยการคลิกเพียงครั้งเดียว",
+      "p2Bold": "Web 4.0 เปลี่ยนค่าเริ่มต้น",
+      "p3": "การดำเนินการลบหรือบล็อกเนื้อหาขนาดใหญ่ล้มเหลวเพราะเนื้อหาและการประสานงานได้รับการรักษาไว้ในเครือข่ายแบบกระจาย การลบออกจากแพลตฟอร์มไม่ใช่เครื่องมือควบคุมที่คุ้มค่าและราคาถูกอีกต่อไป เสรีภาพในการแสดงออกเปลี่ยนจากการยอมรับของแพลตฟอร์มเป็นความยืดหยุ่นของเครือข่าย",
+      "p4": "โครงสร้างพื้นฐานการส่งข้อความ การเผยแพร่ และกราฟทางสังคมที่เชื่อถือได้กลายเป็นค่าเริ่มต้นสำหรับนักกิจกรรม นักข่าว ชุมชน และผู้ใช้ทั่วไป เนื้อหาคงอยู่หลังการลบ ผู้ชมคงอยู่หลังการลบออกจากแพลตฟอร์ม โปรโตคอล SmartNet ก่อร่างสร้างกระดูกสันหลังของโครงสร้างพื้นฐานข้อมูลรุ่นใหม่นี้ ทำให้การเซ็นเซอร์มีค่าใช้จ่ายสูงแทนที่จะง่ายดาย",
+      "statLabel": "ค่าใช้จ่ายในการเซ็นเซอร์",
+      "statValue": "จาก $0 → ∞"
     },
     "archives": {
-      "eyebrow": "Chapter II",
-      "titleA": "Durable ",
-      "titleHi": "Archives",
-      "subtitle": "Solving the Long-Term Memory Crisis",
-      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
-      "p2Bold": "Netfory solves the problem of long-term storage.",
-      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
-      "statLabel": "Survival threshold",
-      "statValue": "1 peer"
+      "eyebrow": "บทที่ II",
+      "titleA": "คลังข้อมูล ",
+      "titleHi": "ที่ยั่งยืน",
+      "subtitle": "แก้ปัญหาวิกฤตความทรงจำระยะยาว",
+      "p1": "เราจะอนุรักษ์การสืบสวนสอบสวนทางวารสารศาสตร์ บันทึกทางวิทยาศาสตร์ และเอกสารของสังคมพลเมืองอย่างไร ใน Web 2.0 การปิดเซิร์ฟเวอร์หมายความว่าประวัติศาสตร์ถูกลบ",
+      "p2Bold": "Netfory แก้ปัญหาการจัดเก็บข้อมูลระยะยาว",
+      "p3": "ผ่านสถาปัตยกรรมที่อยู่เนื้อหาได้ คลังข้อมูลด้านวารสารศาสตร์ วิทยาศาสตร์ และความทรงจำพลเมืองจะได้รับการอนุรักษ์อย่างถาวร ตราบเท่าที่ข้อมูลมีอยู่อย่างน้อยหนึ่งเพียร์ในเครือข่าย จะไม่สามารถทำลายได้",
+      "statLabel": "เกณฑ์การอยู่รอด",
+      "statValue": "1 เพียร์"
     },
     "impact": {
-      "eyebrow": "Chapter III",
-      "titleA": "Measuring the ",
-      "titleHi": "Impact",
-      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
-      "m1Title": "Durable Archives",
-      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
-      "m2Title": "Cross-Platform Portability",
-      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
-      "m3Title": "Web 4.0 Protocol Adoption",
-      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
-      "m4Title": "Adversarial Environment",
-      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+      "eyebrow": "บทที่ III",
+      "titleA": "วัด ",
+      "titleHi": "ผลกระทบท",
+      "subtitle": "เราไม่เพียงสร้างเทคโนโลยี เ ölçüมีผลกระทบจริงต่อเสรีภาพของมนุษย์",
+      "m1Title": "คลังข้อมูลที่ยั่งยืน",
+      "m1Text": "ปริมาณความทรงจำด้านวารสารศาสตร์ วิทยาศาสตร์ และพลเมืองที่จัดเก็บอย่างถาวรและสามารถค้นหาได้ทันทีบนโครงสร้างพื้นฐานที่อยู่เนื้อหาได้",
+      "m2Title": "อธิปไตยโค้ด DevHub",
+      "m2Text": "จำนวนนักพัฒนาที่เผยแพร่ dApps และคลังเก็บที่ไม่สามารถเซ็นเซอร์ได้โดยตรงไปยังเครือข่าย P2P อิสระจากการห้ามของแพลตฟอร์มแบบรวมศูนย์",
+      "m3Title": "การยอมรับโปรโตคอล Web 4.0",
+      "m3Text": "จำนวนเว็บไซต์ dApps เกม และหนังสือดิจิทัลที่部署ทันทีเข้าสู่สภาพแวดล้อมแบบกระจายอิสระที่ทนทานต่อการเซ็นเซอร์",
+      "m4Title": "สภาพแวดล้อมที่เป็นศัตรู",
+      "m4Text": "จำนวนผู้ใช้ที่ใช้งานอยู่ในสภาพแวดล้อมที่เชื่อมต่อมีจำกัดหรือถูกเซ็นเซอร์อย่างหนักโดยใช้เครื่องมือที่ทนทานต่อความผิดพลาด"
     },
     "finalCta": {
-      "eyebrow": "Join us",
-      "titleA": "Join the Network Where ",
-      "titleHi": "YOU",
-      "titleB": " Are the Network",
-      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
-      "quote": "The era of renting your digital existence is over.",
-      "tagline": "Don't visit the web. Be the web.",
-      "ctaPrimary": "Push Humanity Forward",
-      "ctaSecondary": "Read the Whitepaper",
-      "ctaTertiary": "Join the Community"
+      "eyebrow": "ร่วมกับเรา",
+      "titleA": "ร่วมเครือข่ายที่ ",
+      "titleHi": "คุณ",
+      "titleB": " คือเครือข่าย",
+      "p1": "Netfory คือเครือข่าย Web 4.0 ที่สร้างเพื่อมนุษยชาติ ให้บริการดิจิทัลที่เข้าถึงได้สากล รับประกันการเชื่อมต่อที่เสถียรและการเข้าถึงที่สมบูรณ์สำหรับผู้คนทั่วโลกโดยไม่คำนึงถึงภูมิศาสตร์",
+      "quote": "ยุคการเช่าตัวตนดิจิทัลของคุณสิ้นสุดลงแล้ว",
+      "tagline": "อย่าเข้าชมเว็บ จงเป็นเว็บ",
+      "ctaPrimary": "ผลักดันมนุษยชาติไปข้างหน้า",
+      "ctaSecondary": "อ่าน Whitepaper",
+      "ctaTertiary": "เข้าร่วมชุมชน"
     },
     "seo": {
       "title": "พันธกิจ {'|'} SmartHoldem Web 4.0 — อินเทอร์เน็ตเพื่อมนุษยชาติ",

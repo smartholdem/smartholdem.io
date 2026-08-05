@@ -39,7 +39,7 @@
     "copyLink": "直接リンクをコピー",
     "linkCopied": "リンクをクリップボードにコピーしました",
     "top": "トップに戻る",
-    "seoTitle": "用語集 - Netforyホワイトペーパー（Web 4.0）{'|'} SmartHoldem",
+    "seoTitle": "用語集 - Netforyホワイトペーパー（Web 4.0）| SmartHoldem",
     "seoDescription": "Netforyホワイトペーパーで使用されるすべての技術用語の対話式アルファベット用語集: BLAKE3, Iroh, Proof-of-Utility, DHT, DPoS, STH, Byte-Hours, SmartNetなど。"
   },
   "hero": {
@@ -47,13 +47,13 @@
     "title": "Netfory: あなたのために働くWeb",
     "subtitle": "Web 4.0の最初の実装。コンセプトではない。ロードマップではない。動作し、テストされたスタック。",
     "tagline": "Webを訪れるな。Webになれ。",
-    "subtitle2": "最初の本番対応Web 4.0スタック。ゼロインフラ。絶対的な自律性。",
+    "subtitle2": "Web 4.0とは、分散型ピアツーピアの物理的なインターネットのことです。そして、私たちはそれを構築しているのです。",
     "ctaPrimary": "エグゼクティブサマリーを読む",
     "ctaSecondary": "Telegramに参加",
     "ctaTertiary": "Netforyクライアントをダウンロード",
     "micro": "ネットワークはエージェントによって管理されない。ネットワーク自体がエージェントである。",
-    "ctaMission": "The Mission",
-    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    "ctaMission": "ミッション",
+    "microTag": "最初の本番対応Web 4.0スタック。ゼロインフラ。絶対的な自律性。"
   },
   "problem": {
     "eyebrow": "問題",
@@ -66,8 +66,8 @@
   "solution": {
     "eyebrow": "解決策",
     "title": "Netfory: 自律型Web 4.0インフラ",
-    "text": "Netforyは、Iroh（QUIC）トランスポート層とBLAKE3暗号検証によって駆動される分散型、コンテンツアドレス指定分布ネットワークにより、中央集権ホスティングスタックを置き換えます。ネイティブのProof-of-Utility経済モデルを通じて、ネットワーク参加者（シーダー）はストレージと帯域幅の提供に対してSTHで直接報酬を受け取ります。",
-    "callout": "優勢なナラティブに対する重要な修正を明確に述べる必要があります：ネットワークはエージェントによって管理されない。ネットワーク自体がエージェントである。すべてのユーザーのクライアント自体が自律ノードであり、ピアを発見し、コンテンツを検証し、ルートを交渉し、経済を維持します。ユーザーのデバイスがエージェントです。"
+    "text": "Netforyは、集中型ホスティングスタックを、Iroh（QUIC）トランスポート層とBLAKE3暗号検証技術を基盤とする、分散型コンテンツアドレス指定配信ネットワークに置き換えます。独自のプルーフ・オブ・ユーティリティ経済モデルにより、ネットワーク参加者（シーダー）は、ストレージと帯域幅の提供に対してSTHで直接報酬を受け取ります。",
+    "callout": "ネットワークはエージェントによって管理されていません。ネットワーク自体が分散型エージェントです。Netforyは分散型物理インターネットのオペレーティングシステムです。すべてのデスクトップクライアントはピアを発見し、コンテンツを検証し、経済を維持する自律ノードです。あなたのデバイスは単にウェブにアクセスするのではありません。あなたのデバイス自体がウェブです。"
   },
   "architecture": {
     "eyebrow": "アーキテクチャ",
@@ -149,13 +149,13 @@
   "depin": {
     "eyebrow": "DePIN",
     "title": "ネットワークがクラウドになる",
-    "text": "ロードマップのフェーズ3で、Netforyはグローバル分散型データセンターに進化します。一般ユーザーはアイドルストレージと帯域幅を企業に直接レンタルすることで収益化します。AWSもCloudflareもありません。仲介者もいません。ユーザー、ノード、$STH決済のみです。",
+    "text": "ロードマップのフェーズ3では、Netforyはグローバルな分散型データセンターへと進化します。一般ユーザーは、遊休ストレージと帯域幅を企業や事業体に直接貸し出すことで収益化できます。",
     "badge": "ネットワークがクラウドである",
     "s1v": "ゼロインフラ",
     "s1l": "AWSも、Google Cloudも、Vercelもありません。",
     "s2v": "ユーザー所有",
     "s2l": "すべてのノードは参加者であり、製品ではありません。",
-    "s3v": "$STH決済",
+    "s3v": "STHでの計算",
     "s3l": "すべてのB2B取引はネイティブコインで行います。"
   },
   "web4": {
@@ -819,76 +819,76 @@
     }
   },
   "missionTeaser": {
-    "eyebrow": "The Mission",
-    "titleA": "An Internet for Humanity. Secured by ",
-    "titleHi": "Mathematics",
-    "titleB": ".",
-    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
-    "p1Title": "Censorship-Resistant Comms",
-    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
-    "p2Title": "Durable Archives",
-    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
-    "p3Title": "Math Over Policy",
-    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
-    "cta": "Push Humanity Forward"
+    "eyebrow": "使命",
+    "titleA": "人類のためのインターネット。 ",
+    "titleHi": "数学",
+    "titleB": " によって保護される。",
+    "text": "Web 4.0は、人類の自律性のための画期的な進歩です。Netforyオペレーティングシステムは、デジタル権利を保護するための基盤インフラを構築し、表現の自由が数学と分散型ガバナンスによって保護されることを保証します。",
+    "p1Title": "検閲耐性コミュニケーション",
+    "p1Text": "表現と出版のためのブロック不可能なプロトコル。すべての人に普遍的なアクセスと一貫した接続性を保証する分散型デジタルユーティリティ。",
+    "p2Title": "永続アーカイブ",
+    "p2Text": "1つのピアがデータを保持している限り存続するジャーナリズム、科学、市民の記憶。",
+    "p3Title": "次のインターネット",
+    "p3Text": "デジタル時代における人類の自由のためのオープンで検で検証可能、検閲耐性のあるインフラ。",
+    "cta": "人類を前進させる"
   },
   "mission": {
     "hero": {
-      "eyebrow": "Manifesto",
-      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
-      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
-      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
-      "ctaPrimary": "Download Netfory Client",
-      "ctaSecondary": "Read White Paper",
-      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+      "eyebrow": "マニフェスト",
+      "title": "Web 4.0プロトコル：人類のための画期的な進歩",
+      "subtitle": "私たちの使命は、Netforyオペレーティングシステム、Web4インフラ、および人類の自律性を促進する基盤技術を開発することでインターネットを向上させることです。",
+      "quote": "Netforyは分散型物理インターネットのオペレーティングシステムです。中央サーバーなし。企業の管理なし。コード、暗号化、そしてあなただけ。",
+      "ctaPrimary": "Netforyクライアントをダウンロード",
+      "ctaSecondary": "White Paperを読む",
+      "caption": "Web 4.0は分散型ピアツーピア物理インターネットです。"
     },
     "deplatform": {
-      "eyebrow": "Chapter I",
-      "titleA": "The End of ",
-      "titleHi": "Deplatforming",
-      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
-      "p2Bold": "Web 4.0 changes the default.",
-      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
-      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
-      "statLabel": "Censorship cost",
-      "statValue": "from $0 → ∞"
+      "eyebrow": "第1章",
+      "titleA": "",
+      "titleHi": "プラットフォーム排除の終焉",
+      "p1": "敵対的な環境では、表現の自由と情報配分は制限される最初の権利です。中央集権型プラットフォームは、1回のクリックで声を消すことができます。",
+      "p2Bold": "Web 4.0はデフォルトを変える。",
+      "p3": "大規模なコンテンツ削除またはブロック操作は、コンテンツと調整が分散型ネットワーク全体で保持されるため失敗します。プラットフォーム排除はもはや実行可能で低コストな制御ツールではありません。表現の自由はプラットフォームの寛容からネットワークの回復力へと移行します。",
+      "p4": "信頼できるメッセージング、出版、ソーシャルグラフインフラが活動家、ジャーナリスト、コミュニティ、一般ユーザーのデフォルトになります。コンテンツは削除後も存続します。視聴者はプラットフォーム排除後も存続します。SmartNetプロトコルはこの新しい世代の情報インフラの背骨を形成し、検閲を些細に簡単ではなく prohibitive に高価にします。",
+      "statLabel": "検閲コスト",
+      "statValue": "$0 → ∞から"
     },
     "archives": {
-      "eyebrow": "Chapter II",
-      "titleA": "Durable ",
-      "titleHi": "Archives",
-      "subtitle": "Solving the Long-Term Memory Crisis",
-      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
-      "p2Bold": "Netfory solves the problem of long-term storage.",
-      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
-      "statLabel": "Survival threshold",
-      "statValue": "1 peer"
+      "eyebrow": "第2章",
+      "titleA": "永続",
+      "titleHi": "アーカイブ",
+      "subtitle": "長期記憶危機の解決",
+      "p1": "ジャーナリズムの調査、科学記録、市民社会の記録をどう保存しますか？ Web 2.0では、サーバーのシャットダウンは歴史が消去されることを意味します。",
+      "p2Bold": "Netforyは長期保存の問題を解決します。",
+      "p3": "コンテンツアドレス指定アーキテクチャを通じて、ジャーナリズム、科学、市民の記憶のアーカイブは永続的に保存されます。ネットワーク内の少なくとも1つのピアに情報が存在する限り、破壊することはできません。",
+      "statLabel": "生存閾値",
+      "statValue": "1ピア"
     },
     "impact": {
-      "eyebrow": "Chapter III",
-      "titleA": "Measuring the ",
-      "titleHi": "Impact",
-      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
-      "m1Title": "Durable Archives",
-      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
-      "m2Title": "Cross-Platform Portability",
-      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
-      "m3Title": "Web 4.0 Protocol Adoption",
-      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
-      "m4Title": "Adversarial Environment",
-      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+      "eyebrow": "第3章",
+      "titleA": "",
+      "titleHi": "インパクト",
+      "subtitle": "私たちは技術を構築するだけでなく、人類の自由に対する実際の影響を測定します。",
+      "m1Title": "永続アーカイブ",
+      "m1Text": "コンテンツアドレス指定インフラに保存され、即座に検索可能なジャーナリズム、科学、市民の記憶の量。",
+      "m2Title": "DevHubコード主権",
+      "m2Text": "中央集権型プラットフォームの禁止から自由に、P2Pネットワークに直接ensorableなdAppsとリポジトリを公開する開発者の数。",
+      "m3Title": "Web 4.0プロトコルの採用",
+      "m3Text": "検閲耐性のあるメッセージングまたは出版プロトコルを使用しているウェブサイト、dApps、ゲーム、デジタルブックの数。",
+      "m4Title": "敵対的環境",
+      "m4Text": "低接続性または重度に検閲された環境でフォルトトレランスツールを使用しているアクティブユーザーの数。"
     },
     "finalCta": {
-      "eyebrow": "Join us",
-      "titleA": "Join the Network Where ",
-      "titleHi": "YOU",
-      "titleB": " Are the Network",
-      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
-      "quote": "The era of renting your digital existence is over.",
-      "tagline": "Don't visit the web. Be the web.",
-      "ctaPrimary": "Push Humanity Forward",
-      "ctaSecondary": "Read the Whitepaper",
-      "ctaTertiary": "Join the Community"
+      "eyebrow": "参加する",
+      "titleA": " ",
+      "titleHi": "あなた",
+      "titleB": " がネットワークであるネットワークに参加する",
+      "p1": "Netforyは人類のために構築されたWeb 4.0ネットワークです。地理に関係なく、世界中の人々に普遍的にアクセス可能なデジタルサービスを提供し、安定した接続性とフルアクセスを保証します。",
+      "quote": "デジタル存在をレンタルする時代は終わりました。",
+      "tagline": "ウェブを訪問しないで。ウェブになれ。",
+      "ctaPrimary": "人類を前進させる",
+      "ctaSecondary": "Whitepaperを読む",
+      "ctaTertiary": "コミュニティに参加する"
     },
     "seo": {
       "title": "ミッション {'|'} SmartHoldem Web 4.0 — 人類のためのインターネット",
