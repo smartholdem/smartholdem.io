@@ -82,7 +82,7 @@
       </div>
 
       <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t hair-border pt-6 text-sm text-secondary sm:flex-row">
-        <p>&copy; 2026 {{ t('footer.copyright') }}. {{ t('footer.rights') }}</p>
+        <p>&copy; 2017 - {{ year }} {{ t('footer.copyright') }}. {{ t('footer.rights') }}</p>
         <div class="flex items-center gap-4">
           <NuxtLink :to="localePath('/terms')" class="f-link">{{ t('terms.nav') }}</NuxtLink>
           <span class="hidden h-3 w-px bg-white/10 sm:block"></span>
@@ -98,6 +98,16 @@ import { Github, Send, Youtube, Mail, Rss } from 'lucide-vue-next'
 const { t } = useI18n()
 const localePath = useLocalePath()
 const { links, isSmartNet, openWallet } = useSmartNet()
+
+// SSG-safe copyright year:
+// 1) Seeded from build time via useState — SSR payload and initial hydration match (no mismatch).
+// 2) Refreshed to the actual current year onMounted, so if a visitor lands on a page baked in
+//    a previous calendar year, the footer updates itself without a rebuild.
+const year = useState('sth-copyright-year', () => new Date().getFullYear())
+onMounted(() => {
+  const now = new Date().getFullYear()
+  if (year.value !== now) year.value = now
+})
 
 const onWallet = (e) => {
   if (isSmartNet.value) { e.preventDefault(); openWallet() }
