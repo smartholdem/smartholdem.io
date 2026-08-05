@@ -279,7 +279,7 @@
     <section class="container-x py-24">
       <div class="grid items-center gap-12 lg:grid-cols-2">
         <div v-reveal class="overflow-hidden rounded-3xl border hair-border glass p-3">
-          <img src="/images/home/web_4_smarholdem_netfory.jpg" alt="SmartHoldem Web 4.0 symbiotic paradigm" loading="lazy" class="w-full rounded-2xl" />
+          <img src="/images/home/real-web4-smartholdem-depin.jpg" alt="Real Web 4.0 — SmartHoldem: The Decentralized Physical Internet" loading="lazy" class="w-full rounded-2xl" />
         </div>
         <div v-reveal="120">
           <p class="eyebrow mb-3">{{ t('web4.eyebrow') }}</p>
