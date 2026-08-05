@@ -47,13 +47,13 @@
     "title": "Netfory: Mtandao Unao Kufanyia Kazi",
     "subtitle": "Utekelezaji wa kwanza wa Web 4.0. Si dhana. Si ramani. Msongamano unaofanya kazi, umepimwa.",
     "tagline": "Usitembelee mtandao. Kuwa mtandao.",
-    "subtitle2": "Msongamano wa kwanza wa Web 4.0 tayari kwa matumizi. Miundombinu Sifuri. Uhuru Kamili.",
+    "subtitle2": "Mtandao wa Wavuti 4.0 ni Mtandao wa Kimwili wa Kiraia-kwa-Rika Uliogatuliwa, Uliogawanywa. Na tunaujenga.",
     "ctaPrimary": "Soma Muhtasari Mtendaji",
     "ctaSecondary": "Jiunge na Telegram",
     "ctaTertiary": "Pakua Mteja wa Netfory",
     "micro": "Mtandao haudhibitiwa na washirika. Mtandao NDIO washirika.",
-    "ctaMission": "The Mission",
-    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    "ctaMission": "Misheni",
+    "microTag": "Msongamano wa kwanza wa Web 4.0 tayari kwa matumizi. Miundombinu Sifuri. Uhuru Kamili."
   },
   "problem": {
     "eyebrow": "Tatizo",
@@ -66,8 +66,8 @@
   "solution": {
     "eyebrow": "Suluhisho",
     "title": "Netfory: Miundombinu ya Web 4.0 Inayojitawala",
-    "text": "Netfory inachukua nafasi ya mfumo wa kuhifadhi uliokusanywa na mtandao wa usambazaji uliogawanywa, unaotumia laki ya usafirishaji ya Iroh (QUIC) na uthibitishaji wa kriptografia ya BLAKE3. Kupitia mfumo wa uchumi wa asili wa Proof-of-Utility, washirika wa mtandao (watoa huduma) wanajilipishwa moja kwa moja kwa STH kwa kutoa hifadhi na upana wa mkanda.",
-    "callout": "Sahihisho muhimu kwa hadithi inayotawala lazima litajwe wazi: mtandao haudhibitiwa na washirika. Mtandao NDIO washirika. Kila mteja wa mtumiaji ni nodi inayojitawala peke yake inayogundua wenzake, inathibitisha maudhui, inashindana na njia, na inadumu uchumi. Kifaa cha mtumiaji ndicho kijenzi."
+    "text": "Netfory replaces the centralized hosting layer with a decentralized, content-driven distribution network powered by the Iroh transport layer (QUIC) and BLAKE3 cryptographic authentication. Through a native Proof-of-Stake economic system, network participants (stakeholders) are directly rewarded in STH for providing storage and bandwidth.",
+    "callout": "Mtandao haudhibitiwa na washirika. Mtandao NDIO washirika wa usambazaji. Netfory ni mfumo wa uendeshaji wa Intaneti ya Kimwili ya Usambazaji. Kila mteja wa kompyuta ni nodi huru inayogundua washirika, inathibitisha maudhui, na inadumu uchumi. Kifaa chako si tu kinafikia mtandao. Kifaa chako NDIO mtandao."
   },
   "architecture": {
     "eyebrow": "Muundo",
@@ -149,13 +149,13 @@
   "depin": {
     "eyebrow": "DePIN",
     "title": "Mtandao Unakuwa Wingu",
-    "text": "Katika Hatua ya 3 ya ramani yetu, Netfory inakua kuwa kituo kikubwa cha data kilichogawanywa. Watumiaji wa kila siku wanapata mapato kutoka hifadhi yao na upana wa mkanda kwa kuiuza moja kwa moja kwa makampuni na biashara. Hakuna AWS. Hakuna Cloudflare. Hakuna wasimamizi. Watumiaji pekee, nodi, na malipo ya $STH.",
+    "text": "Katika Awamu ya 3 ya ramani yetu, Netfory inabadilika na kuwa kituo cha data cha kimataifa kilichogatuliwa. Watumiaji wa kila siku hupata pesa kutoka kwa hifadhi yao isiyotumika na kipimo data kwa kuikodisha moja kwa moja kwa mashirika na makampuni.",
     "badge": "MTANDAO NDIO WINGU",
     "s1v": "Miundombinu Sifuri",
     "s1l": "Hakuna AWS, hakuna Google Cloud, hakuna Vercel.",
     "s2v": "Ya Mtumiaji",
     "s2l": "Kila nodi ni mshiriki, si bidhaa.",
-    "s3v": "Malipo ya $STH",
+    "s3v": "Hesabu katika STH",
     "s3l": "Biashara zote za B2B kwa sarafu ya asili."
   },
   "web4": {
@@ -819,76 +819,76 @@
     }
   },
   "missionTeaser": {
-    "eyebrow": "The Mission",
-    "titleA": "An Internet for Humanity. Secured by ",
-    "titleHi": "Mathematics",
+    "eyebrow": "Dhamira",
+    "titleA": "Intaneti kwa Ubinadamu. Imelindwa na ",
+    "titleHi": "Hisabati",
     "titleB": ".",
-    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
-    "p1Title": "Censorship-Resistant Comms",
-    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
-    "p2Title": "Durable Archives",
-    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
-    "p3Title": "Math Over Policy",
-    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
-    "cta": "Push Humanity Forward"
+    "text": "Web 4.0 ni mapinduzi kwa uhusiano wa binadamu. Mfumo wa uendeshaji wa Netfory unaunda miundombinu ya msingi kulinda haki za kidijitali, kuhakikisha uhuru wa kujieleza unalindwa na hisabati na utawala wa usambazaji.",
+    "p1Title": "Mawasiliano Yasiyo na Udhibiti",
+    "p1Text": "Itifaki zisizozuiwa kwa kujieleza na uchapishaji. Huduma za kidijitali za usambazaji zinazohakikisha ufikiaji wa ulimwengu na muunganisho thabiti kwa kila mtu, kila mahali.",
+    "p2Title": "Hifadhi Zinazodumu",
+    "p2Text": "Kumbukumbu ya uandishi wa habari, sayansi na kiraia inayoishi muda mshirika mmoja anashika data.",
+    "p3Title": "Intaneti Inayofuata",
+    "p3Text": "Miundombinu wazi, inayothibitishwa na inayodhibitiwa kwa uhuru wa binadamu katika enzi ya kidijitali.",
+    "cta": "Sukuma Ubinadamu Mbele"
   },
   "mission": {
     "hero": {
-      "eyebrow": "Manifesto",
-      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
-      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
-      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
-      "ctaPrimary": "Download Netfory Client",
-      "ctaSecondary": "Read White Paper",
-      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+      "eyebrow": "Tamko",
+      "title": "Itifaki ya Web 4.0: Mapinduzi kwa Ubinadamu",
+      "subtitle": "Dhamira yetu ni kuboresha intaneti kwa kukuza Mfumo wa Uendeshaji wa Netfory, miundombinu ya Web4 na teknolojia za msingi zinazokuza uhusiano wa binadamu.",
+      "quote": "Netfory ni mfumo wa uendeshaji wa Intaneti ya Kimwili ya Usambazaji. Hakuna seva ya kati. Hakuna udhibiti wa makampuni. Msimbo, usimbaji fiche na wewe tu.",
+      "ctaPrimary": "Pakua Mteja wa Netfory",
+      "ctaSecondary": "Soma White Paper",
+      "caption": "Web 4.0 ni Intaneti ya Kimwili ya Usambazaji, Peer-to-Peer."
     },
     "deplatform": {
-      "eyebrow": "Chapter I",
-      "titleA": "The End of ",
-      "titleHi": "Deplatforming",
-      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
-      "p2Bold": "Web 4.0 changes the default.",
-      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
-      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
-      "statLabel": "Censorship cost",
-      "statValue": "from $0 → ∞"
+      "eyebrow": "Sura ya I",
+      "titleA": "Mwisho wa ",
+      "titleHi": "Kuondolewa kwenye Jukwaa",
+      "p1": "Katika mazingira ya adui, uhuru wa kujieleza na usambazaji wa taarifa ni haki za kwanza kuzuiwa. Majukwaa ya kati yanaweza kufuta sauti kwa bofyo moja.",
+      "p2Bold": "Web 4.0 inabadilisha chaguo-msingi.",
+      "p3": "Uendeshaji wa kuondoa au kuzuia maudhui kwa kiwango kikubwa unashindwa kwa sababu maudhui na uratibu zinahifadhiwa katika mitandao ya usambazaji. Kuondolewa kwenye jukwaa si tena chombo cha udhibiti kinachofaa na gharama ndogo. Uhuru wa kujieleza unahamia kutoka uvumilivu wa jukwaa hadi ustahimilivu wa mtandao.",
+      "p4": "Miundombinu ya ujumbe, uchapishaji na grafu ya kijamii inayotegemewa inakuwa chaguo-msingi kwa waadfiki, waandishi wa habari, jamii na watumiaji wa kila siku. Maudhui yanaishi baada ya kufutwa. Hadhira inaishi baada ya kuondolewa kwenye jukwaa. Itifaki za SmartNet zinaunda mgongo wa miundombinu hii mpya ya taarifa, ikifanya udhibiti uwe gharama kubwa kuliko rahisi.",
+      "statLabel": "Gharama ya udhibiti",
+      "statValue": "kuanzia $0 → ∞"
     },
     "archives": {
-      "eyebrow": "Chapter II",
-      "titleA": "Durable ",
-      "titleHi": "Archives",
-      "subtitle": "Solving the Long-Term Memory Crisis",
-      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
-      "p2Bold": "Netfory solves the problem of long-term storage.",
-      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
-      "statLabel": "Survival threshold",
-      "statValue": "1 peer"
+      "eyebrow": "Sura ya II",
+      "titleA": "Hifadhi ",
+      "titleHi": "Zinazodumu",
+      "subtitle": "Kutatua Mgogoro wa Kumbukumbu ya Muda Mrefu",
+      "p1": "Tunawezaje kuhifadhi uchunguzi wa uandishi wa habari, rekodi za sayansi na uandikishaji wa jamii ya kiraia? Katika Web 2.0, kuzima kwa seva kunamaanisha historia inafutwa.",
+      "p2Bold": "Netfory inatatua tatizo la uhifadhi wa muda mrefu.",
+      "p3": "Kupitia miundombinu ya anwani ya maudhui, hifadhi za uandishi wa habari, sayansi na kumbukumbu ya kiraia zinahifadhiwa kabisa. Mradi taarifa zipo angalau kwa mshirika mmoja katika mtandao, hazivunjwi.",
+      "statLabel": "Kiwango cha uhai",
+      "statValue": "1 mshirika"
     },
     "impact": {
-      "eyebrow": "Chapter III",
-      "titleA": "Measuring the ",
-      "titleHi": "Impact",
-      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
-      "m1Title": "Durable Archives",
-      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
-      "m2Title": "Cross-Platform Portability",
-      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
-      "m3Title": "Web 4.0 Protocol Adoption",
-      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
-      "m4Title": "Adversarial Environment",
-      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+      "eyebrow": "Sura ya III",
+      "titleA": "Kupima ",
+      "titleHi": "Athari",
+      "subtitle": "Sio tu kujenga teknolojia. Tunapima athari yake ya kweli kwa uhuru wa binadamu.",
+      "m1Title": "Hifadhi Zinazodumu",
+      "m1Text": "Kiwango cha kumbukumbu ya uandishi wa habari, sayansi na kiraia iliyohifadhiwa kwa muda na inayotafutwa mara moja kwenye miundombinu ya anwani ya maudhui.",
+      "m2Title": "Uwazi wa Msimbo wa DevHub",
+      "m2Text": "Idadi ya watengenezaji wanaochapisha dApps na hifadhi zisizodhibitiwa moja kwa moja kwenye mtandao wa P2P, huru na vizuizi vya majukwaa ya kati.",
+      "m3Title": "Kukubali kwa Itifaki ya Web 4.0",
+      "m3Text": "Idadi ya tovuti, dApps, michezo na vitabu vya kidijitali vilivyowekwa mara moja katika mazingira ya usambazaji ya kujitegemea yanayodhibitiwa.",
+      "m4Title": "Mazingira ya Adui",
+      "m4Text": "Idadi ya watumiaji walio hai katika mazingira ya muunganisho mdogo au udhibiti mkubwa wanaotumia zana zinazostahimili hitilafu."
     },
     "finalCta": {
-      "eyebrow": "Join us",
-      "titleA": "Join the Network Where ",
-      "titleHi": "YOU",
-      "titleB": " Are the Network",
-      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
-      "quote": "The era of renting your digital existence is over.",
-      "tagline": "Don't visit the web. Be the web.",
-      "ctaPrimary": "Push Humanity Forward",
-      "ctaSecondary": "Read the Whitepaper",
-      "ctaTertiary": "Join the Community"
+      "eyebrow": "Jiunge nasi",
+      "titleA": "Jiunge na Mtandao Ambapo ",
+      "titleHi": "Wewe",
+      "titleB": " Unge Mtandao",
+      "p1": "Netfory ni mtandao wa Web 4.0 uliojengwa kwa binadamu. Inatoa huduma za kidijitali zinazopatikana ulimwengu kote, kuhakikisha muunganisho thabiti na ufikiaji kamili kwa watu kote ulimwenguni, bila kujali jiografia yao.",
+      "quote": "Zama za kukodi maisha yako ya kidijitali zimeisha.",
+      "tagline": "Usitembelee mtandao. Kuwa mtandao.",
+      "ctaPrimary": "Sukuma Ubinadamu Mbele",
+      "ctaSecondary": "Soma Whitepaper",
+      "ctaTertiary": "Jiunge na Jumuiya"
     },
     "seo": {
       "title": "Dhamira {'|'} SmartHoldem Web 4.0 — Intaneti kwa Ajili ya Binadamu",

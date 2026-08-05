@@ -47,13 +47,13 @@
     "title": "Netfory: A Web Que Trabalha Para Você",
     "subtitle": "A primeira implementação de Web 4.0. Não é um conceito. Não é um roteiro. Uma stack funcional e testada.",
     "tagline": "Não visite a web. Seja a web.",
-    "subtitle2": "A primeira stack Web 4.0 pronta para produção. Infraestrutura Zero. Autonomia Absoluta.",
+    "subtitle2": "A Web 4.0 é a Internet física descentralizada e ponto a ponto. E nós estamos construindo-a.",
     "ctaPrimary": "Ler Resumo Executivo",
     "ctaSecondary": "Entrar no Telegram",
     "ctaTertiary": "Baixar Cliente Netfory",
     "micro": "A rede não é gerenciada por agentes. A REDE SÃO os agentes.",
-    "ctaMission": "The Mission",
-    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    "ctaMission": "A Missão",
+    "microTag": "A primeira stack Web 4.0 pronta para produção. Infraestrutura Zero. Autonomia Absoluta."
   },
   "problem": {
     "eyebrow": "O Problema",
@@ -66,8 +66,8 @@
   "solution": {
     "eyebrow": "A Solução",
     "title": "Netfory: Infraestrutura Autônoma Web 4.0",
-    "text": "Netfory substitui a stack de hospedagem centralizada por uma rede de distribuição descentralizada e endereçável por conteúdo, alimentada pela camada de transporte Iroh (QUIC) e verificação criptográfica BLAKE3. Através de um modelo econômico nativo Proof-of-Utility, os participantes da rede (seeders) são remunerados diretamente em STH por fornecer armazenamento e largura de banda.",
-    "callout": "Uma correção crítica à narrativa predominante deve ser declarada explicitamente: a rede não é gerenciada por agentes. A REDE SÃO os agentes. O cliente de cada usuário é em si um nó autônomo que descobre pares, verifica conteúdo, negocia rotas e sustenta a economia. O dispositivo do usuário é o agente."
+    "text": "A Netfory substitui a infraestrutura de hospedagem centralizada por uma rede de distribuição descentralizada, endereçada por conteúdo, baseada na camada de transporte Iroh (QUIC) e na verificação criptográfica BLAKE3. Através de um modelo econômico nativo de Prova de Utilidade, os participantes da rede (semeadores) são compensados ​​diretamente em STH por fornecerem armazenamento e largura de banda.",
+    "callout": "A rede não é gerenciada por agentes. A rede SÃO os agentes descentralizados. Netfory é o sistema operacional da Internet Física Descentralizada. Cada cliente de desktop é um nó autônomo que descobre pares, verifica conteúdo e sustenta a economia. Seu dispositivo não acessa a web. Seu dispositivo É a web."
   },
   "architecture": {
     "eyebrow": "Arquitetura",
@@ -149,13 +149,13 @@
   "depin": {
     "eyebrow": "DePIN",
     "title": "A Rede Torna-se A Nuvem",
-    "text": "Na Fase 3 do nosso roteiro, Netfory evolui para um centro de dados descentralizado global. Usuários comuns monetizam seu armazenamento e largura de banda ociosos alugando diretamente para corporações e grandes empresas. Sem AWS. Sem Cloudflare. Sem intermediários. Apenas usuários, nós e liquidações em $STH.",
+    "text": "Na Fase 3 do nosso roteiro, a Netfory evolui para um centro de dados global descentralizado. Usuários comuns monetizam seu armazenamento e sua largura de banda ociosos, alugando-os diretamente a corporações e empresas.",
     "badge": "A REDE É A NUVEM",
     "s1v": "Infraestrutura Zero",
     "s1l": "Sem AWS, sem Google Cloud, sem Vercel.",
     "s2v": "Propriedade do Usuário",
     "s2l": "Cada nó é um participante, não um produto.",
-    "s3v": "Liquidações $STH",
+    "s3v": "Cálculos em STH",
     "s3l": "Todas as transações B2B em moeda nativa."
   },
   "web4": {
@@ -818,76 +818,76 @@
     }
   },
   "missionTeaser": {
-    "eyebrow": "The Mission",
-    "titleA": "An Internet for Humanity. Secured by ",
-    "titleHi": "Mathematics",
+    "eyebrow": "A Missão",
+    "titleA": "Uma Internet para a Humanidade. Protegida por ",
+    "titleHi": "Matemática",
     "titleB": ".",
-    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
-    "p1Title": "Censorship-Resistant Comms",
-    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
-    "p2Title": "Durable Archives",
-    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
-    "p3Title": "Math Over Policy",
-    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
-    "cta": "Push Humanity Forward"
+    "text": "Web 4.0 é uma revolução para a autonomia humana. O sistema operacional Netfory está construindo a infraestrutura fundamental para proteger os direitos digitais, garantindo que a liberdade de expressão seja protegida pela matemática e governança descentralizada.",
+    "p1Title": "Comunicações Resistentes à Censura",
+    "p1Text": "Protocolos inbloqueáveis para expressão e publicação. Utilidades digitais descentralizadas garantindo acesso universal e conectividade consistente para todos, em todos os lugares.",
+    "p2Title": "Arquivos Duráveis",
+    "p2Text": "Memória jornalística, científica e cívica que sobrevive enquanto um único par mantiver os dados.",
+    "p3Title": "A Próxima Internet",
+    "p3Text": "Infraestrutura aberta, verificável e resistente à censura para a liberdade humana na era digital.",
+    "cta": "Impulsionar a Humanidade"
   },
   "mission": {
     "hero": {
       "eyebrow": "Manifesto",
-      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
-      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
-      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
-      "ctaPrimary": "Download Netfory Client",
-      "ctaSecondary": "Read White Paper",
-      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+      "title": "O Protocolo Web 4.0: Uma Revolução para a Humanidade",
+      "subtitle": "Nossa missão é aprimorar a internet desenvolvendo o sistema operacional Netfory, a infraestrutura Web4 e as tecnologias fundamentais que promovem a autonomia humana.",
+      "quote": "Netfory é o sistema operacional da Internet Física Descentralizada. Sem servidor central. Sem controle corporativo. Apenas criptografia, código e você.",
+      "ctaPrimary": "Baixar Cliente Netfory",
+      "ctaSecondary": "Ler White Paper",
+      "caption": "Web 4.0 é a Internet Física Descentralizada, Peer-to-Peer."
     },
     "deplatform": {
-      "eyebrow": "Chapter I",
-      "titleA": "The End of ",
-      "titleHi": "Deplatforming",
-      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
-      "p2Bold": "Web 4.0 changes the default.",
-      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
-      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
-      "statLabel": "Censorship cost",
-      "statValue": "from $0 → ∞"
+      "eyebrow": "Capítulo I",
+      "titleA": "O Fim da ",
+      "titleHi": "Desplataformização",
+      "p1": "Em ambientes hostis, a liberdade de expressão e a distribuição de informação são os primeiros direitos a serem restringidos. Plataformas centralizadas podem apagar vozes com um único clique.",
+      "p2Bold": "Web 4.0 muda o padrão.",
+      "p3": "Operações de remoção ou bloqueio de conteúdo em larga escala falham porque o conteúdo e a coordenação são preservados em redes descentralizadas. A desplataformização não é mais uma ferramenta de controle viável e de baixo custo. A liberdade de expressão migra da tolerância da plataforma para a resiliência da rede.",
+      "p4": "Infraestrutura confiável de mensagens, publicação e grafo social se torna o padrão para ativistas, jornalistas, comunidades e usuários cotidianos. O conteúdo sobrevive à exclusão. O público sobrevive à desplataformização. Os protocolos SmartNet formam a espinha dorsal desta nova geração de infraestrutura de informação, tornando a censura prohibitivamente cara em vez de trivialmente fácil.",
+      "statLabel": "Custo da censura",
+      "statValue": "de $0 → ∞"
     },
     "archives": {
-      "eyebrow": "Chapter II",
-      "titleA": "Durable ",
-      "titleHi": "Archives",
-      "subtitle": "Solving the Long-Term Memory Crisis",
-      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
-      "p2Bold": "Netfory solves the problem of long-term storage.",
-      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
-      "statLabel": "Survival threshold",
-      "statValue": "1 peer"
+      "eyebrow": "Capítulo II",
+      "titleA": "Arquivos ",
+      "titleHi": "Duráveis",
+      "subtitle": "Resolvendo a Crise da Memória de Longo Prazo",
+      "p1": "Como preservamos investigações jornalísticas, registros científicos e a documentação da sociedade civil? No Web 2.0, um desligamento do servidor significa que a história é apagada.",
+      "p2Bold": "Netfory resolve o problema do armazenamento de longo prazo.",
+      "p3": "Através da arquitetura endereçável por conteúdo, arquivos de jornalismo, ciência e memória cívica são preservados permanentemente. Enquanto a informação existir em pelo menos um par na rede, ela não pode ser destruída.",
+      "statLabel": "Limiar de sobrevivência",
+      "statValue": "1 par"
     },
     "impact": {
-      "eyebrow": "Chapter III",
-      "titleA": "Measuring the ",
-      "titleHi": "Impact",
-      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
-      "m1Title": "Durable Archives",
-      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
-      "m2Title": "Cross-Platform Portability",
-      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
-      "m3Title": "Web 4.0 Protocol Adoption",
-      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
-      "m4Title": "Adversarial Environment",
-      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+      "eyebrow": "Capítulo III",
+      "titleA": "Medindo o ",
+      "titleHi": "Impacto",
+      "subtitle": "Não apenas construímos tecnologia. Medimos seu impacto real na liberdade humana.",
+      "m1Title": "Arquivos Duráveis",
+      "m1Text": "Volume de memória jornalística, científica e cívica armazenada permanentemente e pesquisável instantaneamente em infraestrutura endereçável por conteúdo.",
+      "m2Title": "Soberania do Código DevHub",
+      "m2Text": "Número de desenvolvedores publicando dApps e repositórios incensuráveis diretamente na rede P2P, livres de proibições de plataformas centralizadas.",
+      "m3Title": "Adoção do Protocolo Web 4.0",
+      "m3Text": "O número de sites, dApps, jogos e livros digitais implantados instantaneamente em um ambiente descentralizado autônomo resistente à censura.",
+      "m4Title": "Ambiente Adversário",
+      "m4Text": "Número de usuários ativos em ambientes de baixa conectividade ou fortemente censurados usando ferramentas tolerantes a falhas."
     },
     "finalCta": {
-      "eyebrow": "Join us",
-      "titleA": "Join the Network Where ",
-      "titleHi": "YOU",
-      "titleB": " Are the Network",
-      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
-      "quote": "The era of renting your digital existence is over.",
-      "tagline": "Don't visit the web. Be the web.",
-      "ctaPrimary": "Push Humanity Forward",
-      "ctaSecondary": "Read the Whitepaper",
-      "ctaTertiary": "Join the Community"
+      "eyebrow": "Junte-se a nós",
+      "titleA": "Junte-se à Rede Onde ",
+      "titleHi": "VOCÊ",
+      "titleB": " É a Rede",
+      "p1": "Netfory é uma rede Web 4.0 construída para a humanidade. Fornece serviços digitais universalmente acessíveis, garantindo conectividade estável e acesso total para pessoas em todo o mundo, independentemente de sua geografia.",
+      "quote": "A era de alugar sua existência digital acabou.",
+      "tagline": "Não visite a web. Seja a web.",
+      "ctaPrimary": "Impulsionar a Humanidade",
+      "ctaSecondary": "Ler o Whitepaper",
+      "ctaTertiary": "Juntar-se à Comunidade"
     },
     "seo": {
       "title": "Missão {'|'} SmartHoldem Web 4.0 — Uma Internet para a humanidade",

@@ -47,13 +47,13 @@
     "title": "Netfory: الويب الذي يعمل من أجلك",
     "subtitle": "التطبيق الأول لـ Web 4.0. ليست فكرة. ليست خارطة طريق. حزمة عمل ومُختبرة.",
     "tagline": "لا تزور الويب. كن الويب.",
-    "subtitle2": "أول حزمة Web 4.0 جاهزة للإنتاج. البنية التحتية صفرية. الحرية المطلقة.",
+    "subtitle2": "الويب 4.0 هو الإنترنت المادي اللامركزي القائم على الند للند. ونحن نعمل على بنائه.",
     "ctaPrimary": "اقرأ الملخص التنفيذي",
     "ctaSecondary": "انضم إلى Telegram",
     "ctaTertiary": "حمّل عميل Netfory",
     "micro": "الشبكة لا تُدار من قبل الوكلاء. الشبكة هي الوكلاء.",
-    "ctaMission": "The Mission",
-    "microTag": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+    "ctaMission": "المهمة",
+    "microTag": "أول حزمة Web 4.0 جاهزة للإنتاج. البنية التحتية صفرية. الحرية المطلقة."
   },
   "problem": {
     "eyebrow": "المشكلة",
@@ -66,8 +66,8 @@
   "solution": {
     "eyebrow": "الحل",
     "title": "Netfory: بنية تحتية Web 4.0 المستقلة",
-    "text": "يحل Netfory محل حزمة الاستضافة المركزية بشبكة توزيع لامركزية مُعرّفة بالمحتوى مدعومة بطبقة نقل Iroh (QUIC) والتحقق المشفر بـ BLAKE3. من خلال النموذج الاقتصادي الأصلي Proof-of-Utility، يحصل المشاركون في الشبكة (الموزعون) مباشرة على STH مقابل توفير التخزين وعرض النطاق.",
-    "callout": "يجب ذكر تصحيح حاسم للسرد السائد بشكل صريح: الشبكة لا تُدار من قبل الوكلاء. الشبكة هي الوكلاء. كل عميل لكل مستخدم هو بحد ذاته عقدة مستقلة تكتشف الأقران، تتحقق من المحتوى، تتفاوض على المسارات، وتدعم الاقتصاد. جهاز المستخدم هو الوكيل."
+    "text": "تستبدل Netfory بنية الاستضافة المركزية بشبكة توزيع لامركزية تعتمد على عناوين المحتوى، مدعومة بطبقة نقل Iroh (QUIC) وخوارزمية التحقق التشفيري BLAKE3. ومن خلال نموذج اقتصادي أصيل قائم على إثبات المنفعة، يُعوَّض المشاركون في الشبكة (الموزعون) مباشرةً بعملة STH مقابل توفير مساحة التخزين وعرض النطاق الترددي.",
+    "callout": "الشبكة لا تُدار من قبل الوكلاء. الشبكة هي الوكلاء اللامركزية. Netfory هو نظام تشغيل الإنترنت المادي اللامركزي. كل عميل سطح مكتب هو عقدة مستقلة تكتشف النظراء، وتحقق من المحتوى، وتدعم الاقتصاد. جهازك لا ي仅仅 يصل إلى الويب. جهازك هو الويب."
   },
   "architecture": {
     "eyebrow": "البنية المعمارية",
@@ -149,13 +149,13 @@
   "depin": {
     "eyebrow": "DePIN",
     "title": "الشبكة تصبح السحابة",
-    "text": "في المرحلة الثالثة من خارطة طريقنا، يتطور Netfory إلى مركز بيانات لامركزي عالمي. المستخدمون العاديون يMonetizeون تخزينهم غير المستخدم وعرض نطاقهم عن طريق استئجاره مباشرة للشركات والمؤسسات. لا AWS. لا Cloudflare. لا وسطاء. مستخدمون فقط، عقد، وتسويات $STH.",
+    "text": "ففي المرحلة الثالثة من خطتنا، تتطور Netfory لتصبح مركز بيانات عالمي لا مركزي. يقوم المستخدمون العاديون بتحقيق الدخل من مساحة التخزين والنطاق الترددي غير المستخدمة لديهم عن طريق تأجيرها مباشرة للشركات والمؤسسات.",
     "badge": "الشبكة هي السحابة",
     "s1v": "بنية تحتية صفرية",
     "s1l": "لا AWS، لا Google Cloud، لا Vercel.",
     "s2v": "ملكية المستخدم",
     "s2l": "كل عقدة مشاركة، ليست منتج.",
-    "s3v": "تسويات $STH",
+    "s3v": "الحسابات في STH",
     "s3l": "جميع معاملات B2B بالعملة الأصلية."
   },
   "web4": {
@@ -819,76 +819,76 @@
     }
   },
   "missionTeaser": {
-    "eyebrow": "The Mission",
-    "titleA": "An Internet for Humanity. Secured by ",
-    "titleHi": "Mathematics",
+    "eyebrow": "المهمة",
+    "titleA": "إنترنت للإنسانية. محمي بواسطة ",
+    "titleHi": "الرياضيات",
     "titleB": ".",
-    "text": "Web 4.0 is a breakthrough for human autonomy. Netfory is building the foundational infrastructure to protect digital rights, ensuring that freedom of speech and association are secured by math, incentives, and decentralized governance — not corporate policies.",
-    "p1Title": "Censorship-Resistant Comms",
-    "p1Text": "Unblockable protocols for speech and publishing. Decentralized digital utilities ensuring universal access and consistent connectivity for everyone, everywhere.",
-    "p2Title": "Durable Archives",
-    "p2Text": "Journalistic, scientific, and civic memory that survives as long as a single peer holds the data.",
-    "p3Title": "Math Over Policy",
-    "p3Text": "Mathematics doesn't change its rules. Open, verifiable, censorship-resistant infrastructure for human freedom and agency in the digital age.",
-    "cta": "Push Humanity Forward"
+    "text": "يُمثّل Web 4.0 اختراقًا في مجال استقلالية الإنسان. يبني نظام Netfory التشغيلي البنية التحتية الأساسية لحماية الحقوق الرقمية، م_ENSUREًا بأن حرية التعبير مضمونة بواسطة الرياضيات والحوكمة اللامركزية.",
+    "p1Title": "اتصالات مقاومة للرقابة",
+    "p1Text": "بروتوكولات لا يمكن حظرها للتعبير والنشر. مرافق رقمية لامركزية تضمن وصولًا عالميًا واتصالًا ثابتًا للجميع، في كل مكان.",
+    "p2Title": "أرشيفات دائمة",
+    "p2Text": "ذاكرة صحفية وعلية ومدنية تبقى طالما أن ندًا واحدًا يحمل البيانات.",
+    "p3Title": "الإنترنت التالي",
+    "p3Text": "بنية تحتية مفتوحة وقابلة للتحقق ومقاومة للرقابة لحرية الإنسان وحكمته في العصر الرقمي.",
+    "cta": "دفع الإنسانية إلى الأمام"
   },
   "mission": {
     "hero": {
-      "eyebrow": "Manifesto",
-      "title": "The Web 4.0 Protocol: A Breakthrough for Humanity",
-      "subtitle": "Our mission is to enhance the internet by developing the Netfory Web 4.0 network, infrastructure, and foundational technologies that promote human autonomy.",
-      "quote": "Netfory is a monolithic platform of protocols. Mathematics cannot change its policy. The users decide whether to use a free, uncensored decentralized internet.",
-      "ctaPrimary": "Download Netfory Client",
-      "ctaSecondary": "Read White Paper",
-      "caption": "Web 4.0 is the Decentralized, Peer-to-Peer Physical Internet."
+      "eyebrow": "المانيفستو",
+      "title": "بروتوكول Web 4.0: اختراق للإنسانية",
+      "subtitle": "مهمتنا هي تحسين الإنترنت من خلال تطوير نظام Netfory التشغيلي وبنية تحتية Web 4.0 والتقنيات الأساسية التي تعزز استقلالية الإنسان.",
+      "quote": "Netfory هو نظام التشغيل của الإنترنت المادي اللامركزي. لا خادم مركزي. لا سيطرة مؤسسية. فقط код، تشفير، وأنت.",
+      "ctaPrimary": "تحميل عميل Netfory",
+      "ctaSecondary": "قراءة الورقة البيضاء",
+      "caption": "الويب 4.0 هو الإنترنت المادي اللامركزي القائم على الند للند."
     },
     "deplatform": {
-      "eyebrow": "Chapter I",
-      "titleA": "The End of ",
-      "titleHi": "Deplatforming",
-      "p1": "In hostile environments, freedom of speech, association, and information distribution are the first rights to be restricted. Centralized platforms can erase voices with a single click.",
-      "p2Bold": "Web 4.0 changes the default.",
-      "p3": "Large-scale content removal or blocking operations fail because content and coordination are preserved across decentralized networks. Deplatforming is no longer a viable, low-cost tool of control. Freedom of expression shifts from platform tolerance to network resilience.",
-      "p4": "Reliable messaging, publishing, and social graph infrastructure become the default for activists, journalists, communities, and everyday users. Content survives deletion. Audiences survive deplatforming. SmartNet protocols form the backbone of this new generation of information infrastructure, making censorship prohibitively expensive rather than trivially easy.",
-      "statLabel": "Censorship cost",
-      "statValue": "from $0 → ∞"
+      "eyebrow": "الفصل الأول",
+      "titleA": "نهاية ",
+      "titleHi": "إزال المنصات",
+      "p1": "في البيئات المعادية، حرية التعبير وتوزيع المعلومات هي الحقوق الأولى التي تُقيَّد. يمكن للمنصات المركزية مسح الأصوات بنقرة واحدة.",
+      "p2Bold": "Web 4.0 يغير المعيار الافتراضي.",
+      "p3": "فشلت عمليات إزالة أو حظر المحتوى على نطاق واسع لأن المحتوى والتنسيق يبقى عبر الشبكات اللامركزية. إزال المنصات لم تعد أداة تحكم منخفضة التكلفة viable. يتحول حرية التعبير من تسامح المنصة إلى مرونة الشبكة.",
+      "p4": "تصبح البنية التحتية للرسائل والنشر والرسوم البيانية الاجتماعية الموثوقة هي المعيار الافتراضي للمقاتلين والصحفيين والمجتمعات والمستخدمين اليوميين. المحتوى يبقى بعد الحذف. الجماهير تبقى بعد إزال المنصات. بروتوكولات SmartNet تشكل العمود الفقري لهذه الجيل الجديد من بنية تحتية المعلومات، مما يجعل الرقابة مكلفة للغاية بدلاً من كونها سهلة.",
+      "statLabel": "تكلفة الرقابة",
+      "statValue": "من $0 → ∞"
     },
     "archives": {
-      "eyebrow": "Chapter II",
-      "titleA": "Durable ",
-      "titleHi": "Archives",
-      "subtitle": "Solving the Long-Term Memory Crisis",
-      "p1": "How do we preserve journalistic investigations, scientific records, and the documentation of civil society? In Web 2.0, a server shutdown means history is erased.",
-      "p2Bold": "Netfory solves the problem of long-term storage.",
-      "p3": "Through content-addressable architecture, archives of journalism, science, and civic memory are permanently preserved. As long as the information exists on at least one peer in the network, it cannot be destroyed.",
-      "statLabel": "Survival threshold",
-      "statValue": "1 peer"
+      "eyebrow": "الفصل الثاني",
+      "titleA": "أرشيفات ",
+      "titleHi": "دائمة",
+      "subtitle": "حل أزمة الذاكرة طويلة الأجل",
+      "p1": "كيف نحافظ على التحقيقات الصحفية والسجلات العلمية وتوثيق المجتمع المدني؟ في Web 2.0، تعني إيقاف تشغيل الخادم مسح التاريخ.",
+      "p2Bold": "Netfory يحل مشكلة التخزين طويل الأجل.",
+      "p3": "من خلال البنية التحتية القابلة للمعالجة بالعناوين، تُحفظ الأرشيفات الصحفية والعلية والمدنية بشكل دائم. طالما المعلومات موجودة على ند واحد على الأقل في الشبكة، لا يمكن تدميرها.",
+      "statLabel": "عتبة البقاء",
+      "statValue": "1 ند"
     },
     "impact": {
-      "eyebrow": "Chapter III",
-      "titleA": "Measuring the ",
-      "titleHi": "Impact",
-      "subtitle": "We don't just build technology. We measure its real-world impact on human freedom.",
-      "m1Title": "Durable Archives",
-      "m1Text": "Volume of journalistic, scientific, and civic memory stored on content-addressable infrastructure.",
-      "m2Title": "Cross-Platform Portability",
-      "m2Text": "Number of protocols enabling users to port their social graphs freely between services.",
-      "m3Title": "Web 4.0 Protocol Adoption",
-      "m3Text": "Number of applications using censorship-resistant messaging or publishing protocols in production.",
-      "m4Title": "Adversarial Environment",
-      "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+      "eyebrow": "الفصل الثالث",
+      "titleA": "قياس ",
+      "titleHi": "التأثير",
+      "subtitle": "نحن لا نبني التكنولوجيا فحسب. نقيس تأثيرها الحقيقي على حرية الإنسان.",
+      "m1Title": "أرشيفات دائمة",
+      "m1Text": "حجم الذاكرة الصحفية والعلية والمدنية المخزنة بشكل دائم والقابلة للبحث فوريًا على البنية التحتية القابلة للمعالجة بالعناوين.",
+      "m2Title": "سيادة كود DevHub",
+      "m2Text": "عدد المطورين الذين ينشرون تطبيقات dApps ومستودعات غير قابلة للرقابة مباشرة إلى شبكة P2P، خالية من حظر المنصات المركزية.",
+      "m3Title": "اعتماد بروتوكول Web 4.0",
+      "m3Text": "عدد المواقع الإلكترونية وتطبيقات dApps والألعاب والكتب الرقمية التي يتم نشرها فوريًا في بيئة لامركزية مستقلة مقاومة للرقابة.",
+      "m4Title": "بيئة معادية",
+      "m4Text": "عدد المستخدمين النشطين في بيئات منخفضة الاتصال أو الخاضعة للرقابة الشديدة باستخدام أدوات مقاومة للأعطال."
     },
     "finalCta": {
-      "eyebrow": "Join us",
-      "titleA": "Join the Network Where ",
-      "titleHi": "YOU",
-      "titleB": " Are the Network",
-      "p1": "Netfory is a Web 4.0 network built for humanity. It provides universally accessible digital services, ensuring stable connectivity and all-access for people worldwide, regardless of their geography.",
-      "quote": "The era of renting your digital existence is over.",
-      "tagline": "Don't visit the web. Be the web.",
-      "ctaPrimary": "Push Humanity Forward",
-      "ctaSecondary": "Read the Whitepaper",
-      "ctaTertiary": "Join the Community"
+      "eyebrow": "انضم إلينا",
+      "titleA": "انضم إلى الشبكة حيث ",
+      "titleHi": "أنت",
+      "titleB": " هو الشبكة",
+      "p1": "Netfory هو شبكة Web 4.0 مبنية للإنسانية. توفر خدمات رقمية يمكن الوصول إليها عالميًا، وضمان اتصال مستقر ووصول كامل للناس حول العالم، بغض النظر عن جغرافيتهم.",
+      "quote": "انتهت عصر استئجار وجودك الرقمي.",
+      "tagline": "لا تزور الويب. كن الويب.",
+      "ctaPrimary": "دفع الإنسانية إلى الأمام",
+      "ctaSecondary": "قراءة الورقة البيضاء",
+      "ctaTertiary": "انضم إلى المجتمع"
     },
     "seo": {
       "title": "المهمة {'|'} SmartHoldem Web 4.0 — إنترنت من أجل الإنسانية",
