@@ -42,6 +42,7 @@
             <li><a :href="links.explorer" target="_blank" rel="noopener" class="f-link">{{ t('nav.explorer') }}</a></li>
             <li><a :href="links.xbtsDex" target="_blank" rel="noopener" class="f-link">{{ t('nav.xbtsDex') }}</a></li>
             <li><a :href="links.dexTrade" target="_blank" rel="noopener" class="f-link">{{ t('nav.dexTrade') }}</a></li>
+            <li><NuxtLink :to="localePath('/trust-and-safety')" class="f-link">{{ t('nav.trustSafety') }}</NuxtLink></li>
           </ul>
         </div>
 

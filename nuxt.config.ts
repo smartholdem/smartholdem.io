@@ -137,6 +137,7 @@ export default defineNuxtConfig({
     // Allow inline HTML tags (e.g. <strong>) inside translation messages so
     // marketing copy can contain bold/highlight spans. Values are still our
     // own trusted content — never user-generated.
+    compilation: { strictMessage: false, escapeHtml: false },
     bundle: { optimizeTranslationDirective: false }
   },
 

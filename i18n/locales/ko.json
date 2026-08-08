@@ -19,7 +19,8 @@
     "mission": "미션",
     "home": "홈",
     "terms": "이용약관",
-    "execSummary": "요약 보고서"
+    "execSummary": "요약 보고서",
+    "trustSafety": "신뢰와 안전"
   },
   "glossary": {
     "eyebrow": "화이트페이퍼 · 부록 A",
@@ -913,5 +914,67 @@
     "navigate": "이동",
     "select": "열기",
     "close": "닫기"
+  },
+  "trust": {
+    "seo": {
+      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
+      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
+      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
+      "ogTitle": "Trust & Safety {'|'} Netfory",
+      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+    },
+    "hero": {
+      "eyebrow": "Trust & Safety",
+      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
+      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+    },
+    "dilemma": {
+      "title": "The Open Network Dilemma",
+      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
+      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
+      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+    },
+    "catalog": {
+      "titleHi": "Choice",
+      "titleB": ", Not Prohibition",
+      "l1Title": "Level 1: Official (The Default Safe Zone)",
+      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
+      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
+      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
+      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
+      "l2Title": "Level 2: All (Conscious Choice)",
+      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+    },
+    "transport": {
+      "title": "Direct Links Always Work",
+      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
+      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+    },
+    "decentral": {
+      "title": "Decentralized Safety Mechanics",
+      "r1t": "Content Never Deleted",
+      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
+      "r2t": "No Central Server",
+      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
+      "r3t": "Client-Side Sovereignty",
+      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
+      "r4t": "Cryptographic Verification",
+      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
+      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+    },
+    "vdapps": {
+      "title": "Safety Even Without Internet Access",
+      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
+      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
+      "statLabel": "Fallback Trust",
+      "statValue": "Verified even offline"
+    },
+    "final": {
+      "title": "Web4 Safety for a Free Internet",
+      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
+      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
+      "p3": "And no one in the world has a button that can delete an application from the network.",
+      "back": "Back to Mission"
+    }
   }
 }

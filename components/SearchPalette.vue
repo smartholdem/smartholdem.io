@@ -66,7 +66,7 @@
 
 <script setup>
 import { ref, computed, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
-import { Search, FileText, BookOpen, Newspaper, CornerDownLeft } from 'lucide-vue-next'
+import { Search, FileText, BookOpen, Newspaper, ScrollText, CornerDownLeft } from 'lucide-vue-next'
 import { useGlobalSearch } from '~/composables/useSearchIndex'
 
 const props = defineProps({ modelValue: { type: Boolean, default: false } })
@@ -91,6 +91,7 @@ const grouped = computed(() => {
   }
   add('page', t('search.pages'))
   add('glossary', t('search.glossary'))
+  add('whitepaper', t('nav.whitepaper'))
   add('news', t('search.news'))
   return groups
 })
@@ -102,9 +103,9 @@ const setActive = (r) => {
   if (i >= 0) active.value = i
 }
 
-const iconFor = (type) => (type === 'page' ? FileText : type === 'glossary' ? BookOpen : Newspaper)
-const colorFor = (type) => (type === 'page' ? '#00D4FF' : type === 'glossary' ? '#7C3AED' : '#F59E0B')
-const tintFor = (type) => (type === 'page' ? 'rgba(0,212,255,0.12)' : type === 'glossary' ? 'rgba(124,58,237,0.12)' : 'rgba(245,158,11,0.12)')
+const iconFor = (type) => (type === 'page' ? FileText : type === 'glossary' ? BookOpen : type === 'whitepaper' ? ScrollText : Newspaper)
+const colorFor = (type) => (type === 'page' ? '#00D4FF' : type === 'glossary' ? '#7C3AED' : type === 'whitepaper' ? '#10B981' : '#F59E0B')
+const tintFor = (type) => (type === 'page' ? 'rgba(0,212,255,0.12)' : type === 'glossary' ? 'rgba(124,58,237,0.12)' : type === 'whitepaper' ? 'rgba(16,185,129,0.12)' : 'rgba(245,158,11,0.12)')
 
 const close = () => emit('update:modelValue', false)
 

@@ -35,6 +35,7 @@ const PAGES = [
   '/glossary',
   '/dapps',
   '/mission',
+  '/trust-and-safety',
   '/terms'
 ]
 
