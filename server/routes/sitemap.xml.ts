@@ -1,6 +1,10 @@
 // Full sitemap: every static page + every news article, in all 18 locales,
 // with hreflang alternates (+ x-default pointing to the default `en` URL).
 // URLs are emitted WITHOUT trailing slashes to match canonical tags.
+// News articles are listed ONLY under their canonical slug URLs — legacy
+// /news/{id} pages exist in the build but are intentionally excluded here.
+// @ts-ignore — plain .mjs module shared with the app, RSS and prerender hook
+import { buildNewsSlugs } from '../utils/newsSlug.mjs'
 
 const LOCALES: { code: string; lang: string }[] = [
   { code: 'en', lang: 'en-US' },
@@ -78,9 +82,10 @@ export default defineEventHandler(async (event) => {
     } catch {}
   }
 
+  const { idToSlug } = buildNewsSlugs(items)
   for (const a of items) {
     if (a?.id == null) continue
-    const p = `/news/${a.id}`
+    const p = `/news/${idToSlug.get(String(a.id)) || a.id}`
     const alts = altBlock(p)
     for (const l of LOCALES) {
       urls.push(`  <url><loc>${urlFor(l.code, p)}</loc>${alts}</url>`)

@@ -10,6 +10,8 @@
 
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
+// @ts-ignore — plain .mjs module shared with the app, sitemap and prerender hook
+import { buildNewsSlugs } from '../../utils/newsSlug.mjs'
 
 interface NewsItem {
   id: number | string
@@ -86,8 +88,13 @@ export default defineEventHandler(async (event) => {
 
   const lastBuild = items[0]?.date ? toRfc822(items[0].date) : new Date().toUTCString()
 
+  // Canonical slug links; guid stays the legacy id URL so RSS readers keep
+  // stable dedupe keys and never re-deliver already-seen items.
+  const { idToSlug } = buildNewsSlugs(items)
+
   const xmlItems = items.map((it) => {
-    const link = `${base}/news/${it.id}`
+    const link = `${base}/news/${idToSlug.get(String(it.id)) || it.id}`
+    const guid = `${base}/news/${it.id}`
     const img = imageUrl(it.image)
     const imgMime = mimeFromPath(img)
     // Prefer full article body over the short teaser text.
@@ -96,7 +103,7 @@ export default defineEventHandler(async (event) => {
     return `  <item>
     <title>${escXml(it.title || 'SmartHoldem Update')}</title>
     <link>${escXml(link)}</link>
-    <guid isPermaLink="true">${escXml(link)}</guid>
+    <guid isPermaLink="true">${escXml(guid)}</guid>
     <pubDate>${escXml(toRfc822(it.date))}</pubDate>${
       it.tag ? `\n    <category>${escXml(it.tag)}</category>` : ''
     }

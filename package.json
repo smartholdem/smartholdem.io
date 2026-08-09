@@ -1,6 +1,6 @@
 {
-  "name": "smartholdem.io",
-  "version": "1.0.1",
+  "name": "smartholdem-web4",
+  "version": "1.0.0",
   "description": "SmartHoldem Netfory - Web 4.0 Platform Website",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "news:images": "node scripts/fetch-news-images.mjs",
     "news:og": "node scripts/generate-news-og.mjs",
-    "generate": "node scripts/fetch-news-images.mjs && node scripts/generate-news-og.mjs && nuxt generate",
+    "generate": "node scripts/fetch-news-images.mjs && node scripts/generate-news-og.mjs && node scripts/generate-news-redirects.mjs && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
@@ -18,7 +18,8 @@
     "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 4173",
     "build:all": "yarn generate && yarn docs:build && node scripts/merge-dist.mjs",
     "build:smartnet-dapp": "yarn docs:build:smartnet && echo '\\n✓ SmartNet DevHub dApp ready at ./docs-dist-smartnet/ — publish this folder to sth://Sc4vFU8srmG3HjMqAvXRxUZ1AqW2H5dP14'",
-    "preview:all": "yarn build:all && npx serve .output/public -l 8080"
+    "preview:all": "yarn build:all && npx serve .output/public -l 8080",
+    "news:redirects": "node scripts/generate-news-redirects.mjs"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^9.5.6",

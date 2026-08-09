@@ -1,3 +1,5 @@
+// @ts-ignore — plain .mjs module shared with the app, sitemap and RSS
+import { buildNewsSlugs } from './server/utils/newsSlug.mjs'
 // SmartHoldem Netfory — Web 4.0 Platform
 // Nuxt 3 · SSG (nuxt generate) · i18n (18 locales) · Tailwind · @vueuse (theme)
 export default defineNuxtConfig({
@@ -60,11 +62,17 @@ export default defineNuxtConfig({
         }
       }
       const localeCodes = ['ru', 'zh', 'id', 'ko', 'th', 'es', 'vi', 'fr', 'de', 'kk', 'pt', 'uz', 'mn', 'ja', 'sw', 'ar', 'hi']
+      // Canonical slug routes + legacy id routes (kept for backward compat;
+      // they render with a canonical pointing to the slug URL).
+      const { idToSlug } = buildNewsSlugs(items)
       for (const a of items) {
         if (a?.id == null) continue
+        const slug = idToSlug.get(String(a.id))
         ctx.routes.add(`/news/${a.id}`)
+        if (slug) ctx.routes.add(`/news/${slug}`)
         for (const lc of localeCodes) {
           ctx.routes.add(`/${lc}/news/${a.id}`)
+          if (slug) ctx.routes.add(`/${lc}/news/${slug}`)
         }
       }
       // Ensure RSS feed is generated as a static file on build.

@@ -12,10 +12,15 @@
 import imageManifest from '~/public/images/news-images/_manifest.json'
 // @ts-ignore — generated at build time; may be [] in dev before mirroring.
 import newsSnapshot from '~/assets/news-snapshot.json'
+// Shared slug helpers (same implementation used by sitemap, RSS, prerender
+// hook and the nginx redirect-map generator).
+// @ts-ignore — plain .mjs module (relative path: resolvable by Vite AND nitro SSR)
+import { buildNewsSlugs, newsSlugify } from '../server/utils/newsSlug.mjs'
 
 export interface NewsItem {
   id: number
   title: string
+  slug: string
   date: string
   tag: string
   text: string
@@ -28,6 +33,18 @@ const HOST = 'https://news.smartholdem.io'
 const PLACEHOLDER = '/images/home/web_4_smarholdem_netfory.jpg'
 const MANIFEST: Record<string, string> = (imageManifest as any) || {}
 const SNAPSHOT: NewsItem[] = Array.isArray(newsSnapshot) ? (newsSnapshot as NewsItem[]) : []
+
+// Deterministic id<->slug maps built from the full baked snapshot.
+const SLUGS = buildNewsSlugs(SNAPSHOT)
+
+// Slug for any news item: prefer the deduped snapshot map (stable), fall back
+// to direct slugification for items newer than the build (live fetch only).
+export function newsSlugOf(item: { id: number | string; title?: string }): string {
+  return SLUGS.idToSlug.get(String(item.id)) || newsSlugify(item.title || '') || `news-${item.id}`
+}
+
+// Enrich baked snapshot items with their slug once at module init.
+for (const it of SNAPSHOT) (it as any).slug = newsSlugOf(it)
 
 function absolutise(url?: string | null): string | null {
   if (!url) return null
@@ -46,9 +63,12 @@ function mapItem(raw: any): NewsItem {
   const formats = imgAttr?.formats || {}
   const best = formats?.medium?.url || formats?.small?.url || imgAttr?.url
   const remote = absolutise(best)
+  const id = raw?.id ?? a?.id
+  const title = a?.title || 'SmartHoldem Update'
   return {
-    id: raw?.id ?? a?.id,
-    title: a?.title || 'SmartHoldem Update',
+    id,
+    title,
+    slug: newsSlugOf({ id, title }),
     date: a?.date || a?.createdAt || '',
     tag: a?.tag || 'News',
     text: a?.text || '',
@@ -89,6 +109,17 @@ export function getNewsSnapshot(page = 1, pageSize = 12) {
 
 export function getNewsSnapshotById(id: string | number): NewsItem | null {
   return snapshotFind(id)
+}
+
+export function getNewsSnapshotBySlug(slug: string): NewsItem | null {
+  const id = SLUGS.slugToId.get(String(slug).toLowerCase())
+  return id ? snapshotFind(id) : null
+}
+
+// Universal resolver: accepts a canonical slug OR a legacy numeric id.
+export function getNewsSnapshotByRef(ref: string | number): NewsItem | null {
+  const s = String(ref)
+  return /^\d+$/.test(s) ? snapshotFind(s) : getNewsSnapshotBySlug(s)
 }
 
 // ---------------------------------------------------------------------------

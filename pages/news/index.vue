@@ -10,7 +10,7 @@
          in the background if the CMS is reachable. -->
     <div v-if="items.length" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <article v-for="a in items" :key="a.id" class="group flex flex-col overflow-hidden rounded-2xl border hair-border surface transition-all hover:border-neon-cyan/40 hover:-translate-y-1">
-        <NuxtLink :to="localePath(`/news/${a.id}`)" class="block overflow-hidden">
+        <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="block overflow-hidden">
           <img :src="a.image" :alt="a.title" loading="lazy" class="block h-auto w-full transition-transform duration-500 group-hover:scale-105" @error="onImgError($event, a)" />
         </NuxtLink>
         <div class="flex flex-1 flex-col p-5">
@@ -19,10 +19,10 @@
             <time :datetime="a.date">{{ formatDate(a.date) }}</time>
           </div>
           <h2 class="font-bold leading-snug">
-            <NuxtLink :to="localePath(`/news/${a.id}`)" class="transition-colors group-hover:text-neon-cyan">{{ a.title }}</NuxtLink>
+            <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="transition-colors group-hover:text-neon-cyan">{{ a.title }}</NuxtLink>
           </h2>
           <p class="mt-2 line-clamp-3 text-sm text-secondary">{{ a.text }}</p>
-          <NuxtLink :to="localePath(`/news/${a.id}`)" class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-neon-cyan">
+          <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-neon-cyan">
             {{ t('news.readMore') }} <ArrowRight class="h-3.5 w-3.5" />
           </NuxtLink>
         </div>
