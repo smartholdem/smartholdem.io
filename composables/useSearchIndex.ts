@@ -29,6 +29,7 @@ const PAGES: Array<{ path: string; key: string }> = [
   { path: '/mission', key: 'nav.mission' },
   { path: '/executive-summary', key: 'nav.execSummary' },
   { path: '/trust-and-safety', key: 'nav.trustSafety' },
+  { path: '/messaging', key: 'nav.messaging' },
   { path: '/terms', key: 'nav.terms' }
 ]
 

@@ -172,7 +172,7 @@
             <p class="mt-2 text-secondary">{{ t('netforyModal.text2') }}</p>
             <a href="https://t.me/smartholdem" target="_blank" rel="noopener"
                class="mt-6 inline-flex items-center gap-2 rounded-lg bg-neon-cyan px-5 py-2.5 font-semibold text-[#0A0E27] transition-transform hover:-translate-y-0.5">
-              <Send class="h-4 w-4" /> {{ t('netforyModal.telegramCta') }}
+              <Send class="h-4 w-4" /> {{ t('netforyModal.telegram') }}
             </a>
           </div>
         </div>
