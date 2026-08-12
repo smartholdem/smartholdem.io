@@ -15,7 +15,7 @@ import newsSnapshot from '~/assets/news-snapshot.json'
 // Shared slug helpers (same implementation used by sitemap, RSS, prerender
 // hook and the nginx redirect-map generator).
 // @ts-ignore — plain .mjs module (relative path: resolvable by Vite AND nitro SSR)
-import { buildNewsSlugs, newsSlugify } from '../server/utils/newsSlug.mjs'
+import { buildNewsSlugs, newsSlugify, extractHashtagsFrom, topNewsTags as _topNewsTags } from '../server/utils/newsSlug.mjs'
 
 export interface NewsItem {
   id: number
@@ -70,6 +70,55 @@ export function extractHashtags(...sources: (string | undefined | null)[]): stri
     out.add(raw.toLowerCase())
   }
   return [...out]
+}
+
+// Shared filter used by both extraction & linkification: is this a *valid*
+// user-authored hashtag (not a hex color, not a message id, right length)?
+function isValidHashtagToken(raw: string): boolean {
+  if (!raw || raw.length < 2 || raw.length > 30) return false
+  if (HEX_ONLY_RE.test(raw)) return false
+  const digits = (raw.match(/[0-9]/g) || []).length
+  if (digits / raw.length > 0.4) return false
+  return true
+}
+
+// Turn every #hashtag occurrence in an article HTML body into a clickable
+// anchor that navigates to a dedicated, SEO-indexable tag cluster page. The
+// caller supplies `hrefBase` — the locale-aware path to the news root
+// (e.g. `/news` or `/ru/news`). Emitted URLs are `${hrefBase}/tag/{lower}`.
+// Anchors carry `data-tag` so client-side code can hijack the click and use
+// the SPA router instead of a full page reload.
+//
+// The same filters as `extractHashtags` apply — hex colors (#000000) and
+// digit-heavy message-ids (#msg56074241) are left untouched.
+export function linkifyHashtags(html: string | undefined | null, hrefBase: string): string {
+  if (!html) return ''
+  return html.replace(HASHTAG_RE, (match, raw: string) => {
+    if (!isValidHashtagToken(raw)) return match
+    const lower = raw.toLowerCase()
+    const href = `${hrefBase}/tag/${encodeURIComponent(lower)}`
+    return `<a class="news-hashtag" data-tag="${lower}" href="${href}">#${raw}</a>`
+  })
+}
+
+// Filter the full baked snapshot by a single tag (case-insensitive). Returns
+// the items along with a `meta` object shaped like the paginated helpers so
+// callers can drop it in place of `getNewsSnapshot`.
+export function filterNewsByTag(tag: string): { items: NewsItem[]; meta: { page: number; pageSize: number; pageCount: number; total: number } } {
+  const target = String(tag || '').toLowerCase().trim()
+  const items = target
+    ? SNAPSHOT.filter((it) => ((it as any).tags || []).includes(target))
+    : []
+  return {
+    items,
+    meta: { page: 1, pageSize: items.length || 12, pageCount: 1, total: items.length }
+  }
+}
+
+// Client re-export of the shared top-tags helper, pre-bound to the baked
+// snapshot. Used by /news/tag/[tag].vue to render the tag cloud sidebar.
+export function topNewsTags(limit = 20): Array<{ tag: string; count: number }> {
+  return _topNewsTags(SNAPSHOT, limit)
 }
 
 // Enrich baked snapshot items with their slug + extracted tags once at module init.

@@ -806,6 +806,15 @@
       "clear": "Clear filter",
       "count": "{n} matching",
       "noResults": "No articles tagged {tag} yet."
+    },
+    "popularTags": "Popular:",
+    "tagCluster": {
+      "eyebrow": "Topic cluster",
+      "subtitle": "All SmartHoldem news tagged #{tag} — {n} articles.",
+      "noResults": "No articles tagged {tag} yet. Check back soon.",
+      "browseAll": "Browse all news",
+      "explore": "Explore other topics",
+      "seoDescription": "SmartHoldem news, updates and analysis tagged #{tag}. {n} articles from the Web 4.0 ecosystem."
     }
   },
   "whitepaper": {

@@ -806,6 +806,15 @@
       "clear": "Сбросить фильтр",
       "count": "найдено: {n}",
       "noResults": "Пока нет статей с тегом {tag}."
+    },
+    "popularTags": "Популярное:",
+    "tagCluster": {
+      "eyebrow": "Кластер по теме",
+      "subtitle": "Все новости SmartHoldem по тегу #{tag} — статей: {n}.",
+      "noResults": "Пока нет статей с тегом {tag}. Загляните позже.",
+      "browseAll": "Все новости",
+      "explore": "Другие темы",
+      "seoDescription": "Новости, обновления и аналитика SmartHoldem по тегу #{tag}. {n} материалов из экосистемы Web 4.0."
     }
   },
   "whitepaper": {

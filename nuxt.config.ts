@@ -1,5 +1,5 @@
 // @ts-ignore — plain .mjs module shared with the app, sitemap and RSS
-import { buildNewsSlugs } from './server/utils/newsSlug.mjs'
+import { buildNewsSlugs, topNewsTags } from './server/utils/newsSlug.mjs'
 // SmartHoldem Netfory — Web 4.0 Platform
 // Nuxt 3 · SSG (nuxt generate) · i18n (18 locales) · Tailwind · @vueuse (theme)
 export default defineNuxtConfig({
@@ -75,9 +75,20 @@ export default defineNuxtConfig({
           if (slug) ctx.routes.add(`/${lc}/news/${slug}`)
         }
       }
-      // Ensure RSS feed is generated as a static file on build.
+      // Tag cluster pages: /news/tag/{tag} × 18 locales, top-N tags. These
+      // are SEO-indexable topic hubs — they show up in sitemap-tags.xml.
+      const TAG_LIMIT = 20
+      const topTags = topNewsTags(items, TAG_LIMIT)
+      for (const { tag } of topTags) {
+        ctx.routes.add(`/news/tag/${tag}`)
+        for (const lc of localeCodes) ctx.routes.add(`/${lc}/news/tag/${tag}`)
+      }
+      // Ensure RSS feed + sitemaps are generated as static files on build.
       ctx.routes.add('/news/rss.xml')
-      console.log(`[prerender] added ${items.length} news articles (x${localeCodes.length + 1} locales) + /news/rss.xml`)
+      ctx.routes.add('/sitemap.xml')
+      ctx.routes.add('/sitemap-tags.xml')
+      ctx.routes.add('/robots.txt')
+      console.log(`[prerender] added ${items.length} news articles (x${localeCodes.length + 1} locales) + ${topTags.length} tag clusters (x${localeCodes.length + 1} locales) + RSS/sitemaps`)
     },
     async 'nitro:build:public-assets'() {
       // Remove the auto-created `dist` symlink at the repo root if any legacy
