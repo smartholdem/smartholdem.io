@@ -795,7 +795,18 @@
     "loadMore": "Load More",
     "readMore": "Read more",
     "back": "Back to News",
-    "empty": "No news yet."
+    "empty": "No news yet.",
+    "related": {
+      "eyebrow": "Related news",
+      "title": "You might also like",
+      "allNews": "All news"
+    },
+    "filter": {
+      "showing": "Filtered by",
+      "clear": "Clear filter",
+      "count": "{n} matching",
+      "noResults": "No articles tagged {tag} yet."
+    }
   },
   "whitepaper": {
     "eyebrow": "Technical Document",
@@ -879,6 +890,20 @@
       "m3Text": "The number of websites, dApps, games, and digital books deployed instantly into a censorship-resistant, autonomous decentralized environment.",
       "m4Title": "Adversarial Environment",
       "m4Text": "Number of active users in low-connectivity or heavily censored environments using fault-tolerant tools."
+    },
+    "lanFirst": {
+      "eyebrow": "Chapter IV.5",
+      "titleHi": "LAN-First",
+      "titleB": ": Survival When the World Goes Dark",
+      "p1": "In a world of fiber cuts, regional blackouts, and internet isolation, traditional networks fail. Clearnet and IPFS rely on global routing. If the cable is cut, they die.",
+      "p2Bold": "Netfory is different. It is built with a true LAN-First architecture.",
+      "p3": "When the global connection drops, Netfory clients don't panic. They automatically switch to local peer discovery via **mDNS**. Your local network becomes a sovereign island:",
+      "b1": "**E2EE Chats** continue to work between neighbors or colleagues in the same building or street.",
+      "b2": "**File Sharing** via CID operates at lightning speed within the local cluster.",
+      "b3": "**Cached dApps** stay fully functional without a single request to the outside world.",
+      "closing": "We are not just building an alternative internet. We are building a **digital lifeboat** that keeps knowledge, communication, and community alive when everything else goes silent.",
+      "statLabel": "Global Dependency",
+      "statValue": "0%"
     },
     "finalCta": {
       "eyebrow": "Join us",

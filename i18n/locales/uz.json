@@ -880,6 +880,20 @@
       "m4Title": "Dushman muhit",
       "m4Text": "Past ulanish yoki og'ir senzuralangan muhitda xatolarga chidamli vositalardan foydalanuvchi faol foydalanuvchilar soni."
     },
+    "lanFirst": {
+      "eyebrow": "IV.5-bob",
+      "titleHi": "LAN-First",
+      "titleB": ": dunyo zulmatga botganda omon qolish",
+      "p1": "Optik tolali kabellar uzilishi, mintaqaviy elektr uzilishlari va internetdan ajratilish sodir bo'ladigan dunyoda an'anaviy tarmoqlar ishdan chiqadi. Clearnet va IPFS global marshrutlashga bog'liq. Kabel kesilsa, ular o'ladi.",
+      "p2Bold": "Netfory boshqacha. U haqiqiy LAN-First arxitekturasi asosida qurilgan.",
+      "p3": "Global ulanish uzilganda, Netfory mijozlari vahima qilmaydi. Ular avtomatik ravishda **mDNS** orqali mahalliy peer-larni topishga o'tadi. Sizning mahalliy tarmog'ingiz suveren orolga aylanadi:",
+      "b1": "**E2EE-chatlar** bir binoda yoki ko'chada joylashgan qo'shnilar yoki hamkasblar o'rtasida ishlashda davom etadi.",
+      "b2": "CID orqali **fayllar almashinuvi** mahalliy klaster ichida chaqmoq tezligida ishlaydi.",
+      "b3": "**Keshlangan dApps** tashqi dunyoga birorta ham so'rovsiz to'liq ishlaydi.",
+      "closing": "Biz shunchaki muqobil internet qurmayapmiz. Boshqa hamma narsa jim bo'lganda bilim, muloqot va jamiyatni tirik saqlaydigan **raqamli qutqaruv qayig'ini** quryapmiz.",
+      "statLabel": "Global bog'liqlik",
+      "statValue": "0%"
+    },
     "finalCta": {
       "eyebrow": "Bizga qo'shiling",
       "titleA": " ",

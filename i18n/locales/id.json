@@ -879,6 +879,20 @@
       "m4Title": "Lingkungan Adversarial",
       "m4Text": "Jumlah pengguna aktif di lingkungan dengan konektivitas rendah atau sensor berat yang menggunakan alat tahan gangguan."
     },
+    "lanFirst": {
+      "eyebrow": "Bab IV.5",
+      "titleHi": "LAN-First",
+      "titleB": ": Bertahan Saat Dunia Terputus",
+      "p1": "Di dunia dengan pemutusan kabel serat optik, pemadaman regional, dan isolasi internet, jaringan tradisional akan gagal. Clearnet dan IPFS bergantung pada perutean global. Jika kabel diputus, mereka mati.",
+      "p2Bold": "Netfory berbeda. Ia dibangun dengan arsitektur LAN-First yang sesungguhnya.",
+      "p3": "Saat koneksi global terputus, klien Netfory tidak panik. Mereka secara otomatis beralih ke penemuan peer lokal melalui **mDNS**. Jaringan lokal Anda menjadi pulau berdaulat:",
+      "b1": "**Chat E2EE** terus berfungsi antara tetangga atau kolega di gedung atau jalan yang sama.",
+      "b2": "**Berbagi File** melalui CID beroperasi dengan kecepatan kilat di dalam kluster lokal.",
+      "b3": "**dApps yang di-cache** tetap berfungsi penuh tanpa satu pun permintaan ke dunia luar.",
+      "closing": "Kami tidak hanya membangun internet alternatif. Kami membangun **sekoci digital** yang menjaga pengetahuan, komunikasi, dan komunitas tetap hidup ketika semua yang lain terdiam.",
+      "statLabel": "Ketergantungan Global",
+      "statValue": "0%"
+    },
     "finalCta": {
       "eyebrow": "Bergabunglah dengan kami",
       "titleA": "Bergabunglah dengan Jaringan di Mana ",

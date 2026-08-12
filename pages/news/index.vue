@@ -96,6 +96,8 @@ const onImgError = (e, a) => {
 
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/news')
 useBreadcrumbLd([{ key: 'nav.news', path: '/news' }])
+const config = useRuntimeConfig()
+const newsOgImage = `${config.public.siteUrl}/images/news/og-image-smartholdem-sth-news.jpg`
 const title = `${t('news.title')} | SmartHoldem WEB 4.0`
 useSeoMeta({
   title,
@@ -105,7 +107,13 @@ useSeoMeta({
   ogType: 'website',
   ogUrl: () => pageUrl.value,
   ogLocale: () => ogLocale.value,
-  ogLocaleAlternate: () => ogLocaleAlternate.value
+  ogLocaleAlternate: () => ogLocaleAlternate.value,
+  ogImage: newsOgImage,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'SmartHoldem News — Latest updates from the SmartHoldem ecosystem',
+  twitterCard: 'summary_large_image',
+  twitterImage: newsOgImage
 })
 useHead({
   link: [{ rel: 'canonical', href: () => pageUrl.value }]

@@ -880,6 +880,20 @@
       "m4Title": "Môi trường Đối thủ",
       "m4Text": "Số lượng người dùng hoạt động trong môi trường kết nối thấp hoặc bị kiểm duyệt nặng nề sử dụng các công cụ chịu lỗi."
     },
+    "lanFirst": {
+      "eyebrow": "Chương IV.5",
+      "titleHi": "LAN-First",
+      "titleB": ": Sống sót khi thế giới chìm vào bóng tối",
+      "p1": "Trong một thế giới với những vụ cắt cáp quang, mất điện diện rộng và bị cô lập khỏi internet, các mạng truyền thống sẽ thất bại. Clearnet và IPFS dựa vào định tuyến toàn cầu. Nếu cáp bị cắt, chúng sẽ chết.",
+      "p2Bold": "Netfory thì khác. Nó được xây dựng trên kiến trúc LAN-First thực sự.",
+      "p3": "Khi kết nối toàn cầu bị mất, các máy khách Netfory không hoảng loạn. Chúng tự động chuyển sang khám phá peer cục bộ qua **mDNS**. Mạng cục bộ của bạn trở thành một hòn đảo có chủ quyền:",
+      "b1": "**Chat E2EE** tiếp tục hoạt động giữa hàng xóm hoặc đồng nghiệp trong cùng tòa nhà hay con phố.",
+      "b2": "**Chia sẻ tệp** qua CID hoạt động với tốc độ ánh sáng trong cụm cục bộ.",
+      "b3": "**dApps được cache** vẫn hoạt động đầy đủ mà không cần một yêu cầu nào ra thế giới bên ngoài.",
+      "closing": "Chúng tôi không chỉ đang xây dựng một internet thay thế. Chúng tôi đang xây dựng một **xuồng cứu sinh kỹ thuật số** giữ cho tri thức, giao tiếp và cộng đồng luôn sống khi mọi thứ khác im lặng.",
+      "statLabel": "Phụ thuộc toàn cầu",
+      "statValue": "0%"
+    },
     "finalCta": {
       "eyebrow": "Tham gia cùng chúng tôi",
       "titleA": "Tham gia Mạng lưới Nơi ",

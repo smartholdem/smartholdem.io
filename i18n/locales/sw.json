@@ -880,6 +880,20 @@
       "m4Title": "Mazingira ya Adui",
       "m4Text": "Idadi ya watumiaji walio hai katika mazingira ya muunganisho mdogo au udhibiti mkubwa wanaotumia zana zinazostahimili hitilafu."
     },
+    "lanFirst": {
+      "eyebrow": "Sura ya IV.5",
+      "titleHi": "LAN-First",
+      "titleB": ": Kuishi Wakati Dunia Inapoingia Gizani",
+      "p1": "Katika dunia ya kukatika kwa nyaya za fiber, kukatika kwa umeme kikanda, na kutengwa kwa mtandao, mitandao ya kawaida hushindwa. Clearnet na IPFS zinategemea uelekezaji wa kimataifa. Kama kebo ikakatwa, zinakufa.",
+      "p2Bold": "Netfory ni tofauti. Imejengwa kwa usanifu wa kweli wa LAN-First.",
+      "p3": "Wakati muunganisho wa kimataifa unapokatika, wateja wa Netfory hawapati wasiwasi. Wanabadilika kiotomatiki kwa ugunduzi wa nodi za ndani kupitia **mDNS**. Mtandao wako wa ndani unakuwa kisiwa cha kujitawala:",
+      "b1": "**Mazungumzo ya E2EE** yanaendelea kufanya kazi kati ya majirani au wafanyakazi wenza katika jengo au mtaa mmoja.",
+      "b2": "**Ushirikishaji wa Faili** kupitia CID hufanya kazi kwa kasi ya umeme ndani ya kikundi cha ndani.",
+      "b3": "**dApps zilizohifadhiwa** zinabaki zikifanya kazi kikamilifu bila ombi hata moja kwa dunia ya nje.",
+      "closing": "Hatujengi tu mtandao mbadala. Tunajenga **mashua ya uokoaji ya kidijitali** inayoweka maarifa, mawasiliano, na jamii hai wakati kila kitu kingine kimenyamaza.",
+      "statLabel": "Utegemezi wa Kimataifa",
+      "statValue": "0%"
+    },
     "finalCta": {
       "eyebrow": "Jiunge nasi",
       "titleA": "Jiunge na Mtandao Ambapo ",

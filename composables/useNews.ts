@@ -23,6 +23,7 @@ export interface NewsItem {
   slug: string
   date: string
   tag: string
+  tags?: string[]
   text: string
   article: string
   image: string | null
@@ -43,8 +44,79 @@ export function newsSlugOf(item: { id: number | string; title?: string }): strin
   return SLUGS.idToSlug.get(String(item.id)) || newsSlugify(item.title || '') || `news-${item.id}`
 }
 
-// Enrich baked snapshot items with their slug once at module init.
-for (const it of SNAPSHOT) (it as any).slug = newsSlugOf(it)
+// ---------------------------------------------------------------------------
+// Hashtag extraction (used to compute "related news" by shared tags).
+// Tags are authored inline in article body as #smartholdem, #bitcoin, etc.
+// Filters out:
+//   - hex colors (#000000, #fff, #a3b) — pure hex strings
+//   - tokens starting with a digit (#123)
+//   - tokens with too many digits (msg56074241) — accept only tokens whose
+//     digit ratio is < 40%.
+//   - very short (<2) or very long (>30) tokens
+// ---------------------------------------------------------------------------
+const HASHTAG_RE = /#([A-Za-z][A-Za-z0-9_]{1,29})/g
+const HEX_ONLY_RE = /^[0-9a-fA-F]{3,8}$/
+
+export function extractHashtags(...sources: (string | undefined | null)[]): string[] {
+  const text = sources.filter(Boolean).join(' ')
+  const out = new Set<string>()
+  let m: RegExpExecArray | null
+  while ((m = HASHTAG_RE.exec(text)) !== null) {
+    const raw = m[1]
+    if (!raw || raw.length < 2 || raw.length > 30) continue
+    if (HEX_ONLY_RE.test(raw)) continue // hex color
+    const digits = (raw.match(/[0-9]/g) || []).length
+    if (digits / raw.length > 0.4) continue // too digit-heavy (message ids etc.)
+    out.add(raw.toLowerCase())
+  }
+  return [...out]
+}
+
+// Enrich baked snapshot items with their slug + extracted tags once at module init.
+for (const it of SNAPSHOT) {
+  ;(it as any).slug = newsSlugOf(it)
+  ;(it as any).tags = extractHashtags(it.title, it.text, it.article)
+}
+
+// ---------------------------------------------------------------------------
+// Related news: given a current article id, return up to `limit` related
+// items. Ranking:
+//   1. Articles that share the most hashtags with the current article (desc).
+//   2. On ties, most recent date wins.
+// Fallback: if the current article has no hashtags OR no related found,
+// return the `limit` most recent articles (excluding the current one).
+// ---------------------------------------------------------------------------
+export function getRelatedNews(currentId: string | number, limit = 3): NewsItem[] {
+  const idStr = String(currentId)
+  const current = SNAPSHOT.find((it) => String(it.id) === idStr)
+  const currentTags: string[] = current ? ((current as any).tags || []) : []
+  const currentTagSet = new Set(currentTags)
+
+  const others = SNAPSHOT.filter((it) => String(it.id) !== idStr)
+
+  if (currentTagSet.size > 0) {
+    const scored = others
+      .map((it) => {
+        const tags: string[] = (it as any).tags || []
+        const overlap = tags.reduce((n, t) => n + (currentTagSet.has(t) ? 1 : 0), 0)
+        return { it, overlap }
+      })
+      .filter((x) => x.overlap > 0)
+      .sort((a, b) => {
+        if (b.overlap !== a.overlap) return b.overlap - a.overlap
+        const da = new Date(a.it.date || 0).getTime()
+        const db = new Date(b.it.date || 0).getTime()
+        return db - da
+      })
+      .slice(0, limit)
+      .map((x) => x.it)
+
+    if (scored.length) return scored
+  }
+
+  // Fallback: most-recent items (snapshot is already sorted date desc).
+  return others.slice(0, limit)
+}
 
 function absolutise(url?: string | null): string | null {
   if (!url) return null
@@ -65,14 +137,17 @@ function mapItem(raw: any): NewsItem {
   const remote = absolutise(best)
   const id = raw?.id ?? a?.id
   const title = a?.title || 'SmartHoldem Update'
+  const text = a?.text || ''
+  const article = a?.article || ''
   return {
     id,
     title,
     slug: newsSlugOf({ id, title }),
     date: a?.date || a?.createdAt || '',
     tag: a?.tag || 'News',
-    text: a?.text || '',
-    article: a?.article || '',
+    tags: extractHashtags(title, text, article),
+    text,
+    article,
     image: localise(remote) || PLACEHOLDER,
     imageRemote: remote || PLACEHOLDER
   }

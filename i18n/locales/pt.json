@@ -879,6 +879,20 @@
       "m4Title": "Ambiente Adversário",
       "m4Text": "Número de usuários ativos em ambientes de baixa conectividade ou fortemente censurados usando ferramentas tolerantes a falhas."
     },
+    "lanFirst": {
+      "eyebrow": "Capítulo IV.5",
+      "titleHi": "LAN-First",
+      "titleB": ": sobrevivência quando o mundo se apaga",
+      "p1": "Em um mundo de cortes de fibra, apagões regionais e isolamento da internet, as redes tradicionais falham. Clearnet e IPFS dependem do roteamento global. Se o cabo é cortado, elas morrem.",
+      "p2Bold": "Netfory é diferente. É construído com uma verdadeira arquitetura LAN-First.",
+      "p3": "Quando a conexão global cai, os clientes Netfory não entram em pânico. Eles mudam automaticamente para a descoberta local de peers via **mDNS**. Sua rede local se torna uma ilha soberana:",
+      "b1": "**Chats E2EE** continuam funcionando entre vizinhos ou colegas no mesmo prédio ou rua.",
+      "b2": "**Compartilhamento de arquivos** via CID opera na velocidade da luz dentro do cluster local.",
+      "b3": "**dApps em cache** permanecem totalmente funcionais sem uma única requisição ao mundo externo.",
+      "closing": "Não estamos apenas construindo uma internet alternativa. Estamos construindo um **bote salva-vidas digital** que mantém vivos o conhecimento, a comunicação e a comunidade quando tudo o mais silencia.",
+      "statLabel": "Dependência global",
+      "statValue": "0%"
+    },
     "finalCta": {
       "eyebrow": "Junte-se a nós",
       "titleA": "Junte-se à Rede Onde ",

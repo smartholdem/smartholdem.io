@@ -140,6 +140,7 @@ export default defineNuxtConfig({
     lazy: false,
     langDir: 'locales',
     defaultLocale: 'en',
+    fallbackLocale: 'en',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
     // Allow inline HTML tags (e.g. <strong>) inside translation messages so

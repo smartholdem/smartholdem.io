@@ -123,6 +123,9 @@
       </div>
     </section>
 
+    <!-- ============ CH.IV.5 — LAN-FIRST RESILIENCE (NEW) ============ -->
+    <LanFirstResilience />
+
     <!-- ============ FINAL CTA — YOU ARE THE NETWORK ============ -->
     <section class="container-x py-24">
       <div class="grid items-center gap-12 lg:grid-cols-2">

@@ -880,6 +880,20 @@
       "m4Title": "Feindliche Umgebung",
       "m4Text": "Anzahl aktiver Nutzer in umgebungs mit geringer Konnektivität oder starker Zensur, die fehlertolerante Werkzeuge verwenden."
     },
+    "lanFirst": {
+      "eyebrow": "Kapitel IV.5",
+      "titleHi": "LAN-First",
+      "titleB": ": Überleben, wenn die Welt verstummt",
+      "p1": "In einer Welt aus Glasfaser-Kabelbrüchen, regionalen Stromausfällen und Internet-Isolation versagen traditionelle Netzwerke. Clearnet und IPFS sind auf globales Routing angewiesen. Wird das Kabel durchtrennt, sterben sie.",
+      "p2Bold": "Netfory ist anders. Es basiert auf einer echten LAN-First-Architektur.",
+      "p3": "Wenn die globale Verbindung abbricht, geraten Netfory-Clients nicht in Panik. Sie wechseln automatisch zur lokalen Peer-Entdeckung via **mDNS**. Ihr lokales Netzwerk wird zu einer souveränen Insel:",
+      "b1": "**E2EE-Chats** funktionieren weiterhin zwischen Nachbarn oder Kollegen im selben Gebäude oder auf derselben Straße.",
+      "b2": "**Datei-Sharing** via CID läuft in Lichtgeschwindigkeit innerhalb des lokalen Clusters.",
+      "b3": "**Gecachte dApps** bleiben vollständig funktionsfähig – ohne eine einzige Anfrage an die Außenwelt.",
+      "closing": "Wir bauen nicht einfach nur ein alternatives Internet. Wir bauen ein **digitales Rettungsboot**, das Wissen, Kommunikation und Gemeinschaft am Leben erhält, wenn alles andere verstummt.",
+      "statLabel": "Globale Abhängigkeit",
+      "statValue": "0%"
+    },
     "finalCta": {
       "eyebrow": "Schließen Sie sich uns an",
       "titleA": "Treten Sie dem Netzwerk bei, in dem ",
