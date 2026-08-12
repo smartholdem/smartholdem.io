@@ -681,6 +681,26 @@
       "q6": "SmartHolder staking dan qanday topaman?",
       "a6": "Mukofotlar {auto} yuboriladi: har oyning 1 va 15. To'lovlar {assets} va staking davrida faol savdo qilingan 20+ aktorda."
     },
+    "howto": {
+      "name": "SmartHoldem (STH) ni qanday olish mumkin",
+      "description": "SmartHoldem (STH) ni sotib olish, almashtirish, savdo qilish yoki stake qilish uchun bosqichma-bosqich qo'llanma — hamyonni o'rnatishdan haqiqiy daromad olishgacha.",
+      "supply1": "Har qanday zamonaviy qurilma (desktop, mobil yoki veb-brauzer)",
+      "supply2": "Birinchi almashinuv uchun oz miqdorda BTC, USDT yoki boshqa qo'llab-quvvatlanadigan aktiv",
+      "tool1": "SmartHoldem Wallet (native, non-custodial)",
+      "tool2": "XBTS DEX yoki Dex-Trade hisobi (ixtiyoriy, spot savdo uchun)",
+      "s1Name": "SmartHoldem Wallet ni o'rnating",
+      "s1Text": "Platformangiz uchun rasmiy non-custodial SmartHoldem Wallet ni yuklab oling. Yangi hisob yarating, tiklash iborasini oflayn saqlang va kuchli parol o'rnating. Shaxsiy kalitlaringizni har doim o'zingizda saqlaysiz — hamyon ularni hech qayerga yuklamaydi.",
+      "s2Name": "Hamyoningizni boshlang'ich aktiv bilan to'ldiring",
+      "s2Text": "BTC, USDT yoki boshqa qo'llab-quvvatlanadigan aktivni hamyonga o'tkazing. Keyingi bosqichda STH ga almashtiriladi. Agar siz kriptoda yangi bo'lsangiz, avval kichik test miqdorlarini yuboring.",
+      "s3Name": "Hamyon ichida STH ga almashtiring",
+      "s3Text": "To'ldirilgan aktivni STH ga almashtirish uchun o'rnatilgan swap widgetidan foydalaning. Kurs XBTS DEX va hamkor likvidligidan yig'iladi — KYC yo'q, hisob talab qilinmaydi.",
+      "s4Name": "Spot birjada STH savdo qiling (ixtiyoriy)",
+      "s4Text": "Kattaroq buyurtmalar uchun XBTS DEX dagi XBTSX.STH / XBTSX.USDT bozorini (BitShares gateway, non-custodial) yoki Dex-Trade dagi STH/USDT bozorini (hamkor CEX) foydalaning. Ikkalasi ham jonli order book va standart shamchiroq diagrammalarini ko'rsatadi.",
+      "s5Name": "Daromad uchun DeFi likvidligini ta'minlang (ixtiyoriy)",
+      "s5Text": "XBTS dagi DeFi likvidlik pooliga STH ni depozit qiling va avtomatik ravishda savdo to'lovlarini toping. Yechish permissionless — mablag'laringiz doim non-custodial bo'lib qoladi.",
+      "s6Name": "Haqiqiy daromad uchun STH ni SmartHolder bilan stake qiling",
+      "s6Text": "XBTS DEX savdo foydasining ulushini olish uchun SmartHolder staking ni yoqing. Har oyning 1 va 15 kunlari USDT va 20+ faol savdo qilinadigan aktivlarda avtomatik to'lanadi. Stake qilingan tangalar siz tanlagan davr davomida qulflanadi — kastodiya har doim sizda qoladi."
+    },
     "seo": {
       "title": "STH Oling {'|'} SmartHoldem Tangasini Sotib Oling, Almashtiring, Savdo Qiling va Staking Qiling",
       "description": "SmartHoldem (STH) ni darhol oling. Tovuq hamyonda almashtiring, XBTS DEX da 45+ juftlikni savdo qiling, DeFi likvidlikni ta'minlang yoki SmartHolder staking bilan haqiqiy daromad oling.",
@@ -894,6 +914,18 @@
       "statLabel": "Global bog'liqlik",
       "statValue": "0%"
     },
+    "faq": {
+      "q1": "Web 4.0 nima va Netfory buni qanday amalga oshiradi?",
+      "a1": "Web 4.0 — bu ilovalar markazlashtirilgan hosting siz foydalanuvchi qurilmalarida to'g'ridan-to'g'ri yashaydigan serversiz avtonom internet. Netfory buni SmartHoldem (STH) blokcheyni ustidagi peer-to-peer tarmoq sifatida amalga oshiradi: ilovalar kontent bo'yicha manzillanadi, peer-larda mahalliy ravishda ishlaydi va bulut infratuzilmasini talab qilmaydi.",
+      "q2": "LAN-First Resilience nima?",
+      "a2": "LAN-First — Netfory paradigmasi, unda global internet mavjud bo'lmaganda mijozlar mDNS orqali mahalliy peer-larni topishga avtomatik ravishda qaytadi. WAN aloqasi uzilganda E2EE chatlar qo'shnilar o'rtasida ishlashda davom etadi, CID asosidagi fayl almashinuvi LAN tezligida ishlaydi va keshlangan dApp-lar to'liq ishlashda qoladi — tashqi marshrutlashga bog'liqlik nol.",
+      "q3": "Netfory IPFS yoki Clearnet-dan qanday farq qiladi?",
+      "a3": "Clearnet va IPFS global marshrutlashga bog'liq; agar kabel kesilsa, ular ishlashni to'xtatadi. Netfory haqiqiy LAN-First arxitekturasi bilan qurilgan va global ulanish tushgan zahoti mahalliy tarmoqda mDNS peer topish-ga o'tadi, aloqa va fayl almashinuvini tirik saqlaydi.",
+      "q4": "Netfory markaziy serverni talab qiladimi?",
+      "a4": "Yo'q. Netfory-da nol markaziy serverlar bor. Barcha ma'lumotlar, xabarlar va ilovalar Iroh/QUIC transporti orqali peer-to-peer harakat qiladi, kontent CID orqali manzillanadi va identifikatorlar on-chain SmartHoldem hamyoniga bog'langan.",
+      "q5": "Netfory-dagi kontent tsenzuraga uchraydimi?",
+      "a5": "Yo'q. Tarmoqdan kontentni o'chira oladigan markaziy hokimiyat yo'q. Filtrlar faqat do'kon/kashfiyot qatlamida opt-in obro'-e'tibor nishonlari sifatida mavjud — to'g'ridan-to'g'ri sn:// va sth:// havolalari har doim har qanday ro'yxatdan qat'i nazar ishlaydi."
+    },
     "finalCta": {
       "eyebrow": "Bizga qo'shiling",
       "titleA": " ",
@@ -990,6 +1022,18 @@
       "p2": "Kundalik foydalanuvchilar sukut bo'yicha himoyalangan. Ilg'or foydalanuvchilar to'liq ko'rinuvchanlikni saqlaydi.",
       "p3": "Dunyoda hech kimning ilovani tarmoqdan o'chirib tashlashi mumkin bo'lgan tugmasi yo'q.",
       "back": "Missiyaga qaytish"
+    },
+    "faq": {
+      "q1": "SmartNet tsenzurasiz xavfsizlikni qanday ta'minlaydi?",
+      "a1": "SmartNet markazlashmagan obro'-e'tibor bilan boshqariladigan ikki bosqichli katalogdan (Official / All) foydalanadi. USER rejimidagi oddiy foydalanuvchilar faqat hamjamiyat tomonidan tekshirilgan DEVELOPERS ro'yxatidagi ishonchli ishlab chiquvchilar tomonidan imzolangan yoki ochiq boshqaruv tranzaksiyasi orqali tasdiqlangan ilovalarni ko'radi. Ilg'or foydalanuvchilar barcha filtrlanmagan tarmoqni ko'rish uchun Tekshirilmaganlarni ko'rsatishni yoqishi mumkin.",
+      "q2": "SmartHoldem tarmoqdan ilovani o'chirishi mumkinmi?",
+      "a2": "Yo'q. Kontent hech qachon tarmoqdan o'chirilmaydi. Trekerlar barcha ilovalarni indekslaydi va Official bayrog'i faqat SmartHoldem blokcheynida saqlanadigan ko'rinuvchanlik metama'lumot tegi. Filtrlash foydalanuvchi qurilmasida mahalliy ravishda sodir bo'ladi va klientni fork qilish yoki to'g'ridan-to'g'ri sn:// havolasidan foydalanish orqali chetlab o'tish mumkin.",
+      "q3": "sn:// yoki sth:// to'g'ridan-to'g'ri havolalar bloklanishi mumkinmi?",
+      "a3": "Hech qachon. sn:// yoki sth:// protokollaridan foydalanuvchi to'g'ridan-to'g'ri havolalar har doim har qanday ro'yxatdan qat'i nazar hal qilinadi. Filtrlar faqat do'kon-vitrinasida topishga qo'llaniladi, asosiy transport qatlamiga hech qachon emas.",
+      "q4": "Tekshirish kriptografik jihatdan qanday ishlaydi?",
+      "a4": "Har bir Official ilovada uning id-ini pubkey va owner manziliga bog'laydigan imzolangan manifest bor. Klient imzoni on-chain DEVELOPERS ro'yxatiga qarshi mahalliy tekshiradi — soxtalashtirish matematik jihatdan imkonsiz.",
+      "q5": "Foydalanuvchi oflayn bo'lganda xavfsizlik qanday ishlaydi?",
+      "a5": "SmartNet Cloud Seeders-dan foydalanadi. Ishonchli ishlab chiquvchilar joriy ishonch ro'yxatlarini o'z ichiga olgan shifrlangan vdapps.enc holat fayllarini har 30 daqiqada nusxalaydi. Peer-lar bu ro'yxatlarni faqat emitent ularning tanish DEVELOPERS to'plamida bo'lganda qabul qiladi, boshlang'ich konfiguratsiyaga bog'langan tranzitiv ishonch zanjirini yaratadi."
     }
   },
   "msg": {
@@ -1048,6 +1092,18 @@
       "p1": "Big Tech-dan maxfiylik ijaraga olishni to'xtating. Uni egallashni boshlang.",
       "cta": "Netfory klientini yuklab olish",
       "back": "Ekotizimga qaytish"
+    },
+    "faq": {
+      "q1": "Netfory messenger biron-bir markaziy serverdan foydalanadimi?",
+      "a1": "Yo'q. Xabarlar QUIC ustidagi Iroh transporti orqali qurilma-qurilmaga harakat qiladi. Markaziy server, xabar brokeri yoki metama'lumot ombori yo'q. Kim kim bilan gaplashayotganini hech kim ko'ra olmaydi.",
+      "q2": "Uchdan-uchgacha shifrlash qanday amalga oshiriladi?",
+      "a2": "Har bir xabar sukut bo'yicha X25519 kalit almashinuvi va AES-256-GCM autentifikatsiyalangan shifrlash bilan shifrlanadi. Faqat qabul qiluvchi qurilmasi shifrni ochish uchun kerak bo'lgan shaxsiy kalitni saqlaydi.",
+      "q3": "0xID Mail nima va u Gmail-dan qanday farq qiladi?",
+      "a3": "0xID Mail — uchta maxfiylik rejimiga ega mail klienti. 1-rejim mahalliy PIN-shifrlangan Sled xotirasi bilan klassik IMAP/SMTP klientidir. 2-rejim manzilni soxtalashtirishni matematik jihatdan imkonsiz qiladigan on-chain Verified Badge bilan oddiy SMTP orqali to'liq shifrlangan mailni yuboradi. 3-rejim — on-chain ro'yxatga olingan alice{'@'}sth manzillari bilan Iroh orqali sof P2P — SMTP serverlari yo'q, loglar yo'q.",
+      "q4": "Iqtisodiy anti-spam qanday ishlaydi?",
+      "a4": "Yangi kontaktga xabar yuborish uchun kichik Invite Transaction (1 STH) yuborasiz, bu sizning bot fermasi emas, haqiqiy odam ekanligingizni isbotlaydi. Qabul qiluvchilar ham xabar uchun narx belgilashi mumkin, spammer-larni ularga yetish uchun STH to'lashga majbur qiladi va ommaviy ta'qibni iqtisodiy jihatdan imkonsiz qiladi.",
+      "q5": "Agar qabul qiluvchi oflayn bo'lsa nima bo'ladi?",
+      "a5": "Klient avtomatik ravishda SMTP orqali shifrlangan konvertga (2-rejim) qaytadi. Qabul qiluvchi har qanday provayder-da oddiy ko'rinadigan xatni ko'radi, o'z kaliti bilan mahalliy shifrni ochadi va xabar hech qachon Netfory storefront-iga tegmaydi."
     }
   }
 }

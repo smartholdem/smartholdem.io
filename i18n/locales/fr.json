@@ -681,6 +681,26 @@
       "q6": "Comment gagne-t-on avec SmartHolder staking ?",
       "a6": "Les récompenses sont envoyées {auto} : le 1er et le 15 de chaque mois. Paiements en {assets} et plus de 20 actifs activement tradés pendant la période de staking."
     },
+    "howto": {
+      "name": "Comment obtenir SmartHoldem (STH)",
+      "description": "Guide étape par étape pour acquérir, échanger, trader ou staker SmartHoldem (STH) — de l'installation du wallet à l'obtention d'un rendement réel.",
+      "supply1": "Tout appareil moderne (desktop, mobile ou navigateur web)",
+      "supply2": "Petite quantité de BTC, USDT ou d'un autre actif supporté pour le premier swap",
+      "tool1": "SmartHoldem Wallet (natif, non custodial)",
+      "tool2": "Compte XBTS DEX ou Dex-Trade (optionnel, pour le trading spot)",
+      "s1Name": "Installez le SmartHoldem Wallet",
+      "s1Text": "Téléchargez le SmartHoldem Wallet officiel non custodial pour votre plateforme. Créez un nouveau compte, sauvegardez votre phrase de récupération hors ligne et définissez une passphrase robuste. Vous conservez vos clés privées à tout moment — le wallet ne les envoie nulle part.",
+      "s2Name": "Alimentez votre wallet avec un actif initial",
+      "s2Text": "Transférez du BTC, USDT ou un autre actif supporté vers le wallet. Il sera échangé contre du STH à l'étape suivante. N'envoyez que de petits montants de test si vous débutez en crypto.",
+      "s3Name": "Échangez vers STH dans le wallet",
+      "s3Text": "Utilisez le widget de swap intégré pour échanger l'actif déposé contre du STH. Le taux est agrégé depuis XBTS DEX et la liquidité partenaire — sans KYC, sans compte requis.",
+      "s4Name": "Tradez le STH sur un exchange spot (optionnel)",
+      "s4Text": "Pour des ordres plus importants, utilisez le marché XBTSX.STH / XBTSX.USDT sur XBTS DEX (passerelle BitShares, non custodial) ou le marché STH/USDT sur Dex-Trade (CEX partenaire). Les deux affichent des carnets d'ordres en direct et des graphiques en chandeliers standards.",
+      "s5Name": "Fournissez de la liquidité DeFi pour du rendement (optionnel)",
+      "s5Text": "Déposez du STH dans un pool de liquidité DeFi sur XBTS pour gagner automatiquement des frais de trading. Les retraits sont permissionless — vos fonds restent non custodiaux tout le temps.",
+      "s6Name": "Stakez du STH avec SmartHolder pour du rendement réel",
+      "s6Text": "Activez le staking SmartHolder pour recevoir une part des profits de trading XBTS DEX, payés automatiquement le 1er et le 15 de chaque mois en USDT et plus de 20 actifs activement tradés. Les coins stakés sont verrouillés pour la période que vous choisissez — vous conservez la garde à tout moment."
+    },
     "seo": {
       "title": "Obtenir STH {'|'} Acheter, Échanger, Trader et Staker la Monnaie SmartHoldem",
       "description": "Obtenez SmartHoldem (STH) instantanément. Échangez dans le portefeuille natif, tradez 45+ paires sur XBTS DEX, fournissez de la liquidité DeFi ou gagnez un rendement réel avec SmartHolder staking.",
@@ -894,6 +914,18 @@
       "statLabel": "Dépendance mondiale",
       "statValue": "0%"
     },
+    "faq": {
+      "q1": "Qu'est-ce que Web 4.0 et comment Netfory l'implémente-t-il ?",
+      "a1": "Web 4.0 est un internet autonome sans serveurs où les applications vivent directement sur les appareils des utilisateurs sans hébergement centralisé. Netfory l'implémente comme un réseau peer-to-peer sur la blockchain SmartHoldem (STH) : les applications sont adressées par contenu, s'exécutent nativement sur les pairs et ne nécessitent aucune infrastructure cloud.",
+      "q2": "Qu'est-ce que LAN-First Resilience ?",
+      "a2": "LAN-First est un paradigme de Netfory où les clients basculent automatiquement vers la découverte de pairs locaux via mDNS lorsque l'internet mondial est indisponible. Quand le lien WAN est coupé, les chats E2EE continuent de fonctionner entre voisins, le partage de fichiers basé sur CID fonctionne à la vitesse du LAN et les dApps mises en cache restent pleinement fonctionnelles — sans aucune dépendance au routage externe.",
+      "q3": "En quoi Netfory diffère-t-il d'IPFS ou de Clearnet ?",
+      "a3": "Clearnet et IPFS reposent sur le routage global ; si le câble est coupé, ils cessent de fonctionner. Netfory est construit avec une véritable architecture LAN-First et bascule vers la découverte de pairs mDNS sur le réseau local dès que la connectivité mondiale tombe, gardant la communication et le partage de fichiers en vie.",
+      "q4": "Netfory nécessite-t-il un serveur central ?",
+      "a4": "Non. Netfory n'a aucun serveur central. Toutes les données, messages et applications voyagent en peer-to-peer via le transport Iroh/QUIC, avec le contenu adressé par CID et les identités ancrées à des portefeuilles SmartHoldem on-chain.",
+      "q5": "Le contenu sur Netfory est-il censuré ?",
+      "a5": "Non. Aucune autorité centrale ne peut supprimer du contenu du réseau. Les filtres n'existent qu'à la couche de vitrine/découverte en tant que badges de réputation opt-in — les liens directs sn:// et sth:// fonctionnent toujours quelles que soient les listes."
+    },
     "finalCta": {
       "eyebrow": "Rejoignez-nous",
       "titleA": "Rejoignez le Réseau Où ",
@@ -990,6 +1022,18 @@
       "p2": "Les utilisateurs quotidiens sont protégés par défaut. Les utilisateurs avancés conservent une visibilité complète.",
       "p3": "Et personne au monde n'a de bouton pouvant supprimer une application du réseau.",
       "back": "Retour à la Mission"
+    },
+    "faq": {
+      "q1": "Comment SmartNet assure-t-il la sécurité sans censure ?",
+      "a1": "SmartNet utilise un catalogue à deux niveaux (Official / All) piloté par une réputation décentralisée. Les utilisateurs ordinaires en mode USER ne voient que les apps signées par des développeurs de confiance dans le registre DEVELOPERS vérifié par la communauté ou approuvées par transaction de gouvernance publique. Les utilisateurs avancés peuvent activer Afficher les non vérifiés pour voir tout le réseau non filtré.",
+      "q2": "SmartHoldem peut-il supprimer une app du réseau ?",
+      "a2": "Non. Le contenu n'est jamais supprimé du réseau. Les trackers indexent toutes les apps et le drapeau Official n'est qu'une balise de métadonnées de visibilité stockée sur la blockchain SmartHoldem. Le filtrage se produit localement sur l'appareil de l'utilisateur et peut être contourné en forkant le client ou en utilisant un lien direct sn://.",
+      "q3": "Les liens directs sn:// ou sth:// sont-ils jamais bloqués ?",
+      "a3": "Jamais. Les liens directs utilisant les protocoles sn:// ou sth:// se résolvent toujours quelles que soient les listes. Les filtres ne s'appliquent qu'à la découverte dans la vitrine, jamais à la couche de transport sous-jacente.",
+      "q4": "Comment la vérification fonctionne-t-elle cryptographiquement ?",
+      "a4": "Chaque app Official a un manifeste signé liant son id à une adresse pubkey et owner. Le client vérifie la signature localement par rapport au registre DEVELOPERS on-chain — l'usurpation est mathématiquement impossible.",
+      "q5": "Comment la sécurité fonctionne-t-elle lorsque l'utilisateur est hors ligne ?",
+      "a5": "SmartNet utilise des Cloud Seeders. Les développeurs de confiance répliquent des fichiers d'état vdapps.enc chiffrés avec les listes de confiance actuelles toutes les 30 minutes. Les pairs n'acceptent ces listes que si l'émetteur est déjà dans leur ensemble DEVELOPERS connu, créant une chaîne transitive de confiance ancrée dans la configuration initiale."
     }
   },
   "msg": {
@@ -1048,6 +1092,18 @@
       "p1": "Arrêtez de louer la confidentialité aux Big Tech. Commencez à la posséder.",
       "cta": "Télécharger le client Netfory",
       "back": "Retour à l'écosystème"
+    },
+    "faq": {
+      "q1": "Le messenger Netfory utilise-t-il un serveur central ?",
+      "a1": "Non. Les messages voyagent d'appareil à appareil via le transport Iroh sur QUIC. Il n'y a pas de serveur central, pas de broker de messages et pas de stockage de métadonnées. Personne ne peut voir qui parle à qui.",
+      "q2": "Comment le chiffrement de bout en bout est-il implémenté ?",
+      "a2": "Chaque message est chiffré par défaut avec l'échange de clés X25519 et le chiffrement authentifié AES-256-GCM. Seul l'appareil du destinataire détient la clé privée nécessaire pour déchiffrer.",
+      "q3": "Qu'est-ce que 0xID Mail et en quoi diffère-t-il de Gmail ?",
+      "a3": "0xID Mail est un client mail avec trois modes de confidentialité. Mode 1 est un client IMAP/SMTP classique avec stockage Sled local chiffré par PIN. Mode 2 envoie du courrier entièrement chiffré via SMTP normal avec un Verified Badge on-chain qui rend l'usurpation d'adresse mathématiquement impossible. Mode 3 est du P2P pur via Iroh avec des adresses alice{'@'}sth enregistrées on-chain — pas de serveurs SMTP, pas de journaux.",
+      "q4": "Comment fonctionne l'anti-spam économique ?",
+      "a4": "Pour envoyer un message à un nouveau contact, vous envoyez une petite Invite Transaction (1 STH), ce qui prouve que vous êtes un humain réel plutôt qu'une ferme à bots. Les destinataires peuvent également fixer un prix par message, forçant les spammeurs à payer des STH pour les atteindre et rendant le harcèlement de masse économiquement irréalisable.",
+      "q5": "Que se passe-t-il si le destinataire est hors ligne ?",
+      "a5": "Le client bascule automatiquement vers une enveloppe chiffrée sur SMTP (Mode 2). Le destinataire voit un courriel d'apparence normale chez n'importe quel fournisseur, le déchiffre localement avec sa clé, et le message ne touche jamais la vitrine Netfory."
     }
   }
 }

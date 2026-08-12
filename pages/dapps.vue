@@ -302,6 +302,66 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: () => pageUrl.value }]
 })
+
+// SoftwareApplication ItemList JSON-LD — makes every live dApp on this page
+// discoverable as an individual schema.org SoftwareApplication. Google Rich
+// Results / Bing / AI assistants render these as app cards with category,
+// OS, price and direct-launch link. Kept in-sync with `liveApps` so any
+// added dApp appears in structured data automatically.
+useAppListLd(() => ({
+  name: t('dapps.live.title'),
+  url:  '/dapps',
+  apps: [
+    {
+      name: 'SmartBlocks 2048',
+      description: t('dapps.apps.p2e.subtitle'),
+      url: 'https://t.me/sth2048bot',
+      image: '/images/dapps/app-2048.jpg',
+      type: 'GameApplication',
+      category: 'GameApplication',
+      applicationSubCategory: 'Play to Earn',
+      operatingSystem: 'Web, Telegram, Android, iOS',
+      keywords: 'play to earn, STH, blockchain game, 2048, SmartHoldem',
+      author: 'SmartHoldem'
+    },
+    {
+      name: 'Heads or Tails PvP',
+      description: t('dapps.apps.ht.subtitle'),
+      url: 'https://t.me/smartholdem_bot/game_ht',
+      image: '/images/dapps/app-heads-tails.jpg',
+      type: 'GameApplication',
+      category: 'GameApplication',
+      applicationSubCategory: 'PvP wager',
+      operatingSystem: 'Telegram, Web',
+      keywords: 'PvP, provably fair, coin flip, TRNG, SmartHoldem',
+      author: 'SmartHoldem'
+    },
+    {
+      name: 'Paper Wallet Generator',
+      description: t('dapps.apps.pw.subtitle'),
+      url: 'https://paperw.top',
+      image: '/images/dapps/app-paper-wallet.jpg',
+      type: 'WebApplication',
+      category: 'FinanceApplication',
+      applicationSubCategory: 'Cold Storage',
+      operatingSystem: 'Any (offline-capable Web app)',
+      keywords: 'paper wallet, cold storage, non-custodial, SmartHoldem, STH',
+      author: 'SmartHoldem'
+    },
+    {
+      name: 'Smart2FA OXID',
+      description: t('dapps.apps.s2fa.subtitle'),
+      url: 'https://kode.market/#/app/gh-509798773',
+      image: '/images/dapps/app-smart2fa.jpg',
+      type: 'MobileApplication',
+      category: 'SecurityApplication',
+      applicationSubCategory: 'Two-Factor Authenticator',
+      operatingSystem: 'Android, iOS',
+      keywords: '2FA, TOTP, authenticator, 0xID, on-chain identity, SmartHoldem',
+      author: 'SmartHoldem'
+    }
+  ]
+}))
 </script>
 
 <style scoped>

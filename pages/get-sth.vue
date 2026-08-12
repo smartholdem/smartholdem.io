@@ -486,6 +486,26 @@ const ogImage = `${siteUrl}/images/get-sth/get-sth-og.jpg`
 
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/get-sth')
 useBreadcrumbLd([{ key: 'nav.getSth', path: '/get-sth' }])
+
+// HowTo JSON-LD — presents /get-sth as a 6-step guide to acquire STH.
+// Google deprecated the rich card in 2023 but the markup is still parsed
+// by Bing, DuckDuckGo and cited by AI assistants (Perplexity, ChatGPT,
+// Gemini) when answering "how do I buy SmartHoldem".
+useHowToLd(() => ({
+  name: t('getSth.howto.name'),
+  description: t('getSth.howto.description'),
+  totalTime: 'PT10M',
+  supply: [t('getSth.howto.supply1'), t('getSth.howto.supply2')],
+  tool:   [t('getSth.howto.tool1'),   t('getSth.howto.tool2')],
+  steps: [
+    { name: t('getSth.howto.s1Name'), text: t('getSth.howto.s1Text'), url: '/get-sth#wallet' },
+    { name: t('getSth.howto.s2Name'), text: t('getSth.howto.s2Text'), url: '/get-sth#wallet' },
+    { name: t('getSth.howto.s3Name'), text: t('getSth.howto.s3Text'), url: '/get-sth#wallet' },
+    { name: t('getSth.howto.s4Name'), text: t('getSth.howto.s4Text'), url: '/get-sth#xbts' },
+    { name: t('getSth.howto.s5Name'), text: t('getSth.howto.s5Text'), url: '/get-sth#defi' },
+    { name: t('getSth.howto.s6Name'), text: t('getSth.howto.s6Text'), url: '/get-sth#staking' }
+  ]
+}))
 useSeoMeta({
   title: () => t('getSth.seo.title'),
   description: () => t('getSth.seo.description'),

@@ -681,6 +681,26 @@
       "q6": "Ninapataje mapato kutoka ushirikiano wa SmartHolder?",
       "a6": "Zawadi zinatuma {auto}: tarehe 1 na 15 ya kila mwezi. Malipo katika {assets}, na sarafu zaidi ya 20 zilizofanyiwa biashara kwa ufanisi wakati wa kipindi cha ushirikiano."
     },
+    "howto": {
+      "name": "Jinsi ya kupata SmartHoldem (STH)",
+      "description": "Mwongozo wa hatua kwa hatua wa kupata, kubadilishana, kufanya biashara au kufanya staking ya SmartHoldem (STH) — kutoka usakinishaji wa mkoba hadi kupata mapato halisi.",
+      "supply1": "Kifaa chochote cha kisasa (desktop, simu au kivinjari cha wavuti)",
+      "supply2": "Kiasi kidogo cha BTC, USDT au mali nyingine inayoungwa mkono kwa swap ya kwanza",
+      "tool1": "SmartHoldem Wallet (asili, isiyokuwa ya utunzaji)",
+      "tool2": "Akaunti ya XBTS DEX au Dex-Trade (chaguo, kwa biashara ya spot)",
+      "s1Name": "Sakinisha SmartHoldem Wallet",
+      "s1Text": "Pakua SmartHoldem Wallet rasmi isiyokuwa ya utunzaji kwa jukwaa lako. Fungua akaunti mpya, hifadhi kifungu chako cha kurudisha nje ya mtandao, na weka nywila kali. Unashikilia funguo zako za kibinafsi wakati wote — mkoba haupakii popote.",
+      "s2Name": "Weka pesa kwenye mkoba wako na mali ya awali",
+      "s2Text": "Hamisha BTC, USDT au mali nyingine inayoungwa mkono kwenye mkoba. Itabadilishwa kuwa STH katika hatua ijayo. Tuma tu kiasi kidogo cha jaribio kwanza ikiwa wewe ni mgeni katika crypto.",
+      "s3Name": "Badilisha kuwa STH ndani ya mkoba",
+      "s3Text": "Tumia wijeti ya swap iliyojengwa kubadilisha mali iliyowekwa kuwa STH. Kiwango kinakusanywa kutoka XBTS DEX na ukwasi wa washirika — hakuna KYC, hakuna akaunti inayohitajika.",
+      "s4Name": "Fanya biashara ya STH kwenye ubadilishaji wa spot (chaguo)",
+      "s4Text": "Kwa maagizo makubwa, tumia soko la XBTSX.STH / XBTSX.USDT kwenye XBTS DEX (lango la BitShares, lisilo la utunzaji) au soko la STH/USDT kwenye Dex-Trade (CEX mshirika). Zote zinaonyesha vitabu vya maagizo vya moja kwa moja na chati za mishumaa za kawaida.",
+      "s5Name": "Toa ukwasi wa DeFi kwa mapato (chaguo)",
+      "s5Text": "Weka STH kwenye bwawa la ukwasi wa DeFi kwenye XBTS ili kupata ada za biashara moja kwa moja. Uondoaji ni permissionless — fedha zako zinabaki bila utunzaji wakati wote.",
+      "s6Name": "Fanya staking ya STH na SmartHolder kwa mapato halisi",
+      "s6Text": "Wezesha staking ya SmartHolder ili kupokea sehemu ya faida ya biashara ya XBTS DEX, inayolipwa moja kwa moja tarehe 1 na 15 ya kila mwezi katika USDT na mali 20+ zinazofanya biashara kwa bidii. Sarafu zilizowekwa katika staking zimefungwa kwa kipindi ulichochagua — unabaki na utunzaji wakati wote."
+    },
     "seo": {
       "title": "Pata STH {'|'} Nunua, Badilisha, Biashara na Changisha Sarafu ya SmartHoldem",
       "description": "Pata SmartHoldem (STH) moja kwa moja. Badilisha katika mkoba wa asili, biashara viunganisho zaidi ya 45 kwenye XBTS DEX, toa uhalisia wa DeFi, au pata mapato halisi na ushirikiano wa SmartHolder.",
@@ -894,6 +914,18 @@
       "statLabel": "Utegemezi wa Kimataifa",
       "statValue": "0%"
     },
+    "faq": {
+      "q1": "Web 4.0 ni nini na Netfory inaitekeleza vipi?",
+      "a1": "Web 4.0 ni intaneti huru bila seva ambapo programu zinaishi moja kwa moja kwenye vifaa vya watumiaji bila mwenyeji wa kati. Netfory inaitekeleza kama mtandao wa peer-to-peer juu ya blockchain ya SmartHoldem (STH): programu zinapewa anwani kwa maudhui, hufanya kazi kwa asili kwenye peer, na hazihitaji miundombinu ya wingu.",
+      "q2": "LAN-First Resilience ni nini?",
+      "a2": "LAN-First ni dhana ya Netfory ambapo wateja hurudi kiotomatiki kwa ugunduzi wa peer wa ndani kupitia mDNS wakati intaneti ya kimataifa haipatikani. Wakati kiunga cha WAN kinapokatika, mazungumzo ya E2EE yanaendelea kufanya kazi kati ya majirani, kushiriki faili kwa msingi wa CID hufanya kazi kwa kasi ya LAN, na dApps zilizohifadhiwa hubaki zikifanya kazi kikamilifu — bila utegemezi wowote kwa uelekezaji wa nje.",
+      "q3": "Netfory inatofautianaje na IPFS au Clearnet?",
+      "a3": "Clearnet na IPFS zinategemea uelekezaji wa kimataifa; ikiwa kebo itakatika zitasimama kufanya kazi. Netfory imejengwa kwa usanifu wa kweli wa LAN-First na hubadilika kwa ugunduzi wa peer wa mDNS kwenye mtandao wa ndani wakati muunganisho wa kimataifa unapoanguka, kudumisha mawasiliano na kushiriki faili hai.",
+      "q4": "Je, Netfory inahitaji seva ya kati?",
+      "a4": "Hapana. Netfory haina seva za kati. Data zote, ujumbe, na programu husafiri peer-to-peer juu ya usafirishaji wa Iroh/QUIC, na maudhui yanapewa anwani na CID na utambulisho unaanchwa kwa mkoba wa SmartHoldem wa on-chain.",
+      "q5": "Je, maudhui kwenye Netfory yanadhibitiwa?",
+      "a5": "Hapana. Hakuna mamlaka kuu inayoweza kufuta maudhui kutoka kwenye mtandao. Vichujio vipo tu kwenye safu ya duka/ugunduzi kama beji za sifa za hiari — viungo vya moja kwa moja vya sn:// na sth:// vinafanya kazi kila wakati bila kujali orodha yoyote."
+    },
     "finalCta": {
       "eyebrow": "Jiunge nasi",
       "titleA": "Jiunge na Mtandao Ambapo ",
@@ -990,6 +1022,18 @@
       "p2": "Watumiaji wa kila siku wanalindwa kwa chaguo-msingi. Watumiaji wa hali ya juu wanabakiza uonekano kamili.",
       "p3": "Na hakuna mtu duniani ambaye ana kitufe kinachoweza kufuta programu kutoka kwa mtandao.",
       "back": "Rudi kwa Dhamira"
+    },
+    "faq": {
+      "q1": "SmartNet inahakikishaje usalama bila udhibiti?",
+      "a1": "SmartNet inatumia katalogi ya ngazi mbili (Official / All) inayoendeshwa na sifa isiyokuwa ya kati. Watumiaji wa kawaida katika hali ya USER wanaona tu programu zilizosainiwa na wataalamu wanaoaminika katika rejista ya DEVELOPERS iliyokaguliwa na jamii au kuidhinishwa kupitia muamala wa umma wa utawala. Watumiaji wa hali ya juu wanaweza kubadilisha Onyesha Zisizothibitishwa ili kuona mtandao mzima usiochujwa.",
+      "q2": "Je, SmartHoldem inaweza kufuta programu kutoka kwa mtandao?",
+      "a2": "Hapana. Maudhui hayafutwi kamwe kutoka kwenye mtandao. Wachekaji hupanga faharisi za programu zote na alama ya Official ni lebo tu ya metadata ya kuonekana iliyohifadhiwa kwenye blockchain ya SmartHoldem. Kuchuja hutokea kwa ndani kwenye kifaa cha mtumiaji na inaweza kukwepwa kwa kufork client au kutumia kiungo cha moja kwa moja cha sn://.",
+      "q3": "Je, viungo vya moja kwa moja vya sn:// au sth:// vinawahi kuzuiwa?",
+      "a3": "Kamwe. Viungo vya moja kwa moja vinavyotumia itifaki za sn:// au sth:// vinatatuliwa kila wakati bila kujali orodha yoyote. Vichujio hutumika tu kwa ugunduzi wa duka, kamwe si kwa safu ya usafirishaji wa msingi.",
+      "q4": "Uthibitishaji unafanyaje kazi kikriptografia?",
+      "a4": "Kila programu ya Official ina manifest iliyosainiwa inayounganisha id yake na anwani ya pubkey na owner. Client anathibitisha sahihi kwa ndani dhidi ya rejista ya DEVELOPERS ya on-chain — kudanganya haiwezekani kihisabati.",
+      "q5": "Je, usalama unafanyaje kazi wakati mtumiaji hayupo mtandaoni?",
+      "a5": "SmartNet inatumia Cloud Seeders. Wataalamu wanaoaminika hunakili faili za hali za vdapps.enc zilizosimbwa zenye orodha za sasa za uaminifu kila dakika 30. Peers hupokea orodha hizi tu ikiwa mtoaji tayari yuko katika seti yao ya DEVELOPERS inayojulikana, kuunda mnyororo wa uaminifu wa mpito uliozama katika usanidi wa mwanzo."
     }
   },
   "msg": {
@@ -1048,6 +1092,18 @@
       "p1": "Acha kukodisha faragha kutoka Big Tech. Anza kuimiliki.",
       "cta": "Pakua Klient ya Netfory",
       "back": "Rudi kwenye Ekosistemu"
+    },
+    "faq": {
+      "q1": "Je, messenger ya Netfory inatumia seva yoyote ya kati?",
+      "a1": "Hapana. Ujumbe husafiri kifaa-hadi-kifaa kupitia usafirishaji wa Iroh juu ya QUIC. Hakuna seva ya kati, hakuna broker wa ujumbe, na hakuna hifadhi ya metadata. Hakuna anayeweza kuona nani anaongea na nani.",
+      "q2": "Usimbaji wa mwisho-hadi-mwisho unatekelezwa vipi?",
+      "a2": "Kila ujumbe umesimbwa kwa chaguo-msingi kwa kubadilishana funguo za X25519 na usimbaji wa uthibitishaji wa AES-256-GCM. Ni kifaa cha mpokeaji tu kinachoshikilia ufunguo wa faragha unaohitajika kutafsiri.",
+      "q3": "0xID Mail ni nini na inatofautianaje na Gmail?",
+      "a3": "0xID Mail ni client wa mail wenye hali tatu za faragha. Hali 1 ni client wa kawaida wa IMAP/SMTP na hifadhi ya ndani ya Sled iliyosimbwa kwa PIN. Hali 2 hutuma mail iliyosimbwa kikamilifu kupitia SMTP ya kawaida na Verified Badge ya on-chain inayofanya kudanganya anwani kutowezekana kihisabati. Hali 3 ni P2P safi kupitia Iroh na anwani za alice{'@'}sth zilizosajiliwa on-chain — hakuna seva za SMTP, hakuna kumbukumbu.",
+      "q4": "Anti-spam ya kiuchumi hufanyaje kazi?",
+      "a4": "Kutuma ujumbe kwa mtu mpya unatuma Invite Transaction ndogo (1 STH), ambayo inathibitisha kuwa wewe ni binadamu halisi na siyo shamba la bot. Wapokeaji pia wanaweza kuweka bei kwa ujumbe, kulazimisha spammer kulipa STH kuwafikia na kufanya unyanyasaji wa wingi kuwa haiwezekani kiuchumi.",
+      "q5": "Ni nini kinatokea ikiwa mpokeaji hayupo mtandaoni?",
+      "a5": "Client kiotomatiki inarudi kwenye bahasha iliyosimbwa juu ya SMTP (Hali 2). Mpokeaji anaona barua pepe ya kawaida kwa mtoa huduma yeyote, anaisimbua kwa ndani kwa ufunguo wake, na ujumbe hauwahi kugusa duka la Netfory."
     }
   }
 }

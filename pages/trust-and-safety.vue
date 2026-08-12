@@ -49,6 +49,13 @@ const localePath = useLocalePath()
 const config = useRuntimeConfig()
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/trust-and-safety')
 useBreadcrumbLd([{ key: 'nav.trustSafety', path: '/trust-and-safety' }])
+
+// FAQPage JSON-LD — 5 Q&A about the Trust & Safety model. Lets Google Rich
+// Results and AI assistants cite our reputation-not-censorship stance verbatim.
+useFaqLd(() => Array.from({ length: 5 }, (_, i) => ({
+  q: t(`trust.faq.q${i + 1}`),
+  a: t(`trust.faq.a${i + 1}`)
+})))
 useSeoMeta({
   title: () => t('trust.seo.title'),
   description: () => t('trust.seo.description'),

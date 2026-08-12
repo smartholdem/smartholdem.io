@@ -67,6 +67,13 @@ const showModal = ref(false)
 const config = useRuntimeConfig()
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/messaging')
 useBreadcrumbLd([{ key: 'nav.messaging', path: '/messaging' }])
+
+// FAQPage JSON-LD — 5 Q&A about the P2P Messenger + 0xID Mail. Lets Google
+// Rich Results and AI answer engines cite E2EE, anti-spam and 0xID facts.
+useFaqLd(() => Array.from({ length: 5 }, (_, i) => ({
+  q: t(`msg.faq.q${i + 1}`),
+  a: t(`msg.faq.a${i + 1}`)
+})))
 useSeoMeta({
   title: () => t('msg.seo.title'),
   description: () => t('msg.seo.description'),

@@ -680,6 +680,26 @@
       "a5": "Semua orang yang mempertaruhkan STH mereka berhak atas persentase keuntungan perdagangan dari {xbtsdex}. Staking akan mengunci koin Anda untuk waktu yang Anda tentukan. Selama periode staking Anda secara otomatis berpartisipasi dalam distribusi pembayaran.",
       "a6": "Hadiah dikirim {auto}: tanggal 1 dan 15 setiap bulan. Pembayaran dalam {assets}, dan 20+ aset yang aktif diperdagangkan selama periode staking."
     },
+    "howto": {
+      "name": "Cara mendapatkan SmartHoldem (STH)",
+      "description": "Panduan langkah demi langkah untuk memperoleh, menukar, memperdagangkan atau mempertaruhkan SmartHoldem (STH) — dari menginstal dompet hingga menghasilkan yield nyata.",
+      "supply1": "Perangkat modern apa pun (desktop, seluler, atau browser web)",
+      "supply2": "Sedikit BTC, USDT atau aset lain yang didukung untuk swap pertama",
+      "tool1": "SmartHoldem Wallet (asli, non-custodial)",
+      "tool2": "Akun XBTS DEX atau Dex-Trade (opsional, untuk perdagangan spot)",
+      "s1Name": "Instal SmartHoldem Wallet",
+      "s1Text": "Unduh SmartHoldem Wallet resmi non-custodial untuk platform Anda. Buat akun baru, simpan frase pemulihan offline, dan atur passphrase yang kuat. Anda selalu menyimpan kunci privat — dompet tidak pernah mengunggahnya ke mana pun.",
+      "s2Name": "Isi dompet dengan aset awal",
+      "s2Text": "Transfer BTC, USDT atau aset lain yang didukung ke dompet. Ini akan ditukar untuk STH pada langkah berikutnya. Kirim jumlah test kecil terlebih dahulu jika Anda baru di kripto.",
+      "s3Name": "Tukar ke STH di dalam dompet",
+      "s3Text": "Gunakan widget swap bawaan untuk menukar aset yang telah diisi menjadi STH. Kurs diagregasi dari XBTS DEX dan likuiditas mitra — tanpa KYC, tanpa akun.",
+      "s4Name": "Perdagangkan STH di bursa spot (opsional)",
+      "s4Text": "Untuk order lebih besar, gunakan pasar XBTSX.STH / XBTSX.USDT di XBTS DEX (gateway BitShares, non-custodial) atau pasar STH/USDT di Dex-Trade (mitra CEX). Keduanya menampilkan order book langsung dan grafik candlestick standar.",
+      "s5Name": "Sediakan likuiditas DeFi untuk yield (opsional)",
+      "s5Text": "Deposit STH ke pool likuiditas DeFi di XBTS untuk mendapatkan biaya perdagangan otomatis. Penarikan permissionless — dana Anda tetap non-custodial sepanjang waktu.",
+      "s6Name": "Staking STH dengan SmartHolder untuk yield nyata",
+      "s6Text": "Aktifkan staking SmartHolder untuk menerima bagian dari keuntungan perdagangan XBTS DEX, dibayar otomatis pada tanggal 1 dan 15 setiap bulan dalam USDT dan 20+ aset yang aktif diperdagangkan. Koin yang di-stake terkunci selama periode yang Anda pilih — Anda selalu mempertahankan kustodi."
+    },
     "seo": {
       "title": "Dapatkan STH {'|'} Beli, Tukar, Perdagangkan dan Stake Koin SmartHoldem",
       "description": "Dapatkan SmartHoldem (STH) secara instan. Tukar di dompet native, perdagangkan 45+ pasangan di XBTS DEX, sediakan likuiditas DeFi, atau hasilkan yield nyata dengan staking SmartHolder.",
@@ -893,6 +913,18 @@
       "statLabel": "Ketergantungan Global",
       "statValue": "0%"
     },
+    "faq": {
+      "q1": "Apa itu Web 4.0 dan bagaimana Netfory mengimplementasikannya?",
+      "a1": "Web 4.0 adalah internet otonom tanpa server di mana aplikasi hidup langsung di perangkat pengguna tanpa hosting terpusat. Netfory mengimplementasikannya sebagai jaringan peer-to-peer di atas blockchain SmartHoldem (STH): aplikasi dialamatkan berdasarkan konten, berjalan secara native pada peer, dan tidak memerlukan infrastruktur cloud.",
+      "q2": "Apa itu LAN-First Resilience?",
+      "a2": "LAN-First adalah paradigma Netfory di mana klien otomatis kembali ke penemuan peer lokal via mDNS ketika internet global tidak tersedia. Ketika koneksi WAN terputus, chat E2EE tetap bekerja antar tetangga, berbagi file berbasis CID beroperasi pada kecepatan LAN, dan dApp yang di-cache tetap berfungsi penuh — tanpa ketergantungan pada perutean eksternal.",
+      "q3": "Bagaimana Netfory berbeda dari IPFS atau Clearnet?",
+      "a3": "Clearnet dan IPFS bergantung pada perutean global; jika kabel terputus mereka berhenti bekerja. Netfory dibangun dengan arsitektur LAN-First sejati dan beralih ke penemuan peer mDNS di jaringan lokal saat konektivitas global turun, menjaga komunikasi dan berbagi file tetap hidup.",
+      "q4": "Apakah Netfory memerlukan server pusat?",
+      "a4": "Tidak. Netfory tidak memiliki server pusat. Semua data, pesan dan aplikasi berjalan peer-to-peer melalui transportasi Iroh/QUIC, dengan konten dialamatkan oleh CID dan identitas berlabuh pada dompet SmartHoldem on-chain.",
+      "q5": "Apakah konten di Netfory disensor?",
+      "a5": "Tidak. Tidak ada otoritas pusat yang dapat menghapus konten dari jaringan. Filter hanya ada di lapisan toko/penemuan sebagai lencana reputasi opsional — tautan sn:// dan sth:// langsung selalu bekerja terlepas dari daftar apa pun."
+    },
     "finalCta": {
       "eyebrow": "Bergabunglah dengan kami",
       "titleA": "Bergabunglah dengan Jaringan di Mana ",
@@ -989,6 +1021,18 @@
       "p2": "Pengguna sehari-hari terlindungi secara default. Pengguna tingkat lanjut mempertahankan visibilitas penuh.",
       "p3": "Dan tidak ada seorang pun di dunia yang memiliki tombol untuk menghapus aplikasi dari jaringan.",
       "back": "Kembali ke Misi"
+    },
+    "faq": {
+      "q1": "Bagaimana SmartNet memastikan keamanan tanpa sensor?",
+      "a1": "SmartNet menggunakan katalog dua tingkat (Official / All) yang digerakkan oleh reputasi terdesentralisasi. Pengguna biasa dalam mode USER hanya melihat aplikasi yang ditandatangani oleh pengembang tepercaya dalam registri DEVELOPERS yang diperiksa komunitas atau disetujui melalui transaksi tata kelola publik. Pengguna tingkat lanjut dapat mengaktifkan Tampilkan yang Belum Diverifikasi untuk melihat seluruh jaringan yang tidak difilter.",
+      "q2": "Bisakah SmartHoldem menghapus aplikasi dari jaringan?",
+      "a2": "Tidak. Konten tidak pernah dihapus dari jaringan. Tracker mengindeks semua aplikasi dan flag Official hanyalah tag metadata visibilitas yang disimpan di blockchain SmartHoldem. Penyaringan terjadi lokal di perangkat pengguna dan dapat dilewati dengan fork klien atau menggunakan tautan sn:// langsung.",
+      "q3": "Apakah tautan langsung sn:// atau sth:// pernah diblokir?",
+      "a3": "Tidak pernah. Tautan langsung menggunakan protokol sn:// atau sth:// selalu terselesaikan terlepas dari daftar apa pun. Filter hanya berlaku untuk penemuan di toko, tidak pernah untuk lapisan transportasi dasar.",
+      "q4": "Bagaimana verifikasi bekerja secara kriptografi?",
+      "a4": "Setiap aplikasi Official memiliki manifest yang ditandatangani yang mengikat id-nya ke alamat pubkey dan owner. Klien memverifikasi tanda tangan secara lokal terhadap registri DEVELOPERS on-chain — pemalsuan secara matematis mustahil.",
+      "q5": "Bagaimana keamanan bekerja ketika pengguna offline?",
+      "a5": "SmartNet menggunakan Cloud Seeders. Pengembang tepercaya mereplikasi file state vdapps.enc terenkripsi dengan daftar kepercayaan saat ini setiap 30 menit. Peer hanya menerima daftar ini jika penerbit sudah dalam set DEVELOPERS yang mereka kenal, menciptakan rantai kepercayaan transitif yang berlabuh dalam konfigurasi awal."
     }
   },
   "msg": {
@@ -1047,6 +1091,18 @@
       "p1": "Berhenti menyewa privasi dari Big Tech. Mulai miliki itu.",
       "cta": "Unduh Klien Netfory",
       "back": "Kembali ke Ekosistem"
+    },
+    "faq": {
+      "q1": "Apakah messenger Netfory menggunakan server pusat?",
+      "a1": "Tidak. Pesan berjalan perangkat-ke-perangkat melalui transportasi Iroh di atas QUIC. Tidak ada server pusat, tidak ada broker pesan, dan tidak ada penyimpanan metadata. Tidak ada yang dapat melihat siapa berbicara dengan siapa.",
+      "q2": "Bagaimana enkripsi ujung-ke-ujung diimplementasikan?",
+      "a2": "Setiap pesan dienkripsi secara default dengan pertukaran kunci X25519 dan enkripsi ter-autentikasi AES-256-GCM. Hanya perangkat penerima yang memegang kunci privat yang diperlukan untuk mendekripsi.",
+      "q3": "Apa itu 0xID Mail dan bagaimana berbeda dari Gmail?",
+      "a3": "0xID Mail adalah klien mail dengan tiga mode privasi. Mode 1 adalah klien IMAP/SMTP klasik dengan penyimpanan Sled lokal terenkripsi PIN. Mode 2 mengirim mail terenkripsi penuh melalui SMTP normal dengan Verified Badge on-chain yang membuat spoofing alamat mustahil secara matematis. Mode 3 adalah P2P murni via Iroh dengan alamat alice{'@'}sth terdaftar on-chain — tanpa server SMTP, tanpa log.",
+      "q4": "Bagaimana anti-spam ekonomi bekerja?",
+      "a4": "Untuk mengirim pesan ke kontak baru Anda mengirim Invite Transaction kecil (1 STH), yang membuktikan Anda manusia nyata bukan pertanian bot. Penerima juga dapat menetapkan harga per pesan, memaksa spammer membayar STH untuk mencapai mereka dan membuat pelecehan massal secara ekonomi tidak layak.",
+      "q5": "Apa yang terjadi jika penerima offline?",
+      "a5": "Klien otomatis kembali ke amplop terenkripsi melalui SMTP (Mode 2). Penerima melihat email biasa di penyedia mana pun, mendekripsi lokal dengan kunci mereka, dan pesan tidak pernah menyentuh storefront Netfory."
     }
   }
 }

@@ -194,6 +194,13 @@ const showModal = ref(false)
 const config = useRuntimeConfig()
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/mission')
 useBreadcrumbLd([{ key: 'nav.mission', path: '/mission' }])
+
+// FAQPage JSON-LD — surfaces Q&A directly in Google Rich Results and lets
+// AI assistants (ChatGPT, Perplexity, Gemini) quote answers with attribution.
+useFaqLd(() => Array.from({ length: 5 }, (_, i) => ({
+  q: t(`mission.faq.q${i + 1}`),
+  a: t(`mission.faq.a${i + 1}`)
+})))
 useSeoMeta({
   title: () => t('mission.seo.title'),
   description: () => t('mission.seo.description'),

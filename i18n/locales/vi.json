@@ -681,6 +681,26 @@
       "q6": "Tôi kiếm tiền từ SmartHolder staking như thế nào?",
       "a6": "Phần thưởng được gửi {auto}: ngày 1 và 15 hàng tháng. Thanh toán bằng {assets} và hơn 20 tài sản được giao dịch tích cực trong thời gian staking."
     },
+    "howto": {
+      "name": "Cách nhận SmartHoldem (STH)",
+      "description": "Hướng dẫn từng bước để mua, swap, giao dịch hoặc stake SmartHoldem (STH) — từ cài đặt ví đến kiếm lợi nhuận thực.",
+      "supply1": "Mọi thiết bị hiện đại (desktop, di động hoặc trình duyệt web)",
+      "supply2": "Một lượng nhỏ BTC, USDT hoặc tài sản được hỗ trợ khác cho lần swap đầu tiên",
+      "tool1": "SmartHoldem Wallet (native, non-custodial)",
+      "tool2": "Tài khoản XBTS DEX hoặc Dex-Trade (tùy chọn, cho giao dịch spot)",
+      "s1Name": "Cài đặt SmartHoldem Wallet",
+      "s1Text": "Tải SmartHoldem Wallet non-custodial chính thức cho nền tảng của bạn. Tạo tài khoản mới, lưu cụm từ khôi phục offline và đặt mật khẩu mạnh. Bạn luôn giữ khóa riêng — ví không bao giờ tải chúng lên bất kỳ đâu.",
+      "s2Name": "Nạp ví bằng tài sản khởi đầu",
+      "s2Text": "Chuyển BTC, USDT hoặc tài sản được hỗ trợ khác vào ví. Nó sẽ được swap sang STH ở bước tiếp theo. Chỉ gửi số lượng test nhỏ trước nếu bạn mới với crypto.",
+      "s3Name": "Swap sang STH trong ví",
+      "s3Text": "Sử dụng widget swap tích hợp để đổi tài sản đã nạp lấy STH. Tỷ giá được tổng hợp từ XBTS DEX và thanh khoản đối tác — không KYC, không cần tài khoản.",
+      "s4Name": "Giao dịch STH trên sàn spot (tùy chọn)",
+      "s4Text": "Với lệnh lớn hơn, sử dụng thị trường XBTSX.STH / XBTSX.USDT trên XBTS DEX (cổng BitShares, non-custodial) hoặc thị trường STH/USDT trên Dex-Trade (CEX đối tác). Cả hai đều hiển thị sổ lệnh trực tiếp và biểu đồ nến tiêu chuẩn.",
+      "s5Name": "Cung cấp thanh khoản DeFi để nhận lợi nhuận (tùy chọn)",
+      "s5Text": "Nạp STH vào pool thanh khoản DeFi trên XBTS để tự động nhận phí giao dịch. Rút tiền permissionless — tiền của bạn luôn ở trạng thái non-custodial.",
+      "s6Name": "Stake STH với SmartHolder để nhận lợi nhuận thực",
+      "s6Text": "Kích hoạt SmartHolder staking để nhận phần lợi nhuận giao dịch XBTS DEX, được trả tự động vào ngày 1 và 15 hàng tháng bằng USDT và 20+ tài sản được giao dịch tích cực. Coin đã stake bị khóa trong khoảng thời gian bạn chọn — bạn luôn giữ quyền lưu ký."
+    },
     "seo": {
       "title": "Nhận STH {'|'} Mua, Hoán đổi, Giao dịch và Staking SmartHoldem",
       "description": "Nhận SmartHoldem (STH) ngay lập tức. Hoán đổi trong ví gốc, giao dịch 45+ cặp trên XBTS DEX, cung cấp thanh khoản DeFi hoặc kiếm lợi tức thực với SmartHolder staking.",
@@ -894,6 +914,18 @@
       "statLabel": "Phụ thuộc toàn cầu",
       "statValue": "0%"
     },
+    "faq": {
+      "q1": "Web 4.0 là gì và Netfory triển khai nó như thế nào?",
+      "a1": "Web 4.0 là internet tự trị không máy chủ, nơi ứng dụng sống trực tiếp trên thiết bị người dùng mà không cần lưu trữ tập trung. Netfory triển khai nó như một mạng peer-to-peer trên blockchain SmartHoldem (STH): ứng dụng được định địa chỉ theo nội dung, chạy nguyên gốc trên các peer và không cần cơ sở hạ tầng đám mây.",
+      "q2": "LAN-First Resilience là gì?",
+      "a2": "LAN-First là mô hình Netfory nơi client tự động chuyển sang khám phá peer cục bộ qua mDNS khi internet toàn cầu không khả dụng. Khi liên kết WAN bị cắt, chat E2EE vẫn hoạt động giữa hàng xóm, chia sẻ tệp dựa trên CID hoạt động ở tốc độ LAN, và các dApp được cache vẫn hoạt động đầy đủ — không phụ thuộc vào định tuyến bên ngoài.",
+      "q3": "Netfory khác gì so với IPFS hoặc Clearnet?",
+      "a3": "Clearnet và IPFS phụ thuộc vào định tuyến toàn cầu; nếu cáp bị cắt chúng dừng hoạt động. Netfory được xây dựng với kiến trúc LAN-First thực sự và chuyển sang khám phá peer mDNS trên mạng cục bộ ngay khi kết nối toàn cầu giảm, giữ cho truyền thông và chia sẻ tệp luôn hoạt động.",
+      "q4": "Netfory có yêu cầu máy chủ trung tâm không?",
+      "a4": "Không. Netfory không có máy chủ trung tâm nào. Tất cả dữ liệu, tin nhắn và ứng dụng đều di chuyển peer-to-peer qua giao thức Iroh/QUIC, với nội dung được địa chỉ hóa bằng CID và danh tính neo với ví SmartHoldem on-chain.",
+      "q5": "Nội dung trên Netfory có bị kiểm duyệt không?",
+      "a5": "Không. Không có quyền lực trung tâm nào có thể xóa nội dung khỏi mạng. Bộ lọc chỉ tồn tại ở lớp cửa hàng/khám phá dưới dạng huy hiệu uy tín opt-in — liên kết sn:// và sth:// trực tiếp luôn hoạt động bất kể danh sách nào."
+    },
     "finalCta": {
       "eyebrow": "Tham gia cùng chúng tôi",
       "titleA": "Tham gia Mạng lưới Nơi ",
@@ -990,6 +1022,18 @@
       "p2": "Người dùng hàng ngày được bảo vệ theo mặc định. Người dùng nâng cao giữ khả năng hiển thị đầy đủ.",
       "p3": "Và không ai trên thế giới có một nút có thể xóa ứng dụng khỏi mạng.",
       "back": "Quay lại Sứ mệnh"
+    },
+    "faq": {
+      "q1": "SmartNet đảm bảo an toàn không kiểm duyệt như thế nào?",
+      "a1": "SmartNet sử dụng danh mục hai tầng (Official / All) được thúc đẩy bởi uy tín phi tập trung. Người dùng thông thường ở chế độ USER chỉ thấy các ứng dụng được ký bởi các nhà phát triển đáng tin cậy trong sổ đăng ký DEVELOPERS được cộng đồng kiểm tra hoặc được phê duyệt qua giao dịch quản trị công khai. Người dùng nâng cao có thể bật Hiển thị chưa xác minh để thấy toàn bộ mạng không bị lọc.",
+      "q2": "SmartHoldem có thể xóa ứng dụng khỏi mạng không?",
+      "a2": "Không. Nội dung không bao giờ bị xóa khỏi mạng. Tracker lập chỉ mục tất cả ứng dụng và cờ Official chỉ là một thẻ metadata hiển thị được lưu trữ trên blockchain SmartHoldem. Việc lọc diễn ra cục bộ trên thiết bị người dùng và có thể được bỏ qua bằng cách fork client hoặc sử dụng liên kết sn:// trực tiếp.",
+      "q3": "Liên kết sn:// hoặc sth:// trực tiếp có bao giờ bị chặn không?",
+      "a3": "Không bao giờ. Liên kết trực tiếp sử dụng giao thức sn:// hoặc sth:// luôn được giải quyết bất kể danh sách nào. Bộ lọc chỉ áp dụng cho việc khám phá cửa hàng, không bao giờ áp dụng cho lớp truyền tải cơ bản.",
+      "q4": "Xác minh hoạt động về mặt mật mã như thế nào?",
+      "a4": "Mỗi ứng dụng Official có một manifest đã ký ràng buộc id của nó với địa chỉ pubkey và owner. Client xác minh chữ ký cục bộ so với sổ đăng ký DEVELOPERS on-chain — giả mạo là bất khả thi về mặt toán học.",
+      "q5": "An toàn hoạt động như thế nào khi người dùng offline?",
+      "a5": "SmartNet sử dụng Cloud Seeders. Các nhà phát triển đáng tin cậy sao chép các tệp trạng thái vdapps.enc được mã hóa với danh sách tin cậy hiện tại cứ mỗi 30 phút. Peer chỉ chấp nhận các danh sách này nếu người phát hành đã có trong tập DEVELOPERS đã biết của họ, tạo ra một chuỗi tin cậy chuyển tiếp neo trong cấu hình ban đầu."
     }
   },
   "msg": {
@@ -1048,6 +1092,18 @@
       "p1": "Dừng thuê quyền riêng tư từ Big Tech. Bắt đầu sở hữu nó.",
       "cta": "Tải Netfory Client",
       "back": "Quay lại Hệ sinh thái"
+    },
+    "faq": {
+      "q1": "Messenger Netfory có sử dụng máy chủ trung tâm không?",
+      "a1": "Không. Tin nhắn di chuyển thiết bị-đến-thiết bị qua giao thức Iroh trên QUIC. Không có máy chủ trung tâm, không có broker tin nhắn, không có kho metadata. Không ai có thể thấy ai nói chuyện với ai.",
+      "q2": "Mã hóa đầu cuối được triển khai như thế nào?",
+      "a2": "Mỗi tin nhắn được mã hóa mặc định bằng trao đổi khóa X25519 và mã hóa xác thực AES-256-GCM. Chỉ thiết bị người nhận giữ khóa riêng cần thiết để giải mã.",
+      "q3": "0xID Mail là gì và khác Gmail như thế nào?",
+      "a3": "0xID Mail là một client email với ba chế độ riêng tư. Chế độ 1 là client IMAP/SMTP cổ điển với lưu trữ Sled cục bộ được mã hóa PIN. Chế độ 2 gửi email được mã hóa hoàn toàn qua SMTP thông thường với Verified Badge on-chain khiến việc giả mạo địa chỉ là bất khả thi về mặt toán học. Chế độ 3 là P2P thuần túy qua Iroh với các địa chỉ alice{'@'}sth được đăng ký on-chain — không máy chủ SMTP, không nhật ký.",
+      "q4": "Anti-spam kinh tế hoạt động như thế nào?",
+      "a4": "Để nhắn tin cho một liên hệ mới, bạn gửi một Invite Transaction nhỏ (1 STH), chứng minh bạn là một con người thực chứ không phải trang trại bot. Người nhận cũng có thể đặt giá cho mỗi tin nhắn, buộc spammer phải trả STH để tiếp cận họ và làm cho quấy rối hàng loạt trở nên không khả thi về mặt kinh tế.",
+      "q5": "Chuyện gì xảy ra nếu người nhận offline?",
+      "a5": "Client tự động chuyển sang phong bì được mã hóa qua SMTP (Chế độ 2). Người nhận thấy một email trông bình thường ở bất kỳ nhà cung cấp nào, giải mã cục bộ bằng khóa của họ, và tin nhắn không bao giờ chạm vào cửa hàng Netfory."
     }
   }
 }
