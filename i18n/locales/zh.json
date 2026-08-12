@@ -931,122 +931,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
-      "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "title": "信任与安全 {'|'} Web 4.0 信誉系统 {'|'} SmartHoldem",
+      "description": "SmartNet 如何在无审查的情况下确保用户安全。了解我们的官方/全部双层目录、加密验证,以及为什么直连 sn:// 链接始终有效。",
+      "keywords": "去中心化审核, P2P 安全, Web4 信誉, SmartNet 信任与安全, 抗审查内容, 官方仓库",
+      "ogTitle": "信任与安全 {'|'} Netfory",
+      "ogDescription": "信誉高于审查:Web 4.0 如何在无中心控制下保障安全"
     },
     "hero": {
-      "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "eyebrow": "信任与安全",
+      "title": "信誉高于审查:Netfory 如何在无中心控制下保障安全",
+      "subtitle": "在真正的 Web4 中,安全不来自封禁,而来自信誉与用户选择。"
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "开放网络的困境",
+      "p1": "任何开放的点对点网络都面临同一个艰难抉择:完全开放会为诈骗和钓鱼留下空间。中心化审核则破坏去中心化并造成单点控制。",
+      "p2": "SmartNet Web4 协议以不同的方式解决这一问题。我们不封禁,我们使用去中心化信誉。",
+      "p3": "一个简单的双层目录系统(官方 {'|'} 全部)默认保护普通用户,同时对希望完全访问的人保持网络完全自由。我们标记,而不审查。"
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "选择",
+      "titleB": ",而非禁止",
+      "l1Title": "第一层:官方(默认安全区)",
+      "l1Intro": "USER 模式下的普通用户只看到经过验证的 dApp。当 dApp 满足以下条件时被视为官方:",
+      "l1B1": "<strong>由可信开发者签名:</strong>清单中包含社区审核过的 <code>DEVELOPERS</code> 注册表中的 <code>owner</code> 地址。加密签名使身份无法伪造。",
+      "l1B2": "<strong>治理批准:</strong>特定的 dApp ID 可通过公开区块链交易加入 <code>OFFICIAL_DAPPS</code>。",
+      "l1Note": "这是一个数学可验证的信誉徽章,而不是企业封禁名单。",
+      "l2Title": "第二层:全部(有意识的选择)",
+      "l2Text": "DEV/GEEK 模式下的高级用户可切换「显示未验证」并看到明确警告。网络对理解风险者不隐藏任何内容。"
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "直连链接始终可用",
+      "p1": "这是 SmartNet Web 4.0 协议的核心原则:<strong>我们标记,永不审查。</strong>使用 <code>sn://</code> 或 <code>sth://</code> 协议的直连链接在任何情况下都不会被封锁。若你从对等节点收到链接,它无论是否在官方名单中都会打开。",
+      "p2": "过滤仅作用于商店层的发现,永远不作用于底层传输层。网络本身保持完全开放。"
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "去中心化安全机制",
+      "r1t": "内容永不删除",
+      "r1d": "追踪器索引所有应用。「官方」只是可见性元数据标签。",
+      "r2t": "无中心服务器",
+      "r2d": "信任注册表位于 SmartHoldem 区块链上。不可篡改且公开。",
+      "r3t": "客户端主权",
+      "r3d": "过滤在你的设备本地进行。分叉客户端、切换到 GEEK 模式或使用直连链接都会绕过所有过滤器。网络无法向你的节点强加过滤。",
+      "r4t": "加密验证",
+      "r4d": "徽章通过签名清单验证(<code>id ↔ pubkey + owner</code>)。你自己验证签名。",
+      "note": "与传统应用商店不同,这里没有隐藏算法或后门。"
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "即使无互联网访问也安全",
+      "p1": "对于处于敌对网络或离线区段的用户,SmartNet 使用云种子。可信开发者每 30 分钟复制一次包含当前信任列表的加密状态文件(<code>vdapps.enc</code>)。",
+      "p2": "对等节点仅在发行者已在其已知 <code>DEVELOPERS</code> 集合中时才接受这些列表。这创建了一条锚定在初始配置中的传递信任链。中间人攻击不可能发生,因为未知发行者会被自动忽略。",
+      "statLabel": "回退信任",
+      "statValue": "离线也可验证"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "自由互联网的 Web4 安全",
+      "p1": "以信誉代替审查。以签名代替承诺。以选择代替禁止。",
+      "p2": "普通用户默认受保护。高级用户保留完全可见性。",
+      "p3": "而世界上没有任何人拥有可以从网络中删除应用的按钮。",
+      "back": "返回使命"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Web 4.0 通信 {'|'} E2EE 消息与 0xID 邮件 {'|'} SmartHoldem",
+      "description": "探索 SmartNet 的去中心化 P2P 消息传递和 0xID 邮件。凭借区块链验证身份、经济学反垃圾邮件和零服务器架构,体验真正的隐私。",
+      "keywords": "E2EE 消息, 去中心化电子邮件, 0xID 邮件, P2P 通信, Web4 隐私, 加密聊天, SmartHoldem 邮件",
+      "ogTitle": "Web 4.0 通信 {'|'} Netfory",
+      "ogDescription": "无见证的通信:Web 4.0 标准"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Web 4.0 通信",
+      "title": "无见证的消息传递:Web 4.0 标准",
+      "subtitle": "没人能看到你与谁交谈。隐私是由数学保障的人权。"
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "去中心化消息传递:无服务器,无日志。",
+      "p1": "传统消息应用依赖存储你元数据并扫描你内容的中心化服务器。SmartNet 的 P2P 消息应用完全消除了中间人。",
+      "b1": "<strong>设备到设备直连:</strong>消息通过 <code>Iroh</code>(<code>QUIC</code>)从你的设备直接传到对等节点。无服务器,无 MITM。",
+      "b2": "<strong>默认 E2EE:</strong>每条消息都用 <code>X25519</code> + <code>AES-256-GCM</code> 加密。只有收件人可以解密。",
+      "b3": "<strong>群组主权:</strong>创建具有管理员控制策略的群组。踢出成员、轮换密钥、设置入群费——全部由密码学而非服务器规则强制执行。",
+      "b4": "<strong>反垃圾邮件经济学:</strong>为传入消息设定价格。垃圾邮件发送者必须支付 STH 才能联系你。大规模骚扰在经济上变得不可能。"
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID 邮件:三个隐私级别,一个客户端。",
+      "p1": "为什么要在便利和安全之间做选择?0xID 邮件与你现有的 Gmail 或 Yandex 账户配合使用,同时提供军事级加密和区块链验证的身份。",
+      "m1Title": "模式 1:经典(明文)",
+      "m1Text": "作为你的日常工具使用。连接任何 <code>IMAP/SMTP</code> 账户。所有历史记录保存在本地、PIN 加密的 <code>Sled</code> 数据库中。",
+      "m2Title": "模式 2:加密桥接",
+      "m2Text": "向任何普通电子邮件地址发送完全加密的邮件。提供商只能看到 Base64 垃圾数据。你的身份通过链上验证并获得绿色验证徽章——伪造变得不可能。",
+      "m3Title": "模式 3:纯 P2P({'@'}sth)",
+      "m3Text": "完全匿名。无 SMTP 服务器。无日志。消息通过 <code>Iroh</code> P2P 直接传输。像 <code>alice{'@'}sth</code> 这样的地址在链上注册并永远属于你。"
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "经济学反垃圾邮件与密码学身份",
+      "p1": "在 Web 4.0 中,金钱是终极反垃圾邮件盾牌。要给新联系人发消息,你需要发送一笔小额邀请交易(1 STH)。这证明你是真人,不是机器人农场。",
+      "p2": "每个发件人的身份都在密码学上与其 SmartHoldem 钱包绑定。若有人试图伪造地址,客户端会立即检查区块链签名。",
+      "valid": "有效签名 → 绿色验证徽章",
+      "invalid": "无效签名 → 红色徽章",
+      "statLabel": "伪造成本",
+      "statValue": "数学上不可能"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
-      "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "title": "引擎盖下:零信任架构",
+      "r1t": "本地优先存储",
+      "r1d": "所有邮件和聊天存储在你设备上加密的 <code>Sled</code> 数据库中。丢失 PIN = 丢失数据。这是一个特性。",
+      "r2t": "信任网",
+      "r2d": "你的地址簿只存在于你的设备上。没有服务器知道你与谁交谈。",
+      "r3t": "NTFRY 协议",
+      "r3d": "混合加密:<code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> 压缩。",
+      "r4t": "回退韧性",
+      "r4d": "如果收件人离线,客户端会自动回退到通过 SMTP 的加密信封(模式 2)。"
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "你的数据。你的密钥。你的网络。",
+      "p1": "停止向大科技公司租用隐私。开始拥有它。",
+      "cta": "下载 Netfory 客户端",
+      "back": "返回生态系统"
     }
   }
 }

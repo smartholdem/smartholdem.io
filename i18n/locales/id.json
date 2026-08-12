@@ -931,122 +931,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
+      "title": "Trust & Safety {'|'} Sistem Reputasi Web 4.0 {'|'} SmartHoldem",
+      "description": "Bagaimana SmartNet memastikan keamanan pengguna tanpa sensor. Pelajari katalog dua tingkat Official/All, verifikasi kriptografi, dan mengapa tautan sn:// langsung selalu berfungsi.",
+      "keywords": "moderasi terdesentralisasi, keamanan P2P, reputasi Web4, kepercayaan dan keamanan SmartNet, konten tahan sensor, Repositori Resmi",
       "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "ogDescription": "Reputasi Mengalahkan Sensor: Bagaimana Web 4.0 Menjamin Keamanan Tanpa Kontrol Pusat"
     },
     "hero": {
       "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "title": "Reputasi Mengalahkan Sensor: Bagaimana Netfory Menjamin Keamanan Tanpa Kontrol Pusat",
+      "subtitle": "Di Web4 yang sesungguhnya, keamanan tidak berasal dari pemblokiran. Ia berasal dari reputasi dan pilihan pengguna."
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "Dilema Jaringan Terbuka",
+      "p1": "Setiap jaringan Peer-to-Peer terbuka menghadapi pilihan sulit yang sama: keterbukaan total menciptakan ruang untuk penipuan dan phishing. Moderasi terpusat menghancurkan desentralisasi dan menciptakan titik kontrol tunggal.",
+      "p2": "Protokol SmartNet Web4 memecahkan ini dengan cara berbeda. Kami tidak memblokir. Kami menggunakan reputasi terdesentralisasi.",
+      "p3": "Sistem katalog dua tingkat yang sederhana (Official {'|'} All) melindungi pengguna sehari-hari secara default, sambil menjaga jaringan sepenuhnya bebas bagi mereka yang menginginkan akses penuh. Kami menandai, kami tidak menyensor."
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "Pilihan",
+      "titleB": ", Bukan Larangan",
+      "l1Title": "Level 1: Official (Zona Aman Default)",
+      "l1Intro": "Pengguna biasa dalam mode USER hanya melihat dApp terverifikasi. Sebuah aplikasi menjadi Official jika:",
+      "l1B1": "<strong>Ditandatangani oleh Pengembang Tepercaya:</strong> Manifest berisi alamat <code>owner</code> dalam registri <code>DEVELOPERS</code> yang diperiksa komunitas. Tanda tangan kriptografi membuat afiliasi tidak mungkin dipalsukan.",
+      "l1B2": "<strong>Disetujui oleh Tata Kelola:</strong> ID aplikasi tertentu dapat ditambahkan ke <code>OFFICIAL_DAPPS</code> melalui transaksi blockchain publik.",
+      "l1Note": "Ini adalah lencana reputasi yang dapat diverifikasi secara matematis, bukan daftar larangan korporat.",
+      "l2Title": "Level 2: All (Pilihan Sadar)",
+      "l2Text": "Pengguna tingkat lanjut dalam mode DEV/GEEK dapat mengaktifkan \"Tampilkan yang Belum Diverifikasi\" dengan peringatan jelas. Jaringan tidak menyembunyikan apa pun dari mereka yang memahami risikonya."
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "Tautan Langsung Selalu Bekerja",
+      "p1": "Ini adalah prinsip inti protokol SmartNet Web 4.0: <strong>Kami menandai. Kami tidak pernah menyensor.</strong> Tautan langsung menggunakan protokol <code>sn://</code> atau <code>sth://</code> tidak pernah diblokir — dalam kondisi apa pun. Jika Anda menerima tautan dari peer, ia terbuka terlepas dari daftar resmi.",
+      "p2": "Filter hanya berlaku untuk penemuan di toko, tidak pernah untuk lapisan transportasi dasar. Jaringan itu sendiri tetap sepenuhnya terbuka."
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "Mekanika Keamanan Terdesentralisasi",
+      "r1t": "Konten Tidak Pernah Dihapus",
+      "r1d": "Tracker mengindeks SEMUA aplikasi. \"Official\" hanya tag metadata visibilitas.",
+      "r2t": "Tanpa Server Pusat",
+      "r2d": "Registri kepercayaan berada di Blockchain SmartHoldem. Tidak dapat diubah dan publik.",
+      "r3t": "Kedaulatan Sisi Klien",
+      "r3d": "Penyaringan terjadi lokal di perangkat Anda. Fork klien, beralih ke mode GEEK, atau menggunakan tautan langsung akan melewati semua filter. Jaringan tidak dapat memaksakan filter ke node Anda.",
+      "r4t": "Verifikasi Kriptografi",
+      "r4d": "Lencana diverifikasi via manifest bertanda tangan (<code>id ↔ pubkey + owner</code>). Anda memverifikasi tanda tangan sendiri.",
+      "note": "Tidak seperti toko aplikasi tradisional, tidak ada algoritma tersembunyi atau backdoor."
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "Keamanan Bahkan Tanpa Akses Internet",
+      "p1": "Untuk pengguna di jaringan yang bermusuhan atau segmen offline, SmartNet menggunakan Cloud Seeders. Pengembang tepercaya mereplikasi file state terenkripsi (<code>vdapps.enc</code>) yang berisi daftar kepercayaan saat ini setiap 30 menit.",
+      "p2": "Peer hanya menerima daftar ini jika penerbit sudah ada dalam kumpulan <code>DEVELOPERS</code> yang mereka kenal. Ini menciptakan rantai kepercayaan transitif yang berlabuh dalam konfigurasi awal. Serangan man-in-the-middle tidak mungkin karena penerbit tidak dikenal diabaikan otomatis.",
+      "statLabel": "Kepercayaan Fallback",
+      "statValue": "Terverifikasi bahkan offline"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "Keamanan Web4 untuk Internet Bebas",
+      "p1": "Reputasi bukan sensor. Tanda tangan bukan janji. Pilihan bukan larangan.",
+      "p2": "Pengguna sehari-hari terlindungi secara default. Pengguna tingkat lanjut mempertahankan visibilitas penuh.",
+      "p3": "Dan tidak ada seorang pun di dunia yang memiliki tombol untuk menghapus aplikasi dari jaringan.",
+      "back": "Kembali ke Misi"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Komunikasi Web 4.0 {'|'} Messenger E2EE & 0xID Mail {'|'} SmartHoldem",
+      "description": "Temukan messenger P2P terdesentralisasi SmartNet dan 0xID Mail. Nikmati privasi sejati dengan identitas terverifikasi blockchain, anti-spam ekonomi, dan arsitektur nol-server.",
+      "keywords": "messenger E2EE, email terdesentralisasi, 0xID Mail, komunikasi P2P, privasi Web4, chat terenkripsi, mail SmartHoldem",
+      "ogTitle": "Komunikasi Web 4.0 {'|'} Netfory",
+      "ogDescription": "Komunikasi Tanpa Saksi: Standar Web 4.0"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Komunikasi Web 4.0",
+      "title": "Pesan Tanpa Saksi: Standar Web 4.0",
+      "subtitle": "Tidak ada yang bisa melihat dengan siapa Anda berbicara. Privasi adalah hak asasi manusia yang dijamin oleh matematika."
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "Pesan Terdesentralisasi: Tanpa Server. Tanpa Log.",
+      "p1": "Aplikasi pesan tradisional bergantung pada server terpusat yang menyimpan metadata Anda dan memindai konten Anda. Messenger P2P SmartNet menghilangkan perantara sepenuhnya.",
+      "b1": "<strong>Perangkat-ke-Perangkat Langsung:</strong> Pesan berjalan via <code>Iroh</code> (<code>QUIC</code>) langsung dari perangkat Anda ke peer. Tanpa server. Tanpa MITM.",
+      "b2": "<strong>E2EE secara Default:</strong> Setiap pesan dienkripsi dengan <code>X25519</code> + <code>AES-256-GCM</code>. Hanya penerima yang bisa mendekripsinya.",
+      "b3": "<strong>Kedaulatan Grup:</strong> Buat grup dengan kebijakan yang dikontrol admin. Keluarkan anggota, putar kunci, atur biaya masuk — semua ditegakkan oleh kriptografi, bukan aturan server.",
+      "b4": "<strong>Ekonomi Anti-Spam:</strong> Tetapkan harga untuk pesan masuk. Spammer harus membayar STH untuk menghubungi Anda. Pelecehan massal menjadi mustahil secara ekonomi."
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID Mail: Tiga Level Privasi. Satu Klien.",
+      "p1": "Mengapa memilih antara kenyamanan dan keamanan? 0xID Mail bekerja dengan akun Gmail atau Yandex yang sudah ada sambil menawarkan enkripsi kelas militer dan identitas terverifikasi blockchain.",
+      "m1Title": "Mode 1: Klasik (Teks Biasa)",
+      "m1Text": "Gunakan sebagai pengemudi harian Anda. Hubungkan akun <code>IMAP/SMTP</code> apa pun. Semua riwayat tetap dalam database <code>Sled</code> lokal yang dienkripsi PIN.",
+      "m2Title": "Mode 2: Jembatan Terenkripsi",
+      "m2Text": "Kirim email yang sepenuhnya terenkripsi ke alamat email normal mana pun. Penyedia hanya melihat sampah Base64. Identitas Anda diverifikasi on-chain dengan Verified Badge hijau — spoofing menjadi mustahil.",
+      "m3Title": "Mode 3: P2P Murni ({'@'}sth)",
+      "m3Text": "Anonimitas total. Tanpa server SMTP. Tanpa log. Pesan berjalan langsung via <code>Iroh</code> P2P. Alamat seperti <code>alice{'@'}sth</code> terdaftar on-chain dan menjadi milik Anda selamanya."
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "Anti-Spam Ekonomi & Identitas Kriptografi",
+      "p1": "Di Web 4.0, uang adalah perisai anti-spam utama. Untuk mengirim pesan ke kontak baru, Anda mengirim Invite Transaction kecil (1 STH). Ini membuktikan Anda manusia nyata, bukan pertanian bot.",
+      "p2": "Identitas setiap pengirim terikat secara kriptografi ke dompet SmartHoldem mereka. Jika seseorang mencoba spoofing alamat, klien memeriksa tanda tangan blockchain secara instan.",
+      "valid": "Tanda tangan valid → Verified Badge hijau",
+      "invalid": "Tanda tangan tidak valid → Badge merah",
+      "statLabel": "Biaya Spoofing",
+      "statValue": "Secara Matematis Mustahil"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
+      "title": "Di Balik Layar: Arsitektur Zero-Trust",
+      "r1t": "Penyimpanan Local-First",
+      "r1d": "Semua email dan chat hidup di DB <code>Sled</code> terenkripsi di perangkat Anda. PIN Hilang = Data Hilang. Ini adalah fitur.",
       "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "r2d": "Buku alamat Anda hanya ada di perangkat Anda. Tidak ada server yang tahu dengan siapa Anda berbicara.",
+      "r3t": "Protokol NTFRY",
+      "r3d": "Enkripsi hybrid: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + kompresi <code>zstd</code>.",
+      "r4t": "Ketahanan Fallback",
+      "r4d": "Jika penerima offline, klien otomatis kembali ke amplop terenkripsi via SMTP (Mode 2)."
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "Data Anda. Kunci Anda. Jaringan Anda.",
+      "p1": "Berhenti menyewa privasi dari Big Tech. Mulai miliki itu.",
+      "cta": "Unduh Klien Netfory",
+      "back": "Kembali ke Ekosistem"
     }
   }
 }

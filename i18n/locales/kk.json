@@ -932,122 +932,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
-      "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "title": "Сенім және қауіпсіздік {'|'} Web 4.0 бедел жүйесі {'|'} SmartHoldem",
+      "description": "SmartNet цензурасыз пайдаланушы қауіпсіздігін қалай қамтамасыз етеді. Ресми/Барлығы екі деңгейлі каталог, криптографиялық тексеру және неге тікелей sn:// сілтемелер әрқашан жұмыс істейтіні туралы біліңіз.",
+      "keywords": "орталықтандырылмаған модерация, P2P қауіпсіздігі, Web4 беделі, SmartNet сенім мен қауіпсіздік, цензураға тұрақты мазмұн, ресми репозиторий",
+      "ogTitle": "Сенім және қауіпсіздік {'|'} Netfory",
+      "ogDescription": "Цензурадан гөрі бедел: Web 4.0 орталық басқарусыз қауіпсіздікті қалай қамтамасыз етеді"
     },
     "hero": {
-      "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "eyebrow": "Сенім және қауіпсіздік",
+      "title": "Цензурадан гөрі бедел: Netfory орталық басқарусыз қауіпсіздікті қалай қамтамасыз етеді",
+      "subtitle": "Нағыз Web4-те қауіпсіздік тыйым салудан емес, беделден және пайдаланушы таңдауынан келеді."
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "Ашық желінің дилеммасы",
+      "p1": "Кез келген ашық Peer-to-Peer желісі бірдей қиын таңдауға тап болады: толық ашықтық алаяқтық пен фишингке орын жасайды. Орталықтандырылған модерация орталықсыздандыруды жояды және бір басқару нүктесін жасайды.",
+      "p2": "SmartNet Web4 протоколдары мұны басқаша шешеді. Біз тыйым салмаймыз. Біз орталықтандырылмаған беделді қолданамыз.",
+      "p3": "Қарапайым екі деңгейлі каталог жүйесі (Ресми {'|'} Барлығы) күнделікті пайдаланушыларды әдепкі бойынша қорғайды, ал толық қол жеткізгісі келетіндерге желіні толығымен еркін қалдырады. Біз белгілейміз, цензураламаймыз."
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "Таңдау",
+      "titleB": ", тыйым емес",
+      "l1Title": "1-деңгей: Ресми (әдепкі қауіпсіз аймақ)",
+      "l1Intro": "USER режиміндегі қарапайым пайдаланушылар тек тексерілген dApps көреді. Қосымша Ресми деп есептеледі:",
+      "l1B1": "<strong>Сенімді әзірлеуші қол қойған:</strong> Манифесте қауымдастық тексерген <code>DEVELOPERS</code> тізілімінде <code>owner</code> мекенжайы бар. Криптографиялық қолтаңбалар байланысты жалғандыру мүмкін емес етеді.",
+      "l1B2": "<strong>Басқару арқылы бекітілген:</strong> Нақты қосымша ID-лері жария блокчейн транзакциясы арқылы <code>OFFICIAL_DAPPS</code> тізіміне қосылуы мүмкін.",
+      "l1Note": "Бұл математикалық тексерілетін бедел белгісі, корпоративті тыйым салу тізімі емес.",
+      "l2Title": "2-деңгей: Барлығы (саналы таңдау)",
+      "l2Text": "DEV/GEEK режиміндегі жоғары деңгейлі пайдаланушылар айқын ескертумен \"Тексерілмегендерді көрсету\" қосуы мүмкін. Желі тәуекелдерді түсінетіндерден ештеңе жасырмайды."
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "Тікелей сілтемелер әрқашан жұмыс істейді",
+      "p1": "Бұл SmartNet Web 4.0 протоколдарының негізгі принципі: <strong>Біз белгілейміз. Ешқашан цензураламаймыз.</strong> <code>sn://</code> немесе <code>sth://</code> протоколдарын қолданатын тікелей сілтемелер ешбір жағдайда бұғатталмайды. Егер сіз peer-ден сілтеме алсаңыз, ол ресми тізімдерге қарамастан ашылады.",
+      "p2": "Сүзгілер ТЕК дүкенде іздеуге қолданылады, астыңғы тасымал деңгейіне ешқашан емес. Желінің өзі толық ашық болып қалады."
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "Орталықтандырылмаған қауіпсіздік механикасы",
+      "r1t": "Мазмұн ешқашан жойылмайды",
+      "r1d": "Трекерлер БАРЛЫҚ қосымшаларды индекстейді. \"Ресми\" – бұл тек көріну метадеректер тегі.",
+      "r2t": "Орталық сервер жоқ",
+      "r2d": "Сенім тізілімдері SmartHoldem блокчейнінде тұрады. Өзгермейтін және жария.",
+      "r3t": "Клиенттік егемендік",
+      "r3d": "Сүзу сіздің құрылғыңызда жергілікті түрде болады. Клиентті форкілеу, GEEK режиміне ауысу немесе тікелей сілтемені қолдану барлық сүзгілерді айналып өтеді. Желі сіздің түйініңізге сүзгіні мәжбүрлей алмайды.",
+      "r4t": "Криптографиялық тексеру",
+      "r4d": "Белгілер қол қойылған манифестер (<code>id ↔ pubkey + owner</code>) арқылы тексеріледі. Қолтаңбаны өзіңіз тексересіз.",
+      "note": "Дәстүрлі қосымшалар дүкендерінен айырмашылығы, жасырын алгоритмдер немесе backdoor-лар жоқ."
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "Интернет қолжетімділігі жоқ жерде де қауіпсіздік",
+      "p1": "Дұшпандық желілердегі немесе офлайн сегменттердегі пайдаланушылар үшін SmartNet Cloud Seeders қолданады. Сенімді әзірлеушілер ағымдағы сенім тізімдерін қамтитын шифрланған күй файлдарын (<code>vdapps.enc</code>) әр 30 минут сайын репликалайды.",
+      "p2": "Peer-лер бұл тізімдерді эмитент өздерінің белгілі <code>DEVELOPERS</code> жиынтығында болған жағдайда ғана қабылдайды. Бұл бастапқы конфигурацияға зәкірленген өткінші сенім тізбегін жасайды. Man-in-the-middle шабуылдары мүмкін емес, өйткені белгісіз эмитенттер автоматты түрде еленбейді.",
+      "statLabel": "Қосалқы сенім",
+      "statValue": "Офлайн жағдайда да тексерілген"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "Еркін интернет үшін Web4 қауіпсіздігі",
+      "p1": "Цензураның орнына бедел. Уәденің орнына қолтаңбалар. Тыйымның орнына таңдау.",
+      "p2": "Күнделікті пайдаланушылар әдепкі бойынша қорғалған. Жоғары деңгейлі пайдаланушылар толық көрінуді сақтайды.",
+      "p3": "Ал әлемде ешкімнің қосымшаны желіден жоя алатын түймесі жоқ.",
+      "back": "Миссияға оралу"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Web 4.0 байланысы {'|'} E2EE Messenger және 0xID Mail {'|'} SmartHoldem",
+      "description": "SmartNet-тің орталықтандырылмаған P2P мессенджерін және 0xID Mail-ды ашыңыз. Блокчейнмен расталған сәйкестендіру, экономикалық антиспам және нөлдік сервер архитектурасы арқылы шынайы құпияны сезініңіз.",
+      "keywords": "E2EE мессенджер, орталықтандырылмаған email, 0xID Mail, P2P байланысы, Web4 құпиясы, шифрланған чат, SmartHoldem пошта",
+      "ogTitle": "Web 4.0 байланысы {'|'} Netfory",
+      "ogDescription": "Куәгерсіз байланыс: Web 4.0 стандарты"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Web 4.0 байланысы",
+      "title": "Куәгерсіз хабар алмасу: Web 4.0 стандарты",
+      "subtitle": "Ешкім сіздің кіммен сөйлесіп жатқаныңызды көре алмайды. Құпия — математикамен қамтамасыз етілген адам құқығы."
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "Орталықтандырылмаған хабар алмасу: сервер жоқ. Журнал жоқ.",
+      "p1": "Дәстүрлі мессенджерлер сіздің метадеректеріңізді сақтайтын және контентті сканерлейтін орталық серверлерге тәуелді. SmartNet-тің P2P Messenger-і делдалды толықтай жояды.",
+      "b1": "<strong>Тікелей құрылғыдан құрылғыға:</strong> Хабарлар <code>Iroh</code> (<code>QUIC</code>) арқылы сіздің құрылғыңыздан peer-ге тікелей жіберіледі. Сервер жоқ. MITM жоқ.",
+      "b2": "<strong>Әдепкі бойынша E2EE:</strong> Әрбір хабар <code>X25519</code> + <code>AES-256-GCM</code> арқылы шифрланады. Тек алушы ғана дешифрлей алады.",
+      "b3": "<strong>Топ егемендігі:</strong> Әкімші басқаратын саясаттармен топтар жасаңыз. Мүшелерді шығару, кілттерді айналдыру, кіру ақысын белгілеу — бәрі криптография арқылы орындалады, сервер ережелерімен емес.",
+      "b4": "<strong>Антиспам экономикасы:</strong> Кіріс хабарлар үшін баға белгілеңіз. Спамерлер сізге жету үшін STH төлеуі керек. Жаппай қудалау экономикалық тұрғыдан мүмкін емес болады."
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID Mail: Құпиялықтың үш деңгейі. Бір клиент.",
+      "p1": "Ыңғайлылық пен қауіпсіздіктің арасында неге таңдау керек? 0xID Mail сіздің қолданыстағы Gmail немесе Yandex тіркелгілеріңізбен жұмыс істейді, сонымен қатар әскери деңгейлі шифрлау және блокчейнмен расталған сәйкестендіру ұсынады.",
+      "m1Title": "1-режим: Классикалық (ашық мәтін)",
+      "m1Text": "Күнделікті құрал ретінде пайдаланыңыз. Кез келген <code>IMAP/SMTP</code> тіркелгісін қосыңыз. Барлық тарих жергілікті, PIN-шифрланған <code>Sled</code> дерекқорында сақталады.",
+      "m2Title": "2-режим: Шифрланған көпір",
+      "m2Text": "Кез келген қарапайым email мекенжайға толығымен шифрланған email жіберіңіз. Провайдер тек Base64 қоқысын көреді. Сіздің сәйкестендіруіңіз on-chain жасыл Verified Badge-пен расталады — spoofing мүмкін емес болады.",
+      "m3Title": "3-режим: Таза P2P ({'@'}sth)",
+      "m3Text": "Толық анонимділік. SMTP серверлері жоқ. Журналдар жоқ. Хабарлар <code>Iroh</code> P2P арқылы тікелей жіберіледі. <code>alice{'@'}sth</code> сияқты мекенжайлар on-chain тіркеледі және мәңгі сізге тиесілі."
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "Экономикалық антиспам және криптографиялық сәйкестендіру",
+      "p1": "Web 4.0-те ақша ең жоғарғы антиспам қалқаны болып табылады. Жаңа контактіге хабар жіберу үшін кішкентай Invite Transaction (1 STH) жібересіз. Бұл сіздің бот фермасы емес, нағыз адам екеніңізді дәлелдейді.",
+      "p2": "Әрбір жіберушінің сәйкестендіруі олардың SmartHoldem әмиянына криптографиялық түрде байланысты. Егер біреу мекенжайды жалғандырғысы келсе, клиент блокчейн қолтаңбасын лезде тексереді.",
+      "valid": "Жарамды қолтаңба → жасыл Verified Badge",
+      "invalid": "Жарамсыз қолтаңба → қызыл Badge",
+      "statLabel": "Spoofing құны",
+      "statValue": "Математикалық тұрғыдан мүмкін емес"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
+      "title": "Астарында: Zero-Trust архитектурасы",
+      "r1t": "Local-First сақтау",
+      "r1d": "Барлық email және чаттар сіздің құрылғыңызда шифрланған <code>Sled</code> DB-де болады. PIN жоғалды = деректер жоғалды. Бұл функция.",
       "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "r2d": "Сіздің мекенжай кітабыңыз тек сіздің құрылғыңызда бар. Ешбір сервер сіздің кіммен сөйлесіп жатқаныңызды білмейді.",
+      "r3t": "NTFRY протоколы",
+      "r3d": "Гибридті шифрлау: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> қысу.",
+      "r4t": "Резервтік қасиет",
+      "r4d": "Егер алушы офлайн болса, клиент автоматты түрде SMTP арқылы шифрланған конвертке (2-режим) көшеді."
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "Сіздің деректеріңіз. Сіздің кілттеріңіз. Сіздің желіңіз.",
+      "p1": "Big Tech-тен құпияны жалға алуды тоқтатыңыз. Оған иелік ете бастаңыз.",
+      "cta": "Netfory клиентін жүктеп алу",
+      "back": "Экожүйеге оралу"
     }
   }
 }

@@ -932,122 +932,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
-      "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "title": "신뢰와 안전 {'|'} Web 4.0 평판 시스템 {'|'} SmartHoldem",
+      "description": "SmartNet이 검열 없이 사용자 안전을 보장하는 방법. 2단계 Official/All 카탈로그, 암호화 검증, 그리고 sn:// 직접 링크가 항상 작동하는 이유를 알아보세요.",
+      "keywords": "탈중앙화 조정, P2P 안전, Web4 평판, SmartNet 신뢰와 안전, 검열 저항 콘텐츠, 공식 저장소",
+      "ogTitle": "신뢰와 안전 {'|'} Netfory",
+      "ogDescription": "검열보다 평판: Web 4.0이 중앙 통제 없이 안전을 보장하는 방법"
     },
     "hero": {
-      "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "eyebrow": "신뢰와 안전",
+      "title": "검열보다 평판: Netfory가 중앙 통제 없이 안전을 보장하는 방법",
+      "subtitle": "진정한 Web4에서 안전은 차단에서 오지 않습니다. 평판과 사용자 선택에서 옵니다."
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "개방형 네트워크의 딜레마",
+      "p1": "모든 개방형 P2P 네트워크는 같은 어려운 선택에 직면합니다: 완전한 개방성은 사기와 피싱에 공간을 만들어냅니다. 중앙집중식 조정은 탈중앙화를 파괴하고 단일 통제 지점을 만듭니다.",
+      "p2": "SmartNet Web4 프로토콜은 이를 다르게 해결합니다. 우리는 차단하지 않습니다. 우리는 탈중앙화된 평판을 사용합니다.",
+      "p3": "간단한 2단계 카탈로그 시스템(Official {'|'} All)이 일반 사용자를 기본으로 보호하는 동시에 완전한 접근을 원하는 사람들을 위해 네트워크를 완전히 자유롭게 유지합니다. 우리는 표시하지, 검열하지 않습니다."
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "선택",
+      "titleB": ", 금지가 아닌",
+      "l1Title": "Level 1: Official (기본 안전 구역)",
+      "l1Intro": "USER 모드의 일반 사용자는 검증된 dApp만 봅니다. 앱이 Official이 되려면:",
+      "l1B1": "<strong>신뢰할 수 있는 개발자가 서명:</strong> 매니페스트에 커뮤니티 검증된 <code>DEVELOPERS</code> 레지스트리의 <code>owner</code> 주소가 포함됩니다. 암호화 서명으로 소속을 위조할 수 없습니다.",
+      "l1B2": "<strong>거버넌스 승인:</strong> 특정 앱 ID는 공개 블록체인 트랜잭션을 통해 <code>OFFICIAL_DAPPS</code>에 추가될 수 있습니다.",
+      "l1Note": "이것은 수학적으로 검증 가능한 평판 배지이며, 기업의 차단 목록이 아닙니다.",
+      "l2Title": "Level 2: All (의식적인 선택)",
+      "l2Text": "DEV/GEEK 모드의 고급 사용자는 명확한 경고와 함께 \"미검증 표시\"를 전환할 수 있습니다. 네트워크는 위험을 이해하는 사람들에게 아무것도 숨기지 않습니다."
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "직접 링크는 항상 작동합니다",
+      "p1": "이것은 SmartNet Web 4.0 프로토콜의 핵심 원칙입니다: <strong>우리는 표시합니다. 결코 검열하지 않습니다.</strong> <code>sn://</code> 또는 <code>sth://</code> 프로토콜을 사용하는 직접 링크는 어떤 상황에서도 차단되지 않습니다. 피어로부터 링크를 받으면 공식 목록과 관계없이 열립니다.",
+      "p2": "필터는 스토어프론트 탐색에만 적용되며, 기본 전송 계층에는 결코 적용되지 않습니다. 네트워크 자체는 완전히 개방된 상태로 유지됩니다."
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "탈중앙화 안전 메커니즘",
+      "r1t": "콘텐츠 절대 삭제되지 않음",
+      "r1d": "트래커는 모든 앱을 색인합니다. \"Official\"은 가시성 메타데이터 태그일 뿐입니다.",
+      "r2t": "중앙 서버 없음",
+      "r2d": "신뢰 레지스트리는 SmartHoldem 블록체인에 있습니다. 불변이며 공개됩니다.",
+      "r3t": "클라이언트 측 주권",
+      "r3d": "필터링은 기기에서 로컬로 이루어집니다. 클라이언트 포크, GEEK 모드 전환 또는 직접 링크 사용은 모든 필터를 우회합니다. 네트워크는 노드에 필터를 강제할 수 없습니다.",
+      "r4t": "암호화 검증",
+      "r4d": "배지는 서명된 매니페스트(<code>id ↔ pubkey + owner</code>)를 통해 검증됩니다. 서명은 스스로 검증합니다.",
+      "note": "기존 앱 스토어와 달리 숨겨진 알고리즘이나 백도어가 없습니다."
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "인터넷 접근 없이도 안전",
+      "p1": "적대적 네트워크나 오프라인 세그먼트의 사용자를 위해 SmartNet은 Cloud Seeders를 사용합니다. 신뢰할 수 있는 개발자는 현재 신뢰 목록을 포함하는 암호화된 상태 파일(<code>vdapps.enc</code>)을 30분마다 복제합니다.",
+      "p2": "피어는 발행자가 이미 알려진 <code>DEVELOPERS</code> 집합에 있을 때만 이 목록을 수락합니다. 이는 초기 구성에 고정된 전이적 신뢰 사슬을 만듭니다. 알 수 없는 발행자가 자동으로 무시되기 때문에 중간자 공격이 불가능합니다.",
+      "statLabel": "폴백 신뢰",
+      "statValue": "오프라인에서도 검증됨"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "자유로운 인터넷을 위한 Web4 안전",
+      "p1": "검열 대신 평판. 약속 대신 서명. 금지 대신 선택.",
+      "p2": "일반 사용자는 기본적으로 보호됩니다. 고급 사용자는 완전한 가시성을 유지합니다.",
+      "p3": "그리고 세상의 누구도 네트워크에서 애플리케이션을 삭제할 수 있는 버튼을 가지고 있지 않습니다.",
+      "back": "미션으로 돌아가기"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Web 4.0 통신 {'|'} E2EE 메신저 & 0xID Mail {'|'} SmartHoldem",
+      "description": "SmartNet의 탈중앙 P2P 메신저와 0xID Mail을 만나보세요. 블록체인 검증 신원, 경제적 안티스팸, 제로 서버 아키텍처로 진정한 프라이버시를 경험하세요.",
+      "keywords": "E2EE 메신저, 탈중앙화 이메일, 0xID Mail, P2P 통신, Web4 프라이버시, 암호화 채팅, SmartHoldem 메일",
+      "ogTitle": "Web 4.0 통신 {'|'} Netfory",
+      "ogDescription": "목격자 없는 소통: Web 4.0 표준"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Web 4.0 통신",
+      "title": "목격자 없는 메시징: Web 4.0 표준",
+      "subtitle": "누구도 당신이 누구와 대화하는지 볼 수 없습니다. 프라이버시는 수학으로 보장되는 인권입니다."
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "탈중앙 메시징: 서버 없음. 로그 없음.",
+      "p1": "기존 메신저는 메타데이터를 저장하고 콘텐츠를 스캔하는 중앙 서버에 의존합니다. SmartNet의 P2P 메신저는 중개자를 완전히 제거합니다.",
+      "b1": "<strong>기기 간 직접 통신:</strong> 메시지는 <code>Iroh</code>(<code>QUIC</code>)를 통해 당신의 기기에서 피어로 직접 전송됩니다. 서버 없음. MITM 없음.",
+      "b2": "<strong>기본 E2EE:</strong> 모든 메시지는 <code>X25519</code> + <code>AES-256-GCM</code>으로 암호화됩니다. 수신자만 복호화할 수 있습니다.",
+      "b3": "<strong>그룹 주권:</strong> 관리자 제어 정책을 가진 그룹을 만드세요. 멤버 추방, 키 순환, 참가비 설정 — 모두 서버 규칙이 아닌 암호화로 강제됩니다.",
+      "b4": "<strong>안티스팸 경제학:</strong> 수신 메시지에 가격을 설정하세요. 스패머는 당신에게 도달하려면 STH를 지불해야 합니다. 대규모 괴롭힘이 경제적으로 불가능해집니다."
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID Mail: 세 가지 프라이버시 레벨. 하나의 클라이언트.",
+      "p1": "왜 편의성과 보안 사이에서 선택해야 합니까? 0xID Mail은 기존 Gmail 또는 Yandex 계정과 함께 작동하면서 군사 등급 암호화와 블록체인 검증 신원을 제공합니다.",
+      "m1Title": "모드 1: 클래식(평문)",
+      "m1Text": "일상 도구로 사용하세요. 모든 <code>IMAP/SMTP</code> 계정에 연결하세요. 모든 기록은 로컬 PIN 암호화 <code>Sled</code> 데이터베이스에 유지됩니다.",
+      "m2Title": "모드 2: 암호화 브릿지",
+      "m2Text": "모든 일반 이메일 주소로 완전히 암호화된 이메일을 보내세요. 제공업체는 Base64 쓰레기만 볼 수 있습니다. 신원은 온체인에서 검증되고 녹색 Verified Badge가 부여됩니다 — 스푸핑이 불가능해집니다.",
+      "m3Title": "모드 3: 순수 P2P({'@'}sth)",
+      "m3Text": "완전한 익명성. SMTP 서버 없음. 로그 없음. 메시지는 <code>Iroh</code> P2P를 통해 직접 전송됩니다. <code>alice{'@'}sth</code>와 같은 주소는 온체인에 등록되며 영원히 당신의 것입니다."
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "경제적 안티스팸 & 암호학적 신원",
+      "p1": "Web 4.0에서 돈은 궁극의 안티스팸 방패입니다. 새 연락처에 메시지를 보내려면 소액 Invite Transaction(1 STH)을 보내야 합니다. 이는 당신이 봇 팜이 아니라 실제 인간임을 증명합니다.",
+      "p2": "모든 발신자의 신원은 그들의 SmartHoldem 지갑에 암호학적으로 연결됩니다. 누군가 주소를 위조하려 하면 클라이언트가 블록체인 서명을 즉시 확인합니다.",
+      "valid": "유효한 서명 → 녹색 Verified Badge",
+      "invalid": "잘못된 서명 → 빨간색 Badge",
+      "statLabel": "스푸핑 비용",
+      "statValue": "수학적으로 불가능"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
+      "title": "내부 구조: 제로 트러스트 아키텍처",
+      "r1t": "로컬 우선 저장소",
+      "r1d": "모든 이메일과 채팅은 당신의 기기에서 암호화된 <code>Sled</code> DB에 저장됩니다. PIN 분실 = 데이터 손실. 이것은 기능입니다.",
       "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "r2d": "당신의 주소록은 오직 당신의 기기에만 존재합니다. 어떤 서버도 당신이 누구와 대화하는지 모릅니다.",
+      "r3t": "NTFRY 프로토콜",
+      "r3d": "하이브리드 암호화: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> 압축.",
+      "r4t": "폴백 복원력",
+      "r4d": "수신자가 오프라인이면 클라이언트는 자동으로 SMTP를 통한 암호화 봉투(모드 2)로 폴백됩니다."
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "당신의 데이터. 당신의 키. 당신의 네트워크.",
+      "p1": "빅테크로부터 프라이버시를 빌리지 마세요. 소유하기 시작하세요.",
+      "cta": "Netfory 클라이언트 다운로드",
+      "back": "생태계로 돌아가기"
     }
   }
 }

@@ -932,122 +932,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
-      "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "title": "Confiance et Sécurité {'|'} Système de Réputation Web 4.0 {'|'} SmartHoldem",
+      "description": "Comment SmartNet garantit la sécurité des utilisateurs sans censure. Découvrez notre catalogue à deux niveaux Officiel/Tous, la vérification cryptographique et pourquoi les liens directs sn:// fonctionnent toujours.",
+      "keywords": "modération décentralisée, sécurité P2P, réputation Web4, confiance et sécurité SmartNet, contenu résistant à la censure, Dépôt Officiel",
+      "ogTitle": "Confiance et Sécurité {'|'} Netfory",
+      "ogDescription": "La réputation plutôt que la censure : comment Web 4.0 garantit la sécurité sans contrôle central"
     },
     "hero": {
-      "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "eyebrow": "Confiance et Sécurité",
+      "title": "La réputation plutôt que la censure : comment Netfory garantit la sécurité sans contrôle central",
+      "subtitle": "Dans le vrai Web4, la sécurité ne vient pas des interdictions. Elle vient de la réputation et du choix de l'utilisateur."
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "Le dilemme du réseau ouvert",
+      "p1": "Tout réseau pair-à-pair ouvert fait face au même choix difficile : l'ouverture totale crée un espace pour les arnaques et le phishing. La modération centralisée détruit la décentralisation et crée un point de contrôle unique.",
+      "p2": "Les protocoles SmartNet Web4 résolvent cela différemment. Nous n'interdisons pas. Nous utilisons une réputation décentralisée.",
+      "p3": "Un système de catalogue simple à deux niveaux (Officiel {'|'} Tous) protège les utilisateurs quotidiens par défaut, tout en laissant le réseau entièrement libre pour ceux qui veulent un accès complet. Nous marquons, nous ne censurons pas."
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "Choix",
+      "titleB": ", pas Interdiction",
+      "l1Title": "Niveau 1 : Officiel (zone sûre par défaut)",
+      "l1Intro": "Les utilisateurs ordinaires en mode USER ne voient que les dApps vérifiées. Une app est Officielle si :",
+      "l1B1": "<strong>Signée par un développeur de confiance :</strong> le manifeste inclut une adresse <code>owner</code> dans le registre <code>DEVELOPERS</code> validé par la communauté. Les signatures cryptographiques rendent l'affiliation impossible à falsifier.",
+      "l1B2": "<strong>Approuvée par la gouvernance :</strong> des ID d'app spécifiques peuvent être ajoutés à <code>OFFICIAL_DAPPS</code> via une transaction blockchain publique.",
+      "l1Note": "C'est un badge de réputation mathématiquement vérifiable, pas une liste de bannissement d'entreprise.",
+      "l2Title": "Niveau 2 : Tous (choix conscient)",
+      "l2Text": "Les utilisateurs avancés en modes DEV/GEEK peuvent activer « Afficher les non vérifiés » avec un avertissement clair. Le réseau ne cache rien à ceux qui comprennent les risques."
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "Les liens directs fonctionnent toujours",
+      "p1": "C'est un principe fondamental des protocoles SmartNet Web 4.0 : <strong>Nous marquons. Nous ne censurons jamais.</strong> Les liens directs utilisant les protocoles <code>sn://</code> ou <code>sth://</code> ne sont jamais bloqués — en aucune circonstance. Si vous recevez un lien d'un pair, il s'ouvre indépendamment des listes officielles.",
+      "p2": "Les filtres s'appliquent UNIQUEMENT à la découverte dans la vitrine, jamais à la couche de transport sous-jacente. Le réseau lui-même reste totalement ouvert."
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "Mécanique de sécurité décentralisée",
+      "r1t": "Le contenu n'est jamais supprimé",
+      "r1d": "Les trackers indexent TOUTES les apps. « Officiel » n'est qu'une balise de métadonnées de visibilité.",
+      "r2t": "Pas de serveur central",
+      "r2d": "Les registres de confiance vivent sur la blockchain SmartHoldem. Immuables et publics.",
+      "r3t": "Souveraineté côté client",
+      "r3d": "Le filtrage se fait localement sur votre appareil. Forker le client, passer en mode GEEK ou utiliser un lien direct contourne tous les filtres. Le réseau ne peut pas imposer un filtre à votre nœud.",
+      "r4t": "Vérification cryptographique",
+      "r4d": "Les badges sont vérifiés via des manifestes signés (<code>id ↔ pubkey + owner</code>). Vous vérifiez la signature vous-même.",
+      "note": "Contrairement aux magasins d'applications traditionnels, il n'y a pas d'algorithmes cachés ni de portes dérobées."
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "La sécurité même sans accès Internet",
+      "p1": "Pour les utilisateurs dans des réseaux hostiles ou des segments hors ligne, SmartNet utilise des Cloud Seeders. Les développeurs de confiance répliquent des fichiers d'état chiffrés (<code>vdapps.enc</code>) contenant les listes de confiance actuelles toutes les 30 minutes.",
+      "p2": "Les pairs n'acceptent ces listes que si l'émetteur est déjà dans leur ensemble <code>DEVELOPERS</code> connu. Cela crée une chaîne de confiance transitive ancrée dans la configuration initiale. Les attaques man-in-the-middle sont impossibles car les émetteurs inconnus sont automatiquement ignorés.",
+      "statLabel": "Confiance de secours",
+      "statValue": "Vérifié même hors ligne"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "Sécurité Web4 pour un Internet libre",
+      "p1": "La réputation au lieu de la censure. Les signatures au lieu des promesses. Le choix au lieu de l'interdiction.",
+      "p2": "Les utilisateurs quotidiens sont protégés par défaut. Les utilisateurs avancés conservent une visibilité complète.",
+      "p3": "Et personne au monde n'a de bouton pouvant supprimer une application du réseau.",
+      "back": "Retour à la Mission"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Communication Web 4.0 {'|'} Messagerie E2EE et 0xID Mail {'|'} SmartHoldem",
+      "description": "Découvrez la messagerie P2P décentralisée de SmartNet et 0xID Mail. Vivez une véritable confidentialité avec une identité vérifiée par blockchain, un anti-spam économique et une architecture zéro serveur.",
+      "keywords": "messagerie E2EE, e-mail décentralisé, 0xID Mail, communication P2P, confidentialité Web4, chat chiffré, mail SmartHoldem",
+      "ogTitle": "Communication Web 4.0 {'|'} Netfory",
+      "ogDescription": "Communication sans témoins : le standard Web 4.0"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Communication Web 4.0",
+      "title": "Messagerie sans témoins : le standard Web 4.0",
+      "subtitle": "Personne ne peut voir avec qui vous parlez. La vie privée est un droit humain garanti par les mathématiques."
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "Messagerie décentralisée : sans serveurs. Sans journaux.",
+      "p1": "Les messageries traditionnelles reposent sur des serveurs centralisés qui stockent vos métadonnées et analysent vos contenus. Le P2P Messenger de SmartNet élimine complètement l'intermédiaire.",
+      "b1": "<strong>Appareil à appareil direct :</strong> les messages voyagent via <code>Iroh</code> (<code>QUIC</code>) directement de votre appareil à votre pair. Aucun serveur. Aucun MITM.",
+      "b2": "<strong>E2EE par défaut :</strong> chaque message est chiffré avec <code>X25519</code> + <code>AES-256-GCM</code>. Seul le destinataire peut le déchiffrer.",
+      "b3": "<strong>Souveraineté de groupe :</strong> créez des groupes avec des politiques contrôlées par les administrateurs. Expulsez des membres, faites tourner les clés, définissez des frais d'entrée — tout est appliqué par la cryptographie, pas par des règles de serveur.",
+      "b4": "<strong>Économie anti-spam :</strong> fixez un prix pour les messages entrants. Les spammeurs doivent payer des STH pour vous atteindre. Le harcèlement de masse devient économiquement impossible."
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID Mail : trois niveaux de confidentialité. Un seul client.",
+      "p1": "Pourquoi choisir entre la commodité et la sécurité ? 0xID Mail fonctionne avec vos comptes Gmail ou Yandex existants tout en offrant un chiffrement de qualité militaire et une identité vérifiée par blockchain.",
+      "m1Title": "Mode 1 : Classique (texte clair)",
+      "m1Text": "Utilisez-le comme outil quotidien. Connectez n'importe quel compte <code>IMAP/SMTP</code>. Tout l'historique reste dans une base de données <code>Sled</code> locale, chiffrée par PIN.",
+      "m2Title": "Mode 2 : Pont chiffré",
+      "m2Text": "Envoyez des e-mails entièrement chiffrés vers n'importe quelle adresse e-mail normale. Le fournisseur ne voit que des ordures Base64. Votre identité est vérifiée on-chain avec un Verified Badge vert — l'usurpation devient impossible.",
+      "m3Title": "Mode 3 : P2P pur ({'@'}sth)",
+      "m3Text": "Anonymat total. Aucun serveur SMTP. Aucun journal. Les messages voyagent directement via <code>Iroh</code> P2P. Les adresses comme <code>alice{'@'}sth</code> sont enregistrées on-chain et vous appartiennent pour toujours."
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "Anti-spam économique et identité cryptographique",
+      "p1": "Dans Web 4.0, l'argent est le bouclier anti-spam ultime. Pour envoyer un message à un nouveau contact, vous envoyez une petite Invite Transaction (1 STH). Cela prouve que vous êtes un humain réel, pas une ferme à bots.",
+      "p2": "L'identité de chaque expéditeur est cryptographiquement liée à son portefeuille SmartHoldem. Si quelqu'un essaie d'usurper une adresse, le client vérifie instantanément la signature blockchain.",
+      "valid": "Signature valide → Verified Badge vert",
+      "invalid": "Signature invalide → Badge rouge",
+      "statLabel": "Coût de l'usurpation",
+      "statValue": "Mathématiquement impossible"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
+      "title": "Sous le capot : architecture Zero-Trust",
+      "r1t": "Stockage Local-First",
+      "r1d": "Tous les e-mails et discussions vivent dans une DB <code>Sled</code> chiffrée sur votre appareil. PIN perdu = données perdues. C'est une fonctionnalité.",
       "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "r2d": "Votre carnet d'adresses n'existe que sur votre appareil. Aucun serveur ne sait avec qui vous parlez.",
+      "r3t": "Protocole NTFRY",
+      "r3d": "Chiffrement hybride : <code>X25519</code> + <code>XChaCha20-Poly1305</code> + compression <code>zstd</code>.",
+      "r4t": "Résilience de repli",
+      "r4d": "Si le destinataire est hors ligne, le client bascule automatiquement vers une enveloppe chiffrée via SMTP (Mode 2)."
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "Vos données. Vos clés. Votre réseau.",
+      "p1": "Arrêtez de louer la confidentialité aux Big Tech. Commencez à la posséder.",
+      "cta": "Télécharger le client Netfory",
+      "back": "Retour à l'écosystème"
     }
   }
 }

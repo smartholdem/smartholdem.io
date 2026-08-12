@@ -932,122 +932,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
-      "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "title": "Uaminifu na Usalama {'|'} Mfumo wa Sifa wa Web 4.0 {'|'} SmartHoldem",
+      "description": "Jinsi SmartNet inavyohakikisha usalama wa mtumiaji bila udhibiti. Jifunze kuhusu katalogi yetu ya ngazi mbili Official/All, uthibitishaji wa kriptografia, na kwa nini viungo vya moja kwa moja vya sn:// hufanya kazi kila wakati.",
+      "keywords": "usimamizi wa uwanja usiokuwa wa kati, usalama wa P2P, sifa ya Web4, uaminifu na usalama wa SmartNet, maudhui yanayostahimili udhibiti, Hifadhi Rasmi",
+      "ogTitle": "Uaminifu na Usalama {'|'} Netfory",
+      "ogDescription": "Sifa Kuliko Udhibiti: Jinsi Web 4.0 Inavyohakikisha Usalama Bila Udhibiti wa Kati"
     },
     "hero": {
-      "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "eyebrow": "Uaminifu na Usalama",
+      "title": "Sifa Kuliko Udhibiti: Jinsi Netfory Inavyohakikisha Usalama Bila Udhibiti wa Kati",
+      "subtitle": "Katika Web4 halisi, usalama hauji kutokana na marufuku. Unatokana na sifa na chaguo la mtumiaji."
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "Tatizo la Mtandao Wazi",
+      "p1": "Mtandao wowote wa Peer-to-Peer ulio wazi hukabiliwa na chaguo lile lile gumu: uwazi wa kila kitu unaunda nafasi ya udanganyifu na phishing. Usimamizi wa kati huharibu udhibiti usio wa kati na kuunda kituo kimoja cha udhibiti.",
+      "p2": "Itifaki za SmartNet Web4 hutatua hili tofauti. Hatumzuii mtu yeyote. Tunatumia sifa isiyokuwa ya kati.",
+      "p3": "Mfumo rahisi wa katalogi ya ngazi mbili (Official {'|'} All) hulinda watumiaji wa kila siku kwa chaguo-msingi, huku ukiacha mtandao huru kabisa kwa wanaotaka ufikiaji kamili. Tunaweka alama, hatudhibiti."
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "Chaguo",
+      "titleB": ", Sio Marufuku",
+      "l1Title": "Ngazi 1: Official (Ukanda Salama wa Chaguo-msingi)",
+      "l1Intro": "Watumiaji wa kawaida katika hali ya USER wanaona dApps zilizothibitishwa tu. Programu ni Official ikiwa:",
+      "l1B1": "<strong>Imesainiwa na Mtaalamu Anayeaminika:</strong> Manifest inajumuisha anwani ya <code>owner</code> katika rejista ya <code>DEVELOPERS</code> iliyokaguliwa na jamii. Sahihi za kriptografia hufanya uhusiano usiwezekane kughushiwa.",
+      "l1B2": "<strong>Imeidhinishwa na Utawala:</strong> Vitambulisho maalum vya programu vinaweza kuongezwa kwa <code>OFFICIAL_DAPPS</code> kupitia muamala wa umma wa blockchain.",
+      "l1Note": "Hii ni beji ya sifa inayoweza kuthibitishwa kimahesabu, si orodha ya marufuku ya kampuni.",
+      "l2Title": "Ngazi 2: All (Chaguo la Ufahamu)",
+      "l2Text": "Watumiaji wa hali ya juu katika hali za DEV/GEEK wanaweza kubadilisha \"Onyesha Zisizothibitishwa\" pamoja na onyo la wazi. Mtandao haufichi chochote kwa wale wanaoelewa hatari."
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "Viungo vya Moja kwa Moja Hufanya Kazi Kila Wakati",
+      "p1": "Hii ni kanuni kuu ya itifaki za SmartNet Web 4.0: <strong>Tunaweka alama. Kamwe hatudhibiti.</strong> Viungo vya moja kwa moja vinavyotumia itifaki za <code>sn://</code> au <code>sth://</code> havisimamishwi kamwe — chini ya hali yoyote. Ukipokea kiungo kutoka kwa peer, kinafunguka bila kujali orodha rasmi.",
+      "p2": "Vichujio hutumika TU kwa ugunduzi wa duka, kamwe si kwa safu ya usafirishaji chini. Mtandao wenyewe unabaki wazi kikamilifu."
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "Mfumo wa Usalama Usiokuwa wa Kati",
+      "r1t": "Maudhui Hayafutwi Kamwe",
+      "r1d": "Wachekaji hupanga faharisi ya programu ZOTE. \"Official\" ni lebo tu ya metadata ya kuonekana.",
+      "r2t": "Hakuna Seva ya Kati",
+      "r2d": "Rejista za uaminifu zinaishi kwenye SmartHoldem Blockchain. Zisizobadilika na za umma.",
+      "r3t": "Uhuru wa Upande wa Client",
+      "r3d": "Uchunguzi hufanyika kwa ndani kwenye kifaa chako. Kufork client, kubadilisha hadi hali ya GEEK, au kutumia kiungo cha moja kwa moja hupitia vichujio vyote. Mtandao hauwezi kulazimisha kichujio kwenye node yako.",
+      "r4t": "Uthibitishaji wa Kriptografia",
+      "r4d": "Beji huthibitishwa kupitia manifests zilizosainiwa (<code>id ↔ pubkey + owner</code>). Unathibitisha sahihi mwenyewe.",
+      "note": "Tofauti na maduka ya kawaida ya programu, hakuna algoriti zilizofichwa au milango ya nyuma."
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "Usalama Hata Bila Ufikiaji wa Intaneti",
+      "p1": "Kwa watumiaji katika mitandao yenye uadui au sehemu za nje ya mtandao, SmartNet hutumia Cloud Seeders. Wataalamu wanaoaminika hunakili faili za hali zilizosimbwa (<code>vdapps.enc</code>) zenye orodha za sasa za uaminifu kila dakika 30.",
+      "p2": "Peers hupokea orodha hizi tu ikiwa mtoaji tayari yuko katika seti yao ya <code>DEVELOPERS</code> inayojulikana. Hii huunda mnyororo wa uaminifu wa mpito uliozama katika usanidi wa mwanzo. Mashambulizi ya man-in-the-middle hayawezekani kwa sababu watoaji wasiojulikana wanapuuzwa kiotomatiki.",
+      "statLabel": "Uaminifu wa Akiba",
+      "statValue": "Imethibitishwa hata nje ya mtandao"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "Usalama wa Web4 kwa Intaneti Huru",
+      "p1": "Sifa badala ya udhibiti. Sahihi badala ya ahadi. Chaguo badala ya marufuku.",
+      "p2": "Watumiaji wa kila siku wanalindwa kwa chaguo-msingi. Watumiaji wa hali ya juu wanabakiza uonekano kamili.",
+      "p3": "Na hakuna mtu duniani ambaye ana kitufe kinachoweza kufuta programu kutoka kwa mtandao.",
+      "back": "Rudi kwa Dhamira"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Mawasiliano ya Web 4.0 {'|'} Messenger ya E2EE na 0xID Mail {'|'} SmartHoldem",
+      "description": "Gundua messenger ya P2P isiyokuwa ya kati ya SmartNet na 0xID Mail. Hisi faragha halisi kwa utambulisho uliothibitishwa na blockchain, kupambana na spam kiuchumi, na muundo bila seva.",
+      "keywords": "messenger ya E2EE, barua pepe isiyokuwa ya kati, 0xID Mail, mawasiliano ya P2P, faragha ya Web4, mazungumzo yaliyosimbwa, barua ya SmartHoldem",
+      "ogTitle": "Mawasiliano ya Web 4.0 {'|'} Netfory",
+      "ogDescription": "Mawasiliano Bila Mashahidi: Kiwango cha Web 4.0"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Mawasiliano ya Web 4.0",
+      "title": "Ujumbe Bila Mashahidi: Kiwango cha Web 4.0",
+      "subtitle": "Hakuna anayeweza kuona unayeongea naye. Faragha ni haki ya binadamu inayolindwa na hisabati."
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "Ujumbe Usiokuwa wa Kati: Hakuna Seva. Hakuna Kumbukumbu.",
+      "p1": "Messenger za kitamaduni zinategemea seva za kati zinazohifadhi metadata yako na kuchanganua maudhui yako. P2P Messenger ya SmartNet inaondoa mpatanishi kabisa.",
+      "b1": "<strong>Kifaa-hadi-Kifaa Moja kwa Moja:</strong> Ujumbe unasafiri kupitia <code>Iroh</code> (<code>QUIC</code>) moja kwa moja kutoka kifaa chako hadi kwa peer wako. Hakuna seva. Hakuna MITM.",
+      "b2": "<strong>E2EE Kwa Chaguo-Msingi:</strong> Kila ujumbe umesimbwa na <code>X25519</code> + <code>AES-256-GCM</code>. Ni mpokeaji tu anayeweza kuutafsiri.",
+      "b3": "<strong>Uhuru wa Kikundi:</strong> Unda vikundi vyenye sera zinazodhibitiwa na msimamizi. Ondoa wanachama, zungusha funguo, weka ada za kuingia — vyote vinatekelezwa na kriptografia, sio sheria za seva.",
+      "b4": "<strong>Uchumi wa Kupambana na Spam:</strong> Weka bei kwa ujumbe unaokuja. Spammer lazima walipe STH kukufikia. Unyanyasaji wa wingi unakuwa haiwezekani kiuchumi."
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID Mail: Ngazi Tatu za Faragha. Klient Moja.",
+      "p1": "Kwa nini kuchagua kati ya urahisi na usalama? 0xID Mail hufanya kazi na akaunti zako za sasa za Gmail au Yandex huku ikitoa usimbaji wa kiwango cha kijeshi na utambulisho uliothibitishwa na blockchain.",
+      "m1Title": "Hali 1: Ya Kawaida (Maandishi Wazi)",
+      "m1Text": "Itumie kama chombo chako cha kila siku. Unganisha akaunti yoyote ya <code>IMAP/SMTP</code>. Historia yote inabaki kwenye hifadhidata ya <code>Sled</code> ya ndani, iliyosimbwa kwa PIN.",
+      "m2Title": "Hali 2: Daraja Iliyosimbwa",
+      "m2Text": "Tuma barua pepe zilizosimbwa kikamilifu kwenye anwani yoyote ya barua pepe ya kawaida. Mtoa huduma anaona takataka za Base64 pekee. Utambulisho wako umethibitishwa kwenye chain na Verified Badge ya kijani — kudanganya kunakuwa hakiwezekani.",
+      "m3Title": "Hali 3: P2P Safi ({'@'}sth)",
+      "m3Text": "Kutokujulikana kabisa. Hakuna seva za SMTP. Hakuna kumbukumbu. Ujumbe unasafiri moja kwa moja kupitia <code>Iroh</code> P2P. Anwani kama <code>alice{'@'}sth</code> zinasajiliwa kwenye chain na ni zako milele."
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "Kupambana na Spam Kiuchumi & Utambulisho wa Kriptografia",
+      "p1": "Katika Web 4.0, pesa ni ngao ya mwisho ya kupambana na spam. Kutuma ujumbe kwa mtu mpya, unatuma Invite Transaction ndogo (STH 1). Hii inathibitisha kuwa wewe ni binadamu halisi, sio shamba la bot.",
+      "p2": "Utambulisho wa kila mtumaji umeunganishwa kikriptografia na pochi yake ya SmartHoldem. Ikiwa mtu anajaribu kudanganya anwani, klient huchunguza sahihi ya blockchain papo hapo.",
+      "valid": "Sahihi halali → Verified Badge ya kijani",
+      "invalid": "Sahihi batili → Badge nyekundu",
+      "statLabel": "Gharama ya kudanganya",
+      "statValue": "Haiwezekani kihisabati"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
+      "title": "Chini ya Kofia: Muundo wa Zero-Trust",
+      "r1t": "Hifadhi ya Local-First",
+      "r1d": "Barua pepe na mazungumzo yote yanaishi katika DB ya <code>Sled</code> iliyosimbwa kwenye kifaa chako. PIN Iliyopotea = Data Iliyopotea. Hii ni kipengele.",
       "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "r2d": "Kitabu chako cha anwani kipo tu kwenye kifaa chako. Hakuna seva inayojua unayeongea naye.",
+      "r3t": "Protokali ya NTFRY",
+      "r3d": "Usimbaji wa mchanganyiko: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + ukandamizaji wa <code>zstd</code>.",
+      "r4t": "Uimara wa Fallback",
+      "r4d": "Ikiwa mpokeaji hayupo mtandaoni, klient kiotomatiki hurudi kwenye bahasha iliyosimbwa kupitia SMTP (Hali 2)."
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "Data Yako. Funguo Zako. Mtandao Wako.",
+      "p1": "Acha kukodisha faragha kutoka Big Tech. Anza kuimiliki.",
+      "cta": "Pakua Klient ya Netfory",
+      "back": "Rudi kwenye Ekosistemu"
     }
   }
 }

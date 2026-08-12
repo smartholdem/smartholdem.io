@@ -932,122 +932,122 @@
   },
   "trust": {
     "seo": {
-      "title": "Trust & Safety {'|'} Web 4.0 Reputation System {'|'} SmartHoldem",
-      "description": "How SmartNet ensures user safety without censorship. Learn about our two-tier Official/All catalog, cryptographic verification, and why direct sn:// links always work.",
-      "keywords": "decentralized moderation, P2P safety, Web4 reputation, SmartNet trust and safety, censorship-resistant content, Official Repository",
-      "ogTitle": "Trust & Safety {'|'} Netfory",
-      "ogDescription": "Reputation Over Censorship: How Web 4.0 Ensures Safety Without Central Control"
+      "title": "Tin cậy & An toàn {'|'} Hệ thống Uy tín Web 4.0 {'|'} SmartHoldem",
+      "description": "Cách SmartNet đảm bảo an toàn cho người dùng mà không kiểm duyệt. Tìm hiểu về danh mục hai tầng Chính thức/Tất cả, xác minh mật mã và lý do liên kết sn:// trực tiếp luôn hoạt động.",
+      "keywords": "kiểm duyệt phi tập trung, an toàn P2P, uy tín Web4, tin cậy và an toàn SmartNet, nội dung kháng kiểm duyệt, Kho lưu trữ chính thức",
+      "ogTitle": "Tin cậy & An toàn {'|'} Netfory",
+      "ogDescription": "Uy tín trên kiểm duyệt: Web 4.0 đảm bảo an toàn mà không cần kiểm soát trung tâm như thế nào"
     },
     "hero": {
-      "eyebrow": "Trust & Safety",
-      "title": "Reputation Over Censorship: How Netfory Ensures Safety Without Central Control",
-      "subtitle": "In Real Web4, safety doesn’t come from bans. It comes from reputation and user choice."
+      "eyebrow": "Tin cậy & An toàn",
+      "title": "Uy tín trên kiểm duyệt: Netfory đảm bảo an toàn mà không cần kiểm soát trung tâm như thế nào",
+      "subtitle": "Trong Web4 thực sự, an toàn không đến từ lệnh cấm. Nó đến từ uy tín và sự lựa chọn của người dùng."
     },
     "dilemma": {
-      "title": "The Open Network Dilemma",
-      "p1": "Any open Peer-to-Peer network faces the same hard choice: total openness creates space for scams and phishing. Centralized moderation destroys decentralization and creates a single point of control.",
-      "p2": "SmartNet Web4 protocols solve this differently. We don’t ban. We use decentralized reputation.",
-      "p3": "A simple two-tier catalog system (Official {'|'} All) protects everyday users by default, while leaving the network completely free for those who want full access. We mark, we don’t censor."
+      "title": "Nan đề của mạng mở",
+      "p1": "Bất kỳ mạng ngang hàng mở nào đều đối mặt với cùng một lựa chọn khó khăn: sự cởi mở hoàn toàn tạo ra không gian cho lừa đảo và phishing. Kiểm duyệt tập trung phá hủy phi tập trung và tạo ra một điểm kiểm soát duy nhất.",
+      "p2": "Các giao thức SmartNet Web4 giải quyết điều này theo cách khác. Chúng tôi không cấm. Chúng tôi sử dụng uy tín phi tập trung.",
+      "p3": "Một hệ thống danh mục hai tầng đơn giản (Chính thức {'|'} Tất cả) bảo vệ người dùng hàng ngày theo mặc định, đồng thời để mạng hoàn toàn tự do cho những người muốn truy cập đầy đủ. Chúng tôi đánh dấu, chúng tôi không kiểm duyệt."
     },
     "catalog": {
-      "titleHi": "Choice",
-      "titleB": ", Not Prohibition",
-      "l1Title": "Level 1: Official (The Default Safe Zone)",
-      "l1Intro": "Ordinary users in USER mode see only verified dApps. An app is Official if:",
-      "l1B1": "<strong>Signed by a Trusted Developer:</strong> The manifest includes an <code>owner</code> address in the community-vetted <code>DEVELOPERS</code> registry. Cryptographic signatures make affiliation impossible to fake.",
-      "l1B2": "<strong>Approved by Governance:</strong> Specific app IDs can be added to <code>OFFICIAL_DAPPS</code> via public blockchain transaction.",
-      "l1Note": "This is a mathematically verifiable reputation badge, not a corporate ban list.",
-      "l2Title": "Level 2: All (Conscious Choice)",
-      "l2Text": "Advanced users in DEV/GEEK modes can toggle “Show Unverified” with a clear warning. The network hides nothing from those who understand the risks."
+      "titleHi": "Lựa chọn",
+      "titleB": ", Không cấm đoán",
+      "l1Title": "Cấp 1: Chính thức (Vùng an toàn mặc định)",
+      "l1Intro": "Người dùng thông thường ở chế độ USER chỉ thấy dApp đã được xác minh. Một ứng dụng là Chính thức nếu:",
+      "l1B1": "<strong>Được ký bởi Nhà phát triển đáng tin cậy:</strong> Manifest bao gồm địa chỉ <code>owner</code> trong sổ đăng ký <code>DEVELOPERS</code> đã được cộng đồng kiểm tra. Chữ ký mật mã khiến việc giả mạo mối quan hệ là không thể.",
+      "l1B2": "<strong>Được Governance phê duyệt:</strong> ID ứng dụng cụ thể có thể được thêm vào <code>OFFICIAL_DAPPS</code> qua giao dịch blockchain công khai.",
+      "l1Note": "Đây là huy hiệu uy tín có thể xác minh bằng toán học, không phải danh sách cấm của công ty.",
+      "l2Title": "Cấp 2: Tất cả (Lựa chọn có ý thức)",
+      "l2Text": "Người dùng nâng cao ở chế độ DEV/GEEK có thể chuyển đổi \"Hiển thị chưa xác minh\" với cảnh báo rõ ràng. Mạng không giấu bất cứ điều gì với những người hiểu rủi ro."
     },
     "transport": {
-      "title": "Direct Links Always Work",
-      "p1": "This is a core principle of SmartNet Web 4.0 protocols: <strong>We mark. We never censor.</strong> Direct links using <code>sn://</code> or <code>sth://</code> protocols are never blocked — under any circumstances. If you receive a link from a peer, it opens regardless of official lists.",
-      "p2": "Filters apply ONLY to storefront discovery, never to the underlying transport layer. The network itself remains fully open."
+      "title": "Liên kết trực tiếp luôn hoạt động",
+      "p1": "Đây là nguyên tắc cốt lõi của các giao thức SmartNet Web 4.0: <strong>Chúng tôi đánh dấu. Chúng tôi không bao giờ kiểm duyệt.</strong> Liên kết trực tiếp sử dụng giao thức <code>sn://</code> hoặc <code>sth://</code> không bao giờ bị chặn — trong bất kỳ hoàn cảnh nào. Nếu bạn nhận được liên kết từ một peer, nó mở bất kể danh sách chính thức.",
+      "p2": "Bộ lọc CHỈ áp dụng cho khám phá cửa hàng, không bao giờ áp dụng cho lớp truyền tải bên dưới. Bản thân mạng vẫn hoàn toàn mở."
     },
     "decentral": {
-      "title": "Decentralized Safety Mechanics",
-      "r1t": "Content Never Deleted",
-      "r1d": "Trackers index ALL apps. “Official” is just a visibility metadata tag.",
-      "r2t": "No Central Server",
-      "r2d": "Trust registries live on the SmartHoldem Blockchain. Immutable and public.",
-      "r3t": "Client-Side Sovereignty",
-      "r3d": "Filtering happens locally on your device. Forking the client, switching to GEEK mode, or using a direct link bypasses all filters. The network cannot force a filter onto your node.",
-      "r4t": "Cryptographic Verification",
-      "r4d": "Badges are verified via signed manifests (<code>id ↔ pubkey + owner</code>). You verify the signature yourself.",
-      "note": "Unlike traditional app stores, there are no hidden algorithms or backdoors."
+      "title": "Cơ chế an toàn phi tập trung",
+      "r1t": "Nội dung không bao giờ bị xóa",
+      "r1d": "Tracker lập chỉ mục TẤT CẢ ứng dụng. \"Chính thức\" chỉ là thẻ metadata hiển thị.",
+      "r2t": "Không có máy chủ trung tâm",
+      "r2d": "Sổ đăng ký tin cậy sống trên SmartHoldem Blockchain. Bất biến và công khai.",
+      "r3t": "Chủ quyền phía Client",
+      "r3d": "Lọc xảy ra cục bộ trên thiết bị của bạn. Fork client, chuyển sang chế độ GEEK hoặc sử dụng liên kết trực tiếp sẽ bỏ qua tất cả bộ lọc. Mạng không thể ép buộc bộ lọc lên nút của bạn.",
+      "r4t": "Xác minh mật mã",
+      "r4d": "Huy hiệu được xác minh qua manifest đã ký (<code>id ↔ pubkey + owner</code>). Bạn tự xác minh chữ ký.",
+      "note": "Khác với các cửa hàng ứng dụng truyền thống, không có thuật toán ẩn hay backdoor."
     },
     "vdapps": {
-      "title": "Safety Even Without Internet Access",
-      "p1": "For users in hostile networks or offline segments, SmartNet uses Cloud Seeders. Trusted developers replicate encrypted state files (<code>vdapps.enc</code>) containing current trust lists every 30 minutes.",
-      "p2": "Peers only accept these lists if the issuer is already in their known <code>DEVELOPERS</code> set. This creates a transitive chain of trust anchored in the initial configuration. Man-in-the-middle attacks are impossible because unknown issuers are automatically ignored.",
-      "statLabel": "Fallback Trust",
-      "statValue": "Verified even offline"
+      "title": "An toàn ngay cả khi không có Internet",
+      "p1": "Đối với người dùng trong mạng thù địch hoặc phân đoạn offline, SmartNet sử dụng Cloud Seeders. Các nhà phát triển đáng tin cậy sao chép các tệp trạng thái được mã hóa (<code>vdapps.enc</code>) chứa danh sách tin cậy hiện tại mỗi 30 phút.",
+      "p2": "Peer chỉ chấp nhận các danh sách này nếu người phát hành đã có trong tập <code>DEVELOPERS</code> đã biết của họ. Điều này tạo ra một chuỗi tin cậy chuyển tiếp được neo trong cấu hình ban đầu. Tấn công man-in-the-middle là không thể vì người phát hành không xác định bị bỏ qua tự động.",
+      "statLabel": "Tin cậy dự phòng",
+      "statValue": "Được xác minh ngay cả offline"
     },
     "final": {
-      "title": "Web4 Safety for a Free Internet",
-      "p1": "Reputation instead of censorship. Signatures instead of promises. Choice instead of prohibition.",
-      "p2": "Everyday users are protected by default. Advanced users keep full visibility.",
-      "p3": "And no one in the world has a button that can delete an application from the network.",
-      "back": "Back to Mission"
+      "title": "An toàn Web4 cho Internet tự do",
+      "p1": "Uy tín thay vì kiểm duyệt. Chữ ký thay vì lời hứa. Lựa chọn thay vì cấm đoán.",
+      "p2": "Người dùng hàng ngày được bảo vệ theo mặc định. Người dùng nâng cao giữ khả năng hiển thị đầy đủ.",
+      "p3": "Và không ai trên thế giới có một nút có thể xóa ứng dụng khỏi mạng.",
+      "back": "Quay lại Sứ mệnh"
     }
   },
   "msg": {
     "seo": {
-      "title": "Web 4.0 Communication {'|'} E2EE Messenger & 0xID Mail {'|'} SmartHoldem",
-      "description": "Discover SmartNet’s decentralized P2P messenger and 0xID Mail. Experience true privacy with blockchain-verified identity, economic anti-spam, and zero-server architecture.",
-      "keywords": "E2EE messenger, decentralized email, 0xID Mail, P2P communication, Web4 privacy, encrypted chat, SmartHoldem mail",
-      "ogTitle": "Web 4.0 Communication {'|'} Netfory",
-      "ogDescription": "Communication Without Witnesses: The Web 4.0 Standard"
+      "title": "Truyền thông Web 4.0 {'|'} Messenger E2EE & 0xID Mail {'|'} SmartHoldem",
+      "description": "Khám phá messenger P2P phi tập trung của SmartNet và 0xID Mail. Trải nghiệm quyền riêng tư thực sự với danh tính được xác minh bằng blockchain, anti-spam kinh tế và kiến trúc không máy chủ.",
+      "keywords": "messenger E2EE, email phi tập trung, 0xID Mail, truyền thông P2P, quyền riêng tư Web4, chat mã hóa, thư SmartHoldem",
+      "ogTitle": "Truyền thông Web 4.0 {'|'} Netfory",
+      "ogDescription": "Truyền thông không nhân chứng: Tiêu chuẩn Web 4.0"
     },
     "hero": {
-      "eyebrow": "Web 4.0 Communication",
-      "title": "Messaging Without Witnesses: The Web 4.0 Standard",
-      "subtitle": "Nobody Can See Who You Talk To. Privacy is a human right secured by mathematics."
+      "eyebrow": "Truyền thông Web 4.0",
+      "title": "Nhắn tin không nhân chứng: Tiêu chuẩn Web 4.0",
+      "subtitle": "Không ai có thể thấy bạn nói chuyện với ai. Quyền riêng tư là quyền con người được bảo đảm bởi toán học."
     },
     "messenger": {
-      "title": "Decentralized Messaging: No Servers. No Logs.",
-      "p1": "Traditional messengers rely on centralized servers that store your metadata and scan your content. SmartNet’s P2P Messenger eliminates the middleman completely.",
-      "b1": "<strong>Direct Device-to-Device:</strong> Messages travel via <code>Iroh</code> (<code>QUIC</code>) straight from your device to your peer. No servers. No MITM.",
-      "b2": "<strong>E2EE by Default:</strong> Every message is encrypted with <code>X25519</code> + <code>AES-256-GCM</code>. Only the recipient can decrypt it.",
-      "b3": "<strong>Group Sovereignty:</strong> Create groups with admin-controlled policies. Kick members, rotate keys, set entry fees — all enforced by cryptography, not server rules.",
-      "b4": "<strong>Anti-Spam Economics:</strong> Set a price for incoming messages. Spammers must pay STH to reach you. Mass harassment becomes economically impossible."
+      "title": "Nhắn tin phi tập trung: Không máy chủ. Không nhật ký.",
+      "p1": "Các ứng dụng nhắn tin truyền thống phụ thuộc vào máy chủ tập trung lưu trữ siêu dữ liệu của bạn và quét nội dung của bạn. P2P Messenger của SmartNet loại bỏ hoàn toàn trung gian.",
+      "b1": "<strong>Thiết bị đến thiết bị trực tiếp:</strong> Tin nhắn di chuyển qua <code>Iroh</code> (<code>QUIC</code>) trực tiếp từ thiết bị của bạn đến peer. Không máy chủ. Không MITM.",
+      "b2": "<strong>E2EE mặc định:</strong> Mọi tin nhắn được mã hóa bằng <code>X25519</code> + <code>AES-256-GCM</code>. Chỉ người nhận mới có thể giải mã.",
+      "b3": "<strong>Chủ quyền nhóm:</strong> Tạo nhóm với các chính sách do quản trị viên kiểm soát. Đá thành viên, xoay khóa, đặt phí gia nhập — tất cả được thi hành bằng mật mã, không phải quy tắc máy chủ.",
+      "b4": "<strong>Kinh tế học anti-spam:</strong> Đặt giá cho tin nhắn đến. Spammer phải trả STH để tiếp cận bạn. Quấy rối hàng loạt trở nên bất khả thi về kinh tế."
     },
     "mail": {
-      "title": "0xID Mail: Three Levels of Privacy. One Client.",
-      "p1": "Why choose between convenience and security? 0xID Mail works with your existing Gmail or Yandex accounts while offering military-grade encryption and blockchain-verified identity.",
-      "m1Title": "Mode 1: Classic (Cleartext)",
-      "m1Text": "Use it as your daily driver. Connect any <code>IMAP/SMTP</code> account. All history stays in a local, PIN-encrypted <code>Sled</code> database.",
-      "m2Title": "Mode 2: Encrypted Bridge",
-      "m2Text": "Send fully encrypted emails to any normal email address. The provider only sees Base64 garbage. Your identity is verified on-chain with a green Verified Badge — spoofing becomes impossible.",
-      "m3Title": "Mode 3: Pure P2P ({'@'}sth)",
-      "m3Text": "Total anonymity. No SMTP servers. No logs. Messages travel directly via <code>Iroh</code> P2P. Addresses like <code>alice{'@'}sth</code> are registered on-chain and belong to you forever."
+      "title": "0xID Mail: Ba cấp độ riêng tư. Một client.",
+      "p1": "Tại sao phải chọn giữa tiện lợi và bảo mật? 0xID Mail hoạt động với tài khoản Gmail hoặc Yandex hiện có của bạn đồng thời cung cấp mã hóa cấp quân sự và danh tính được xác minh bằng blockchain.",
+      "m1Title": "Chế độ 1: Cổ điển (văn bản thô)",
+      "m1Text": "Sử dụng như công cụ hàng ngày. Kết nối bất kỳ tài khoản <code>IMAP/SMTP</code> nào. Toàn bộ lịch sử lưu trong database <code>Sled</code> cục bộ, mã hóa PIN.",
+      "m2Title": "Chế độ 2: Cầu nối mã hóa",
+      "m2Text": "Gửi email được mã hóa hoàn toàn đến bất kỳ địa chỉ email thông thường nào. Nhà cung cấp chỉ thấy rác Base64. Danh tính của bạn được xác minh on-chain với Verified Badge xanh — giả mạo trở nên bất khả thi.",
+      "m3Title": "Chế độ 3: P2P thuần túy ({'@'}sth)",
+      "m3Text": "Ẩn danh hoàn toàn. Không máy chủ SMTP. Không nhật ký. Tin nhắn di chuyển trực tiếp qua <code>Iroh</code> P2P. Địa chỉ như <code>alice{'@'}sth</code> được đăng ký on-chain và thuộc về bạn mãi mãi."
     },
     "antispam": {
-      "title": "Economic Anti-Spam & Cryptographic Identity",
-      "p1": "In Web 4.0, money is the ultimate anti-spam shield. To message a new contact, you send a small Invite Transaction (1 STH). This proves you are a real human, not a bot farm.",
-      "p2": "Every sender’s identity is cryptographically tied to their SmartHoldem wallet. If someone tries to spoof an address, the client checks the blockchain signature instantly.",
-      "valid": "Valid signature → Green Verified Badge",
-      "invalid": "Invalid signature → Red Badge",
-      "statLabel": "Spoofing Cost",
-      "statValue": "Mathematically Impossible"
+      "title": "Anti-Spam Kinh tế & Danh tính Mật mã",
+      "p1": "Trong Web 4.0, tiền là lá chắn anti-spam tối thượng. Để nhắn tin cho liên hệ mới, bạn gửi một Invite Transaction nhỏ (1 STH). Điều này chứng minh bạn là con người thực, không phải trang trại bot.",
+      "p2": "Danh tính của mỗi người gửi được ràng buộc mật mã với ví SmartHoldem của họ. Nếu ai đó cố giả mạo địa chỉ, client sẽ kiểm tra chữ ký blockchain ngay lập tức.",
+      "valid": "Chữ ký hợp lệ → Verified Badge xanh",
+      "invalid": "Chữ ký không hợp lệ → Badge đỏ",
+      "statLabel": "Chi phí giả mạo",
+      "statValue": "Bất khả thi về mặt toán học"
     },
     "tech": {
-      "title": "Under the Hood: Zero-Trust Architecture",
-      "r1t": "Local-First Storage",
-      "r1d": "All emails and chats live in an encrypted <code>Sled</code> DB on your device. Lost PIN = Lost Data. This is a feature.",
+      "title": "Dưới nắp capo: Kiến trúc Zero-Trust",
+      "r1t": "Lưu trữ Local-First",
+      "r1d": "Tất cả email và chat sống trong DB <code>Sled</code> được mã hóa trên thiết bị của bạn. Mất PIN = Mất dữ liệu. Đây là một tính năng.",
       "r2t": "Web of Trust",
-      "r2d": "Your address book exists only on your device. No server knows who you talk to.",
-      "r3t": "NTFRY Protocol",
-      "r3d": "Hybrid encryption: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + <code>zstd</code> compression.",
-      "r4t": "Fallback Resilience",
-      "r4d": "If the recipient is offline, the client automatically falls back to an encrypted envelope via SMTP (Mode 2)."
+      "r2d": "Sổ địa chỉ của bạn chỉ tồn tại trên thiết bị của bạn. Không máy chủ nào biết bạn nói chuyện với ai.",
+      "r3t": "Giao thức NTFRY",
+      "r3d": "Mã hóa lai: <code>X25519</code> + <code>XChaCha20-Poly1305</code> + nén <code>zstd</code>.",
+      "r4t": "Khả năng phục hồi Fallback",
+      "r4d": "Nếu người nhận offline, client tự động chuyển sang phong bì được mã hóa qua SMTP (Chế độ 2)."
     },
     "final": {
-      "title": "Your Data. Your Keys. Your Network.",
-      "p1": "Stop renting privacy from Big Tech. Start owning it.",
-      "cta": "Download Netfory Client",
-      "back": "Back to Ecosystem"
+      "title": "Dữ liệu của bạn. Khóa của bạn. Mạng của bạn.",
+      "p1": "Dừng thuê quyền riêng tư từ Big Tech. Bắt đầu sở hữu nó.",
+      "cta": "Tải Netfory Client",
+      "back": "Quay lại Hệ sinh thái"
     }
   }
 }
