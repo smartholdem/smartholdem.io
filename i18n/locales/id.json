@@ -173,9 +173,20 @@
     "tertiary": "Lihat di GitHub"
   },
   "netforyModal": {
-    "title": "Segera: Peluncuran Web 4.0 Netfory",
-    "text1": "Peluncuran Web 4.0 Netfory akan segera hadir. Kami sedang melakukan sentuhan akhir pada desktop client untuk memastikan pengalaman pengguna terbaik.",
-    "text2": "Gabung grup resmi SmartHoldem di Telegram untuk tetap mendapatkan berita dan pembaruan terbaru.",
+    "title": "Unduh Web 4.0 Netfory",
+    "version": "Rilis terbaru",
+    "published": "Diterbitkan",
+    "loading": "Memuat rilis terbaru…",
+    "error": "Tidak dapat memuat rilis. Silakan kunjungi GitHub langsung.",
+    "noAssets": "Belum ada berkas yang tersedia untuk diunduh.",
+    "viewOnGithub": "Lihat semua rilis di GitHub",
+    "download": "Unduh",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "Lainnya",
+    "text2": "Bergabunglah dengan grup SmartHoldem resmi di Telegram untuk tetap mendapat kabar terbaru.",
     "telegram": "Gabung Grup Telegram",
     "close": "Tutup"
   },

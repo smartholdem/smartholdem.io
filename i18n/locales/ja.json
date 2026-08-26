@@ -173,10 +173,21 @@
     "tertiary": "GitHubで表示"
   },
   "netforyModal": {
-    "title": "まもなく：Web 4.0 Netforyローンチ",
-    "text1": "Web 4.0 Netforyのローンチはもうすぐです。デスクトップクライアントに最終仕上げを施し、最高のユーザー体験を確保しています。",
-    "text2": "公式SmartHoldem Telegramグループに参加して、最新ニュースと更新情報を入手してください。",
-    "telegram": "Telegramグループに参加",
+    "title": "Web 4.0 Netfory をダウンロード",
+    "version": "最新リリース",
+    "published": "公開日",
+    "loading": "最新リリースを読み込み中…",
+    "error": "リリースを読み込めませんでした。GitHub を直接ご覧ください。",
+    "noAssets": "ダウンロード可能なファイルはまだありません。",
+    "viewOnGithub": "GitHub ですべてのリリースを見る",
+    "download": "ダウンロード",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "その他",
+    "text2": "最新情報を受け取るには、Telegram の公式 SmartHoldem グループにご参加ください。",
+    "telegram": "Telegram グループに参加",
     "close": "閉じる"
   },
   "terms": {

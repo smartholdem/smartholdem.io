@@ -173,10 +173,21 @@
     "tertiary": "GitHub पर देखें"
   },
   "netforyModal": {
-    "title": "जल्द ही: Web 4.0 नेटफोरी लॉन्च",
-    "text1": "Web 4.0 नेटफोरी का लॉन्च जल्द ही आ रहा है। हम डेस्कटॉप क्लाइंट पर अंतिम स्पर्श लगा रहे हैं ताकि सर्वोत्तम उपयोगकर्ता अनुभव सुनिश्चित हो सके।",
-    "text2": "नवीनतम समाचार और अपडेट के साथ अपडेट रहने के लिए Telegram में आधिकारिक SmartHoldem समूह से जुड़ें।",
-    "telegram": "Telegram समूह से जुड़ें",
+    "title": "Web 4.0 Netfory डाउनलोड करें",
+    "version": "नवीनतम रिलीज़",
+    "published": "प्रकाशित",
+    "loading": "नवीनतम रिलीज़ लोड हो रही है…",
+    "error": "रिलीज़ लोड नहीं हो सकीं। कृपया सीधे GitHub पर जाएँ।",
+    "noAssets": "अभी कोई डाउनलोड योग्य फ़ाइल उपलब्ध नहीं है।",
+    "viewOnGithub": "GitHub पर सभी रिलीज़ देखें",
+    "download": "डाउनलोड",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "अन्य",
+    "text2": "अपडेट रहने के लिए Telegram पर आधिकारिक SmartHoldem समूह में शामिल हों।",
+    "telegram": "Telegram समूह में शामिल हों",
     "close": "बंद करें"
   },
   "terms": {

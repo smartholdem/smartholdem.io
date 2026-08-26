@@ -268,7 +268,7 @@ useSeoMeta({
   ogTitle: () => t('glossary.seoTitle'),
   ogDescription: () => t('glossary.seoDescription'),
   ogType: 'article',
-  ogImage: `${config.public.siteUrl}/images/home/web_4_smarholdem_netfory.jpg`,
+  ogImage: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
   ogUrl: () => pageUrl.value,
   ogLocale: () => ogLocale.value,
   ogLocaleAlternate: () => ogLocaleAlternate.value,

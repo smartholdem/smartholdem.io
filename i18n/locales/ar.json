@@ -173,10 +173,21 @@
     "tertiary": "عرض على GitHub"
   },
   "netforyModal": {
-    "title": "قريباً: إطلاق Web 4.0 Netfory",
-    "text1": "إطلاق Web 4.0 Netfory قادم قريباً. نحن نضع اللمسات الأخيرة على عميل سطح المكتب لضمان أفضل تجربة مستخدم.",
-    "text2": "انضم إلى المجموعة الرسمية لـ SmartHoldem على Telegram للبقاء على اطلاع بأحدث الأخبار والتحديثات.",
-    "telegram": "انضم إلى مجموعة Telegram",
+    "title": "تنزيل Web 4.0 Netfory",
+    "version": "أحدث إصدار",
+    "published": "تاريخ النشر",
+    "loading": "جارٍ تحميل أحدث إصدار…",
+    "error": "تعذر تحميل الإصدارات. يرجى زيارة GitHub مباشرة.",
+    "noAssets": "لا توجد ملفات قابلة للتنزيل بعد.",
+    "viewOnGithub": "عرض جميع الإصدارات على GitHub",
+    "download": "تنزيل",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "أخرى",
+    "text2": "انضم إلى مجموعة SmartHoldem الرسمية على Telegram للبقاء على اطلاع.",
+    "telegram": "الانضمام إلى مجموعة Telegram",
     "close": "إغلاق"
   },
   "terms": {

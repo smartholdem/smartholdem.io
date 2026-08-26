@@ -243,7 +243,7 @@
           <p class="mt-4 text-secondary">{{ t('stack.subtitle') }}</p>
         </div>
         <div v-reveal="100" class="mt-10 overflow-hidden rounded-2xl border hair-border glass p-3">
-          <img src="/images/home/Client-Screenshot.png" alt="Netfory Web 4.0 desktop client" loading="lazy" class="w-full rounded-xl" />
+          <img src="/images/home/Client-Screenshot_light.png" alt="Netfory Web 4.0 desktop client" loading="lazy" class="w-full rounded-xl" />
         </div>
         <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div v-for="(s,i) in stack" :key="i" v-reveal="i*60" class="rounded-2xl border hair-border surface p-6 transition-all hover:border-neon-cyan/40 hover:-translate-y-1">
@@ -330,67 +330,8 @@
       </div>
     </section>
 
-    <!-- ============ NETFORY LAUNCH MODAL ============ -->
-    <ClientOnly>
-    <Teleport to="body">
-      <transition
-        enter-active-class="transition-opacity duration-300 ease-out"
-        leave-active-class="transition-opacity duration-200 ease-in"
-        enter-from-class="opacity-0"
-        leave-to-class="opacity-0"
-      >
-        <div v-if="netforyModalOpen"
-             class="fixed inset-0 z-[80] flex items-center justify-center p-4"
-             role="dialog" aria-modal="true" aria-labelledby="netfory-modal-title"
-             @click.self="netforyModalOpen = false">
-          <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-
-          <transition
-            enter-active-class="transition-all duration-300 ease-out"
-            leave-active-class="transition-all duration-200 ease-in"
-            enter-from-class="opacity-0 scale-95"
-            leave-to-class="opacity-0 scale-95"
-            appear
-          >
-            <div v-if="netforyModalOpen"
-                 class="relative w-full max-w-md overflow-hidden rounded-2xl border border-white/10 p-8 text-center shadow-2xl"
-                 style="background: rgba(10, 14, 39, 0.70); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);">
-              <button
-                type="button"
-                class="absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-colors hover:bg-white/5 hover:text-white"
-                :aria-label="t('netforyModal.close')"
-                @click="netforyModalOpen = false"
-              >
-                <X class="h-5 w-5" />
-              </button>
-
-              <!-- Pulsing STH token loader -->
-              <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center">
-                <div class="pulse-token relative flex h-20 w-20 items-center justify-center">
-                  <span class="absolute inset-0 rounded-full ring-2 ring-neon-cyan/40"></span>
-                  <span class="absolute inset-0 rounded-full ring-2 ring-neon-cyan/30 pulse-ring"></span>
-                  <img src="/images/home/sth-logo.png" alt="STH" class="relative h-12 w-12 drop-shadow-[0_0_18px_rgba(0,212,255,0.55)]" />
-                </div>
-              </div>
-
-              <h2 id="netfory-modal-title" class="text-2xl font-bold text-white">
-                {{ t('netforyModal.title') }}
-              </h2>
-              <p class="mt-4 text-sm leading-relaxed text-slate-300">{{ t('netforyModal.text1') }}</p>
-              <p class="mt-3 text-sm leading-relaxed text-slate-300">{{ t('netforyModal.text2') }}</p>
-
-              <a href="https://t.me/smartholdem" target="_blank" rel="noopener"
-                 class="mt-7 inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-base font-semibold text-white shadow-neon-cyan transition-all hover:-translate-y-0.5"
-                 style="background:#00D4FF; color:#0A0E27;"
-                 @click="netforyModalOpen = false">
-                <Send class="h-4 w-4" /> {{ t('netforyModal.telegram') }}
-              </a>
-            </div>
-          </transition>
-        </div>
-      </transition>
-    </Teleport>
-    </ClientOnly>
+    <!-- ============ NETFORY DOWNLOAD MODAL (shared component) ============ -->
+    <NetforyDownloadModal v-model:open="netforyModalOpen" />
   </div>
 </template>
 
@@ -405,19 +346,8 @@ const { links } = useSmartNet()
 const config = useRuntimeConfig()
 const isRu = computed(() => locale.value === 'ru')
 
-// Netfory launch modal (Section 9 "Download Netfory Client")
+// Netfory launch modal state (component handles fetch/UI/keyboard/scroll-lock)
 const netforyModalOpen = ref(false)
-watch(netforyModalOpen, (open) => {
-  if (typeof document === 'undefined') return
-  document.body.style.overflow = open ? 'hidden' : ''
-})
-if (process.client) {
-  onMounted(() => {
-    const onKey = (e) => { if (e.key === 'Escape') netforyModalOpen.value = false }
-    window.addEventListener('keydown', onKey)
-    onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
-  })
-}
 
 const formulas = [
   { icon: '/images/home/Icon_1_Protocol.jpg', t: 'formulas.c1t', x: 'formulas.c1x' },
@@ -492,7 +422,7 @@ useSeoMeta({
   ogUrl: () => pageUrl.value,
   ogLocale: () => ogLocale.value,
   ogLocaleAlternate: () => ogLocaleAlternate.value,
-  ogImage: `${config.public.siteUrl}/images/home/web_4_smarholdem_netfory.jpg`,
+  ogImage: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
   twitterCard: 'summary_large_image',
   twitterTitle: () => t('home.seo.ogTitle'),
   twitterDescription: () => t('home.seo.ogDescription'),

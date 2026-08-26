@@ -31,7 +31,7 @@ export interface NewsItem {
 }
 
 const HOST = 'https://news.smartholdem.io'
-const PLACEHOLDER = '/images/home/web_4_smarholdem_netfory.jpg'
+const PLACEHOLDER = '/images/home/web_4.0_smarholdem_netfory.jpg'
 const MANIFEST: Record<string, string> = (imageManifest as any) || {}
 const SNAPSHOT: NewsItem[] = Array.isArray(newsSnapshot) ? (newsSnapshot as NewsItem[]) : []
 

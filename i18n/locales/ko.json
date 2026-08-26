@@ -173,9 +173,20 @@
     "tertiary": "GitHub에서 보기"
   },
   "netforyModal": {
-    "title": "곧 출시: Web 4.0 Netfory 런칭",
-    "text1": "Web 4.0 Netfory의 런칭이 곧 다가옵니다. 최고의 사용자 경험을 위해 데스크톱 클라이언트의 마지막 손질을 하고 있습니다.",
-    "text2": "최신 뉴스와 업데이트를 확인하려면 Telegram의 공식 SmartHoldem 그룹에 참여하세요.",
+    "title": "Web 4.0 Netfory 다운로드",
+    "version": "최신 릴리스",
+    "published": "게시일",
+    "loading": "최신 릴리스를 불러오는 중…",
+    "error": "릴리스를 불러올 수 없습니다. GitHub 를 직접 방문하세요.",
+    "noAssets": "다운로드 가능한 파일이 아직 없습니다.",
+    "viewOnGithub": "GitHub 에서 모든 릴리스 보기",
+    "download": "다운로드",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "기타",
+    "text2": "최신 소식을 받으려면 Telegram 의 공식 SmartHoldem 그룹에 참여하세요.",
     "telegram": "Telegram 그룹 참여",
     "close": "닫기"
   },

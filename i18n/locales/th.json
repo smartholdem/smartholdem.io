@@ -173,11 +173,22 @@
     "tertiary": "ดูบน GitHub"
   },
   "netforyModal": {
-    "title": "เร็วๆ นี้: การเปิดตัว Web 4.0 Netfory",
-    "text1": "การเปิดตัว Web 4.0 Netfory จะมาถึงในเร็วๆ นี้ เราอยู่ระหว่างการตกแต่งขั้นสุดท้ายของ desktop client เพื่อให้แน่ใจว่าจะได้รับประสบการณ์ผู้ใช้ที่ดีที่สุด",
-    "text2": "เข้าร่วมกลุ่ม SmartHoldem ทางการบน Telegram เพื่อรับข่าวสารและอัปเดตล่าสุด",
-    "telegram": "เข้าร่วมกลุ่ม Telegram",
-    "close": "ปิด"
+    "title": "Web 4.0 Netfory Download",
+    "version": "Latest release",
+    "published": "Published",
+    "loading": "Loading latest release…",
+    "error": "Unable to load releases. Please visit GitHub directly.",
+    "noAssets": "No downloadable assets available yet.",
+    "viewOnGithub": "View all releases on GitHub",
+    "download": "Download",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "Other",
+    "text2": "Join the official SmartHoldem group in Telegram to stay updated.",
+    "telegram": "Join Telegram Group",
+    "close": "Close"
   },
   "terms": {
     "eyebrow": "กฎหมาย · เงื่อนไขการใช้งาน",

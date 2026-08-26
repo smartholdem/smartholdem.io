@@ -173,11 +173,22 @@
     "tertiary": "Angazia kwenye GitHub"
   },
   "netforyModal": {
-    "title": "Siku Hizi: Uzinduzi wa Web 4.0 Netfory",
-    "text1": "Uzinduzi wa Web 4.0 Netfory unakaribisha hivi karibuni. Tumekuwa tukifanya marekebisho ya mwisho kwenye mteja wa desktop kuhakikisha uzoefu bora zaidi wa mtumiaji.",
-    "text2": "Jiunge na kikundi rasmi cha SmartHoldem kwenye Telegram ili kubaki na habari na sasisha za hivi karibuni.",
-    "telegram": "Jiunge na Kikundi cha Telegram",
-    "close": "Funga"
+    "title": "Web 4.0 Netfory Download",
+    "version": "Latest release",
+    "published": "Published",
+    "loading": "Loading latest release…",
+    "error": "Unable to load releases. Please visit GitHub directly.",
+    "noAssets": "No downloadable assets available yet.",
+    "viewOnGithub": "View all releases on GitHub",
+    "download": "Download",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "Other",
+    "text2": "Join the official SmartHoldem group in Telegram to stay updated.",
+    "telegram": "Join Telegram Group",
+    "close": "Close"
   },
   "terms": {
     "eyebrow": "Kisheria · Masharti ya Matumizi",

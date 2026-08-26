@@ -173,9 +173,20 @@
     "tertiary": "Открыть на GitHub"
   },
   "netforyModal": {
-    "title": "Совсем скоро: запуск Web 4.0 Netfory",
-    "text1": "Запуск Web 4.0 Netfory уже совсем рядом. Мы наносим финальные штрихи на десктоп-клиент, чтобы обеспечить наилучший пользовательский опыт.",
-    "text2": "Присоединяйтесь к официальной группе SmartHoldem в Telegram, чтобы быть в курсе последних новостей и обновлений.",
+    "title": "Скачать Web 4.0 Netfory",
+    "version": "Последний релиз",
+    "published": "Опубликован",
+    "loading": "Загружаем последний релиз…",
+    "error": "Не удалось загрузить список релизов. Откройте GitHub напрямую.",
+    "noAssets": "Файлы для скачивания пока недоступны.",
+    "viewOnGithub": "Все релизы на GitHub",
+    "download": "Скачать",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "Другое",
+    "text2": "Присоединяйтесь к официальной группе SmartHoldem в Telegram, чтобы быть в курсе обновлений.",
     "telegram": "Присоединиться в Telegram",
     "close": "Закрыть"
   },

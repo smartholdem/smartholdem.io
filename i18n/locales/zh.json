@@ -173,9 +173,20 @@
     "tertiary": "在 GitHub 上查看"
   },
   "netforyModal": {
-    "title": "即将推出：Web 4.0 Netfory 发布",
-    "text1": "Web 4.0 Netfory 即将发布。我们正在为桌面客户端做最后的润色，以确保最佳的用户体验。",
-    "text2": "加入 SmartHoldem 官方 Telegram 群组，获取最新消息和更新。",
+    "title": "下载 Web 4.0 Netfory",
+    "version": "最新版本",
+    "published": "发布于",
+    "loading": "正在加载最新版本…",
+    "error": "无法加载版本。请直接访问 GitHub。",
+    "noAssets": "暂无可下载的文件。",
+    "viewOnGithub": "在 GitHub 上查看所有版本",
+    "download": "下载",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "其他",
+    "text2": "加入官方 SmartHoldem Telegram 群组以获取最新更新。",
     "telegram": "加入 Telegram 群组",
     "close": "关闭"
   },

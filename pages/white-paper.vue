@@ -259,7 +259,7 @@ useSeoMeta({
   ogUrl: () => pageUrl.value,
   ogLocale: () => ogLocale.value,
   ogLocaleAlternate: () => ogLocaleAlternate.value,
-  ogImage: `${config.public.siteUrl}/images/home/web_4_smarholdem_netfory.jpg`,
+  ogImage: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
   twitterCard: 'summary_large_image'
 })
 useHead({
@@ -274,7 +274,7 @@ useHead({
       description: t('whitepaper.seo.description'),
       url: pageUrl.value,
       mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
-      image: `${config.public.siteUrl}/images/home/web_4_smarholdem_netfory.jpg`,
+      image: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
       inLanguage: locale.value,
       author: [{ '@type': 'Person', name: 'TechnoL0g' }, { '@type': 'Person', name: 'Europa' }],
       datePublished: '2026-07-01',

@@ -81,7 +81,7 @@ export default defineEventHandler(async (event) => {
 
   // Absolute URL to a locally-mirrored image; falls back to a site-wide placeholder.
   const imageUrl = (rel: string | null | undefined) => {
-    if (!rel) return `${base}/images/home/web_4_smarholdem_netfory.jpg`
+    if (!rel) return `${base}/images/home/web_4.0_smarholdem_netfory.jpg`
     if (rel.startsWith('http')) return rel                  // already absolute
     return `${base}${rel.startsWith('/') ? '' : '/'}${rel}` // ensure leading slash
   }

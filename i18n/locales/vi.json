@@ -173,10 +173,21 @@
     "tertiary": "Xem trên GitHub"
   },
   "netforyModal": {
-    "title": "Sắp Ra Mắt: Ra mắt Web 4.0 Netfory",
-    "text1": "Ra mắt Web 4.0 Netfory sắp đến. Chúng tôi đang hoàn thiện những chi tiết cuối cùng cho desktop client để đảm bảo trải nghiệm người dùng tốt nhất.",
-    "text2": "Tham gia nhóm SmartHoldem chính thức trên Telegram để cập nhật tin tức và thông báo mới nhất.",
-    "telegram": "Tham gia Nhóm Telegram",
+    "title": "Tải Web 4.0 Netfory",
+    "version": "Bản phát hành mới nhất",
+    "published": "Ngày phát hành",
+    "loading": "Đang tải bản phát hành mới nhất…",
+    "error": "Không thể tải các bản phát hành. Vui lòng truy cập GitHub trực tiếp.",
+    "noAssets": "Chưa có tệp nào để tải xuống.",
+    "viewOnGithub": "Xem tất cả bản phát hành trên GitHub",
+    "download": "Tải xuống",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "Khác",
+    "text2": "Tham gia nhóm SmartHoldem chính thức trên Telegram để cập nhật tin tức.",
+    "telegram": "Tham gia nhóm Telegram",
     "close": "Đóng"
   },
   "terms": {

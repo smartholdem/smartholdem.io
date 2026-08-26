@@ -173,11 +173,22 @@
     "tertiary": "GitHub-да көру"
   },
   "netforyModal": {
-    "title": "Жақында: Web 4.0 Netfory Шығарылымы",
-    "text1": "Web 4.0 Netfory шығарылымы жақында келеді. Біз ең жақсы пайдаланушы тәжірибесін қамтамасыз ету үшін жұмыс үстелі клиентін соңғы рет әзірлеудеміз.",
-    "text2": "Соңғы жаңалықтар мен жаңартулардан хабардар болу үшін Telegram-дағы ресми SmartHoldem тобына қосылыңыз.",
-    "telegram": "Telegram Тобына Қосылу",
-    "close": "Жабу"
+    "title": "Web 4.0 Netfory Download",
+    "version": "Latest release",
+    "published": "Published",
+    "loading": "Loading latest release…",
+    "error": "Unable to load releases. Please visit GitHub directly.",
+    "noAssets": "No downloadable assets available yet.",
+    "viewOnGithub": "View all releases on GitHub",
+    "download": "Download",
+    "platformWindows": "Windows",
+    "platformLinux": "Linux",
+    "platformMacos": "macOS",
+    "platformAndroid": "Android",
+    "platformOther": "Other",
+    "text2": "Join the official SmartHoldem group in Telegram to stay updated.",
+    "telegram": "Join Telegram Group",
+    "close": "Close"
   },
   "terms": {
     "eyebrow": "Құқықтық · Пайдалану Шарттары",

@@ -32,34 +32,13 @@
       </div>
     </section>
 
-    <!-- ============ NETFORY LAUNCH MODAL ============ -->
-    <transition name="modal">
-      <div v-if="showModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4" @click.self="showModal = false">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
-        <div class="relative w-full max-w-lg rounded-2xl border hair-border glass p-8 shadow-card">
-          <button class="absolute right-4 top-4 rounded-full p-1.5 text-secondary hover:text-neon-cyan" @click="showModal = false" aria-label="Close">
-            <X class="h-5 w-5" />
-          </button>
-          <div class="flex flex-col items-center text-center">
-            <div class="sth-pulse relative mb-5">
-              <img src="/images/home/sth-logo.png" alt="STH" class="h-16 w-16" />
-            </div>
-            <h3 class="text-2xl font-bold">{{ t('netforyModal.title') }}</h3>
-            <p class="mt-3 text-secondary">{{ t('netforyModal.text1') }}</p>
-            <p class="mt-2 text-secondary">{{ t('netforyModal.text2') }}</p>
-            <a href="https://t.me/smartholdem" target="_blank" rel="noopener"
-               class="mt-6 inline-flex items-center gap-2 rounded-lg bg-neon-cyan px-5 py-2.5 font-semibold text-[#0A0E27] transition-transform hover:-translate-y-0.5">
-              <Send class="h-4 w-4" /> {{ t('netforyModal.telegram') }}
-            </a>
-          </div>
-        </div>
-      </div>
-    </transition>
+    <!-- ============ NETFORY DOWNLOAD MODAL (shared component) ============ -->
+    <NetforyDownloadModal v-model:open="showModal" />
   </div>
 </template>
 
 <script setup>
-import { Download, ArrowLeft, X, Send } from 'lucide-vue-next'
+import { Download, ArrowLeft } from 'lucide-vue-next'
 const { t } = useI18n()
 const localePath = useLocalePath()
 const showModal = ref(false)
@@ -91,11 +70,6 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: () => pageUrl.value }]
 })
-
-// Close modal with Escape
-const onKey = (e) => { if (e.key === 'Escape') showModal.value = false }
-onMounted(() => window.addEventListener('keydown', onKey))
-onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
 </script>
 
 <style>
