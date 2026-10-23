@@ -38,6 +38,7 @@
         <div>
           <h4 class="mono mb-4 text-xs font-semibold uppercase tracking-wider text-secondary">{{ t('footer.ecosystem') }}</h4>
           <ul class="space-y-2.5 text-sm">
+            <li><a href="https://chromewebstore.google.com/detail/smartholdem-wallet-sth/eocmgmhopmnkihfbipjifphjicfginbn" target="_blank" rel="noopener" class="f-link" data-testid="footer-wallet-extension">{{ t('nav.walletExtension') }}</a></li>
             <li><a :href="links.wallet" target="_blank" rel="noopener" class="f-link" @click="onWallet">{{ t('nav.wallet') }}</a></li>
             <li><a :href="links.explorer" target="_blank" rel="noopener" class="f-link">{{ t('nav.explorer') }}</a></li>
             <li><a :href="links.xbtsDex" target="_blank" rel="noopener" class="f-link">{{ t('nav.xbtsDex') }}</a></li>
@@ -53,7 +54,7 @@
             <li><NuxtLink :to="localePath('/blockchain')" class="f-link">{{ t('nav.blockchain') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('/dapps')" class="f-link">{{ t('nav.dapps') }}</NuxtLink></li>
             <li><a :href="links.devhub" class="f-link">{{ t('nav.devhub') }}</a></li>
-            <li><a href="https://github.com/smartholdem/sth-core" target="_blank" rel="noopener" class="f-link">Install Full Node</a></li>
+            <li><a href="https://github.com/smartholdem/sth-core-pq" target="_blank" rel="noopener" class="f-link">Install Full Node</a></li>
             <li><NuxtLink :to="localePath('/white-paper')" class="f-link">{{ t('nav.whitepaper') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('/news')" class="f-link">{{ t('nav.news') }}</NuxtLink></li>
             <li><NuxtLink :to="localePath('/tokenomics')" class="f-link">{{ t('nav.tokenomics') }}</NuxtLink></li>

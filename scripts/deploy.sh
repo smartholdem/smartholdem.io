@@ -84,4 +84,26 @@ sudo rsync -a --delete \
 
 sudo chown -R www-data:www-data "$PUB_DIR" 2>/dev/null || true
 
+# ── 5. Purge Cloudflare cache (new images / news visible immediately) ────────
+# Optional. Put credentials in ~/.cloudflare.env (chmod 600):
+#   CF_ZONE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#   CF_API_TOKEN=xxxxxxxx   (API token with permission Zone → Cache Purge → Purge)
+CF_ENV_FILE="${CF_ENV_FILE:-$HOME/.cloudflare.env}"
+# shellcheck disable=SC1090
+[ -f "$CF_ENV_FILE" ] && . "$CF_ENV_FILE"
+if [ -n "${CF_ZONE_ID:-}" ] && [ -n "${CF_API_TOKEN:-}" ]; then
+  log "▶ Cloudflare purge_everything"
+  CF_RES=$(curl -sS -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+    -H "Authorization: Bearer ${CF_API_TOKEN}" \
+    -H "Content-Type: application/json" \
+    --data '{"purge_everything":true}' || true)
+  if echo "$CF_RES" | grep -q '"success":true'; then
+    log "  ✓ Cloudflare cache purged"
+  else
+    log "  (warning: Cloudflare purge failed: $(echo "$CF_RES" | head -c 300))"
+  fi
+else
+  log "  (skip Cloudflare purge — CF_ZONE_ID / CF_API_TOKEN not set in $CF_ENV_FILE)"
+fi
+
 log "✓ deploy finished OK"

@@ -4,6 +4,7 @@ export const SITE_LINKS = {
   dexTrade: 'https://dex-trade.com/ru/spot/trading/STHUSDT?interface=classic',
   wallet: 'https://wallet.smartholdem.io',
   explorer: 'https://explorer.smartholdem.io/',
+  explorerWallet: 'https://explorer.smartholdem.io/wallet/',
   api: 'https://wiki.smartholdem.io',
   devhub: '/devhub/',
   githubSth: 'https://github.com/smartholdem',

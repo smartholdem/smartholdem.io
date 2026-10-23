@@ -62,6 +62,55 @@
       </div>
     </section>
 
+    <!-- ================= 2.1 BROWSER WALLET EXTENSION ================= -->
+    <section id="extension" class="container-x pb-20" aria-labelledby="ext-title">
+      <div v-reveal class="relative overflow-hidden rounded-3xl border p-8 sm:p-10 glass"
+           style="border-color:rgba(255,90,10,0.35); box-shadow:0 0 60px -20px rgba(255,90,10,0.45)"
+           data-testid="getsth-extension-card">
+        <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full opacity-30 blur-3xl"
+             style="background:radial-gradient(closest-side,#FF5A0A,transparent 70%)"></div>
+        <div class="relative grid items-center gap-10 lg:grid-cols-5">
+          <div class="lg:col-span-3">
+            <p class="eyebrow mb-3">{{ t('getSth.extension.eyebrow') }}</p>
+            <h2 id="ext-title" class="text-3xl font-bold sm:text-4xl">{{ t('getSth.extension.title') }}</h2>
+            <p class="mt-4 text-secondary leading-relaxed">{{ t('getSth.extension.text') }}</p>
+            <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+              <li v-for="f in extFeatures" :key="f.title" class="flex gap-3 rounded-xl border hair-border surface p-4">
+                <component :is="f.icon" class="mt-0.5 h-5 w-5 shrink-0" :style="`color:${f.color}`" />
+                <div>
+                  <p class="text-sm font-semibold">{{ f.title }}</p>
+                  <p class="mt-1 text-xs leading-relaxed text-secondary">{{ f.text }}</p>
+                </div>
+              </li>
+            </ul>
+            <div class="mt-7 flex flex-wrap items-center gap-4">
+              <a :href="EXT_URL" target="_blank" rel="noopener" class="btn-primary text-base" data-testid="getsth-extension-cta">
+                <Puzzle class="h-4 w-4" /> {{ t('getSth.extension.cta') }} <ExternalLink class="h-4 w-4" />
+              </a>
+              <p class="text-xs text-secondary">{{ t('getSth.extension.note') }}</p>
+            </div>
+          </div>
+          <div class="lg:col-span-2">
+            <a :href="EXT_URL" target="_blank" rel="noopener" class="group block rounded-2xl border hair-border surface p-6 transition-transform hover:-translate-y-1" aria-label="SmartHoldem Wallet (STH) — Chrome Web Store">
+              <div class="flex items-center gap-4">
+                <img src="/images/home/sth-logo.png" alt="SmartHoldem Wallet (STH) browser extension" class="h-14 w-14" loading="lazy" />
+                <div>
+                  <p class="font-semibold">SmartHoldem Wallet (STH)</p>
+                  <p class="mono text-xs text-secondary">Chrome Web Store</p>
+                </div>
+              </div>
+              <div class="mt-5 space-y-2 text-sm">
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2"><span class="text-secondary">Side Panel</span><Check class="h-4 w-4 text-neon-green" /></div>
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2"><span class="text-secondary">HD multi-account · BIP-39</span><Check class="h-4 w-4 text-neon-green" /></div>
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2"><span class="text-secondary">STH ↔ USDT (BEP-20)</span><Check class="h-4 w-4 text-neon-green" /></div>
+                <div class="flex items-center justify-between rounded-lg bg-white/5 px-3 py-2"><span class="mono text-secondary">window.smartholdem</span><Check class="h-4 w-4 text-neon-green" /></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= 3. XBTS HUB ================= -->
     <section class="relative border-y hair-border"
              style="background:linear-gradient(180deg, transparent, rgba(0,212,255,0.04), transparent)">
@@ -360,7 +409,8 @@ import {
   ArrowRight, ExternalLink, ChevronDown, AlertCircle,
   Zap, Link2, Repeat, Lock, ShieldCheck,
   TrendingUp, Droplets, Gem,
-  MousePointerClick, ShoppingCart, PiggyBank
+  MousePointerClick, ShoppingCart, PiggyBank,
+  Puzzle, KeyRound, PanelRight, Plug, Check
 } from 'lucide-vue-next'
 
 const { t } = useI18n()
@@ -370,6 +420,15 @@ const { openWallet } = useSmartNet()
 const onWallet = (e) => {
   if (openWallet(e)) e.preventDefault()
 }
+
+// -------------------- Browser extension --------------------
+const EXT_URL = 'https://chromewebstore.google.com/detail/smartholdem-wallet-sth/eocmgmhopmnkihfbipjifphjicfginbn'
+const extFeatures = computed(() => [
+  { icon: KeyRound,   title: t('getSth.extension.f1t'), text: t('getSth.extension.f1x'), color: '#10B981' },
+  { icon: PanelRight, title: t('getSth.extension.f2t'), text: t('getSth.extension.f2x'), color: '#00D4FF' },
+  { icon: Repeat,     title: t('getSth.extension.f3t'), text: t('getSth.extension.f3x'), color: '#F59E0B' },
+  { icon: Plug,       title: t('getSth.extension.f4t'), text: t('getSth.extension.f4x'), color: '#7C3AED' }
+])
 
 // -------------------- Wallet features --------------------
 const walletFeatures = computed(() => [
@@ -524,7 +583,26 @@ useSeoMeta({
   twitterSite: '@smartholdem'
 })
 useHead({
-  link: [{ rel: 'canonical', href: () => pageUrl.value }]
+  link: [{ rel: 'canonical', href: () => pageUrl.value }],
+  script: [{
+    type: 'application/ld+json',
+    key: 'ld-sth-extension',
+    innerHTML: () => JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'SmartHoldem Wallet (STH)',
+      description: t('getSth.extension.text'),
+      applicationCategory: 'FinanceApplication',
+      applicationSubCategory: 'Browser Extension Wallet',
+      operatingSystem: 'Chrome, Brave, Edge, Opera (Chromium)',
+      installUrl: EXT_URL,
+      downloadUrl: EXT_URL,
+      url: EXT_URL,
+      featureList: extFeatures.value.map(f => `${f.title}: ${f.text}`),
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@type': 'Organization', name: 'SmartHoldem', url: siteUrl }
+    })
+  }]
 })
 </script>
 

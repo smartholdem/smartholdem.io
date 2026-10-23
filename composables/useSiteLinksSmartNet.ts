@@ -6,6 +6,7 @@ export const SITE_LINKS_SMARTNET = {
   dexTrade: 'https://dex-trade.com/ru/spot/trading/STHUSDT?interface=classic',
   wallet: '#',
   explorer: 'sth://explorer',
+  explorerWallet: 'sth://explorer/wallet/',
   api: 'https://wiki.smartholdem.io',
   // DevHub is published as a standalone SmartNet dApp with its own CID.
   // Built via `yarn docs:build:smartnet` (base '/', outDir docs-dist-smartnet/)

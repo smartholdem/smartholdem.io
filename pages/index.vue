@@ -8,6 +8,19 @@
         <div class="absolute inset-0" style="background:radial-gradient(80% 60% at 50% 40%, transparent, var(--bg) 100%)"></div>
       </div>
       <div class="container-x relative z-10 py-24">
+        <a :href="release?.url || releasesUrl" target="_blank" rel="noopener"
+           class="group mb-6 inline-flex items-center gap-2 rounded-full border border-neon-cyan/40 bg-neon-cyan/10 px-3.5 py-1.5 text-xs font-semibold text-neon-cyan backdrop-blur transition-colors hover:border-neon-cyan hover:bg-neon-cyan/20 animate-fade-up"
+           data-testid="hero-version-badge"
+           :title="t('hero.versionTitle')">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#22C55E] opacity-75"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-[#22C55E]"></span>
+          </span>
+          <span class="mono">Netfory Client<template v-if="release?.version"> v{{ release.version }}</template></span>
+          <span class="text-slate-400">·</span>
+          <span>{{ t('hero.versionLabel') }}</span>
+          <ArrowUpRight class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </a>
         <p class="eyebrow mb-5 animate-fade-up">{{ t('hero.eyebrow') }}</p>
         <h1 class="max-w-4xl text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl animate-fade-up">
           {{ t('hero.title') }}
@@ -412,6 +425,8 @@ const benchmarks = computed(() => [
   }
 ])
 
+const { release, releasesUrl } = useNetforyRelease()
+
 const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/')
 useSeoMeta({
   title: () => t('home.seo.title'),
@@ -429,7 +444,30 @@ useSeoMeta({
   twitterSite: '@smartholdem'
 })
 useHead({
-  link: [{ rel: 'canonical', href: () => pageUrl.value }]
+  link: [{ rel: 'canonical', href: () => pageUrl.value }],
+  script: [{
+    type: 'application/ld+json',
+    key: 'ld-netfory-client',
+    // Netfory Client SoftwareApplication — softwareVersion is baked in at
+    // build time from GitHub Releases so search engines / AI agents can
+    // answer "what is the latest Netfory version" from static HTML.
+    innerHTML: () => JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'Netfory Client',
+      description: t('home.seo.description'),
+      applicationCategory: 'NetworkingApplication',
+      operatingSystem: 'Windows, macOS, Linux, Android',
+      ...(release.value?.version ? { softwareVersion: release.value.version } : {}),
+      ...(release.value?.publishedAt ? { datePublished: release.value.publishedAt } : {}),
+      downloadUrl: release.value?.url || releasesUrl,
+      releaseNotes: release.value?.url || releasesUrl,
+      url: pageUrl.value,
+      image: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@type': 'Organization', name: 'SmartHoldem', url: config.public.siteUrl }
+    })
+  }]
 })
 </script>
 

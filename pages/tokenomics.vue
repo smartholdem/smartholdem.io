@@ -13,14 +13,22 @@
         <p class="mt-6 text-lg font-semibold" style="color:#00D4FF">{{ t('tokenomics.hero.tagline') }}</p>
 
         <div class="mx-auto mt-14 grid max-w-4xl gap-4 sm:grid-cols-3">
-          <div v-for="m in heroMetrics" :key="m.label" v-reveal class="rounded-2xl border hair-border glass p-6">
+          <component :is="m.href ? 'a' : 'div'" v-for="m in heroMetrics" :key="m.label" v-reveal
+                     :href="m.href || undefined" :target="m.href ? '_blank' : undefined" :rel="m.href ? 'noopener' : undefined"
+                     :title="m.href ? t('tokenomics.hero.burnLinkTitle') : undefined"
+                     :data-testid="`tok-metric-${m.key}`"
+                     class="group block rounded-2xl border hair-border glass p-6"
+                     :class="m.href ? 'transition-all hover:-translate-y-1 hover:border-[#F59E0B]/60 cursor-pointer' : ''">
             <p class="mono text-3xl font-bold" :style="`color:${m.color}`">
               <span v-if="m.animate">{{ formatNumber(counters[m.key]) }}</span>
               <span v-else>{{ m.staticValue }}</span>
               <span v-if="m.suffix" class="text-lg opacity-80"> {{ m.suffix }}</span>
             </p>
-            <p class="mt-2 text-xs uppercase tracking-wider text-secondary">{{ m.label }}</p>
-          </div>
+            <p class="mt-2 inline-flex items-center gap-1 text-xs uppercase tracking-wider text-secondary">
+              {{ m.label }}
+              <ExternalLink v-if="m.href" class="h-3 w-3 opacity-60 transition-opacity group-hover:opacity-100" />
+            </p>
+          </component>
         </div>
       </div>
     </section>
@@ -438,7 +446,7 @@
               <NuxtLink :to="localePath('/white-paper')" class="btn-primary text-base">
                 {{ t('tokenomics.cta.btnWp') }} <ArrowRight class="h-4 w-4" />
               </NuxtLink>
-              <a href="https://explorer.smartholdem.io" target="_blank" rel="noopener" class="btn-outline-cyan text-base">
+              <a :href="links.explorer" target="_blank" rel="noopener" class="btn-outline-cyan text-base">
                 {{ t('tokenomics.cta.btnExplorer') }}
               </a>
             </div>
@@ -453,10 +461,10 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, computed } from 'vue'
+import { ref, reactive, onMounted, computed, watch } from 'vue'
 import {
   TrendingUp, ShieldCheck, CheckCircle2,
-  ArrowRight, Copy, Check,
+  ArrowRight, Copy, Check, ExternalLink,
   Coins, Flame, Zap, Ban, Rocket,
   UserCheck, Package, MessageSquare, Bell, Users2, Gauge,
   Server, HardDrive, Network, Wallet,
@@ -464,29 +472,41 @@ import {
 } from 'lucide-vue-next'
 
 const { t } = useI18n()
+// SmartNet-aware links (Block Explorer → sth://explorer inside the SmartNet client)
+const { links } = useSmartNet()
 const localePath = useLocalePath()
 
 // -------------------- Hero metrics with counter animation --------------------
 const heroMetrics = computed(() => [
-  { key: 'supply',   animate: true,  label: t('tokenomics.hero.m1'), color: '#00D4FF', suffix: 'STH' },
-  { key: 'burned',   animate: true,  label: t('tokenomics.hero.m2'), color: '#F59E0B', suffix: 'STH' },
+  { key: 'circulating', animate: true,  label: t('tokenomics.hero.m1'), color: '#00D4FF', suffix: 'STH' },
+  { key: 'burned',   animate: true,  label: t('tokenomics.hero.m2'), color: '#F59E0B', suffix: 'STH', href: links.value.explorerWallet + STH_BURN_ADDRESS },
   { key: 'emission', animate: false, staticValue: t('tokenomics.hero.m3v'), label: t('tokenomics.hero.m3'), color: '#10B981' }
 ])
-const counters = reactive({ supply: 0, burned: 0 })
-const targets  = { supply: 249_677_907, burned: 92_093 }
+// Live supply data (burn address balance via SmartHoldem node API, baked at build time)
+const { supply } = useSthSupply()
+// SSR renders FINAL values (crawler/AI-agent friendly); animation runs only on the client.
+const counters = reactive({ circulating: supply.value.circulating, burned: supply.value.burned })
 const formatNumber = (n) => Math.round(n).toLocaleString('en-US')
 
-onMounted(() => {
+const animateTo = (from, to) => {
   const duration = 1600
   const start = performance.now()
   const tick = (now) => {
     const p = Math.min(1, (now - start) / duration)
     const eased = 1 - Math.pow(1 - p, 3)
-    counters.supply = targets.supply * eased
-    counters.burned = targets.burned * eased
+    counters.circulating = from.circulating + (to.circulating - from.circulating) * eased
+    counters.burned = from.burned + (to.burned - from.burned) * eased
     if (p < 1) requestAnimationFrame(tick)
   }
   requestAnimationFrame(tick)
+}
+
+onMounted(() => {
+  animateTo({ circulating: 0, burned: 0 }, { circulating: supply.value.circulating, burned: supply.value.burned })
+})
+watch(supply, (v, old) => {
+  if (!v || !old || (v.circulating === old.circulating && v.burned === old.burned)) return
+  animateTo({ circulating: counters.circulating, burned: counters.burned }, { circulating: v.circulating, burned: v.burned })
 })
 
 // -------------------- Distribution (2017) --------------------
@@ -513,11 +533,11 @@ const physicalPoints = computed(() => [
 
 // -------------------- Utility cards (6 primary) --------------------
 const utilityCards = computed(() => [
-  { icon: UserCheck,     title: t('tokenomics.utility.u1t'), cost: '1 STH',              text: t('tokenomics.utility.u1x'), color: '#00D4FF', tint: 'rgba(0,212,255,0.14)' },
+  { icon: UserCheck,     title: t('tokenomics.utility.u1t'), cost: '100 STH',            text: t('tokenomics.utility.u1x'), color: '#00D4FF', tint: 'rgba(0,212,255,0.14)' },
   { icon: Package,       title: t('tokenomics.utility.u2t'), cost: '~100 STH',           text: t('tokenomics.utility.u2x'), color: '#7C3AED', tint: 'rgba(124,58,237,0.14)' },
   { icon: MessageSquare, title: t('tokenomics.utility.u3t'), cost: 'msg_cost_sth',       text: t('tokenomics.utility.u3x'), color: '#F59E0B', tint: 'rgba(245,158,11,0.14)' },
   { icon: Bell,          title: t('tokenomics.utility.u4t'), cost: 'sub:<user>',         text: t('tokenomics.utility.u4x'), color: '#10B981', tint: 'rgba(16,185,129,0.14)' },
-  { icon: Users2,        title: t('tokenomics.utility.u5t'), cost: 'entry_fee',          text: t('tokenomics.utility.u5x'), color: '#EF4444', tint: 'rgba(239,68,68,0.14)' },
+  { icon: Network,       title: t('tokenomics.utility.u5t'), cost: 'relay_fee',          text: t('tokenomics.utility.u5x'), color: '#EF4444', tint: 'rgba(239,68,68,0.14)' },
   { icon: Gauge,         title: t('tokenomics.utility.u6t'), cost: 'sth_boost:<app_id>', text: t('tokenomics.utility.u6x'), color: '#00D4FF', tint: 'rgba(0,212,255,0.14)' }
 ])
 
@@ -645,7 +665,10 @@ useHead({
         { '@type': 'PropertyValue', name: 'Ticker Symbol', value: 'STH' },
         { '@type': 'PropertyValue', name: 'Blockchain', value: 'SmartHoldem (DPoS)' },
         { '@type': 'PropertyValue', name: 'Consensus', value: 'Delegated Proof-of-Stake (DPoS)' },
-        { '@type': 'PropertyValue', name: 'Total Supply', value: '249,677,907 STH' },
+        { '@type': 'PropertyValue', name: 'Total Supply', value: `${formatNumber(supply.value.total)} STH` },
+        { '@type': 'PropertyValue', name: 'Circulating Supply', value: `${formatNumber(supply.value.circulating)} STH` },
+        { '@type': 'PropertyValue', name: 'Permanently Burned', value: `${formatNumber(supply.value.burned)} STH` },
+        { '@type': 'PropertyValue', name: 'Burn Address', value: STH_BURN_ADDRESS },
         { '@type': 'PropertyValue', name: 'Emission', value: 'Halted — deflationary model' },
         { '@type': 'PropertyValue', name: 'Token Type', value: 'Native coin + wrapped tokens (BEP-20, ERC-20, TON Jetton, Solana SPL)' },
         ...contracts.map(c => ({

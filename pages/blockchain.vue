@@ -9,6 +9,20 @@
       <div class="container-x relative z-10 py-24 lg:py-0">
         <div class="grid items-center gap-14 lg:grid-cols-5">
           <div class="lg:col-span-3">
+            <a :href="nodeRelease?.url || nodeReleasesUrl" target="_blank" rel="noopener"
+               class="group mb-5 inline-flex items-center gap-2 rounded-full border border-neon-cyan/40 bg-neon-cyan/10 px-3.5 py-1.5 text-xs font-semibold text-neon-cyan backdrop-blur transition-colors hover:border-neon-cyan hover:bg-neon-cyan/20"
+               data-testid="bc-hero-node-badge"
+               :title="t('blockchain.hero.badgeTitle')">
+              <span class="relative flex h-2 w-2">
+                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#22C55E] opacity-75"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-[#22C55E]"></span>
+              </span>
+              <Cpu class="h-3.5 w-3.5" />
+              <span class="mono">SmartHoldem Post-Quantum Node<template v-if="nodeRelease?.version"> v{{ nodeRelease.version }}</template></span>
+              <span class="text-slate-400">·</span>
+              <span>{{ t('hero.versionLabel') }}</span>
+              <ArrowUpRight class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
             <p class="eyebrow mb-4">{{ t('blockchain.hero.eyebrow') }}</p>
             <h1 class="text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
               {{ t('blockchain.hero.titleA') }}
@@ -17,17 +31,17 @@
             <p class="mt-5 text-lg text-secondary">{{ t('blockchain.hero.subtitle') }}</p>
             <p class="mt-4 max-w-2xl text-secondary leading-relaxed">{{ t('blockchain.hero.text') }}</p>
             <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="https://github.com/smartholdem/sth-core" target="_blank" rel="noopener" class="btn-primary text-base">
+              <a href="https://github.com/smartholdem/sth-core-pq" target="_blank" rel="noopener" class="btn-primary text-base">
                 {{ t('blockchain.hero.cta1') }} <ArrowRight class="h-4 w-4" />
               </a>
-              <a href="https://explorer.smartholdem.io" target="_blank" rel="noopener" class="btn-outline-cyan text-base">
+              <a :href="links.explorer" target="_blank" rel="noopener" class="btn-outline-cyan text-base">
                 {{ t('blockchain.hero.cta2') }}
               </a>
             </div>
           </div>
           <div class="lg:col-span-2">
             <figure class="hero-image-container mx-auto max-w-md lg:max-w-none">
-              <img src="/images/blockchain/blockchain-hero.jpg" alt="SmartHoldem dual-layer architecture" />
+              <img src="/images/blockchain/blockchain-hero.jpg?v=20261021" alt="SmartHoldem Web 4.0 P2P node mesh: servers, laptops, phones and home devices" />
             </figure>
             <p class="mt-3 text-center text-xs text-secondary">{{ t('blockchain.hero.imageCaption') }}</p>
           </div>
@@ -129,9 +143,9 @@
           </div>
           <h3 class="text-lg font-semibold">{{ c.title }}</h3>
           <ul class="mt-3 space-y-2 text-sm text-secondary">
-            <li v-for="line in c.lines" :key="line" class="flex gap-2">
+            <li v-for="line in c.lines" :key="line.k" class="flex gap-2">
               <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-neon-cyan"></span>
-              <span v-html="line"></span>
+              <span><strong>{{ line.k }}:</strong> {{ line.x }}</span>
             </li>
           </ul>
         </div>
@@ -211,6 +225,7 @@
             <div v-for="r in rewardCards" :key="r.title" class="rounded-xl border hair-border surface p-5">
               <p class="mono text-2xl font-bold" :style="`color:${r.color}`">{{ r.big }}</p>
               <p class="mt-1 text-xs text-secondary">{{ r.small }}</p>
+              <p v-if="r.note" class="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-[#F59E0B]"><Flame class="h-3.5 w-3.5" /> {{ r.note }}</p>
               <p class="mt-3 text-xs text-secondary leading-relaxed">{{ r.text }}</p>
             </div>
           </div>
@@ -250,7 +265,7 @@
         </div>
         <div v-reveal="80" class="lg:col-span-2">
           <div class="overflow-hidden rounded-2xl border hair-border glass p-3">
-            <img src="/images/blockchain/blockchain-delegate.jpg" alt="Delegate registration process" class="w-full rounded-xl" />
+            <img src="/images/blockchain/blockchain-delegate.jpg?v=20261021" alt="How to become a SmartHoldem delegate: 8 GB RAM node, install, register 10,000 STH, declare, get votes into Top 21" class="w-full rounded-xl" />
           </div>
         </div>
       </div>
@@ -313,11 +328,11 @@
       <div class="relative mt-14">
         <div class="pointer-events-none absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-transparent via-brand/50 to-transparent lg:block"></div>
         <div class="grid gap-6 lg:grid-cols-3">
-          <div v-for="(p, i) in phases" :key="p.title" v-reveal="i * 80" class="relative">
+          <div v-for="(p, i) in phases" :key="p.title" v-reveal="i * 80" class="relative flex h-full flex-col">
             <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full border-2 border-brand bg-navy-900 shadow-brand">
               <span class="mono text-sm font-bold text-brand">P{{ i + 1 }}</span>
             </div>
-            <div class="mt-5 rounded-2xl border hair-border surface p-6">
+            <div class="mt-5 flex-1 rounded-2xl border hair-border surface p-6">
               <p class="mono text-xs uppercase tracking-wider text-brand">{{ t('blockchain.phases.phaseWord') }} {{ i + 1 }}</p>
               <h3 class="mt-1 text-lg font-semibold">{{ p.title }}</h3>
               <ul class="mt-3 space-y-2 text-sm text-secondary">
@@ -396,18 +411,17 @@
       </div>
       <div v-reveal="60" class="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border hair-border" style="background:#0b1020">
         <div class="flex items-center justify-between border-b hair-border px-4 py-2" style="background:rgba(0,212,255,0.06)">
-          <span class="mono text-[11px] uppercase tracking-wider text-neon-cyan">TypeScript · STH-Core</span>
-          <span class="mono text-[10px] text-secondary">verification layer</span>
+          <span class="mono text-[11px] uppercase tracking-wider text-neon-cyan">RUST · STH-CORE-PQ · hybrid secp256k1 + ML-DSA-44</span>
+          <span class="mono hidden text-[10px] text-secondary sm:inline">src/crypto/pq.rs</span>
         </div>
-        <pre class="overflow-x-auto p-5 text-sm leading-relaxed"><code class="mono" style="color:#e2e8f0">// STH-Core: Verification layer
-<span style="color:#c792ea">if</span> (transaction.secondSignature) {
-  <span style="color:#546e7a">// Classic verification</span>
-  <span style="color:#82aaff">verifyClassicSignature</span>(transaction.signature, transaction.senderPublicKey);
-
-  <span style="color:#546e7a">// TODO: Integrate Post-Quantum verification layer</span>
-  <span style="color:#546e7a">// validateHybridQuantumSignature(transaction.pqSignature, algorithm: 'Dilithium' | 'SPHINCS+');</span>
-}</code></pre>
+        <pre class="pq-code-scroll max-h-[360px] overflow-auto p-5 text-sm leading-relaxed" tabindex="0" aria-label="sth-core-pq src/crypto/pq.rs" data-testid="bc-code-block"><code class="mono" style="color:#e2e8f0" v-html="verifyCodeHtml"></code></pre>
       </div>
+      <div v-reveal class="mx-auto mt-6 flex max-w-3xl justify-center">
+        <button type="button" class="btn-outline-cyan text-base" data-testid="bc-pq-example-btn" @click="pqExampleOpen = true">
+          <Terminal class="h-4 w-4" /> PQ example
+        </button>
+      </div>
+      <PqExampleModal v-model:open="pqExampleOpen" />
       <p v-reveal class="mx-auto mt-10 max-w-3xl text-center text-secondary leading-relaxed">
         <i18n-t keypath="blockchain.code.footer" tag="span" scope="global">
           <template #futureHere><strong class="text-brand">{{ t('blockchain.code.futureHereLabel') }}</strong></template>
@@ -424,10 +438,10 @@
         <h2 class="mx-auto max-w-3xl text-3xl font-extrabold text-white sm:text-5xl">{{ t('blockchain.cta.title') }}</h2>
         <p class="mx-auto mt-5 max-w-2xl text-white/80">{{ t('blockchain.cta.text') }}</p>
         <div class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="https://github.com/smartholdem/sth-core" target="_blank" rel="noopener" class="btn-primary text-base">
+          <a href="https://github.com/smartholdem/sth-core-pq" target="_blank" rel="noopener" class="btn-primary text-base">
             {{ t('blockchain.cta.btn1') }} <ArrowRight class="h-4 w-4" />
           </a>
-          <a href="https://explorer.smartholdem.io" target="_blank" rel="noopener" class="btn-outline-cyan text-base">
+          <a :href="links.explorer" target="_blank" rel="noopener" class="btn-outline-cyan text-base">
             {{ t('blockchain.cta.btn2') }}
           </a>
           <a href="https://t.me/smartholdem" target="_blank" rel="noopener" class="btn-tertiary text-base">
@@ -440,14 +454,24 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+// Real source of sth-core-pq Quantum Shield module (imported as raw text)
+import pqSource from '~/assets/code/sth-core-pq-crypto-pq.rs?raw'
+import { computed, ref } from 'vue'
 import {
   ArrowRight, ExternalLink, Zap, Scale, Leaf, Cpu, Code2, Globe,
   CheckCircle2, Check, Shield, HardDrive, Key, Hash, FileSignature, Lock,
-  Hammer, Megaphone, TrendingUp, ShieldCheck
+  Hammer, Megaphone, TrendingUp, ShieldCheck, ArrowUpRight, Flame, Terminal
 } from 'lucide-vue-next'
 
 const { t } = useI18n()
+// SmartNet-aware links (Block Explorer → sth://explorer inside the SmartNet client)
+const { links } = useSmartNet()
+
+// ---- Code in Progress (Rust, sth-core-pq) ----
+const VERIFY_CODE = pqSource.replace(/\s+$/, '')
+const verifyCodeHtml = highlightRust(VERIFY_CODE)
+const pqExampleOpen = ref(false)
+const { release: nodeRelease, releasesUrl: nodeReleasesUrl } = useSthCorePqRelease()
 
 // ---- Section 2 ----
 const speedCards = computed(() => [
@@ -457,26 +481,15 @@ const speedCards = computed(() => [
 ])
 
 // ---- Section 3 ---- (tech specifics stay in English)
+const stackKeys = { c1: 4, c2: 4, c3: 3 }
+const stackLines = (c) => Array.from({ length: stackKeys[c] }, (_, i) => ({
+  k: t(`blockchain.stack.${c}l${i + 1}k`),
+  x: t(`blockchain.stack.${c}l${i + 1}x`)
+}))
 const stackCards = computed(() => [
-  { icon: Cpu,   title: t('blockchain.stack.c1t'), lines: [
-      '<strong>Language:</strong> TypeScript / JavaScript (87.4% TS)',
-      '<strong>Consensus:</strong> DPoS (Delegated Proof of Stake)',
-      '<strong>Active Delegates:</strong> 21 forging nodes',
-      '<strong>Cryptography:</strong> secp256k1 (BIP-schnorr signatures)',
-      '<strong>Architecture:</strong> Modular packages (core, crypto, P2P)'
-  ]},
-  { icon: Code2, title: t('blockchain.stack.c2t'), lines: [
-      'RESTful API with comprehensive endpoints',
-      'Official SDK client for seamless integration',
-      'Resources: Blocks, Transactions, Delegates, Wallets, Locks, Businesses, Bridgechains',
-      'Real-time node status, peer discovery, round management'
-  ]},
-  { icon: Globe, title: t('blockchain.stack.c3t'), lines: [
-      'Native support for autonomous agent transactions',
-      'Content-addressed state via BLAKE3 verification',
-      'P2P-first architecture with Iroh QUIC transport',
-      'Zero-infrastructure deployment model'
-  ]}
+  { icon: Cpu,   title: t('blockchain.stack.c1t'), lines: stackLines('c1') },
+  { icon: Code2, title: t('blockchain.stack.c2t'), lines: stackLines('c2') },
+  { icon: Globe, title: t('blockchain.stack.c3t'), lines: stackLines('c3') }
 ])
 
 // ---- Section 3.1 ----
@@ -499,13 +512,15 @@ const delegateStats = computed(() => [
 const rewardCards = computed(() => [
   { big: t('blockchain.rewards.r1big'), small: t('blockchain.rewards.r1small'), color: '#00D4FF', text: t('blockchain.rewards.r1text') },
   { big: t('blockchain.rewards.r2big'), small: t('blockchain.rewards.r2small'), color: '#FF5A0A', text: t('blockchain.rewards.r2text') },
-  { big: t('blockchain.rewards.r3big'), small: t('blockchain.rewards.r3small'), color: '#94A3B8', text: t('blockchain.rewards.r3text') }
+  { big: t('blockchain.rewards.r3big'), small: t('blockchain.rewards.r3small'), note: t('blockchain.rewards.r3burn'), color: '#94A3B8', text: t('blockchain.rewards.r3text') }
 ])
 
 // TX types — technical labels, kept as-is
 const txTypes = [
   'Multi-payments', 'Gaming', 'Multi-signatures', 'Crypto-signatures',
-  'Second passphrase', 'Burn', 'IPFS hash', 'HTLC', 'Copyright registration'
+  'Second passphrase', 'Burn', 'HTLC', 'Copyright registration',
+  'PQ Second Signature', 'Name Registration', 'EncryptedMemo', 'Confidential Transfers',
+  'Multi-Signature Escrow', 'Paid Messages', 'SmartObjects', 'TokenMint', 'Subscriptions'
 ]
 
 // ---- Section 6 ----
@@ -575,11 +590,49 @@ useSeoMeta({
   twitterSite: '@smartholdem'
 })
 useHead({
-  link: [{ rel: 'canonical', href: () => pageUrl.value }]
+  link: [{ rel: 'canonical', href: () => pageUrl.value }],
+  script: [{
+    type: 'application/ld+json',
+    key: 'ld-blockchain-software',
+    // SoftwareApplication schema for the SmartHoldem Rust core node — exposes the
+    // technical stack + supported transaction types as machine-readable facts
+    // for search engines and AI agents / LLM crawlers.
+    innerHTML: () => JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'SmartHoldem Core (sth-core-pq)',
+      alternateName: 'SmartHoldem DPoS Blockchain Node',
+      description: t('blockchain.seo.description'),
+      url: pageUrl.value,
+      image: ogImage,
+      applicationCategory: 'DeveloperApplication',
+      applicationSubCategory: 'Blockchain Node',
+      operatingSystem: 'Linux, Windows, macOS, ARM64 (Raspberry Pi, Android)',
+      programmingLanguage: 'Rust',
+      softwareRequirements: '8 GB RAM, 4 CPU cores, 64 GB HDD or 32 GB SSD',
+      memoryRequirements: '~800 MB RAM',
+      storageRequirements: '~8 GB',
+      codeRepository: 'https://github.com/smartholdem/sth-core-pq',
+      ...(nodeRelease.value?.version ? { softwareVersion: nodeRelease.value.version, downloadUrl: nodeRelease.value.url } : { downloadUrl: nodeReleasesUrl }),
+      ...(nodeRelease.value?.publishedAt ? { datePublished: nodeRelease.value.publishedAt } : {}),
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@type': 'Organization', name: 'SmartHoldem', url: siteUrl },
+      keywords: 'SmartHoldem, STH, DPoS, Rust blockchain, post-quantum, ML-DSA-44, Iroh QUIC, Sled, BFT finality, Web 4.0',
+      featureList: [
+        ...stackCards.value.flatMap(c => c.lines.map(l => `${l.k}: ${l.x}`)),
+        'Supported transaction types: ' + txTypes.join(', ')
+      ]
+    })
+  }]
 })
 </script>
 
 <style scoped>
+.pq-code-scroll { scrollbar-width: thin; scrollbar-color: rgba(0, 212, 255, 0.45) transparent; }
+.pq-code-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+.pq-code-scroll::-webkit-scrollbar-track { background: transparent; }
+.pq-code-scroll::-webkit-scrollbar-thumb { background: rgba(0, 212, 255, 0.35); border-radius: 9999px; }
+.pq-code-scroll::-webkit-scrollbar-thumb:hover { background: rgba(0, 212, 255, 0.6); }
 .hero-image-container {
   position: relative;
   overflow: hidden;
