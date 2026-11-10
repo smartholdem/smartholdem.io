@@ -28,5 +28,12 @@ export function useLocalizedOg(path: string) {
     return `${base}${p === '/' ? '' : p}` || base
   })
 
-  return { ogLocale, ogLocaleAlternate, pageUrl }
+  // Canonical for pages whose MAIN CONTENT exists only in English (news
+  // articles, White Paper, Executive Summary). Locale variants only translate
+  // the UI chrome, so they point their canonical to the English original —
+  // otherwise Google reports them as "Duplicate, Google chose different
+  // canonical than user".
+  const canonicalEnUrl = computed(() => `${base}${path === '/' ? '' : path}` || base)
+
+  return { ogLocale, ogLocaleAlternate, pageUrl, canonicalEnUrl }
 }

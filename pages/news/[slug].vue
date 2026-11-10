@@ -5,7 +5,7 @@
     </NuxtLink>
 
     <div v-if="article" class="mx-auto max-w-3xl">
-      <article>
+      <article lang="en">
         <div class="mb-4 flex flex-wrap items-center gap-2 text-sm text-secondary">
           <span class="mono rounded bg-neon-cyan/10 px-2 py-0.5 text-neon-cyan">{{ article.tag }}</span>
           <time :datetime="article.date">{{ formatDate(article.date) }}</time>
@@ -40,6 +40,8 @@
 </template>
 
 <script setup>
+// Article body is English-only in all locales → canonical to /news/{slug}, no hreflang (see app.vue)
+definePageMeta({ englishOnlyContent: true })
 import { ArrowLeft } from 'lucide-vue-next'
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
@@ -60,7 +62,7 @@ const article = ref(getNewsSnapshotByRef(param))
 // Canonical/OG URLs ALWAYS use the slug — even when the page was reached via
 // the legacy /news/{id} URL — so search engines consolidate on the slug URL.
 const slugPath = `/news/${article.value?.slug || param}`
-const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg(slugPath)
+const { ogLocale, ogLocaleAlternate, pageUrl, canonicalEnUrl } = useLocalizedOg(slugPath)
 useBreadcrumbLd([{ key: 'nav.news', path: '/news' }, { name: () => article.value?.title || '', path: slugPath }])
 
 // Legacy id URL -> instant client-side replace to the slug URL. Static HTML
@@ -114,15 +116,15 @@ watchEffect(() => {
       description: (article.value.text || '').slice(0, 160),
       ogTitle: article.value.title,
       ogType: 'article',
-      ogUrl: pageUrl.value,
+      ogUrl: canonicalEnUrl.value,
       ogLocale: ogLocale.value,
-      ogLocaleAlternate: ogLocaleAlternate.value,
       ogImage: ogBanner,
       twitterCard: 'summary_large_image',
       twitterImage: ogBanner
     })
     useHead({
-      link: [{ rel: 'canonical', href: pageUrl.value }],
+      // Article body is English-only → every locale variant canonicalizes to /news/{slug}
+      link: [{ rel: 'canonical', href: canonicalEnUrl.value }],
       script: [{
         type: 'application/ld+json',
         innerHTML: JSON.stringify({
@@ -130,9 +132,9 @@ watchEffect(() => {
           '@type': 'NewsArticle',
           headline: article.value.title,
           description: (article.value.text || '').slice(0, 160),
-          url: pageUrl.value,
-          mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
-          inLanguage: locale.value,
+          url: canonicalEnUrl.value,
+          mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalEnUrl.value },
+          inLanguage: 'en',
           image: [ogBanner, ...(article.value.image ? [article.value.image] : [])],
           datePublished: article.value.date,
           dateModified: article.value.updatedAt || article.value.date,

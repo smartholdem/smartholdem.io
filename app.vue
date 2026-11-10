@@ -11,14 +11,20 @@ const config = useRuntimeConfig()
 
 // Auto hreflang + og:locale alternates for SEO (server-rendered)
 const i18nHead = useLocaleHead({ addSeoAttributes: true })
+const route = useRoute()
+// Pages with `definePageMeta({ englishOnlyContent: true })` (news articles,
+// White Paper, Executive Summary) have the same English body in every locale.
+// They canonicalize to the English URL, so hreflang alternates must NOT be
+// emitted there (hreflang + cross-locale canonical = conflicting signals).
+const englishOnly = computed(() => !!route.meta?.englishOnlyContent)
 useHead(() => ({
   htmlAttrs: {
     lang: i18nHead.value.htmlAttrs?.lang || locale.value,
     dir: i18nHead.value.htmlAttrs?.dir || 'ltr',
     class: 'dark'
   },
-  link: i18nHead.value.link || [],
-  meta: i18nHead.value.meta || []
+  link: (i18nHead.value.link || []).filter(l => !(englishOnly.value && l?.hreflang)),
+  meta: (i18nHead.value.meta || []).filter(m => !(englishOnly.value && m?.property === 'og:locale:alternate'))
 }))
 
 // Organization + WebSite JSON-LD (site-wide, great for AI / search indexing)

@@ -79,7 +79,7 @@
         </aside>
 
         <!-- Content -->
-        <article ref="contentEl" class="prose-wp mx-auto w-full" v-html="html"></article>
+        <article ref="contentEl" lang="en" class="prose-wp mx-auto w-full" v-html="html"></article>
       </div>
     </div>
 
@@ -247,7 +247,9 @@ onBeforeUnmount(() => {
 })
 
 // SEO — localized (all 18 locales) with og:locale + locale-aware URLs
-const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/white-paper')
+// Body is English-only → canonical to the English URL, no hreflang (see app.vue)
+definePageMeta({ englishOnlyContent: true })
+const { ogLocale, pageUrl, canonicalEnUrl } = useLocalizedOg('/white-paper')
 useBreadcrumbLd([{ key: 'nav.whitepaper', path: '/white-paper' }])
 useSeoMeta({
   title: () => t('whitepaper.seo.title'),
@@ -256,14 +258,13 @@ useSeoMeta({
   ogTitle: () => t('whitepaper.seo.title'),
   ogDescription: () => t('whitepaper.seo.description'),
   ogType: 'article',
-  ogUrl: () => pageUrl.value,
+  ogUrl: () => canonicalEnUrl.value,
   ogLocale: () => ogLocale.value,
-  ogLocaleAlternate: () => ogLocaleAlternate.value,
   ogImage: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
   twitterCard: 'summary_large_image'
 })
 useHead({
-  link: [{ rel: 'canonical', href: () => pageUrl.value }],
+  link: [{ rel: 'canonical', href: () => canonicalEnUrl.value }],
   script: [{
     type: 'application/ld+json',
     innerHTML: () => JSON.stringify({
@@ -272,10 +273,10 @@ useHead({
       headline: 'Netfory: A Peer-to-Peer Electronic Application and Data Distribution Network',
       alternativeHeadline: t('whitepaper.seo.title'),
       description: t('whitepaper.seo.description'),
-      url: pageUrl.value,
-      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
+      url: canonicalEnUrl.value,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalEnUrl.value },
       image: `${config.public.siteUrl}/images/home/web_4.0_smarholdem_netfory.jpg`,
-      inLanguage: locale.value,
+      inLanguage: 'en',
       author: [{ '@type': 'Person', name: 'TechnoL0g' }, { '@type': 'Person', name: 'Europa' }],
       datePublished: '2026-07-01',
       version: '1.0.0',

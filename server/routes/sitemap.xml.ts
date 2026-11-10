@@ -1,4 +1,4 @@
-// Full sitemap: every static page + every news article, in all 18 locales,
+// Full sitemap: every localized static page in all 18 locales,
 // with hreflang alternates (+ x-default pointing to the default `en` URL).
 // URLs are emitted WITHOUT trailing slashes to match canonical tags.
 // News articles are listed ONLY under their canonical slug URLs — legacy
@@ -27,12 +27,14 @@ const LOCALES: { code: string; lang: string }[] = [
   { code: 'hi', lang: 'hi-IN' }
 ]
 
-// Every prerendered static page of the site.
+// English-only content (body not translated; locale variants canonicalize to
+// the English URL) → listed ONCE, without hreflang alternates.
+const EN_ONLY_PAGES = ['/white-paper', '/executive-summary']
+
+// Every prerendered static page of the site (fully localized).
 const PAGES = [
   '/',
   '/news',
-  '/white-paper',
-  '/executive-summary',
   '/blockchain',
   '/tokenomics',
   '/get-sth',
@@ -67,6 +69,10 @@ export default defineEventHandler(async (event) => {
     }
   }
 
+  for (const p of EN_ONLY_PAGES) {
+    urls.push(`  <url><loc>${urlFor('en', p)}</loc></url>`)
+  }
+
   // News articles: live Strapi first, baked snapshot as fallback
   let items: any[] = []
   try {
@@ -86,11 +92,11 @@ export default defineEventHandler(async (event) => {
   const { idToSlug } = buildNewsSlugs(items)
   for (const a of items) {
     if (a?.id == null) continue
+    // Article bodies are English-only → one canonical URL per article
+    // (locale variants carry rel=canonical to it, so they are not listed).
     const p = `/news/${idToSlug.get(String(a.id)) || a.id}`
-    const alts = altBlock(p)
-    for (const l of LOCALES) {
-      urls.push(`  <url><loc>${urlFor(l.code, p)}</loc>${alts}</url>`)
-    }
+    const lastmod = String(a?.updatedAt || a?.date || '').slice(0, 10)
+    urls.push(`  <url><loc>${urlFor('en', p)}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`)
   }
 
   setHeader(event, 'Content-Type', 'application/xml')

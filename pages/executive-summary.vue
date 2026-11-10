@@ -9,7 +9,7 @@
       </a>
     </header>
     <div class="mx-auto mt-14 max-w-3xl">
-      <article class="prose-wp" v-html="html"></article>
+      <article lang="en" class="prose-wp" v-html="html"></article>
     </div>
   </div>
 </template>
@@ -25,7 +25,9 @@ const html = computed(() => (execRaw ? parseMarkdownDoc(execRaw).html : '<p>Comi
 
 const { t, locale } = useI18n()
 const config = useRuntimeConfig()
-const { ogLocale, ogLocaleAlternate, pageUrl } = useLocalizedOg('/executive-summary')
+// Body is English-only → canonical to the English URL, no hreflang (see app.vue)
+definePageMeta({ englishOnlyContent: true })
+const { ogLocale, pageUrl, canonicalEnUrl } = useLocalizedOg('/executive-summary')
 useBreadcrumbLd([{ key: 'nav.execSummary', path: '/executive-summary' }])
 useSeoMeta({
   title: () => t('execSummary.seo.title'),
@@ -33,12 +35,11 @@ useSeoMeta({
   ogTitle: () => t('execSummary.seo.title'),
   ogDescription: () => t('execSummary.seo.description'),
   ogType: 'article',
-  ogUrl: () => pageUrl.value,
-  ogLocale: () => ogLocale.value,
-  ogLocaleAlternate: () => ogLocaleAlternate.value
+  ogUrl: () => canonicalEnUrl.value,
+  ogLocale: () => ogLocale.value
 })
 useHead({
-  link: [{ rel: 'canonical', href: () => pageUrl.value }],
+  link: [{ rel: 'canonical', href: () => canonicalEnUrl.value }],
   script: [{
     type: 'application/ld+json',
     innerHTML: () => JSON.stringify({
@@ -46,9 +47,9 @@ useHead({
       '@type': 'TechArticle',
       headline: t('execSummary.seo.title'),
       description: t('execSummary.seo.description'),
-      url: pageUrl.value,
-      mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl.value },
-      inLanguage: locale.value,
+      url: canonicalEnUrl.value,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalEnUrl.value },
+      inLanguage: 'en',
       author: { '@type': 'Organization', name: 'SmartHoldem Core Team' },
       publisher: { '@id': `${config.public.siteUrl}/#organization` },
       about: 'Web 4.0 decentralized infrastructure protocol'
