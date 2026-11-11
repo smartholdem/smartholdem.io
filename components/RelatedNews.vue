@@ -19,7 +19,7 @@
         <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="block overflow-hidden">
           <img
             :src="a.image"
-            :alt="a.title"
+            :alt="trTitle(a)"
             loading="lazy"
             class="block h-auto w-full transition-transform duration-500 group-hover:scale-105"
             @error="onImgError($event, a)"
@@ -32,10 +32,10 @@
           </div>
           <h3 class="font-bold leading-snug">
             <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="transition-colors group-hover:text-neon-cyan">
-              {{ a.title }}
+              {{ trTitle(a) }}
             </NuxtLink>
           </h3>
-          <p class="mt-2 line-clamp-3 text-sm text-secondary">{{ a.text }}</p>
+          <p class="mt-2 line-clamp-3 text-sm text-secondary">{{ trText(a) }}</p>
           <NuxtLink
             :to="localePath(`/news/${a.slug || a.id}`)"
             class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-neon-cyan"
@@ -49,6 +49,8 @@
 </template>
 
 <script setup>
+// Translated headlines + summaries (falls back to English per item)
+const { trTitle, trText } = useNewsListTranslations()
 import { ArrowRight } from 'lucide-vue-next'
 
 const props = defineProps({

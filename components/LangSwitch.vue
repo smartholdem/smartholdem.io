@@ -12,7 +12,7 @@
         :to="switchLocalePath(l.code)"
         class="lang-cell"
         :class="l.code === locale ? 'lang-cell-active' : ''"
-        @click="$emit('pick')"
+        @click="rememberLocale(l.code); $emit('pick')"
       >
         <span class="truncate">{{ l.name }}</span>
         <Check v-if="l.code === locale" class="h-4 w-4 shrink-0 text-neon-cyan" />
@@ -45,7 +45,7 @@
               :to="switchLocalePath(l.code)"
               class="dd-cell"
               :class="l.code === locale ? 'dd-cell-active' : ''"
-              @click="open = false"
+              @click="rememberLocale(l.code); open = false"
             >
               <span class="truncate">{{ l.name }}</span>
               <Check v-if="l.code === locale" class="h-4 w-4 shrink-0 text-neon-cyan" />
@@ -59,6 +59,7 @@
 
 <script setup>
 import { Languages, ChevronDown, Check } from 'lucide-vue-next'
+import { rememberLocale } from '~/utils/browserLocale'
 
 const props = defineProps({
   mode: { type: String, default: 'dropdown' } // 'dropdown' | 'grid'

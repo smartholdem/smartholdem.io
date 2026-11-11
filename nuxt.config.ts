@@ -84,6 +84,11 @@ export default defineNuxtConfig({
         for (const lc of localeCodes) ctx.routes.add(`/${lc}/news/tag/${tag}`)
       }
       // Ensure RSS feed + sitemaps are generated as static files on build.
+      // Static translation data for the client (data/news-i18n → /news-i18n/*.json)
+      for (const lc of ['en', ...localeCodes]) {
+        ctx.routes.add(`/news-i18n/${lc}/list.json`)
+        for (const a of items) ctx.routes.add(`/news-i18n/${lc}/${a.id}.json`)
+      }
       ctx.routes.add('/news/rss.xml')
       ctx.routes.add('/sitemap.xml')
       ctx.routes.add('/sitemap-tags.xml')

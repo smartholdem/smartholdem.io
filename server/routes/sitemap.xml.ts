@@ -5,6 +5,8 @@
 // /news/{id} pages exist in the build but are intentionally excluded here.
 // @ts-ignore — plain .mjs module shared with the app, RSS and prerender hook
 import { buildNewsSlugs } from '../utils/newsSlug.mjs'
+// @ts-ignore — plain .mjs module
+import { newsTranslatedLocales, readNewsSnapshot } from '../utils/newsI18n.mjs'
 
 const LOCALES: { code: string; lang: string }[] = [
   { code: 'en', lang: 'en-US' },
@@ -90,13 +92,26 @@ export default defineEventHandler(async (event) => {
   }
 
   const { idToSlug } = buildNewsSlugs(items)
+  // English snapshot items (same shape the translator hashed)
+  const snapById = new Map(readNewsSnapshot().map((it: any) => [String(it.id), it]))
   for (const a of items) {
     if (a?.id == null) continue
-    // Article bodies are English-only → one canonical URL per article
-    // (locale variants carry rel=canonical to it, so they are not listed).
+    // English original + every locale with a VALID translation (LM Studio,
+    // data/news-i18n). Untranslated locale variants canonicalize to the
+    // English URL and are therefore not listed.
     const p = `/news/${idToSlug.get(String(a.id)) || a.id}`
-    const lastmod = String(a?.updatedAt || a?.date || '').slice(0, 10)
-    urls.push(`  <url><loc>${urlFor('en', p)}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`)
+    const lastmod = String(a?.updatedAt || a?.date || a?.attributes?.updatedAt || a?.attributes?.date || '').slice(0, 10)
+    const lm = lastmod ? `<lastmod>${lastmod}</lastmod>` : ''
+    const snapItem = snapById.get(String(a.id))
+    const trCodes: string[] = snapItem ? newsTranslatedLocales(snapItem) : []
+    const variants = LOCALES.filter(l => l.code === 'en' || trCodes.includes(l.code))
+    const alts = variants.length > 1
+      ? variants.map(l => `<xhtml:link rel="alternate" hreflang="${l.lang}" href="${urlFor(l.code, p)}"/>`).join('') +
+        `<xhtml:link rel="alternate" hreflang="x-default" href="${urlFor('en', p)}"/>`
+      : ''
+    for (const l of variants) {
+      urls.push(`  <url><loc>${urlFor(l.code, p)}</loc>${lm}${alts}</url>`)
+    }
   }
 
   setHeader(event, 'Content-Type', 'application/xml')

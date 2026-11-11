@@ -69,6 +69,9 @@ $YARN_BIN --silent news:images || log "  (warning: news:images step returned non
 log "▶ $YARN_BIN news:og"
 $YARN_BIN --silent news:og || log "  (warning: news:og step returned non-zero)"
 
+# (New / changed news are translated inside `yarn generate` via
+#  `translate-news.mjs --soft` — see NEWS_TR_BUILD in .lmstudio.env.example)
+
 # ── 3. Build static site (Nuxt + VitePress merged) ───────────────────────────
 log "▶ $YARN_BIN build:all"
 $YARN_BIN --silent build:all

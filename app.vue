@@ -16,19 +16,43 @@ const route = useRoute()
 // White Paper, Executive Summary) have the same English body in every locale.
 // They canonicalize to the English URL, so hreflang alternates must NOT be
 // emitted there (hreflang + cross-locale canonical = conflicting signals).
-const englishOnly = computed(() => !!route.meta?.englishOnlyContent)
+// News articles set `useState('hreflang-allow')` = { path, codes } with the
+// locales that really have a translation (see pages/news/[slug].vue).
+const hreflangAllow = useState('hreflang-allow', () => null)
+const allowedCodes = computed(() => {
+  const st = hreflangAllow.value
+  if (st && st.path === route.path) return st.codes || []
+  if (route.meta?.englishOnlyContent) return []
+  return null // all locales
+})
+const codeOf = (v = '') => String(v).split(/[-_]/)[0].toLowerCase()
 useHead(() => ({
   htmlAttrs: {
     lang: i18nHead.value.htmlAttrs?.lang || locale.value,
     dir: i18nHead.value.htmlAttrs?.dir || 'ltr',
     class: 'dark'
   },
-  link: (i18nHead.value.link || []).filter(l => !(englishOnly.value && l?.hreflang)),
-  meta: (i18nHead.value.meta || []).filter(m => !(englishOnly.value && m?.property === 'og:locale:alternate'))
+  link: (i18nHead.value.link || []).filter((l) => {
+    const codes = allowedCodes.value
+    if (!codes || !l?.hreflang) return true
+    if (codes.length < 2) return false // no real translations → no hreflang at all
+    return l.hreflang === 'x-default' || codes.includes(codeOf(l.hreflang))
+  }),
+  meta: (i18nHead.value.meta || []).filter((m) => {
+    const codes = allowedCodes.value
+    if (!codes || m?.property !== 'og:locale:alternate') return true
+    return codes.includes(codeOf(m.content))
+  })
 }))
 
 // Organization + WebSite JSON-LD (site-wide, great for AI / search indexing)
 const ORG_ID = `${config.public.siteUrl}/#organization`
+// Browser-language auto-redirect (first visit only, never for crawlers) —
+// inline + critical so it runs before the page paints (see utils/browserLocale.ts)
+useHead({
+  script: [{ key: 'browser-locale', innerHTML: browserLocaleScript(), tagPriority: 'critical' }]
+})
+
 useHead({
   script: [
     {

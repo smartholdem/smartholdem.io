@@ -5,13 +5,13 @@
     </NuxtLink>
 
     <div v-if="article" class="mx-auto max-w-3xl">
-      <article lang="en">
+      <article :lang="contentLang">
         <div class="mb-4 flex flex-wrap items-center gap-2 text-sm text-secondary">
           <span class="mono rounded bg-neon-cyan/10 px-2 py-0.5 text-neon-cyan">{{ article.tag }}</span>
           <time :datetime="article.date">{{ formatDate(article.date) }}</time>
         </div>
-        <h1 class="text-3xl font-bold leading-tight sm:text-4xl">{{ article.title }}</h1>
-        <img v-if="article.image" :src="article.image" :alt="article.title" class="mt-8 w-full rounded-2xl border hair-border" @error="onImgError" />
+        <h1 class="text-3xl font-bold leading-tight sm:text-4xl">{{ displayTitle }}</h1>
+        <img v-if="article.image" :src="article.image" :alt="displayTitle" class="mt-8 w-full rounded-2xl border hair-border" @error="onImgError" />
         <div
           ref="articleBodyEl"
           class="prose-sth news-article-body mt-8 text-[1.02rem] leading-relaxed"
@@ -40,8 +40,6 @@
 </template>
 
 <script setup>
-// Article body is English-only in all locales → canonical to /news/{slug}, no hreflang (see app.vue)
-definePageMeta({ englishOnlyContent: true })
 import { ArrowLeft } from 'lucide-vue-next'
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
@@ -63,7 +61,25 @@ const article = ref(getNewsSnapshotByRef(param))
 // the legacy /news/{id} URL — so search engines consolidate on the slug URL.
 const slugPath = `/news/${article.value?.slug || param}`
 const { ogLocale, ogLocaleAlternate, pageUrl, canonicalEnUrl } = useLocalizedOg(slugPath)
-useBreadcrumbLd([{ key: 'nav.news', path: '/news' }, { name: () => article.value?.title || '', path: slugPath }])
+
+// ---- Localized content (LM Studio translations, data/news-i18n/*.json) ----
+// Locale variant WITH a valid translation → self-canonical + hreflang to all
+// translated versions. WITHOUT one → English body, canonical to /news/{slug}.
+const { i18n } = await useNewsArticleTranslation(article.value?.id)
+const tr = computed(() => (locale.value !== 'en' ? i18n.value?.tr : null) || null)
+const isLocalized = computed(() => locale.value === 'en' || !!tr.value)
+const contentLang = computed(() => (tr.value ? locale.value : 'en'))
+const displayTitle = computed(() => tr.value?.title || article.value?.title || '')
+const displayText = computed(() => tr.value?.text || article.value?.text || '')
+const canonicalUrl = computed(() => (isLocalized.value ? pageUrl.value : canonicalEnUrl.value))
+const hreflangAllow = useState('hreflang-allow', () => null)
+watchEffect(() => {
+  hreflangAllow.value = {
+    path: route.path,
+    codes: isLocalized.value ? ['en', ...(i18n.value?.available || [])] : []
+  }
+})
+useBreadcrumbLd([{ key: 'nav.news', path: '/news' }, { name: () => displayTitle.value, path: slugPath }])
 
 // Legacy id URL -> instant client-side replace to the slug URL. Static HTML
 // (with the slug canonical) is what bots see; humans end up on the slug URL.
@@ -85,7 +101,7 @@ const onImgError = (e) => {
 const articleBodyEl = ref(null)
 const hashtagHrefBase = computed(() => localePath('/news'))
 const articleHtml = computed(() =>
-  linkifyHashtags(article.value?.article || article.value?.text || '', hashtagHrefBase.value)
+  linkifyHashtags(tr.value?.article || article.value?.article || article.value?.text || '', hashtagHrefBase.value)
 )
 // Intercept clicks on <a class="news-hashtag"> so navigation happens via the
 // Vue router (SPA transition, no full-page reload).
@@ -112,29 +128,30 @@ watchEffect(() => {
     // still keyed by the stable numeric id, independent of the slug.
     const ogBanner = `${config.public.siteUrl}/og/news-${article.value.id}.png`
     useSeoMeta({
-      title: `${article.value.title} | SmartHoldem News`,
-      description: (article.value.text || '').slice(0, 160),
-      ogTitle: article.value.title,
+      title: `${displayTitle.value} | SmartHoldem News`,
+      description: (displayText.value || '').slice(0, 160),
+      ogTitle: displayTitle.value,
+      ogDescription: (displayText.value || '').slice(0, 200),
       ogType: 'article',
-      ogUrl: canonicalEnUrl.value,
+      ogUrl: canonicalUrl.value,
       ogLocale: ogLocale.value,
       ogImage: ogBanner,
       twitterCard: 'summary_large_image',
       twitterImage: ogBanner
     })
     useHead({
-      // Article body is English-only → every locale variant canonicalizes to /news/{slug}
-      link: [{ rel: 'canonical', href: canonicalEnUrl.value }],
+      link: [{ rel: 'canonical', href: canonicalUrl.value }],
       script: [{
         type: 'application/ld+json',
         innerHTML: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'NewsArticle',
-          headline: article.value.title,
-          description: (article.value.text || '').slice(0, 160),
-          url: canonicalEnUrl.value,
-          mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalEnUrl.value },
-          inLanguage: 'en',
+          headline: displayTitle.value,
+          description: (displayText.value || '').slice(0, 160),
+          url: canonicalUrl.value,
+          mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl.value },
+          inLanguage: contentLang.value,
+          ...(tr.value ? { isBasedOn: canonicalEnUrl.value } : {}),
           image: [ogBanner, ...(article.value.image ? [article.value.image] : [])],
           datePublished: article.value.date,
           dateModified: article.value.updatedAt || article.value.date,

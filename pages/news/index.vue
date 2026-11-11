@@ -27,7 +27,7 @@
     <div v-if="items.length" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <article v-for="a in items" :key="a.id" class="group flex flex-col overflow-hidden rounded-2xl border hair-border surface transition-all hover:border-neon-cyan/40 hover:-translate-y-1">
         <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="block overflow-hidden">
-          <img :src="a.image" :alt="a.title" loading="lazy" class="block h-auto w-full transition-transform duration-500 group-hover:scale-105" @error="onImgError($event, a)" />
+          <img :src="a.image" :alt="trTitle(a)" loading="lazy" class="block h-auto w-full transition-transform duration-500 group-hover:scale-105" @error="onImgError($event, a)" />
         </NuxtLink>
         <div class="flex flex-1 flex-col p-5">
           <div class="mb-2 flex items-center gap-2 text-xs text-secondary">
@@ -35,9 +35,9 @@
             <time :datetime="a.date">{{ formatDate(a.date) }}</time>
           </div>
           <h2 class="font-bold leading-snug">
-            <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="transition-colors group-hover:text-neon-cyan">{{ a.title }}</NuxtLink>
+            <NuxtLink :to="localePath(`/news/${a.slug || a.id}`)" class="transition-colors group-hover:text-neon-cyan">{{ trTitle(a) }}</NuxtLink>
           </h2>
-          <p class="mt-2 line-clamp-3 text-sm text-secondary">{{ a.text }}</p>
+          <p class="mt-2 line-clamp-3 text-sm text-secondary">{{ trText(a) }}</p>
 
           <!-- Hashtag chips on cards (only if the article has any tags) -->
           <div v-if="a.tags && a.tags.length" class="mt-3 flex flex-wrap gap-1.5">
@@ -75,6 +75,8 @@
 </template>
 
 <script setup>
+// Translated headlines + summaries (falls back to English per item)
+const { trTitle, trText } = useNewsListTranslations()
 import { ArrowRight, Loader2 } from 'lucide-vue-next'
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
