@@ -40,7 +40,7 @@ features:
 
 ## Welcome to DevHub
 
-This hub contains **everything a developer needs** to interact with the SmartHoldem DPoS blockchain and the Netfory P2P network — from RESTful endpoints to SDK usage patterns and core architectural concepts.
+This hub contains **everything a developer needs** to interact with the SmartHoldem DPoS blockchain and the Netfory P2P network - from RESTful endpoints to SDK usage patterns and core architectural concepts.
 
 <div class="quick-grid">
 
@@ -61,7 +61,7 @@ This hub contains **everything a developer needs** to interact with the SmartHol
 
 <a class="quick-card" href="./smartnet/overview">
   <h3>→ SmartNet · Web 4.0</h3>
-  <p>Native bridge for dApps running inside the Tauri v2 SmartNet client — wallet, payments, storage, and IPC-isolated cryptography.</p>
+  <p>Native bridge for dApps running inside the Tauri v2 SmartNet client - wallet, payments, storage, and IPC-isolated cryptography.</p>
 </a>
 
 <a class="quick-card" href="./smartnet/tracker">
@@ -83,7 +83,7 @@ The documentation is organized into six pillars:
 | Section | For | Ships |
 |---|---|---|
 | **[API Reference](/api/)** | Anyone querying the chain | 9 endpoint groups (Blockchain, Blocks, Transactions, Delegates, Node, Peers, Votes, HTLC, Wallets) with cURL examples |
-| **[SDK](/sdk/installation)** | Node.js / TypeScript devs | `@smartholdem/client` + `@smartholdem/crypto` — installation, signing, serialization, ECDSA/Schnorr, full transaction lifecycle |
+| **[SDK](/sdk/installation)** | Node.js / TypeScript devs | `@smartholdem/client` + `@smartholdem/crypto` - installation, signing, serialization, ECDSA/Schnorr, full transaction lifecycle |
 | **[Core Concepts](/core/data-models)** | Node operators & advanced devs | Data Models, Transaction Nonce, 65 `CORE_*` environment variables grouped by subsystem |
 | **[SmartNet · Web 4.0](/smartnet/overview)** | dApp developers | The `window.smartholdem` bridge, IPC security, Vue 3 composables (`useSmartNetWallet`, `usePayments`, `useStorage`) |
 | **[Tracker](/smartnet/tracker)** | Seeder operators & dApp devs | Coordination API, signed heartbeats, sliding-window uptime multiplier `K_up`, boost-pool economics |

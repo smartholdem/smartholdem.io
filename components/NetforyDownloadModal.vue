@@ -60,7 +60,7 @@
               <!-- Error state -->
               <div v-else-if="releaseError" class="mt-6 rounded-lg border border-red-500/30 bg-red-500/5 px-4 py-4 text-sm">
                 <p class="text-red-300">{{ t('netforyModal.error') }}</p>
-                <a href="https://github.com/NETFORY/netfory-releases/releases" target="_blank" rel="noopener"
+                <a href="https://github.com/NETFORY/netfory/releases" target="_blank" rel="noopener"
                    class="mt-2 inline-flex items-center gap-1.5 text-neon-cyan hover:underline">
                   <ExternalLink class="h-3.5 w-3.5" /> {{ t('netforyModal.viewOnGithub') }}
                 </a>
@@ -95,7 +95,7 @@
                   </a>
                 </div>
 
-                <a href="https://github.com/NETFORY/netfory-releases/releases" target="_blank" rel="noopener"
+                <a href="https://github.com/NETFORY/netfory/releases" target="_blank" rel="noopener"
                    class="mt-1 inline-flex items-center gap-1.5 text-xs text-secondary transition-colors hover:text-neon-cyan">
                   <ExternalLink class="h-3 w-3" /> {{ t('netforyModal.viewOnGithub') }}
                 </a>
@@ -137,7 +137,7 @@ const releaseLoading = ref(false)
 const releaseError = ref(false)
 let releaseFetched = false
 
-const GH_LATEST_URL = 'https://api.github.com/repos/NETFORY/netfory-releases/releases/latest'
+const GH_LATEST_URL = 'https://api.github.com/repos/NETFORY/netfory/releases/latest'
 
 async function fetchLatestRelease () {
   if (releaseFetched && latestRelease.value) return
