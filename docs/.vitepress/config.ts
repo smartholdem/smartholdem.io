@@ -38,11 +38,8 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: 'Official SmartHoldem API, SDK, and Core documentation.' }],
     ['meta', { property: 'og:image', content: 'https://smartholdem.io/images/blockchain/blockchain-og.jpg' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:site', content: '@smartholdem' }],
-    ['link', {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap'
-    }]
+    ['meta', { name: 'twitter:site', content: '@smartholdem' }]
+    // Fonts are self-hosted via @fontsource-variable (see theme/index.ts) — no Google Fonts
   ],
 
   markdown: {

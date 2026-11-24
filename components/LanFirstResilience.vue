@@ -78,7 +78,7 @@ const bullets = computed(() => [
 <style scoped>
 /* JetBrains Mono cyan chips for technical terms (E2EE, CID, mDNS, dApps). */
 :deep(code) {
-  font-family: 'JetBrains Mono', monospace;
+  font-family:'JetBrains Mono Variable','JetBrains Mono',monospace;
   font-size: 0.85em;
   color: #00D4FF;
   background: rgba(0, 212, 255, 0.08);

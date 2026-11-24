@@ -166,7 +166,9 @@ export default defineNuxtConfig({
     bundle: { optimizeTranslationDirective: false }
   },
 
-  css: ['~/assets/css/main.css', 'katex/dist/katex.min.css', 'highlight.js/styles/atom-one-dark.css'],
+  // Self-hosted variable fonts (all weights in one file per script subset;
+  // unicode-range → browsers download only the subsets a page needs).
+  css: ['@fontsource-variable/inter', '@fontsource-variable/jetbrains-mono', '~/assets/css/main.css', 'katex/dist/katex.min.css', 'highlight.js/styles/atom-one-dark.css'],
 
   app: {
     head: {
@@ -180,10 +182,8 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/icons/apple-touch-icon.png' },
         { rel: 'manifest', href: '/icons/site.webmanifest' },
         { rel: 'alternate', type: 'application/rss+xml', title: 'SmartHoldem News', href: '/news/rss.xml' },
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'preconnect', href: 'https://news.smartholdem.io' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap' }
+        { rel: 'preconnect', href: 'https://news.smartholdem.io' }
+        // Fonts are self-hosted (@fontsource-variable, bundled into /_nuxt at build) — no Google Fonts requests
       ]
     }
   },
